@@ -1,15 +1,15 @@
-= Documentation for Red{nbsp}Hat SaaS Offering for Developers
+# Documentation for Red Hat SaaS Offering for Developers
 
 This is the Git repository for documentation related to Red Hat developer SaaS.
 
 
-== Repository Structure
+## Repository Structure
 
 
 The repository contains several "books", each of which is in its own directory. All book directories use the same layout.
 
 
-=== Book Directories
+### Book Directories
 
 Books are organized into folders. Each book's folder contains:
 
@@ -23,34 +23,32 @@ Books are organized into folders. Each book's folder contains:
 Items in `*bold*` are mandatory, and the rest is optional.
 
 
-== Building the Documentation
+## Building the Documentation
 
 To build a book, `cd` into its directory and compile its `master.adoc` using either `*asciidoctor*` (for quick local previews) or `*ccutil*` (to see how the book builds and renders with Red hat branding).
 
 
-=== Using AsciiDoctor
+### Using AsciiDoctor
 
-[sub="+quotes"]
-----
-$ *cd _guide-directory_*
-$ *asciidoctor --section-numbers --attribute=toc master.adoc*
-$ *_www-browser-of-choice_ master.html*
-----
+```
+$ cd guide-directory
+$ asciidoctor --section-numbers --attribute=toc master.adoc
+$ www-browser-of-choice master.html
+```
 
-Substitute `*<www-browser-of-choice>*` for whatever web browser you use.
+Substitute `*www-browser-of-choice>*` for whatever web browser you use.
 
 
-=== Using ccutil
+### Using ccutil
 
-[sub="+quotes"]
-----
-$ *cd _guide-directory_*
-$ *ccutil compile --lang en-US --open*
-----
+```
+$ cd guide-directory
+$ ccutil compile --lang en-US --open
+```
 
 This will automatically open the compiled guide in the default web browser.
 
 
-== Bug Tracking
+## Bug Tracking
 
-Bugs and RFEs for Red{nbsp}Hat developer SaaS docs are tracked in the RHDEVDOCS project in the JBoss instance of JIRA at https://issues.jboss.org/browse/RHDEVDOCS.
+Bugs and RFEs for Red Hat developer SaaS docs are tracked in the RHDEVDOCS project in the JBoss instance of JIRA at [https://issues.jboss.org/browse/RHDEVDOCS](https://issues.jboss.org/browse/RHDEVDOCS).
