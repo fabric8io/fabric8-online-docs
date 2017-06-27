@@ -1,0 +1,10 @@
+[#about_work_items]
+= About Work Items
+
+_Work Items_ (WI) are trackable and measurable units of work to be done within a <<about_collaboration_spaces,Collaboration Space>>. They are captured representations of work, which can be edited and modified based on the requirements of the development project.
+
+In the *Planner*, users can create and manage planning-related Work Items within a Collaboration Space. Work Items are used to track data such as ideas, user stories, bugs, and tasks. All Work Items can be grouped and categorized into <<about_areas,Areas>> and <<about_iterations,Iterations>>.
+
+Work Items can be assigned to users and their status can be changed to indicate the progress of the Work Item. Each Work Item can be linked to other Work Items based on their relationship with each other, enabling users to plan work better. For example, you can link Work Item A as the parent of Work Item B, enabling you to prioritize and order your work.
+
+The *Planner* includes a set of predefined templates based on common planning methodologies such as _Scrum_, _Agile_, and _Scenario Driven Development_. These templates determine the structure and features of the included Work Item types and states that can be used within a Collaboration Space.

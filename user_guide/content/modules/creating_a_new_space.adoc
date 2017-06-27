@@ -1,0 +1,38 @@
+[#creating_a_new_space]
+= Creating a New Collaboration Space
+
+To start a new project, users must create a new Collaboration Space. Each Space includes a team of users in various roles as well as unique <<about_work_items,Work Items>> and <<about_iterations,Iterations>> used to effectively manage the new project.
+
+.Prerequisites
+
+* Ensure that you have <<logging_into_red_hat_openshift_io,Logged in to {osio-link}>> with a valid user account.
+
+.Procedure
+
+. In your {osio-link} home page, click your username in the top left corner of the screen.
+
+. In the drop down menu, click *Create space*.
+
+. Add a unique name for the new space in the *Name* field.
+
+. Select a *Template* type from the drop-down menu. The four options are:
+.. *Agile* - Your space is centered around Agile-based plannning.
+.. *Scrum* - Your space includes an iterative and incremental Agile-based development framework. This option is similar to the **Agile** option but with more specific planning and development tracking.
+.. *Issue Tracking* - Your space is based on an issue tracking development methodology. This option is ideal for teams interested in primarily tracking issues and Tasks and resolving them.
+.. *Scenario Driven Planning* - Your space is based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized via (user) Experiences.
+
+. Click *Create Space* to create your new space.
+
+. The *How would you like to get started?* dialog box appears and offers the following options:
+
+image::new_space_dialog.png[New Space Dialog Box]
+
+Plan out my space:: Start planning tasks for your space.
+
+Create a new Starter Project:: Get started by creating a project based on one of the available technology stacks.
+
+Import existing code:: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.
+
+Create a new Quick Start project:: Use wizards to automatically set up your development environment for various tasks and quickly create projects using specific tooling.
+
+No thanks, take me to the _new space_ dashboard:: Go to your new space's dashboard to begin working in the space.

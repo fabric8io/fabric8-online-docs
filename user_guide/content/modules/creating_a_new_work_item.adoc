@@ -1,0 +1,81 @@
+[#creating_a_new_work_item]
+= Creating a New Work Item
+
+You can add <<about_work_items,Work Items>> to your Collaboration Space in multiple ways, such as from the *Analyze* tab or the *Plan* tab using the detailed method or the quick-add method.
+
+The detailed method helps you capture details relevant to the Work Item while creating the Work Item itself. The quick-add method acts as an instant widget to add Work Items rapidly as you work.
+
+.Prerequisites
+
+* <<creating_a_new_space,Create a new Collaboration Space>> or select an existing Collaboration Space.
+
+== Using the Quick-Add Method
+
+The quick-add method acts as an instant widget to add Work Items on the go. The quick-add widget is available in the menu:Plan[Backlog] subtab as well as the menu:Plan[Board] subtab of your workspace.
+
+=== Using the Backlog
+
+.Procedure
+
+. Click btn:[Plan] and then btn:[Backlog] to view the backlog of Work Items.
+
+. Click *Create Work Item* from the grey panel at the bottom of the screen.
+
+. Click the Work Item Type symbol (image:work_item_type_symbol.png[title="Work Item Type"]) and select the required Work Item Type from the listed options.
+
+. Add a *Work Item Title* and *Work Item Description* in the appropriate fields and click the &#10003; button to create the Work Item. The *Work Item Description* field is optional. Create additional Work Items by adding another *Work Item Title* and pressing *Enter* on the keyboard.
+
+The new Work Item appears in the Backlog list.
+
+=== Using the Board
+
+.Procedure
+
+. Click btn:Plan and then btn:Board to view the current iteration's of Work Items.
+
+. Select the new Work Item's Type from the *Currently showing* drop-down list.
+
+. In the *new* column, click the blue plus (*+*) icon to display the quick-add work-item widget. The Work Item Type selected in the previous step is used as the Type for the new Work Item.
+
+. Add a *Work Item Title* and *Work Item Description* in the respective fields and click the &#10003; button to create the Work Item. The *Work Item Description* field is optional. Create additional Work Items by adding another *Work Item Title* and pressing *Enter* on the keyboard.
+
+A Work Item is created and displayed in the *new* column.
+
+[#using_the_detailed_method]
+== Using the Detailed Method
+
+.Procedure
+
+. Click btn:[Analyzer] to view the Space dashboard.
+
+. Click the blue plus (*+*) icon in the top right corner of the *My Work Items* panel.
+
+. In the *Choose a new work item type* window, click the appropriate Work Item Type for your new Work Item.
+
+. In the new Work Item form:
+
+.. Enter the title of the Work Item and click the &#10003; button or press *Enter* to save the new Work Item. All other Work Item fields are optional.
+
+.. Set the progress status of the Work Item from the *New* drop-down list. The default status for a new Work Item is *New*.
+
+.. Assign the Work Item to the relevant owner or owners in the *Assignees* field. The assignee field for a new Work Item is empty as a default.
+
+.. Assign an <<about_areas,Area>> to the Work Item from the *Area* drop-down list and click &#10003; to save the change. By default, the name of your workspace is set as the _Root Area_ and is displayed as one of the options in the drop-down list.
+
+.. Assign a relevant <<about_iterations,Iteration>> to the Work Item from the *Iteration* drop-down list and click &#10003; to save. By default, the name of your workspace is set as the _Root Iteration_ and is displayed as one of the options in the drop-down list.
+
+.. Add a description for the Work Item in the *Edit Text* field and click &#10003; to save.
+
+.. Optionally, expand the *Total links* option to link to other related Work Items as follows:
+
+... Click the btn:[Create Link] button.
+
+... Use the btn:[Select Link Type] drop-down menu to select the appropriate relationship between the current and new Work Item.
+
+... Start typing the title or ID of a Work Item in the *Search for work items* field. Select one of the listed suggestions.
+
+... Click btn:[Link] to save the relationship.
+
+.. Optionally, expand the *Comments* option to add or see comments for your Work Item. Users can only edit or delete their own comments.
+
+. To close the new Work Item panel, click the *x* at the top of the panel.

@@ -1,0 +1,60 @@
+[#creating_a_new_pipeline]
+= Creating a New Pipeline
+
+Create a new pipeline for your Collaboration Space:
+
+.Prerequisites
+
+* Ensure that you have created a Collaboration Space to use for the pipeline. See <<creating_a_new_space>> for instructions.
+
+.Procedure
+
+. Navigate to the appropriate Collaboration Space.
+.. Click the top left corner of the screen displaying the current Collaboration Space name to view other Collaboration Spaces for the current user.
+.. Select the appropriate Collaboration Space name to navigate to that Space.
+
+. In the default view for your Collaborative Space, click *Add to space* in the top right corner of the screen. If this button is not visible, click the *Analyze* tab to be taken to the default view.
+
+. In the displayed options menu, click *Select technology stack and pipeline*.
+
+. In the *Quickstart* menu, select the appropriate value for the following fields:
+.. Use the drop-down box for the *Technology Stack* field to select a type of Quickstart.
+.. Add a unique name in the *Name* field. 
++
+[NOTE]
+====
+Use only lower case letters and numbers for the *Name* field. Special characters and upper case letters are not accepted for this field.
+====
++
+.. If required, update the *Top level package* field.
+.. If required, update the *Version* field.
+.. Click *Next* to continue.
+
+. Select one of the three build pipeline strategies:
+* *Release* is the simplest option and only includes building releases and running an integration test.
+* *Release and Stage* includes building releases, doing integration tests, and then staging the release.
+* *Release, Stage, Approve and Promote* includes building releases, running integration tests, staging the release, and asking for user approval before concluding the pipeline.
+
+. Click *Next*.
+
+. Add your GitHub repository information:
+.. Add the *Organization* name for your application. This field uses your {osio} username as a default.
+.. Add a *GitHub Repository Name* for your application.
+.. Optionally, add a *Description* for your application.
+
+. Click *Next*.
+
+. Add some additional information for your pipeline build options:
+.. Add a name for your *Kubernetes Space*. This field uses your {osio} username as a default.
+.. Optionally, add a name for the *Kubernetes Label Space* for your application. This field uses your Collaboration Space's name as a default.
+.. Add a *Jenkins Space* name. This field appends *-jenkins* to your {osio} username as a default value.
+.. Select the *Trigger build* option.
+.. Select the *Add continuous integration web hooks* option to generate CI web hooks for your application.
+
+. Click *Finish*.
+
+. The *Application Generator Results* screen displays information about your Quickstart application's Github details and a Jenkins Job URL.
+
+. Click *OK* to return to the getting started options for your Collaboration Space. 
+
+. Click *No thanks, take me to the New Space dashboard* to return to your Collaboration Space's dashboard.

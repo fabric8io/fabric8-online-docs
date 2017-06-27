@@ -1,0 +1,25 @@
+[#logging_into_red_hat_openshift_io]
+= Logging into {rhosio}
+
+.Prerequisites
+
+* Ensure that you have <<signing_up_for_the_red_hat_developers_program,registered for a {rhdp} account>>.
+
+.Procedure
+
+. Navigate to the link:{osio-url}[{rhosio}] website in a browser window.
+
+. Click btn:[Log In] at the top of the {osio} main page.
+
+. Log in either manually (with you Red Hat Developers account) or using a social account:
+
+  .. Log in using your Red Hat account:
+    ... Enter your email address or Red Hat Developers Login ID and password.
+    ... Click btn:[Log In].
+
+  .. Log in using a social account:
+    ... Click the appropriate social account button from the listed options.
+    ... Follow the instructions to authorize the social account to log in.
+    ... If asked, add additional information about yourself on the *Additional Action Required* page. If the provided email address already has an account, an option to link your social account with your Red Hat Developers account is available. An email is sent to the account to confirm linking the two accounts.
+
+. Select the checkboxes to indicate agreement with the terms and conditions if required and click btn:[Submit].

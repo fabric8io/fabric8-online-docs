@@ -1,0 +1,31 @@
+<productname>{prod}</productname>
+<productnumber>{prod-ver}</productnumber>
+<title>User Guide</title>
+<subtitle>Using {prod}</subtitle>
+<abstract>
+  <para>
+    Information for users of {prod}. This guide describes how to accomplish common tasks using the Red Hat {prod} for developers.
+  </para>
+</abstract>
+<authorgroup>
+  <author>
+    <firstname>Misha</firstname>
+    <surname>Husnain Ali</surname>
+    <email>mhusnain@redhat.com</email>
+  </author>
+  <author>
+    <firstname>Preeti</firstname>
+    <surname>Chandrashekar</surname>
+    <email>pchandra@redhat.com</email>
+  </author>
+  <author>
+    <firstname>Robert</firstname>
+    <surname>Kratky</surname>
+    <email>rkratky@redhat.com</email>
+  </author>
+  <org>
+    <orgname>Red Hat Developer Group Documentation Team</orgname>
+    <email>devtools-docs@redhat.com</email>
+  </org>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

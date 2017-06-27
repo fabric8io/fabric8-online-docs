@@ -1,0 +1,4 @@
+[#about_areas]
+= About Areas
+
+*Areas* are used to organize related <<about_work_items,Work Items>> into groups, to distinguish between different types or functionalities that are being worked on within a <<about_collaboration_spaces,Collaboration Space>>.

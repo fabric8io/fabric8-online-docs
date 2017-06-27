@@ -1,0 +1,10 @@
+[#working_with_collaboration_spaces]
+= Working with Collaboration Spaces
+
+include::modules/about_collaboration_spaces.adoc[leveloffset=+1]
+
+include::modules/creating_a_new_space.adoc[leveloffset=+1]
+
+include::modules/selecting_a_space.adoc[leveloffset=+1]
+
+include::modules/configuring_a_codebase.adoc[leveloffset=+1]

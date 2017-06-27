@@ -1,0 +1,11 @@
+[#accessing_red_hat_openshift_io]
+= Accessing {rhosio}
+
+This section explains how to register and gain access to {rhosio}. It also outlines how to log in to and log out of the service.
+
+include::modules/signing_up_for_the_red_hat_developers_program.adoc[leveloffset=+1]
+
+include::modules/logging_into_red_hat_openshift_io.adoc[leveloffset=+1]
+
+include::modules/logging_out_of_red_hat_openshift_io.adoc[leveloffset=+1]
+

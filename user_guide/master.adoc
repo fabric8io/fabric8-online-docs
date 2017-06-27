@@ -1,0 +1,6 @@
+include::common_content/attributes.adoc[]
+
+
+= User Guide
+
+include::content/user_guide.adoc[]

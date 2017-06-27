@@ -1,0 +1,32 @@
+[#signing_up_for_the_red_hat_developers_program]
+= Signing up for the Red Hat Developers Program
+
+Learn how to sign up for the {rhdp} to access {rhosio} and start using its services.
+
+. Navigate to the link:{osio-url}[{rhosio}] website in a browser window.
+
+. Click *Sign Up For The Preview*. You can register using an existing social or Red Hat account.
+
+  .. Registering manually:
+    ... At the {rhosio} Developer Preview page, click btn:[Register].
+    ... Enter details such as your name, email address, company, and passwords in the appropriate fields.
+    ... Select the terms and conditions checkboxes to indicate acceptance.
+    ... Click *Create my account*.
+
+  .. Registering using your existing Red Hat account or a social account from services such as JBoss Developer, GitHub, Stack Overflow, LinkedIn, Twitter, Facebook, Google, or Microsoft.
+    ... Click the button for the relevant social account.
+    ... Add your login credentials for the selected service and authorize the creation of the account.
+
+. If required, verify your email address to complete registration.
+
+NOTE: Early access to the service is limited is provided as resources become available. When you sign up, you will be put on a waiting list. You will be notified when access to the system is available.
+
+
+== Related Information
+
+The following links provide additional resources about accessing Red Hat's offering for developers:
+
+* link:https://developers.redhat.com/articles/red-hat-developer-program-benefits/[Red Hat Developer Program Benefits]
+* link:https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-suite[Red Hat Enterprise Linux Developer Suite]
+* link:https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-workstation[Red Hat Enterprise Linux Developer Workstation]
+* link:https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-support[Red Hat Enterprise Linux Developer Support]

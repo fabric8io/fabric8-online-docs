@@ -1,0 +1,110 @@
+////
+ This file is not to be included in the doc. It's a list of topics and areas that may or may not be eventully included.
+
+ See https://docs.google.com/spreadsheets/d/1B2ckTXCsKc8sD_S2p7OP7d1fvcMI8_6tjTosT3ihSMM/ for the current status of the various topics.
+////
+
+NOTE: All headings are stand-ins for now and will be refined later. The current ToC is a work in progress and will be amended and moved around in the next few days.
+
+
+== Summit Use Case
+
+This is the basic use case we are presenting for Summit. The focus here, I think, would be on conceptual information, since the demo would already show the relatively limited functionality of the product at this stage.
+
+== General Concepts
+
+An incomplete list of reference modules:
+
+* Spaces
+* Pipelines
+* Work Items
+* Iterations (not in demo)
+
+== Demo Script Tasks
+
+The demo script is as follows (high-level task view):
+
+. Launch point
+. User logs in
+.. Register for the demo/create an account
+.. Log into an existing account
+. Create spaces
+.. What are spaces and what do they do in the context of this workflow?
+.. How to create new spaces and what options are avaiable, etc.
+. Review/Create Work Items (WI)
+.. What are WI and what do they do in the context of this workflow?
+. Navigate to Che within environment
+.. Mmanually? This should be a "Do It" button, but that is not working yet
+. Stage build/PR for Jenkins
+.. How to stage builds
+. Pipeline build (not in demo yet, TBD later when dependencies are ready)
+.. What are pipelines and what do they do in the context of this workflow?
+.. **Note:** In the demos, we have to select a pipeline when creating a new space, so this may be addressed there first.
+. Accepted PR view
+.. Fairly simple, viewing accepted PRs and what to do next.
+. Show running app
+.. Another view. What information is displayed for the running app, etc.?
+. Close out work items
+.. Another simple one: graceful closing off.
+
+== First Use Use Case
+
+. Register a new user
+. Requesting permissions to the space/project
+
+== Space/Project Administrator Use Case
+
+. Get relevant permissions
+. Refer to create and change project space
+. Controlling the ACLs
+
+== General Developer Use Case
+
+=== Step 1: Working with Spaces
+
+. What are spaces?
+. Create a new space
+. Add a name for the space
+. Select a pipeline
+. Select an iteration (optional?)
+. Change an existing space
+. View pipelines for each space
+. Use an existing space
+
+=== Step 2: Working with Pipelines
+
+. What are pipelines?
+. Create a new pipeline
+. Use an existing pipeline
+. Change an existing pipeline
+. Configuring pipelines
+.. Submitting changes in a pipeline environment
+.. Visualizing pipeline progress
+.. Reviewing pipeline execution notifications
+
+=== Step 3: Working with Work Items
+
+. What are Work Items
+. Create a new Work Item
+.. Dialog-based creation (later)
+.. Add WI by association (dependency/relationship)
+.. Quick add WI
+.. Using a definition file (later)
+. Changing an existing Work Item
+.. Add attachments to WI
+.. Change WI state
+.. Create/update/delete category types
+.. Create/update/delete tag types
+.. Set/update iteration for WI
+.. Set/remove/update assignee for WI
+.. Display/update area field for WI
+
+=== Step 4: The Che Context
+
+. Do It button (not seen yet in demo)
+.. Probably just a step, but TBD when we can see it in action
+
+=== Step 5: Reviewing PRs 
+
+. Editing code (enhanced language support to come later)
+. Approving PRs (need permissions, tied in with initial space permissions or separate?)

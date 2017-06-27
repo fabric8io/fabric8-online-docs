@@ -1,0 +1,14 @@
+[#assigning_a_collaborator]
+= Assigning a Collaborator
+
+You can assign the relevant <<about_work_items,Work Items>> to collaborators included in your Space:
+
+.Prerequisites
+
+* Ensure that the user is <<adding_collaborators,added as a Collaborator>> to your Space.
+
+.Procedure
+. Click the *Plan* tab to view a list of Work Items for your Space.
+. Double-click a Work Item to view its details. Alternatively, click the three dots on the right side of the Work Item listing and select *Open* from the options.
+. Click the *Assignee* text box for a drop-down search window. Type the name of a Collaborator in your Space to assign them to this Work Item.
+

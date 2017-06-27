@@ -1,0 +1,17 @@
+[#view_change_collaborators]
+= View/Change Collaborators
+
+After adding Collaborators, you can view their details or remove them from your Collaboration Space.
+
+.Prerequisites
+
+* Log in to the {osio-link} with a valid user account. See <<logging_into_red_hat_openshift_io>>.
+* <<creating_a_new_space,Create a new Collaboration Space>> or select an existing Collaboration Space.
+* Ensure you have <<adding_collaborators,added Collaborators>> to your Space.
+
+.Procedure
+
+. Click the *Equalizer* button (image:equalizer.png[title="Equalizer"]) at the top of the screen.
+. Select the *Collaborators* tab. A list of collaborators for your Collaboration Space displays.
+. Click the three dots at the right side of a Collaborator's name on the **Collaborators** page.
+. From the two options, select *View user* to view the Collaborator's details or *Remove from space* to remove them from the Space.

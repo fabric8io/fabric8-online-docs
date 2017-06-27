@@ -1,0 +1,20 @@
+[#red_hat_openshift_io_overview]
+= {rhosio} Overview
+
+{rhosio} is a highly collaborative open-source, web-based _application lifecycle management_ (ALM) solution. It is a next-generation product for developers to manage the development lifecycle with one efficient tool.
+
+== Features
+
+{osio} offers features for seamless management of end-to-end application development. Members of distributed teams can use it to perform the following tasks without leaving the browser window:
+
+* Project planning and issue tracking using your choice of Agile methodology.
+* Creating development environments and testing requirements.
+* Coding using an integrated development environment based on Eclipse Che.
+* Building, testing, deploying, and monitoring codebases using pipelines.
+* Interacting with integrated GitHub repositories.
+* Compiling and reviewing code in Pull Requests as required.
+* Automating releases of development projects.
+
+== Support
+
+Red Hat currently does not offer a support subscription for {osio}. The service is available as a free _Developer Preview_ for open-source projects and developers.

@@ -1,0 +1,14 @@
+[#Assigning_an_area]
+= Assigning an Area to a Work Item
+
+You can group Work Items by type or functionality by assigning relevant Areas to the Work Items as follows:
+
+.Prerequisites
+* Ensure that the user is <<adding_collaborators,added as a Collaborator>> to your Space.
+
+.Procedure
+. Click the *Plan* tab to view a list of Work Items for your Space.
+. Double-click a Work Item to view its details. Alternatively, click the three dots on the right side of the Work Item listing and select *Open* from the options.
+. Click the *Area* text box to view a list of Areas to assign to the space. By default, the name of your workspace is set as the Root Area and displays as one of the options in the drop-down list.
+. Enter the name of an existing area for the Space. Only existing Areas can be assigned to the Space.
+. Click the check box to confirm the name of the Area.
