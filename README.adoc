@@ -33,7 +33,7 @@ To build a book, `cd` into its directory and compile its `master.adoc` using eit
 [sub="+quotes"]
 ----
 $ *cd _guide-directory_*
-$ *asciidoctor --section-numbers --attribute=toc master.adoc*
+$ *asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc*
 $ *_www-browser-of-choice_ master.html*
 ----
 
