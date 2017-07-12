@@ -22,6 +22,14 @@ Books are organized into folders. Each book's folder contains:
 
 Items in `*bold*` are mandatory, and the rest is optional.
 
+=== Deploying the Documentation on OpenShift
+
+[sub="+quotes"]
+----
+$ export DOCS_VERSION=$(curl -L http://central.maven.org/maven2/io/fabric8/apps/fabric8-online-docs-app/maven-metadata.xml | grep '<latest' | cut -f2 -d">"|cut -f1 -d"<")
+
+$ oc apply -f http://central.maven.org/maven2/io/fabric8/apps/fabric8-online-docs-app/$DOCS_VERSION/fabric8-online-docs-app-$DOCS_VERSION-openshift.yml
+----
 
 == Building the Documentation
 
@@ -48,8 +56,8 @@ $ *cd _guide-directory_*
 $ *ccutil compile --lang en-US --open*
 
 This will automatically open the compiled guide in the default web browser.
+----
 
-
-== Bug Tracking
+=== Bug Tracking
 
 Bugs and RFEs for Red{nbsp}Hat developer SaaS docs are tracked in the RHDEVDOCS project in the JBoss instance of JIRA at https://issues.jboss.org/browse/RHDEVDOCS.

@@ -33,8 +33,8 @@ dockerTemplate{
         } else if (utils.isCD()){
 
             echo 'Running CD pipeline'
-            def version = getNewVersion {}
-            imageName = "fabric8/fabric8-online-docs:${version}"
+            def newVersion = getNewVersion {}
+            imageName = "fabric8/fabric8-online-docs:${newVersion}"
             dir('user_guide'){
                 container('clients') {
                     stage ('build docs'){
@@ -43,10 +43,10 @@ dockerTemplate{
                 }
                 container('docker') {
                     stage ('build image'){
-                        sh "docker build -t fabric8/fabric8-online-docs:${version} ."    
+                        sh "docker build -t fabric8/fabric8-online-docs:${newVersion} ."    
                     }
                     stage ('push to dockerhub'){
-                        sh "docker push fabric8/fabric8-online-docs:${version}"    
+                        sh "docker push fabric8/fabric8-online-docs:${newVersion}"    
                     }
                 }
             }
