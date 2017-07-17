@@ -15,7 +15,7 @@ To start working with a new project, create a new Collaboration Space. Each Spac
 
 . Add a unique name for the new space in the *Name* field.
 
-. Select *Scenario Driven Planning* from the drop-down menu for templates. This templates creates Spaces based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized based on (user) Experiences.
+. Select *Scenario Driven Planning* from the drop-down menu for templates. This template creates Spaces based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.
 //. Select a *Template* type from the drop-down menu. The available options are:
 //.. *Agile* - Your space is centered around Agile-based planning.
 //.. *Scrum* - Your space includes an iterative and incremental Agile-based development framework. This option is similar to the **Agile** option but with more specific planning and development tracking.
