@@ -1,90 +1,68 @@
 [#working_with_an_existing_work_item]
 = Working with an Existing Work Item
-//redo this, stopped here
-Use the Planner in the *Plan* tab to track your Work Items and Iterations using either the list view or the board view. The *Plan* tab is split into two panes:
 
-* The left pane displays the *Backlog* and *Board* views of Iterations and Work Items. For more information see <<about_iterations,About Iterations>>.
-* The right pane displays the Work Items within the selected Iteration or the backlog.
+Click btn:[Plan] at the top of the page to view the Planner.
 
-You can plan and track your Work Items in the right pane using either the hierarchical or flat list view of Work Items on the menu:Plan[Backlog] subtab or the Kanban-based board view on the menu:Plan[Board] subtab.
+The *Backlog* view is the default view in the Planner and it displays all the Iterations included in the space. Iterations are sorted into one of the following categories:
 
-The *Plan* tab enables you to modify the attributes of a Work Item, associate them with Iterations, order and monitor their progress and filter them as per your requirements.
+* *Current Iteration* lists the currently started Iteration. Note that setting a new Iteration's start date to the current date does not start the Iteration. Instead, users must click the options (image:kabob.png[title="More"]) icon for an Iteration and then select *Start* from the menu options to start the Iteration.
+* *Past Iterations* are Iterations that have ended.
+* *Future Iterations* are Iterations that have not been started yet. This category can be used to plan Iterations for the future.
 
+The *Board* view shows a Kanban-based view of the selected Iteration's Work Items. Work Items are categorized based on their current status, such as *new* for newly created Work Items, *open* for scoped Work Items, *in progress* for Work Items currently in development, *resolved* for completed Work Items, and *closed* for Work Items that are completed and verified.
+
+Use these views in the *Plan* tab to modify Work Items and Iterations, assign Work Items to Iterations, and organize and monitor Work Items during their life cycle.
 
 [#modifying_an_existing_work_item]
 == Modifying an Existing Work Item
 
-You can modify an existing Work Item after it has been created by clicking on an existing Work Item in the list or board view.
+To modify an existing Work Item, select it in the *Backlog* or *Board* view of the Planner.
 
-Alternatively, click the menu adjoining the Work Item and select *Open* from the displayed options. The detailed Work Item panel is displayed.
+Alternatively, click the options (image:kabob.png[title="More"]) icon for the relevant Work Item and select *Open* from the displayed options. Make the required changes to the Work Item details and then save with the check button.
 
-The following attributes of a Work Item can be modified:
-
-* Status
-* Owner
-* Area
-* Iteration
-* Description
-* Relations with other Work Items
-* Comments
-
-+
-See <<using_the_detailed_method>> for more information on modifying the above attributes.
-
+See <<using_the_detailed_method>> for more information on modifying Work Item attributes.
 
 [#associating_work_items_with_an_iteration]
 == Associating Work Items with an Iteration
 
 To associate a Work Item with an Iteration:
 
-. Click the menu adjoining the Work Item and select *Associate with Iteration* from the displayed options. The *Associate with Iteration* dialog box is displayed.
+. Click btn:[Plan] to view the Planner view.
 
-. From the *Select iteration* drop-down list, select the Iteration you want to associate your Work Item with and click the btn:[Reassociate] button.
+. In the menu:Plan[Backlog] view, click the options (image:kabob.png[title="More"]) icon for the target Work Item and select *Associate with Iteration...* from the displayed options.
 
-Selecting a particular Iteration on the left pane will display Work Items associated with that Iteration.
+. From the displayed drop-down list, select the Iteration you want to associate your Work Item with and click btn:[Reassociate].
 
-To move Work Items to the *Backlog*, click the menu adjoining the Work Item and select *Move to Backlog* from the displayed options. You can select *Backlog* to display all the Work Items within a Space.
-
+Alternatively, to move Work Items to the *Backlog*, click the options (image:kabob.png[title="More"]) icon for the Work Item and select *Move to Backlog* from the displayed options.
 
 [#ordering_and_monitoring_work_items]
 == Ordering and Monitoring Work Items
 
-The *Backlog* subtab provides a list view enabling you to plan your work by ordering the Work Items based on their priority, status, and other such parameters.
+The Planner's *Backlog* option displays a list view of the Work Items. Use this view to plan and organize your work by ordering the Work Items based on the status or priority.
 
-The *Backlog* subtab can display the list of Work Items as:
+The *Backlog* option can display the list of Work Items in one of two ways:
 
-* A *Hierarchy*, or in a tree-view format where child Work Items are displayed only when you expand the parent Work Item or
+* A *Hierarchy*, which is a tree-view format where child Work Items are displayed when you expand the parent Work Item.
 
-* A *Flat* list, where all the Work Items are displayed in a single file.
+* A *Flat* list, where all the Work Items display in a single list.
 
 You can order the Work Items in the list based on your requirement as follows:
 
-* In the menu:Plan[Backlog] subtab, select and drag & drop a Work Item based on the required order. Alternatively, select *Move to Top* or *Move to Bottom* from the Work Item menu.
+* In the menu:Plan[Backlog] view, select a Work Item and then drag and drop it in the required order. Alternatively, click the options (image:kabob.png[title="More"]) icon and then select *Move to Top* or *Move to Bottom*  to quickly move a Work Item to the top or bottom of the backlog.
 
-The *Board* subtab provides a visual representation of the progress status of your Work Items. Based on their status, the Work Items are sorted into swim-lanes  as *new*, *open*, *in progress*, *resolved*, and *closed*. This enables you to track the status of the Work Item from its start to its completion.
-
-You can order the Work Items in the board based on the status of the Work Item as follows:
-
-* In the menu:Plan[Board] subtab, select and drag & drop a Work Item to the relevant swim-lane based on the progress of the Work Item.
-
+The menu:Plan[Board] view displays a visual representation of the progress status of your Work Items. Based on their status, the Work Items are sorted into swim-lanes  as *new*, *open*, *in progress*, *resolved*, or *closed*. Use this view to view or change your Work Item status by dragging and dropping each Work Item from one swim-lane to another as required.
 
 [#filtering_work_items]
 == Filtering Work Items
 
-In the *Backlog* subtab, you can filter Work Items on the basis of *Assignee*, *Area*, or *Work Item Type*.
+The menu:Plan[Backlog] view can filter Work Items to display more relevant results. Use the *Select* drop-down menu to filter and display relevant Work Items by filtering based on:
 
-* In the menu:Plan[Backlog] subtab, use the *Select* drop-down to filter and display relevant Work Items.
-+
+* *Assignee*: Select an assignee from the *Filter by assignee* drop-down list to display Work Items assigned to a particular user.
 
-You can filter Work Items by:
-+
+* *Area*: Select an area from the *Filter by area* drop-down list to display Work Items belonging to a particular Area.
 
-** *Assignee*: Select an assignee from the *Filter by assignee* drop-down list to display Work Items assigned to a particular user.
+* *Workitem Type*: Select a Work Item Type from the *Filter by workitemtype* drop-down list to display Work Items belonging to a particular Work Item Type.
 
-** *Area*: Select an area from the *Filter by area* drop-down list to display Work Items belonging to a particular Area.
+Similarly, you can filter Work Items in the menu:Plan[Board] view based on *Assignee* or *Area* using the *Select* drop-down list.
 
-** *Workitem Type*: Select a Work Item Type from the *Filter by workitemtype* drop-down list to display Work Items belonging to a particular Work Item Type.
-
-In the *Board* subtab you can filter Work Items similarly on the basis of *Assignee* or *Area* by using the *Select* drop-down list.
-
-The *Board* view gives you the option to select a required Work Item Type in the *Currently showing* drop-down list to display Work Items relevant to that particular Work Item Type.
+Use the menu:Plan[Board] view to select a required Work Item Type in the *Currently showing* drop-down list to view Work Items for a specific Work Item Type.
