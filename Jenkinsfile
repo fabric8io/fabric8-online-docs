@@ -1,5 +1,5 @@
 #!/usr/bin/groovy
-@Library('github.com/rawlingsj/fabric8-pipeline-library@master')
+@Library('github.com/fabric8io/fabric8-pipeline-library@master')
 def flow = new io.fabric8.Fabric8Commands()
 def utils = new io.fabric8.Utils()
 def baseImageVerion = 'v27ab2ac'
@@ -7,58 +7,60 @@ def snapshot = false
 def imageName
 dockerTemplate{
     clientsNode{
-        checkout scm
-        if (utils.isCI()){
-            echo 'Running CI pipeline'
-            imageName = "fabric8/fabric8-online-docs:SNAPSHOT-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
+        ws{
+            checkout scm
+            if (utils.isCI()){
+                echo 'Running CI pipeline'
+                imageName = "fabric8/fabric8-online-docs:SNAPSHOT-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
 
-            dir('user_guide'){
-                container('clients') {
-                    stage ('build docs'){
-                        sh 'asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc'
+                dir('user_guide'){
+                    container('clients') {
+                        stage ('build docs'){
+                            sh 'asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc'
+                        }
+                    }
+                    container('docker') {
+                        stage ('build image'){
+                            sh "docker build -t ${imageName} ."    
+                        }
+                        stage ('push to dockerhub'){
+                            sh "docker push ${imageName}"    
+                        }
                     }
                 }
-                container('docker') {
-                    stage ('build image'){
-                        sh "docker build -t ${imageName} ."    
+
+                snapshot = true
+
+            } else if (utils.isCD()){
+
+                echo 'Running CD pipeline'
+                def newVersion = getNewVersion {}
+                imageName = "fabric8/fabric8-online-docs:${newVersion}"
+                dir('user_guide'){
+                    container('clients') {
+                        stage ('build docs'){
+                            sh 'asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc'
+                        }
                     }
-                    stage ('push to dockerhub'){
-                        sh "docker push ${imageName}"    
+                    container('docker') {
+                        stage ('build image'){
+                            sh "docker build -t fabric8/fabric8-online-docs:${newVersion} ."    
+                        }
+                        stage ('push to dockerhub'){
+                            sh "docker push fabric8/fabric8-online-docs:${newVersion}"    
+                        }
                     }
                 }
-            }
 
-            snapshot = true
-
-        } else if (utils.isCD()){
-
-            echo 'Running CD pipeline'
-            def newVersion = getNewVersion {}
-            imageName = "fabric8/fabric8-online-docs:${newVersion}"
-            dir('user_guide'){
-                container('clients') {
-                    stage ('build docs'){
-                        sh 'asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc'
-                    }
+                pushPomPropertyChangePR {
+                    propertyName = 'fabric8-online-docs.version'
+                    projects = [
+                            'fabric8-apps/fabric8-online-docs-app'
+                    ]
+                    version = newVersion
+                    autoMerge = true
+                    containerName = 'clients'
                 }
-                container('docker') {
-                    stage ('build image'){
-                        sh "docker build -t fabric8/fabric8-online-docs:${newVersion} ."    
-                    }
-                    stage ('push to dockerhub'){
-                        sh "docker push fabric8/fabric8-online-docs:${newVersion}"    
-                    }
-                }
-            }
-
-            pushPomPropertyChangePR {
-                propertyName = 'fabric8-online-docs.version'
-                projects = [
-                        'fabric8-apps/fabric8-online-docs-app'
-                ]
-                version = newVersion
-                autoMerge = true
-                containerName = 'clients'
             }
         }
     }
