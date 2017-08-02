@@ -51,6 +51,16 @@ dockerTemplate{
                         }
                     }
                 }
+
+                pushPomPropertyChangePR {
+                    propertyName = 'fabric8-online-docs.version'
+                    projects = [
+                            'fabric8-apps/fabric8-online-docs-app'
+                    ]
+                    version = newVersion
+                    autoMerge = true
+                    containerName = 'clients'
+                }
             }
         }
     }
