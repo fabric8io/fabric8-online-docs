@@ -66,14 +66,13 @@ image::tenant_status_error.png[Tenant Status Error]
 [[hw_devops]]
 == Hello World for Developers
 
-. <<create_space>>
-. <<create_quickstart>>
+. <<create_space_proj>>
 . <<pipelines>>
 . <<view_proj_gh>>
 . <<view_pipelines_oso>>
 . <<approve_rollout>>
 . <<using_wi>>
-. <<edit_project_che>>
+. <<prereq_che>>
 . <<change_code>>
 . <<test_terminal>>
 . <<commit_changes>>
@@ -82,8 +81,8 @@ image::tenant_status_error.png[Tenant Status Error]
 . <<setup_debugger>>
 . <<opt_mem>>
 
-[[create_space]]
-=== Create a New Space
+[[create_space_proj]]
+=== Create a New Space and Quickstart Project
 
 In {osio}, the first step for any new project is to create a new Space. Users will be assigned to specific Spaces and all the work done will be in the context of the Space. Each Space must have a unique name.
 
@@ -149,7 +148,7 @@ For this create_wiexample, it is sufficient to view the details of the file and 
 To view the OpenShift Online projects that support your project's pipeline, navigate to
 https://console.starter-us-east-2.openshift.com/. This page displays the following projects/namespaces that are created in OpenShift Online:
 
-* The *username* project is where your pipelines run. This project's name is your OpenShift Online username.
+* The *username* project is where your pipelines run. This project's name is your OpenShift Online user name.
 * The *username-che* project is for your Che Host and workspaces.
 * The *username-jenkins* project is used for your Jenkins Master or your Jenkins Slaves. Use the `Monitoring` tab after clicking this project to access your Jenkins console.
 * The *username-stage* project is for your own use. In this project, pods are displayed as pipelines that have been run. For maintenance, you can click this project and power down unnecessary pods if required.
@@ -181,7 +180,7 @@ Create a Work Item that tracks changing a string in a Quickstart project. Use th
 . Click btn:[Profile] in the displayed options.
 . Click btn:[Update Profile].
 . In the `Experimental Features` part of the page, read the disclaimer and check the `I agree to the terms above and would like to opt into experimental features` option and then click btn:[Update] to use {osio}'s experimental features.
-. Click your username on the top left side of the page.
+. Click your user name on the top left side of the page.
 . Click the name of your new Space from the displayed options to return to that Space's dashboard view.
 . Click btn:[Plan] to see the Planner view for your Space.  If experimental features have been enabled, the Planner view includes a green banner with the following message: `This feature is experimental. You can manage experimental features on your profile page. Got it!`
 . Click `Create Work Item` at the bottom of the screen to use the fastest way to create a new Work Item.
@@ -212,8 +211,8 @@ When loaded and ready to use, the new Che workspace tab includes your new projec
 
 image::proj_gh.png[Your GitHub Project in Che]
 
-[[edit_project_che]]
-=== Editing a Project in the Che Workspace
+[[prereq_che]]
+=== Prerequisites for Using Your Che Workspace
 
 Before using the Che workspace, ensure that the following prerequisites are met:
 
@@ -446,7 +445,7 @@ image::mem_commit.png[Commit Changes]
 After adding a memory constraint for your project, you can monitor your OpenShift Online account's quota usage using the OpenShift CLI (oc) tool:
 
 . Navigate to the following link in your browser to view your OpenShift Console: https://console.starter-us-east-2.openshift.com/console/
-. Click the *?* icon next to your username in the top right side of the console.
+. Click the *?* icon next to your user name in the top right side of the console.
 . From the menu options, click `Command Line Tools`.
 . Use the download links from the `Command Line Tools` page for your operating system and install oc tools.
 . In your computer's terminal (not the `Terminal` tab for your workspace), run the following command:
@@ -618,8 +617,82 @@ After making the required changes and additions, commit and push the changes to 
 Your changes are now pushed to the project's repository.
 
 [[cleanup_sb]]
-=== Cleaning Up
+== Clearing Up Your OpenShift Online Account
+
+{osio} generates a number of artifacts across five projects (Kubernetes namespaces) in OpenShift Online. These artifacts use a significant amount of the limited resources available with OpenShift Online's Free Tier. Clear your accounts with the following steps:
+
+. *Delete your {osio} spaces*:
+.. In your {osio} home page, click your name in the top right part of the page.
+.. Click `Profile` from the displayed options.
+.. In the `Profile` page, click the `Spaces` tab.
+.. Click btn:[Delete] and then btn:[Remove] to delete each of the listed spaces.
++
+IMPORTANT: Deleting the spaces does not remove the GitHub repositories created for each of these spaces.
+
++
+. *Reset your {osio} environment*:
+.. In your `Profile` page, click btn:[Update Profile].
+.. Click btn:[Reset Environment]. A warning page appears with a summary of your {osio} account.
+.. Click btn:[Erase my {osio} Environment].
+.. In the dialog box, add your {osio} user name and click btn:[I understand my actions - erase my environment].
+.. After the environment is successfully erased, click the check mark icon in the top right side of the page to see the `Jenkins` and `Che` status.
++
+image::status_success.png[Che and Jenkins Successfully Restored]
++
+. *(Optional) Delete your project's Gitub repositories*: Your {osio} projects automatically create new GitHub repositories. These repositories are not removed when you reset your environment. This step is recommended if you will use these instructions again to create projects with the same names. To manually remove these repositories:
+.. Navigate to your GitHub page and view your repositories. Replace *username* with your GitHub username in the following URL as a shortcut to the repositories page: https://github.com/username?tab=repositories
+. Click the names of repositories created by your {osio} projects and are no longer required.
+. Click `Settings` to view the settings for the repository.
+. Scroll to the bottom of the settings and click btn:[Delete this repository].
+. In the dialog box, type the name of the repository and click btn:[I understand the consequences, delete this repository].
+
+When these steps are successful, your {osio} and and OpenShift Online accounts are cleared.
 
 == Importing an Existing Project from GitHub
+
+As an alternative to creating a new quickstart project, you can add an existing project in GitHub to {osio} as follows:
+
+. <<fork_repo>>
+. <<imp_project>>
+. <<import_ws>>
+. <<>>
+
+
+[[fork_repo]]
+=== Forking a Repository
+
+Create your own fork for one of the following example repositories:
+
+* https://github.com/burrsutter/vertx-eventbus
+* https://github.com/burrsutter/vertx-paint
+* https://github.com/burrsutter/vertx-wiki2
+
+NOTE: OpenShift Online's Free Tier only includes two pods and each project uses one pod. You can choose to import all three project but importing all three simultaneously causes delays of 12-15 minutes in the import processes.
+
+[[imp_project]]
+=== Creating a Space and Import Your Project
+
+. In {osio}, click the *+* icon in the spaces view to create a new space called *myspace*.
+. After the space is created, click `Import existing code` in the welcome dialog.
+. Select an `Organization` from the drop down options. The default (and recommended for this tutorial) option is your personal github account's name.
+. Click btn:[Next].
+. Select the forked `vertx-eventbus` repository from the options listed and click btn:[Finish].
+. Click btn:[OK] at the success screen.
+
+[[create_che_workspace]]
+==== Creating a Che Workspace
+// This content is repeated here.
+Add module from before here.
+
+[[prereq_che]]
+=== Prerequisites for Using Your Che Workspace
+// Repeated content again, Reuse module.
+
+
+
+
+
+
+
 
 == Troubleshooting Common Issues
