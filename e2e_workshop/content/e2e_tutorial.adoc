@@ -250,6 +250,7 @@ At the end of these steps, you are viewing and interacting with a private sandbo
 
 You can change your project's code and preview the results as follows:
 
+. In the `Project Explorer` view, double-click the following directories to expand them: `src` > `main` > `Java` > `io.openshift.booster`.
 . In your project's `HttpApplication.java` file, find the following line:
 +
 ```java
@@ -263,7 +264,13 @@ protected static final String template = "Bonjour, %s!";
 ```
 +
 . Save the changes (kbd:[Ctrl+s] or kbd:[Cmd+s] for macOS).
-. Click the `run` option from the Run button (image:tri_run.png[title="Run button"]). A che_debug about using the terminal view within the Che workspace:
+. Click the `run` option from the Run button (image:tri_run.png[title="Run button"]). The following message appears when the run process completes:
++
+```
+[INFO] INFO: Succeeded in deploying verticle
+```
+. Click the blue preview URL at the top of the `run` view to view your project.
+. Enter your name in the text box and click btn:[Invoke] to test the application.
 +
 [IMPORTANT]
 ====
@@ -654,8 +661,9 @@ As an alternative to creating a new quickstart project, you can add an existing 
 
 . <<fork_repo>>
 . <<imp_project>>
-. <<import_ws>>
-. <<>>
+. <<create_che_workspace>>
+. <<prereq_che>>
+. <<change_code>>
 
 
 [[fork_repo]]
@@ -688,6 +696,84 @@ Add module from before here.
 === Prerequisites for Using Your Che Workspace
 // Repeated content again, Reuse module.
 
+
+
+
+[[change_code]]
+=== Changing the Quickstart's Code
+
+You can change your project's code and preview the results as follows:
+
+. In the `Project Explorer` view, double-click the following directories to expand them: `src` > `main` > `Java` > `io.openshift.booster`.
+. In your project's `HttpApplication.java` file, find the following line:
++
+```java
+  protected static final String template = "Aloha !!, %s!";
+```
++
+. Add more exclamation marks. The line should now be:
++
+```java
+  protected static final String template = "Aloha !!!!!, %s!";
+```
++
+NOTE: The code includes a new route for *eventbus* and its supporting method. These set up *eventbus* to allow outbound-only communications for the *my-feed* channel.  Any messages arriving in the *my-feed* channel are pushed to the browser using this SockJS bridge. This project includes a `vertx-eventbus.js` file along with the `index.html` file and also includes tweaks to the `index.html`.
+
++
+. Save the changes (kbd:[Ctrl+s] or kbd:[Cmd+s] for macOS).
+. Click the `run` option from the Run button (image:tri_run.png[title="Run button"]). The following message appears when the run process completes:
++
+```
+[INFO] INFO: Succeeded in deploying verticle
+```
+. Click the blue preview URL at the top of the `run` view to view your project.
+. Enter your name in the text box and click btn:[Invoke] to test the application.
+
+[[commit]]
+=== Commit Your Changes
+
+[IMPORTANT]
+====
+Before attempting to commit your changes, ensure that your project's pipeline build in {osio} has successfully completed. If this is at the approval stage, click btn:[Promote] to promote the build from `Stage` to `Run`. When complete, the pipeline build in {osio} appears as follows:
+
+image::pipeline_success.png[Successful Pipeline Build]
+====
+
+. In your project's Che workspace, click `Git` from the options at the top of the screen.
+. Click `Commit` from the Git options.
+. In the `Commit to repository` dialog:
+.. Ensure that all changed files are selected.
+.. Add a commit message. For this example, use *Changed greeting to Bonjour*.
+.. Select the `Push commit changes to: origin/master` option.
+.. Click btn:[Commit].
++
+image:commit_dialog.png[Commit Dialog]
++
+When successful, a message appears to confirm the push to the GitHub repository.
+. Alternatively, you can push your commit to a remote repository:
+.. Click `Git` from the menu.
+.. From the Git options, select `Remote` and then `Push`.
+.. In the dialog box, select the appropriate remote repository and then click btn:[Push]. A message appears when the push is successful.
+. After pushing your changes, navigate to your project's GitHub repository to view changes.
++
+====
+NOTE: If needed, find the link for your project's GitHub repository as follows:
+
+. Return to the {osio} tab in your browser.
+
+. Click `Create` and then the `Codebases` option.
+
+. From the list of codebases for your space, click the name of your current project. The GitHub repository for the project appears in a new tab.
+====
++
+. In the GitHub repository page, click `Commits` to view all commits for your project and confirm that your recent changes are committed.
+. Return to the {osio} pipeline view. Your project has a new pipeline build in progress, which includes your new commit. When required, click `Input required` and then click btn:[Promote] to promote your build. You can also monitor the build's progress in your OpenShift Online account:
+.. Navigate to https://manage.openshift.com/ in a new browser tab and log into your account.
+.. Click btn:[OpenShift Console] to view the console.
+.. From the list of projects, click the *username-jenkins* option.
+.. Click `Builds` and then `Builds` again in the menu options. Your project's new build is listed here and you can use this console to monitor its progress.
+
+TODO with modules
 
 
 
