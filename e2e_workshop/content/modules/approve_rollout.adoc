@@ -1,0 +1,17 @@
+[#approve_rollout]
+= Approving the Rollout to Run
+
+After returning to the {osio} tab in your browser, the running build pipeline should now be ready for your review.
+
+. Return to your {osio} Space's dashboard view.
+. Click btn:[Create] from the options at the top of the screen.
+. In the `Create` view, click the btn:[Pipelines] subtab. The subsequent pipeline view allows access to the staged Quickstart project using its public URL through OpenShift.
+. Click the icon next to the `Rollout to Stage` step in the displayed pipeline. This displays your staged project.
+. Add a name to the `Name` text box in the staged project to confirm that the project works as expected.
+. Return to the {osio} tab with the `Pipeline` view displayed.
+. Click *Input Required* at the `Approve` stage of the pipeline.
++
+image::input_req.png[Input Required]
++
+. In the dialog box, click btn:[Promote] to promote the build from the public URL for *Stage* to the public URL for the *Run* namespace. The rollout process from *Stage* to *Run* requires several minutes. You can view the detailed progress in the OpenShift Online console view.
+. When the `Pipeline` view shows that the project is successfully promoted to the *Run* namespace, click the icon next to `Rollout to Run` to view the project in a new tab.

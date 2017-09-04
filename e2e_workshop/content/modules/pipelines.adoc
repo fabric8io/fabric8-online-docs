@@ -1,0 +1,10 @@
+[#pipelines]
+= Working With Pipelines
+
+A new build/pipeline execution initiates immediately after a new Quickstart project is created. It pushes version 1.0.1 of your new project into *Stage*, awaiting approval, and then *Run*. Out of this build pipeline, *Stage* and *Run* are OpenShift projects.
+
+image::pipeline_running.png[A Running Pipeline Build]
+
+Optionally, click `Build #1` to view the build pipeline in OpenShift Online. After logging in to your OpenShift Online account, click *View Log* to view the Jenkins instance's logs.
+
+image::oso_pipeline.png[A Running Pipeline Build in OpenShift Online]

@@ -1,0 +1,10 @@
+[#fork_repo]
+= Forking a Repository
+
+Create your own fork for one of the following example repositories:
+
+* https://github.com/burrsutter/vertx-eventbus
+* https://github.com/burrsutter/vertx-paint
+* https://github.com/burrsutter/vertx-wiki2
+
+NOTE: OpenShift Online's Free Tier only includes two pods and each project uses one pod. You can choose to import all three project but importing all three simultaneously causes delays of 12-15 minutes in the import processes.

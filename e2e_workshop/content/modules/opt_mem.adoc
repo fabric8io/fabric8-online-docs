@@ -1,0 +1,68 @@
+[#opt_mem]
+= Reduce the Hello World Project's Memory Usage
+
+You can reconfigure your new quickstart to use less memory. This is particularly important using OpenShift Online's Free Tier because there are limits to the memory available with this level.
+
+. In the Che workspace, navigate to the following folders for your project: `src` &#62; `main` &#62; `fabric8`.
+. Right-click the `fabric8` folder icon and click `New` and `File` from the options.
+. Name the new file *deployment.tml* and click btn:[OK]. The new file is created and displayed in the editor.
+. Copy the contents of this yaml file to your new yaml file: https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml]. In yaml files, spaces are important. Copying the contents from a file preserves the required spaces.
+. Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.
+. Click `Git` in the menu on top of the page and then select `Commit`.
+. In the dialog box:
+.. Ensure that both files changed are selected to be included in the commit.
+.. Add a commit message.
+.. Ensure that the `Push committed changes to origin/master` option is selected.
+.. Click btn:[Commit] to push the commit.
++
+image::mem_commit.png[Commit Changes]
+
+After adding a memory constraint for your project, you can monitor your OpenShift Online account's quota usage using the OpenShift CLI (oc) tool:
+
+. Navigate to the following link in your browser to view your OpenShift Console: https://console.starter-us-east-2.openshift.com/console/
+. Click the *?* icon next to your user name in the top right side of the console.
+. From the menu options, click `Command Line Tools`.
+. Use the download links from the `Command Line Tools` page for your operating system and install oc tools.
+. In your computer's terminal (not the `Terminal` tab for your workspace), run the following command:
++
+```cli
+oc login https://console.starter-us-east-2.openshift.com/
+```
++
+. Use the following command during and after the new pod is used in OpenShift to monitor the quota usage:
++
+```cli
+oc get quota compute-resources -o yaml -n <username>-stage
+```
++
+The output for the command displays as follows:
++
+```cli
+status:
+  hard:
+    limits.cpu: "2"
+    limits.memory: 1Gi
+  used:
+    limits.cpu: "1"
+    limits.memory: 512Mi
+```
++
+. After you commit and push your new yaml file, a new pipeline build is triggered. When the pipeline build is rolled out to Stage, execute the following command again to see the change in memory usage:
++
+```cli
+oc get quota compute-resources -o yaml -n <username>-stage
+```
++
+The output for the command displays as follows:
++
+```cli
+status:
+  hard:
+    limits.cpu: "2"
+    limits.memory: 1Gi
+  used:
+    limits.cpu: 488m
+    limits.memory: 250Mi
+```
+
+Limiting the memory usage is particularly important when creating an additional quickstart project, which has its own pipeline and uses your OpenShift Online resources.

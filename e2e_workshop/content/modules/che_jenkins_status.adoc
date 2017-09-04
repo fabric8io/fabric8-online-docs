@@ -1,0 +1,21 @@
+[#che_jenkins_status]
+= Confirm Che and Jenkins Status
+
+After connecting your OpenShift Online account to {osio}, allow several minutes for for the Che and Jenkins tenant services to be provisioned for your account. Ensure that all these services are ready before using {osio} for the first time.
+
+. To check the status, click the check mark at the top right side of your {osio} page, next to your name. If all services are ready (see screen capture), you are ready to use {osio}.
++
+image::tenant_status.png[Tenant Status]
++
+. Confirm that the version numbers displayed for Che and Jenkins are the most recent versions:
+.. Confirm the latest Che version using https://github.com/fabric8-services/fabric8-tenant/blob/master/TEAM_VERSION[the {osio} GitHub repository].
+.. Confirm the latest version of Jenkins by asking in the support channel (`#openshiftio` on MatterMost). See <<support>> for details.
+
+. To update your Che and Jenkins versions:
+.. In your {osio} home page, click your name on the top right corner of the screen.
+.. In the drop down options, click *Profile*.
+.. In the profile page, click *Update Profile*.
+.. In the profile edit page, scroll to the bottom of the page and click *Update tenant*. This initiates an update in your OpenShift Online account.
+.. Allow approximately five minutes for the version numbers in the status display to refresh. Yellow triangle icons (see screen capture) appear while tenant updates Che and Jenkins. When the update is complete, the green check marks and version numbers display.
++
+image::tenant_status_error.png[Tenant Status Error]

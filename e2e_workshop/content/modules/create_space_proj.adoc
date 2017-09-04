@@ -1,0 +1,35 @@
+[#create_space_proj]
+= Creating a New Space and Quickstart Project
+
+In {osio}, the first step for any new project is to create a new Space. Users will be assigned to specific Spaces and all the work done will be in the context of the Space. Each Space must have a unique name.
+
+. In the {osio} home page, click *Create a space* to create a new space.
+. In the dialog box, add a unique name for your space.
+. Use the drop-down menu for the `Templates` field to select a template for your new Space. For this example, select *Scenario Driven Planning* and click btn:[Create].
+test_terminal double-click the name of the relevant Space from the list under `Recent spaces`.
+. In the resulting `Analyze` screen for the Space, click btn:[Add to space] in the top right corner to view the `How would you like to get started?` menu.
+
+image::get_started_menu.png[How would you like to get started menu]
+
+The `How would you like to get started?` menu automatically displays after you create a new Space. To create a new Quickstart create_wiproject:
+
+. Click btn:[Create a new Quickstart project].
+
+. In the `Forge Wizard`:
+.. Click the `Technology Stack` drop-down menu to select the appropriate project type. For this example, use the default value for this field: `Vert.x - Basic`.
+.. In the `Name` field, add a unique name for your project.
+.. In the `Top Level Package` field, change the value to *com.redhat*.
+.. Leave the default value for the `Version` field and click btn:[Next].
+
+. Select a build pipeline strategy. Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the proper execution environment. For this example, use the default value (`Release, Stage, Approve and Promote`) and click btn:[Next].
+
+. In the `GitHub repository` step of the wizard:
+.. The `Organization` field includes a drop-down list of your organizations. For this example, use the default value, which would be the organization name assigned to your personal GitHub account.
+.. Use the default value for the `GitHub repository name` field and leave the `Description` field blank.
+.. Click btn:[Next].
+
+. The `Build configuration` screen displays the details for your `Jenkins Space` and options for web hooks and triggering builds. Use the default options for these fields and click btn:[Finish].
+test_terminal
+You have now created a Quickstart project for your Space. {osio} has added your project's pipeline into your OpenShift Online account and created a new GitHub repository for your project.
+
+A confirmation screen appears, which includes a clickable `Git repositories` link that can be used to view your new project's GitHub repository.

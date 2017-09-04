@@ -1,0 +1,13 @@
+[#commit_sb]
+= Commit Changes to the Spring Boot Repository
+
+After making the required changes and additions, commit and push the changes to your project's GitHub repository:
+
+. Click `Git` from the menu at the top of the screen.
+. Select `Commit` from the displayed Git options.
+. In the commit dialog box:
+.. Ensure that both the changed and new files are selected.
+.. Add a commit message for your changes.
+.. Click btn:[Commit].
+
+Your changes are now pushed to the project's repository.
