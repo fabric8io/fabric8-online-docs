@@ -1,16 +1,15 @@
 [#cleanup_sb]
 = Clearing Up Your OpenShift Online Account
 
-{osio} generates a number of artifacts across five projects (Kubernetes namespaces) in OpenShift Online. These artifacts use a significant amount of the limited resources available with OpenShift Online's Free Tier. Clear your accounts with the following steps:
+{osio} generates artifacts within five projects (Kubernetes namespaces) in OpenShift Online. These artifacts use a significant amount of the limited resources available with OpenShift Online's Free Tier. Reset your {osio} and Openshift Online account resources as follows:
 
 . *Delete your {osio} spaces*:
-.. In your {osio} home page, click your name in the top right part of the page.
-.. Click `Profile` from the displayed options.
-.. In the `Profile` page, click the `Spaces` tab.
-.. Click btn:[Delete] and then btn:[Remove] to delete each of the listed spaces.
+.. In the {osio} home page, click your name in the top right part of the page.
+.. Click btn:[Profile] from the displayed options.
+.. In the `Profile` page, click `Spaces`.
+.. Click btn:[Delete] and then btn:[Remove] for each of the listed spaces.
 +
-IMPORTANT: Deleting the spaces does not remove the GitHub repositories created for each of these spaces.
-
+NOTE: Deleting the spaces does not remove the GitHub repositories created for each of these spaces.
 +
 . *Reset your {osio} environment*:
 .. In your `Profile` page, click btn:[Update Profile].
@@ -20,12 +19,5 @@ IMPORTANT: Deleting the spaces does not remove the GitHub repositories created f
 .. After the environment is successfully erased, click the check mark icon in the top right side of the page to see the `Jenkins` and `Che` status.
 +
 image::status_success.png[Che and Jenkins Successfully Restored]
-+
-. *(Optional) Delete your project's Gitub repositories*: Your {osio} projects automatically create new GitHub repositories. These repositories are not removed when you reset your environment. This step is recommended if you will use these instructions again to create projects with the same names. To manually remove these repositories:
-.. Navigate to your GitHub page and view your repositories. Replace *username* with your GitHub user name in the following URL as a shortcut to the repositories page: https://github.com/username?tab=repositories
-. Click the names of repositories created by your {osio} projects and are no longer required.
-. Click `Settings` to view the settings for the repository.
-. Scroll to the bottom of the settings and click btn:[Delete this repository].
-. In the dialog box, type the name of the repository and click btn:[I understand the consequences, delete this repository].
 
-When these steps are successful, your {osio} and and OpenShift Online accounts are cleared.
+After successfully completing these steps, your {osio} and OpenShift Online account resources are reset and ready for use with a new project.

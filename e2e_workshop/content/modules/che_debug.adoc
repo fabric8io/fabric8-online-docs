@@ -3,9 +3,14 @@
 
 Return to your project's Che workspace tab to learn to debug your project.
 
-. In your `HttpApplication.java` file, type *router.* after line 22.
-. Use the kbd:[Ctrl+Space] shortcut to view the context-aware autocomplete options for this line.
-. From the options, select `get():Route`. This uses the Vert.x Router's get method.
+. In your `HttpApplication.java` file, add the following in a new line after line 22.
++
+```java
+router.
+```
++
+. Use the kbd:[Ctrl+Space] shortcut to view the context-aware options for this line.
+. Select `get():Route` from the options. This uses the Vert.x Router's Get method.
 . Edit the new line so that it includes the *goodbye* endpoint:
 +
 ```java
@@ -29,12 +34,12 @@ private void goodbye(RoutingContext rc) {
   }
 ```
 +
-. Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save these changes.
-. Click the `run` option from the Run button (image:tri_run.png[title="Run button"]) to deploy the changes. The following message appears in the `run` view when the deployment completes.
+. Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.
+. Click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process is successfully completed:
 +
-====
+```
 [INFO] INFO: Succeeded in deploying verticle
-====
+```
 +
 . Click `Terminal` and enter the following command to test the new endpoint:
 +
@@ -42,7 +47,7 @@ private void goodbye(RoutingContext rc) {
 curl localhost:8080/api/goodbye
 ```
 +
-If successful, the terminal view displays the following result:
+The following result appears if the changes were successful:
 +
 ```java
 {

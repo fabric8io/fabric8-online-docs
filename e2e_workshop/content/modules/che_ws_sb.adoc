@@ -1,21 +1,7 @@
 [#che_ws_sb]
 = Creating a Workspace for the Spring Boot Project
 
-Before creating a workspace for your new Spring Boot project, ensure that the workspace for your previous project (from the Hello World) has automatically stopped. You can review the workspace in your OpenShift Online account as follows:
-
-. In your space's dashboard, click btn:[Create]. The default codebases view appears.
-. Click btn:[Open] for the Hello World project's workspace. Allow several minutes for it to load the project.
-. You can stop the current workspace in one of two ways:
-.. Click the `Workspace` menu item and select `Stop` from the options to stop the current workspace.
-.. Alternatively, wiew workspace history and stop the workspace:
-... Click the *>* button next to the `Workspace` menu item on the left side of the workspace.
-+
-image::che_dash.png[Che Dashboard Link From Within a Workspace]
-+
-From the displayed list of all previously created workspaces, a green dot next to the name indicates if a workspace is not stopped.
-... For a running space, click the stop icon under `ACTIONS`. When your workspace is stopped, your OpenShift Online resources are reclaimed.
-
-After stopping any running workspaces, create a new workspace:
+Ensure that any running workspaces are stopped, then create a new workspace:
 
 . Return to the space dashboard in {osio}.
 . Click `Create` to view the `Codebases` page.
@@ -40,11 +26,12 @@ cd myspringboot
 mvn test
 ```
 +
-Wait for the `BUILD SUCCESS` message to appear in the terminal to confirm that the maven test succeeded before committing or pushing changes in your code to your GitHub repository.
+When the maven test succeeds, the `BUILD SUCCESS` message appears in the terminal view. You can only commit and push changes to your GitHub repository after the maven test succeeds.
 . In the `Project Explorer` view, double-click the `src` > `main` > `java` > `io.openshift.booster` > `service` folders.
 . Double-click the `GreetingController.java` file to view it in the editor.
-. Add a line break at line 38, then type *@* and then use kbd:[Ctrl+Space] to see a list of proposed additions.
-. From the list, select `RequestMapping` and then edit the code to look like the following:
+. Add a line break at line 38, then type *@* and then use kbd:[Ctrl+Space] to view a list of context-sensitive options.
+. From the list, select `RequestMapping`.
+. Edit the code to include the following code:
 +
 ```java
 @RequestMapping("/api/goodbye")
@@ -53,20 +40,21 @@ public String goodbye(@RequestParam(value="name", defaultValue="World") String n
 }
 ```
 +
-The resulting file appears as follows:
+The added code appears as follows:
 +
 image::bs_code_add.png[Code Added to Boot Spring Project]
 +
-. Save your changes using the kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) shortcut.
-. Click the `run` option from the Run button (image:tri_run.png[title="Run button"]). This sets up the Spring Boot server. Note that unlike Vert.x, the hot deploy option is not available for Spring Boot projects.
-. A run terminal appears at the bottom pane of the Che workspace. Let the *mvn build* download the required dependencies and finish executing. When complete, the `run` view displays the following message:
+. Save your changes using kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS).
+.
+. Click the `run` option (image:tri_run.png[title="Run button"]). This sets up the Spring Boot server. Unlike the Vert.x Quickstart project, the hot deploy option is not available for Spring Boot projects.
+. In the `run` terminal, the *mvn build* command runs and downloads the required dependencies. When complete, the `run` view displays the following message:
 +
 ```
 [INFO] INFO: Succeeded in deploying verticle
 ```
 +
 . Click the blue preview URL at the top of the `run` view to view your project.
-. Add the following text to the end of the preview URL in your browser:
+. Append the following string to the preview URL in your browser:
 +
 ```url
 /api/goodbye?name=Samwell%20Gamgee

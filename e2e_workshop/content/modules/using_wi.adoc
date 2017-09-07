@@ -1,6 +1,7 @@
 [#using_wi]
 = Using Work Items
-Create a Work Item that tracks changing a string in a Quickstart project. Use the Planner view to create a new Work Item for your Space as follows:
+
+Create a Work Item that tracks changing a string in a Quickstart project. Use the `Planner` view to create a new Work Item for your Space as follows:
 
 . Click your name on the top right side of the screen.
 . Click btn:[Profile] in the displayed options.
@@ -9,4 +10,4 @@ Create a Work Item that tracks changing a string in a Quickstart project. Use th
 . Click your user name on the top left side of the page.
 . Click the name of your new Space from the displayed options to return to that Space's dashboard view.
 . Click btn:[Plan] to see the Planner view for your Space.  If experimental features have been enabled, the Planner view includes a green banner with the following message: `This feature is experimental. You can manage experimental features on your profile page. Got it!`
-. Click `Create Work Item` at the bottom of the screen to use the fastest way to create a new Work Item.
+. Click `Create Work Item` at the bottom of the screen. This is the fastest option to create a new Work Item.

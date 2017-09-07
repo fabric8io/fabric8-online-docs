@@ -1,0 +1,20 @@
+[#stop_ws]
+= Stopping Existing Workspaces
+
+Before creating a workspace for your project, ensure that the workspace for your previous project is stopped. Each running workspace uses your OpenShift Online resources. As a result, older workspaces must be stopped before creating new workspaces.
+
+Review the workspace in your OpenShift Online account as follows:
+
+. In your Space's dashboard, click btn:[Create].
+. In the `Codebases` view, click btn:[Open] for the older project's workspace. Allow several minutes for the project to load.
+. Stop the current workspace in one of two ways:
+.. Click the `Workspace` and select `Stop` from the options.
+.. Alternatively, within the target workspace:
+... Click *>* next to the `Workspace` menu item on the left side of the workspace.
++
+image::che_dash.png[Che Dashboard Link From Within a Workspace]
++
+From the displayed list of all previously created workspaces, a green dot next to the name indicates if a workspace is not stopped.
+... For a running space, click the stop icon under `ACTIONS`.
+
+Your old workspace's resources are now reclaimed in your OpenShift Online account.

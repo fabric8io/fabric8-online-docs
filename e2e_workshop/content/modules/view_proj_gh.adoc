@@ -10,4 +10,4 @@ image::proj.gh.png[Project Code in GitHub]
 +
 . To view the details for the pipeline's staging and rollout, click *Jenkinsfile*.
 
-For this create_wiexample, it is sufficient to view the details of the file and see the details for the rollout and staging.
+For this example, view the details of the file and see the details for the rollout and staging.

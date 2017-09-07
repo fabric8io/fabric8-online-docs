@@ -1,7 +1,7 @@
 [#connect_os]
 = Connect {osio} to OpenShift Online and GitHub
 
-You will receive a welcome email when your request to join Red Hat's {osio} developer preview has been accepted. Use the following steps after you receive this email:
+You will receive a welcome email when your request to join Red Hat's {osio} Developer Preview is accepted. When you receive this email, use the following steps to set up {osio}:
 
 . Use Chrome's *Incognito mode* to navigate to https://openshift.io/
 . Log in using your Red Hat Developer (or other listed services) credentials.

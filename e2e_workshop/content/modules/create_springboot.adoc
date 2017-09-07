@@ -1,11 +1,11 @@
 [#create_springboot]
 = Creating a Spring Boot Quickstart Project
 
-. In your {isio} home page, select your new space.
+. In your {isio} home page, double-click your new space.
 . In your space's dashboard, click btn:[Add to space].
 . Select `Create a new Quickstart project`.
 . In the new project menu:
 .. Select `Spring Boot - Basic` from the `Technology Stack` options.
 .. Add the name *myspringboot* to the `Name` field.
-.. Click btn:[Finish]. The <<hw_dev>> instructions provide details about the remaining steps in the wizard, but for this tutorial the default values are sufficient.
+.. Click btn:[Finish]. See <<hw_dev.adoc#hw_dev>> for instructions for the remaining steps in this wizard. However, for this tutorial, use the default values or click btn:[Finish] to skip these steps.
 . When the project is created, click btn:[Ok] to continue.

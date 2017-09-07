@@ -3,14 +3,13 @@
 
 After setting up the Debugger, use the Debug command for your project:
 
-. From the menu at the top of the Che workspace, click `Run`.
+. Click `Run` from the menu options.
 . Select the `Debug` option and then the `Remote Java` option.
-. A message appears when the Remote debugger has successfully connected.
+. A message appears when the Remote debugger successfully connects.
 +
 image::success_remote.png[Successful Connection to Remote Debugger]
 +
 NOTE: If your Remote Debugger connection fails, restart your Chrome browser and use a new Incognito tab to try again.
-
 +
 . Click `Terminal` to view the terminal tab.
 . Run the following command to start debugging:
@@ -18,4 +17,4 @@ NOTE: If your Remote Debugger connection fails, restart your Chrome browser and 
 curl localhost:8080/api/goodbye
 ```
 
-You can now review various variables in the `Debug` tab. You can also use the `Resume`, `Step Into`, `Step Over`, and `Step Out` option as the Debugging continues.
+You can now review variables in the `Debug` tab. You can also use the `Resume`, `Step Into`, `Step Over`, and `Step Out` option during the debugging process.

@@ -1,7 +1,5 @@
 = OpenShift.io End to End Demo
 
-This document contains detailed information about setting up and using {osio}. New users should read the <<prereqs>> and <<set_up>> sections. More experienced users can skip to <<hw_dev>> to start using {osio}.
-
 [#before_you_start]
 = Before You Start
 
