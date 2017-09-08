@@ -1,0 +1,13 @@
+FROM centos:7
+
+MAINTAINER Vašek Pavlín <vasek@redhat.com>
+
+# Install asciidoctor
+RUN yum install -y rubygems libxml2 && \
+    gem install asciidoctor && \
+    yum clean all
+
+COPY user_guide/ user_guide/
+COPY common_content/ common_content
+
+WORKDIR user_guide
