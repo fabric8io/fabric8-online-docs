@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Template
 metadata:
-  name: fabric8-onlinde-docs
+  name: fabric8-online-docs
 objects:
 - apiVersion: v1
   kind: Service
@@ -98,7 +98,7 @@ objects:
           group: io.fabric8.apps
       spec:
         containers:
-        - image: push.registry.devshift.net/fabric8io/fabric8-online-docs:${IMAGE_TAG}
+        - image: registry.devshift.net/fabric8io/fabric8-online-docs:${IMAGE_TAG}
           livenessProbe:
             httpGet:
               path: /
