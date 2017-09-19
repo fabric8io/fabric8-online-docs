@@ -1,40 +1,16 @@
 [#configuring_pipelines]
 = Configuring Pipelines
 
-_Start title with a verb form in gerund, such as Creating._
+A new build/pipeline execution initiates immediately after a new project is created. In a build pipeline, *Stage* and *Run* are individual OpenShift projects. `Stage` is a production staging area to review and test changes before they are finalized and staged on `Run`.
 
-_A task module is a procedure written with numbered steps -- what a customer needs to do to accomplish a goal successfully._
+The new build pipeline pushes version 1.0.1 of your new project into *Stage* and then, after user approval, to *Run*.
 
-This paragraph explains why the user performs the task, sets the context of the task, and may explain or list specical considerations specific to this task. Keep the information brief and focused on what is needed for this specific task. Suggested length is 1 to 3 sentences, can be longer if needed.
+image::pipeline_running.png[A Running Pipeline Build]
 
-.Prerequisites
+Optionally, view the build pipeline's details in OpenShift Online:
 
-* Sentence or a bulleted list of pre-requisites that must be in place or done before the user starts this task.
+. In the `Pipeline` page, click `Build #1` for the build pipeline in progress.
+. When redirected, log into your OpenShift Online account.
+. Click *View Log* to view the Jenkins instance's logs.
 
-* Delete section title and bullets if the task has no required pre-requisites.
-
-* Text can be a link to a pre-requisite task that the user must do before starting this task.
-
-
-.Procedure
-
-_Put steps in a numbered list. The step sequence is important to a repeatable successful outcome._
-
-. Start each step with an active verb, because each step corresponds to one user action.
-
-. Include one command or action per step.
-
-. Format the step line as an unnumbered bullet if the procedure includes only 1 step (exception to numbering the steps).
-
-. Include one command or action per step.
-
-. Include one command or action per step.
-
-
-.Related Information
-
-* Bulleted list of links to concepts, reference, or other tasks closely related to this task.
-
-* Include only the most relevant items as links, not every possible related item.
-
-* Delete section title and bullets if no related information is needed.
+image::oso_pipeline.png[A Running Pipeline Build in OpenShift Online]
