@@ -1,15 +1,5 @@
 [#changing_existing_space.adoc]
-= Changing an Existing Space
-
-*TODO*
-
-Currently in {osio}, the following aspects of Collaboration Spaces can be changed after the Space is created:
-
-* Change owner of space (Not available yet)
-* Add users to space (Not available yet)
-* Delete an existing Space
-
-== Delete an Existing Space
+= Delete an Existing Space
 
 If an {osio} Space is no longer required, delete it using the following instructions:
 
