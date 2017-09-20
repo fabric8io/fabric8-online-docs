@@ -1,0 +1,10 @@
+[#view_pipelines_oso]
+= Viewing the Pipeline's Projects in OpenShift Online
+
+To view the OpenShift Online projects that support your project's pipeline, navigate to https://console.starter-us-east-2.openshift.com/. This page displays the following projects/namespaces that are created in OpenShift Online:
+
+* The *username* project is where your pipelines run. This project's name is your OpenShift Online user name.
+* The *username-che* project is for your Che Host and workspaces.
+* The *username-jenkins* project is used for your Jenkins Master or your Jenkins Slaves. Click `Monitoring` after clicking this project to access your Jenkins console.
+* The *username-stage* project is for your personal use. In this project, pods are displayed as pipelines that have been run. For maintenance, you can click this project and power down individual pods if required.
+* The *username-run* project is identical to the *username-stage* project and is used as an environment for experimenting with your OpenShift pods.

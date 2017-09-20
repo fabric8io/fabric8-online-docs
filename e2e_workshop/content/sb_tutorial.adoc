@@ -1,0 +1,13 @@
+== Spring Boot Quickstart Tutorial
+
+include::modules/create_springboot.adoc[leveloffset=+1]
+
+include::modules/stop_ws.adoc[leveloffset=+1]
+
+include::modules/che_ws_sb.adoc[leveloffset=+1]
+
+include::modules/reduce_mem.adoc[leveloffset=+1]
+
+include::modules/commit_sb.adoc[leveloffset=+1]
+
+include::modules/cleanup_sb.adoc[leveloffset=+1]

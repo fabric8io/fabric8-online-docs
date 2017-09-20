@@ -1,0 +1,9 @@
+[#imp_project]
+= Creating a Space and Import Your Project
+
+. In {osio}, click the *+* icon in the spaces view to create a new space and name it *myspace*.
+. After the space is created, click `Import existing code` in the welcome dialog.
+. Select an `Organization` from the drop down options. The default (and recommended for this tutorial) option is your personal github account's name.
+. Click btn:[Next].
+. Select the forked `vertx-eventbus` repository from the options listed and click btn:[Finish].
+. Click btn:[OK] at the success screen.

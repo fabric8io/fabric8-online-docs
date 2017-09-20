@@ -1,0 +1,34 @@
+[#prereq_che]
+= Prerequisites for Using Your Che Workspace
+
+Before using the Che workspace, ensure that the following prerequisites are met:
+
+. *Finish loading the workspace*: Before editing a project in a Che workspace, ensure that the workspace has finished loading. If the `Project Explorer` pane lists your project, the workspace has finished loading:
++
+image::ws_loaded.png[Workspace Loaded]
+
+. *Ensure Git commands are available*:
+.. Click `Git` in the workspace menu to ensure that all the listed commands (except `Initialize Repository`) are available.
+.. If they are not available, reload the workspace tab. The following screen capture shows a successfully loaded workspace's Git menu:
++
+image::git_menu.png[Git Menu Options]
+
+. *Ensure your project is configured for Maven*:
+.. Click your project name to select it.
+.. Click the `Project` option from the menu options at the top of the page.
+.. Select `Update Project Configuration`.
++
+image::config_maven.png[Configure Maven]
++
+.. In the `Project Configuration` window, select `Maven` and click btn:[Save].
+.. Click the `run` option from the Run button (image:tri_run.png[title="Run button"]). For Vert.x projects, this sets server and the hot deploy option.
+. A run terminal appears at the bottom pane of the Che workspace. When the *mvn build* finishes executing, the `run` view displays the following message:
++
+```
+[INFO] INFO: Succeeded in deploying verticle
+```
++
+. Click the blue preview URL at the top of the `run` view to view your project.
+. Enter your name in the text box and click btn:[Invoke] to test the application.
+
+You are now viewing and interacting with a private sandbox for your project run in OpenShift Online. This is different from `Stage` and `Run`. See <<pipelines.adoc#pipelines>> for details about `Stage` and `Run`. You can share this link with others to test your project in your sandbox environment.

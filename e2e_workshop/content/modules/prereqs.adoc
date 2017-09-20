@@ -1,0 +1,13 @@
+[#prereqs]
+= Prerequisites
+
+*Browser Requirements:*
+
+. Currently, only Google chrome can be used with {osio}. Additional browsers will be added here as they are tested.
+. Ensure that you run {osio} in Chrome's *Incognito Mode*. This is required because troubleshooting or other functions require clearing your browser's history.
+
+*General Requirements:*
+
+. Ensure that you have a GitHub account.
+. Sign up for an OpenShift Online account at https://www.openshift.com/.
+. Register to join the {osio} developer preview at https://openshift.io/.

@@ -1,0 +1,33 @@
+[#approve_rollout]
+= Approving the Build Pipeline
+
+Several minutes after starting, your project's build pipeline is ready to be promoted to `Stage`.
+
+The build pipeline includes steps for a `Stage` build and a `Run` build. `Stage` is a production staging area to review and test changes before they are finalized and staged on `Run`.
+
+To review the final changes in `Stage` and promote them to `Run`:
+
+. From your Space's dashboard, click btn:[Create] from the options at the top of the screen.
+. From the displayed options, click btn:[Pipelines].
+. Click the icon next to the `Rollout to Stage` step in the displayed pipeline. OpenShift Online provides this public URL to access the staged Quickstart project.
+. Add a string to the text box and click btn:[Invoke] to test the application.
+. Return to the {osio} tab which displays the `Pipeline` view.
+. Click btn:[Input Required] at the `Approve` stage of the pipeline.
++
+image::input_req.png[Input Required]
++
+. Click btn:[Promote] to promote the build from the public URL for *Stage* to the public URL for the *Run* namespace. The rollout process from *Stage* to *Run* requires several minutes. You can view the detailed progress in the OpenShift Online console view.
+. When the `Pipeline` view indicates that the project is available in the *Run* namespace, click the icon next to `Rollout to Run` to view the project in a new tab.
+
+*(Optional) Detailed Views*:
+
+* A detailed view for the `Test`, `Stage`, and `Run` environments is available in the btn:[Create] > btn:[Environments] tab. Opt in for this *experimental feature* in your `Profile` page to view each environment's deployments, pods, events, and other information.
+
+* A detailed view of your pipeline's progress is available in your OpenShift Online account:
+.. Navigate to https://manage.openshift.com/ in a new browser tab and log into your account.
+
+.. Click btn:[OpenShift Console] to view the console.
+
+.. From the list of projects, click the *username-jenkins* option.
+
+.. Click `Builds` and then `Builds` again in the menu options. Your project's new build is listed here and you can use this console to monitor its progress.

@@ -1,0 +1,13 @@
+[#create_space_proj]
+= Creating a New Space
+
+In {osio}, the first step for any new project is to create a new Space. Users can be assigned specific permissions for various Spaces and all the work done is in the context of the Space. Each Space must have a unique name. Create a new space as follows:
+
+. In the {osio} home page, click *Create a space*.
+. In the dialog box, add a unique name for your space.
+. Use the drop-down menu for the `Templates` field to select a template for your new Space. For this example, select *Scenario Driven Planning* and click btn:[Create].
+. The `How would you like to get started?` menu appears for your new space. If this menu does not appear automatically, use the following steps:
+.. Double-click the name of the relevant Space from the list under `Recent spaces`.
+.. In the resulting `Analyze` screen for the Space, click btn:[Add to space] in the top right corner to view the `How would you like to get started?` menu.
++
+image::get_started_menu.png[How would you like to get started menu]

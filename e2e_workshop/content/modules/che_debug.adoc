@@ -1,0 +1,60 @@
+[#che_debug]
+= Debugging Your Che Workspace
+
+Return to your project's Che workspace tab to learn to debug your project.
+
+. In your `HttpApplication.java` file, add the following in a new line after line 22.
++
+```java
+router.
+```
++
+. Use the kbd:[Ctrl+Space] shortcut to view the context-aware options for this line.
+. Select `get():Route` from the options. This uses the Vert.x Router's Get method.
+. Edit the new line so that it includes the *goodbye* endpoint:
++
+```java
+router.get("/api/goodbye").handler(this::goodbye);
+```
++
+. Add the following method for the *goodbye* endpoint in a new line after line 52:
++
+```java
+private void goodbye(RoutingContext rc) {
+    String name = rc.request().getParam("name");
+    if (name == null) {
+      name = "World";
+    }
+    JsonObject response = new JsonObject()
+        .put("content", "Goodbye " + name);
+
+    rc.response()
+        .putHeader(CONTENT_TYPE, "application/run_debugjson; charset=utf-8")
+        .end(response.encodePrettily());
+  }
+```
++
+. Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.
+. Click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process is successfully completed:
++
+```
+[INFO] INFO: Succeeded in deploying verticle
+```
++
+. Click `Terminal` and enter the following command to test the new endpoint:
++
+```
+curl localhost:8080/api/goodbye
+```
++
+The following result appears if the changes were successful:
++
+```java
+{
+  "content" : "Goodbye World"
+}
+```
++
+. In the `EXEC` bar on the top of the workspace page, click the stop button (a blue square icon) to stop the current run process.
++
+image::bar_stop.png[EXEC Bar]
