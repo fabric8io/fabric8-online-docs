@@ -1,7 +1,7 @@
 [#creating_a_new_pipeline]
 = Creating a New Pipeline
 
-Create a new pipeline for your Collaboration Space:
+To create a new pipeline for your Collaboration Space, you must add a new project to the Space. {osio} includes multiple templates to add new projects to your Space.
 
 .Prerequisites
 
@@ -9,52 +9,23 @@ Create a new pipeline for your Collaboration Space:
 
 .Procedure
 
-. Navigate to the appropriate Collaboration Space.
-.. Click the top left corner of the screen displaying the current Collaboration Space name to view other Collaboration Spaces for the current user.
-.. Select the appropriate Collaboration Space name to navigate to that Space.
-
-. In the default view for your Collaborative Space, click *Add to space* in the top right corner of the screen. If this button is not visible, click the *Analyze* tab to be taken to the default view.
-
-. In the displayed options menu, click *Select technology stack and pipeline*.
-
-. In the *Quickstart* menu, select the appropriate value for the following fields:
-.. Use the drop-down box for the *Technology Stack* field to select a type of Quickstart.
-.. Add a unique name in the *Name* field. 
+. Click the name of your Space to view the dashboard for your new space. The `How would you like to get started?` menu appears for your new space. 
 +
-[NOTE]
-====
-Use only lower case letters and numbers for the *Name* field. Special characters and upper case letters are not accepted for this field.
-====
+image::get_started_menu.png[How would you like to get started menu]
 +
-.. If required, update the *Top level package* field.
-.. If required, update the *Version* field.
-.. Click *Next* to continue.
+. Click btn:[Add to space] in the top right corner of the dashboard.
 
-. Select one of the three build pipeline strategies:
-* *Release* is the simplest option and only includes building releases and running an integration test.
-* *Release and Stage* includes building releases, doing integration tests, and then staging the release.
-* *Release, Stage, Approve and Promote* includes building releases, running integration tests, staging the release, and asking for user approval before concluding the pipeline.
+. In the first step of the `Forge Wizard`:
+.. Select a project type from the `Technology Stack` drop-down menu.
+.. Click btn:[Next].
+.. Select your organization name from the options in the `Organization` field. For this example, use the organization name assigned to your personal GitHub account.
+.. In the `Name` field, add a unique name for your project.
+.. Leave the default value for the `Group Id` and `Version` fields and click btn:[Next].
 
-. Click *Next*.
+. Select a build pipeline strategy. For this example, use the default value (`Release, Stage, Approve and Promote`) and click btn:[Next].
 
-. Add your GitHub repository information:
-.. Add the *Organization* name for your application. This field uses your {osio} username as a default.
-.. Add a *GitHub Repository Name* for your application.
-.. Optionally, add a *Description* for your application.
+. The `Build configuration` screen displays the details for your `Jenkins Space` and options for web hooks and triggering builds. Use the default options for these fields and click btn:[Finish].
 
-. Click *Next*.
+You have now added a Quickstart project to your space, which automatically initiates a build pipeline for your new project. At this stage, {osio} also adds your project's pipeline into your OpenShift Online account and creates a new GitHub repository for your project.
 
-. Add some additional information for your pipeline build options:
-.. Add a name for your *Kubernetes Space*. This field uses your {osio} username as a default.
-.. Optionally, add a name for the *Kubernetes Label Space* for your application. This field uses your Collaboration Space's name as a default.
-.. Add a *Jenkins Space* name. This field appends *-jenkins* to your {osio} username as a default value.
-.. Select the *Trigger build* option.
-.. Select the *Add continuous integration web hooks* option to generate CI web hooks for your application.
-
-. Click *Finish*.
-
-. The *Application Generator Results* screen displays information about your Quickstart application's Github details and a Jenkins Job URL.
-
-. Click *OK* to return to the getting started options for your Collaboration Space. 
-
-. Click *No thanks, take me to the New Space dashboard* to return to your Collaboration Space's dashboard.
+A confirmation screen appears, which includes a clickable `Git repositories` link that can be used to view your new project's GitHub repository.
