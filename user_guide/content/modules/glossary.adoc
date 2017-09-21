@@ -9,10 +9,10 @@ Backlog:: A Backlog is a list of Work Items that have not been triaged and assig
 
 Collaboration Space:: Spaces are the equivalent of projects. Each Iteration and Work Item must be attached to a Space, and a team of people can be attached to a project (Space) in various roles. By default, a Space contains at least one Area and one Iteration.
 
-Iteration:: Iterations are used to organize Work Items for planning or implementation in a certain order. This can be used to model Sprints when used with Scrum.
+Iteration:: Iterations are used to organize Work Items for planning or implementation in a certain order. They are time bound and can be used to model Sprints when used with Scrum. Typically an Iteration comprises a mix of work items, ranging from Scenarios, Features, Papercuts, Experiences or Tasks, identified to be executed within the time frame of the Iteration.
 
 Pipeline:: Pipelines are a continuous delivery system that, at each step, tests and deploys the code to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements different levels of testing and deployment tasks, provides results, and then passes the code on to the next step.
 
-Scenario Driven Planning:: An agile development methodology focused on real-world problems, or Scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular Value Propositions and are realized via Experiences.
+Scenario-Driven Planning:: A software development methodology focused on real-world problems, or Scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular Value Propositions and are realized through Experiences.
 
 Work Item:: Work Items describe and keep track of work that needs to be done. A user can be assigned to a Work Item. Each Work Item must be attached to a Collaboration Space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.

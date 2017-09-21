@@ -1,0 +1,58 @@
+[#about_scenario_driven_planning]
+= About Scenario-Driven Planning
+
+One of the development methodologies supported by the Planner is the Scenario-driven development approach to plan and track your development work. The Scenario-driven development process uses the following work item type hierarchy:
+
+image::sdd_wit_hierarchy.png[Scenario-driven work item hierarchy]
+
+
+For instance, as illustrated above, a typical scenario development process follows this pattern:
+
+. The Management team envisages a Scenario within a Portfolio, which is further broken down into Experiences and Value Propositions. For example:
+* A sample Scenario: Within a globally distributed software development organization, enable cross-collaboration with each other in real time.
+* The resultant Value Proposition: A developer blocked on a piece of code can easily find any available peer, regardless of their location, and instantly share, discuss, and co-edit the code in question, without having to leave the IDE.
+* The associated Experience: The blocked developer identifies a team member who is online using the team pane in the IDE and sends a request for real-time collaboration. The other developer gets alerted and if accepted, they are presented with a code-editor that enables the two of them to edit the same code, in real time. An integration with the team’s preferred universal chat client enables discussion.
+. The Product Owner or Team Lead in sync with the Management identifies the Requirements or Features to realize these Experiences and Value-Propositions. Bugs are tracked at the Requirements level. For example:
+* A potential Feature for the previous scenario: The developer is able to see a list of his teammates with their Online/Offline status, within the IDE, to interact with them in real-time without leaving the IDE.
+. The Execution team along with the Product owner selects some of the work items for each Iteration and further breaks them down into Tasks which can be assigned to the team members.
+
+Fundamental and Papercut work item types also follow a similar development workflow.
+
+== Scenario-driven planning work item types
+Scenario-driven planning uses the following work item types in its development workflow:
+
+=== Portfolio
+The Portfolio work item group type comprises a group of Scenario, Fundamental, and Papercut type of work items within a working space. The management team identifies these work items and splits each of them into Value-Propositions and Experiences to realize them.
+
+==== Scenario
+A scenario determines tangible customer value and resolves issues they face keeping in the mind the broader product vision. It envisages the Value Propositions and Experiences required to deliver customer value. It proposes complete customer experiences to motivate customers to adopt the product.
+From the customer point of view, a scenario tries to answer the question “In your business, do you need to…?”.
+
+==== Fundamentals
+Fundamentals are work items that ensure quality metrics such as compatibility, security, compliance, performance, and so on are suitably met. These have associated Value Propositions and Experiences, and follow the same development process as Scenarios.
+
+==== Papercuts
+Papercuts are a collection of low-priority bugs and small convenience features, which collectively, disrupt the user experience and have the potential to make the user lose interest in the product. These aggregated irritants follow the same development process as Scenarios.
+
+==== Value Proposition
+A Value Proposition outlines an action plan to add value to the customer experience, and addresses the Parent Scenario. The value to the customer is clearly outlined in the Value Proposition and is delivered through Experiences associated with it. Most often Value Propositions are created along with the Scenarios.
+From the customer point of view, a Value Proposition tries to answer the question “What if you could…? Would you adopt, use/buy?”.
+
+==== Experiences
+Experiences are narratives that describe the user workflow for a Product. They outline the method of delivering the associated Value Proposition by identifying the features and tasks required for a Product.
+From the customer point of view, an Experience tries to answer the question “Let me show you how... Would you use it that way?”.
+
+=== Requirements
+The Requirements work item group type comprises the Features required to realize the Portfolio work items. They also take into account the Bugs encountered while putting the Scenarios and Experiences in action. The product owner or the team lead, breaks the Portfolio work items into manageable Features in consultation with the product management.
+
+==== Features
+Features are User Stories mapped to the parent Experiences. They can support multiple Experiences. From the customer point of view, a Feature addresses this statement “As a <type of user>, I can <goal>, in order to <purpose>”.
+
+==== Bugs
+Bugs are errors or flaws in the software features that produce unexpected results and need to be fixed to ensure a smooth development process.
+
+=== Execution
+The Execution work Item group type comprises the Task type of work items to implement the planned features.
+
+==== Tasks
+Tasks are work units to be picked and completed by various team members to implement a feature. These tasks are derived from the Features or Bugs identified at the Requirements level.
