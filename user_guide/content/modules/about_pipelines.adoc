@@ -2,3 +2,5 @@
 = About Pipelines
 
 Pipelines are a continuous delivery system that tests and deploys the code at each step to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements a different level of testing and deployment tasks, provides results, and then passes the code on to the next step.
+
+In {osio}, pipeline builds are configured when creating or importing a project and are triggered automatically when changes are committed to your code repository.
