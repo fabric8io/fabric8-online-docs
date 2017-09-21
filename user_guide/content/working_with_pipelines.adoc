@@ -5,7 +5,7 @@ include::modules/about_pipelines.adoc[leveloffset=+1]
 
 include::modules/creating_a_new_pipeline.adoc[leveloffset=+1]
 
-include::modules/selecting_a_pipeline.adoc[leveloffset=+1]
+include::modules/staging_a_pipeline.adoc[leveloffset=+1]
 
 include::modules/configuring_pipelines.adoc[leveloffset=+1]
 
