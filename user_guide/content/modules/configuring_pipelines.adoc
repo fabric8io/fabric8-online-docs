@@ -1,16 +1,30 @@
 [#configuring_pipelines]
 = Configuring Pipelines
 
-A new build/pipeline execution initiates immediately after a new project is created. In a build pipeline, *Stage* and *Run* are individual OpenShift projects. `Stage` is a production staging area to review and test changes before they are finalized and staged on `Run`.
+Advanced users can change the settings for their project's pipeline builds in OpenShift Online. For most users, we do not recommend changing the default values {osio} sets up.
 
-The new build pipeline pushes version 1.0.1 of your new project into *Stage* and then, after user approval, to *Run*.
+.Prerequisites
 
-image::pipeline_running.png[A Running Pipeline Build]
+. Ensure that you have created a build pipeline for your project. See <<creating_a_new_pipeline>> for instructions.
 
-Optionally, view the build pipeline's details in OpenShift Online:
+.Procedure
 
-. In the `Pipeline` page, click `Build #1` for the build pipeline in progress.
-. When redirected, log into your OpenShift Online account.
-. Click *View Log* to view the Jenkins instance's logs.
+. Navigate to your Space's dashboard.
+. From the menu options at the top of the page, click btn:[Create].
+. From the displayed options, click btn:[Pipelines]. The `Pipelines` page lists all the pipeline builds for your project.
+. Click btn:[Edit Pipeline] for the desired pipeline build.
+. Enter your OpenShift Online credentials when prompted. When successful, you are redirected to your OpenShift Online account's Console.
++
+WARNING: {osio} sets up the required default options for your pipeline build. We do not recommended changing these default settings.
++
+. In this page, you can edit the following attributes for your build pipelines:
+.. The `Source Configuration` section is used to edit your project's Git Repository URL.
+.. The `Jenkinsfile Type` option is used to select the source of your Jenkinsfile for the build.
+.. The `Jenkinsfile Source Path` option is used to provide a relative path to your Jenkinsfile.
+. When ready, click btn:[Save] to save your changes.
 
-image::oso_pipeline.png[A Running Pipeline Build in OpenShift Online]
+
+
+
+
+
