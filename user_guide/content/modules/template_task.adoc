@@ -1,40 +1,61 @@
-[#task-module-template]
-= Task Module Template
+atom[#task-module-template]
+= Test Page
 
-_Start title with a verb form in gerund, such as Creating._
+.Component Details
+[cols="4*", options="header"]
+|===
+|Included Product
+|Windows
+|macOS
+|Red Hat Enterprise Linux
 
-_A task module is a procedure written with numbered steps -- what a customer needs to do to accomplish a goal successfully._
+|Red Hat JBoss Enterprise Application Platform 7.0
+|&#10004;
+|&#10004;
+|&#10004;
 
-This paragraph explains why the user performs the task, sets the context of the task, and may explain or list specical considerations specific to this task. Keep the information brief and focused on what is needed for this specific task. Suggested length is 1 to 3 sentences, can be longer if needed.
+|Red Hat JBoss Developer Studio 11.0
+|&#10004;
+|&#10004;
+|&#10004;
 
-.Prerequisites
+|Red Hat Container Development Kit 3.1
+|&#10004;
+|&#10004;
+|&#10004;
 
-* Sentence or a bulleted list of pre-requisites that must be in place or done before the user starts this task.
+|Kompose 1.0.0
+|&#10004;
+|&#10004;
+|&#10004;
 
-* Delete section title and bullets if the task has no required pre-requisites.
+|Red Hat JBoss Fuse Tooling 11.0
+|&#10004;
+|&#10004;
+|&#10006;
 
-* Text can be a link to a pre-requisite task that the user must do before starting this task.
+|Red Hat JBoss Fuse on JBoss EAP 6.4
+|&#10004;
+|&#10004;
+|&#10006;
 
+|Red Hat JBoss Fuse on Apache Karaf 6.3
+|&#10004;
+|&#10004;
+|&#10006;
 
-.Procedure
+|OpenJDK 1.8.0_141
+|&#10004;
+|&#10006;
+|&#10006;
 
-_Put steps in a numbered list. The step sequence is important to a repeatable successful outcome._
+|Oracle Java SE
+|&#10006;
+|&#10004;
+|&#10006;
 
-. Start each step with an active verb, because each step corresponds to one user action.
-
-. Include one command or action per step.
-
-. Format the step line as an unnumbered bullet if the procedure includes only 1 step (exception to numbering the steps).
-
-. Include one command or action per step.
-
-. Include one command or action per step.
-
-
-.Related Information
-
-* Bulleted list of links to concepts, reference, or other tasks closely related to this task.
-
-* Include only the most relevant items as links, not every possible related item.
-
-* Delete section title and bullets if no related information is needed.
+|Cygwin 2.8.2
+|&#10004;
+|&#10006;
+|&#10006;
+|===
