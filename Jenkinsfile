@@ -78,6 +78,7 @@ if (snapshot){
                originalImageName = 'fabric8/fabric8-online-docs'
                newImageName = imageName
                openShiftProject = prj
+               githubProject = 'fabric8/fabric8-online-docs'
            }
         }
 
