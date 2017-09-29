@@ -15,7 +15,7 @@
 *Project Development:*
 
 * Creating development environments and testing based on requirements.
-* Coding using an integrated development environment based on Eclipse Che, which provides a workspace based on a containerized version of your application.
+* Coding using an integrated development environment based on Eclipse Che, which provides a workspace for developing your application.
 * Development in this context-aware environment provides the appropriate context for the developer and project, such as which branch, repository, language, and files are referenced.
 * Interacting with integrated GitHub repositories.
 * Compiling and reviewing code in Pull Requests as required.
