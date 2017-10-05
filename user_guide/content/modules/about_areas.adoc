@@ -5,4 +5,4 @@
 
 A Space can also include multiple Areas. As an example, your Collaboration Space represents your software project, and each Area tracks various components attached to the Space.
 
-Each Area can have multiple child Areas, which represents larger components for your software project including multiple smaller components.
+Each Area can have multiple child Areas which represent the sub-components for your software project.
