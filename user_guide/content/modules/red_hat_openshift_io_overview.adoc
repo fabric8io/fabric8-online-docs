@@ -5,15 +5,26 @@
 
 == Features
 
-{osio} offers features for seamless management of end-to-end application development. Members of distributed teams can use it to perform the following tasks without leaving the browser window:
+{osio} offers features to seamlessly manage end-to-end application development. Members of distributed teams can use it to perform the following tasks without leaving the browser window:
 
 * Project planning and issue tracking using your choice of Agile methodology.
 * Creating development environments and testing requirements.
-* Coding using an integrated development environment based on Eclipse Che.
-* Building, testing, deploying, and monitoring codebases using pipelines.
+* Coding using an integrated development environment based on Eclipse Che, which provides a workspace based on a containerized version of your application.
+* Development in this context-aware workspace provides the appropriate context for the developer and project, such as which branch, repository, language, and files are referenced.
+* Building, testing, deploying, and monitoring codebases using Continuous Integration pipelines that can be tailored to the requirements of a team or an individual.
+* Using integrated but customizable Jenkins build pipelines to facilitate rapid testing and environment promotion.
 * Interacting with integrated GitHub repositories.
+* Deploying applications packaged as a set of containers to OpenShift, which powers the underlying services, such as the Eclipse Che workspaces, Work Items, and Pipelines.
 * Compiling and reviewing code in Pull Requests as required.
 * Automating releases of development projects.
+* Use the full-stack analysis feature on your project's included open source libraries to identify potential security issues and recommend safer alternative libraries or library versions to use instead.
+* Use the self-learning analytics engine to improve the code quality and make data-based choices. The engine scans community libraries, CVEs, commit authors, community size, and other metrics to provide useful real-time assistance for developers that learns and improves over time.
+* Use the QuickStart wizards to create basic applications with their own new repo on GitHub, a build pipeline integrated with Jenkins, and a related new OpenShift project.
+* Using migration wizards to migrate legacy J2EE applications to the cloud.
+
+== Registration and Early Access
+
+Currently, {osio} is available for a limited early access program. In the {osio} home page, click btn:[Sign up for the Preview] to join a waiting list for Early Access. You will receive an email informing you when you have been given access to use the system.
 
 == Support
 
