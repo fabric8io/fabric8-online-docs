@@ -1,0 +1,6 @@
+[#scenario_driven_planning]
+= Scenario-Driven Planning
+
+include::modules/about_scenario_driven_planning.adoc[leveloffset=+1]
+
+include::modules/using_scenario_driven_planning.adoc[leveloffset=+1]
