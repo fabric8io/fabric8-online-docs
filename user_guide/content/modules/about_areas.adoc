@@ -1,4 +1,8 @@
 [#about_areas]
 = About Areas
 
-*Areas* are used to organize related <<about_work_items,Work Items>> into groups, to distinguish between different types or functionalities that are being worked on within a <<about_collaboration_spaces,Collaboration Space>>.
+*Areas* are used to organize related <<about_work_items,Work Items>> into groups to distinguish between different types or functionalities that are being worked on within a <<about_collaboration_spaces,Collaboration Space>>.
+
+A Space can also include multiple Areas. As an example, your Collaboration Space represents your software project, and each Area tracks various components attached to the Space.
+
+Each Area can have multiple child Areas which represent the sub-components for your software project.
