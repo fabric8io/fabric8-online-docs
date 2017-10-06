@@ -10,7 +10,7 @@
 *Project Management:*
 
 * Project planning and issue tracking using your choice of Agile methodology.
-* Automating releases of development projects.
+* Automating project releases.
 
 *Project Development:*
 
