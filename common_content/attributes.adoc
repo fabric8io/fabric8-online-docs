@@ -1,8 +1,21 @@
-// Our docinfo.xml
-:docinfo:
+:toc:
+:toclevels: 3
+:numbered:
+
+:doctype: book
+
+:docinfodir: common_content/styles
+:docinfo1:
+:icons: font
+:source-highlighter: highlightjs
+
+// uncomment to add styles
+:stylesdir: common_content/styles
+// :stylesheet: style.css
+// :stylesheet: asciidoc-default.css
+:stylesheet: foundation.css
 
 // AsciiDoc rendering
-:source-highlighter: prettify
 :last-update-label!:
 :attribute-missing: warn
 :experimental:
