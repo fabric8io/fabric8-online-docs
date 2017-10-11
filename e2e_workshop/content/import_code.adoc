@@ -13,7 +13,7 @@ include::modules/prereq_che.adoc[leveloffset=+1]
 . <<change_code>>
 
 [[change_code]]
-=== Changing the Quickstart's Code
+== Changing the Quickstart's Code
 
 You can change your project's code and preview the results as follows:
 
@@ -43,7 +43,7 @@ NOTE: The code includes a new route for *eventbus* and its supporting method. Th
 . Enter your name in the text box and click btn:[Invoke] to test the application.
 
 [[commit]]
-=== Commit Your Changes
+== Commit Your Changes
 
 [IMPORTANT]
 ====

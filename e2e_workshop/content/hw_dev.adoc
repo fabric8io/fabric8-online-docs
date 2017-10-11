@@ -1,7 +1,7 @@
 [[hw_dev]]
-== Hello World for Developers
+= Hello World for Developers
 
-include::modules/create_space_proj.adoc[leveloffset=+1]
+include::modules/create_space.adoc[leveloffset=+1]
 
 include::modules/pipelines.adoc[leveloffset=+1]
 
