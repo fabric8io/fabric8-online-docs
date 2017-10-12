@@ -1,5 +1,3 @@
-= OpenShift.io End to End Demo
-
 [#before_you_start]
 = Before You Start
 

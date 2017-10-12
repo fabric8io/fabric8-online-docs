@@ -1,4 +1,4 @@
-== Spring Boot Quickstart Tutorial
+= Spring Boot Quickstart Tutorial
 
 include::modules/create_springboot.adoc[leveloffset=+1]
 
