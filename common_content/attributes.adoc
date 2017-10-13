@@ -1,6 +1,8 @@
 :toc:
 :toclevels: 3
 :numbered:
+:sectanchors:
+:sectlinks:
 
 :doctype: book
 
