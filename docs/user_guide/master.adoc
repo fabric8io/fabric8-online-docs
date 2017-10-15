@@ -1,0 +1,6 @@
+include::topics/templates/attributes.adoc[]
+
+
+= User Guide
+
+include::topics/user_guide.adoc[]

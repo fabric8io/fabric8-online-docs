@@ -9,6 +9,8 @@ BUILDER_IMAGE="documentation-builder"
 BUILDER_CONT="documentation-builder-container"
 DEPLOY_IMAGE="documentation-deploy"
 
+TARGET_DIR="html"
+
 function tag_push() {
     TARGET_IMAGE=$1
     USERNAME=$2
@@ -44,17 +46,24 @@ fi
 #CLEAN
 docker ps | grep -q ${BUILDER_CONT} && docker stop ${BUILDER_CONT}
 docker ps -a | grep -q ${BUILDER_CONT} && docker rm ${BUILDER_CONT}
+rm -rf ${TARGET_DIR}/
 
 #BUILD
 docker build -t ${BUILDER_IMAGE} -f Dockerfile.build .
 
-docker run --detach=true --name ${BUILDER_CONT} -t -v $(pwd)/user_guide:/user_guide:Z ${BUILDER_IMAGE} /bin/tail -f /dev/null #FIXME
+mkdir -m 777 ${TARGET_DIR}/
+mkdir -m 777 ${TARGET_DIR}/images
 
+docker run --detach=true --name ${BUILDER_CONT} -t -v $(pwd)/${TARGET_DIR}:/${TARGET_DIR}:Z ${BUILDER_IMAGE} /bin/tail -f /dev/null #FIXME
 
-docker exec ${BUILDER_CONT} asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc
+docker exec ${BUILDER_CONT} sh scripts/build_guides.sh
+
+#Need to do this again to set permission of images and html files
+chmod -R 0777 ${TARGET_DIR}/
+chmod -R 0777 index.html
 
 #BUILD DEPLOY IMAGE
-docker build -t ${DEPLOY_IMAGE} -f user_guide/Dockerfile user_guide/
+docker build -t ${DEPLOY_IMAGE} -f Dockerfile.deploy .
 
 #PUSH
 if [ -z $CICO_LOCAL ]; then

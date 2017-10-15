@@ -7,7 +7,7 @@ RUN yum install -y rubygems libxml2 && \
     gem install asciidoctor && \
     yum clean all
 
-COPY user_guide/ user_guide/
-COPY common_content/ common_content
+COPY scripts/ scripts/
+COPY docs/ docs/
 
-WORKDIR user_guide
+# RUN scripts/validate_guides.sh

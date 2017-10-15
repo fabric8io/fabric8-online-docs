@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc maxdepth="3"?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>User Guide</title>
+<date>2017-10-15</date>
+</info>
+<part xml:id="before_you_start">
+<title>Before You Start</title>
+<chapter xml:id="introduction_to_rhosio">
+<title>Introduction to Red&#160;Hat OpenShift.io</title>
+<simpara>Red&#160;Hat Developer Program offers a <emphasis>Software as a Service</emphasis> (SaaS) product for developers called <emphasis role="strong">Red&#160;Hat OpenShift.io</emphasis> to meet your software-development requirements.</simpara>
+<simpara>This section introduces Red&#160;Hat OpenShift.io and provides an overview of the main features of the product. Read it to understand the chief benefits of using <link xl:href="OpenShift.io"><link xl:href="https://openshift.io/">https://openshift.io/</link></link> and to learn about the various ways it can help organizations and developers with their everyday tasks.</simpara>
+<section xml:id="red_hat_openshift_io_overview">
+<title>Red&#160;Hat OpenShift.io Overview</title>
+<simpara>Red&#160;Hat OpenShift.io is a highly collaborative open-source, web-based <emphasis>application lifecycle management</emphasis> (ALM) solution. It is a next-generation product for developers to manage the development lifecycle with one efficient tool.</simpara>
+<section xml:id="_features">
+<title>Features</title>
+<simpara>OpenShift.io offers features to seamlessly manage end-to-end application development. Members of distributed teams can use it to perform the following tasks without leaving the browser window:</simpara>
+<simpara><emphasis role="strong">Project Management:</emphasis></simpara>
+<itemizedlist>
+<listitem>
+<simpara>Project planning and issue tracking using your choice of Agile methodology.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</simpara>
+</listitem>
+<listitem>
+<simpara>Automating project releases.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; a6143da80f585252e520e9d81d71666eefbfd4f7</simpara>
+</listitem>
+</itemizedlist>
+<simpara><emphasis role="strong">Project Development:</emphasis></simpara>
+<itemizedlist>
+<listitem>
+<simpara>Creating development environments and testing based on requirements.</simpara>
+</listitem>
+<listitem>
+<simpara>Coding using an integrated development environment based on Eclipse Che, which provides a workspace for developing your application.</simpara>
+</listitem>
+<listitem>
+<simpara>Development in this context-aware environment provides the appropriate context for the developer and project, such as which branch, repository, language, and files are referenced.</simpara>
+</listitem>
+<listitem>
+<simpara>Interacting with integrated GitHub repositories.</simpara>
+</listitem>
+<listitem>
+<simpara>Compiling and reviewing code in Pull Requests as required.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the QuickStart wizards to create basic applications with their own new repo on GitHub, a build pipeline integrated with Jenkins, and a related new OpenShift project.</simpara>
+</listitem>
+<listitem>
+<simpara>Using migration wizards to migrate legacy J2EE applications to the cloud.</simpara>
+</listitem>
+</itemizedlist>
+<simpara><emphasis role="strong">Deployment and Testing:</emphasis></simpara>
+<itemizedlist>
+<listitem>
+<simpara>Building, testing, deploying, and monitoring codebases using Continuous Integration pipelines that can be tailored to the requirements of a team or an individual.</simpara>
+</listitem>
+<listitem>
+<simpara>Deploying applications packaged as a set of containers to OpenShift, which powers the underlying services such as the Eclipse Che workspaces and Pipelines.</simpara>
+</listitem>
+<listitem>
+<simpara>Using integrated but customizable Jenkins build pipelines to facilitate rapid testing and environment promotion.</simpara>
+</listitem>
+</itemizedlist>
+<simpara><emphasis role="strong">Analysis and Recommendations:</emphasis></simpara>
+<itemizedlist>
+<listitem>
+<simpara>Use the full-stack analysis feature on your project&#8217;s open source components to identify potential security issues and recommend safer alternative components or component versions to use instead.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the self-learning analytics engine to improve the code quality and make data-based choices. The engine scans community libraries, security vulnerabilities, and other GitHub metrics to provide useful real-time assistance for developers that learns and improves over time.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_registration_and_early_access">
+<title>Registration and Early Access</title>
+<simpara>Currently, OpenShift.io is available for a limited early access program. In the OpenShift.io home page, click <guibutton>Sign up for the Preview</guibutton> to join a waiting list for Early Access. You will receive an email informing you when you have been given access to use the system.</simpara>
+</section>
+<section xml:id="_support">
+<title>Support</title>
+<simpara>Red Hat currently does not offer a support subscription for OpenShift.io. The service is available as a free <emphasis>Developer Preview</emphasis> for open-source projects and developers.</simpara>
+</section>
+</section>
+<section xml:id="_related_information">
+<title>Related Information</title>
+<simpara>See also the following related Red Hat resources related to the Red&#160;Hat Developer Program:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><link xl:href="https://developers.redhat.com/">Red&#160;Hat Developers</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://developers.redhat.com/blog">Red&#160;Hat Developer Blog</link></simpara>
+</listitem>
+</itemizedlist>
+</section>
+</chapter>
+<chapter xml:id="accessing_red_hat_openshift_io">
+<title>Accessing Red&#160;Hat OpenShift.io</title>
+<simpara>This section explains how to register and gain access to Red&#160;Hat OpenShift.io. It also outlines how to log in to and log out of the service.</simpara>
+<section xml:id="signing_up_for_the_red_hat_developers_program">
+<title>Signing up for the Red Hat Developers Program</title>
+<simpara>Learn how to sign up for the Red&#160;Hat Developer Program to access Red&#160;Hat OpenShift.io and start using its services.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Navigate to the <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link> website in a browser window.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Sign Up For The Preview</emphasis>. You can register using an existing social or Red Hat account.</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Registering manually:</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara>At the Red&#160;Hat OpenShift.io Developer Preview page, click <guibutton>Register</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Enter details such as your name, email address, company, and passwords in the appropriate fields.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the terms and conditions checkboxes to indicate acceptance.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create my account</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Registering using your existing Red Hat account or a social account from services such as JBoss Developer, GitHub, Stack Overflow, LinkedIn, Twitter, Facebook, Google, or Microsoft.</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara>Click the button for the relevant social account.</simpara>
+</listitem>
+<listitem>
+<simpara>Add your login credentials for the selected service and authorize the creation of the account.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>If required, verify your email address to complete registration.</simpara>
+</listitem>
+</orderedlist>
+<note>
+<simpara>Early access to the service is limited is provided as resources become available. When you sign up, you will be put on a waiting list. You will be notified when access to the system is available.</simpara>
+</note>
+<section xml:id="_related_information_2">
+<title>Related Information</title>
+<simpara>The following links provide additional resources about accessing Red Hat&#8217;s offering for developers:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><link xl:href="https://developers.redhat.com/articles/red-hat-developer-program-benefits/">Red Hat Developer Program Benefits</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-suite">Red Hat Enterprise Linux Developer Suite</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-workstation">Red Hat Enterprise Linux Developer Workstation</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-support">Red Hat Enterprise Linux Developer Support</link></simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+<section xml:id="logging_into_red_hat_openshift_io">
+<title>Logging into Red&#160;Hat OpenShift.io</title>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that you have <link linkend="signing_up_for_the_red_hat_developers_program">registered for a Red&#160;Hat Developer Program account</link>.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Navigate to the <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link> website in a browser window.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Log In</guibutton> at the top of the OpenShift.io main page.</simpara>
+</listitem>
+<listitem>
+<simpara>Log in either manually (with you Red Hat Developers account) or using a social account:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Log in using your Red Hat account:</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara>Enter your email address or Red Hat Developers Login ID and password.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Log In</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Log in using a social account:</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara>Click the appropriate social account button from the listed options.</simpara>
+</listitem>
+<listitem>
+<simpara>Follow the instructions to authorize the social account to log in.</simpara>
+</listitem>
+<listitem>
+<simpara>If asked, add additional information about yourself on the <emphasis role="strong">Additional Action Required</emphasis> page. If the provided email address already has an account, an option to link your social account with your Red Hat Developers account is available. An email is sent to the account to confirm linking the two accounts.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Select the checkboxes to indicate agreement with the terms and conditions if required and click <guibutton>Submit</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="logging_out_of_red_hat_openshift_io">
+<title>Logging out of Red&#160;Hat OpenShift.io</title>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that you are logged into the Red&#160;Hat OpenShift.io website.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click on your name in the top right corner of the application. If the current page does not show the profile menu, navigate to the main page at <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the drop-down menu, click the <emphasis role="strong">Log Out</emphasis> option.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</chapter>
+</part>
+<part xml:id="getting_started_with_openshift_io">
+<title>Getting Started with OpenShift.io</title>
+<chapter xml:id="working_with_collaboration_spaces">
+<title>Working with Collaboration Spaces</title>
+<section xml:id="about_collaboration_spaces">
+<title>About Collaboration Spaces</title>
+<simpara>Collaboration Spaces are the equivalent of projects. Each <link linkend="about_iterations">Iteration</link> and <link linkend="about_work_items">Work Item</link> must be attached to a Space, and a team of users can be attached to a project (Space) in various roles. By default, a Space contains one or more <link linkend="about_areas">Areas</link> and Iterations.</simpara>
+</section>
+<section xml:id="creating_a_new_space">
+<title>Creating a New Collaboration Space</title>
+<simpara>To start working with a new project, create a new Collaboration Space. Each Space includes a team of users in various roles as well as unique <link linkend="about_work_items">Work Items</link> and <link linkend="about_iterations">Iterations</link> used to manage the new project.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that you have <link linkend="logging_into_red_hat_openshift_io">Logged in to <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link></link> with a valid user account.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>In your <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link> home page, click your username in the top left corner of the screen.</simpara>
+</listitem>
+<listitem>
+<simpara>In the drop-down menu, click <emphasis role="strong">Create space</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a unique name for the new space in the <emphasis role="strong">Name</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Scenario Driven Planning</emphasis> from the drop-down menu for templates. This template creates Spaces based on Scenarios, which are real-world problems from the user&#8217;s point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create</emphasis> to create your new space.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">How would you like to get started?</emphasis> dialog box appears and offers the following options:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/new_space_dialog.png"/>
+</imageobject>
+<textobject><phrase>New Space Dialog Box</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara><emphasis role="strong">Import existing code</emphasis>: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Create a new Quickstart project</emphasis>: Use wizards to automatically set up your development environment for various tasks and quickly create projects using specific tooling.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">No thanks, take me to the <emphasis>new_space</emphasis> dashboard</emphasis>: Go to your new space&#8217;s dashboard to begin working in the space.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="changing_existing_space" role="adoc">
+<title>Delete an Existing Space</title>
+<simpara>If an OpenShift.io Space is no longer required, delete it using the following instructions:</simpara>
+<warning>
+<simpara>When deleted, the Space and all its contents (Work Items, Codebases, Workspaces, etc.) are also permanently deleted.</simpara>
+</warning>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the OpenShift.io home page, click your name in the top right part of the page.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Profile</guibutton> from the displayed options.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <literal>Profile</literal> page, click <literal>Spaces</literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Delete</guibutton> and then <guibutton>Remove</guibutton> for each of the listed spaces.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="configuring_a_codebase">
+<title>Configuring a Codebase</title>
+<simpara>After adding a Collaboration Space, you can add a codebase from GitHub and set up a pipeline to build the code.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Create a Collaboration Space. See <xref linkend="creating_a_new_space"/> for instructions.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click <emphasis role="strong">Analyze</emphasis> at the top of the screen to view the Collaboration Space dashboard.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Codebases</emphasis> view offers the following options:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>If codebases are already added to the Collaboration Space, the added codebases are listed and a <emphasis role="strong">+</emphasis> icon displays at the top right of the view to import more codebases.</simpara>
+</listitem>
+<listitem>
+<simpara>If no codebases have been added, two buttons display:</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara><emphasis role="strong">Add Codebase</emphasis> to manually add a codebase.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Import Codebase</emphasis> to automatically add an existing codebase.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>To add a codebase:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>TBD</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>To import a codebase:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Click <emphasis role="strong">Import Codebase</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>If required, change the path to your Collaboration Space in the <emphasis role="strong">Space Path</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>Add the GitHub repository path in the <emphasis role="strong">GitHub Repository</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Sync</emphasis> to retrieve details for the repository. If the sync is successful, metadata for the added repository appears below the <emphasis role="strong">Sync</emphasis> button.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Associate Repository to Space</emphasis> to add the new repository to your Collaboration Space.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Create</emphasis> tab now displays your new repository with information about when it was created and the last commit date.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create a Workspace</emphasis> for the target repository from the list of repositories. A success message appears when the Workspace is successfully created.</simpara>
+<note>
+<simpara>Ensure that your browser allows pop-ups from this page. The Eclipse Che context requires a new tab to start.</simpara>
+</note>
+</listitem>
+<listitem>
+<simpara>In the drop-down menu, select the new Workspace for your repository, then click <emphasis role="strong">Open</emphasis>. A new browser tab loads and displays the Eclipse Che context with your repository codebase.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</section>
+</chapter>
+<chapter xml:id="working_with_collaborators">
+<title>Working with Collaborators</title>
+<section xml:id="about_collaborators">
+<title>About Collaborators</title>
+<simpara><emphasis role="strong">Collaborators</emphasis> are members assigned to particular <link linkend="about_work_items">Work Items</link> within a <link linkend="about_collaboration_spaces">Collaboration Space</link>. They are charged with completion of Work Items for a development project. You need to add Collaborators to your Space to be able to assign relevant Work Items to them.</simpara>
+</section>
+<section xml:id="adding_collaborators">
+<title>Adding Collaborators</title>
+<simpara>You can add collaborators to a Collaboration Space and assign Work Items to each person.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara><link linkend="creating_a_new_space">Create a new Collaboration Space</link> or select an existing Collaboration Space.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click the <emphasis role="strong">Equalizer</emphasis> button (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/equalizer.png"/>
+</imageobject>
+<textobject><phrase>equalizer</phrase></textobject>
+</inlinemediaobject>) at the top of the screen.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the <emphasis role="strong">Collaborators</emphasis> tab. A list of collaborators for your Collaboration Space displays.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the blue plus (<emphasis role="strong">+</emphasis>) icon in the top right corner. The <emphasis role="strong">Add collaborators</emphasis> dialog box displays.</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Click <emphasis role="strong">Select</emphasis> and type a name in the text box to search for a user by name.</simpara>
+</listitem>
+<listitem>
+<simpara>From the displayed results, select the name of one or multiple users to add as Collaborators for your Space.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Add</emphasis> to add the collaborators.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="view_change_collaborators">
+<title>View/Change Collaborators</title>
+<simpara>After adding Collaborators, you can view their details or remove them from your Collaboration Space.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Log in to the <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link> with a valid user account. See <xref linkend="logging_into_red_hat_openshift_io"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><link linkend="creating_a_new_space">Create a new Collaboration Space</link> or select an existing Collaboration Space.</simpara>
+</listitem>
+<listitem>
+<simpara>Ensure you have <link linkend="adding_collaborators">added Collaborators</link> to your Space.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click the <emphasis role="strong">Equalizer</emphasis> button (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/equalizer.png"/>
+</imageobject>
+<textobject><phrase>equalizer</phrase></textobject>
+</inlinemediaobject>) at the top of the screen.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the <emphasis role="strong">Collaborators</emphasis> tab. A list of collaborators for your Collaboration Space displays.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the three dots at the right side of a Collaborator&#8217;s name on the <emphasis role="strong">Collaborators</emphasis> page.</simpara>
+</listitem>
+<listitem>
+<simpara>From the two options, select <emphasis role="strong">View user</emphasis> to view the Collaborator&#8217;s details or <emphasis role="strong">Remove from space</emphasis> to remove them from the Space.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="assigning_a_collaborator">
+<title>Assigning a Collaborator</title>
+<simpara>You can assign the relevant <link linkend="about_work_items">Work Items</link> to collaborators included in your Space:</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that the user is <link linkend="adding_collaborators">added as a Collaborator</link> to your Space.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click the <emphasis role="strong">Plan</emphasis> tab to view a list of Work Items for your Space.</simpara>
+</listitem>
+<listitem>
+<simpara>Double-click a Work Item to view its details. Alternatively, click the three dots on the right side of the Work Item listing and select <emphasis role="strong">Open</emphasis> from the options.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Assignee</emphasis> text box for a drop-down search window. Type the name of a Collaborator in your Space to assign them to this Work Item.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</chapter>
+<chapter xml:id="working_with_areas">
+<title>Working with Areas</title>
+<section xml:id="about_areas">
+<title>About Areas</title>
+<simpara><emphasis role="strong">Areas</emphasis> are used to organize related <link linkend="about_work_items">Work Items</link> into groups to distinguish between different types or functionalities that are being worked on within a <link linkend="about_collaboration_spaces">Collaboration Space</link>.</simpara>
+<simpara>A Space can also include multiple Areas. As an example, your Collaboration Space represents your software project, and each Area tracks various components attached to the Space.</simpara>
+<simpara>Each Area can have multiple child Areas which represent the sub-components for your software project.</simpara>
+</section>
+<section xml:id="creating_a_new_area">
+<title>Creating a New Area</title>
+<simpara>You can create a new child Area to group together related Work Items by type or functionality. When a new Collaboration Space is created, a root Area is created with the same name. Each subsequent Area is created as a child of an existing Area in the Space.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure you have <link linkend="creating_a_new_space">created a Collaboration Space</link> to use.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click the <emphasis role="strong">Equalizer</emphasis> button (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/equalizer.png"/>
+</imageobject>
+<textobject><phrase>equalizer</phrase></textobject>
+</inlinemediaobject>) at the top of the screen to display a list of Areas in your Space.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the blue plus (<emphasis role="strong">+</emphasis>) icon in the top right corner of the <emphasis role="strong">Areas</emphasis> view.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Add New Area</emphasis> dialog box, add a name for your new Area and a parent Area.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create</emphasis> to create the new child area.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="Assigning_an_area">
+<title>Assigning an Area to a Work Item</title>
+<simpara>You can group Work Items by type or functionality by assigning relevant Areas to the Work Items as follows:</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that the user is <link linkend="adding_collaborators">added as a Collaborator</link> to your Space.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click the <emphasis role="strong">Plan</emphasis> tab to view a list of Work Items for your Space.</simpara>
+</listitem>
+<listitem>
+<simpara>Double-click a Work Item to view its details. Alternatively, click the three dots on the right side of the Work Item listing and select <emphasis role="strong">Open</emphasis> from the options.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Area</emphasis> text box to view a list of Areas to assign to the space. By default, the name of your workspace is set as the Root Area and displays as one of the options in the drop-down list.</simpara>
+</listitem>
+<listitem>
+<simpara>Enter the name of an existing area for the Space. Only existing Areas can be assigned to the Space.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the check box to confirm the name of the Area.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</chapter>
+<chapter xml:id="working_with_work_items">
+<title>Working with Work Items</title>
+<section xml:id="about_work_items">
+<title>About Work Items</title>
+<simpara><emphasis>Work Items</emphasis> (WI) are trackable and measurable units of work to be done within a <link linkend="about_collaboration_spaces">Collaboration Space</link>. They are captured representations of work, which can be edited and modified based on the requirements of the development project.</simpara>
+<simpara>In the <emphasis role="strong">Planner</emphasis>, users can create and manage planning-related Work Items within a Collaboration Space. Work Items are used to track data such as ideas, user stories, bugs, and tasks. All Work Items can be grouped and categorized into <link linkend="about_areas">Areas</link> and <link linkend="about_iterations">Iterations</link>.</simpara>
+<simpara>Work Items can be assigned to users and their status can be changed to indicate the progress of the Work Item. Each Work Item can be linked to other Work Items based on their relationship with each other, enabling users to plan work better. For example, you can link Work Item A as the parent of Work Item B, enabling you to prioritize and order your work.</simpara>
+<simpara>The <emphasis role="strong">Planner</emphasis> includes a set of predefined templates based on common planning methodologies such as <emphasis>Scrum</emphasis>, <emphasis>Agile</emphasis>, and <emphasis>Scenario Driven Development</emphasis>. These templates determine the structure and features of the included Work Item types and states that can be used within a Collaboration Space.</simpara>
+</section>
+<section xml:id="creating_a_new_work_item">
+<title>Creating a New Work Item</title>
+<simpara>You can add <link linkend="about_work_items">Work Items</link> to your Collaboration Space in multiple ways, such as from the <emphasis role="strong">Analyze</emphasis> tab or the <emphasis role="strong">Plan</emphasis> tab using the detailed method or the quick-add method.</simpara>
+<simpara>The detailed method helps you capture details relevant to the Work Item while creating the Work Item itself. The quick-add method acts as an instant widget to add Work Items rapidly as you work.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara><link linkend="creating_a_new_space">Create a new Collaboration Space</link> or select an existing Collaboration Space.</simpara>
+</listitem>
+</itemizedlist>
+<section xml:id="_using_the_quick_add_method">
+<title>Using the Quick-Add Method</title>
+<simpara>The quick-add method acts as an instant widget to add Work Items on the go. The quick-add widget is available in the <menuchoice><guimenu>Plan</guimenu> <guimenuitem>Backlog</guimenuitem></menuchoice> subtab as well as the <menuchoice><guimenu>Plan</guimenu> <guimenuitem>Board</guimenuitem></menuchoice> subtab of your workspace.</simpara>
+<section xml:id="_using_the_backlog">
+<title>Using the Backlog</title>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click <guibutton>Plan</guibutton> and then <guibutton>Backlog</guibutton> to view the backlog of Work Items.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create Work Item</emphasis> from the grey panel at the bottom of the screen.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the Work Item Type symbol (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/work_item_type_symbol.png"/>
+</imageobject>
+<textobject><phrase>work item type symbol</phrase></textobject>
+</inlinemediaobject>) and select the required Work Item Type from the listed options.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a <emphasis role="strong">Work Item Title</emphasis> and <emphasis role="strong">Work Item Description</emphasis> in the appropriate fields and click the &#10003; button to create the Work Item. The <emphasis role="strong">Work Item Description</emphasis> field is optional. Create additional Work Items by adding another <emphasis role="strong">Work Item Title</emphasis> and pressing <emphasis role="strong">Enter</emphasis> on the keyboard.</simpara>
+</listitem>
+</orderedlist>
+<simpara>The new Work Item appears in the Backlog list.</simpara>
+</section>
+<section xml:id="_using_the_board">
+<title>Using the Board</title>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click btn:Plan and then btn:Board to view the current iteration&#8217;s of Work Items.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the new Work Item&#8217;s Type from the <emphasis role="strong">Currently showing</emphasis> drop-down list.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">new</emphasis> column, click the blue plus (<emphasis role="strong">+</emphasis>) icon to display the quick-add work-item widget. The Work Item Type selected in the previous step is used as the Type for the new Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a <emphasis role="strong">Work Item Title</emphasis> and <emphasis role="strong">Work Item Description</emphasis> in the respective fields and click the &#10003; button to create the Work Item. The <emphasis role="strong">Work Item Description</emphasis> field is optional. Create additional Work Items by adding another <emphasis role="strong">Work Item Title</emphasis> and pressing <emphasis role="strong">Enter</emphasis> on the keyboard.</simpara>
+</listitem>
+</orderedlist>
+<simpara>A Work Item is created and displayed in the <emphasis role="strong">new</emphasis> column.</simpara>
+</section>
+</section>
+<section xml:id="using_the_detailed_method">
+<title>Using the Detailed Method</title>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click <guibutton>Analyzer</guibutton> to view the Space dashboard.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the blue plus (<emphasis role="strong">+</emphasis>) icon in the top right corner of the <emphasis role="strong">My Work Items</emphasis> panel.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Choose a new work item type</emphasis> window, click the appropriate Work Item Type for your new Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>In the new Work Item form:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Enter the title of the Work Item and click the &#10003; button or press <emphasis role="strong">Enter</emphasis> to save the new Work Item. All other Work Item fields are optional.</simpara>
+</listitem>
+<listitem>
+<simpara>Set the progress status of the Work Item from the <emphasis role="strong">New</emphasis> drop-down list. The default status for a new Work Item is <emphasis role="strong">New</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Assign the Work Item to the relevant owner or owners in the <emphasis role="strong">Assignees</emphasis> field. The assignee field for a new Work Item is empty as a default.</simpara>
+</listitem>
+<listitem>
+<simpara>Assign an <link linkend="about_areas">Area</link> to the Work Item from the <emphasis role="strong">Area</emphasis> drop-down list and click &#10003; to save the change. By default, the name of your workspace is set as the <emphasis>Root Area</emphasis> and is displayed as one of the options in the drop-down list.</simpara>
+</listitem>
+<listitem>
+<simpara>Assign a relevant <link linkend="about_iterations">Iteration</link> to the Work Item from the <emphasis role="strong">Iteration</emphasis> drop-down list and click &#10003; to save. By default, the name of your workspace is set as the <emphasis>Root Iteration</emphasis> and is displayed as one of the options in the drop-down list.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a description for the Work Item in the <emphasis role="strong">Edit Text</emphasis> field and click &#10003; to save.</simpara>
+</listitem>
+<listitem>
+<simpara>Optionally, expand the <emphasis role="strong">Total links</emphasis> option to link to other related Work Items as follows:</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara>Click the <guibutton>Create Link</guibutton> button.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the <guibutton>Select Link Type</guibutton> drop-down menu to select the appropriate relationship between the current and new Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>Start typing the title or ID of a Work Item in the <emphasis role="strong">Search for work items</emphasis> field. Select one of the listed suggestions.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Link</guibutton> to save the relationship.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Optionally, expand the <emphasis role="strong">Comments</emphasis> option to add or see comments for your Work Item. Users can only edit or delete their own comments.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>To close the new Work Item panel, click the <emphasis role="strong">x</emphasis> at the top of the panel.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</section>
+<section xml:id="working_with_an_existing_work_item">
+<title>Working with an Existing Work Item</title>
+<simpara>Use the Planner in the <emphasis role="strong">Plan</emphasis> tab to track your Work Items and Iterations using either the list view or the board view. The <emphasis role="strong">Plan</emphasis> tab is split into two panes:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>The left pane displays the <emphasis role="strong">Backlog</emphasis> and <emphasis role="strong">Board</emphasis> views of Iterations and Work Items. For more information see <link linkend="about_iterations">About Iterations</link>.</simpara>
+</listitem>
+<listitem>
+<simpara>The right pane displays the Work Items within the selected Iteration or the backlog.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>You can plan and track your Work Items in the right pane using either the hierarchical or flat list view of Work Items on the <menuchoice><guimenu>Plan</guimenu> <guimenuitem>Backlog</guimenuitem></menuchoice> subtab or the Kanban-based board view on the <menuchoice><guimenu>Plan</guimenu> <guimenuitem>Board</guimenuitem></menuchoice> subtab.</simpara>
+<simpara>The <emphasis role="strong">Plan</emphasis> tab enables you to modify the attributes of a Work Item, associate them with Iterations, order and monitor their progress and filter them as per your requirements.</simpara>
+<section xml:id="modifying_an_existing_work_item">
+<title>Modifying an Existing Work Item</title>
+<simpara>You can modify an existing Work Item after it has been created by clicking on an existing Work Item in the list or board view.</simpara>
+<simpara>Alternatively, click the menu adjoining the Work Item and select <emphasis role="strong">Open</emphasis> from the displayed options. The detailed Work Item panel is displayed.</simpara>
+<simpara>The following attributes of a Work Item can be modified:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Status</simpara>
+</listitem>
+<listitem>
+<simpara>Owner</simpara>
+</listitem>
+<listitem>
+<simpara>Area</simpara>
+</listitem>
+<listitem>
+<simpara>Iteration</simpara>
+</listitem>
+<listitem>
+<simpara>Description</simpara>
+</listitem>
+<listitem>
+<simpara>Relations with other Work Items</simpara>
+</listitem>
+<listitem>
+<simpara>Comments</simpara>
+<simpara>See <xref linkend="using_the_detailed_method"/> for more information on modifying the above attributes.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="associating_work_items_with_an_iteration">
+<title>Associating Work Items with an Iteration</title>
+<simpara>To associate a Work Item with an Iteration:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click the menu adjoining the Work Item and select <emphasis role="strong">Associate with Iteration</emphasis> from the displayed options. The <emphasis role="strong">Associate with Iteration</emphasis> dialog box is displayed.</simpara>
+</listitem>
+<listitem>
+<simpara>From the <emphasis role="strong">Select iteration</emphasis> drop-down list, select the Iteration you want to associate your Work Item with and click the <guibutton>Reassociate</guibutton> button.</simpara>
+</listitem>
+</orderedlist>
+<simpara>Selecting a particular Iteration on the left pane will display Work Items associated with that Iteration.</simpara>
+<simpara>To move Work Items to the <emphasis role="strong">Backlog</emphasis>, click the menu adjoining the Work Item and select <emphasis role="strong">Move to Backlog</emphasis> from the displayed options. You can select <emphasis role="strong">Backlog</emphasis> to display all the Work Items within a Space.</simpara>
+</section>
+<section xml:id="ordering_and_monitoring_work_items">
+<title>Ordering and Monitoring Work Items</title>
+<simpara>The <emphasis role="strong">Backlog</emphasis> subtab provides a list view enabling you to plan your work by ordering the Work Items based on their priority, status, and other such parameters.</simpara>
+<simpara>The <emphasis role="strong">Backlog</emphasis> subtab can display the list of Work Items as:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>A <emphasis role="strong">Hierarchy</emphasis>, or in a tree-view format where child Work Items are displayed only when you expand the parent Work Item or</simpara>
+</listitem>
+<listitem>
+<simpara>A <emphasis role="strong">Flat</emphasis> list, where all the Work Items are displayed in a single file.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>You can order the Work Items in the list based on your requirement as follows:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>In the <menuchoice><guimenu>Plan</guimenu> <guimenuitem>Backlog</guimenuitem></menuchoice> subtab, select and drag &amp; drop a Work Item based on the required order. Alternatively, select <emphasis role="strong">Move to Top</emphasis> or <emphasis role="strong">Move to Bottom</emphasis> from the Work Item menu.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>The <emphasis role="strong">Board</emphasis> subtab provides a visual representation of the progress status of your Work Items. Based on their status, the Work Items are sorted into swim-lanes  as <emphasis role="strong">new</emphasis>, <emphasis role="strong">open</emphasis>, <emphasis role="strong">in progress</emphasis>, <emphasis role="strong">resolved</emphasis>, and <emphasis role="strong">closed</emphasis>. This enables you to track the status of the Work Item from its start to its completion.</simpara>
+<simpara>You can order the Work Items in the board based on the status of the Work Item as follows:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>In the <menuchoice><guimenu>Plan</guimenu> <guimenuitem>Board</guimenuitem></menuchoice> subtab, select and drag &amp; drop a Work Item to the relevant swim-lane based on the progress of the Work Item.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="filtering_work_items">
+<title>Filtering Work Items</title>
+<simpara>In the <emphasis role="strong">Backlog</emphasis> subtab, you can filter Work Items on the basis of <emphasis role="strong">Assignee</emphasis>, <emphasis role="strong">Area</emphasis>, or <emphasis role="strong">Work Item Type</emphasis>.</simpara>
+<itemizedlist>
+<listitem>
+<simpara>In the <menuchoice><guimenu>Plan</guimenu> <guimenuitem>Backlog</guimenuitem></menuchoice> subtab, use the <emphasis role="strong">Select</emphasis> drop-down to filter and display relevant Work Items.</simpara>
+<simpara>You can filter Work Items by:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">Assignee</emphasis>: Select an assignee from the <emphasis role="strong">Filter by assignee</emphasis> drop-down list to display Work Items assigned to a particular user.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Area</emphasis>: Select an area from the <emphasis role="strong">Filter by area</emphasis> drop-down list to display Work Items belonging to a particular Area.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Workitem Type</emphasis>: Select a Work Item Type from the <emphasis role="strong">Filter by workitemtype</emphasis> drop-down list to display Work Items belonging to a particular Work Item Type.</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+</itemizedlist>
+<simpara>In the <emphasis role="strong">Board</emphasis> subtab you can filter Work Items similarly on the basis of <emphasis role="strong">Assignee</emphasis> or <emphasis role="strong">Area</emphasis> by using the <emphasis role="strong">Select</emphasis> drop-down list.</simpara>
+<simpara>The <emphasis role="strong">Board</emphasis> view gives you the option to select a required Work Item Type in the <emphasis role="strong">Currently showing</emphasis> drop-down list to display Work Items relevant to that particular Work Item Type.</simpara>
+</section>
+</section>
+</chapter>
+<chapter xml:id="scenario_driven_planning">
+<title>Scenario-Driven Planning</title>
+<section xml:id="about_scenario_driven_planning">
+<title>About Scenario-Driven Planning</title>
+<simpara>One of the development methodologies supported by the Planner is the Scenario-driven development approach to plan and track your development work. The Scenario-driven development process uses the following work item type hierarchy:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/sdd_wit_hierarchy.png"/>
+</imageobject>
+<textobject><phrase>Scenario-driven work item hierarchy</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>For instance, as illustrated above, a typical scenario development process follows this pattern:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>The Management team envisages a Scenario within a Portfolio, which is further broken down into Experiences and Value Propositions. For example:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>A sample Scenario: Within a globally distributed software development organization, enable cross-collaboration with each other in real time.</simpara>
+</listitem>
+<listitem>
+<simpara>The resultant Value Proposition: A developer blocked on a piece of code can easily find any available peer, regardless of their location, and instantly share, discuss, and co-edit the code in question, without having to leave the IDE.</simpara>
+</listitem>
+<listitem>
+<simpara>The associated Experience: The blocked developer identifies a team member who is online using the team pane in the IDE and sends a request for real-time collaboration. The other developer gets alerted and if accepted, they are presented with a code-editor that enables the two of them to edit the same code, in real time. An integration with the team’s preferred universal chat client enables discussion.</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>The Product Owner or Team Lead in sync with the Management identifies the Requirements or Features to realize these Experiences and Value-Propositions. Bugs are tracked at the Requirements level. For example:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>A potential Feature for the previous scenario: The developer is able to see a list of his teammates with their Online/Offline status, within the IDE, to interact with them in real-time without leaving the IDE.</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>The Execution team along with the Product owner selects some of the work items for each Iteration and further breaks them down into Tasks which can be assigned to the team members.</simpara>
+</listitem>
+</orderedlist>
+<simpara>Fundamental and Papercut work item types also follow a similar development workflow.</simpara>
+<section xml:id="_scenario_driven_planning_work_item_types">
+<title>Scenario-driven planning work item types</title>
+<simpara>Scenario-driven planning uses the following work item types in its development workflow:</simpara>
+<section xml:id="_portfolio">
+<title>Portfolio</title>
+<simpara>The Portfolio work item group type comprises a group of Scenario, Fundamental, and Papercut type of work items within a working space. The management team identifies these work items and splits each of them into Value-Propositions and Experiences to realize them.</simpara>
+<section xml:id="_scenario">
+<title>Scenario</title>
+<simpara>A scenario determines tangible customer value and resolves issues they face keeping in the mind the broader product vision. It envisages the Value Propositions and Experiences required to deliver customer value. It proposes complete customer experiences to motivate customers to adopt the product.
+From the customer point of view, a scenario tries to answer the question “In your business, do you need to…?”.</simpara>
+</section>
+<section xml:id="_fundamentals">
+<title>Fundamentals</title>
+<simpara>Fundamentals are work items that ensure quality metrics such as compatibility, security, compliance, performance, and so on are suitably met. These have associated Value Propositions and Experiences, and follow the same development process as Scenarios.</simpara>
+</section>
+<section xml:id="_papercuts">
+<title>Papercuts</title>
+<simpara>Papercuts are a collection of low-priority bugs and small convenience features, which collectively, disrupt the user experience and have the potential to make the user lose interest in the product. These aggregated irritants follow the same development process as Scenarios.</simpara>
+</section>
+<section xml:id="_value_proposition">
+<title>Value Proposition</title>
+<simpara>A Value Proposition outlines an action plan to add value to the customer experience, and addresses the Parent Scenario. The value to the customer is clearly outlined in the Value Proposition and is delivered through Experiences associated with it. Most often Value Propositions are created along with the Scenarios.
+From the customer point of view, a Value Proposition tries to answer the question “What if you could…? Would you adopt, use/buy?”.</simpara>
+</section>
+<section xml:id="_experiences">
+<title>Experiences</title>
+<simpara>Experiences are narratives that describe the user workflow for a Product. They outline the method of delivering the associated Value Proposition by identifying the features and tasks required for a Product.
+From the customer point of view, an Experience tries to answer the question “Let me show you how&#8230;&#8203; Would you use it that way?”.</simpara>
+</section>
+</section>
+<section xml:id="_requirements">
+<title>Requirements</title>
+<simpara>The Requirements work item group type comprises the Features required to realize the Portfolio work items. They also take into account the Bugs encountered while putting the Scenarios and Experiences in action. The product owner or the team lead, breaks the Portfolio work items into manageable Features in consultation with the product management.</simpara>
+<section xml:id="_features_2">
+<title>Features</title>
+<simpara>Features are User Stories mapped to the parent Experiences. They can support multiple Experiences. From the customer point of view, a Feature addresses this statement “As a &lt;type of user&gt;, I can &lt;goal&gt;, in order to &lt;purpose&gt;”.</simpara>
+</section>
+<section xml:id="_bugs">
+<title>Bugs</title>
+<simpara>Bugs are errors or flaws in the software features that produce unexpected results and need to be fixed to ensure a smooth development process.</simpara>
+</section>
+</section>
+<section xml:id="_execution">
+<title>Execution</title>
+<simpara>The Execution work Item group type comprises the Task type of work items to implement the planned features.</simpara>
+<section xml:id="_tasks">
+<title>Tasks</title>
+<simpara>Tasks are work units to be picked and completed by various team members to implement a feature. These tasks are derived from the Features or Bugs identified at the Requirements level.</simpara>
+</section>
+</section>
+</section>
+</section>
+<section xml:id="using_scenario_driven_planning">
+<title>Using Scenario-Driven Planning</title>
+<simpara>You can use the Scenario-driven planning template to follow a guided work item type hierarchy suitable for  Scenario-driven development.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara><link linkend="creating_a_new_space">Create a Collaboration Space</link> with the Scenario-driven Planning template, or select an existing Scenario-driven Planning Collaboration Space.</simpara>
+</listitem>
+</itemizedlist>
+<formalpara>
+<title>Procedure</title>
+<para>A typical Scenario-driven development life-cycle undergoes the following phases:</para>
+</formalpara>
+<section xml:id="_creating_portfolio_level_work_items">
+<title>Creating Portfolio level work items</title>
+<simpara>The Product Management team envisages Scenarios, identifies Fundamental and Papercut type of work items within a Portfolio. These are further broken down into Experiences and Value Propositions.</simpara>
+<simpara>You can create Scenario, Fundamental, or Papercut type of work items and associated child Value Propositions and Experiences as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <guibutton>Plan</guibutton> at the top of the page to view the Planner. The default <emphasis role="strong">Backlog</emphasis> view with <emphasis role="strong">All</emphasis> the Work Items in the Space is displayed.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Portfolio</guibutton>, and then <guibutton>Create work item</guibutton> from the pane at the bottom of the screen to create a new work item.</simpara>
+<note>
+<simpara>You can create only Portfolio type work items such as Scenario, Fundamental, and Papercuts.</simpara>
+</note>
+</listitem>
+<listitem>
+<simpara>Select the work item you created, and then click <guibutton>Create work item</guibutton> from the pane at the bottom of the screen to create associated child Value Propositions and Experiences.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_creating_requirements_level_work_items">
+<title>Creating Requirements level work items</title>
+<simpara>The Product Owner or Team Lead in sync with the management identifies the Requirements or Features to actualize these Experiences and Value-Propositions. Bugs are also tracked at the Requirements level.</simpara>
+<simpara>You can create Feature or Bug type of work items and associated child Tasks as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <guibutton>Requirements</guibutton>, and then <guibutton>Create work item</guibutton> from the pane at the bottom of the screen to create a new work item.</simpara>
+<note>
+<simpara>You can create only Requirements type work items such as Features and Bugs.</simpara>
+</note>
+</listitem>
+<listitem>
+<simpara>Select the Feature or Bug you created and click <guibutton>Create work item</guibutton> from the pane at the bottom of the screen to create associated child Tasks.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_creating_execution_level_work_items">
+<title>Creating Execution level work items</title>
+<simpara>The Execution team along with the Product owner selects some of the work items such as Scenarios, Features, or tasks to be implemented within the time frame of an Iteration and assigns them to the team members.</simpara>
+<simpara>You can create work items for an Iteration or select existing work items and <link linkend="associating_work_items_with_an_iteration">associate them to an iteration</link>.</simpara>
+<formalpara>
+<title>Related Information</title>
+<para>The following sections provide further information about Iterations:</para>
+</formalpara>
+<itemizedlist>
+<listitem>
+<simpara><link linkend="about_iterations">About Iterations</link></simpara>
+</listitem>
+<listitem>
+<simpara><link linkend="creating_a_new_iteration">Creating a New Iteration</link></simpara>
+</listitem>
+<listitem>
+<simpara><link linkend="selecting_an_iteration">Selecting an Iteration</link></simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+</chapter>
+<chapter xml:id="working_with_iterations">
+<title>Working with Iterations</title>
+<section xml:id="about_iterations">
+<title>About Iterations</title>
+<simpara>Iterations are used to organize <link linkend="about_work_items">Work Items</link> in a certain order for planning or implementation of a development project. This can be used to model Sprints when used with Scrum.</simpara>
+<simpara>The Planner allows you to map your Work Items to specific Iterations to help plan your work based on your project requirements. It enables you to set time-specific goals by grouping priority Work Items into a single development cycle. It helps you track your progress for each Iteration and compare with past Iterations and associated Work Items.</simpara>
+</section>
+<section xml:id="creating_a_new_iteration">
+<title>Creating a New Iteration</title>
+<simpara>Add Iterations to your Collaboration Space to plan and organize your Work Items. Click <emphasis role="strong">Plan</emphasis> to view and modify existing Iterations and add new Iterations.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure you have <link linkend="creating_a_new_space">created a Collaboration Space</link>.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click <emphasis role="strong">Plan</emphasis> from the options at the top of the OpenShift.io interface.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the blue plus (<emphasis role="strong">+</emphasis>) icon next to the <emphasis role="strong">Future Iterations</emphasis> option to view the <emphasis role="strong">Create Iterations</emphasis> dialog box.</simpara>
+</listitem>
+<listitem>
+<simpara>Enter a name for the new Iteration in the <emphasis role="strong">Name</emphasis> field. This is a required field.</simpara>
+</listitem>
+<listitem>
+<simpara>Optionally, create a parent-child link to your Iteration by selecting the parent Iteration from the <emphasis role="strong">Parent Iteration</emphasis> drop-down list.</simpara>
+</listitem>
+<listitem>
+<simpara>Describe the Iteration&#8217;s goals and scope in the <emphasis role="strong">Description</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>Set the start and end dates for the Iteration using the <emphasis role="strong">Start Date</emphasis> and <emphasis role="strong">End Date</emphasis> fields.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Create</guibutton> to create the new Iteration. Your Iteration will be listed under <emphasis role="strong">Future Iterations</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Expand <emphasis role="strong">Future Iterations</emphasis> to view your new Iteration.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="selecting_an_iteration">
+<title>Selecting an Iteration</title>
+<simpara>After logging in and selecting the appropriate space, click <guibutton>Plan</guibutton> to view the Iterations for that space. Existing Iterations are grouped into one of the following categories:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">Current Iteration</emphasis> displays as a default for this view. It lists the currently ongoing Iteration, if any, and the work items associated with it.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Future Iterations</emphasis> display a list of Iterations that have not started or ended. You can add multiple Iterations based on start dates to this section and start the appropriate one when required.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Past Iterations</emphasis> displays all ended Iterations.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>Select an Iteration listed in one of these groups to display the included Work Items. See <link linkend="associating_work_items_with_an_iteration">Associating Work Items with an Iteration</link> for more information.</simpara>
+<section xml:id="_future_iterations">
+<title>Future Iterations</title>
+<simpara>After <link linkend="creating_a_new_iteration">creating an Iteration</link>, expand <emphasis role="strong">Future Iterations</emphasis> to view all future Iterations and their Work Items.</simpara>
+<simpara>Select one of the following options after clicking the options (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/kabob.png"/>
+</imageobject>
+<textobject><phrase>kabob</phrase></textobject>
+</inlinemediaobject>) icon for the target Iteration:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Select <emphasis role="strong">Edit</emphasis> to change the Iteration&#8217;s details.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Start</emphasis> to begin your Iteration. This moves the Iteration to the <emphasis role="strong">Current Iteration</emphasis> section.</simpara>
+<note>
+<simpara>Setting the Start Date of an Iteration to the present or current date does not set it as a <emphasis role="strong">Current Iteration</emphasis>. You must select <emphasis role="strong">Start</emphasis> for the Iteration to make it the current Iteration.</simpara>
+</note>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Create child</emphasis> to create a child Iteration for the target Iteration.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_current_iteration">
+<title>Current Iteration</title>
+<simpara>An Iteration is only set as the <emphasis role="strong">Current Iteration</emphasis> after it starts.</simpara>
+<simpara>The <emphasis role="strong">Current Iteration</emphasis> displays:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>The start and end dates for the Iteration.</simpara>
+</listitem>
+<listitem>
+<simpara>A tracker to track the Iteration status based on the completion of the Work Items associated with it.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>To end an Iteration:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click the options (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/kabob.png"/>
+</imageobject>
+<textobject><phrase>kabob</phrase></textobject>
+</inlinemediaobject>) icon for the Iteration and select <emphasis role="strong">Close</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <guibutton>Close</guibutton> button to close the Iteration. The Iteration is moved to <emphasis role="strong">Past Iterations</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_past_iterations">
+<title>Past Iterations</title>
+<simpara><emphasis role="strong">Past Iterations</emphasis> lists all closed Iterations within the Space. Click the options (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/kabob.png"/>
+</imageobject>
+<textobject><phrase>kabob</phrase></textobject>
+</inlinemediaobject>) icon and select <emphasis role="strong">Edit</emphasis>, <emphasis role="strong">Start</emphasis>, or <emphasis role="strong">Create Child</emphasis> to work with the Iterations in the list.</simpara>
+</section>
+</section>
+</chapter>
+<chapter xml:id="working_with_pipelines">
+<title>Working with Pipelines</title>
+<section xml:id="about_pipelines">
+<title>About Pipelines</title>
+<simpara>Pipelines are a continuous delivery system that tests and deploys the code at each step to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements a different level of testing and deployment tasks, provides results, and then passes the code on to the next step.</simpara>
+<simpara>In OpenShift.io, pipeline builds are configured when creating or importing a project and are triggered automatically when changes are committed to your code repository.</simpara>
+</section>
+<section xml:id="creating_a_new_pipeline">
+<title>Creating a New Pipeline</title>
+<simpara>To create a new pipeline for your Collaboration Space, you must add a new project to the Space. OpenShift.io includes multiple templates to add new projects to your Space.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that you have created a Collaboration Space to use for the pipeline. See <xref linkend="creating_a_new_space"/> for instructions.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click the name of your Space to view the dashboard for your new space. The <literal>How would you like to get started?</literal> menu appears for your new space.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/get_started_menu.png"/>
+</imageobject>
+<textobject><phrase>How would you like to get started menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Add to space</guibutton> in the top right corner of the dashboard.</simpara>
+</listitem>
+<listitem>
+<simpara>In the first step of the <literal>Forge Wizard</literal>:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select a project type from the <literal>Technology Stack</literal> drop-down menu.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Select your organization name from the options in the <literal>Organization</literal> field. For this example, use the organization name assigned to your personal GitHub account.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <literal>Name</literal> field, add a unique name for your project.</simpara>
+</listitem>
+<listitem>
+<simpara>Leave the default value for the <literal>Group Id</literal> and <literal>Version</literal> fields and click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Select a build pipeline strategy. For this example, use the default value (<literal>Release, Stage, Approve and Promote</literal>) and click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>The <literal>Build configuration</literal> screen displays the details for your <literal>Jenkins Space</literal> and options for web hooks and triggering builds. Use the default options for these fields and click <guibutton>Finish</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+<simpara>You have now added a Quickstart project to your space, which automatically initiates a build pipeline for your new project. At this stage, OpenShift.io also adds your project&#8217;s pipeline into your OpenShift Online account and creates a new GitHub repository for your project.</simpara>
+<simpara>A confirmation screen appears, which includes a clickable <literal>Git repositories</literal> link that can be used to view your new project&#8217;s GitHub repository.</simpara>
+</section>
+<section xml:id="staging_a_pipeline">
+<title>Staging a Pipeline</title>
+<simpara>In a build pipeline, <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis> are individual OpenShift projects. <literal>Stage</literal> is a production staging area to review and test changes before they are finalized and staged on <literal>Run</literal>.</simpara>
+<simpara>The new build pipeline pushes version 1.0.1 of your new project into <emphasis role="strong">Stage</emphasis> and then, after user approval, to <emphasis role="strong">Run</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/pipeline_running.png"/>
+</imageobject>
+<textobject><phrase>A Running Pipeline Build</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>Optionally, view the build pipeline&#8217;s details in OpenShift Online:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the <literal>Pipeline</literal> page, click <literal>Build #1</literal> for the build pipeline in progress.</simpara>
+</listitem>
+<listitem>
+<simpara>When redirected, log into your OpenShift Online account.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">View Log</emphasis> to view the Jenkins instance&#8217;s logs.</simpara>
+</listitem>
+</orderedlist>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/oso_pipeline.png"/>
+</imageobject>
+<textobject><phrase>A Running Pipeline Build in OpenShift Online</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="configuring_pipelines">
+<title>Configuring Pipelines</title>
+<simpara>Advanced users can change the settings for their project&#8217;s pipeline builds in OpenShift Online. For most users, we do not recommend changing the default values OpenShift.io sets up.</simpara>
+<orderedlist numeration="arabic">
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that you have created a build pipeline for your project. See <xref linkend="creating_a_new_pipeline"/> for instructions.</simpara>
+</listitem>
+</orderedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Navigate to your Space&#8217;s dashboard.</simpara>
+</listitem>
+<listitem>
+<simpara>From the menu options at the top of the page, click <guibutton>Create</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>From the displayed options, click <guibutton>Pipelines</guibutton>. The <literal>Pipelines</literal> page lists all the pipeline builds for your project.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Edit Pipeline</guibutton> for the desired pipeline build.</simpara>
+</listitem>
+<listitem>
+<simpara>Enter your OpenShift Online credentials when prompted. When successful, you are redirected to your OpenShift Online account&#8217;s Console.</simpara>
+<warning>
+<simpara>OpenShift.io sets up the required default options for your pipeline build. We do not recommended changing these default settings.</simpara>
+</warning>
+</listitem>
+<listitem>
+<simpara>In this page, you can edit the following attributes for your build pipelines:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>The <literal>Source Configuration</literal> section is used to edit your project&#8217;s Git Repository URL.</simpara>
+</listitem>
+<listitem>
+<simpara>The <literal>Jenkinsfile Type</literal> option is used to select the source of your Jenkinsfile for the build.</simpara>
+</listitem>
+<listitem>
+<simpara>The <literal>Jenkinsfile Source Path</literal> option is used to provide a relative path to your Jenkinsfile.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>When ready, click <guibutton>Save</guibutton> to save your changes.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="view_pipelines_oso">
+<title>Viewing the Pipeline&#8217;s Projects in OpenShift Online</title>
+<simpara>To view the OpenShift Online projects that support your project&#8217;s pipeline, navigate to <link xl:href="https://console.starter-us-east-2.openshift.com/">https://console.starter-us-east-2.openshift.com/</link>. This page displays the following projects/namespaces that are created in OpenShift Online:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>The <emphasis role="strong">username</emphasis> project is where your pipelines run. This project&#8217;s name is your OpenShift Online user name.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">username-che</emphasis> project is for your Che Host and workspaces.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">username-jenkins</emphasis> project is used for your Jenkins Master or your Jenkins Slaves. Click <literal>Monitoring</literal> after clicking this project to access your Jenkins console.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">username-stage</emphasis> project is for your personal use. In this project, pods are displayed as pipelines that have been run. For maintenance, you can click this project and power down individual pods if required.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">username-run</emphasis> project is identical to the <emphasis role="strong">username-stage</emphasis> project and is used as an environment for experimenting with your OpenShift pods.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</chapter>
+<glossary xml:id="_glossary">
+<title>Glossary</title>
+<simpara>This glossary provides concise definitions of terms and explanations of concepts used in Red&#160;Hat OpenShift.io and in related documentation.</simpara>
+<variablelist>
+<varlistentry>
+<term>Areas</term>
+<listitem>
+<simpara>Areas are used to organize Work Items to distinguish between different types or functionalities that are being worked on within a Collaboration Space.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Backlog</term>
+<listitem>
+<simpara>A Backlog is a list of Work Items that have not been triaged and assigned to a specific Iteration.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Collaboration Space</term>
+<listitem>
+<simpara>Spaces are the equivalent of projects. Each Iteration and Work Item must be attached to a Space, and a team of people can be attached to a project (Space) in various roles. By default, a Space contains at least one Area and one Iteration.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Iteration</term>
+<listitem>
+<simpara>Iterations are used to organize Work Items for planning or implementation in a certain order. They are time bound and can be used to model Sprints when used with Scrum. Typically an Iteration comprises a mix of work items, ranging from Scenarios, Features, Papercuts, Experiences or Tasks, identified to be executed within the time frame of the Iteration.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Pipeline</term>
+<listitem>
+<simpara>Pipelines are a continuous delivery system that, at each step, tests and deploys the code to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements different levels of testing and deployment tasks, provides results, and then passes the code on to the next step.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Scenario-Driven Planning</term>
+<listitem>
+<simpara>A software development methodology focused on real-world problems, or Scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular Value Propositions and are realized through Experiences.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Work Item</term>
+<listitem>
+<simpara>Work Items describe and keep track of work that needs to be done. A user can be assigned to a Work Item. Each Work Item must be attached to a Collaboration Space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+</glossary>
+</part>
+</book>
