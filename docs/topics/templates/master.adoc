@@ -1,0 +1,5 @@
+include::topics/templates/attributes.adoc[]
+
+= New Guide
+
+This is some sample content.
