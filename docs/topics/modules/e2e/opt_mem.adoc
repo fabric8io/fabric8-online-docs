@@ -68,4 +68,4 @@ status:
     limits.memory: 250Mi
 ```
 
-Optimizing memory usage is particularly important when creating more than one project in {osio}. Each additional project requires an additional share of your OpenShift Online resources. For OpenShift Online's Free Tier, see <<#cleanup_sb.adoc##cleanup_sb>> to reset your OpenShift Online and {osio} accounts after creating two projects.
+Optimizing memory usage is particularly important when creating more than one project in {osio}. Each additional project requires an additional share of your OpenShift Online resources. For OpenShift Online's Free Tier, see <<cleanup_sb>> to reset your OpenShift Online and {osio} accounts after creating two projects.

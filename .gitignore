@@ -1,3 +1,4 @@
 build/
-*/master.html
+docs/*/master.xml
+docs/*/master.html
 html/
