@@ -8,6 +8,7 @@ You can add <<about_work_items,Work Items>> to your Collaboration Space in one o
 * <<creating_a_new_space,Create a new Collaboration Space>> or select an existing Collaboration Space.
 
 include::quick_add_work_item.adoc[leveloffset=+1]
+
 include::using_backlog_to_create_work_item.adoc[leveloffset=+1]
-include::quick_add_work_item.adoc[leveloffset=+1]
+
 include::using_detailed_method_to_create_work_items.adoc[leveloffset=+1]

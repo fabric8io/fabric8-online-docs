@@ -1,5 +1,5 @@
 [#using_backlog_to_create_work_item]
-== Using the Backlog to Create a Work Item
+= Using the Backlog to Create a Work Item
 
 . Click btn:[Plan] in your Collaboration Space.
 

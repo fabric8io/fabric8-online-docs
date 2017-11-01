@@ -10,6 +10,9 @@ Click btn:[Plan] to use {osio}'s Planner to track your Work Items and Iterations
 Use the Planner to change the attributes of a Work Item, associate them with Iterations, update their progress, and filter them according to your requirements.
 
 include::modifying_an_existing_work_item.adoc[leveloffset=+1]
+
 include::associating_work_items_with_an_iteration.adoc[leveloffset=+1]
+
 include::ordering_and_monitoring_work_items.adoc[leveloffset=+1]
+
 include::filtering_work_items.adoc[leveloffset=+1]

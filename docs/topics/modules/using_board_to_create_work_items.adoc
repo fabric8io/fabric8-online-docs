@@ -1,5 +1,5 @@
 [#using_board_to_create_work_items]
-== Using the Board to Create a Work Item
+= Using the Board to Create a Work Item
 
 . Click btn:[Plan] to view the *Planner* for your Space.
 
