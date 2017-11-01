@@ -1,26 +1,24 @@
 [#signing_up_for_the_red_hat_developers_program]
 = Signing up for the Red Hat Developers Program
 
-Learn how to sign up for the {rhdp} to access {rhosio} and start using its services.
+To start using {rhosio}, you can create a new Red Hat Developers (RHD) account or use an existing RHD or social media account.
+
+IMPORTANT: Early access to the service is limited and will be allocated as resources become available. When you sign up, you are added to a waiting list. You are notified when access to the system is available.
 
 . Navigate to the link:{osio-url}[{rhosio}] website in a browser window.
 
-. Click *Sign Up For The Preview*. You can register using an existing social or Red Hat account.
+. Click btn:[Sign Up For The Preview]. You can register using an existing social or Red Hat account.
 
-  .. Registering manually:
+  * To register a new Red Hat account:
     ... At the {rhosio} Developer Preview page, click btn:[Register].
-    ... Enter details such as your name, email address, company, and passwords in the appropriate fields.
-    ... Select the terms and conditions checkboxes to indicate acceptance.
+    ... Enter your name, email address, company, and password in the appropriate fields.
+    ... Select the terms and conditions check boxes.
     ... Click *Create my account*.
+    ... Verify your email address to complete registration.
 
-  .. Registering using your existing Red Hat account or a social account from services such as JBoss Developer, GitHub, Stack Overflow, LinkedIn, Twitter, Facebook, Google, or Microsoft.
-    ... Click the button for the relevant social account.
+  * To register using your existing Red Hat account or a social account from services such as JBoss Developer, GitHub, Stack Overflow, LinkedIn, Twitter, Facebook, Google, or Microsoft:
+    ... Click the appropriate social account button.
     ... Add your login credentials for the selected service and authorize the creation of the account.
-
-. If required, verify your email address to complete registration.
-
-NOTE: Early access to the service is limited is provided as resources become available. When you sign up, you will be put on a waiting list. You will be notified when access to the system is available.
-
 
 == Related Information
 

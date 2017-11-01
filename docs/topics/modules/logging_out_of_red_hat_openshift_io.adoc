@@ -3,9 +3,9 @@
 
 .Prerequisites
 
-* Ensure that you are logged into the {rhosio} website.
+* Ensure that you have logged in to the {rhosio} website.
 
 .Procedure
 
-. Click on your name in the top right corner of the application. If the current page does not show the profile menu, navigate to the main page at link:{osio-url}[{rhosio}].
+. Click your name in the top right corner of the application. If the current page does not show the profile menu, navigate to the main page at link:{osio-url}[{rhosio}].
 . In the drop-down menu, click the *Log Out* option.

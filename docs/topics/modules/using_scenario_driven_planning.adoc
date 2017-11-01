@@ -1,46 +1,19 @@
 [#using_scenario_driven_planning]
 = Using Scenario-Driven Planning
 
-You can use the Scenario-driven planning template to follow a guided work item type hierarchy suitable for  Scenario-driven development.
+You can use the Scenario-driven planning template to follow a guided work item type hierarchy suitable for Scenario-driven development.
 
 .Prerequisites
 
-* <<creating_a_new_space,Create a Collaboration Space>> with the Scenario-driven Planning template, or select an existing Scenario-driven Planning Collaboration Space.
+* <<creating_a_new_space,Create a Collaboration Space>> with the Scenario-driven Planning template or select an existing Scenario-driven Planning Collaboration Space.
 
 .Procedure
 
-A typical Scenario-driven development life-cycle undergoes the following phases:
+A typical Scenario-driven development life cycle undergoes the following phases:
 
-== Creating Portfolio level work items
-
-The Product Management team envisages Scenarios, identifies Fundamental and Papercut type of work items within a Portfolio. These are further broken down into Experiences and Value Propositions.
-
-You can create Scenario, Fundamental, or Papercut type of work items and associated child Value Propositions and Experiences as follows:
-
-. Click btn:[Plan] at the top of the page to view the Planner. The default *Backlog* view with *All* the Work Items in the Space is displayed.
-. Click btn:[Portfolio], and then btn:[Create work item] from the pane at the bottom of the screen to create a new work item.
-+
-NOTE: You can create only Portfolio type work items such as Scenario, Fundamental, and Papercuts.
-
-. Select the work item you created, and then click btn:[Create work item] from the pane at the bottom of the screen to create associated child Value Propositions and Experiences.
-
-== Creating Requirements level work items
-
-The Product Owner or Team Lead in sync with the management identifies the Requirements or Features to actualize these Experiences and Value-Propositions. Bugs are also tracked at the Requirements level.
-
-You can create Feature or Bug type of work items and associated child Tasks as follows:
-
-. Click btn:[Requirements], and then btn:[Create work item] from the pane at the bottom of the screen to create a new work item.
-+
-NOTE: You can create only Requirements type work items such as Features and Bugs.
-
-. Select the Feature or Bug you created and click btn:[Create work item] from the pane at the bottom of the screen to create associated child Tasks.
-
-== Creating Execution level work items
-
-The Execution team along with the Product owner selects some of the work items such as Scenarios, Features, or tasks to be implemented within the time frame of an Iteration and assigns them to the team members.
-
-You can create work items for an Iteration or select existing work items and <<associating_work_items_with_an_iteration,associate them to an iteration>>.
+include::creating_portfolio_level_work_items.adoc[leveloffset=+1]
+include::creating_requirements_level_work_items.adoc[leveloffset=+1]
+include::creating_execution_level_work_items.adoc[leveloffset=+1]
 
 .Related Information
 The following sections provide further information about Iterations:

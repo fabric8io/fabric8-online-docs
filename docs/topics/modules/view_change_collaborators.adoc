@@ -12,6 +12,8 @@ After adding Collaborators, you can view their details or remove them from your 
 .Procedure
 
 . Click the *Equalizer* button (image:equalizer.png[title="Equalizer"]) at the top of the screen.
-. Select the *Collaborators* tab. A list of collaborators for your Collaboration Space displays.
-. Click the three dots at the right side of a Collaborator's name on the **Collaborators** page.
-. From the two options, select *View user* to view the Collaborator's details or *Remove from space* to remove them from the Space.
+. Select the *Collaborators* tab.
+. From the displayed list of Collaborators, click the three dots next to a Collaborator's name on the **Collaborators** page.
+. Either:
+ * Select *View user* to view the Collaborator's details.
+ * Select *Remove from space* to remove them from the Space.

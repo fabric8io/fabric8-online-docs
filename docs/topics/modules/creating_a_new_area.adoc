@@ -1,7 +1,7 @@
 [#creating_a_new_area]
 = Creating a New Area
 
-You can create a new child Area to group together related Work Items by type or functionality. When a new Collaboration Space is created, a root Area is created with the same name. Each subsequent Area is created as a child of an existing Area in the Space.
+You can create a new child Area to group together related Work Items by type or functionality. When you create a new Collaboration Space, {osio} automatically creates a root Area with the same name. Each additional Area within the Collaboration Space is created as a child of the root Area or another existing Area in the Space.
 
 .Prerequisites
 
@@ -10,6 +10,6 @@ You can create a new child Area to group together related Work Items by type or 
 .Procedure
 
 . Click the *Equalizer* button (image:equalizer.png[title="Settings"]) at the top of the screen to display a list of Areas in your Space.
-. Click the blue plus (*+*) icon in the top right corner of the *Areas* view.
-. In the *Add New Area* dialog box, add a name for your new Area and a parent Area.
-. Click *Create* to create the new child area.
+. Click btn:[+ Add Areas] in the top right corner of the *Areas* view.
+. In the `Add New Area` dialog box, add a name for your new Area and a parent Area.
+. Click btn:[Create] to create the new child area.

@@ -1,7 +1,7 @@
 [#creating_a_new_pipeline]
 = Creating a New Pipeline
 
-To create a new pipeline for your Collaboration Space, you must add a new project to the Space. {osio} includes multiple templates to add new projects to your Space.
+To create a new pipeline for your Collaboration Space, you must add a new project to the Space. {osio} includes templates to add new projects to your Space.
 
 .Prerequisites
 
@@ -9,23 +9,24 @@ To create a new pipeline for your Collaboration Space, you must add a new projec
 
 .Procedure
 
-. Click the name of your Space to view the dashboard for your new space. The `How would you like to get started?` menu appears for your new space. 
+. Click the name of your Space to view its dashboard.
+
+. Click btn:[Add to space]. The `How would you like to get started?` menu appears for your new space.
 +
 image::get_started_menu.png[How would you like to get started menu]
 +
-. Click btn:[Add to space] in the top right corner of the dashboard.
-
-. In the first step of the `Forge Wizard`:
-.. Select a project type from the `Technology Stack` drop-down menu.
+. Click btn:[Create a new Quickstart project].
+. In the first step of the `Application Wizard`:
+.. Select a Technology Stack from the listed tiles.
 .. Click btn:[Next].
-.. Select your organization name from the options in the `Organization` field. For this example, use the organization name assigned to your personal GitHub account.
-.. In the `Name` field, add a unique name for your project.
+.. Select your organization name from the options in the `Organisation` field. For this example, use the organization name assigned to your personal GitHub account.
+.. In the `OpenShift Project Name` field, add a unique name for your project.
 .. Leave the default value for the `Group Id` and `Version` fields and click btn:[Next].
 
 . Select a build pipeline strategy. For this example, use the default value (`Release, Stage, Approve and Promote`) and click btn:[Next].
 
 . The `Build configuration` screen displays the details for your `Jenkins Space` and options for web hooks and triggering builds. Use the default options for these fields and click btn:[Finish].
 
-You have now added a Quickstart project to your space, which automatically initiates a build pipeline for your new project. At this stage, {osio} also adds your project's pipeline into your OpenShift Online account and creates a new GitHub repository for your project.
+You have now added a Quickstart project to your space, which initiates a build pipeline for your new project. At this stage, {osio} also adds your project's pipeline into your OpenShift Online account and creates a new GitHub repository for your project.
 
-A confirmation screen appears, which includes a clickable `Git repositories` link that can be used to view your new project's GitHub repository.
+A confirmation screen appears, which includes a `Git repositories` link. Use this link to view your new project's GitHub repository.

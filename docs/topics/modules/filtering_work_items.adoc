@@ -1,0 +1,14 @@
+[#filtering_work_items]
+== Filtering Work Items
+
+Filter your Work Item view in the Planner as follows:
+
+* Click btn:[Plan] and then click either btn:[Backlog] or btn:[Board].
+
+* Use the btn:[Select] drop-down menu to select a Work Item attribute.
+
+* Click the text box next to the *Select* option. This displays a list of potential filters.
+
+* You can filter Work Items by _Assignee_, _Creator_, _Area_, _State_, and _Label_. Select the appropriate option from the drop down menu. The text box displays a list of valid options for the selected field.
+
+* Select the appropriate option to filter the Work Items.

@@ -1,10 +1,9 @@
 [#about_scenario_driven_planning]
 = About Scenario-Driven Planning
 
-One of the development methodologies supported by the Planner is the Scenario-driven development approach to plan and track your development work. The Scenario-driven development process uses the following work item type hierarchy:
+One of the development methodologies supported by the Planner is the Scenario-driven development approach to plan and track your development work. The Scenario-driven development process uses the following Work Item type hierarchy:
 
 image::sdd_wit_hierarchy.png[Scenario-driven work item hierarchy]
-
 
 For instance, as illustrated above, a typical scenario development process follows this pattern:
 
