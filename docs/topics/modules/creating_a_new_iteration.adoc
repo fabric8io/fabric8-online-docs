@@ -1,7 +1,7 @@
 [#creating_a_new_iteration]
 = Creating a New Iteration
 
-Add Iterations to your Collaboration Space to plan and organize your Work Items. Click *Plan* to view and modify existing Iterations and add new Iterations.
+Add Iterations to your Collaboration Space to plan and organize your Work Items. Click btn:[Plan] to view and modify existing Iterations and to add new Iterations.
 
 .Prerequisites
 
@@ -9,18 +9,20 @@ Add Iterations to your Collaboration Space to plan and organize your Work Items.
 
 .Procedure
 
-. Click *Plan* from the options at the top of the OpenShift.io interface.
+. Click btn:[Plan] to view the Planner.
 
-. Click the blue plus (*+*) icon next to the *Future Iterations* option to view the *Create Iterations* dialog box.
+. Click btn:[+] next to the `All Iterations` option.
 
-. Enter a name for the new Iteration in the *Name* field. This is a required field.
+. Enter a `Name` for your new Iteration.
 
-. Optionally, create a parent-child link to your Iteration by selecting the parent Iteration from the *Parent Iteration* drop-down list.
+. Optionally, create a parent-child link by selecting the parent Iteration from the `Parent Iteration` drop-down list.
 
-. Describe the Iteration's goals and scope in the *Description* field.
+. Add a `Description` for the new Iteration.
 
-. Set the start and end dates for the Iteration using the *Start Date* and *End Date* fields.
+. Add a `Start Date` and `End Date` for your new Iteration.
 
-. Click btn:[Create] to create the new Iteration. Your Iteration will be listed under *Future Iterations*.
+. Toggle the `Force Active` switch to _ON_ to force start the Iteration.
 
-. Expand *Future Iterations* to view your new Iteration.
+. Click btn:[Create] to create the new Iteration.
+
+Your new Iteration appears under `All Iterations`. If you selected the `Force Active` option, your Iteration has started and appears under `Active Iteration`.

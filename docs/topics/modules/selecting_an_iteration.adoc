@@ -3,39 +3,30 @@
 
 After logging in and selecting the appropriate space, click btn:[Plan] to view the Iterations for that space. Existing Iterations are grouped into one of the following categories:
 
-* *Current Iteration* displays as a default for this view. It lists the currently ongoing Iteration, if any, and the work items associated with it.
-* *Future Iterations* display a list of Iterations that have not started or ended. You can add multiple Iterations based on start dates to this section and start the appropriate one when required.
-* *Past Iterations* displays all ended Iterations. 
+* _Active Iteration_ lists the currently active Iterations.
+* _All Iterations_ displays a list of all Iterations in the Space. These include active Iterations, closed Iterations, as well as Iterations that have not yet started.
 
 Select an Iteration listed in one of these groups to display the included Work Items. See <<associating_work_items_with_an_iteration,Associating Work Items with an Iteration>> for more information.
 
-== Future Iterations
+== All Iterations
 
-After <<creating_a_new_iteration, creating an Iteration>>, expand *Future Iterations* to view all future Iterations and their Work Items.
+After <<creating_a_new_iteration, creating an Iteration>>, the new Iteration displays in this view.
 
 Select one of the following options after clicking the options (image:kabob.png[title="More"]) icon for the target Iteration:
 
-* Select *Edit* to change the Iteration's details.
-* Select *Start* to begin your Iteration. This moves the Iteration to the *Current Iteration* section. 
-+
-NOTE: Setting the Start Date of an Iteration to the present or current date does not set it as a *Current Iteration*. You must select *Start* for the Iteration to make it the current Iteration.
+* Select btn:[Edit] to change the Iteration's details.
+* Select btn:[Close] to end your Iteration.
+* Select btn:[Create Child] to create a child Iteration for the target Iteration.
 
-* Select *Create child* to create a child Iteration for the target Iteration.
+== Active Iteration
 
-== Current Iteration
-
-An Iteration is only set as the *Current Iteration* after it starts.
-
-The *Current Iteration* displays:
+An Iteration is set as the _Active Iteration_ after it starts. The _Active Iteration_ list displays:
 
 * The start and end dates for the Iteration.
 * A tracker to track the Iteration status based on the completion of the Work Items associated with it.
+* The description of the Iteration.
 
 To end an Iteration:
 
-. Click the options (image:kabob.png[title="More"]) icon for the Iteration and select *Close*.
-. Click the btn:[Close] button to close the Iteration. The Iteration is moved to *Past Iterations*.
-
-== Past Iterations
-
-*Past Iterations* lists all closed Iterations within the Space. Click the options (image:kabob.png[title="More"]) icon and select *Edit*, *Start*, or *Create Child* to work with the Iterations in the list.
+. Click the options (image:kabob.png[title="More"]) icon for the Iteration and select btn:[Close].
+. In the dialog box, click btn:[Close].

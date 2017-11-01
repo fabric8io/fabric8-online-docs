@@ -11,33 +11,16 @@ After adding a Collaboration Space, you can add a codebase from GitHub and set u
 
 . Click *Analyze* at the top of the screen to view the Collaboration Space dashboard.
 
-. The *Codebases* view offers the following options:
+. The *Codebases* view displays the following options:
 
-.. If codebases are already added to the Collaboration Space, the added codebases are listed and a *+* icon displays at the top right of the view to import more codebases.
+ * If codebases are already added to the Collaboration Space, the added codebases are listed and a *+* icon displays at the top right of the view to import more codebases.
 
-.. If no codebases have been added, two buttons display:
+ * If no codebases have been added, two buttons display:
 
-... *Add Codebase* to manually add a codebase.
+.. *Add Codebase* to manually add a codebase.
 
-... *Import Codebase* to automatically add an existing codebase.
+.. *Import Codebase* to automatically add an existing codebase.
 
-. To add a codebase:
-.. TBD
+include::adding_a_codebase.adoc[leveloffset=+1]
 
-. To import a codebase:
-.. Click *Import Codebase*.
-.. If required, change the path to your Collaboration Space in the *Space Path* field.
-.. Add the GitHub repository path in the *GitHub Repository* field.
-.. Click *Sync* to retrieve details for the repository. If the sync is successful, metadata for the added repository appears below the *Sync* button.
-.. Click *Associate Repository to Space* to add the new repository to your Collaboration Space. 
-.. The *Create* tab now displays your new repository with information about when it was created and the last commit date.
-.. Click *Create a Workspace* for the target repository from the list of repositories. A success message appears when the Workspace is successfully created.
-+
-[NOTE]
-====
-Ensure that your browser allows pop-ups from this page. The Eclipse Che context requires a new tab to start.
-====
-+
-.. In the drop-down menu, select the new Workspace for your repository, then click *Open*. A new browser tab loads and displays the Eclipse Che context with your repository codebase.
-
- 
+include::importing_a_codebase.adoc[leveloffset=+1]

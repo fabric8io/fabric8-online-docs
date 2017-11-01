@@ -1,0 +1,16 @@
+[#using_backlog_to_create_work_item]
+= Using the Backlog to Create a Work Item
+
+. Click btn:[Plan] in your Collaboration Space.
+
+. Click btn:[Backlog] to view the Work Item backlog.
+
+. Click btn:[Create].
+
+. Click the desired Work Item Type symbol.
+
+. Add the title, description, Area, and other details for your new Work Item.
+
+. Individually click the check button to save the changes for each field.
+
+The new Work Item is now listed in the Backlog view.

@@ -1,0 +1,41 @@
+[#using_detailed_method_to_create_work_items]
+= Using the Detailed Method to Create Work Items
+
+The detailed method requires adding more details for the Work Item compared to the quick-add method, which only requires basic information to create the Work Item.
+
+. Click btn:[Analyze] to view the Space's dashboard.
+
+. In the `My Work Items` panel, click btn:[+].
+
+. Click the desired Work Item type.
+
+. In the new Work Item form:
+
+.. Add a title for the Work Item and click &#10003; or press *Enter* to save the new Work Item. This creates a new Work Item. You must save each of the subsequent changes to fields individually.
+
+.. Assign the Work Item to a Collaborator in the `Assignees` field. The assignee field for a new Work Item is empty as a default.
+
+.. Assign an <<about_areas,Area>> to the Work Item from the `Area` field's drop-down list and click &#10003; to save the change. By default, the name of your workspace is set as the _Root Area_ and is displayed as one of the options in the drop-down list.
+
+.. Assign a relevant <<about_iterations,Iteration>> to the Work Item from the `Iteration` drop-down list and click &#10003; to save. By default, the name of your workspace is set as the _Root Iteration_ and is displayed as one of the options in the drop-down list.
+
+.. Click btn:[Add label] to add existing or new labels to your Work Item.
+
+.. Add a description for the Work Item in the *Edit Text* field and click &#10003; to save.
+
+.. Optionally, expand the `Total links` option to link to other related Work Items as follows:
+
+... Click the btn:[Create Link] button.
+
+... Use the btn:[Select Link Type] drop-down menu to select the appropriate relationship between the current and new Work Item.
+
+... Start typing the title or ID of a Work Item in the *Search for work items* field. Select one of the listed suggestions.
+
+... Click btn:[Link] to save the relationship.
+
+.. Optionally, expand the `Comments` option to add or see comments for your Work Item. Users can edit or delete their own comments.
+
+. To close the new Work Item panel:
+
+.. Ensure that all your changes are individually saved.
+.. Click btn:[x] at the top of the panel.

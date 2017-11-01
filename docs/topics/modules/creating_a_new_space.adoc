@@ -1,15 +1,15 @@
 [#creating_a_new_space]
 = Creating a New Collaboration Space
 
-To start working with a new project, create a new Collaboration Space. Each Space includes a team of users in various roles as well as unique <<about_work_items,Work Items>> and <<about_iterations,Iterations>> used to manage the new project.
+To start working with a new project, create a new Collaboration Space. Each Space includes a team of users in assigned roles as well as unique <<about_work_items,Work Items>> and <<about_iterations,Iterations>> used to manage the new project.
 
 .Prerequisites
 
-* Ensure that you have <<logging_into_red_hat_openshift_io,Logged in to {osio-link}>> with a valid user account.
+* Ensure that you have <<logging_into_red_hat_openshift_io,Logged in to {osio-link}>>.
 
 .Procedure
 
-. In your {osio-link} home page, click your username in the top left corner of the screen.
+. In your {osio-link} home page, click your user name in the top left corner of the screen.
 
 . In the drop-down menu, click *Create space*.
 
@@ -34,6 +34,6 @@ image::new_space_dialog.png[New Space Dialog Box]
 
 .. *Import existing code*: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.
 
-.. *Create a new Quickstart project*: Use wizards to automatically set up your development environment for various tasks and quickly create projects using specific tooling.
+.. *Create a new Quickstart project*: Use wizards to automatically set up your development environment and quickly create projects using specific tooling.
 
 .. *No thanks, take me to the _new_space_ dashboard*: Go to your new space's dashboard to begin working in the space.

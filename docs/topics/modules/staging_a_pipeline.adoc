@@ -1,16 +1,16 @@
 [#staging_a_pipeline]
 = Staging a Pipeline
 
-In a build pipeline, *Stage* and *Run* are individual OpenShift projects. `Stage` is a production staging area to review and test changes before they are finalized and staged on `Run`.
+In a build pipeline, _Stage_ and _Run_ are individual OpenShift projects. _Stage_ is a production staging area to review and test changes before they are finalized and staged on _Run_.
 
-The new build pipeline pushes version 1.0.1 of your new project into *Stage* and then, after user approval, to *Run*.
+The new build pipeline pushes version 1.0.1 of your new project into _Stage_ and then, after user approval, to _Run_.
 
 image::pipeline_running.png[A Running Pipeline Build]
 
 Optionally, view the build pipeline's details in OpenShift Online:
 
-. In the `Pipeline` page, click `Build #1` for the build pipeline in progress.
+. In the `Pipeline` page, click btn:[Build #1] for the build pipeline in progress.
 . When redirected, log into your OpenShift Online account.
-. Click *View Log* to view the Jenkins instance's logs.
+. Click btn:[View Log] to view the Jenkins instance's logs.
 
 image::oso_pipeline.png[A Running Pipeline Build in OpenShift Online]

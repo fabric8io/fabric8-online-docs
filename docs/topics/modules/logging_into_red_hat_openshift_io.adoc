@@ -11,7 +11,7 @@
 
 . Click btn:[Log In] at the top of the {osio} main page.
 
-. Log in either manually (with you Red Hat Developers account) or using a social account:
+. Log in either manually (with your Red Hat Developers account) or using a social account:
 
   .. Log in using your Red Hat account:
     ... Enter your email address or Red Hat Developers Login ID and password.
@@ -19,7 +19,7 @@
 
   .. Log in using a social account:
     ... Click the appropriate social account button from the listed options.
-    ... Follow the instructions to authorize the social account to log in.
-    ... If asked, add additional information about yourself on the *Additional Action Required* page. If the provided email address already has an account, an option to link your social account with your Red Hat Developers account is available. An email is sent to the account to confirm linking the two accounts.
+    ... Follow the instructions to allow the social account to log in.
+    ... If asked, add information about yourself on the *Additional Action Required* page. If the provided email address already has an account, an option to link your social account with your Red Hat Developers account is available. An email arrives in the account to confirm linking the two accounts.
 
-. Select the checkboxes to indicate agreement with the terms and conditions if required and click btn:[Submit].
+. Select the check boxes to indicate agreement with the terms and conditions if required and click btn:[Submit].

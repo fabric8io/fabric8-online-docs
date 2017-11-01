@@ -1,0 +1,12 @@
+[#creating_requirements_level_work_items]
+= Creating Requirements level work items
+
+The Product Owner or Team Lead in sync with the management identifies the Requirements or Features to actualize these Experiences and Value-Propositions. Bugs are also tracked at the Requirements level.
+
+You can create Feature or Bug type of work items and associated child Tasks as follows:
+
+. Click btn:[Requirements], and then btn:[Create work item] from the pane at the bottom of the screen to create a new work item.
++
+NOTE: You can create only Requirements type work items such as Features and Bugs.
+
+. Select the Feature or Bug you created and click btn:[Create work item] from the pane at the bottom of the screen to create associated child Tasks.

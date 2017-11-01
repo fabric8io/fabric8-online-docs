@@ -3,7 +3,7 @@
 
 This glossary provides concise definitions of terms and explanations of concepts used in {rhosio} and in related documentation.
 
-Areas:: Areas are used to organize Work Items to distinguish between different types or functionalities that are being worked on within a Collaboration Space.
+Areas:: Use Areas to organize Work Items to distinguish between different types or functionalities that are being worked on within a Collaboration Space.
 
 Backlog:: A Backlog is a list of Work Items that have not been triaged and assigned to a specific Iteration.
 
