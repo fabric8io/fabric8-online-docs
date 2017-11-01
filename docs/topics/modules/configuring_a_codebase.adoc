@@ -21,6 +21,6 @@ After adding a Collaboration Space, you can add a codebase from GitHub and set u
 
 .. *Import Codebase* to automatically add an existing codebase.
 
-include::adding_new_codebase.adoc[leveloffset=+1]
+include::adding_a_codebase.adoc[leveloffset=+1]
 
 include::importing_a_codebase.adoc[leveloffset=+1]

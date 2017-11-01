@@ -1,4 +1,4 @@
-[#adding_new_codebase]
+[#adding_a_codebase]
 = Adding a Codebase
 
 . Click btn:[Add Codebase].

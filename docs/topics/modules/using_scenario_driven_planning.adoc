@@ -12,7 +12,9 @@ You can use the Scenario-driven planning template to follow a guided work item t
 A typical Scenario-driven development life cycle undergoes the following phases:
 
 include::creating_portfolio_level_work_items.adoc[leveloffset=+1]
+
 include::creating_requirements_level_work_items.adoc[leveloffset=+1]
+
 include::creating_execution_level_work_items.adoc[leveloffset=+1]
 
 .Related Information
