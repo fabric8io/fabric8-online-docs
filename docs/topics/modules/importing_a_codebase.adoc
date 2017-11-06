@@ -4,12 +4,11 @@
 Use the `Import Codebase` option to manually add the details for your existing codebase into {osio}.
 
 . Click btn:[Import Codebase].
-. If required, change the path to your Collaboration Space in the *Space Path* field.
-. Add the GitHub repository path in the *GitHub Repository* field.
-. Click *Sync* to retrieve details for the repository. If the sync is successful, metadata for the added repository appears below the *Sync* button.
-. Click *Associate Repository to Space* to add the new repository to your Collaboration Space.
-. The *Create* tab now displays your new repository with information about when it was created and the last commit date.
-. Click *Create a Workspace* for the target repository from the list of repositories. A success message appears when the Workspace is successfully created.
+. In the *Space Path* field, If required, change the path to your Collaboration Space.
+. In the *GitHub Repository* field, add the GitHub repository path
+. Click *Sync* to retrieve details for the repository. If the sync is successful, metadata for the added repository appears below the btn:[Sync] button.
+. Click btn:[Associate Repository to Space] to add the new repository to your Collaboration Space. The *Create* tab now displays your new repository with information about when it was created and the last commit date.
+. Click btn:[Create a Workspace] for the target repository from the displayed list. A success message appears when the Workspace is successfully created.
 +
 [NOTE]
 ====

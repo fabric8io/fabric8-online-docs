@@ -9,17 +9,17 @@ After adding a Collaboration Space, you can add a codebase from GitHub and set u
 
 .Procedure
 
-. Click *Analyze* at the top of the screen to view the Collaboration Space dashboard.
+. Click *Analyze* at the top of the screen to view the Collaboration Space's dashboard.
 
 . The *Codebases* view displays the following options:
 
- * If codebases are already added to the Collaboration Space, the added codebases are listed and a *+* icon displays at the top right of the view to import more codebases.
+ * If codebases are already added to the Collaboration Space, the added codebases are listed and a btn:[+] icon displays at the top right of the view to import more codebases.
 
- * If no codebases have been added, two buttons display:
+ * If no codebases are added, two buttons display:
 
-.. *Add Codebase* to manually add a codebase.
+.. btn:[Add Codebase] to manually add a codebase.
 
-.. *Import Codebase* to automatically add an existing codebase.
+.. btn:[Import Codebase] to add an existing codebase.
 
 include::adding_a_codebase.adoc[leveloffset=+1]
 

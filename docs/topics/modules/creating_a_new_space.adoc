@@ -9,31 +9,25 @@ To start working with a new project, create a new Collaboration Space. Each Spac
 
 .Procedure
 
-. In your {osio-link} home page, click your user name in the top left corner of the screen.
+. On your {osio-link} home page, click your user name in the top left corner of the screen.
 
-. In the drop-down menu, click *Create space*.
+. On the drop-down menu, click *Create space*.
 
-. Add a unique name for the new space in the *Name* field.
+. In the *Name* field. add a unique name for the new space.
 
-. Select *Scenario Driven Planning* from the drop-down menu for templates. This template creates Spaces based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.
+. From the template drop-down menu, select *Scenario Driven Planning*. This template creates Spaces based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.
 //. Select a *Template* type from the drop-down menu. The available options are:
 //.. *Agile* - Your space is centered around Agile-based planning.
 //.. *Scrum* - Your space includes an iterative and incremental Agile-based development framework. This option is similar to the **Agile** option but with more specific planning and development tracking.
 //.. *Issue Tracking* - Your space is based on an issue tracking development methodology. This option is ideal for teams interested in primarily tracking issues and Tasks and resolving them.
 //.. *Scenario Driven Planning* - Your space is based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized based on (user) Experiences.
 
-. Click *Create* to create your new space.
-
-. The *How would you like to get started?* dialog box appears and offers the following options:
-+
-image::new_space_dialog.png[New Space Dialog Box]
-+
-//.. *Plan out my space*: Start planning tasks for your space.
-
-//.. *Create a new Starter Project*: Get started by creating a project based on one of the available technology stacks.
+. Click *Create* to create your new space. The `How would you like to get started?`` dialog box appears and offers the following options:
 
 .. *Import existing code*: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.
 
 .. *Create a new Quickstart project*: Use wizards to automatically set up your development environment and quickly create projects using specific tooling.
 
 .. *No thanks, take me to the _new_space_ dashboard*: Go to your new space's dashboard to begin working in the space.
++
+image::new_space_dialog.png[New Space Dialog Box]
