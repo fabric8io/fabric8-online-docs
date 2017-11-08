@@ -1,7 +1,7 @@
 [#modifying_an_existing_work_item]
 = Modifying an Existing Work Item
 
-Modify an existing Work Item by double-clicking on it in the `Backlog` or `Board` view. Alternatively, click the icon adjoining the Work Item and select *Open* from the displayed options. The detailed Work Item panel is displayed.
+Modify an existing Work Item by double-clicking on it in the `Backlog` or `Board` view. Alternatively, click the icon (image:kabob_white.png[title="Options"]) adjoining the Work Item and select *Open* from the displayed options. The detailed Work Item panel is displayed.
 
 You can modify the following Work Item attributes:
 

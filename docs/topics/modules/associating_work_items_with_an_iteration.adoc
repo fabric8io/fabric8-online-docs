@@ -3,12 +3,12 @@
 
 To associate a Work Item with an Iteration:
 
-. Click the three dots adjoining the Work Item and click btn:[Associate with Iteration] from the displayed options. The `Associate with Iteration` dialog box appears and displays which Iteration, if any, the Work Item is associated with.
+. Click the icon (image:kabob_white.png[title="Options"]) adjoining the Work Item and click btn:[Associate with Iteration] from the displayed options. The `Associate with Iteration` dialog box appears and displays which Iteration, if any, the Work Item is associated with.
 
 . From the drop-down list, select the Iteration you want to associate your Work Item with and click btn:[Reassociate].
 
 Selecting an Iteration from the left pane displays all Work Items associated with that Iteration.
 
-You can remove an Iteration without selecting a replacement. This moves the Work Item to the Backlog. To move a Work Item to the Backlog, click the three dots adjoining the Work Item and then click btn:[Move to Backlog] from the displayed options.
+You can remove an Iteration without selecting a replacement. This moves the Work Item to the Backlog. To move a Work Item to the Backlog, click the icon (image:kabob_white.png[title="Options"]) adjoining the Work Item and then click btn:[Move to Backlog] from the displayed options.
 
-You can select *Backlog* to display all the Work Items within a Space.
+You can select btn:[Backlog] to display all the Work Items within a Space.

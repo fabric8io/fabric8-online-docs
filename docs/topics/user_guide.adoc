@@ -15,9 +15,9 @@ include::working_with_collaboration_spaces.adoc[leveloffset=+1]
 
 include::working_with_collaborators.adoc[leveloffset=+1]
 
-include::working_with_areas.adoc[leveloffset=+1]
-
 include::working_with_work_items.adoc[leveloffset=+1]
+
+include::working_with_areas.adoc[leveloffset=+1]
 
 include::scenario_driven_planning.adoc[leveloffset=+1]
 
