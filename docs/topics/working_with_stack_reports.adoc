@@ -1,0 +1,8 @@
+[#working_with_stack_reports]
+= Working with Stack Reports
+
+include::modules/about_stack_reports.adoc[leveloffset=+1]
+
+include::modules/using_stack_report.adoc[leveloffset=+1]
+
+include::modules/interpreting_stack_report.adoc[leveloffset=+1]

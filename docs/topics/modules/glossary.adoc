@@ -16,3 +16,15 @@ Pipeline:: Pipelines are a continuous delivery system that, at each step, tests 
 Scenario-Driven Planning:: A software development methodology focused on real-world problems, or Scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular Value Propositions and are realized through Experiences.
 
 Work Item:: Work Items describe and keep track of work that needs to be done. A user can be assigned to a Work Item. Each Work Item must be attached to a Collaboration Space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
+
+Usage Outliers:: Components of your software stack that are not commonly used in other similar open source stacks or that rarely go together.
+
+Security Issues:: {osio} analyzes the CVEs of all your components and flags components that have security vulnerabilities.
+
+License outliers:: Licenses which rarely go together or not commonly used in other similar stacks.
+
+Alternate Components:: Components recommended by {osio}, to replace License or Usage Outliers.
+
+Unknown licenses:: Licenses unknown to {osio}
+
+License conflicts:: Licenses that conflict at the stack or component level.
