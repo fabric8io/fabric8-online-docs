@@ -13,6 +13,6 @@ Click btn:[Plan] to view the Planner. You can now order the Work Items in your S
 
 * In the btn:[Backlog] view, drag and drop a selected Work Item to reorder them. Alternatively, select btn:[Move to Top] or btn:[Move to Bottom] from the Work Item menu.
 
-The btn:[Board] view displays a visual representation of your Work Items' progress. Based on their status, the Work Items are sorted into the _new_, _open_, _in progress_, _resolved_, or _closed_ columns. Use this feature to track and update the status of Work Items as you progress through your task list.
+The btn:[Board] view displays a visual representation of your Work Item progress. Based on their status, the Work Items are sorted into the _new_, _open_, _in progress_, _resolved_, or _closed_ columns. Use this feature to track and update the status of Work Items as you progress through your task list.
 
 In the btn:[Board] view, you can drag and drop the selected Work Item to the relevant column based on the progress of the Work Item.

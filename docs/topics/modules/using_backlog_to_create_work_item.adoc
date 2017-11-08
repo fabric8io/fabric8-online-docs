@@ -11,6 +11,6 @@
 
 . Add the title, description, Area, and other details for your new Work Item.
 
-. Individually click the check button to save the changes for each field.
+. Individually click &#10003; to save the changes for each field.
 
 The new Work Item is now listed in the Backlog view.

@@ -3,7 +3,7 @@
 
 The detailed method requires adding more details for the Work Item compared to the quick-add method, which only requires basic information to create the Work Item.
 
-. Click btn:[Analyze] to view the Space's dashboard.
+. Click btn:[Analyze] to view the Space dashboard.
 
 . In the `My Work Items` panel, click btn:[+].
 
@@ -15,7 +15,7 @@ The detailed method requires adding more details for the Work Item compared to t
 
 .. Assign the Work Item to a Collaborator in the `Assignees` field. The assignee field for a new Work Item is empty as a default.
 
-.. Assign an <<about_areas,Area>> to the Work Item from the `Area` field's drop-down list and click &#10003; to save the change. By default, the name of your workspace is set as the _Root Area_ and is displayed as one of the options in the drop-down list.
+.. Assign an <<about_areas,Area>> to the Work Item from the `Area` field drop-down list and click &#10003; to save the change. By default, the name of your workspace is set as the _Root Area_ and is displayed as one of the options in the drop-down list.
 
 .. Assign a relevant <<about_iterations,Iteration>> to the Work Item from the `Iteration` drop-down list and click &#10003; to save. By default, the name of your workspace is set as the _Root Iteration_ and is displayed as one of the options in the drop-down list.
 

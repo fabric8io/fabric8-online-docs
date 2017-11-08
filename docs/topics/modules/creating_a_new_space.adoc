@@ -11,9 +11,9 @@ To start working with a new project, create a new Collaboration Space. Each Spac
 
 . On your {osio-link} home page, click your user name in the top left corner of the screen.
 
-. On the drop-down menu, click *Create space*.
+. On the drop-down menu, click btn:[Create space].
 
-. In the *Name* field. add a unique name for the new space.
+. In the `Name` field. add a unique name for the new space.
 
 . From the template drop-down menu, select *Scenario Driven Planning*. This template creates Spaces based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.
 //. Select a *Template* type from the drop-down menu. The available options are:
@@ -22,12 +22,12 @@ To start working with a new project, create a new Collaboration Space. Each Spac
 //.. *Issue Tracking* - Your space is based on an issue tracking development methodology. This option is ideal for teams interested in primarily tracking issues and Tasks and resolving them.
 //.. *Scenario Driven Planning* - Your space is based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized based on (user) Experiences.
 
-. Click *Create* to create your new space. The `How would you like to get started?`` dialog box appears and offers the following options:
+. Click btn:[Create] to create your new space. The `How would you like to get started?` dialog box appears and offers the following options:
 
-.. *Import existing code*: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.
+.. btn:[Import existing code]: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.
 
-.. *Create a new Quickstart project*: Use wizards to automatically set up your development environment and quickly create projects using specific tooling.
+.. btn:[Create a new Quickstart project]: Use wizards to automatically set up your development environment and quickly create projects using the desired tooling.
 
-.. *No thanks, take me to the _new_space_ dashboard*: Go to your new space's dashboard to begin working in the space.
+.. btn:[No thanks, take me to the _new_space_ dashboard]: Go to your new space dashboard to begin working in the space.
 +
 image::new_space_dialog.png[New Space Dialog Box]
