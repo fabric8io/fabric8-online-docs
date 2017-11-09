@@ -19,8 +19,6 @@ include::working_with_areas.adoc[leveloffset=+1]
 
 include::working_with_work_items.adoc[leveloffset=+1]
 
-include::scenario_driven_planning.adoc[leveloffset=+1]
-
 include::working_with_iterations.adoc[leveloffset=+1]
 
 include::working_with_pipelines.adoc[leveloffset=+1]
