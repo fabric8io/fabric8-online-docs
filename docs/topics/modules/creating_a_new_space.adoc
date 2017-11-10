@@ -28,6 +28,6 @@ To start working with a new project, create a new Collaboration Space. Each Spac
 
 .. btn:[Create a new Quickstart project]: Use wizards to automatically set up your development environment and quickly create projects using the desired tooling.
 
-.. btn:[No thanks, take me to the _new_space_ dashboard]: Go to your new space dashboard to begin working in the space.
+.. btn:[No thanks, take me to the new space dashboard]: Go to your new space dashboard to begin working in the space.
 +
 image::new_space_dialog.png[New Space Dialog Box]
