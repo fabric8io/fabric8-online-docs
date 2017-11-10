@@ -1,11 +1,11 @@
 [#signing_up_for_the_red_hat_developers_program]
 = Signing up for the Red Hat Developers Program
 
-To start using {rhosio}, you can create a new Red Hat Developers (RHD) account or use an existing RHD or social media account.
+To start using {rhosio}, create a new Red Hat Developers (RHD) account or use an existing RHD or social media account.
 
 IMPORTANT: Early access to the service is limited and will be allocated as resources become available. When you sign up, you are added to a waiting list. You are notified when access to the system is available.
 
-. Navigate to the link:{osio-url}[{rhosio}] website in a browser window.
+. Navigate to link:{osio-url}[{rhosio}].
 
 . Click btn:[Sign Up For The Preview]. You can register using an existing social or Red Hat account.
 
@@ -13,7 +13,7 @@ IMPORTANT: Early access to the service is limited and will be allocated as resou
     ... At the {rhosio} Developer Preview page, click btn:[Register].
     ... Enter your name, email address, company, and password in the appropriate fields.
     ... Select the terms and conditions check boxes.
-    ... Click *Create my account*.
+    ... Click btn:[Create my account].
     ... Verify your email address to complete registration.
 
   * To register using your existing Red Hat account or a social account from services such as JBoss Developer, GitHub, Stack Overflow, LinkedIn, Twitter, Facebook, Google, or Microsoft:

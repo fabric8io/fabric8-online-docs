@@ -11,7 +11,7 @@
 
 . Add the title, `Area`, `Iteration`, `Label`, and `Description` for your new Work Item.
 
-. Individually click the check button to save the changes for each field.
+. Individually click &#10003; to save the changes for each field.
 
 . Click btn:[X] at the top right corner of the screen after saving all changes.
 
