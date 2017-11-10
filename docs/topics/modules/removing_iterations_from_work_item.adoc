@@ -1,0 +1,14 @@
+[#removing_iterations_from_work_item]
+= Removing Iterations from a Work Item
+
+You can remove an Iteration from a Work Item without selecting a replacement. This moves the Work Item to the Backlog.
+
+To move a Work Item to the Backlog:
+
+. Click btn:[Plan] to see the Planner for your Space.
+
+. Click the icon (image:kabob_white.png[title="Options"]) adjoining the Work Item.
+
+. From the displayed options, select btn:[Move to Backlog].
+
+Select btn:[Backlog] to display all the Work Items within a Space.
