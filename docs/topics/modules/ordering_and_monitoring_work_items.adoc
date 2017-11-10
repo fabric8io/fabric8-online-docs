@@ -3,15 +3,11 @@
 
 The `Backlog` displays a list view used to plan your work. You can order Work Items based on their priority, status, and other parameters to organize them.
 
-The `Backlog` can display the list of Work Items as:
+The `Backlog` displays the list of Work Items as a list where all the Work Items display in a single file.
 
-* A _Hierarchy_, which is a tree-view format where child Work Items only display when you expand the parent Work Item.
+Click btn:[Plan] to view the Planner. You can order the Work Items in your Space as follows:
 
-* A _Flat list_ where all the Work Items display in a single file.
-
-Click btn:[Plan] to view the Planner. You can now order the Work Items in your Space as follows:
-
-* In the btn:[Backlog] view, drag and drop a selected Work Item to reorder them. Alternatively, select btn:[Move to Top] or btn:[Move to Bottom] from the Work Item menu.
+* In the btn:[Backlog] view, drag and drop a selected Work Item to reorder them. Alternatively, select btn:[Move to Top] or btn:[Move to Bottom] from the options (image:kabob_white.png[title="Options"]) menu.
 
 The btn:[Board] view displays a visual representation of your Work Item progress. Based on their status, the Work Items are sorted into the _new_, _open_, _in progress_, _resolved_, or _closed_ columns. Use this feature to track and update the status of Work Items as you progress through your task list.
 
