@@ -1,0 +1,12 @@
+[#introduction]
+= Introduction
+
+Welcome to the {osio} Early Access Program. During this program, a small number of users are invited to use {osio} and give us feedback on their experience and help us improve {osio}.
+
+As members of the Early Access Program, we recommend approaching {osio} with a willingness to experiment. The service is currently pre-Beta quality. Improvements and changes are added to {osio} daily, and often multiple times in a day. As a result, the user interface changes often and small improvements are available each time you use the system. As a consequence of this approach, the changes and updates may result in bugs in the system. On rare occasions, these bugs are severe enough for the system to be unavailable. However, as part of our continuous delivery model, the person pushing changes live is also responsible for the impact of the change. As a result, severe bugs are quickly identified and addressed.
+
+For us, an important aspect of the Early Access Program is to get feedback from users. Tell us what you like, what you hate, what you wish you could do, what you wish the service would stop doing, and anything else that you think we should know as we work on improving {osio}. See <<support>> for information about contacting us with questions and feedback.
+
+If your {osio} environment is in a state where you find it difficult or impossible to move forward, refer to <<cleanup_sb, Cleaning Up>> for instructions to reset your {osio} environment.
+
+Welcome to the world of {osio}. We hope you enjoy your experience and look forward to hearing your feedback!

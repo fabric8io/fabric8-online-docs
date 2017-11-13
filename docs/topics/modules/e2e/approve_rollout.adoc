@@ -1,7 +1,7 @@
 [#approve_rollout]
 = Approving the Build Pipeline
 
-Several minutes after starting, your project's build pipeline is ready to be promoted to `Stage`.
+Several minutes after starting, your project build pipeline is ready to be promoted to `Stage`.
 
 The build pipeline includes steps for a `Stage` build and a `Run` build. `Stage` is a production staging area to review and test changes before they are finalized and staged on `Run`.
 
