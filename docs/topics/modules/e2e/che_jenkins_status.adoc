@@ -8,11 +8,11 @@ After <<connect_os>>, you must ensure that the Che and Jenkins tenant services a
 * If the Che and Jenkins status indicates that all services are ready (see screen capture), Che and Jenkins are provisioned and ready for use.
 +
 image::tenant_status.png[Tenant Status]
-
++
 * If the Che and Jenkins status is not green (see screen capture), you must update your Che and Jenkins versions:
 +
 image::tenant_status_error.png[Tenant Status Error]
-
++
 . Update your tenant services:
 .. On your {osio} home page, click your name on the top right corner of the screen.
 .. In the drop down options, click btn:[Profile].
