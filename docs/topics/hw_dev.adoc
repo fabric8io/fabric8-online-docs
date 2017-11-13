@@ -5,7 +5,7 @@
 
 include::modules/e2e/create_space.adoc[leveloffset=+1]
 
-include::modules/e2e/pipelines.adoc[leveloffset=+1]
+include::modules/e2e/working_with_pipelines.adoc[leveloffset=+1]
 
 include::modules/e2e/view_proj_gh.adoc[leveloffset=+1]
 
