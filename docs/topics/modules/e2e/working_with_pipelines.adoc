@@ -20,3 +20,11 @@ Optionally, view the build pipeline's details in OpenShift Online:
 . When prompted, log into Jenkins with your OpenShift Online account. When logged in, the page displays the logs for your pipeline build.
 
 image::oso_pipeline.png[A Running Pipeline Build in OpenShift Online]
+
+[NOTE]
+====
+If your pipeline build does not start for more than ten minutes, you can manually start a pipeline build:
+
+. Click the icon (image:kabob_white.png[title="Options"]) adjoining the pipeline build.
+. From the displayed menu, click btn:[Start Pipeline].
+====

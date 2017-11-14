@@ -1,15 +1,15 @@
 [#approve_rollout]
 = Approving the Build Pipeline
 
-Several minutes after starting, your project build pipeline is ready to be promoted to `Stage`.
+Several minutes after starting, your build pipeline is ready to be promoted to `Stage`.
 
-The build pipeline includes steps for a `Stage` build and a `Run` build. `Stage` is a production staging area to review and test changes before they are finalized and staged on `Run`.
+The build pipeline includes steps for a `Stage` build and a `Run` build. `Stage` is a production staging area to review and test changes before they finalizing them and staging the build on `Run`.
 
 To review the final changes in `Stage` and promote them to `Run`:
 
 . From your Space's dashboard, click btn:[Create] from the options at the top of the screen.
-. From the displayed options, click btn:[Pipelines].
-. Click the icon next to the `Rollout to Stage` step in the displayed pipeline. OpenShift Online provides this public URL to access the staged Quickstart project.
+. Click btn:[Pipelines].
+. Click the icon next to `Rollout to Stage` in the displayed pipeline. OpenShift Online provides this public URL to access the staged Quickstart project.
 . Add a string to the text box and click btn:[Invoke] to test the application.
 . Return to the {osio} tab which displays the `Pipeline` view.
 . Click btn:[Input Required] at the `Approve` stage of the pipeline.
@@ -24,10 +24,10 @@ image::input_req.png[Input Required]
 * A detailed view for the `Test`, `Stage`, and `Run` environments is available in the btn:[Create] > btn:[Environments] tab. Opt in for this *experimental feature* in your `Profile` page to view each environment's deployments, pods, events, and other information.
 
 * A detailed view of your pipeline's progress is available in your OpenShift Online account:
-.. Navigate to https://manage.openshift.com/ in a new browser tab and log into your account.
+.. Navigate to https://manage.openshift.com/ in a new browser tab and log in to your account.
 
 .. Click btn:[OpenShift Console] to view the console.
 
-.. From the list of projects, click the *username-jenkins* option.
+.. From the list of projects, click btn:[USERNAME-jenkins].
 
-.. Click `Builds` and then `Builds` again in the menu options. Your project's new build is listed here and you can use this console to monitor its progress.
+.. Click btn:[Builds] and then btn:[Builds] again in the menu options. Your project's new build displays here. If required, use this console to monitor the build progress.
