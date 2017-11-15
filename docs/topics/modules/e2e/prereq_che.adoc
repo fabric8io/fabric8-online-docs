@@ -1,7 +1,7 @@
 [#prereq_che-{context}]
 = Prerequisites for Using Your Che Workspace
 
-Before using the Che workspace, ensure that the following prerequisites are met:
+Before using the Che workspace, ensure that you have met the following prerequisites:
 
 . *Finish loading the workspace*: Before editing a project in a Che workspace, ensure that the workspace has finished loading. If the `Project Explorer` pane lists your project, the workspace has finished loading:
 +
