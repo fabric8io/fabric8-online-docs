@@ -1,12 +1,15 @@
 [#connect_os]
-= Connect {osio} to OpenShift Online and GitHub
+= Connecting {osio} to OpenShift Online and GitHub
 
 You will receive a welcome email when your request to join Red Hat's {osio} Developer Preview is accepted. When you receive this email, use the following steps to set up {osio}:
 
 . Use Chrome's *Incognito mode* to navigate to https://openshift.io/
 . Log in using your Red Hat Developer (or other listed services) credentials.
 . In the `Getting Started in {osio}` page, select the *GitHub* and *OpenShift.com* check boxes and click *Connect accounts*.
-. Log in to your GitHub account and, when prompted, click *Authorize openshiftio-private* to connect your GitHub account to your {osio} account.
-. Log in to your OpenShift Online account and, when prompted, click *Allow selected permissions* to connect your OpenShift Online account to your {osio} account.
-. You are redirected to the `Getting Started in {osio}` with green check marks indicating that you have successfully connected your GitHub and OpenShift Online accounts.
-. Click *Get Started* to start using {osio}.
+. Log in to your GitHub account and, when prompted, click btn:[Authorize openshiftio-private].
++
+NOTE: During the Early Access Program, {osio} requires a large number of GitHub permissions. The number of permissions required will be reduced when {osio} formally launches.
++
+. Log in to your OpenShift Online account and, when prompted, click btn:[Allow selected permissions] to connect your OpenShift Online account to your {osio} account.
+. You are redirected to the `Getting Started in {osio}` page with green check marks indicating that you have successfully connected your GitHub and OpenShift Online accounts.
+. Click btn:[Get Started] to start using {osio}.

@@ -1,9 +1,9 @@
 [#setup_debugger]
 = Set Up the Debugger
 
-Use your Che workspace's Debugger feature to debug your project's code.
+Use your Che workspace Debugger feature to debug your project code.
 
-. Select the `debug` option in the Debug drop down menu:
+. In the `Debug` drop down menu, select the `debug` option.
 +
 image::debug_button.png[Debugger Button]
 +
@@ -11,19 +11,21 @@ image::debug_button.png[Debugger Button]
 +
 ====
 [INFO] The application will wait for a debugger to attach on debugPort 5005
+
 [INFO] Launching Vert.x Application
+
 [INFO] Listening for transport dt_socket at address: 5005
 ====
 +
-. When the debug process completes, click `Run` from the menu at the top of the page.
+. When the debug process completes, click btn:[Run] from the menu at the top of the page.
 . Select `Edit Debug Configurations`.
-. Click the *+* icon for the `JAVA` item in the dialog box.
+. Click btn:[+] for the `JAVA` item in the dialog box.
 . Change the `Port` value to *5050*.
 . Click btn:[Save] and then btn:[Close].
 +
 image::debug_config.png[Debugger Configuration Dialog]
 +
-. Create a new breakpoint for your method by clicking on the line number for the following line in your project's code:
+. Create a new breakpoint for your method by clicking on the line number for the following line in your project code:
 +
 ```java
     if (name == null) {
@@ -31,7 +33,7 @@ image::debug_config.png[Debugger Configuration Dialog]
 +
 image::breakpoint.png[Create Breakpoint]
 +
-Click the `Debug` view's `Breakpoints` addition to confirm the new breakpoint is added.
+. Click the `Debug` view's `Breakpoints` addition to confirm the new breakpoint is added.
 +
 image::breakpoint_view.png[Breakpoint View]
 

@@ -1,7 +1,7 @@
 [#opt_mem]
 = Reduce the Hello World Project's Memory Usage
 
-You can optimize your new quickstart to use less memory. This is particularly important when using OpenShift Online's Free Tier because it includes limited memory.
+You can optimize your new quickstart to use less memory. This is important when using OpenShift Online's Free Tier because this tier provides limited memory.
 
 . In the Che workspace, expand the `src` &#62; `main` &#62; `fabric8` folders for your project.
 . Right-click the `fabric8` folder icon and select `New` &#62; `File`.
@@ -11,9 +11,9 @@ You can optimize your new quickstart to use less memory. This is particularly im
 NOTE: Spaces are meaningful in yaml files. Ensure that the correct spacing is copied into your yaml file from the link.
 +
 . Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.
-. Click `Git` in the menu on top of the page and then select `Commit`.
+. Click btn:[Git] in the menu at the top of the page and then select btn:[Commit].
 . In the dialog box:
-.. Ensure that both the changed files are selected to be included in the commit.
+.. Select both the changed files to be included in the commit.
 .. Add a commit message.
 .. Select the `Push committed changes to origin/master` option.
 .. Click btn:[Commit]..
@@ -23,8 +23,8 @@ image::mem_commit.png[Commit Changes]
 Monitor your OpenShift Online account's quota usage using the OpenShift CLI (oc) tool:
 
 . Navigate to https://console.starter-us-east-2.openshift.com/console/ in your browser.
-. In the OpenShift Console, click the *?* icon next to your user name.
-. From the menu options, click `Command Line Tools`.
+. In the OpenShift Console, click the btn:[?] icon next to your user name.
+. From the menu options, click btn:[Command Line Tools].
 . Use the download links from the `Command Line Tools` page for your operating system and install oc tools.
 . In your computer's terminal (not the `Terminal` tab for your workspace), run the following command:
 +
@@ -32,7 +32,7 @@ Monitor your OpenShift Online account's quota usage using the OpenShift CLI (oc)
 oc login https://console.starter-us-east-2.openshift.com/
 ```
 +
-. Use the following command during and after the new pod is used in OpenShift to monitor and compare resource usage:
+. Use the following command during and after using the new pod in OpenShift to monitor and compare resource usage:
 +
 ```cli
 oc get quota compute-resources -o yaml -n <username>-stage
@@ -50,7 +50,7 @@ status:
     limits.memory: 512Mi
 ```
 +
-. Committing and pushing your new yaml file triggers a new pipeline build for your {osio} project. When the pipeline build is rolled out to Stage, execute the following command again to see the change in memory usage:
+. Committing and pushing your new yaml file triggers a new pipeline build for your {osio} project. When the pipeline build rolls out to Stage, use the following command again to see the change in memory usage:
 +
 ```cli
 oc get quota compute-resources -o yaml -n <username>-stage
@@ -68,4 +68,4 @@ status:
     limits.memory: 250Mi
 ```
 
-Optimizing memory usage is particularly important when creating more than one project in {osio}. Each additional project requires an additional share of your OpenShift Online resources. For OpenShift Online's Free Tier, see <<cleanup_sb>> to reset your OpenShift Online and {osio} accounts after creating two projects.
+Optimizing memory usage is especially important when creating more than one project in {osio}. Each additional project requires an additional share of your OpenShift Online resources. For OpenShift Online's Free Tier, see <<cleanup_sb.adoc>> to reset your OpenShift Online and {osio} accounts after creating two projects.

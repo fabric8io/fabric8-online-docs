@@ -1,10 +1,10 @@
 [#support]
 = Getting Support
 
-The {osio} support chat channel is currently the best way to ask questions or get support for {osio} at any time.
+The {osio} support chat channel is the best way to ask questions or get support for {osio} at any time.
 
 . Sign up at https://chat.openshift.io/signup_email
 . Add your details and click btn:[Create Account] to register.
 . In your email inbox, click the *Verify Email* link.
-. Sign in when prompted and you are redirected to the `#openshiftio` channel.
+. Sign in when prompted. You are redirected to the `#openshiftio` channel.
 . Ask a specific person your question or start with `@here` to tag everyone present in the channel.
