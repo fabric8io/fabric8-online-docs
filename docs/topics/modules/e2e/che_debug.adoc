@@ -1,7 +1,7 @@
 [#che_debug]
 = Debugging Your Che Workspace
 
-Return to your project's Che workspace tab to learn to debug your project.
+Return to your project Che workspace tab to learn to debug your project.
 
 . In your `HttpApplication.java` file, add the following in a new line after line 22.
 +
@@ -35,13 +35,13 @@ private void goodbye(RoutingContext rc) {
 ```
 +
 . Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.
-. Click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process is successfully completed:
+. Click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
 +
 ```
 [INFO] INFO: Succeeded in deploying verticle
 ```
 +
-. Click `Terminal` and enter the following command to test the new endpoint:
+. Click btn:[Terminal] and enter the following command to test the new endpoint:
 +
 ```
 curl localhost:8080/api/goodbye

@@ -3,15 +3,15 @@
 
 After setting up the Debugger, use the Debug command for your project:
 
-. Click `Run` from the menu options.
-. Select the `Debug` option and then the `Remote Java` option.
-. A message appears when the Remote debugger successfully connects.
+. Click btn:[Run] from the menu options.
+. Select the btn:[Debug] option and then the btn:[Remote Java] option.
+. A message appears when the Remote debugger connects.
 +
 image::success_remote.png[Successful Connection to Remote Debugger]
 +
 NOTE: If your Remote Debugger connection fails, restart your Chrome browser and use a new Incognito tab to try again.
 +
-. Click `Terminal` to view the terminal tab.
+. Click btn:[Terminal] to view the terminal tab.
 . Run the following command to start debugging:
 ```
 curl localhost:8080/api/goodbye

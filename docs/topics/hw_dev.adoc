@@ -14,7 +14,7 @@ include::modules/e2e/view_pipelines_oso.adoc[leveloffset=+1]
 include::modules/e2e/approve_rollout.adoc[leveloffset=+1]
 
 include::modules/e2e/using_wi.adoc[leveloffset=+1]
-//stopped here
+
 include::modules/e2e/create_che_workspace.adoc[leveloffset=+1]
 
 include::modules/e2e/prereq_che.adoc[leveloffset=+1]
