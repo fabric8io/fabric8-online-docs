@@ -52,7 +52,7 @@ rm -rf ${TARGET_DIR}/
 docker build -t ${BUILDER_IMAGE} -f Dockerfile.build .
 
 #mkdir -m 777 ${TARGET_DIR}/
-mkdir -p -m 777 ${TARGET_DIR}/images
+if [ ! -d $TARGET_DIR ]; then mkdir -m 777 ${TARGET_DIR}; fi
 
 docker run --detach=true --name ${BUILDER_CONT} -t -v $(pwd)/${TARGET_DIR}:/${TARGET_DIR}:Z ${BUILDER_IMAGE} /bin/tail -f /dev/null #FIXME
 
