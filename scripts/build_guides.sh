@@ -1,6 +1,6 @@
 CURRENT_DIR="$( pwd -P)"
 SCRIPT_SRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P )"
-OUTPUT_DIR=../../html
+OUTPUT_DIR="$( dirname $SCRIPT_SRC )/html"
 DOCS_SRC="$( dirname $SCRIPT_SRC )/docs"
 BUILD_RESULTS="Build Results:"
 BUILD_MESSAGE=$BUILD_RESULTS
@@ -12,7 +12,10 @@ echo "=== Building Guides ==="
 # Recurse through the guide directories and build them.
 subdirs=`find . -maxdepth 1 -type d ! -iname ".*" ! -iname "topics" | sort`
 
-echo $PWD
+if [ -d $OUTPUT_DIR ]; then rm -r $OUTPUT_DIR/*; fi
+if [ -d topics/images/ ]; then mkdir -p $OUTPUT_DIR/images/ && cp -r topics/images/ $OUTPUT_DIR; fi
+
+#echo $PWD
 for subdir in $subdirs
 do
   echo "Building $DOCS_SRC/${subdir##*/}"
@@ -34,9 +37,6 @@ do
   # Return to the parent directory
   #cd $SCRIPT_SRC
 done
-
-if [ -d $OUTPUT_DIR/images/ ]; then rm -r $OUTPUT_DIR/images/; fi
-if [ -d topics/images/ ]; then cp -r topics/images/ $OUTPUT_DIR/images/; fi
 
 chmod -R a+rwX $OUTPUT_DIR/
 
