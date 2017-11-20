@@ -1,13 +1,21 @@
 [#using_wi]
 = Using Work Items
 
-Create a Work Item that tracks changing a string in a Quickstart project. Use the `Planner` view to create a new Work Item for your Space as follows:
+Create a Work Item that tracks changing a string in your Quickstart project. Use the `Planner` to create a new Work Item for your Space as follows:
 
-. Click your name on the top right side of the screen.
-. Click btn:[Profile] in the displayed options.
-. Click btn:[Update Profile].
-. In the `Experimental Features` part of the page, read the disclaimer and check the `I agree to the terms above and would like to opt into experimental features` option and then click btn:[Update] to use {osio}'s experimental features.
+. Enable `Experimental Features`:
+.. Click your name on the top right side of the screen.
+.. Click btn:[Profile].
+.. Click btn:[Update Profile].
+.. In the `Experimental Features` part of the page, read the disclaimer and check the `I agree to the terms above and would like to opt into experimental features` option.
+.. Click btn:[Update].
+
 . Click your user name on the top left side of the page.
 . Click the name of your new Space from the displayed options to return to that Space's dashboard view.
-. Click btn:[Plan] to see the Planner view for your Space.  If experimental features have been enabled, the Planner view includes a green banner with the following message: `This feature is experimental. You can manage experimental features on your profile page. Got it!`
-. Click `Create Work Item` at the bottom of the screen. This is the fastest option to create a new Work Item.
+. Click btn:[Plan] to see the Planner view for your Space.  With experimental features enabled, the Planner view includes a green banner with the following message: `This feature is experimental. You can manage experimental features on your profile page. Got it!`
+. Click `Got it!` in the green banner to dismiss the message.
+. Click btn:[Create Work Item] at the bottom of the screen. This is the fastest option to create a new Work Item.
+. Add a `Work Item Title` and `Work Item Description` for your new Work Item.
+. Click &#10004; to create the Work Item.
+
+The new Work Item displays in the Planner view.

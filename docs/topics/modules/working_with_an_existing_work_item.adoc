@@ -1,7 +1,7 @@
 [#working_with_an_existing_work_item]
 = Working with an Existing Work Item
 
-Click btn:[Plan] to use {osio}'s Planner to track your Work Items and Iterations using either the list view or the board view. The Planner contains two views:
+Click btn:[Plan] to use the Planner to track your Work Items and Iterations using either the list view or the board view. The Planner contains two views:
 
 * The btn:[Backlog] is the default Planner view. This view displays all Work Items in a flat or hierarchal view organized by Iterations and type. This view lists the active and future Iterations and their Work Items.
 

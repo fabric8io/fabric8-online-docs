@@ -9,4 +9,4 @@ include::modules/staging_a_pipeline.adoc[leveloffset=+1]
 
 include::modules/configuring_pipelines.adoc[leveloffset=+1]
 
-include::modules/viewing_pipeline_builds.adoc[leveloffset=+1]
+include::modules/viewing_pipeline_projects_in_oso.adoc[leveloffset=+1]

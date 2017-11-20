@@ -1,5 +1,6 @@
 CURRENT_DIR="$( pwd -P)"
 SCRIPT_SRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P )"
+OUTPUT_DIR="$( dirname $SCRIPT_SRC )/html"
 DOCS_SRC="$( dirname $SCRIPT_SRC )/docs"
 BUILD_RESULTS="Build Results:"
 BUILD_MESSAGE=$BUILD_RESULTS
@@ -11,7 +12,10 @@ echo "=== Building Guides ==="
 # Recurse through the guide directories and build them.
 subdirs=`find . -maxdepth 1 -type d ! -iname ".*" ! -iname "topics" | sort`
 
-echo $PWD
+if [ -d $OUTPUT_DIR ]; then rm -r $OUTPUT_DIR/*; fi
+if [ -d topics/images/ ]; then mkdir -p $OUTPUT_DIR/images/ && cp -r topics/images/ $OUTPUT_DIR; fi
+
+#echo $PWD
 for subdir in $subdirs
 do
   echo "Building $DOCS_SRC/${subdir##*/}"
@@ -22,14 +26,19 @@ do
   fi
   cd $DOCS_SRC/${subdir##*/}
   GUIDE_NAME=${PWD##*/}
-  ./build_guide.sh
+
+  asciidoctor master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.html
+  asciidoctor -r asciidoctor-pdf -a imagesdir="topics/images" -b pdf master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.pdf
+
   if [ "$?" = "1" ]; then
     BUILD_ERROR="ERROR: Build of $GUIDE_NAME failed. See the log above for details."
     BUILD_MESSAGE="$BUILD_MESSAGE\n$BUILD_ERROR"
   fi
   # Return to the parent directory
-  cd $SCRIPT_SRC
+  #cd $SCRIPT_SRC
 done
+
+chmod -R a+rwX $OUTPUT_DIR/
 
 # Return to where we started as a courtesy.
 cd $CURRENT_DIR

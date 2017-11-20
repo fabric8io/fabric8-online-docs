@@ -4,25 +4,25 @@
 {osio} Analytics helps you make informed choices with respect to your development stack and its component libraries by analyzing your stack at the development stage, within your IDE, and at the deployment stage.
 
 == Development Stage
-{osio} Analytics analyzes your stack at the development stage and flags components with security vulnerabilities in your Che workspace. It also recommends a suitable, secure, alternate version for your stack.
+{osio} Analytics analyzes your stack at the development stage and flags components with security vulnerabilities in your Che workspace. It also recommends a secure, alternate version for your stack.
 
 .Prerequisite
 
-Ensure that you use <<e2e/create_che_workspace,Che workspace>> to develop an application.
+Ensure that you use  link:e2e_workshop.html#create_che_workspace-hello-world[Che workspace] to develop an application.
 
 .Procedure
 
 You can access inputs from {osio} Analytics within the Che IDE as follows:
 
-. In your Che workspace, open the manifest file of your project, for example, `pom.xml` for a Maven Stack, `package.json` for NPM, or `requirements.txt` for Python. {osio} analyzes the stack, flags (image:che_cve_issue.png[title="CVE Flag"]) components with security vulnerabilities, and recommends an alternative secure version.
-. Mouse hover the flagged component to see the CVE for the flagged component and the recommended alternative secure version.
+. In your Che workspace, open the manifest file of your project, for example, `pom.xml` for a Maven Stack, `package.json` for NPM, or `requirements.txt` for Python. {osio} analyzes the stack, flags (image:che_cve_issue.png[title="CVE Flag"]) components with security vulnerabilities, and recommends an alternate secure version.
+. Mouse hover the flagged component to see the CVE for the flagged component and the recommended alternate version.
 +
-image::che_alt_recommendation.png[Stack Recommendations on Che]
+image::che_alt_recommendations.png[Stack Recommendations on Che]
 +
 . Update the component to the recommended version.
 
 == Deployment Stage
-At the Deployment stage, {osio} Analytics provides a detailed Stack Analysis Report. It analyzes various parameters of your entire stack and recommends alternative and additional components suitable for your stack.
+At the Deployment stage, {osio} Analytics analyzes your stack and provides a detailed stack analysis report. It analyzes various parameters of your stack components and recommends alternative and additional components suitable for your stack.
 
 .Prerequisites
 
@@ -34,16 +34,16 @@ Ensure that you deploy your project and <<creating_a_new_pipeline, create a buil
 
 Alternatively, you can access your stack report as follows:
 
-. Click *Create*, and then *Pipelines* to view the pipeline builds for your project.
+. Click *Create* and then *Pipelines* to view the pipeline builds for your project.
 . Click *Stack Report* to see the stack and component level analyses for your project.
 +
 The report displays:
 
-* *Stack Report:* A synopsis of the stack's analysis report
+* *Stack report:* A synopsis of the stack's analysis report.
 
-* *Detail analysis of your stack components:* A list of all the stack components and their various parameters, including recommendations of Alternate Components in case of License Outliers or Usage Outliers.
+* *Detail analysis of your stack components:* A list of all the stack components and their various parameters, including recommendations of alternate components in case of license outliers or usage outliers.
 
-* *Additional components recommended by {osio}:* A list of additional components, commonly used by other similar stacks.
+* *Additional components recommended by {osio}:* A list of additional components commonly used by similar stacks.
 +
 See <<interpreting_stack_report, Interpreting your Stack Report>> section for further details.
 
@@ -53,10 +53,10 @@ See <<interpreting_stack_report, Interpreting your Stack Report>> section for fu
 ** *<<glossary.adoc#Security Issues, Security Issues>>* (image:security_issues.png[title="Security Issues"])
 ** *<<glossary.adoc#Alternate Components, Alternate Components>>* (image:alternate_component.png[title="Alternate Components"])
 ** Grouped Components (image:alternate_component.png[title="Alternate Components"])
-** *<<glossary.adoc#License Outliers, License Outliers>>* (image:license _outlier.png[title="License Outliers"])
+** *<<glossary.adoc#License Outliers, License Outliers>>* (image:license_outlier.png[title="License Outliers"])
 ** *<<glossary.adoc#Unknown Licenses, Unknown Licenses>>* (image:license_unknown.png[title="Unknown Licenses"])
 ** *<<glossary.adoc#License conflict, License conflict in a Component>>* (image:license_conflicts.png[title="License Conflicts"])
 +
-Note that, {osio} recommends *Alternate Components* for your stack if it identifies License or Usage outliers.
+Note that {osio} recommends *Alternate Components* for your stack if it identifies license or usage outliers.
 
-. In the *Action* column adjacent to the recommended Alternate or Additional components, click *Create Work Item* to create a work item in the {osio} Planner and <<working_with_an_existing_work_item,follow through>> on the recommendations.
+. In the *Action* column adjacent to the recommended alternate or additional components, click *Create Work Item* to create a work item in the {osio} Planner and <<working_with_an_existing_work_item,follow through>> on the recommendations.

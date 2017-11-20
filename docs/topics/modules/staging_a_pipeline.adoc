@@ -7,10 +7,10 @@ The new build pipeline pushes version 1.0.1 of your new project into _Stage_ and
 
 image::pipeline_running.png[A Running Pipeline Build]
 
-Optionally, view the build pipeline's details in OpenShift Online:
+Optionally, view the build pipeline details in OpenShift Online:
 
 . In the `Pipeline` page, click btn:[Build #1] for the build pipeline in progress.
 . When redirected, log into your OpenShift Online account.
-. Click btn:[View Log] to view the Jenkins instance's logs.
+. Click btn:[View Log] to view the Jenkins instance logs.
 
 image::oso_pipeline.png[A Running Pipeline Build in OpenShift Online]

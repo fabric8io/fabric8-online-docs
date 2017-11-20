@@ -1,12 +1,11 @@
 [#introduction_to_rhosio]
 = Introduction to {rhosio}
 
-{rhdp} offers a _Software as a Service_ (SaaS) product for developers called *{rhosio}* to meet your software-development requirements.
+{rhdp} offers a _Software as a Service_ (SaaS) product for developers called *{rhosio}* to meet your software development requirements.
 
-This section introduces {rhosio} and provides an overview of the main features of the product. Read it to understand the chief benefits of using link:{osio}[{osio-url}] and to learn about the various ways it can help organizations and developers with their everyday tasks.
+This section introduces {rhosio} and provides an overview of the main features of the product. Read it to understand the benefits of using link:{osio}[{osio-url}] and to learn about how organizations and developers can use it for their everyday tasks.
 
 include::modules/red_hat_openshift_io_overview.adoc[leveloffset=+1]
-
 
 == Related Information
 

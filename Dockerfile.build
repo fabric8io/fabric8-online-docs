@@ -1,11 +1,10 @@
-FROM centos:7
+FROM fedora:latest
 
 MAINTAINER Vašek Pavlín <vasek@redhat.com>
 
 # Install asciidoctor
-RUN yum install -y rubygems libxml2 && \
-    gem install asciidoctor && \
-    yum clean all
+RUN dnf install -y findutils rubygem-asciidoctor rubygem-asciidoctor-pdf libxml2 && \
+    dnf clean all
 
 COPY scripts/ scripts/
 COPY docs/ docs/

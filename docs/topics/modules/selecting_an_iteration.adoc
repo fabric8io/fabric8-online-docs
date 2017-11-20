@@ -3,24 +3,24 @@
 
 After logging in and selecting the appropriate space, click btn:[Plan] to view the Iterations for that space. Existing Iterations are grouped into one of the following categories:
 
-* _Active Iteration_ lists the currently active Iterations.
-* _All Iterations_ displays a list of all Iterations in the Space. These include active Iterations, closed Iterations, as well as Iterations that have not yet started.
+* _Active Iteration_ lists active Iterations.
+* _All Iterations_ displays a list of all Iterations in the Space. These include active and closed Iterations, as well as Iterations that have not yet started.
 
 Select an Iteration listed in one of these groups to display the included Work Items. See <<associating_work_items_with_an_iteration,Associating Work Items with an Iteration>> for more information.
 
 == All Iterations
 
-After <<creating_a_new_iteration, creating an Iteration>>, the new Iteration displays in this view.
+After <<creating_a_new_iteration, creating an Iteration>>, the new Iteration displays in the _All Iterations_ view.
 
-Select one of the following options after clicking the options (image:kabob.png[title="More"]) icon for the target Iteration:
+Select one of the following options after clicking the options (image:kabob.png[title="Options"]) icon for the target Iteration:
 
-* Select btn:[Edit] to change the Iteration's details.
+* Select btn:[Edit] to change the Iteration details.
 * Select btn:[Close] to end your Iteration.
 * Select btn:[Create Child] to create a child Iteration for the target Iteration.
 
 == Active Iteration
 
-An Iteration is set as the _Active Iteration_ after it starts. The _Active Iteration_ list displays:
+When an Iteration starts, it is added to the _Active Iteration_ list. The _Active Iteration_ list displays:
 
 * The start and end dates for the Iteration.
 * A tracker to track the Iteration status based on the completion of the Work Items associated with it.
@@ -28,5 +28,5 @@ An Iteration is set as the _Active Iteration_ after it starts. The _Active Itera
 
 To end an Iteration:
 
-. Click the options (image:kabob.png[title="More"]) icon for the Iteration and select btn:[Close].
+. Click the options (image:kabob.png[title="Options"]) icon for the Iteration and select btn:[Close].
 . In the dialog box, click btn:[Close].

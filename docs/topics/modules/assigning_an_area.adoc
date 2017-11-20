@@ -10,6 +10,6 @@ You can group Work Items by type or functionality by assigning relevant Areas to
 .Procedure
 . Click the btn:[Plan] tab to view a list of Work Items for your Space.
 . Double-click a Work Item to view its details.
-. Click the *Area* text box to view a list of Areas to assign to the space. By default, your Root Area is assigned to a new Work Item.
+. Click the *Area* field to view a list of Areas to assign to the space. By default, your Root Area is assigned to a new Work Item.
 . Select one of the existing Areas to assign to your Work Item.
 . Click the check box to confirm the name of the Area.

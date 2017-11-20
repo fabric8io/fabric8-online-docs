@@ -1,9 +1,12 @@
 [#importing_existing_code]
 = Importing Existing Code
 
-Import your existing project's codebase into {osio} quickly and easily using the `Import Codebase` wizard.
+Import your existing project codebase into {osio} using the `Import Codebase` wizard.
 
-. Select your organization name from the options in the `Organization` field. For this example, use the organization name assigned to your personal GitHub account. Click btn:[Next].
-. From the displayed list, select the repository to import into {osio} and then click btn:[Next].
+. Select your organization name from the options in the `Organization` field. For this example, use the organization name assigned to your personal GitHub account.
+. Click btn:[Next].
+. From the displayed list, select the repository to import into {osio}
+. Click btn:[Next].
 . Select a build pipeline strategy. The default value (`Release, Stage, Approve and Promote`) is recommended.
-. Ensure that the `Override Jenkins and POM files` option is selected and click btn:[Finish].
+. Ensure that the `Override Jenkins and POM files` option is selected
+. Click btn:[Finish].

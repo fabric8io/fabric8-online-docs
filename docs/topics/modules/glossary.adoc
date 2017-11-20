@@ -17,14 +17,14 @@ Scenario-Driven Planning:: A software development methodology focused on real-wo
 
 Work Item:: Work Items describe and keep track of work that needs to be done. A user can be assigned to a Work Item. Each Work Item must be attached to a Collaboration Space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
 
-Usage Outliers:: Components of your software stack that are not commonly used in other similar open source stacks or that rarely go together.
+Usage Outliers:: Components of your software stack that are not commonly used in similar open source stacks or that rarely go together.
 
 Security Issues:: {osio} analyzes the CVEs of all your components and flags components that have security vulnerabilities.
 
-License outliers:: Licenses which rarely go together or not commonly used in other similar stacks.
+License outliers:: Licenses in your stack that are not commonly used in similar stacks or that rarely go together.
 
-Alternate Components:: Components recommended by {osio}, to replace License or Usage Outliers.
+Alternate Components:: Components recommended by {osio} to replace license or usage outliers.
 
-Unknown licenses:: Licenses unknown to {osio}
+Unknown licenses:: Licenses unknown to {osio}.
 
 License conflicts:: Licenses that conflict at the stack or component level.

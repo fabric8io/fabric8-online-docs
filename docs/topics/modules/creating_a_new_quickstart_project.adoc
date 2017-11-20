@@ -1,12 +1,16 @@
 [#creating_a_new_quickstart_project]
 = Creating a New Quickstart Project
 
-Use {osio}'s Quickstart project wizard to quickly and easily create a new project from the available templates.
+Use the {osio} Quickstart project wizard to create a new project from the available templates.
 
-. Select a project type from the `Technology Stack` drop-down menu and click btn:[Next].
-. Select your organization name from the options in the `Organization` field. For this example, use the organization name assigned to your personal GitHub account.
-. In the `Name` field, add a unique name for your project.
-. Leave the default value for the `Group Id` and `Version` fields and click btn:[Next].
-. Select a build pipeline strategy. The default value (`Release, Stage, Approve and Promote`) is recommended.
-. Ensure that the `Override Jenkins and POM files` option is selected and click btn:[Next].
-. The `Build configuration` screen displays the details for your `Jenkins Space` and options for web hooks and triggering builds. Use the default options for these fields and click btn:[Finish].
+. In the `Technology Stack` drop-down menu, select a project type.
+. Click btn:[Next].
+. In the `Organization` field, select your organization name. For this example, use the organization name assigned to your personal GitHub account.
+. In the `Name` field, type a unique name for your project.
+. Leave the default value for the `Group Id` and `Version` fields
+. Click btn:[Next].
+. Select a `Build pipeline strategy`. Use the default value (`Release, Stage, Approve and Promote`) for most use cases.
+. Select the `Override Jenkins and POM files` option.
+. Click btn:[Next].
+. The `Build configuration` screen displays the details for your `Jenkins Space` and options for web hooks and triggering builds. Use the default options for these fields.
+. Click btn:[Finish].

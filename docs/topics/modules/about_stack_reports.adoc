@@ -1,20 +1,20 @@
 [#about_stack_reports]
 = About Stack Reports
 
-{osio} analyzes the health of your entire stack and its component libraries and provides recommendations to help you use relevant application components for your stack. It enables you to make informed decisions on the choice of open source components, augment your development stack, and reduce the risk to your organization.
+{osio} analyzes the health of your entire stack and its component libraries and provides recommendations to help you use relevant application components for your stack in the form of a stack report. The stack report enables you to make informed decisions on the choice of open source components, augment your development stack, and reduce the risk to your organization.
 
-The Stack Report analyzes your stack and provides you information about:
+The {osio} analytics stack report provides you information about:
 
 * The components comprising your stack
 * Security issues and version incompatibilities
 * Popularity of the components used in the stack
-* Intent or tags associated with the components
+* The purpose or tags associated with the components
 * License conflicts at the stack and component level
 * Outlier application components in your stack
 
 Based on the analyses it recommends:
 
-* Additional application components that match or better suit your stack by comparing with other similar stacks.
+* Additional application components that match or better suit your stack by comparing with similar stacks.
 * Alternative components to replace existing components in case of license conflicts, security issues, compatibility with the rest of your stack, and so on.
 
 Based on these recommendations, you can create work items and <<working_with_an_existing_work_item,follow through in the Planner>> to update your stack as required.

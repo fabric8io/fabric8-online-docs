@@ -1,7 +1,7 @@
 [#red_hat_openshift_io_overview]
 = {rhosio} Overview
 
-{rhosio} is a highly collaborative open-source, web-based _application lifecycle management_ (ALM) solution. It is a next-generation product for developers to manage the development lifecycle with one efficient tool.
+{rhosio} is a highly collaborative open-source, web-based _application life cycle management_ (ALM) solution. It is a next-generation product for developers to manage the development life cycle with one efficient tool.
 
 == Features
 
@@ -30,7 +30,7 @@
 
 *Analysis and Recommendations:*
 
-* Use the full-stack analysis feature on your project's open source components to identify potential security issues and recommend safer alternative components or component versions to use instead.
+* Use the full-stack analysis feature on your project open source components to identify potential security issues and recommend safer alternative components or component versions to use instead.
 * Use the self-learning analytics engine to improve the code quality and make data-based choices. The engine scans community libraries, security vulnerabilities, and other GitHub metrics to provide useful real-time assistance for developers that learns and improves over time.
 
 == Registration and Early Access

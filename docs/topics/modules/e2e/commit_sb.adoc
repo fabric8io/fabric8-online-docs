@@ -1,17 +1,17 @@
 [#commit_sb-{context}]
 = Commit and Push Changes to GitHub
 
-After making the required changes, commit and push the changes to your project's GitHub repository:
+After making the required changes, commit and push the changes to your project GitHub repository:
 
-IMPORTANT: Before committing your changes, ensure that your project's pipeline build in {osio} has successfully completed. See <<approve_rollout>> for instructions.
+IMPORTANT: Before committing your changes, ensure that your project's pipeline build in {osio} has completed. See <<approve_rollout.adoc>> for instructions.
 
-. Click `Git` from the menu options.
+. Click btn:[Git] from the menu options.
 
-. Select `Commit` from the displayed Git options.
+. Select btn:[Commit] from the displayed Git options.
 
 . In the commit dialog box:
 
-.. Ensure that all the changed and new files are selected.
+.. Select all changed and new files.
 
 .. Add a commit message describing your changes.
 
@@ -19,7 +19,7 @@ IMPORTANT: Before committing your changes, ensure that your project's pipeline b
 
 Alternatively, you can push your commit to a remote repository:
 
-. Click `Git` from the menu options.
+. Click btn:[Git] from the menu options.
 
 . Select `Remote` > `Push` from the displayed Git options.
 
@@ -27,4 +27,4 @@ Alternatively, you can push your commit to a remote repository:
 
 . Click btn:[Push].
 
-A success message appears in the top right corner of the tab when a push is successful.
+A message appears in the top right corner of the tab when a push is successful.
