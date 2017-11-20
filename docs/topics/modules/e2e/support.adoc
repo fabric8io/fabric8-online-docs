@@ -1,10 +1,30 @@
 [#support]
 = Getting Support
 
-The {osio} support chat channel is the best way to ask questions or get support for {osio} at any time.
+== Product Questions
+
+The {osio} support chat channel is the best way to ask questions or get immediate support for {osio} at any time. We encourage users to ask us questions and get immediate answers and assistance rather than spend additional time debugging or troubleshooting problems themselves.
 
 . Sign up at https://chat.openshift.io/signup_email
 . Add your details and click btn:[Create Account] to register.
-. In your email inbox, click the *Verify Email* link.
+. In your email inbox, click the btn:[Verify Email] link.
 . Sign in when prompted. You are redirected to the `#openshiftio` channel.
 . Ask a specific person your question or start with `@here` to tag everyone present in the channel.
+
+The {osio} team is also available in `#openshiftio` on Freenode for IRC users.
+
+== Product Feedback
+
+To give the {osio} team feedback, https://github.com/openshiftio/openshift.io/issues[create an issue] with any detail required, including screenshots if necessary. You can also search for related issues at this link. When logged, the {osio} team triages and adds tags and other information to your issue.
+
+If you prefer to send us feedback via email, send us the details at `openshiftio@redhat.com`.
+
+== Documentation Questions and Feedback
+
+The documentation team welcomes any and all feedback.
+
+* Is there anything we can do anything to improve the documentation?
+* Was a part of the documentation not useful for you?
+* Is there anything we did not document that you want to do with {osio}?
+
+https://github.com/fabric8io/fabric8-online-docs/issues[Create an issue] to send us your feedback.
