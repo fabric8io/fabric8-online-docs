@@ -1,0 +1,16 @@
+[#view_pipeline_oso]
+= Viewing the Build Pipeline in OpenShift Online
+
+Optionally, view the build pipeline's details in OpenShift Online:
+
+. In the `Pipeline` page, click `Build #1` for the build pipeline in progress.
+. When redirected, log into your OpenShift Online account.
+. When the OpenShift Online `Builds` view loads, click `View Log` to view the Jenkins instance logs.
++
+image::oso_view_log.png[View Logs in OpenShift Online]
++
+. When prompted, log into Jenkins with your OpenShift Online account. When logged in, the page displays the logs for your pipeline build.
++
+image::pipeline_jenkins.png[Pipeline Build Logs in Jenkins]
++
+. After examining the logs, close the browser tab and return to the {osio} browser tab.

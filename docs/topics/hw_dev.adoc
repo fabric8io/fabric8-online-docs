@@ -5,14 +5,20 @@
 
 include::modules/e2e/create_space.adoc[leveloffset=+1]
 
+include::modules/e2e/hw_create_proj.adoc[leveloffset=+1]
+
 include::modules/e2e/working_with_pipelines.adoc[leveloffset=+1]
+
+include::modules/e2e/view_pipeline_oso.adoc[leveloffset=+1]
+
+include::modules/e2e/about_oso_projects.adoc[leveloffset=+1]
 
 include::modules/e2e/view_proj_gh.adoc[leveloffset=+1]
 
-include::modules/e2e/view_pipelines_oso.adoc[leveloffset=+1]
-
 include::modules/e2e/approve_rollout.adoc[leveloffset=+1]
 
+include::modules/e2e/optional_detailed_views.adoc[leveloffset=+1]
+//stopped here, todd's doc does not have work items in this demo
 include::modules/e2e/using_wi.adoc[leveloffset=+1]
 
 include::modules/e2e/create_che_workspace.adoc[leveloffset=+1]

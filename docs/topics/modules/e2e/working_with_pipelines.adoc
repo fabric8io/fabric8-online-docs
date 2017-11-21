@@ -3,23 +3,20 @@
 
 When you create a new Quickstart project, a new build/pipeline execution initiates. In a build pipeline, *Stage* and *Run* are individual OpenShift projects. `Stage` is a production staging area to review and test changes before they are finalized and then staged on `Run`.
 
+After you create a new Quickstart project, you can see the new project build pipeline running in the Space dashboard:
+
+image::pipeline_running.png[A Running Pipeline Build]
+
 To view your new Quickstart project pipeline:
 
 . Click btn:[Create].
 . Click btn:[Pipelines]. This page displays all running pipelines for your Space.
 
+Your new project build pipeline displays on this page at the `Approve` stage:
+
+image::pipeline_firstrun.png[Pipeline First Run]
+
 For your new Quickstart project, the new build pipeline pushes version 1.0.1 into *Stage* and then, after user approval, it pushes the changes to *Run*.
-
-image::pipeline_running.png[A Running Pipeline Build]
-
-Optionally, view the build pipeline's details in OpenShift Online:
-
-. In the `Pipeline` page, click `Build #1` for the build pipeline in progress.
-. When redirected, log into your OpenShift Online account.
-. In the displayed `Builds` view, click btn:[View Log] to view the Jenkins instance logs.
-. When prompted, log into Jenkins with your OpenShift Online account. When logged in, the page displays the logs for your pipeline build.
-
-image::oso_pipeline.png[A Running Pipeline Build in OpenShift Online]
 
 [NOTE]
 ====
