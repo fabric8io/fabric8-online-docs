@@ -1,0 +1,53 @@
+[#interpreting_stack_report]
+= Interpreting your Stack Report
+
+The {osio} Analytics report comprises three components:
+
+* <<Stack report>>
+* <<Detail analysis of your stack components>>
+* <<Additional components recommended by {osio}>>
+
+== Stack report
+{osio} Analytics scans your stack and provides a synopsis of the analysis report. It states the *Total* number of components in your stack, the number of components *Analyzed* by it, and those *Unknown* to it.
+
+It displays:
+
+Security Alerts:: {osio} Analytics examines the Common vulnerabilities and exposures (CVEs) of the components in the stack and highlights vulnerabilities, if any.
+
+Usage:: It analyzes your overall stack composition, compares it to other similar stacks and displays the number of components in your stack that are not commonly used in other similar stacks or that rarely go together.
+
+Licenses:: It analyzes the licenses used in your stack, and displays the number of unknown licenses. It also displays the number of license conflicts at the stack level and the conflicting licenses used in the stack on mouse hover.
+
+== Detail analysis of your stack components
+The detailed component analysis lists all the analyzed components and their parameters. Based on the stack analysis it also lists recommendations for relevant alternate components.
+
+The detailed analysis helps you assess the credibility of your stack components by displaying component level details such as:
+
+Versions:: It lists current, recommended, and latest available versions of the components in your stack, so that you can select a suitable version for your stack.
+
+Security Issue:: Based on the CVEs of the stack components, {osio} Analytics identifies security vulnerabilities in your stack components. On mouse hover, it displays the CVE scores of components identified with security vulnerabilities.
+
+License:: It lists licenses for each component, flags unknown and conflicting licenses, and recommends *Alternate Components* in case of *License Outliers*.
+
+OSIO Usage:: It tracks the number of projects in {osio} that use the same component. It recommends *Alternate Components* in case of *Usage Outliers*.
+
+GitHub Statistics:: {osio} tracks GitHub statistics, such as *Usage Count* and number of *Watchers* for the components of your stack.
+
+GitHub Dependents:: It lists all the projects dependent on this component.
+
+Categories:: It lists the tags associated with the components of your stack.
+
+You can filter the detailed component analysis report to highlight:
+
+* *<<glossary.adoc#Usage Outliers, Usage Outliers>>* (image:usage_outlier.png[title="Usage Outlier"])
+* *<<glossary.adoc#Security Issues, Security Issues>>* (image:security_issues.png[title="Security Issues"])
+* *<<glossary.adoc#Alternate Components, Alternate Components>>* (image:alternate_component.png[title="Alternate Components"])
+* *Grouped Components* (image:alternate_component.png[title="Alternate Components"])
+* *<<glossary.adoc#License Outliers, License Outliers>>* (image:license_outlier.png[title="License Outliers"])
+* *<<glossary.adoc#Unknown Licenses, Unknown Licenses>>* (image:license_unknown.png[title="Unknown Licenses"])
+* *<<glossary.adoc#License conflict, License conflict in a Component>>* (image:license_conflicts.png[title="License Conflicts"])
+
+== Additional components recommended by {osio}
+{osio} recommends additional components suitable for your stack based on its analysis of similar open source stacks. These components are commonly used by similar stacks and augment your stack. It also displays various parameters relevant to the components, so that you can assess their credibility and make informed choices on adding them to your stack.
+
+To add the recommended component to your stack, click *Create work item* adjacent to the recommended alternate or additional component.
