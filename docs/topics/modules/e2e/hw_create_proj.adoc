@@ -3,6 +3,8 @@
 
 When you create a new Space, the `How would you like to get started?` menu appears. Use this menu to create a new Quickstart project as follows:
 
+NOTE: If this menu has closed, click btn:[Add to Space] in the top right part of your Space's dashboard view to display it again.
+
 . Click btn:[Create a new Quickstart project].
 +
 image::get_started_menu.png[How would you like to get started menu]

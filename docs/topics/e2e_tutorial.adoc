@@ -3,6 +3,8 @@
 
 include::modules/e2e/introduction.adoc[leveloffset=+1]
 
+include::modules/e2e/about.adoc[leveloffset=+1]
+
 include::modules/e2e/support.adoc[leveloffset=+1]
 
 include::modules/e2e/prereqs.adoc[leveloffset=+1]

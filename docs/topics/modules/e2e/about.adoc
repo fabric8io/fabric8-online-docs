@@ -1,0 +1,4 @@
+[#about]
+= About this Document
+
+The purpose of this End to End document is to guide users who are new to {osio} through a series of simple scenarios. These scenarios are designed to use the major {osio} features. As a result, following the instructions in this document is the fastest way for users to learn how to set up simple applications using {osio} within an hour.
