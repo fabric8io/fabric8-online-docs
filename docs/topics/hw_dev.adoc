@@ -18,7 +18,7 @@ include::modules/e2e/view_proj_gh.adoc[leveloffset=+1]
 include::modules/e2e/approve_rollout.adoc[leveloffset=+1]
 
 include::modules/e2e/optional_detailed_views.adoc[leveloffset=+1]
-//stopped here, todd's doc does not have work items in this demo
+
 include::modules/e2e/using_wi.adoc[leveloffset=+1]
 
 include::modules/e2e/create_che_workspace.adoc[leveloffset=+1]
