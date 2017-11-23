@@ -1,4 +1,3 @@
-[![Build Status](https://ci.centos.org/view/Devtools/job/devtools-fabric8-online-docs-build-master/badge/icon)](https://ci.centos.org/view/Devtools/job/devtools-fabric8-online-docs-build-master/)
 
 # Documentation for Red Hat OpenShift.io
 
@@ -7,12 +6,13 @@ This is the Git repository for documentation related to Red Hat OpenShift.io, th
 
 ## Building the Documentation
 
-The docs are built automatically upon every push to the *master* branch. You can then preview the built docs at https://docs.prod-preview.openshift.io/.
+The docs are built automatically upon every push to the *master* branch. You can then preview the built docs at https://docs.prod-preview.openshift.io/. Build status: [![Build Status](https://ci.centos.org/view/Devtools/job/devtools-fabric8-online-docs-build-master/badge/icon)](https://ci.centos.org/view/Devtools/job/devtools-fabric8-online-docs-build-master/)
 
 
 ### Building Locally
 
 There are three ways to build and preview the docs.
+
 
 #### Validating Mark-up
 
