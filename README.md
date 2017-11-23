@@ -12,6 +12,13 @@ The docs are built automatically upon every push to the *master* branch. You can
 
 There are three ways to build and preview the docs.
 
+#### Validating Mark-up
+
+You need to have `asciidoctor` and `xmllint` installed. To validate the mark-up used in all docs in the repo, run the following:
+
+```
+$ scripts/validate_guides.sh
+```
 
 #### Using Plain AsciiDoctor
 
