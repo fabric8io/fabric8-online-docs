@@ -1,3 +1,5 @@
+[![Build Status](https://ci.centos.org/view/Devtools/job/devtools-fabric8-online-docs-build-master/badge/icon)](https://ci.centos.org/view/Devtools/job/devtools-fabric8-online-docs-build-master/)
+
 # Documentation for Red Hat OpenShift.io
 
 This is the Git repository for documentation related to Red Hat OpenShift.io, the SaaS for developers. The documentation will be published at https://docs.openshift.io/.
