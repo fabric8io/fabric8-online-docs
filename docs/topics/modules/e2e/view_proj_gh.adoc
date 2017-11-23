@@ -1,7 +1,7 @@
 [#view_proj_gh]
 = Viewing Your Project in GitHub
 
-After reviewing your pipeline build running in {osio} and OpenShift Online, view your project's code in GitHub as follows:
+After reviewing your pipeline build running in {osio} and OpenShift Online, view your project's <<about_codebases,codebase>> in GitHub as follows:
 
 . In the {osio} tab, click btn:[Create] at the top of the screen.
 . Click btn:[Codebases] in the submenu options at the top of the screen. The `Codebases` page lists all codebases in your Space.

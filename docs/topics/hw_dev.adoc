@@ -7,11 +7,15 @@ include::modules/e2e/create_space.adoc[leveloffset=+1]
 
 include::modules/e2e/hw_create_proj.adoc[leveloffset=+1]
 
+include::modules/e2e/about_stage_run.adoc[leveloffset=+1]
+
 include::modules/e2e/working_with_pipelines.adoc[leveloffset=+1]
 
 include::modules/e2e/view_pipeline_oso.adoc[leveloffset=+1]
 
 include::modules/e2e/about_oso_projects.adoc[leveloffset=+1]
+
+include::modules/e2e/about_codebases.adoc[leveloffset=+1]
 
 include::modules/e2e/view_proj_gh.adoc[leveloffset=+1]
 
@@ -21,10 +25,12 @@ include::modules/e2e/optional_detailed_views.adoc[leveloffset=+1]
 
 include::modules/e2e/using_wi.adoc[leveloffset=+1]
 
+include::modules/e2e/about_workspaces.adoc[leveloffset=+1]
+
 include::modules/e2e/create_che_workspace.adoc[leveloffset=+1]
 
 include::modules/e2e/prereq_che.adoc[leveloffset=+1]
-
+//stopped here
 include::modules/e2e/change_code.adoc[leveloffset=+1]
 
 include::modules/e2e/commit_sb.adoc[leveloffset=+1]
