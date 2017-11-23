@@ -19,10 +19,16 @@ image::app_doesnt_exist.png[Application Does Not Exist Error]
 ====
 +
 . Add a string to the text box and click btn:[Invoke] to test the application.
++
+image::hello_john.png[Test the Application]
++
 . Return to the {osio} tab which displays the `Pipeline` view.
 . Click btn:[Input Required] at the `Approve` stage of the pipeline.
 +
 image::pipeline_firstrun.png[Input Required]
 +
 . Click btn:[Promote] to promote the build from the public URL for *Stage* to the public URL for the *Run* namespace. The rollout process from *Stage* to *Run* requires several minutes. You can view the detailed progress in the OpenShift Online console view.
-. When the `Pipeline` view indicates that the project is available in the *Run* namespace, click the icon (image:rollout_icon.png[title="Rollout"]) next to `Rollout to Run` to view the project in a new tab.
++
+image::rollout_to_run.png[Rollout to Run]
++
+. When the `Pipeline` view indicates that the project is available in the *Run* namespace, click the icon (image:rollout_icon.png[title="Rollout"]) next to `Rollout to Run` to view the project in a new tab and test the application.
