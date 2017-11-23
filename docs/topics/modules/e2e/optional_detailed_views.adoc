@@ -10,16 +10,20 @@ View the details for the `Environment` as follows:
 .. Click btn:[Profile] in the displayed options.
 .. In the `Profile` page, click btn:[Update Profile].
 .. Read the `Experimental Features` details and click *I agree to the terms above and would like to opt into exprimental features* to agree.
++
+image::experimental.png[Experimental Features]
++
 .. Click btn:[Update] to save your changes.
 .. On the top left side of the page, click your username.
-.. Click the name of your Space to return to the Space's dashboard. page to view each
+.. Click the name of your Space to return to the Space's dashboard.
 
 . At the top of the page, click btn:[Create].
 
 . From the options displayed, click btn:[Environments]. This view displays the details for each project on *Run* and *Stage*.
++
+image::environments.png[Environments Main Page]
 
-
-Optionally wiew the pipeline progress in OpenShift Online as follows:
+Optionally view the pipeline progress in OpenShift Online as follows:
 
 . Navigate to https://manage.openshift.com/ in a new browser tab and log in to your account.
 
@@ -28,5 +32,9 @@ Optionally wiew the pipeline progress in OpenShift Online as follows:
 . From the list of projects, click btn:[USERNAME-jenkins].
 
 . On the left side of the page, click btn:[Builds] and then btn:[Builds] again in the menu options. Your project's new build displays here.
-
++
+image::builds_builds.png[Builds > Builds in OpenShift Online]
++
 . Click the name of the build to view details. If required, use this console to monitor the build progress.
++
+image::monitor_build.png[Monitor Build in OpenShift Online]
