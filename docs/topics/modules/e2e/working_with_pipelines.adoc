@@ -1,16 +1,7 @@
 [#working_with_pipelines]
 = Working With Pipelines
 
-When you create a new Quickstart project, a new build/pipeline execution initiates. In a build pipeline, *Stage* and *Run* are individual OpenShift projects. `Stage` is a production staging area to review and test changes before they are finalized and then staged on `Run`.
-
-[NOTE]
-====
-Your {osio} subscription also provides you with an OpenShift Online Starter subscription. This Starter subscription includes two environments named *Stage* and *Run* to deploy your applications. Initially, applications deploy to *Stage*, which is accessible to stakeholders for review using a public URL. If approved and promoted, the application deploys to *Run*, which is similar to a production environment but is another staging area.
-
-The reason *Run* is not named *Production* is that the OpenShift Online Starter subscription does not support running production applications. https://www.openshift.com/pricing/index.html[Purchase an OpenShift Online Pro subscription] to include support for running production applications.
-
-{osio} includes a *Stage* and *Run* environment to allow developers to experience the modern workflow of pushing an application to a staging environment before production. *Run* therefore is a pseudo-production environment for educational purposes.
-====
+When you create a new Quickstart project, a new build/pipeline execution initiates. In a build pipeline, <<about_stage_run,*Stage* and *Run*>> are individual OpenShift projects. `Stage` is a production staging area to review and test changes before they are finalized and then staged on `Run`.
 
 After you create a new Quickstart project, you can see the new project build pipeline running in the Space dashboard:
 

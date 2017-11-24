@@ -1,22 +1,26 @@
 [#create_che_workspace-{context}]
 = Creating a Che Workspace
 
-Create a new Che workspace for your project:
+Create a new <<about_workspaces,Che workspace>> for your project:
 
-. In your {osio} space's dashboard, click btn:[Create].
+. In your {osio} space's dashboard, click btn:[Create]. The default view for this tab is `Codebases`.
 +
-NOTE: Initially, {osio} displays a message about the Workspaces loading (see screen capture). If this message appears for you, allow several minutes for the loading process to complete.
+NOTE: Initially, {osio} displays a message about the Workspaces loading (see screen capture). This message indicates that your Che instance is idle. If this message appears for you, allow several minutes for the loading process to complete.
 +
 image::loading_workspaces.png[Loading Workspaces]
 +
 . In the `Codebases` view, click btn:[Create workspace] for your project.
-. When your workspace is ready, click btn:[Open] to view your new workspace in a new browser tab.
+. When your workspace is ready, click btn:[Open] to view your new workspace in a new browser tab. This workspace loads the codebase for the listed project.
 +
 image::new_ws.png[New Workspace]
++
+. Like booting a computer, the workspace requires several minutes to start. The terminal window at the bottom of the Che workspace tab displays the progress:
++
+image::che_terminal.png[Workspace Terminal]
 
-[WARNING]
+[IMPORTANT]
 ====
-If a new tab does not appear, your browser is blocking the pop up that opens the new workspace. To resolve this:
+If a new tab does not appear, your browser is blocking the pop up that displays the new workspace. To resolve this:
 
 . Click the blocked pop up icon in your browser's URL field.
 . Select the `Always allow pop-ups from https://openshift.io` option (see screen capture) and click btn:[Done].
@@ -26,6 +30,6 @@ image::blocked_popup.png[Blocked Pop Up]
 . Click btn:[Open] again and the workspace displays in a new browser tab.
 ====
 
-When loaded and ready to use, the new Che workspace tab includes your new project's GitHub repository folder in the `Project Explorer` panel.
+When loaded and ready to use, the new Che workspace tab displays your new project's GitHub repository folder in the `Project Explorer` panel.
 
-image::proj_gh.png[Your GitHub Project in Che]
+image::ws_loaded_codebase.png[Your GitHub Project in Che]

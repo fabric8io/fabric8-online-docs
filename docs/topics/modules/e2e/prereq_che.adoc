@@ -1,17 +1,18 @@
 [#prereq_che-{context}]
 = Prerequisites for Using Your Che Workspace
 
-Before using the Che workspace, ensure that you have met the following prerequisites:
-
-. *Allow the workspace to finish loading*: Before editing a project in a Che workspace, ensure that the workspace has finished loading. If the `Project Explorer` pane lists your project, the workspace has finished loading:
+After your Che workspace has loaded, it displays your project code in the top right side of the screen:
 +
-image::ws_loaded.png[Workspace Loaded]
+image::ws_loaded_codebase.png[Your GitHub Project in Che]
++
+You must now ensure the following prerequisites are met before you start using the workspace to edit the codebase:
 
 . *Ensure Git commands are available*:
 .. Click `Git` in the workspace menu to ensure that all the listed commands (except `Initialize Repository`) are available.
-.. If they are not available, reload the workspace tab. The following screen capture shows a successfully loaded workspace's Git menu:
 +
 image::git_menu.png[Git Menu Options]
++
+.. If they are not available, reload the workspace browser tab.
 
 . *Configure your project for Maven*:
 .. Click your project name to select it.
@@ -29,6 +30,11 @@ image::config_maven.png[Configure Maven]
 ```
 +
 . Click the blue preview URL at the top of the `run` view to view your project.
-. Enter your name in the text box and click btn:[Invoke] to test the application.
++
+image::run_proj.png[Run project link]
++
+. Enter a name in the text box and click btn:[Invoke] to test the application.
++
+image::hello_john.png[Testing the application]
 
-You are now viewing and interacting with a private sandbox for your project run in OpenShift Online. This is different from `Stage` and `Run`. See <<working_with_pipelines.adoc>> for details about `Stage` and `Run`. You can share this link with others to test your project in your sandbox environment.
+You are now viewing and interacting with a private sandbox for your project run in OpenShift Online. This is different from `Stage` and `Run`. See <<about_stage_run>> for details about `Stage` and `Run`. You can share this link with others to test your project in your sandbox environment.
