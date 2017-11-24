@@ -25,7 +25,7 @@ The workspace automatically saves your changes.
 
 ** If you already ran the application earlier as instructed in <<prereq_che-hello-world>>, your automatically saved changes are already implemented. Maven uses Vert.x's hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip to the next step.
 
-** If you have not run the application already as instructed in <<prereq_che-hello-world>>::
+** If you have not run the application already as instructed in <<prereq_che-hello-world>>:
 
 *** Click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
 +
