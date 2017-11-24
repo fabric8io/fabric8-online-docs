@@ -23,7 +23,9 @@ include::modules/e2e/approve_rollout.adoc[leveloffset=+1]
 
 include::modules/e2e/optional_detailed_views.adoc[leveloffset=+1]
 
-include::modules/e2e/using_wi.adoc[leveloffset=+1]
+include::modules/e2e/enable_experimental_features.adoc[leveloffset=+1]
+
+include::modules/e2e/create_use_wi.adoc[leveloffset=+1]
 
 include::modules/e2e/about_workspaces.adoc[leveloffset=+1]
 

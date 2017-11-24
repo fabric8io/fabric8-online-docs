@@ -4,27 +4,41 @@
 To change your project code and preview the results:
 
 . In your Che workstation `Project Explorer` view, navigate to the following file: `src` > `main` > `Java` > `io.openshift.booster` > `HttpApplication.java`.
++
+image::project_dir.png[Project Directory]
++
 . Find the following line in the file:
 +
 ```java
 protected static final String template = "Hello, %s!";
 ```
 +
-. Change *Hello* to *Bonjour* in the line:
+. Change *Hello* to *Bonjour* in the line.
 +
 ```java
-protected static final String template = "Bonjour, %s!";
+protected static final String template = "Hello from Che, %s!";
 ```
 +
-. Save the changes using kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS).
-. Click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
+The workspace automatically saves your changes.
+
+. To test your changes:
+
+** If you already ran the application earlier as instructed in <<prereq_che-hello-world>>, your automatically saved changes are already implemented. Maven uses Vert.x's hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip to the next step.
+
+** If you have not run the application already as instructed in <<prereq_che-hello-world>>::
+
+*** Click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
 +
 ```
 [INFO] INFO: Succeeded in deploying verticle
 ```
-. Click the blue preview URL at the top of the `run` view to view your project.
++
+*** Click the blue preview URL at the top of the `run` view to view your project.
++
+image::blue_link.png[Preview Link]
++
 . Add a string to the text box and click btn:[Invoke] to test the application.
++
+image::hello_from_che.png[Testing the Application]
 
-. In the GitHub repository page, click btn:[Commits] to view all commits for your project and confirm that your recent changes are committed.
-. Return to the {osio} pipeline view. Your project has a new pipeline build in progress, which includes your new commit.
-. When required, click btn:[Input required] and then click btn:[Promote] to promote your build.
+You have now learned how the workspace automatically saves and applies your changes.

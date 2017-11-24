@@ -7,4 +7,4 @@ To view the OpenShift Online projects that support your project's pipeline, navi
 * The *_USERNAME-che_* project is for your <<about_workspaces,Che Host and workspaces>>.
 * The *_USERNAME-jenkins_* project is used for your Jenkins Master or your Jenkins Slaves. Click `Monitoring` after clicking this project to access your Jenkins console.
 * The *_USERNAME-run_* project is identical to the *_USERNAME-stage_* project and is used as an environment for experimenting with your OpenShift pods.
-* The *_USERNAME-stage_* project is for your personal use. In this project, pods display as pipelines that have been run. For maintenance, select this project and power down individual pods as required.
+* The *_USERNAME-stage_* project is for your personal use. In this project, pods display as pipelines that have run. For maintenance, select this project and power down individual pods as required.

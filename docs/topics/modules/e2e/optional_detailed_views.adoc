@@ -1,21 +1,11 @@
 [#optional_detailed_views]
 = (Optional) Detailed Views
 
-Optionally, you can see an experimental detailed view for the `Test`, `Stage`, and `Run` environments. This view displays the environment deployments, pods, events, and other information.
+Optionally, you can see an experimental detailed view for the `Test`, <<about_stage_run,`Stage`, and `Run`>> environments. This view displays the environment deployments, pods, events, and other information.
 
 View the details for the `Environment` as follows:
 
-. Opt in for this *experimental feature*:
-.. On the top right corner of the page, click your name.
-.. Click btn:[Profile] in the displayed options.
-.. In the `Profile` page, click btn:[Update Profile].
-.. Read the `Experimental Features` details and click *I agree to the terms above and would like to opt into exprimental features* to agree.
-+
-image::experimental.png[Experimental Features]
-+
-.. Click btn:[Update] to save your changes.
-.. On the top left side of the page, click your username.
-.. Click the name of your Space to return to the Space's dashboard.
+. Opt in for this *experimental feature*. See <<enable_experimental_features>> for details.
 
 . At the top of the page, click btn:[Create].
 
@@ -35,6 +25,6 @@ Optionally view the pipeline progress in OpenShift Online as follows:
 +
 image::builds_builds.png[Builds > Builds in OpenShift Online]
 +
-. Click the name of the build to view details. If required, use this console to monitor the build progress.
+. Click the name of the build to view details. If required, use this console to see the build progress.
 +
 image::monitor_build.png[Monitor Build in OpenShift Online]

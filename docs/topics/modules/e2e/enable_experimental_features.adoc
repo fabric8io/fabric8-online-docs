@@ -1,0 +1,20 @@
+[#enable_experimental_features]
+= Enable Experimental Features
+
+{osio} includes experimental features that are available for users who opt in for them as follows:
+
+. Click your name on the top right side of the screen.
+. Click btn:[Profile].
+. Click btn:[Update Profile].
+. In the `Experimental Features` part of the page, read the disclaimer and check the `I agree to the terms above and would like to opt into experimental features` option.
++
+image::experimental.png[Experimental Features]
++
+. Click btn:[Update].
+. Click your user name on the top left side of the page.
+. Click the name of your new Space from the displayed options to return to that Space's dashboard view.
+. At the top of the page, click btn:[Plan] to see the Planner view for your Space.  With experimental features enabled, the Planner view displays a green banner at the top of the page:
++
+image::exp_banner.png[Experimental Banner]
++
+. Click `Got it!` in the green banner to dismiss the message.

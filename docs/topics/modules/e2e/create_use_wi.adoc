@@ -1,0 +1,25 @@
+[#create_use_wi]
+= Create and Use a New Work Item
+
+After creating a project in your Space, create a Work Item and use it to to track your changes to the project code.
+
+. In the Planner's Backlog view, click btn:[Create Work Item] at the bottom of the screen. This is the fastest option to create a new Work Item.
++
+image::create_wi.png[Create Work Item]
++
+. Click the leftmost icon (image:wi_type_icon.png[title="Work Item Type"]) at the bottom of the page to select a Work Item Type. For this example, select the default *Feature* option.
+. In the `Work Item Title` text box, type *Add bonjour to the code*.
+. In the `Work Item Description` text box, type *Change the greeting in the quickstart code*.
+. Click &#10004; to create the Work Item. The new Work Item displays in the Planner view.
++
+image::new_wi.png[New Work Item]
++
+. Double click the new Work Item to view it in a panel on the right side of the screen:
++
+image::wi_edit.png[Edit Work Item]
++
+. Click `Unassigned` and add your name as the new assignee for this Work Item.
+. Click btn:[Board] from the menu options at the top of the screen to see the board view for the Work Items.
+. Your new Work Item appears in the `new` column. Click and then drag and drop the Work Item in the `open` column.
++
+image::move_workitem.png[Move Work Item]
