@@ -1,0 +1,27 @@
+[#review_publish_changes]
+= Review and Publish Your Changes
+
+The Git commit triggers a pipeline build in {osio}. To view the build:
+
+. Return to the {osio} browser tab.
+. Click btn:[Create] and then btn:[Pipelines] to view the build pipelines. After several moments, the build pipeline stops at the `Approve` stage. Do not approve the build yet.
++
+image::build_2.png[Build #2 Runs]
++
+. If you have not opted in for {osio}'s experimental features, see <<enable_experimental_features>> for instructions before you proceed.
+. With experimental features enabled, click btn:[Create] and then btn:[Applications]. You can see the following information on this screen:
++
+image::versions_applications.png[Versions of the Application]
++
+** Different versions of your application are deployed to `Stage` and `Run`. Version 1.0.2 of the application is deployed to `Stage` because you have not yet promoted it to `Run`. The older version 1.0.1 is deployed to `Run` because you approved it last time the pipeline build executed.
+** The green check marks indicate that both builds are operational.
+** The number 1 indicates that each of the application builds is scaled to 1 pod in OpenShift Online. The number of pods indicates the number of running instances of the application.
+** The version numbers link to individual running applications. If you mouse over the version numbers, you will see a message about the environments. Click the version numbers to see the relevant application version running in `Stage`. You can share these URLs to compare the old and new versions of the application.
++
+image::mouse_over_version.png[Mouse Over the Application Version]
++
+. Click btn:[Pipelines] at the top of the page to return to the pipelines view.
+. At the `Approve` stage, click btn:[Input Required].
+. Click btn:[Promote] to promote version 1.0.2 of the application to `Run`.
+
+You have now made changes to your project code, committed the changes to GitHub, and published the new version of your project.
