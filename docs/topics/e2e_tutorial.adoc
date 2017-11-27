@@ -17,6 +17,10 @@ include::modules/e2e/che_jenkins_status.adoc[leveloffset=+1]
 
 include::hw_dev.adoc[leveloffset=+1]
 
+include::debugging.adoc[leveloffset=+1]
+
+include::modules/e2e/opt_mem.adoc[leveloffset=+1]
+
 include::sb_tutorial.adoc[leveloffset=+1]
 
 include::import_code.adoc[leveloffset=+1]

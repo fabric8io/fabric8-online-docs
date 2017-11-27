@@ -1,0 +1,11 @@
+
+[#debugging]
+= Debugging Using the Che Workspace
+
+:context: debugging
+
+include::modules/e2e/che_debug.adoc[leveloffset=+1]
+
+include::modules/e2e/setup_debugger.adoc[leveloffset=+1]
+
+include::modules/e2e/run_debug.adoc[leveloffset=+1]

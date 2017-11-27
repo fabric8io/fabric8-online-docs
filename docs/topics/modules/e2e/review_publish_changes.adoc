@@ -24,4 +24,4 @@ image::mouse_over_version.png[Mouse Over the Application Version]
 . At the `Approve` stage, click btn:[Input Required].
 . Click btn:[Promote] to promote version 1.0.2 of the application to `Run`.
 
-You have now made changes to your project code, committed the changes to GitHub, and published the new version of your project.
+Congratulations! You have now created your first quickstart project in {osio}, made changes to your project code, committed the changes to GitHub, and published the new version of your project.

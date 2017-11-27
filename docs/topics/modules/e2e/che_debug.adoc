@@ -1,47 +1,49 @@
 [#che_debug]
 = Debugging Your Che Workspace
 
-Return to your project Che workspace tab to learn to debug your project.
+After creating your {osio} project, you can debug your application code in the Che workspace. This exercise is optional but recommended as an introduction to debugging code in {osio}.
 
-. In your `HttpApplication.java` file, add the following in a new line after line 22.
+. Return to your project Che workspace browser tab.
+. If the `HttpApplication.java` file is not already loaded, double click on it in your Project Explorer (`src` > `main` > `Java` > `io.openshift.booster`) to view the contents.
 +
-```java
-router.
-```
+image::project_dir.png[Project Directory]
 +
-. Use the kbd:[Ctrl+Space] shortcut to view the context-aware options for this line.
-. Select `get():Route` from the options. This uses the Vert.x Router's Get method.
-. Edit the new line so that it includes the *goodbye* endpoint:
+. In your `HttpApplication.java` file, add a line break between lines 21 and 22, then type *router.* and press kbd:[Ctrl]+kbd:[Space] to see the context aware assistance.
++
+image::debug_router.png[Project Directory]
++
+. From the displayed list, select the *get():Route* method. This is the Vert.x Router's get method and maps to the HTTP verb GET.
+. Edit the new line so that it includes the *goodbye* endpoint. The following is an example of the completed new line:
 +
 ```java
 router.get("/api/goodbye").handler(this::goodbye);
 ```
 +
-. Add the following method for the *goodbye* endpoint in a new line after line 52:
+. Add a new line after line 52 and then add the following method for the *goodbye* endpoint:
 +
 ```java
 private void goodbye(RoutingContext rc) {
-    String name = rc.request().getParam("name");
-    if (name == null) {
-      name = "World";
-    }
-    JsonObject response = new JsonObject()
-        .put("content", "Goodbye " + name);
+  String name = rc.request().getParam("name");
+  if (name == null) {
+    name = "World";
+  }
+  JsonObject response = new JsonObject()
+    .put("content", "Goodbye " + name);
 
     rc.response()
-        .putHeader(CONTENT_TYPE, "application/run_debugjson; charset=utf-8")
+      .putHeader(CONTENT_TYPE, "application/json; charset=utf-8")
         .end(response.encodePrettily());
-  }
+}
 ```
 +
 . Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.
-. Click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
+. If your application is already deployed, skip this step. To deploy the application, click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
 +
 ```
 [INFO] INFO: Succeeded in deploying verticle
 ```
 +
-. Click btn:[Terminal] and enter the following command to test the new endpoint:
+. Click the `Terminal` tab at the bottom of the page, then test the new endpoint by typing the following command:
 +
 ```
 curl localhost:8080/api/goodbye
@@ -49,12 +51,10 @@ curl localhost:8080/api/goodbye
 +
 The following result appears if the changes were successful:
 +
-```java
-{
-  "content" : "Goodbye World"
-}
-```
+image::terminal_result.png[Terminal Test Result]
 +
 . In the `EXEC` bar on the top of the workspace page, click the stop button (a blue square icon) to stop the current run process.
 +
 image::bar_stop.png[EXEC Bar]
++
+When stopped, the square icon becomes a circular arrow (image:run_stopped.png[title="Run Stopped"]).
