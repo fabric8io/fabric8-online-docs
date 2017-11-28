@@ -1,9 +1,9 @@
-[#reduce_mem]
+[#reduce_mem_sb]
 = Reduce the Boot Spring Project's Memory Usage
 
 Your {osio} space now has two quickstart projects running: the Hello World Vert.x project and the new Spring Boot HTTP project. These two projects share the same limited memory resources in OpenShift Online. You must therefore reduce the memory usage for these projects.
 
-See <<opt_mem.adoc>> to optimize memory usage for the Hello World project and use the following instructions for the Spring Boot project:
+See <<reduce_memory>> to optimize memory usage for the Hello World project and use the following instructions for the Spring Boot project:
 
 . In your Che workspace, expand the `src` > `main` > `fabric8` folders.
 

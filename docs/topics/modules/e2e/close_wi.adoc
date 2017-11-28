@@ -1,0 +1,13 @@
+[#close_wi]
+= Closing a Work Item
+
+After implementing and reviewing your code changes, update the relevant Work Item to track the work done.
+
+. Click the btn:[Plan] tab and then btn:[Board] in the options to view the Planner Board view.
+. Drag the Work Item to the `Resolved` column.
++
+image::resolved_wi.png[Resolved Work Item]
+
+Closing or resolving a Work Item communicated to the team that the task being tracked is complete.
+
+You have now created your first quickstart project in {osio}, made changes to your project code, committed the changes to GitHub, and published the new version of your project, and updated the Work Item to reflect your work.

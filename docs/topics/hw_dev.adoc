@@ -39,10 +39,4 @@ include::modules/e2e/commit_sb.adoc[leveloffset=+1]
 
 include::modules/e2e/review_publish_changes.adoc[leveloffset=+1]
 
-include::modules/e2e/che_debug.adoc[leveloffset=+1]
-
-include::modules/e2e/setup_debugger.adoc[leveloffset=+1]
-
-include::modules/e2e/run_debug.adoc[leveloffset=+1]
-
-include::modules/e2e/opt_mem.adoc[leveloffset=+1]
+include::modules/e2e/close_wi.adoc[leveloffset=+1]

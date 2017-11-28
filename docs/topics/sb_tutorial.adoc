@@ -11,7 +11,7 @@ include::modules/e2e/create_che_workspace.adoc[leveloffset=+1]
 
 include::modules/e2e/che_ws_sb.adoc[leveloffset=+1]
 
-include::modules/e2e/reduce_mem.adoc[leveloffset=+1]
+include::modules/e2e/reduce_mem_sb.adoc[leveloffset=+1]
 
 include::modules/e2e/commit_sb.adoc[leveloffset=+1]
 

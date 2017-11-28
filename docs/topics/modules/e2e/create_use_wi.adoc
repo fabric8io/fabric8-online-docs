@@ -8,8 +8,8 @@ After creating a project in your Space, create a Work Item and use it to to trac
 image::create_wi.png[Create Work Item]
 +
 . Click the leftmost icon (image:wi_type_icon.png[title="Work Item Type"]) at the bottom of the page to select a Work Item Type. For this example, select the default *Feature* option.
-. In the `Work Item Title` text box, type *Add bonjour to the code*.
-. In the `Work Item Description` text box, type *Change the greeting in the quickstart code*.
+. In the `Work Item Title` text box, type *Change greeting*.
+. In the `Work Item Description` text box, type *Change the greeting from Hello to Hello from Che*.
 . Click &#10004; to create the Work Item. The new Work Item displays in the Planner view.
 +
 image::new_wi.png[New Work Item]
