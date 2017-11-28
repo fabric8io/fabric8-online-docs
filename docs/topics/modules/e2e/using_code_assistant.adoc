@@ -1,0 +1,35 @@
+[#using_code_assistant]
+= Using the Code Assistant
+
+. Return to the Che workspace browser tab. If you closed your earlier workspace tab, use the following instructions:
+.. In {osio}, click the btn:[Create] tab.
+.. The default `Codebases` view lists your project workspace:
++
+image::existing_workspace.png[Existing Workspace]
++
+.. Click btn:[Open] to view the existing workspace in a new tab. If the new tab does not load, ensure your browser is not blocking pop ups.
+.. When the workspace loads, navigate to the following file: `src` > `main` > `Java` > `io.openshift.booster` > `HttpApplication.java`.
++
+image::project_dir.png[Project Directory]
+. In the `HttpApplication.java` file, add a line break at line 9 after the imports section.
+. Type the following in the new line:
++
+```
+import io.
+```
++
+. Press kbd:[Ctrl+Space] to view the options for this line and select any one of the options.
++
+image::code_options.png[Code Autocomplete Options]
++
+. Mouse over the error icon next to the line number to view the error, which warns you that the import is not used.
++
+image::code_error.png[Code Error]
++
+. Delete the added line to clear the error.
+
+You have now learned how the Che workspace uses a Code Assistant to make recommendations and identify errors.
+
+Click btn:[Assistant] at the top of the page to view additional IDE features.
+
+image::assistant.png[Assistant Menu]

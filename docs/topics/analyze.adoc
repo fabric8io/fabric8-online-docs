@@ -1,0 +1,12 @@
+[#analyze-app]
+= Analyzing the Application
+
+:context: spring-boot
+
+include::modules/e2e/analyze_che_dependencies.adoc[leveloffset=+1]
+
+include::modules/e2e/using_stack_reports.adoc[leveloffset=+1]
+
+include::modules/e2e/view_proj_gh.adoc[leveloffset=+1]
+
+include::modules/e2e/about_oso_projects.adoc[leveloffset=+1]
