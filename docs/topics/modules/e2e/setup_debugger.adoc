@@ -1,7 +1,7 @@
 [#setup_debugger]
 = Set Up the Debugger
 
-You can also use the Che workspace Debugger feature to debug your project code:
+To debug your project code using the Che workspace Debugger feature:
 
 . In the `Debug` drop down menu, select the `debug` option.
 +

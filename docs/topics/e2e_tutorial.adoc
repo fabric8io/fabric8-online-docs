@@ -19,7 +19,7 @@ include::hw_dev.adoc[leveloffset=+1]
 
 include::debugging.adoc[leveloffset=+1]
 
-include::modules/e2e/opt_mem.adoc[leveloffset=+1]
+include::optimize_memory.adoc[leveloffset=+1]
 
 include::sb_tutorial.adoc[leveloffset=+1]
 

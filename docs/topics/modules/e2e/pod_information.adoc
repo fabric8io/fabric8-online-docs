@@ -1,0 +1,26 @@
+[#pod_information]
+= Reviewing the Resource Information in OpenShift Online
+
+The memory allowances for each OpenShift pod is 512 Mi. As a result, each application consumes nearly 1 Gb of memory for the `Stage` and `Run` environments.
+
+To check the memory limit in OpenShift Online:
+
+. In a new browser tab, navigate to the OpenShift Online Console at https://console.starter-us-east-2.openshift.com/
+
+. From the list of projects, click *USERNAME-run* to see the resources used for the `Run` environment or *USERNAME-stage* to see the resources for the `Stage` environment.
++
+image::select_project_run.png[Select the Run Project]
++
+See <<about_oso_projects>> for details about the listed projects.
+
+. Click btn:[Applications] and then select btn:[Pods] in the displayed submenu.
++
+image::app_pods.png[Application Pods]
++
+. The `Pods` page lists your Hello World project pod. Click the name of the project so see its resource information.
+
+. The details page lists the `Status` of the pod and the container resource information:
++
+image::resources.png[Resources]
+
+Use this page to review the memory usage for your {osio} project.

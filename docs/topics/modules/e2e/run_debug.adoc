@@ -1,7 +1,7 @@
 [#run_debug]
 = Run the Debug Command
 
-After successfully setting up the Debugger, you can use the Debug command for your project:
+After setting up the Debugger, you can use the Debug command for your project:
 
 . Click btn:[Run] from the menu options.
 . Select the btn:[Debug] option and then the btn:[Remote Java] option.

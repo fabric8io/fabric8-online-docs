@@ -38,3 +38,5 @@ include::modules/e2e/change_code.adoc[leveloffset=+1]
 include::modules/e2e/commit_sb.adoc[leveloffset=+1]
 
 include::modules/e2e/review_publish_changes.adoc[leveloffset=+1]
+
+include::modules/e2e/close_wi.adoc[leveloffset=+1]
