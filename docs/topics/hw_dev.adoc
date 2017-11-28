@@ -13,11 +13,7 @@ include::modules/e2e/working_with_pipelines.adoc[leveloffset=+1]
 
 include::modules/e2e/view_pipeline_oso.adoc[leveloffset=+1]
 
-include::modules/e2e/about_oso_projects.adoc[leveloffset=+1]
-
 include::modules/e2e/about_codebases.adoc[leveloffset=+1]
-
-include::modules/e2e/view_proj_gh.adoc[leveloffset=+1]
 
 include::modules/e2e/approve_rollout.adoc[leveloffset=+1]
 
