@@ -1,4 +1,4 @@
-[#reduce_mem]
+[#reduce_memory]
 = Reduce the Hello World Project's Memory Usage
 
 You can optimize your new quickstart to use less memory. This is important when using OpenShift Online's Free Tier because this tier provides limited memory.
