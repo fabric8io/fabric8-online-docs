@@ -5,9 +5,10 @@ REGISTRY_URI="push.registry.devshift.net"
 REGISTRY_NS="fabric8io"
 REGISTRY_IMAGE="fabric8-online-docs"
 REGISTRY_URL=${REGISTRY_URI}/${REGISTRY_NS}/${REGISTRY_IMAGE}
-BUILDER_IMAGE="documentation-builder"
-BUILDER_CONT="documentation-builder-container"
-DEPLOY_IMAGE="documentation-deploy"
+BUILDER_IMAGE="docs-builder"
+BUILDER_CONT="docs-builder-container"
+DEPLOY_IMAGE="docs-deploy"
+DEPLOY_CONT="docs-deploy-container"
 
 TARGET_DIR="html"
 
@@ -58,7 +59,7 @@ docker run --detach=true --name ${BUILDER_CONT} -t -v $(pwd)/${TARGET_DIR}:/${TA
 docker exec ${BUILDER_CONT} sh scripts/build_guides.sh
 
 #UPDATE LANDING PAGE TIMESTAMP WHEN NOT ON LOCAL
-if [ ! -n "$CICO_LOCAL" ]; then
+if [ -z $CICO_LOCAL ]; then
     sed -i "s|<div id='footer-text'>[^<].*</div>|<div id='footer-text'>$(date -u)</div>|" index.html
 fi
 
@@ -70,4 +71,17 @@ if [ -z $CICO_LOCAL ]; then
     TAG=$(echo $GIT_COMMIT | cut -c1-${DEVSHIFT_TAG_LEN})
     tag_push "${REGISTRY_URL}:${TAG}" ${DEVSHIFT_USERNAME} ${DEVSHIFT_PASSWORD} ${REGISTRY_URI}
     tag_push "${REGISTRY_URL}:latest" ${DEVSHIFT_USERNAME} ${DEVSHIFT_PASSWORD} ${REGISTRY_URI}
+fi
+
+#SERVE DOCS WHEN ON LOCAL
+if [ ! -z $CICO_LOCAL ]; then
+
+  #CLEAN UP OLD DEPLOY (CADDY) CONTAINERS
+  docker ps | grep -q $DEPLOY_CONT && docker stop $DEPLOY_CONT
+  docker ps -a | grep -q $DEPLOY_CONT && docker rm $DEPLOY_CONT
+
+  #RUN THE DEPLOY (CADDY) CONTAINER
+  docker run --detach=true --name $DEPLOY_CONT --publish 2015:2015 $DEPLOY_IMAGE && \
+    echo "Docs are now available for local preview at http://127.0.0.1:2015/"    || \
+    echo "Local deployment of docs failed."
 fi

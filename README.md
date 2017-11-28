@@ -54,10 +54,9 @@ $ export CICO_LOCAL=local
 $ ./cico_build_deploy.sh
 ```
 
-Following a successful build, start serving the docs on localhost by executing:
+Following a successful local build, the docs will be available for preview on localhost:
 
 ```
-$ docker run --detach=true --name=docs-server --publish=2015:2015 documentation-deploy
 $ <www-browser-of-choice> http://127.0.0.1:2015/
 ```
 
