@@ -46,22 +46,21 @@ fi
 #CLEAN
 docker ps | grep -q ${BUILDER_CONT} && docker stop ${BUILDER_CONT}
 docker ps -a | grep -q ${BUILDER_CONT} && docker rm ${BUILDER_CONT}
-rm -rf ${TARGET_DIR}/
+if [ -d $TARGET_DIR ]; then rm -rf ${TARGET_DIR}/; fi
 
 #BUILD
 docker build -t ${BUILDER_IMAGE} -f Dockerfile.build .
 
-#mkdir -m 777 ${TARGET_DIR}/
-if [ ! -d $TARGET_DIR ]; then mkdir -m 777 ${TARGET_DIR}; fi
+mkdir -m 777 ${TARGET_DIR}
 
 docker run --detach=true --name ${BUILDER_CONT} -t -v $(pwd)/${TARGET_DIR}:/${TARGET_DIR}:Z ${BUILDER_IMAGE} /bin/tail -f /dev/null #FIXME
 
 docker exec ${BUILDER_CONT} sh scripts/build_guides.sh
 
-#Need to do this again to set permission of images and html files
-# chmod -R 0777 ${TARGET_DIR}/
-# chmod -R 0777 index.html
-sed -i "s|<div id='footer-text'>[^<].*</div>|<div id='footer-text'>$(date -u)</div>|" index.html
+#UPDATE LANDING PAGE TIMESTAMP WHEN NOT ON LOCAL
+if [ ! -n "$CICO_LOCAL" ]; then
+    sed -i "s|<div id='footer-text'>[^<].*</div>|<div id='footer-text'>$(date -u)</div>|" index.html
+fi
 
 #BUILD DEPLOY IMAGE
 docker build -t ${DEPLOY_IMAGE} -f Dockerfile.deploy .

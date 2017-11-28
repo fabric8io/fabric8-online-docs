@@ -12,7 +12,6 @@ echo "=== Building Guides ==="
 # Recurse through the guide directories and build them.
 subdirs=`find . -maxdepth 1 -type d ! -iname ".*" ! -iname "topics" | sort`
 
-if [ -d $OUTPUT_DIR ]; then rm -r $OUTPUT_DIR/*; fi
 if [ -d topics/images/ ]; then mkdir -p $OUTPUT_DIR/images/ && cp -r topics/images/ $OUTPUT_DIR; fi
 
 #echo $PWD
