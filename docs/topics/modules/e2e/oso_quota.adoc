@@ -22,7 +22,7 @@ image::login_octools.png[Log In OC Tools]
 . Use the following command during and after using the new pod in OpenShift to monitor and compare resource usage:
 +
 ```cli
-oc get quota compute-resources -o yaml -n <username>-stage
+oc get quota compute-resources -o yaml -n USERNAME-stage
 ```
 +
 An example of the output for this command is as follows:
@@ -45,7 +45,7 @@ image::rollout_to_stage.png[Rollout To Stage]
 . In your terminal window, use the same command again to see the change in memory usage:
 +
 ```cli
-oc get quota compute-resources -o yaml -n <username>-stage
+oc get quota compute-resources -o yaml -n USERNAME-stage
 ```
 +
 An example of the output for this command after committing the yaml file is as follows:
