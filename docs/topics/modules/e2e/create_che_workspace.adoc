@@ -32,8 +32,20 @@ image::blocked_popup.png[Blocked Pop Up]
 
 When loaded and ready to use, the new Che workspace tab displays your new project's GitHub repository folder in the `Project Explorer` panel.
 
-//for hello-world
+// for hello-world
+ifeval::["{context}" == "hello-world"]
 image::ws_loaded_codebase.png[Your GitHub Project in Che]
+endif::[]
 
-//for springboot
+// for spring-boot
+ifeval::["{context}" == "spring-boot"]
 image::ws_loaded_springboot.png[Your GitHub Project in Che]
+endif::[]
+
+// for import-code
+ifeval::["{context}" == "import-code"]
+// This third condition really doesn't need to be here;
+// I'm only including it for illustrative purposes.
+// As soon as we have a correct third screenshot for the
+// 'import-code' chapter, this condition will have its use.
+endif::[]
