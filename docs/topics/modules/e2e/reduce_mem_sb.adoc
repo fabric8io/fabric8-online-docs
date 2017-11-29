@@ -1,16 +1,20 @@
 [#reduce_mem_sb]
 = Reduce the Boot Spring Project's Memory Usage
 
-Your {osio} space now has two quickstart projects running: the Hello World Vert.x project and the new Spring Boot HTTP project. These two projects share the same limited memory resources in OpenShift Online. You must therefore reduce the memory usage for these projects.
+Your OpenShift Online account must now share resources with two quickstart projects: the Hello World Vert.x project and the new Spring Boot HTTP project. 
 
 See <<reduce_memory>> to optimize memory usage for the Hello World project and use the following instructions for the Spring Boot project:
 
 . In your Che workspace, expand the `src` > `main` > `fabric8` folders.
-
++
+image::sb_optimize_folders.png[File Tree]
++
 . Right-click the `fabric8` folder and select `New` > `File`.
 
 . Name the new file *deployment.yaml*.
-
++
+image::deploymentyaml.png[Deployment.Yaml]
++
 . Copy the following file's contents to your new yaml file: https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml].
 +
 WARNING: Spaces are meaningful in yaml files. Ensure that the correct spacing is copied into your yaml file from the link.

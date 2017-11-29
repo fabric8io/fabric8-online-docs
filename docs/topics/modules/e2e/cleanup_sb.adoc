@@ -1,23 +1,27 @@
 [#cleanup_sb]
 = Cleaning Up Your OpenShift Online Account
 
-{osio} generates artifacts within five projects (Kubernetes namespaces) in OpenShift Online. These artifacts use a significant amount of the limited resources available with OpenShift Online's Free Tier. Reset your {osio} and Openshift Online account resources as follows:
+{osio} generates artifacts within five projects (Kubernetes namespaces) in OpenShift Online. See <<about_oso_projects>> for details. After you create the Vert.X and Spring Boot HTTP quickstart projects, the limited resources available in the OpenShift Online Free Tier are nearly exhausted. You can now reset your {osio} and Openshift Online account resources to start afresh:
 
-. *Delete your {osio} spaces*:
-.. In the {osio} home page, click your name in the top right part of the page.
-.. Click btn:[Profile] from the displayed options.
-.. In the `Profile` page, click `Spaces`.
-.. Click btn:[Delete] and then btn:[Remove] for each of the listed spaces.
+. In your `Profile` page, click btn:[Update Profile].
+. Click btn:[Reset Environment]. A warning page appears with a summary of your {osio} account.
 +
-NOTE: Deleting the spaces does not remove the GitHub repositories created for each of these spaces.
+image::reset_env.png[Reset Environment]
 +
-. *Reset your {osio} environment*:
-.. In your `Profile` page, click btn:[Update Profile].
-.. Click btn:[Reset Environment]. A warning page appears with a summary of your {osio} account.
-.. Click btn:[Erase my {osio} Environment].
-.. In the dialog box, add your {osio} user name and click btn:[I understand my actions - erase my environment].
-.. After the environment is successfully erased, click the check mark icon in the top right side of the page to see the `Jenkins` and `Che` status.
+. Click btn:[Erase my {osio} Environment].
++
+image::erase.png[Erase My OpenShift.io Environment]
++
+. In the dialog box, add your {osio} user name and click btn:[I understand my actions - erase my environment].
++
+image::are_you_sure.png[Confirm]
++
+. After the environment is successfully erased, the success page displays:
++
+image::success.png[Success]
++
+. Click the check mark icon in the top right side of the page to see the `Jenkins` and `Che` status. Allow several minutes for this to load. When all the status indicators are green (see screen capture), you can use your {osio} account again. If the status indicators are not green after several minutes, see <<che_jenkins_status>> for troubleshooting information.
 +
 image::status_success.png[Che and Jenkins Successfully Restored]
 
-After successfully completing these steps, your {osio} and OpenShift Online account resources are reset and ready for use with a new project.
+After completing these steps, your {osio} and OpenShift Online account resources are reset and ready for use with a new project.

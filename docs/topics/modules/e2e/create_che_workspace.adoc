@@ -32,4 +32,8 @@ image::blocked_popup.png[Blocked Pop Up]
 
 When loaded and ready to use, the new Che workspace tab displays your new project's GitHub repository folder in the `Project Explorer` panel.
 
+//for hello-world
 image::ws_loaded_codebase.png[Your GitHub Project in Che]
+
+//for springboot
+image::ws_loaded_springboot.png[Your GitHub Project in Che]
