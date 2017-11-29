@@ -5,7 +5,7 @@ To view the OpenShift Online projects that support your project's pipeline, navi
 
 image::oso_projects.png[OpenShift Online Projects]
 
-This page displays the following projects/namespaces that are created in OpenShift Online:
+This page displays the following projects and namespaces that are created in OpenShift Online:
 
 * The *_USERNAME_* project is where your pipelines run. This project's name is your OpenShift Online user name.
 * The *_USERNAME-che_* project is for your <<about_workspaces,Che Host and workspaces>>.

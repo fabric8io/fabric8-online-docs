@@ -3,7 +3,7 @@
 
 Your OpenShift Online account must now share resources with two quickstart projects: the Hello World Vert.x project and the new Spring Boot HTTP project. 
 
-See <<reduce_memory>> to optimize memory usage for the Hello World project and use the following instructions for the Spring Boot project:
+If you did not optimize memory usage for the Vert.X quickstart project earlier, use the instructions in <<reduce_memory>> now. To optimize memory for the Spring Boot HTTP quickstart:
 
 . In your Che workspace, expand the `src` > `main` > `fabric8` folders.
 +

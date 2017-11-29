@@ -20,11 +20,11 @@ image::pomxml.png[Pom.xml File]
 </dependency>
 ----
 +
-. An error icon appears near the line numbers when you add the XML code. Mouse over the icon to view the error message (see screen capture).
+. An error icon appears near the line numbers when you add the XML code. Move the mouse pointer over the icon to view the error message (see screen capture).
 +
 image::red_x.png[Error Icon]
 +
-The dependency analyzer displays this error to indicate that the current version (1.1.0) has a CVE (Common Vulnerabilities and Exposures). It also recommends using version 1.2.1 instead to fix the problem.
-. Update the version in the *version* tags of the code to `1.2.1`. The red icon disappears when the version number is updated.
+The dependency analyzer displays this error to indicate that the current version (1.1.0) has a CVE issue (Common Vulnerabilities and Exposures) associated with it. It also recommends using version 1.2.1 instead to fix the problem.
+. Update the version in the *<version>* tags of the code to `1.2.1`. The red icon disappears when the version number is updated.
 
 You have now learned how the Che workspace automatically analyzes dependencies for your code and indicates problems and recommends fixes.

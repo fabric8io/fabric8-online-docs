@@ -7,22 +7,23 @@
 +
 image::existing_workspace.png[Existing Workspace]
 +
-.. Click btn:[Open] to view the existing workspace in a new tab. If the new tab does not load, ensure your browser is not blocking pop ups.
+.. Click btn:[Open] to view the existing workspace in a new tab. If the new tab does not load, ensure your browser is not blocking pop-up windows.
 .. When the workspace loads, navigate to the following file: `src` > `main` > `Java` > `io.openshift.booster` > `HttpApplication.java`.
 +
 image::project_dir.png[Project Directory]
 . In the `HttpApplication.java` file, add a line break at line 9 after the imports section.
 . Type the following in the new line:
 +
-```
+[source,java]
+----
 import io.
-```
+----
 +
 . Press kbd:[Ctrl+Space] to view the options for this line and select any one of the options.
 +
 image::code_options.png[Code Autocomplete Options]
 +
-. Mouse over the error icon next to the line number to view the error, which warns you that the import is not used.
+. Move the mouse pointer over the error icon next to the line number to view the error, which warns you that the import is not used.
 +
 image::code_error.png[Code Error]
 +

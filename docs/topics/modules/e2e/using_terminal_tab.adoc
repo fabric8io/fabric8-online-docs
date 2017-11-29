@@ -11,16 +11,16 @@ image::terminal_start.png[Terminal Tab]
 +
 . Type and execute the following command in the terminal tab:
 +
-```
+----
 cat /etc/os-release
-```
+----
 +
 The terminal displays the details for your Linux container.
 . Type and execute the following command in the terminal tab:
 +
-```
+----
 top
-```
+----
 +
 The terminal tab displays the following information about your Linux container:
 +
@@ -30,15 +30,15 @@ image::terminal_top.png[Terminal Top Command]
 .. Press kbd:[Ctrl+c] to stop the *top* command.
 .. Type and execute the following:
 +
-```
+----
 curl localhost:8080
-```
+----
 +
 .. Type and execute the following:
 +
-```
+----
 curl localhost:8080/api/greeting
-```
+----
 +
 . After experimenting with the terminal commands, use the stop icon at the top of the page to stop the application.
 +

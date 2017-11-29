@@ -1,7 +1,7 @@
 [#create_springboot]
 = Creating a Spring Boot Quickstart Project
 
-You will not learn how to create a second quickstart project in your Space. The Hello World project was a Vert.X application and the second quickstart is a Spring Boot application.
+You will now learn how to create a second quickstart project in your Space. The Hello World project was a Vert.X application and the second quickstart is a Spring Boot application.
 
 . In your {osio} home page, double-click your new space.
 . In your space's dashboard, click btn:[Add to space].
@@ -11,7 +11,7 @@ image::get_started_menu.png[Getting Started Menu]
 +
 . In the `Application Wizard`:
 .. In the `Name` field, type *spring* and press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
-.. From the displayed results, click btn:[Spring Boot - HTTP].
+.. From the displayed results, click `Spring Boot - HTTP`.
 +
 image::project_springboot.png[Spring Boot HTTP Project]
 +

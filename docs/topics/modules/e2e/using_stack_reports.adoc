@@ -1,7 +1,7 @@
 [#using_stack_reports]
 = Using Stack Reports
 
-{osio} includes a Stack Report feature that provides information about your stack components and recommends improvements for your application. The Stack Report is available after the first the first pipeline build completes.
+{osio} includes a Stack Report feature that provides information about your stack components and recommends improvements for your application. The Stack Report is available after the first pipeline build completes.
 
 . Return to your Space dashboard in the {osio} browser tab.
 . The `Stack Report Recommendations` panel in the dashboard shows a summary of the Stack Report.
