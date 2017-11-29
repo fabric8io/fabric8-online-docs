@@ -1,0 +1,27 @@
+[#using_stack_reports]
+= Using Stack Reports
+
+{osio} includes a Stack Report feature that provides information about your stack components and recommends improvements for your application. The Stack Report is available after the first pipeline build completes.
+
+. Return to your Space dashboard in the {osio} browser tab.
+. The `Stack Report Recommendations` panel in the dashboard shows a summary of the Stack Report.
++
+image::stack_reports.png[Stack Reports]
++
+. Click *Show complete stack report* at the bottom of this panel to view the complete report.
++
+image::full_stack_report.png[Full Stack Report]
++
+The `Additional components recommended by {osio}` section at the bottom has one recommendation to improve the application. It includes a link to create a new Work Item to track making the changes for this recommendation:
++
+image::action_item.png[Create Work Item]
++
+. Click *Create Work Item* and {osio} automatically creates a Work Item for this recommendation. The following message displays when the Work Item is created:
++
+image::wi_created.png[Work Item Created]
++
+. Click *View Work Item* to view the Work Item in a new browser tab.
++
+image::automatic_wi.png[Automatically Created Work Item]
+
+You have now learned how to use Stack Reports to identify improvements to your application and track the required changes using Work Items.

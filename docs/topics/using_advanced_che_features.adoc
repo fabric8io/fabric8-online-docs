@@ -1,0 +1,15 @@
+
+[#advanced_che_features]
+= Using Advanced Che Features
+
+:context: adv_che
+
+include::modules/e2e/using_code_assistant.adoc[leveloffset=+1]
+
+include::modules/e2e/using_terminal_tab.adoc[leveloffset=+1]
+
+include::modules/e2e/che_debug.adoc[leveloffset=+1]
+
+include::modules/e2e/setup_debugger.adoc[leveloffset=+1]
+
+include::modules/e2e/run_debug.adoc[leveloffset=+1]

@@ -11,19 +11,28 @@ mvn test
 ```
 +
 When the maven test succeeds, the `BUILD SUCCESS` message appears in the terminal view. You can commit and push changes to your GitHub repository after the maven test succeeds.
-
-. In the `Project Explorer` view, double-click the `src` > `main` > `java` > `io.openshift.booster` > `service` folders.
-. Double-click the `GreetingController.java` file to view it in the editor.
-. Add a line break at line 38, then type *@* and then use kbd:[Ctrl+Space] to view a list of context-sensitive options.
-. From the list, select `RequestMapping`.
-. Edit the file to include the following code:
 +
-```java
+image::maven_test_success.png[Maven Test Success]
++
+. In the `Project Explorer` view, double-click the `src` > `main` > `java` > `io.openshift.booster` > `service` folders.
++
+image::sb_tree_view.png[Spring Boot Folders]
++
+. Double-click the `GreetingController.java` file to view it in the editor.
+. Add a line break at line 37, then type *@* and then use kbd:[Ctrl+Space] to view a list of context-sensitive options.
++
+image::sb_context_options.png[Context Sensitive Help]
++
+. From the list, select `RequestMapping`.
+. Edit the added line to include the following code:
++
+[source,java]
+----
 @RequestMapping("/api/goodbye")
-public String goodbye(@RequestParam(value="name", defaultValue="World") String name) {
-      return "Goodbye " + name + " " +  new java.util.Date();
+  public String goodbye(@RequestParam(value="name", defaultValue="World") String name) {
+    return "Goodbye " + name + " " + new java.util.Date();
 }
-```
+----
 +
 The added code appears as follows:
 +
@@ -31,21 +40,26 @@ image::bs_code_add.png[Code Added to Spring Boot Project]
 +
 . Save your changes using kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS).
 
-. Click the `run` option (image:tri_run.png[title="Run button"]). This sets up the Spring Boot server. Unlike the Vert.x Quickstart project, the hot deploy option is not available for Spring Boot projects.
+. Click the `run` option (image:tri_run.png[title="Run button"]). This sets up the Spring Boot server. Unlike the Vert.x Quickstart project, the hot deploy option is not available for Spring Boot projects. As a result, changes are not automatically deployed.
 
-. In the `run` terminal, the *mvn build* command runs and downloads the required dependencies. When complete, the `run` view displays the following message:
+. In the `run` terminal, the application runs.
+. When the application run completes, click the blue preview URL at the top of the `run` view to view your project.
 +
-```
-[INFO] INFO: Succeeded in deploying verticle
-```
+image::sb_preview_link.png[Preview URL]
 +
-. Click the blue preview URL at the top of the `run` view to view your project.
-
-. Append the following string to the preview URL in your browser:
+. The application displays in a new browser tab.
++
+image::sb_app_test.png[SpringBoot App Test]
++
+. Append the following string to the preview URL in your browser and press kbd:[Enter]:
 +
 ```url
 /api/goodbye?name=Samwell%20Gamgee
 ```
++
+The URL is now as follows:
++
+image::append_url.png[Appended URL]
 +
 . If successful, the amended preview URL displays the following:
 +

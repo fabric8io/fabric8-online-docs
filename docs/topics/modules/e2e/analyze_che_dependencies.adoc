@@ -1,0 +1,30 @@
+[#analyze_che_dependencies]
+= Analyzing Che Dependencies
+
+The Che workspace automatically analyzes dependencies for the code. To see how this analyzer works:
+
+. Return to the Che workspace browser tab.
+. In the `Project Explorer` panel, double click the `pom.xml` file.
++
+image::pomxml.png[Pom.xml File]
++
+. In the file, go to line 43 and add a line break.
+. Add the following XML code to the file after the line break:
++
+[source,xml]
+----
+<dependency>
+  <groupId>ch.qos.logback</groupId>
+  <artifactId>logback-core</artifactId>
+  <version>1.1.0</version>
+</dependency>
+----
++
+. An error icon appears near the line numbers when you add the XML code. Move the mouse pointer over the icon to view the error message (see screen capture).
++
+image::red_x.png[Error Icon]
++
+The dependency analyzer displays this error to indicate that the current version (1.1.0) has a CVE issue (Common Vulnerabilities and Exposures) associated with it. It also recommends using version 1.2.1 instead to fix the problem.
+. Update the version in the *<version>* tags of the code to `1.2.1`. The red icon disappears when the version number is updated.
+
+You have now learned how the Che workspace automatically analyzes dependencies for your code and indicates problems and recommends fixes.

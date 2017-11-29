@@ -1,15 +1,23 @@
 [#create_springboot]
 = Creating a Spring Boot Quickstart Project
 
+You will now learn how to create a second quickstart project in your Space. The Hello World project was a Vert.X application and the second quickstart is a Spring Boot application.
+
 . In your {osio} home page, double-click your new space.
 . In your space's dashboard, click btn:[Add to space].
-. Select `Create a new Quickstart project`.
+. Click btn:[Create a new Quickstart project].
++
+image::get_started_menu.png[Getting Started Menu]
++
 . In the `Application Wizard`:
-.. Click a project type from the displayed icons. For this example, click btn:[Spring Boot - HTTP].
+.. In the `Name` field, type *spring* and press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
+.. From the displayed results, click `Spring Boot - HTTP`.
++
+image::project_springboot.png[Spring Boot HTTP Project]
++
 .. Click btn:[Next].
-.. Select your organization name from the options in the `Organisation` field. For this example, use the default value, which is the organization name assigned to your personal GitHub account.
 .. In the `OpenShift Project Name` field, add *myspringboot* as the name for your project.
-.. Leave the default value for the `Group Id` and `Version` fields and click btn:[Next].
+.. Leave the default value for the `Organisation`,`Group Id`, and `Version` fields and click btn:[Next].
 .. Select a build pipeline strategy. For this example, use the default value (`Release, Stage, Approve and Promote`) and click btn:[Next].
 +
 NOTE: Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment.
