@@ -22,7 +22,11 @@ include::optimize_memory.adoc[leveloffset=+1]
 include::analyze.adoc[leveloffset=+1]
 
 include::using_advanced_che_features.adoc[leveloffset=+1]
+<<<<<<< HEAD
 
+=======
+//stopped here
+>>>>>>> a80944e423b0396f0293a132abcf49ff8d71fa31
 include::sb_tutorial.adoc[leveloffset=+1]
 
 include::modules/e2e/cleanup_sb.adoc[leveloffset=+1]
