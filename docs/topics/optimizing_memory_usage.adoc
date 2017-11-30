@@ -1,0 +1,9 @@
+[#optimizing_memory_usage]
+= Optimizing your memory usage
+
+:context: optimizing_memory_usage
+
+include::modules/e2e/reviewing_resource_information.adoc[leveloffset=+1]
+include::modules/e2e/monitor_oso_quota_usage.adoc[leveloffset=+1]
+include::modules/e2e/reduce_hello_world_memory_usage.adoc[leveloffset=+1]
+include::modules/e2e/commit_push_changes_git.adoc[leveloffset=+1]

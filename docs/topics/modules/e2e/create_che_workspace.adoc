@@ -1,5 +1,5 @@
 [#create_che_workspace-{context}]
-= Creating a Che Workspace
+= Creating a Che workspace
 
 Create a new <<about_workspaces,Che workspace>> for your project:
 
@@ -10,6 +10,9 @@ NOTE: Initially, {osio} displays a message about the Workspaces loading (see scr
 image::loading_workspaces.png[Loading Workspaces]
 +
 . In the `Codebases` view, click btn:[Create workspace] for your project.
++
+image::create_workspace.png[Create Workspace]
++
 . When your workspace is ready, click btn:[Open] to view your new workspace in a new browser tab. This workspace loads the codebase for the listed project.
 +
 image::new_ws.png[New Workspace]
@@ -20,14 +23,14 @@ image::che_terminal.png[Workspace Terminal]
 
 [IMPORTANT]
 ====
-If a new tab does not appear, your browser is blocking the pop up that displays the new workspace. To resolve this:
+If a new tab does not appear, your browser is blocking the pop-up window that displays the new workspace. To resolve this:
 
-. Click the blocked pop up icon in your browser's URL field.
-. Select the `Always allow pop-ups from https://openshift.io` option (see screen capture) and click btn:[Done].
+. Click the blocked pop-up window icon in your browser's URL field.
+. Select the `Always allow pop-ups from https://openshift.io` option (see screen capture).
 +
 image::blocked_popup.png[Blocked Pop Up]
 +
-. Click btn:[Open] again and the workspace displays in a new browser tab.
+. Click the link to the workspace 
 ====
 
 When loaded and ready to use, the new Che workspace tab displays your new project's GitHub repository folder in the `Project Explorer` panel.

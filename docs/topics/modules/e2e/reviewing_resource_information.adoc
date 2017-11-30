@@ -1,5 +1,5 @@
-[#pod_information]
-= Reviewing the Resource Information in OpenShift Online
+[#reviewing_resource_information]
+= Reviewing the resource information in OpenShift Online
 
 The memory allowances for each OpenShift pod is 512 Mi. As a result, each application consumes nearly 1 Gb of memory for the `Stage` and `Run` environments.
 
@@ -11,7 +11,7 @@ To check the memory limit in OpenShift Online:
 +
 image::select_project_run.png[Select the Run Project]
 +
-See <<about_oso_projects>> for details about the listed projects.
+See <<viewing_projects_oso>> for details about the listed projects.
 
 . Click btn:[Applications] and then select btn:[Pods] in the displayed submenu.
 +

@@ -1,5 +1,5 @@
-[#oso_quota]
-= Monitor Your OpenShift Online Quota Usage
+[#monitor_oso_quota_usage]
+= Monitor your OpenShift Online quota usage
 
 Monitor your OpenShift Online account's quota usage using the OpenShift CLI (oc) tool:
 
@@ -37,7 +37,7 @@ status:
     limits.memory: 512Mi
 ```
 +
-. Follow the instructions in <<reduce_memory>> and then resume the next steps here. This allows you to view your memory quota details before and after optimizing the memory usage and compare the two results.
+. Follow the instructions in <<reduce_hello_world_memory_usage>> and then resume the next steps here. This allows you to view your memory quota details before and after optimizing the memory usage and compare the two results.
 . Click btn:[Create] and then btn:[Pipelines] to view the new pipeline build. Committing and pushing your new yaml file triggers a new pipeline build for your {osio} project. Proceed to the next step when the pipeline build rolls out to `Stage`:
 +
 image::rollout_to_stage.png[Rollout To Stage]
@@ -61,4 +61,4 @@ status:
 
 ```
 
-Optimizing memory usage is important when creating more than one project in {osio}. Each additional project requires an additional share of your OpenShift Online resources. For the OpenShift Online Free Tier, see <<cleanup_sb>> to reset your OpenShift Online and {osio} accounts after creating two projects.
+Optimizing memory usage is important when creating more than one project in {osio}. Each additional project requires an additional share of your OpenShift Online resources. For the OpenShift Online Free Tier, see <<cleaning_up_oso_account>> to reset your OpenShift Online and {osio} accounts after creating two projects.

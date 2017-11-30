@@ -1,5 +1,5 @@
-[#che_jenkins_status]
-= Confirm Che and Jenkins Status
+[#confirm_che_jenkins_status]
+= Confirm Che and Jenkins status
 
 After <<connect_os>>, you must ensure that the Che and Jenkins tenant services are provisioned. This process requires several minutes after completing the following steps:
 

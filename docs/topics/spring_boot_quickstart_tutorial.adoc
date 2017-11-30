@@ -1,0 +1,17 @@
+[#spring_boot_quickstart_tutorial]
+= Spring Boot Quickstart Tutorial
+
+:context: spring-boot
+
+include::modules/e2e/creating_new_project.adoc[leveloffset=+1]
+
+include::modules/e2e/stopping_existing_workspaces.adoc[leveloffset=+1]
+
+include::modules/e2e/create_che_workspace.adoc[leveloffset=+1]
+
+include::modules/e2e/using_workspace_spring_boot_project.adoc[leveloffset=+1]
+
+include::modules/e2e/reduce_springboot_memory_usage.adoc[leveloffset=+1]
+
+include::modules/e2e/commit_push_changes_git.adoc[leveloffset=+1]
+

@@ -1,5 +1,5 @@
-[#view_pipeline_oso]
-= Viewing the Build Pipeline in OpenShift Online
+[#viewing_build_pipeline_oso]
+= Viewing the build pipeline in OpenShift Online
 
 Optionally, you can view the build pipeline's details in OpenShift Online. For experienced users, these logs can help troubleshoot problems with the build.
 

@@ -1,9 +1,0 @@
-[#optimize_memory]
-= Optimizing Your Memory Usage
-
-:context: optimize_memory
-
-include::modules/e2e/pod_information.adoc[leveloffset=+1]
-include::modules/e2e/oso_quota.adoc[leveloffset=+1]
-include::modules/e2e/reduce_memory.adoc[leveloffset=+1]
-include::modules/e2e/commit_sb.adoc[leveloffset=+1]

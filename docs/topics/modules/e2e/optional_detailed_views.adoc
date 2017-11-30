@@ -1,15 +1,17 @@
 [#optional_detailed_views]
-= (Optional) Detailed Views
+= (Optional) detailed views
 
 Optionally, you can see an experimental detailed view for the `Test`, <<about_stage_run,`Stage`, and `Run`>> environments. This view displays the environment deployments, pods, events, and other information.
 
 View the details for the `Environment` as follows:
 
-. Opt in for this *experimental feature*. See <<enable_experimental_features>> for details.
-
 . At the top of the page, click btn:[Create].
 
-. From the options displayed, click btn:[Environments]. This view displays the details for each project on *Run* and *Stage*.
+. From the options displayed, click btn:[Environments]. If you have not activated experimental features in {osio}, the `Experimental Features` warning appears. Select `I agree to the terms of this feature, as written above` and click btn:[Activate All Exprimental Features] to proceed.
++
+image::experimental_message.png[Experimental Features]
++
+. When loaded, this view displays the details for each project on *Run* and *Stage*.
 +
 image::environments.png[Environments Main Page]
 

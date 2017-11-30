@@ -1,5 +1,5 @@
 [#using_terminal_tab]
-= Using the Terminal Tab
+= Using the terminal tab
 
 . If your application is not running, click run at the top of the screen and wait for the *run* command to complete.
 +

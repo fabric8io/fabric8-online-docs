@@ -1,7 +1,15 @@
-[#create_springboot]
-= Creating a Spring Boot Quickstart Project
+[#creating_new_project-{context}]
+= Creating a new project
 
+// for hello-world
+ifeval::["{context}" == "hello-world"]
+When you create a new Space, the `How would you like to get started?` menu appears. Use this menu to create a new Quickstart project as follows:
+endif::[]
+
+// for spring-boot
+ifeval::["{context}" == "spring-boot"]
 You will now learn how to create a second quickstart project in your Space. The Hello World project was a Vert.X application and the second quickstart is a Spring Boot application.
+endif::[]
 
 . In your {osio} home page, double-click your new space.
 . In your space's dashboard, click btn:[Add to space].
@@ -10,6 +18,15 @@ You will now learn how to create a second quickstart project in your Space. The 
 image::get_started_menu.png[Getting Started Menu]
 +
 . In the `Application Wizard`:
+// conditional starts here
+// for hello-world
+ifeval::["{context}" == "hello-world"]
+.. Click a project type from the displayed icons. For this example, click `Vert.x HTTP Booster`.
+.. Click btn:[Next].
+.. In the `OpenShift Project Name` field, type *helloworldvertx* as the unique name for your project.
+endif::[]
+// for spring-boot
+ifeval::["{context}" == "spring-boot"]
 .. In the `Name` field, type *spring* and press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
 .. From the displayed results, click `Spring Boot - HTTP`.
 +
@@ -17,11 +34,22 @@ image::project_springboot.png[Spring Boot HTTP Project]
 +
 .. Click btn:[Next].
 .. In the `OpenShift Project Name` field, add *myspringboot* as the name for your project.
+endif::[]
+// conditional ends here
 .. Leave the default value for the `Organisation`,`Group Id`, and `Version` fields and click btn:[Next].
 .. Select a build pipeline strategy. For this example, use the default value (`Release, Stage, Approve and Promote`) and click btn:[Next].
 +
 NOTE: Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment.
++
 .. The `Build Config` screen displays the details for your `Jenkins Space` and options for web hooks and triggering builds. Use the default options for these fields and click btn:[Finish].
 .. The `Summary` screen displays your selected options. Click btn:[Ok] to continue.
 
-Your new Spring Boot project is now created and added to your GitHub account.
+// for hello-world
+ifeval::["{context}" == "hello-world"]
+Your new Vert.X project is now created in your Space. {osio} now adds a pipeline into your OpenShift Online account and creates a new GitHub repository for your project.
+endif::[]
+// for spring-boot
+ifeval::["{context}" == "spring-boot"]
+Your new Spring Boot project is now created in your Space. {osio} now adds a pipeline into your OpenShift Online account and creates a new GitHub repository for your project.
+endif::[]
+// end conditionals

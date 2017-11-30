@@ -1,5 +1,5 @@
-[#change_code-{context}]
-= Changing the Quickstart's Code
+[#changing_quickstart_code-{context}]
+= Changing the quickstart code
 
 To change your project code and preview the results:
 
@@ -9,23 +9,25 @@ image::project_dir.png[Project Directory]
 +
 . Find the following line in the file:
 +
-```java
+[source,java]
+----
 protected static final String template = "Hello, %s!";
-```
+----
 +
-. Change *Hello* to *Bonjour* in the line.
+. Change *Hello* to *Hello from Che* in the line.
 +
-```java
+[source,java]
+----
 protected static final String template = "Hello from Che, %s!";
-```
+----
 +
 The workspace automatically saves your changes.
 
 . To test your changes:
 
-** If you already ran the application earlier as instructed in <<prereq_che-hello-world>>, your automatically saved changes are already implemented. Maven uses Vert.x's hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip to the next step.
+** If you already ran the application earlier as instructed in <<prerequisites_che_workspace-hello-world>>, your automatically saved changes are already implemented. Maven uses Vert.x's hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip to the next step.
 
-** If you have not run the application already as instructed in <<prereq_che-hello-world>>:
+** If you have not run the application already as instructed in <<prerequisites_che_workspace-hello-world>>:
 
 *** Click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
 +
