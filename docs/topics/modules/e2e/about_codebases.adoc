@@ -1,5 +1,5 @@
 [#about_codebases]
-= About Codebases
+= About codebases
 
 When you create a new project using the quickstart wizard, {osio} creates a new code repository for your project and stores it in GitHub. {osio} also maintains additional metadata for version control of your project code. {osio} codebases are a generic representation of a project's code.
 

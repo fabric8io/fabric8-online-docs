@@ -1,5 +1,5 @@
 [#setup_debugger]
-= Set Up the Debugger
+= Set up the debugger
 
 To debug your project code using the Che workspace Debugger feature:
 

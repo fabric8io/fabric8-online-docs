@@ -1,8 +1,10 @@
-[#create_use_wi]
-= Create and Use a New Work Item
+[#creating_using_new_work_item]
+= Creating and using a new work item
 
 After creating a project in your Space, create a Work Item and use it to to track your changes to the project code.
 
+. On the top of the {osio} page, click `Plan`.
+. If you have not already activated {osio}'s Experimental Features, the following message displays. Check `I agree to the terms of this feature, as written above` and click btn:[Activate All Experimental Features] to proceed.
 . In the Planner's Backlog view, click btn:[Create Work Item] at the bottom of the screen. This is the fastest option to create a new Work Item.
 +
 image::create_wi.png[Create Work Item]
@@ -20,6 +22,6 @@ image::wi_edit.png[Edit Work Item]
 +
 . Click `Unassigned` and add your name as the new assignee for this Work Item.
 . Click btn:[Board] from the menu options at the top of the screen to see the board view for the Work Items.
-. Your new Work Item appears in the `new` column. Click and then drag and drop the Work Item in the `open` column.
+. Your new Work Item appears in the `new` column. Drag the Work Item into the `open` column.
 +
 image::move_workitem.png[Move Work Item]

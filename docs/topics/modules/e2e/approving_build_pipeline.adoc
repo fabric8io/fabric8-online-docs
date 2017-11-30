@@ -1,5 +1,5 @@
-[#approve_rollout]
-= Approving the Build Pipeline
+[#approving_build_pipeline]
+= Approving the build pipeline
 
 Several minutes after starting, your build pipeline is ready to be promoted to `Stage`.
 
@@ -11,14 +11,14 @@ To review the final changes in `Stage` and promote them to `Run`:
 . Click btn:[Pipelines].
 . Click the icon (image:rollout_icon.png[title="Rollout"]) next to `Rollout to Stage` in the displayed pipeline. OpenShift Online provides this public URL to access the staged Quickstart project. The Vert.x HTTP Booster Quickstart produces a simple API behind a REST endpoint over HTTP with a minimalist user interface.
 +
-[NOTE]
+[WARNING]
 ====
 If the new tab displays a `Application is not available` error message (see screen capture below), the application is not yet ready. After several minutes, refresh the page and the application appears as expected.
 
 image::app_doesnt_exist.png[Application Does Not Exist Error]
 ====
 +
-. Add a string to the text box and click btn:[Invoke] to test the application.
+. When the application loads, add a string to the text box and click btn:[Invoke] to test the application.
 +
 image::hello_john.png[Test the Application]
 +
@@ -29,6 +29,8 @@ image::pipeline_firstrun.png[Input Required]
 +
 . Click btn:[Promote] to promote the build from the public URL for *Stage* to the public URL for the *Run* namespace. The rollout process from *Stage* to *Run* requires several minutes. You can view the detailed progress in the OpenShift Online console view.
 +
-image::rollout_to_run.png[Rollout to Run]
+image::promote.png[Promote build]
 +
 . When the `Pipeline` view indicates that the project is available in the *Run* namespace, click the icon (image:rollout_icon.png[title="Rollout"]) next to `Rollout to Run` to view the project in a new tab and test the application.
++
+image::rollout_to_run.png[Rollout to Run]

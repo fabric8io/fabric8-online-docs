@@ -1,5 +1,5 @@
 [#working_with_pipelines]
-= Working With Pipelines
+= Working with pipelines
 
 When you create a new Quickstart project, a new build/pipeline execution initiates. In a build pipeline, <<about_stage_run,*Stage* and *Run*>> are individual OpenShift projects. `Stage` is a production staging area to review and test changes before they are finalized and then staged on `Run`.
 

@@ -1,5 +1,5 @@
 [#before_you_start]
-= Before You Start
+= Before you start
 
 include::modules/e2e/introduction.adoc[leveloffset=+1]
 
@@ -11,21 +11,21 @@ include::modules/e2e/prereqs.adoc[leveloffset=+1]
 
 include::modules/e2e/connect_os.adoc[leveloffset=+1]
 
-include::modules/e2e/che_jenkins_status.adoc[leveloffset=+1]
+include::modules/e2e/confirm_che_jenkins_status.adoc[leveloffset=+1]
 
-= Start Using OpenShift.io
+= Start using {osio}
 
-include::hw_dev.adoc[leveloffset=+1]
+include::hello_world_developers.adoc[leveloffset=+1]
 
-include::optimize_memory.adoc[leveloffset=+1]
+include::optimizing_memory_usage.adoc[leveloffset=+1]
 
-include::analyze.adoc[leveloffset=+1]
+include::analyzing-application.adoc[leveloffset=+1]
 
 include::using_advanced_che_features.adoc[leveloffset=+1]
 
-include::sb_tutorial.adoc[leveloffset=+1]
+include::spring_boot_quickstart_tutorial.adoc[leveloffset=+1]
 
-include::modules/e2e/cleanup_sb.adoc[leveloffset=+1]
+include::modules/e2e/cleaning_up_oso_account.adoc[leveloffset=+1]
 
 include::import_code.adoc[leveloffset=+1]
 

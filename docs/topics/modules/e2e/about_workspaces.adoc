@@ -1,5 +1,5 @@
 [#about_workspaces]
-= About Workspaces
+= About workspaces
 
 After creating and testing your new Vert.x quickstart project, you can make changes to the project code. {osio} provides hosted instances of Eclipse Che within your browser to edit, test, and debug your project code. One of Eclipse Che's key features is Che workspaces, which provide a fully configured runtime environment for running your code. As a result, {osio} provides a lightweight, next generation IDE as well as a containerized development and testing environment.
 

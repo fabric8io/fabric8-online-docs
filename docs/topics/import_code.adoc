@@ -11,7 +11,7 @@ include::modules/e2e/imp_project.adoc[leveloffset=+1]
 
 include::modules/e2e/create_che_workspace.adoc[leveloffset=+1]
 
-include::modules/e2e/prereq_che.adoc[leveloffset=+1]
+include::modules/e2e/prerequisites_che_workspace.adoc[leveloffset=+1]
 
 . <<changing_code>>
 
@@ -63,7 +63,7 @@ image::pipeline_success.png[Successful Pipeline Build]
 .. Select the `Push commit changes to: origin/master` option.
 .. Click btn:[Commit].
 +
-image:commit_dialog.png[Commit Dialog]
+image::commit_dialog.png[Commit Dialog]
 +
 When successful, a message appears to confirm the push to the GitHub repository.
 . Alternatively, you can push your commit to a remote repository:

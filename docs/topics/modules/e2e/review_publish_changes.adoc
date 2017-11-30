@@ -1,5 +1,5 @@
 [#review_publish_changes]
-= Review and Publish Your Changes
+= Review and publish your changes
 
 The Git commit triggers a pipeline build in {osio}. To view the build:
 
@@ -8,8 +8,7 @@ The Git commit triggers a pipeline build in {osio}. To view the build:
 +
 image::build_2.png[Build #2 Runs]
 +
-. If you have not opted in for {osio}'s experimental features, see <<enable_experimental_features>> for instructions before you proceed.
-. With experimental features enabled, click btn:[Create] and then btn:[Applications]. You can see the following information on this screen:
+. Click btn:[Create] and then btn:[Applications]. You can see the following information on this screen:
 +
 image::versions_applications.png[Versions of the Application]
 +
@@ -23,3 +22,5 @@ image::mouse_over_version.png[Mouse Over the Application Version]
 . Click btn:[Pipelines] at the top of the page to return to the pipelines view.
 . At the `Approve` stage, click btn:[Input Required].
 . Click btn:[Promote] to promote version 1.0.2 of the application to `Run`.
+
+Your changes are now available on both `Stage` and `Run`.

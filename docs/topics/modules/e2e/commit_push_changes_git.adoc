@@ -1,9 +1,9 @@
-[#commit_sb-{context}]
-= Commit and Push Changes to GitHub
+[#commit_push_changes_git-{context}]
+= Commit and push changes to GitHub
 
 After making the required changes, commit and push the changes to your project GitHub repository:
 
-IMPORTANT: Before committing your changes, ensure that your project pipeline build has completed. See <<approve_rollout>> for instructions.
+IMPORTANT: Before committing your changes, ensure that your project pipeline build has completed. See <<approving_build_pipeline>> for instructions.
 
 . In the workspace browser tab, click btn:[Git] from the menu options.
 
@@ -18,7 +18,19 @@ image::commit_menu.png[Git Commit Menu]
 .. Add a commit message describing your changes.
 .. Click btn:[Commit].
 +
-image::git_commit_dialog.png[Git Commit Dialog]
+//for hello world
+ifeval::["{context}" == "hello-world"]
+image::hw_commit_dialog.png[Git Commit Dialog]
+endif::[]
+//for springboot
+ifeval::["{context}" == "spring-boot"]
+image::sb_commit_dialog.png[Git Commit Dialog]
+endif::[]
+//for optimizing memory usage
+ifeval::["{context}" == "optimizing_memory_usage"]
+image::opt_commit_dialog.png[Git Commit Dialog]
+endif::[]
+//end conditional
 
 When the commit succeeds, the following message displays:
 

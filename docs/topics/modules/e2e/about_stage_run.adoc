@@ -1,5 +1,5 @@
 [#about_stage_run]
-= About the Stage and Run Environments
+= About the stage and run environments
 
 Your {osio} subscription also provides you with an OpenShift Online Starter subscription. This Starter subscription includes two environments named *Stage* and *Run* to deploy your applications. Initially, applications deploy to *Stage*, which is accessible to stakeholders for review using a public URL. If approved and promoted, the application deploys to *Run*, which is similar to a production environment but is another staging area.
 
