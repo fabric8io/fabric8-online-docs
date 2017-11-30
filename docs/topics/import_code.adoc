@@ -63,7 +63,7 @@ image::pipeline_success.png[Successful Pipeline Build]
 .. Select the `Push commit changes to: origin/master` option.
 .. Click btn:[Commit].
 +
-image:commit_dialog.png[Commit Dialog]
+image::commit_dialog.png[Commit Dialog]
 +
 When successful, a message appears to confirm the push to the GitHub repository.
 . Alternatively, you can push your commit to a remote repository:
