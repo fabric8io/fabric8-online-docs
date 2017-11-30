@@ -25,7 +25,7 @@ You can change your project's code and preview the results as follows:
 +
 [source,java]
 ----
-  protected static final String template = "Aloha !!, %s!";
+protected static final String template = "Aloha !!, %s!";
 ----
 +
 . Add more exclamation marks. The line should now be:
