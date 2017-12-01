@@ -5,18 +5,18 @@
 
 This section contains instructions for adding an existing project to {osio} instead of creating a new project using quickstarts.
 
-include::modules/e2e/forking_repository.adoc[leveloffset=+1]
+include::modules/forking_repository.adoc[leveloffset=+1]
 
-include::modules/e2e/creating_new_space.adoc[leveloffset=+1]
+include::modules/creating_new_space.adoc[leveloffset=+1]
 
-include::modules/e2e/import_project.adoc[leveloffset=+1]
+include::modules/import_project.adoc[leveloffset=+1]
 
-include::modules/e2e/create_che_workspace.adoc[leveloffset=+1]
+include::modules/create_che_workspace.adoc[leveloffset=+1]
 
-include::modules/e2e/prerequisites_che_workspace.adoc[leveloffset=+1]
+include::modules/prerequisites_che_workspace.adoc[leveloffset=+1]
 
-include::modules/e2e/changing_project_code.adoc[leveloffset=+1]
+include::modules/changing_project_code.adoc[leveloffset=+1]
 
-include::modules/e2e/commit_push_changes_git.adoc[leveloffset=+1]
+include::modules/commit_push_changes_git.adoc[leveloffset=+1]
 
-include::modules/e2e/review_publish_changes.adoc[leveloffset=+1]
+include::modules/review_publish_changes.adoc[leveloffset=+1]

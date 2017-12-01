@@ -3,10 +3,10 @@
 
 :context: spring-boot
 
-include::modules/e2e/analyze_che_dependencies.adoc[leveloffset=+1]
+include::modules/analyze_che_dependencies.adoc[leveloffset=+1]
 
-include::modules/e2e/using_stack_reports.adoc[leveloffset=+1]
+include::modules/using_stack_reports.adoc[leveloffset=+1]
 
-include::modules/e2e/viewing_project_github.adoc[leveloffset=+1]
+include::modules/viewing_project_github.adoc[leveloffset=+1]
 
-include::modules/e2e/viewing_projects_oso.adoc[leveloffset=+1]
+include::modules/viewing_projects_oso.adoc[leveloffset=+1]
