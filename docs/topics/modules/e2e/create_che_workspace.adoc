@@ -8,7 +8,7 @@ Create a new <<about_workspaces,Che workspace>> for your project:
 NOTE: Initially, {osio} displays a message about the Workspaces loading (see screen capture). This message indicates that your Che instance is idle. If this message appears for you, allow several minutes for the loading process to complete.
 +
 image::loading_workspaces.png[Loading Workspaces]
-+
+
 . In the `Codebases` view, click btn:[Create workspace] for your project.
 +
 image::create_workspace.png[Create Workspace]
@@ -45,10 +45,8 @@ ifeval::["{context}" == "spring-boot"]
 image::ws_loaded_springboot.png[Your GitHub Project in Che]
 endif::[]
 
-// for import-code
-ifeval::["{context}" == "import-code"]
-// This third condition really doesn't need to be here;
-// I'm only including it for illustrative purposes.
-// As soon as we have a correct third screenshot for the
-// 'import-code' chapter, this condition will have its use.
+// for importing-existing-project
+ifeval::["{context}" == "importing-existing-project"]
+image::imp_loaded_springboot.png[Your GitHub Project in Che]
 endif::[]
+// end of conditions

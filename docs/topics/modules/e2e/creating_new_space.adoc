@@ -1,4 +1,4 @@
-[#creating_new_space]
+[#creating_new_space-{context}]
 = Creating a new space
 
 In {osio}, the first step for any new project is to create a new Space. You can then add users as Collaborators for the Space and all the work is tracked within the Space using Work Items. Each Space must have a unique name. Create a new space as follows:

@@ -1,0 +1,17 @@
+[#next_steps]
+= Next steps
+
+If you followed the instructions in this document, you have now learned about {osio} and its features. You are now able to:
+
+* Create Spaces for your projects
+* Add code from an existing project to your Space
+* Create new Vert.X and Spring Boot projects using the quickstart wizards and test them
+* Create Work Items to track your tasks and manage them
+* Use the build pipelines to stage reviews in the `Stage` and `Run` environments
+* Use Che workspaces to edit your project code and commit the changes to GitHub
+* Optimize your project memory usage to better use your OpenShift Online resources
+* Use Stack reports to make improvements to your code
+* Debug using the Che workspace
+* Clean up your {osio} account so you can start afresh
+
+You can now try using what you have learned about {osio} with your own projects. {osio} is currently Early Access only (see <<early-access-program>> for details). If you have any questions or suggestions for improvement with {osio} or this document, let us know using one of the methods listed in <<getting-support>>.

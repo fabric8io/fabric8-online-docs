@@ -18,10 +18,12 @@ image::are_you_sure.png[Confirm]
 +
 . After the environment is successfully erased, the success page displays:
 +
-image::success.png[Success]
+image::status_success.png[Success]
 +
 . Click the check mark icon on the top right side of the page to see the `Jenkins` and `Che` status. Allow several minutes for this to load. When all the status indicators are green (see screen capture), you can use your {osio} account again. If the status indicators are not green after several minutes, see <<confirm_che_jenkins_status>> for troubleshooting information.
 +
-image::status_success.png[Che and Jenkins Successfully Restored]
+image::tenant_status.png[Che and Jenkins Successfully Restored]
++
+IMPORTANT:: The version numbers for Che and Jenkins in the screen capture are for illustration purposes and may not be the most recent versions. See <<confirm_che_jenkins_status>> for details.
 
 After completing these steps, your {osio} and OpenShift Online account resources are reset and ready for use with a new project.

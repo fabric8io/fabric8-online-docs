@@ -1,0 +1,40 @@
+[#changing_project_code]
+= Changing the project code
+
+The example project code includes a new route for *eventbus* and its supporting method. These set up *eventbus* to only allow outbound communications for the *my-feed* channel.  Messages arriving in the *my-feed* channel are pushed to the browser using the SockJS bridge. This project includes a `vertx-eventbus.js` file along with the `index.html` file and also includes tweaks to the `index.html` file.
+
+You can change your project's code and preview the results as follows:
+
+. In the `Project Explorer` view, double-click the following directories to expand them: `src` > `main` > `Java` > `io.openshift.booster`.
++
+image::imp_folder.png[Folder View]
++
+. In your project's `HttpApplication.java` file, find the following line:
++
+[source,java]
+----
+  protected static final String template = "Aloha, %s!";
+----
++
+. Add exclamation marks to the string. The line should now be:
++
+[source,java]
+----
+  protected static final String template = "Aloha !!!, %s!";
+----
++
+. Save the changes (kbd:[Ctrl+s] or kbd:[Cmd+s] for macOS).
+. Click the `run` option from the Run button (image:tri_run.png[title="Run button"]). This runs the application and also provides the hot deploy feature. The following message appears when the run process completes:
++
+----
+[INFO] INFO: Succeeded in deploying verticle
+----
+. Click the blue preview URL at the top of the `run` view to view your project.
++
+image::run_proj.png[Run project link]
++
+. Type a name in the text box and click btn:[Invoke] to test the application.
++
+image::imp_test_change.png[Test Application]
+
+You have now changed your application code and tested the change.
