@@ -4,12 +4,12 @@
 
 :context: adv_che
 
-include::modules/e2e/using_code_assistant.adoc[leveloffset=+1]
+include::modules/using_code_assistant.adoc[leveloffset=+1]
 
-include::modules/e2e/using_terminal_tab.adoc[leveloffset=+1]
+include::modules/using_terminal_tab.adoc[leveloffset=+1]
 
-include::modules/e2e/debugging_che_workspace.adoc[leveloffset=+1]
+include::modules/debugging_che_workspace.adoc[leveloffset=+1]
 
-include::modules/e2e/setup_debugger.adoc[leveloffset=+1]
+include::modules/setup_debugger.adoc[leveloffset=+1]
 
-include::modules/e2e/run_debug.adoc[leveloffset=+1]
+include::modules/run_debug.adoc[leveloffset=+1]
