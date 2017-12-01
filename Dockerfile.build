@@ -10,3 +10,5 @@ COPY scripts/ scripts/
 COPY docs/ docs/
 
 RUN scripts/validate_guides.sh
+
+ENTRYPOINT ["sh", "scripts/build_guides.sh"]

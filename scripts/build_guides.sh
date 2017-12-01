@@ -12,13 +12,16 @@ echo "=== Building Guides ==="
 # Recurse through the guide directories and build them.
 subdirs=`find . -maxdepth 1 -type d ! -iname ".*" ! -iname "topics" | sort`
 
+# We need to remove OUTPUT_DIR when not building in container because
+# otherwise, permissions wouldn't be changeable later on.
+if [ ! -f /.dockerenv ] && [ -d $OUTPUT_DIR ]; then rm -rf $OUTPUT_DIR/ && mkdir -p $OUTPUT_DIR; fi
 if [ -d topics/images/ ]; then mkdir -p $OUTPUT_DIR/images/ && cp -r topics/images/ $OUTPUT_DIR; fi
 
 #echo $PWD
 for subdir in $subdirs
 do
   echo "Building $DOCS_SRC/${subdir##*/}"
-  # Navigate to the dirctory and build it
+  # Navigate to the directory and build it
   if ! [ -e $DOCS_SRC/${subdir##*/} ]; then
     BUILD_MESSAGE="$BUILD_MESSAGE\nERROR: $DOCS_SRC/${subdir##*/} does not exist."
     continue
@@ -27,14 +30,15 @@ do
   GUIDE_NAME=${PWD##*/}
 
   asciidoctor master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.html
-  asciidoctor -r asciidoctor-pdf -a imagesdir="topics/images" -b pdf master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.pdf
+  # Only build PDFs when in a container
+  if [ -f /.dockerenv ]; then
+    asciidoctor -r asciidoctor-pdf -a imagesdir="topics/images" -b pdf master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.pdf
+  fi
 
   if [ "$?" = "1" ]; then
     BUILD_ERROR="ERROR: Build of $GUIDE_NAME failed. See the log above for details."
     BUILD_MESSAGE="$BUILD_MESSAGE\n$BUILD_ERROR"
   fi
-  # Return to the parent directory
-  #cd $SCRIPT_SRC
 done
 
 chmod -R a+rwX $OUTPUT_DIR/

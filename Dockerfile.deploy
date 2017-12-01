@@ -2,3 +2,5 @@ FROM fabric8/caddy:v8759201
 
 COPY html /var/www/html/
 COPY index.html /var/www/html/index.html
+
+RUN sed -i "s|<div id='footer-text'>[^<].*</div>|<div id='footer-text'>$(date -u)</div>|" /var/www/html/index.html
