@@ -27,5 +27,7 @@ include::spring_boot_quickstart_tutorial.adoc[leveloffset=+1]
 
 include::modules/e2e/cleaning_up_oso_account.adoc[leveloffset=+1]
 
-include::import_code.adoc[leveloffset=+1]
+include::importing-existing-project.adoc[leveloffset=+1]
+
+include::modules/e2e/next_steps.adoc[leveloffset=+1]
 

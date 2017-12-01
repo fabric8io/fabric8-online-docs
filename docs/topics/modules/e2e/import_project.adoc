@@ -1,0 +1,21 @@
+[#import_project]
+= Import your project
+
+After creating a Space, the `How would you like to get started?` menu appears. Access this menu later by clicking btn:[Add to space] in your Space dashboard.
+
+. In the `How would you like to get started?` menu, click `Import existing code` 
++
+image::get_started_menu.png[Get Started Menu]
++
+. Select an `Organization` from the drop down options. The default (and recommended for this tutorial) option is your personal GitHub account name.
+. Click btn:[Next].
+. Click the filter icon (image:funnel.png[title="Filter"]) and type *vertx-* to filter the results for your forked example repository.
++
+image::add_example_repo.png[Add Forked Repository]
++
+. From the results, select the forked `vertx-eventbus` repository and click btn:[Next].
+. On the next page, use the default settings and click btn:[Next].
+. On the `Build Config` step, use the default values and click btn:[Finish].
+. On the `Summary` page, click btn:[Ok].
+
+You have now added the code for your existing repository to {osio}.

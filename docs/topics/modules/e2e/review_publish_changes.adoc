@@ -1,4 +1,4 @@
-[#review_publish_changes]
+[#review_publish_changes-{context}]
 = Review and publish your changes
 
 The Git commit triggers a pipeline build in {osio}. To view the build:
@@ -6,11 +6,27 @@ The Git commit triggers a pipeline build in {osio}. To view the build:
 . Return to the {osio} browser tab.
 . Click btn:[Create] and then btn:[Pipelines] to view the build pipelines. After several moments, the build pipeline stops at the `Approve` stage. Do not approve the build yet.
 +
-image::build_2.png[Build #2 Runs]
+//for hello world
+ifeval::["{context}" == "hello-world"]
+image::hw_build_2.png[Build #2 Runs]
+endif::[]
+//for importing code
+ifeval::["{context}" == "importing-existing-project"]
+image::imp_build_2.png[Build #2 Runs]
+endif::[]
+//end conditional
 +
 . Click btn:[Create] and then btn:[Applications]. You can see the following information on this screen:
 +
-image::versions_applications.png[Versions of the Application]
+//for hello world
+ifeval::["{context}" == "hello-world"]
+image::hw_versions_applications.png[Versions of the Application]
+endif::[]
+//for importing code
+ifeval::["{context}" == "importing-existing-project"]
+image::imp_versions_applications.png[Versions of the Application]
+endif::[]
+//end conditional
 +
 ** Different versions of your application are deployed to `Stage` and `Run`. Version 1.0.2 of the application is deployed to `Stage` because you have not yet promoted it to `Run`. The older version 1.0.1 is deployed to `Run` because you approved it last time the pipeline build executed.
 ** The green check marks indicate that both builds are operational.

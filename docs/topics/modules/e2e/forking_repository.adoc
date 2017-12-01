@@ -1,0 +1,12 @@
+[#forking_repository]
+= Forking a Repository
+
+If you are following this end to end workshop from the beginning, you have now learned how to create two quickstart projects and then used the instructions in <<cleaning_up_oso_account>> to reset your {osio} account. 
+
+As an example for this tutorial, use one of our sample repositories in GitHub. Fork one of the following example repositories:
+
+* link:https://github.com/burrsutter/vertx-eventbus[https://github.com/burrsutter/vertx-eventbus]
+* link:https://github.com/burrsutter/vertx-paint[https://github.com/burrsutter/vertx-paint]
+* link:https://github.com/burrsutter/vertx-wiki2[https://github.com/burrsutter/vertx-wiki2]
+
+The OpenShift Online Free Tier includes two pods, and each project requires one pod. As a result, you can import all three projects into {osio} but this results in a 12-15 minute delay. We recommend trying this tutorial with one of these projects. The examples in this tutorial are for the `vertx-eventbus` repository.
