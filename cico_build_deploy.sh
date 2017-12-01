@@ -23,7 +23,6 @@ function tag_push() {
         docker login -u ${USERNAME} -p ${PASSWORD} ${REGISTRY}
     fi
     docker push ${TARGET_IMAGE}
-
 }
 
 # Exit on error
@@ -44,24 +43,21 @@ if [ -z $CICO_LOCAL ]; then
     service docker start
 fi
 
-#CLEAN
+#CLEAN UP BUILDER CONTAINER
 docker ps | grep -q ${BUILDER_CONT} && docker stop ${BUILDER_CONT}
 docker ps -a | grep -q ${BUILDER_CONT} && docker rm ${BUILDER_CONT}
+
+#REMOVE DIR WITH OLD BUILT DOCS IF IT EXISTS
 if [ -d $TARGET_DIR ]; then rm -rf ${TARGET_DIR}/; fi
 
-#BUILD
-docker build -t ${BUILDER_IMAGE} -f Dockerfile.build .
-
+#CREATE A FRESH DIR FOR BUILT DOCS TO BE PUT INTO
 mkdir -m 777 ${TARGET_DIR}
 
-docker run --detach=true --name ${BUILDER_CONT} -t -v $(pwd)/${TARGET_DIR}:/${TARGET_DIR}:Z ${BUILDER_IMAGE} /bin/tail -f /dev/null #FIXME
+#BUILD BUILDER IMAGE
+docker build -t ${BUILDER_IMAGE} -f Dockerfile.build .
 
-docker exec ${BUILDER_CONT} sh scripts/build_guides.sh
-
-#UPDATE LANDING PAGE TIMESTAMP WHEN NOT ON LOCAL
-if [ -z $CICO_LOCAL ]; then
-    sed -i "s|<div id='footer-text'>[^<].*</div>|<div id='footer-text'>$(date -u)</div>|" index.html
-fi
+#RUN BUILDER CONTAINER ONCE, THUS BUILDING THE DOCS
+docker run --rm --name=${BUILDER_CONT} --tty=true --volume=$(pwd)/${TARGET_DIR}:/${TARGET_DIR}:Z ${BUILDER_IMAGE}
 
 #BUILD DEPLOY IMAGE
 docker build -t ${DEPLOY_IMAGE} -f Dockerfile.deploy .
