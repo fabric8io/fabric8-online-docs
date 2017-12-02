@@ -1,4 +1,4 @@
-[#associating_work_items_with_an_iteration]
+[id="associating_work_items_with_an_iteration"]
 = Associating Work Items with an Iteration
 
 To associate a Work Item with an Iteration:

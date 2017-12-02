@@ -1,4 +1,4 @@
-[#using_code_assistant]
+[id="using_code_assistant"]
 = Using the code assistant
 
 . Return to the Che workspace browser tab. If you closed your earlier workspace tab, use the following instructions:

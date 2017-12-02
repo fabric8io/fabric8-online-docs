@@ -1,4 +1,4 @@
-[#removing_iterations_from_work_item]
+[id="removing_iterations_from_work_item"]
 = Removing Iterations from a Work Item
 
 You can remove an Iteration from a Work Item without selecting a replacement. This moves the Work Item to the Backlog.

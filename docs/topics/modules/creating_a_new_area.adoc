@@ -1,4 +1,4 @@
-[#creating_a_new_area]
+[id="creating_a_new_area"]
 = Creating a New Area
 
 You can create a new child Area to group together related Work Items by type or functionality. When you create a new Collaboration Space, {osio} automatically creates a root Area with the same name. Each additional Area within the Collaboration Space is created as a child of the root Area or another existing Area in the Space.

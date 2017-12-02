@@ -1,4 +1,4 @@
-[#prerequisites_che_workspace-{context}]
+[id="prerequisites_che_workspace-{context}"]
 = Prerequisites for using your Che workspace
 
 After your Che workspace has loaded, you can see your project code at the top right side of the screen. You must now ensure the following prerequisites are met before you start using the workspace to edit the codebase:

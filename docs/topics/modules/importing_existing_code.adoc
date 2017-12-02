@@ -1,4 +1,4 @@
-[#importing_existing_code]
+[id="importing_existing_code"]
 = Importing Existing Code
 
 Import your existing project codebase into {osio} using the `Import Codebase` wizard.

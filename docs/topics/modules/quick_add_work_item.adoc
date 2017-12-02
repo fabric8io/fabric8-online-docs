@@ -1,4 +1,4 @@
-[#quick_add_work_item]
+[id="quick_add_work_item"]
 = Quick-Add a New Work Item
 
 You can use the quick-add method as an instant widget to add Work Items to your Collaboration Space:

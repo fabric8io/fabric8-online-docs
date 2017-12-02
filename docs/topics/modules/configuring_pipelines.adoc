@@ -1,4 +1,4 @@
-[#configuring_pipelines]
+[id="configuring_pipelines"]
 = Configuring Pipelines
 
 Advanced users can change the settings for their project pipeline builds in OpenShift Online. For most users, we do not recommend changing the default values {osio} sets up.

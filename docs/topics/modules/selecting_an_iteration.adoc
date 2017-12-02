@@ -1,4 +1,4 @@
-[#selecting_an_iteration]
+[id="selecting_an_iteration"]
 = Selecting an Iteration
 
 After logging in and selecting the appropriate space, click btn:[Plan] to view the Iterations for that space. Existing Iterations are grouped into one of the following categories:

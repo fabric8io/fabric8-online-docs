@@ -1,4 +1,4 @@
-[#run_debug]
+[id="run_debug"]
 = Run the debug command
 
 After setting up the Debugger, you can use the Debug command for your project:

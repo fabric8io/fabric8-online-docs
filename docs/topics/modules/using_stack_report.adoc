@@ -1,4 +1,4 @@
-[#using_stack_report]
+[id="using_stack_report"]
 = Using your Stack Report
 
 {osio} Analytics helps you make informed choices with respect to your development stack and its component libraries by analyzing your stack at the development stage, within your IDE, and at the deployment stage.

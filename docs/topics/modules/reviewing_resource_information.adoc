@@ -1,4 +1,4 @@
-[#reviewing_resource_information]
+[id="reviewing_resource_information"]
 = Reviewing the resource information in OpenShift Online
 
 The memory allowances for each OpenShift pod is 512 Mi. As a result, each application consumes nearly 1 Gb of memory for the `Stage` and `Run` environments.

@@ -1,4 +1,4 @@
-[#using_stack_reports]
+[id="using_stack_reports"]
 = Using stack reports
 
 {osio} includes a Stack Report feature that provides information about your stack components and recommends improvements for your application. The Stack Report is available after the first pipeline build completes.

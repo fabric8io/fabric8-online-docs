@@ -1,4 +1,4 @@
-[#reduce_springboot_memory_usage]
+[id="reduce_springboot_memory_usage"]
 = Reduce Spring Boot project memory usage
 
 Your OpenShift Online account must now share resources with two quickstart projects: the Hello World Vert.x project and the new Spring Boot HTTP project. 

@@ -1,4 +1,4 @@
-[#creating_using_new_work_item]
+[id="creating_using_new_work_item"]
 = Creating and using a new work item
 
 After creating a project in your Space, create a Work Item and use it to to track your changes to the project code.

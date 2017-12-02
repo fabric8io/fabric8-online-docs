@@ -1,4 +1,4 @@
-[#creating_new_project-{context}]
+[id="creating_new_project-{context}"]
 = Creating a new project
 
 // for hello-world

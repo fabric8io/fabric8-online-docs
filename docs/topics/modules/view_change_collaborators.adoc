@@ -1,4 +1,4 @@
-[#view_change_collaborators]
+[id="view_change_collaborators"]
 = View/Change Collaborators
 
 After adding Collaborators, you can view their details or remove them from your Collaboration Space.

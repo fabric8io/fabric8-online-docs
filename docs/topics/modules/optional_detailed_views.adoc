@@ -1,4 +1,4 @@
-[#optional_detailed_views]
+[id="optional_detailed_views"]
 = (Optional) detailed views
 
 Optionally, you can see an experimental detailed view for the `Test`, <<about_stage_run,`Stage`, and `Run`>> environments. This view displays the environment deployments, pods, events, and other information.

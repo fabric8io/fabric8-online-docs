@@ -1,4 +1,4 @@
-[#hello_world_developers]
+[id="hello_world_developers"]
 = Hello World for Developers
 
 :context: hello-world

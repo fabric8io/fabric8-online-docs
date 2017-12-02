@@ -1,4 +1,4 @@
-[#about_pipelines]
+[id="about_pipelines"]
 = About Pipelines
 
 Pipelines are a continuous delivery system that test and deploy the code at each step to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements a different level of testing and deployment tasks, provides results, and then passes the code on to the next step.

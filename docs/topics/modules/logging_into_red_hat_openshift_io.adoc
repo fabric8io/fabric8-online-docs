@@ -1,4 +1,4 @@
-[#logging_into_red_hat_openshift_io]
+[id="logging_into_red_hat_openshift_io"]
 = Logging into {rhosio}
 
 .Prerequisites

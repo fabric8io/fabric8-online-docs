@@ -1,4 +1,4 @@
-[#using_workspace_spring_boot_project]
+[id="using_workspace_spring_boot_project"]
 = Using a workspace for the Spring Boot project
 
 When your Che workspace loads, edit your project code as follows:

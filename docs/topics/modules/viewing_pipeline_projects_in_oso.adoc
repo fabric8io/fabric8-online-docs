@@ -1,4 +1,4 @@
-[#view_pipelines_oso]
+[id="view_pipelines_oso"]
 = Viewing the Pipelines Projects in OpenShift Online
 
 To view the OpenShift Online projects that support your project pipeline, navigate to https://console.starter-us-east-2.openshift.com/. This page displays the following projects/namespaces that are created in OpenShift Online:

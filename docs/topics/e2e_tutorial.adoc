@@ -1,4 +1,4 @@
-[#before_you_start]
+[id="before_you_start"]
 = Before you start
 
 include::modules/introduction.adoc[leveloffset=+1]

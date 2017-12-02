@@ -1,4 +1,4 @@
-[#logging_out_of_red_hat_openshift_io]
+[id="logging_out_of_red_hat_openshift_io"]
 = Logging out of {rhosio}
 
 .Prerequisites

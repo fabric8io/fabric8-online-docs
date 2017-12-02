@@ -1,4 +1,4 @@
-[#about_stack_reports]
+[id="about_stack_reports"]
 = About Stack Reports
 
 {osio} analyzes the health of your entire stack and its component libraries and provides recommendations to help you use relevant application components for your stack in the form of a stack report. The stack report enables you to make informed decisions on the choice of open source components, augment your development stack, and reduce the risk to your organization.

@@ -1,4 +1,4 @@
-[#working_with_collaboration_spaces]
+[id="working_with_collaboration_spaces"]
 = Working with Collaboration Spaces
 
 include::modules/about_collaboration_spaces.adoc[leveloffset=+1]

@@ -1,4 +1,4 @@
-[#changing_quickstart_code-{context}]
+[id="changing_quickstart_code-{context}"]
 = Changing the quickstart code
 
 To change your project code and preview the results:

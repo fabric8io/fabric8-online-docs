@@ -1,4 +1,4 @@
-[#creating_a_new_space]
+[id="creating_a_new_space"]
 = Creating a New Collaboration Space
 
 To start working with a new project, create a new Collaboration Space. Each Space includes a team of users in assigned roles as well as unique <<about_work_items,Work Items>> and <<about_iterations,Iterations>> used to manage the new project.

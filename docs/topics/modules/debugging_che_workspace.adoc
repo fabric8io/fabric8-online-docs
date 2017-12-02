@@ -1,4 +1,4 @@
-[#debugging_che_workspace]
+[id="debugging_che_workspace"]
 = Debugging your Che workspace
 
 After creating your {osio} project, you can debug your application code in the Che workspace. This exercise is optional but recommended as an introduction to debugging code in {osio}.
