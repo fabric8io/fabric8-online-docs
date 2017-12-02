@@ -1,4 +1,4 @@
-[#spring_boot_quickstart_tutorial]
+[id="spring_boot_quickstart_tutorial"]
 = Spring Boot Quickstart Tutorial
 
 :context: spring-boot

@@ -1,4 +1,4 @@
-[#about_work_items]
+[id="about_work_items"]
 = About Work Items
 
 _Work Items_ (WI) are trackable and measurable units of work within a <<about_collaboration_spaces,Collaboration Space>>. They are captured representations of work, and can be modified based on the requirements of the development project.

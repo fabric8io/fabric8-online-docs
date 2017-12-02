@@ -1,4 +1,4 @@
-[#working_with_iterations]
+[id="working_with_iterations"]
 = Working with Iterations
 
 include::modules/about_iterations.adoc[leveloffset=+1]

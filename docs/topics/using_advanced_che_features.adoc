@@ -1,5 +1,5 @@
 
-[#advanced_che_features]
+[id="advanced_che_features"]
 = Using advanced Che features
 
 :context: adv_che

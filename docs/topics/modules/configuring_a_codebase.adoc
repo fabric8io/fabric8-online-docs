@@ -1,4 +1,4 @@
-[#configuring_a_codebase]
+[id="configuring_a_codebase"]
 = Configuring a Codebase
 
 After adding a Collaboration Space, you can add a codebase from GitHub and set up a pipeline to build the code.

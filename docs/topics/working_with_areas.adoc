@@ -1,4 +1,4 @@
-[#working_with_areas]
+[id="working_with_areas"]
 = Working with Areas
 
 include::modules/about_areas.adoc[leveloffset=+1]

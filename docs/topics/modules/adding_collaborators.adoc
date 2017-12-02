@@ -1,4 +1,4 @@
-[#adding_collaborators]
+[id="adding_collaborators"]
 = Adding Collaborators
 
 You can add users as Collaborators to a Space and then assign Work Items to each person.

@@ -1,4 +1,4 @@
-[#filtering_work_items]
+[id="filtering_work_items"]
 = Filtering Work Items
 
 Filter your Work Item view in the Planner as follows:

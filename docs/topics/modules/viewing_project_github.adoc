@@ -1,4 +1,4 @@
-[#viewing_project_github]
+[id="viewing_project_github"]
 = Viewing your project in GitHub
 
 After reviewing your pipeline build running in {osio} and OpenShift Online, view your project <<about_codebases,codebase>> in GitHub as follows:

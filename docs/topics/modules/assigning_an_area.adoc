@@ -1,4 +1,4 @@
-[#Assigning_an_area]
+[id="Assigning_an_area"]
 = Assigning an Area to a Work Item
 
 You can group Work Items by type or functionality by assigning relevant Areas to the Work Items as follows:

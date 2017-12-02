@@ -1,4 +1,4 @@
-[#approving_build_pipeline]
+[id="approving_build_pipeline"]
 = Approving the build pipeline
 
 Several minutes after starting, your build pipeline is ready to be promoted to `Stage`.

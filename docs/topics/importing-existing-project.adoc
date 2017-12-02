@@ -1,4 +1,4 @@
-[#importing-existing-project]
+[id="importing-existing-project"]
 = Importing an existing project from GitHub
 
 :context: importing-existing-project

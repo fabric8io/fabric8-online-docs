@@ -1,4 +1,4 @@
-[#staging_a_pipeline]
+[id="staging_a_pipeline"]
 = Staging a Pipeline
 
 In a build pipeline, _Stage_ and _Run_ are individual OpenShift projects. _Stage_ is a production staging area to review and test changes before they are finalized and staged on _Run_.

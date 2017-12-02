@@ -1,4 +1,4 @@
-[#concept-module-template]
+[id="concept-module-template"]
 = Concept Module Template
 
 _In the title, include nouns that are used in the body text -- this helps readers and search engines find information quickly._

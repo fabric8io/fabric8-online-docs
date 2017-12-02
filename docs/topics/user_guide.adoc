@@ -1,6 +1,6 @@
 // Includes for all assemblies that form the top-level sections of the UG
 
-[#before_you_start]
+[id="before_you_start"]
 = Before You Start
 
 include::introduction_to_red_hat_openshift_io.adoc[leveloffset=+1]
@@ -8,7 +8,7 @@ include::introduction_to_red_hat_openshift_io.adoc[leveloffset=+1]
 include::accessing_red_hat_openshift_io.adoc[leveloffset=+1]
 
 
-[#getting_started_with_openshift_io]
+[id="getting_started_with_openshift_io"]
 = Getting Started with OpenShift.io
 
 include::working_with_collaboration_spaces.adoc[leveloffset=+1]

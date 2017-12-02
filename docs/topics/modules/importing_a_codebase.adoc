@@ -1,4 +1,4 @@
-[#importing_a_codebase]
+[id="importing_a_codebase"]
 = Importing a Codebase
 
 Use the `Import Codebase` option to manually add the details for your existing codebase into {osio}.

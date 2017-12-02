@@ -1,4 +1,4 @@
-[#introduction_to_rhosio]
+[id="introduction_to_rhosio"]
 = Introduction to {rhosio}
 
 {rhdp} offers a _Software as a Service_ (SaaS) product for developers called *{rhosio}* to meet your software development requirements.

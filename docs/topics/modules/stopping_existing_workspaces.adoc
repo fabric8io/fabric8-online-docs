@@ -1,4 +1,4 @@
-[#stopping_existing_workspaces]
+[id="stopping_existing_workspaces"]
 = Stopping existing workspaces
 
 Before creating a workspace for your project, stop the workspace for your previous project. Each running workspace uses your OpenShift Online resources. The OpenShift Online Free Tier supports one running workspace at a time. As a result, you must stop running workspaces for older projects each time before creating a new workspace.

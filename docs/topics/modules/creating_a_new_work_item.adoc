@@ -1,4 +1,4 @@
-[#creating_a_new_work_item]
+[id="creating_a_new_work_item"]
 = Creating a New Work Item
 
 You can add <<about_work_items,Work Items>> to your Collaboration Space in one of several ways.

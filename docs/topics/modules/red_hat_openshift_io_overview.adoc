@@ -1,4 +1,4 @@
-[#red_hat_openshift_io_overview]
+[id="red_hat_openshift_io_overview"]
 = {rhosio} Overview
 
 {rhosio} is a highly collaborative open-source, web-based _application life cycle management_ (ALM) solution. It is a next-generation product for developers to manage the development life cycle with one efficient tool.

@@ -1,4 +1,4 @@
-[#monitor_oso_quota_usage]
+[id="monitor_oso_quota_usage"]
 = Monitor your OpenShift Online quota usage
 
 Monitor your OpenShift Online account's quota usage using the OpenShift CLI (oc) tool:

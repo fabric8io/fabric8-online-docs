@@ -1,4 +1,4 @@
-[#closing_workitem]
+[id="closing_workitem"]
 = Closing a work item
 
 After implementing and reviewing your code changes, update the relevant Work Item to track the work done.

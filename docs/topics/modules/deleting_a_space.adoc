@@ -1,4 +1,4 @@
-[#changing_existing_space.adoc]
+[id="changing_existing_space.adoc"]
 = Deleting an Existing Space
 
 If an {osio} Space is no longer required, delete it as follows:

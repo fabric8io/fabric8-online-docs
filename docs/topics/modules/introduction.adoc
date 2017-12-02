@@ -1,4 +1,4 @@
-[#introduction]
+[id="introduction"]
 = Introduction
 
 Welcome to the {osio} Early Access Program. During this program, a small number of users are invited to use {osio} and give us feedback on their experience and help us improve {osio}.

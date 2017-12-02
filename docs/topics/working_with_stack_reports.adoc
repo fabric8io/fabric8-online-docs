@@ -1,4 +1,4 @@
-[#working_with_stack_reports]
+[id="working_with_stack_reports"]
 = Working with Stack Reports
 
 include::modules/about_stack_reports.adoc[leveloffset=+1]

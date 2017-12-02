@@ -1,4 +1,4 @@
-[#creating_a_new_pipeline]
+[id="creating_a_new_pipeline"]
 = Creating a New Pipeline
 
 To create a new pipeline for your Collaboration Space, you must add a new project to the Space. {osio} includes templates to add new projects to your Space.

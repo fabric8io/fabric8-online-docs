@@ -1,4 +1,4 @@
-[#optimizing_memory_usage]
+[id="optimizing_memory_usage"]
 = Optimizing your memory usage
 
 :context: optimizing_memory_usage

@@ -1,4 +1,4 @@
-[#creating_a_new_quickstart_project]
+[id="creating_a_new_quickstart_project"]
 = Creating a New Quickstart Project
 
 Use the {osio} Quickstart project wizard to create a new project from the available templates.

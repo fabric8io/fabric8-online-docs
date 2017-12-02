@@ -1,4 +1,4 @@
-[#assigning_a_collaborator]
+[id="assigning_a_collaborator"]
 = Assigning a Collaborator
 
 After adding Collaborators to your Space, you can assign <<about_work_items,Work Items>> to them:

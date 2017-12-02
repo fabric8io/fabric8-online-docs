@@ -1,4 +1,4 @@
-[#cleaning_up_oso_account]
+[id="cleaning_up_oso_account"]
 = Cleaning up your OpenShift Online Account
 
 {osio} generates artifacts within five projects (Kubernetes namespaces) in OpenShift Online. See <<viewing_projects_oso>> for details. After you create the Vert.X and Spring Boot HTTP quickstart projects, the limited resources available in the OpenShift Online Free Tier are nearly exhausted. You can now reset your {osio} and Openshift Online account resources to start afresh:

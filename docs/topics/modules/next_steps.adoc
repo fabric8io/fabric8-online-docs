@@ -1,4 +1,4 @@
-[#next_steps]
+[id="next_steps"]
 = Next steps
 
 If you followed the instructions in this document, you have now learned about {osio} and its features. You are now able to:

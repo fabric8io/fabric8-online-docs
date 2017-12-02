@@ -1,4 +1,4 @@
-[#interpreting_stack_report]
+[id="interpreting_stack_report"]
 = Interpreting your Stack Report
 
 The {osio} Analytics report comprises three components:

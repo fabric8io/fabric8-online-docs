@@ -1,4 +1,4 @@
-[#analyze_che_dependencies]
+[id="analyze_che_dependencies"]
 = Analyzing Che dependencies
 
 The Che workspace automatically analyzes dependencies for the code. To see how this analyzer works:

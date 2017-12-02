@@ -1,4 +1,4 @@
-[#signing_up_for_the_red_hat_developers_program]
+[id="signing_up_for_the_red_hat_developers_program"]
 = Signing up for the Red Hat Developers Program
 
 To start using {rhosio}, create a new Red Hat Developers (RHD) account or use an existing RHD or social media account.

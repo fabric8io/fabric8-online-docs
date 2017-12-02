@@ -1,4 +1,4 @@
-[#create_che_workspace-{context}]
+[id="create_che_workspace-{context}"]
 = Creating a Che workspace
 
 Create a new <<about_workspaces,Che workspace>> for your project:

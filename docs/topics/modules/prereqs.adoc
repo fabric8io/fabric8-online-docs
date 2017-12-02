@@ -1,4 +1,4 @@
-[#prereqs]
+[id="prereqs"]
 = Prerequisites
 
 *Browser Requirements:*
