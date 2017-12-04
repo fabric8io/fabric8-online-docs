@@ -1,33 +1,30 @@
 [id="creating_a_new_space"]
-= Creating a New Collaboration Space
+= Creating a new space
 
-To start working with a new project, create a new Collaboration Space. Each Space includes a team of users in assigned roles as well as unique <<about_work_items,Work Items>> and <<about_iterations,Iterations>> used to manage the new project.
+To start working with a new project, create a new Space. Each Space includes a team of users in assigned roles as well as unique <<about_work_items,Work Items>> and <<about_iterations,Iterations>> used to manage the new project.
 
 .Prerequisites
 
-* Ensure that you have <<logging_into_red_hat_openshift_io,Logged in to {osio-link}>>.
+* Ensure that you have <<logging_into_red_hat_openshift_io,logged in to {osio-link}>>.
 
 .Procedure
 
-. On your {osio-link} home page, click your user name in the top left corner of the screen.
-
-. On the drop-down menu, click btn:[Create space].
-
-. In the `Name` field, add a unique name for the new space.
-
-. From the template drop-down menu, select *Scenario Driven Planning*. This template creates Spaces based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.
+. On your {osio-link} home page, click your user name in the upper-left corner of the screen.
+. Select *Create space* from the drop-down menu.
+. In the *Name* field, add a unique name for the new Space.
+. From the *Template* drop-down list, select *Scenario Driven Planning*. This template creates Spaces based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.
 //. Select a *Template* type from the drop-down menu. The available options are:
 //.. *Agile* - Your space is centered around Agile-based planning.
 //.. *Scrum* - Your space includes an iterative and incremental Agile-based development framework. This option is similar to the **Agile** option but with more specific planning and development tracking.
 //.. *Issue Tracking* - Your space is based on an issue tracking development methodology. This option is ideal for teams interested in primarily tracking issues and Tasks and resolving them.
 //.. *Scenario Driven Planning* - Your space is based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized based on (user) Experiences.
 
-. Click btn:[Create] to create your new space. The `How would you like to get started?` dialog box displays the following options:
+. Click btn:[Create] to create your new space. The *How would you like to get started?* dialog box displays the following options:
 
-.. btn:[Import existing code]: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.
+* *<<importing_existing_code,Import existing code>>*: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.
 
-.. btn:[Create a new Quickstart project]: Use wizards to automatically set up your development environment and quickly create projects using the desired tooling.
+* *<<creating_a_new_quickstart_project,Create a new Quickstart project>>*: Use wizards to automatically set up your development environment and quickly create projects by using the desired tools.
 
-.. btn:[No thanks, take me to the new space dashboard]: Go to your new space dashboard to begin working in the space.
+* btn:[No thanks, take me to the new space dashboard]: Go to your new Space dashboard to begin working in the space.
 +
 image::new_space_dialog.png[New Space Dialog Box]

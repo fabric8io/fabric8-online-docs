@@ -1,11 +1,11 @@
-[id="changing_existing_space.adoc"]
-= Deleting an Existing Space
+[id="deleting_existing_space"]
+= Deleting an existing space
 
 If an {osio} Space is no longer required, delete it as follows:
 
 WARNING: When deleted, the Space and all its contents (Work Items, Codebases, Workspaces, etc.) are also permanently deleted.
 
-. On the {osio} home page, click your name at the top right part of the page.
-. Click btn:[Profile] from the displayed menu options.
-. Click btn:[Spaces] on the `Profile` page.
-. Click btn:[Delete] and then btn:[Remove] for each of the listed spaces.
+. On your {osio-link} home page, click your user name in the upper-left corner of the screen.
+. On the drop-down list, click  *View all spaces*.
+. Click the (image:delete.png [Delete]) icon, the *Remove Space* dialog box is displayed asking for confirmation.
+. Click btn:[Remove] to confirm and delete your Space.
