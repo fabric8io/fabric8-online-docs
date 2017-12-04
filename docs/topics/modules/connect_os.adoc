@@ -3,7 +3,7 @@
 
 You will receive a welcome email when your request to join Red Hat's {osio} Developer Preview is accepted. When you receive this email, use the following steps to set up {osio}:
 
-. Use Chrome's *Incognito mode* to navigate to https://openshift.io/
+. In your browser, navigate to https://openshift.io/
 . Log in using your Red Hat Developer (or other listed services) credentials.
 . In the `Getting Started in {osio}` page, select the *GitHub* and *OpenShift.com* check boxes and click *Connect accounts*.
 . Log in to your GitHub account and, when prompted, click btn:[Authorize openshiftio-private].
