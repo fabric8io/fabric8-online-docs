@@ -3,15 +3,15 @@
 
 If you followed the instructions in this document, you have now learned about {osio} and its features. You are now able to:
 
-* Create Spaces for your projects
-* Add code from an existing project to your Space
-* Create new Vert.X and Spring Boot projects using the quickstart wizards and test them
-* Create Work Items to track your tasks and manage them
-* Use the build pipelines to stage reviews in the `Stage` and `Run` environments
-* Use Che workspaces to edit your project code and commit the changes to GitHub
-* Optimize your project memory usage to better use your OpenShift Online resources
-* Use Stack reports to make improvements to your code
-* Debug using the Che workspace
-* Clean up your {osio} account so you can start afresh
+* Create Spaces for your projects. See <<creating_new_space-hello-world>> for instructions.
+* Add code from an existing project to your Space. See <<importing-existing-project>> for instructions.
+* Create new projects using the quickstart wizards and test them. See <<hello_world_developers>> for Vert.X project instructions and <<spring_boot_quickstart_tutorial>> for Spring Boot project instructions.
+* Create Work Items to track and manage your tasks. See <<creating_using_new_work_item>> for instructions.
+* Use the build pipelines to stage reviews in the `Stage` and `Run` environments. See <<working_with_pipelines>> for instructions.
+* Create Che workspaces to edit your project code and commit the changes to GitHub. See <<create_che_workspace-hello-world>> and <<commit_push_changes_git-hello-world>> for instructions.
+* Optimize the memory usage for your Vert.X and Spring Boot projects to use your OpenShift Online resources more efficiently. See <<optimizing_memory_usage>> and <<reduce_springboot_memory_usage>>.
+* Use Stack reports to make improvements to your code. See <<using_stack_reports>> for instructions.
+* Debug your code using the Che workspace. See <<debugging_che_workspace>> for instructions.
+* Clean up your {osio} account so you can start afresh. See <<cleaning_up_oso_account>> for instructions.
 
 You can now try using what you have learned about {osio} with your own projects. {osio} is currently Early Access only (see <<early-access-program>> for details). If you have any questions or suggestions for improvement with {osio} or this document, let us know using one of the methods listed in <<getting-support>>.
