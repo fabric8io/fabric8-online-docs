@@ -3,8 +3,7 @@
 
 *Browser Requirements:*
 
-. Currently, only Google Chrome can be used with {osio}. Additional browsers will be added here as they are tested.
-. Ensure that you run {osio} in Chrome's *Incognito Mode* or as a `Guest` user. This is required because troubleshooting or other functions require clearing your browser's history.
+. Currently, only Google Chrome can be used with {osio}. Additional browsers will be listed here when they are tested and can be used with {osio}.
 
 *General Requirements:*
 
