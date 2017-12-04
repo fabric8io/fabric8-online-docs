@@ -25,7 +25,7 @@ If you prefer to send us feedback via email, send us the details at link:mailto:
 [id="providing-documentation-feedback"]
 == Providing documentation feedback
 
-The documentation team welcomes any and all feedback.
+The documentation team welcomes all feedback.
 
 * Is there anything we can do anything to improve the documentation?
 * Was a part of the documentation not useful for you?
