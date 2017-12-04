@@ -14,4 +14,4 @@ If you followed the instructions in this document, you have now learned about {o
 * Debug your code using the Che workspace. See <<debugging_che_workspace>> for instructions.
 * Clean up your {osio} account so you can start afresh. See <<cleaning_up_oso_account>> for instructions.
 
-You can now try using what you have learned about {osio} with your own projects. {osio} is currently Early Access only (see <<early-access-program>> for details). If you have any questions or suggestions for improvement with {osio} or this document, let us know using one of the methods listed in <<getting-support>>.
+You can now try using what you have learned about {osio} with your own projects. See the link:user_guide.html[{osio} User Guide] for comprehensive information about {osio} and its features. {osio} is currently Early Access only (see <<early-access-program>> for details). If you have any questions or suggestions for improvement with {osio} or this document, let us know using one of the methods listed in <<getting-support>>.
