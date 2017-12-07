@@ -15,7 +15,7 @@ dockerTemplate{
 
                     container('clients') {
                         stage ('build docs'){
-                            sh 'pwd; la -l'
+                            sh 'pwd; ls -l'
                         }
                     }
                     container('docker') {
@@ -36,7 +36,7 @@ dockerTemplate{
                 imageName = "fabric8/fabric8-online-docs:${newVersion}"
                     container('clients') {
                         stage ('build docs'){
-                            sh 'pwd; la -l'
+                            sh 'pwd; ls -l'
                         }
                     }
                     container('docker') {
