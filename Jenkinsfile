@@ -16,7 +16,7 @@ dockerTemplate{
                 dir('user_guide'){
                     container('clients') {
                         stage ('build docs'){
-                            sh 'asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc'
+                            sh 'scripts/build_guides.sh'
                         }
                     }
                     container('docker') {
@@ -39,7 +39,7 @@ dockerTemplate{
                 dir('user_guide'){
                     container('clients') {
                         stage ('build docs'){
-                            sh 'asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc'
+                            sh 'scripts/build_guides.sh'
                         }
                     }
                     container('docker') {
