@@ -13,9 +13,10 @@ dockerTemplate{
                 echo 'Running CI pipeline'
                 imageName = "fabric8/fabric8-online-docs:SNAPSHOT-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
 
+                dir('./'){
                     container('clients') {
                         stage ('build docs'){
-                            sh 'pwd; ls -l'
+                            sh 'scripts/build_guides.sh'
                         }
                     }
                     container('docker') {
@@ -26,7 +27,8 @@ dockerTemplate{
                             sh "docker push ${imageName}"    
                         }
                     }
-                
+                }
+
                 snapshot = true
 
             } else if (utils.isCD()){
@@ -34,9 +36,10 @@ dockerTemplate{
                 echo 'Running CD pipeline'
                 def newVersion = getNewVersion {}
                 imageName = "fabric8/fabric8-online-docs:${newVersion}"
+                dir('./'){
                     container('clients') {
                         stage ('build docs'){
-                            sh 'pwd; ls -l'
+                            sh 'scripts/build_guides.sh'
                         }
                     }
                     container('docker') {
@@ -47,7 +50,8 @@ dockerTemplate{
                             sh "docker push fabric8/fabric8-online-docs:${newVersion}"    
                         }
                     }
-                
+                }
+
                 pushPomPropertyChangePR {
                     propertyName = 'fabric8-online-docs.version'
                     projects = [
