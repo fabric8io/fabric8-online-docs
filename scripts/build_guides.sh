@@ -31,7 +31,7 @@ do
 
   asciidoctor master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.html
   # Only build PDFs when in a container
-  if [ -f /.dockerenv ]; then
+  if [ -f /.dockerenv ] && [ $(which asciidoctor-pdf) ]; then
     asciidoctor -r asciidoctor-pdf -a imagesdir="topics/images" -b pdf master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.pdf
   fi
 
