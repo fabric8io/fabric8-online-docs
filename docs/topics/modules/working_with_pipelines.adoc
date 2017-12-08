@@ -9,8 +9,7 @@ image::pipeline_running.png[A Running Pipeline Build]
 
 To view your new Quickstart project pipeline:
 
-. Click btn:[Create].
-. Click btn:[Pipelines]. This page displays all running pipelines for your Space.
+* Click btn:[Pipelines]. This page displays all running pipelines for your Space.
 
 Your new project build pipeline displays on this page at the `Approve` stage:
 
