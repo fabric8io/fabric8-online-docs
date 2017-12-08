@@ -13,10 +13,10 @@ dockerTemplate{
                 echo 'Running CI pipeline'
                 imageName = "fabric8/fabric8-online-docs:SNAPSHOT-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
 
-                dir('user_guide'){
+                dir('docs/user_guide'){
                     container('clients') {
                         stage ('build docs'){
-                            sh 'asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc'
+                            sh 'asciidoctor master.adoc'
                         }
                     }
                     container('docker') {
@@ -36,10 +36,10 @@ dockerTemplate{
                 echo 'Running CD pipeline'
                 def newVersion = getNewVersion {}
                 imageName = "fabric8/fabric8-online-docs:${newVersion}"
-                dir('user_guide'){
+                dir('docs/user_guide'){
                     container('clients') {
                         stage ('build docs'){
-                            sh 'asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc'
+                            sh 'asciidoctor master.adoc'
                         }
                     }
                     container('docker') {
