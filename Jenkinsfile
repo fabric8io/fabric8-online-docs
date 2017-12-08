@@ -21,7 +21,7 @@ dockerTemplate{
                     }
                     container('docker') {
                         stage ('build image'){
-                            sh "docker build -t ${imageName} Dockerfile.deploy ."
+                            sh "docker build -t ${imageName} -f Dockerfile.deploy ."
                         }
                         stage ('push to dockerhub'){
                             sh "docker push ${imageName}"
@@ -44,7 +44,7 @@ dockerTemplate{
                     }
                     container('docker') {
                         stage ('build image'){
-                            sh "docker build -t fabric8/fabric8-online-docs:${newVersion} Dockerfile.deploy ."
+                            sh "docker build -t fabric8/fabric8-online-docs:${newVersion} -f Dockerfile.deploy ."
                         }
                         stage ('push to dockerhub'){
                             sh "docker push fabric8/fabric8-online-docs:${newVersion}"
