@@ -11,7 +11,7 @@ include::accessing_red_hat_openshift_io.adoc[leveloffset=+1]
 [id="getting_started_with_openshift_io"]
 = Getting Started with OpenShift.io
 
-include::working_with_collaboration_spaces.adoc[leveloffset=+1]
+include::working_with_spaces.adoc[leveloffset=+1]
 
 include::working_with_collaborators.adoc[leveloffset=+1]
 

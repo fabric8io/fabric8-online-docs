@@ -1,16 +1,16 @@
 [id="creating_a_new_quickstart_project"]
-= Creating a New Quickstart Project
+= Creating a new quickstart project
 
 Use the {osio} Quickstart project wizard to create a new project from the available templates.
 
-. In the `Technology Stack` drop-down menu, select a project type.
+. In the *Select Stack* section, use the drop-down menu or click one of the displayed technology stack icons to select a project type and click btn:[Next].
+. In the *Define Project* section:
+.. Select your organization from the *Organization* drop-down list. The drop-down lists the GitHub organizations where you are a member. A new repository for the Quickstart project will be created in the selected organization.
+.. In the *OpenShift Project Name* field, type a unique name for your project.
+.. Keep the default value for the *Group Id* and *Version* fields.
 . Click btn:[Next].
-. In the `Organization` field, select your organization name. For this example, use the organization name assigned to your personal GitHub account.
-. In the `Name` field, type a unique name for your project.
-. Leave the default value for the `Group Id` and `Version` fields
+. In the *Configure Pipeline* section, select a build pipeline strategy. The default value *Release, Stage, Approve and Promote* is suitable for most use cases.
 . Click btn:[Next].
-. Select a `Build pipeline strategy`. Use the default value (`Release, Stage, Approve and Promote`) for most use cases.
-. Select the `Override Jenkins and POM files` option.
-. Click btn:[Next].
-. The `Build configuration` screen displays the details for your `Jenkins Space` and options for web hooks and triggering builds. Use the default options for these fields.
-. Click btn:[Finish].
+. The *Build configuration* section displays the name of your *Jenkins Space* and options to *Trigger build* and *Add continuous integration web hooks* when your application is deployed.
+Use the default options for these fields and click btn:[Finish].
+. The *Summary* section displays your selected options for the Application. Click btn:[Ok] to continue.

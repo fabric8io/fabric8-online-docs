@@ -1,18 +1,19 @@
 [id="importing_a_codebase"]
-= Importing a Codebase
+= Importing a codebase
 
-Use the `Import Codebase` option to manually add the details for your existing codebase into {osio}.
+Use the *Import Codebase* option to manually add the details for your existing codebase into {osio}.
 
 . Click btn:[Import Codebase].
-. In the *Space Path* field, If required, change the path to your Collaboration Space.
-. In the *GitHub Repository* field, add the GitHub repository path
-. Click *Sync* to retrieve details for the repository. If the sync is successful, metadata for the added repository appears below the btn:[Sync] button.
-. Click btn:[Associate Repository to Space] to add the new repository to your Collaboration Space. The *Create* tab now displays your new repository with information about when it was created and the last commit date.
-. Click btn:[Create a Workspace] for the target repository from the displayed list. A success message appears when the Workspace is successfully created.
+. If required, in the *Space Path* field, change the path to your Space.
+. In the *GitHub Repository* field, add the GitHub repository path.
+. Click btn:[Sync] to retrieve details for the repository. If the sync is successful, metadata for the added repository is displayed under the btn:[Sync] button.
+. Click btn:[Associate Repository to Space] to add the repository to your Space. The menu:Create[Codebases] sub-tab now displays your repository with information about when it was created and the last commit date.
+. Click *Create workspace* for the target repository from the displayed list. A success message appears when the Workspace is successfully created in Eclipse Che.
+. When your Workspace is ready, in the drop-down list, select the new Workspace for your repository, and then click btn:[Open].
++
+A new browser tab loads and displays the Eclipse Che Workspace with your repository codebase.
 +
 [NOTE]
 ====
-Ensure that your browser allows pop-ups from this page. The Eclipse Che context requires a new tab to start.
+In case a new Workspace is not created, check and ensure that your browser allows pop-up windows from this page.
 ====
-+
-. In the drop-down menu, select the new Workspace for your repository, then click *Open*. A new browser tab loads and displays the Eclipse Che context with your repository codebase.
