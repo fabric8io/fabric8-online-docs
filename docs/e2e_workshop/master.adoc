@@ -1,6 +1,11 @@
 include::topics/templates/attributes.adoc[]
 
 
-= End to End Tutorial
+= OpenShift.io Getting Started Guide
+:author: Red Hat Developer Documentation Team
+:email: openshiftio@redhat.com
+:revdate: {docdate} {doctime}
+
+The guide shows how to get up to speed using Red Hat OpenShift.io. The main focus is on documenting the demo user stories that are used to onboard new users to the platform.
 
 include::topics/e2e_tutorial.adoc[]

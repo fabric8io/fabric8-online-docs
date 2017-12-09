@@ -1,8 +1,9 @@
-:toc:
+:toc: right
 :toclevels: 3
 :numbered:
 :sectanchors:
 :sectlinks:
+:nofooter:
 
 :doctype: book
 
@@ -11,11 +12,10 @@
 :icons: font
 :source-highlighter: highlightjs
 
-// uncomment to add styles
-:stylesdir: topics/styles
-// :stylesheet: style.css
-// :stylesheet: asciidoc-default.css
+:linkcss:
+:stylesdir: styles/
 :stylesheet: foundation.css
+:copycss: topics/styles/{stylesheet}
 
 // AsciiDoc rendering
 :last-update-label!:
