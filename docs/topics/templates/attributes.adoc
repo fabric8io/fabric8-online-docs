@@ -11,10 +11,7 @@
 :icons: font
 :source-highlighter: highlightjs
 
-// uncomment to add styles
 :stylesdir: topics/styles
-// :stylesheet: style.css
-// :stylesheet: asciidoc-default.css
 :stylesheet: foundation.css
 
 // AsciiDoc rendering
