@@ -41,6 +41,10 @@ do
   fi
 done
 
+# Build the landing page
+echo "Building $DOCS_SRC/index.adoc"
+asciidoctor $DOCS_SRC/index.adoc -o $OUTPUT_DIR/index.html
+
 chmod -R a+rwX $OUTPUT_DIR/
 
 # Return to where we started as a courtesy.
