@@ -8,7 +8,7 @@ BUILD_MESSAGE=$BUILD_RESULTS
 # Move to docs dir
 cd $DOCS_SRC
 
-echo "=== Building Guides ==="
+echo -e "=== Building Guides ===\n"
 # Recurse through the guide directories and build them.
 subdirs=`find . -maxdepth 1 -type d ! -iname ".*" ! -iname "topics" | sort`
 
