@@ -11,8 +11,10 @@
 :icons: font
 :source-highlighter: highlightjs
 
-:stylesdir: topics/styles
+:linkcss:
+:stylesdir: styles/
 :stylesheet: foundation.css
+:copycss: topics/styles/{stylesheet}
 
 // AsciiDoc rendering
 :last-update-label!:
