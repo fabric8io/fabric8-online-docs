@@ -1,4 +1,4 @@
-:toc:
+:toc: right
 :toclevels: 3
 :numbered:
 :sectanchors:
