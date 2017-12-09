@@ -3,6 +3,7 @@
 :numbered:
 :sectanchors:
 :sectlinks:
+:nofooter:
 
 :doctype: book
 
