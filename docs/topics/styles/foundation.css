@@ -1822,7 +1822,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] {
 
 body:before {
   content: "";
-  background: no-repeat 5%/15% url(images/RHD-logo.svg) #030303;
+  background: no-repeat 5%/15% url(../images/RHD-logo.svg) #030303;
   height: 70px;
   width: 100%;
   display: inline-block;
@@ -1873,7 +1873,7 @@ footer {
   footer   .conditions   a:first-child {
     margin-left: 70px; }
   footer   .logo   a {
-    background: url(images/redhat.svg) no-repeat;
+    background: url(../images/redhat.svg) no-repeat;
     height: 34px;
     width: 94px;
     margin: 0;
