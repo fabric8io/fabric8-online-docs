@@ -1,27 +1,46 @@
 [id="using_stack_reports"]
-= Using stack reports
+= Using your Stack Report
 
-{osio} includes a Stack Report feature that provides information about your stack components and recommends improvements for your application. The Stack Report is available after the first pipeline build completes.
+The stack report provides you with data about your stack and its components and provides recommendations based on its analysis of your stack. It enables you to assess the credibility of your components and enhance your stack.
 
-. Return to your space dashboard in the {osio} browser tab.
-. The `Stack Report Recommendations` panel in the dashboard shows a summary of the Stack Report.
+== Components of stack report
+The {osio} analytics report comprises three components:
+
+=== Stack summary
+The stack summary provides a synopsis of the analysis report.
+It highlights the security issues, <<glossary,usage outliers>>, and unknown or conflicting Licenses in your stack.
+
+=== Detailed analysis of your stack components
+The detailed component analysis provides recommendations for relevant alternate components in case of license outliers (that is, licenses not used in similar stacks) and usage outliers (that is, components not used in similar stacks). It also recommends the appropriate versions for your stack components.
+
+It helps you assess the credibility of your stack components by providing various usage statistics for your components such as:
+
+* Number of {osio} projects using these components
+* GitHub statistics such as watchers, usage count and so on
+* Other GitHub projects dependent on these components
+* Tags associated with the components of your stack
+
+To act on the alternate component recommendations:
+
+. In the *Detailed analysis of your stack components*, select *Alternate Components* from the filter to see the recommended alternate components.
 +
-image::stack_reports.png[Stack Reports]
+image::filtered_alt_componet.png[Filtered Alternate Component]
 +
-. Click *Show complete stack report* at the bottom of this panel to view the complete report.
-+
-image::full_stack_report.png[Full Stack Report]
-+
-The `Additional components recommended by {osio}` section at the bottom has one recommendation to improve the application. It includes a link to create a new Work Item to track making the changes for this recommendation:
-+
-image::action_item.png[Create Work Item]
-+
-. Click *Create Work Item* and {osio} automatically creates a Work Item for this recommendation. The following message displays when the Work Item is created:
+. Click *Create Work Item* adjacent to the recommended alternate component to add the component to your stack. {osio} automatically creates a new work item and displays the following success message:
 +
 image::wi_created.png[Work Item Created]
 +
-. Click *View Work Item* to view the Work Item in a new browser tab.
+. Click *View Work Item* to view the auto populated work item in a new browser tab.
 +
 image::automatic_wi.png[Automatically Created Work Item]
 
-You have now learned how to use Stack Reports to identify improvements to your application and track the required changes using Work Items.
+=== Additional components recommended by {osio}
+
+{osio} recommends additional components suitable for your stack based on its analysis of similar open source stacks. These components are commonly used by similar stacks and augment your stack.
+
+* Click *Create work item* adjacent to the recommended additional component to add the component to your stack.
++
+image::action_item.png[Create Work Item]
++
+
+You have now learned how to use stack reports to analyze and improve your application stack and track the required changes using work items.

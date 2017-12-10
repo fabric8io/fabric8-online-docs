@@ -7,25 +7,25 @@ The {osio} Analytics report comprises three components:
 * <<Detail analysis of your stack components>>
 * <<Additional components recommended by {osio}>>
 
-== Stack report
-{osio} Analytics scans your stack and provides a synopsis of the analysis report. It states the *Total* number of components in your stack, the number of components *Analyzed* by it, and those *Unknown* to it.
+== Stack summary
+The Stack summary provides a synopsis of the analysis report.
 
 It displays:
 
-Security Alerts:: {osio} Analytics examines the Common vulnerabilities and exposures (CVEs) of the components in the stack and highlights vulnerabilities, if any.
+Security Issues:: {osio} Analytics examines the Common Vulnerabilities and Exposures (CVEs) of the components in the stack and highlights vulnerabilities, if any.
 
-Usage:: It analyzes your overall stack composition, compares it to other similar stacks and displays the number of components in your stack that are not commonly used in other similar stacks or that rarely go together.
+Usage Outliers:: It analyzes your overall stack composition, compares it to other similar stacks and displays the number of components in your stack that are not commonly used in similar stacks or that rarely go together.
 
-Licenses:: It analyzes the licenses used in your stack, and displays the number of unknown licenses. It also displays the number of license conflicts at the stack level and the conflicting licenses used in the stack on mouse hover.
+Licenses:: It analyzes the licenses used in your stack, and displays the number of unknown licenses. It also displays the number of license conflicts in your stack.
 
-== Detail analysis of your stack components
-The detailed component analysis lists all the analyzed components and their parameters. Based on the stack analysis it also lists recommendations for relevant alternate components.
+== Detailed analysis of your stack components
+The detailed component analysis helps you assess the credibility of your stack components.
 
-The detailed analysis helps you assess the credibility of your stack components by displaying component level details such as:
+It provides recommendations for relevant alternate components by analyzing all the components in the stack and their parameters such as:
 
 Versions:: It lists current, recommended, and latest available versions of the components in your stack, so that you can select a suitable version for your stack.
 
-Security Issue:: Based on the CVEs of the stack components, {osio} Analytics identifies security vulnerabilities in your stack components. On mouse hover, it displays the CVE scores of components identified with security vulnerabilities.
+Security Issue:: Based on the CVEs of the stack components, {osio} Analytics identifies security vulnerabilities in your stack components. The CVE scores are displayed when you move the mouse pointer over components identified with security vulnerabilities.
 
 License:: It lists licenses for each component, flags unknown and conflicting licenses, and recommends *Alternate Components* in case of *License Outliers*.
 
@@ -35,7 +35,7 @@ GitHub Statistics:: {osio} tracks GitHub statistics, such as *Usage Count* and n
 
 GitHub Dependents:: It lists all the projects dependent on this component.
 
-Categories:: It lists the tags associated with the components of your stack.
+Tags:: It lists the tags associated with the components of your stack.
 
 You can filter the detailed component analysis report to highlight:
 
