@@ -13,18 +13,21 @@ dockerTemplate{
                 echo 'Running CI pipeline'
                 imageName = "fabric8/fabric8-online-docs:SNAPSHOT-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
 
-                dir('user_guide'){
+                dir('./'){
                     container('clients') {
+                        stage ('test docs'){
+                            sh 'scripts/validate_guides.sh'
+                        }
                         stage ('build docs'){
-                            sh 'asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc'
+                            sh 'scripts/build_guides.sh'
                         }
                     }
                     container('docker') {
                         stage ('build image'){
-                            sh "docker build -t ${imageName} ."    
+                            sh "docker build -t ${imageName} -f Dockerfile.deploy ."
                         }
                         stage ('push to dockerhub'){
-                            sh "docker push ${imageName}"    
+                            sh "docker push ${imageName}"
                         }
                     }
                 }
@@ -36,18 +39,18 @@ dockerTemplate{
                 echo 'Running CD pipeline'
                 def newVersion = getNewVersion {}
                 imageName = "fabric8/fabric8-online-docs:${newVersion}"
-                dir('user_guide'){
+                dir('./'){
                     container('clients') {
                         stage ('build docs'){
-                            sh 'asciidoctor --doctype=book --section-numbers --attribute=toc master.adoc'
+                            sh 'scripts/build_guides.sh'
                         }
                     }
                     container('docker') {
                         stage ('build image'){
-                            sh "docker build -t fabric8/fabric8-online-docs:${newVersion} ."    
+                            sh "docker build -t ${imageName} -f Dockerfile.deploy ."
                         }
                         stage ('push to dockerhub'){
-                            sh "docker push fabric8/fabric8-online-docs:${newVersion}"    
+                            sh "docker push ${imageName}"
                         }
                     }
                 }
@@ -78,7 +81,7 @@ if (snapshot){
                originalImageName = 'fabric8/fabric8-online-docs'
                newImageName = imageName
                openShiftProject = prj
-               githubProject = 'fabric8/fabric8-online-docs'
+               githubProject = 'fabric8io/fabric8-online-docs'
            }
         }
 
