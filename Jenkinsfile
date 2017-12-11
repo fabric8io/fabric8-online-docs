@@ -15,6 +15,9 @@ dockerTemplate{
 
                 dir('./'){
                     container('clients') {
+                        stage ('test docs'){
+                            sh 'scripts/validate_guides.sh'
+                        }
                         stage ('build docs'){
                             sh 'scripts/build_guides.sh'
                         }
