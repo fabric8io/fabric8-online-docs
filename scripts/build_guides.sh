@@ -8,7 +8,7 @@ BUILD_MESSAGE=$BUILD_RESULTS
 # Move to docs dir
 cd $DOCS_SRC
 
-echo "=== Building Guides ==="
+echo -e "=== Building Guides ===\n"
 # Recurse through the guide directories and build them.
 subdirs=`find . -maxdepth 1 -type d ! -iname ".*" ! -iname "topics" | sort`
 
@@ -40,6 +40,10 @@ do
     BUILD_MESSAGE="$BUILD_MESSAGE\n$BUILD_ERROR"
   fi
 done
+
+# Build the landing page
+echo "Building $DOCS_SRC/index.adoc"
+asciidoctor $DOCS_SRC/index.adoc -o $OUTPUT_DIR/index.html
 
 chmod -R a+rwX $OUTPUT_DIR/
 

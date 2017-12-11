@@ -1,12 +1,20 @@
 [id="importing_existing_code"]
-= Importing Existing Code
+= Importing existing code
 
-Import your existing project codebase into {osio} using the `Import Codebase` wizard.
+Use the {osio} *Application wizard* to import an existing project codebase into {osio}.
 
-. Select your organization name from the options in the `Organization` field. For this example, use the organization name assigned to your personal GitHub account.
+. In the *GitHub Organization* section, select your organization name from the *Organization* drop-down list. For this example, use the organization name assigned to your personal GitHub account.
 . Click btn:[Next].
-. From the displayed list, select the repository to import into {osio}
+. In the *GitHub Repositories* section, select the repository to import into {osio} from the *Repository Name Pattern* list, and then click btn:[Next].
+. In the *Configure Pipeline* section:
+.. Select a build pipeline strategy. The default value *Release, Stage, Approve and Promote* is suitable for most use cases.
+.. Ensure that the *Override Jenkins and POM files* option is selected
 . Click btn:[Next].
-. Select a build pipeline strategy. The default value (`Release, Stage, Approve and Promote`) is recommended.
-. Ensure that the `Override Jenkins and POM files` option is selected
+. In the *Build configuration* section the *Jenkins Space* field displays the name of your Jenkins space.
+
+.. Select *Trigger build* to trigger a build once your Application is deployed.
+.. Select *Add continuous integration web hooks* to add continuous integration web hooks to your Application.
++
+Use the default options for these fields.
 . Click btn:[Finish].
+. The *Summary* section displays your selected options for the Application. Click btn:[Ok] to continue.

@@ -35,14 +35,14 @@ $ <www-browser-of-choice> master.html
 
 #### Using the build_guides.sh Script
 
-You need `asciidoctor` and `asciidoctor-pdf` installed. To build all guides, including PDF versions, run:
+You need `asciidoctor` installed. To build all guides, run:
 
 ```
 $ scripts/build_guides.sh
 $ <www-browser-of-choice> html/*.html
 ```
 
-Both HTML and PDF versions are built into the `html/` directory.
+HTML versions are built into the `html/` directory.
 
 
 #### Using the Dockerfiles

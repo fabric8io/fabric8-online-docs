@@ -3,16 +3,9 @@
 
 After <<connect_os>>, you must ensure that the Che and Jenkins tenant services are provisioned. This process requires several minutes after completing the following steps:
 
-[WARNING]
-====
-The version numbers for Che and Jenkins in the screenshots may be outdated. Use the following files to see the most recent versions of these services and compare it to those displayed in {osio} for your account.
 
-* Che version information: https://github.com/fabric8-services/fabric8-tenant/blob/master/CHE_VERSION
 
-* Jenkins version information: https://github.com/fabric8-services/fabric8-tenant/blob/master/JENKINS_VERSION
-====
-
-. To check the Che and Jenkins status, click the check mark icon (image:check_icon.png[title="Check Icon"]) at the top right of the page.
+. To check the Che and Jenkins status, click the check mark icon (image:check_icon.png[title="Check Icon"]) at the upper-right of the page.
 
 * If the Che and Jenkins status indicates that all services are ready (see screen capture), Che and Jenkins are provisioned and ready for use.
 +
@@ -22,7 +15,18 @@ image::tenant_status.png[Tenant Status]
 +
 image::tenant_status_error.png[Tenant Status Waiting]
 +
-. If the status for one or both of the services is red (see screen capture), update your tenant services:
+[WARNING]
+====
+The version numbers for Che and Jenkins in the screen capture are for illustration purposes and may be outdated.
+
+Use the following files to see the most recent versions of these services and compare it to those displayed in {osio} for your account.
+
+* Che version information: https://github.com/fabric8-services/fabric8-tenant/blob/master/CHE_VERSION
+
+* Jenkins version information: https://github.com/fabric8-services/fabric8-tenant/blob/master/JENKINS_VERSION
+====
+
+. If you see a version mismatch between that displayed on {osio} and the latest version in the above links, or if the status for one or both of the services is red (see screen capture), update your tenant services as follows:
 +
 image::tenant_error.png[Tenant Status Error]
 +
