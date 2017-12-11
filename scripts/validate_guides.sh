@@ -6,9 +6,9 @@ SCRIPT_SRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P )"
 DOCS_SRC="$( dirname $SCRIPT_SRC )/docs"
 XML_SCHEMA="$SCRIPT_SRC/xml-schema/docbook.xsd"
 
-RED='\033[0;31m'
-GRN='\033[0;32m'
-NOC='\033[0m'
+RED="$(tput setaf 1)"
+GRN="$(tput setaf 2)"
+NOC="$(tput sgr0)"
 
 failed_builds=""
 failed_validations=""
