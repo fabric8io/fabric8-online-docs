@@ -1,27 +1,27 @@
 [id="creating_using_new_work_item"]
 = Creating and using a new work item
 
-After creating a project in your Space, create a Work Item and use it to to track your changes to the project code.
+After creating a project in your Space, create a Work Item and use it to track your changes to the project code.
 
 . On the top of the {osio} page, click `Plan`.
-. If you have not already activated {osio}'s Experimental Features, the following message displays. Check `I agree to the terms of this feature, as written above` and click btn:[Activate All Experimental Features] to proceed.
-. In the Planner's Backlog view, click btn:[Create Work Item] at the bottom of the screen. This is the fastest option to create a new Work Item.
+. If you have not already activated the Experimental Features of {osio}, the `Experimental Features` warning appears. Check `I agree to the terms of this feature, as written above` and click btn:[Activate All Experimental Features] to proceed.
+. In the *Backlog* view, click btn:[Create Work Item] at the bottom of the screen. This is the quickest option to create a new Work Item.
 +
 image::create_wi.png[Create Work Item]
 +
-. Click the leftmost icon (image:wi_type_icon.png[title="Work Item Type"]) at the bottom of the page to select a Work Item Type. For this example, select the default *Feature* option.
-. In the `Work Item Title` text box, type *Change greeting*.
-. In the `Work Item Description` text box, type *Change the greeting from Hello to Hello from Che*.
-. Click &#10004; to create the Work Item. The new Work Item displays in the Planner view.
+. Click the work item type icon (image:wi_type_icon.png[title="Work Item Type"]) in the quick add to select a Work Item Type. For this example, select the default *Feature* option.
+. In the *Work Item Title* field, type `Change greeting`.
+. In the *Work Item Description* field, type `Change the greeting from Hello to Hello from Che`.
+. Click &#10004; to create the Work Item. The new Work Item displays in the list of work items.
 +
 image::new_wi.png[New Work Item]
 +
-. Double click the new Work Item to view it in a panel on the right side of the screen:
+. Double click the new Work Item to see a Quick Preview on the right:
 +
 image::wi_edit.png[Edit Work Item]
 +
-. Click `Unassigned` and add your name as the new assignee for this Work Item.
-. Click btn:[Board] from the menu options at the top of the screen to see the board view for the Work Items.
-. Your new Work Item appears in the `new` column. Drag the Work Item into the `open` column.
+. Click `Unassigned` and add your name as the new assignee for this Work Item. Close the Preview to save your changes.
+. Click *Board* from the menu options at the top of the screen to see the board view for the Work Items.
+. Your new Work Item appears in the `new` column. Drag the Work Item into the `open` column. You can track the progress of your Work Item by moving it to `in progress`, `resolved`, or `closed` states.
 +
 image::move_workitem.png[Move Work Item]
