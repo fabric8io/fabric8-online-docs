@@ -35,35 +35,7 @@ dockerTemplate{
                 snapshot = true
 
             } else if (utils.isCD()){
-
-                echo 'Running CD pipeline'
-                def newVersion = getNewVersion {}
-                imageName = "fabric8/fabric8-online-docs:${newVersion}"
-                dir('./'){
-                    container('clients') {
-                        stage ('build docs'){
-                            sh 'scripts/build_guides.sh'
-                        }
-                    }
-                    container('docker') {
-                        stage ('build image'){
-                            sh "docker build -t ${imageName} -f Dockerfile.deploy ."
-                        }
-                        stage ('push to dockerhub'){
-                            sh "docker push ${imageName}"
-                        }
-                    }
-                }
-
-                pushPomPropertyChangePR {
-                    propertyName = 'fabric8-online-docs.version'
-                    projects = [
-                            'fabric8-apps/fabric8-online-docs-app'
-                    ]
-                    version = newVersion
-                    autoMerge = true
-                    containerName = 'clients'
-                }
+                echo 'release provided by CI centos not fabric8 pipelines'
             }
         }
     }
