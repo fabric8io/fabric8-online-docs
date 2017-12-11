@@ -1,25 +1,25 @@
 [id="configuring_a_codebase"]
-= Configuring a Codebase
+= Configuring a codebase
 
-After adding a Collaboration Space, you can add a codebase from GitHub and set up a pipeline to build the code.
+After creating a Space, you can add a codebase from GitHub and set up a pipeline to build the code.
 
 .Prerequisites
 
-* Create a Collaboration Space. See <<creating_a_new_space>> for instructions.
+* Create a Space. See <<creating_a_new_space>> for instructions.
 
 .Procedure
 
-. Click *Analyze* at the top of the screen to view the Collaboration Space's dashboard.
+. Click *Analyze* at the top of the screen to view the dashboard for your space.
 
-. The *Codebases* view displays the following options:
+. The *Codebases* section displays the following options:
 
- * If codebases are already added to the Collaboration Space, the added codebases are listed and a btn:[+] icon displays at the top right of the view to import more codebases.
+ * If you already have codebases in your Space, they are listed and you can use the btn:[+] icon at the upper-right of the section to import more codebases.
 
- * If no codebases are added, two buttons display:
+ * If there are no codebases in your space, you can:
 
-.. btn:[Add Codebase] to manually add a codebase.
+.. use btn:[Add Codebase] to manually add a codebase.
 
-.. btn:[Import Codebase] to add an existing codebase.
+.. use btn:[Import Codebase] to add an existing codebase.
 
 include::adding_a_codebase.adoc[leveloffset=+1]
 

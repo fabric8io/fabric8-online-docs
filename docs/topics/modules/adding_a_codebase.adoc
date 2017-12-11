@@ -1,12 +1,12 @@
 [id="adding_a_codebase"]
-= Adding a Codebase
+= Adding a codebase
 
 . Click btn:[Add Codebase].
-. In the `How would you like to get started?` dialog box, select one of the following options:
+. In the *How would you like to get started?* dialog box, select one of the following options:
 
-* Importing existing code
+* *Import existing code*
 
-* Create a new Quickstart project
+* *Create a new Quickstart project*
 +
 image::get_started_menu.png[How would you like to get started menu]
 

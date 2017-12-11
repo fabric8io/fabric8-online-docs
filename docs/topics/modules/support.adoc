@@ -27,7 +27,7 @@ If you prefer to send us feedback via email, send us the details at link:mailto:
 
 The documentation team welcomes all feedback.
 
-* Is there anything we can do anything to improve the documentation?
+* Is there anything we can do to improve the documentation?
 * Was a part of the documentation not useful for you?
 * Is there anything we did not document that you want to do with {osio}?
 

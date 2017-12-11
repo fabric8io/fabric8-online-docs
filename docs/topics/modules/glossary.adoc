@@ -3,11 +3,11 @@
 
 This glossary provides concise definitions of terms and explanations of concepts used in {rhosio} and in related documentation.
 
-Areas:: Use Areas to organize Work Items to distinguish between different types or functionalities that are being worked on within a Collaboration Space.
+Areas:: Use Areas to organize Work Items to distinguish between different types or functionalities that are being worked on within a Space.
 
 Backlog:: A Backlog is a list of Work Items that have not been triaged and assigned to a specific Iteration.
 
-Collaboration Space:: Spaces are the equivalent of projects. Each Iteration and Work Item must be attached to a Space, and a team of people can be attached to a project (Space) in various roles. By default, a Space contains at least one Area and one Iteration.
+Space:: A Space is the equivalent of a project. Each Iteration and Work Item must be attached to a Space, and a team of people can be attached to a Space in various roles. By default, a Space contains at least one Area and one Iteration.
 
 Iteration:: Iterations are used to organize Work Items for planning or implementation in a certain order. They are time bound and can be used to model Sprints when used with Scrum. Typically an Iteration comprises a mix of work items, ranging from Scenarios, Features, Papercuts, Experiences or Tasks, identified to be executed within the time frame of the Iteration.
 
@@ -15,16 +15,18 @@ Pipeline:: Pipelines are a continuous delivery system that, at each step, tests 
 
 Scenario-Driven Planning:: A software development methodology focused on real-world problems, or Scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular Value Propositions and are realized through Experiences.
 
-Work Item:: Work Items describe and keep track of work that needs to be done. A user can be assigned to a Work Item. Each Work Item must be attached to a Collaboration Space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
+Work Item:: Work Items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a Space. Each Work Item must be attached to a Space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
 
 Usage Outliers:: Components of your software stack that are not commonly used in similar open source stacks or that rarely go together.
 
 Security Issues:: {osio} analyzes the CVEs of all your components and flags components that have security vulnerabilities.
 
-License outliers:: Licenses in your stack that are not commonly used in similar stacks or that rarely go together.
+License Outliers:: Licenses in your stack that are not commonly used in similar stacks or that rarely go together.
 
 Alternate Components:: Components recommended by {osio} to replace license or usage outliers.
 
-Unknown licenses:: Licenses unknown to {osio}.
+Unknown Licenses:: Licenses unknown to {osio}.
 
-License conflicts:: Licenses that conflict at the stack or component level.
+License Conflicts:: Licenses that conflict at the stack or component level.
+
+Workspace:: Workspaces are fully configured web-based development environments suitable for your code and runtime needs. They are runtime environments where you can modify, test, debug, or run your code.
