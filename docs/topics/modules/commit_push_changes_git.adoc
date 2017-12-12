@@ -1,5 +1,5 @@
 [id="commit_push_changes_git-{context}"]
-= Commit and push changes to GitHub
+= Committing and pushing changes to GitHub
 
 After making the required changes, commit and push the changes to your project GitHub repository:
 
