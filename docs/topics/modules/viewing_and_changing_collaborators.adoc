@@ -1,4 +1,4 @@
-[id="view_change_collaborators"]
+[id="viewing_and_changing_collaborators"]
 = Viewing and changing collaborators
 
 After adding collaborators, you can view their details or remove them from your space.

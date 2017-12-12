@@ -5,6 +5,6 @@ include::modules/about_collaborators.adoc[leveloffset=+1]
 
 include::modules/adding_collaborators.adoc[leveloffset=+1]
 
-include::modules/view_change_collaborators.adoc[leveloffset=+1]
+include::modules/viewing_and_changing_collaborators.adoc[leveloffset=+1]
 
 include::modules/assigning_a_collaborator.adoc[leveloffset=+1]
