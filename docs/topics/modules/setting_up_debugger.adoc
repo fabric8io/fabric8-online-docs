@@ -1,5 +1,5 @@
-[id="setup_debugger"]
-= Set up the debugger
+[id="setting_up_debugger"]
+= Setting up the debugger
 
 To debug your project code using the Che workspace Debugger feature:
 

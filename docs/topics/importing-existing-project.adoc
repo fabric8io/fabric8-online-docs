@@ -9,7 +9,7 @@ include::modules/forking_repository.adoc[leveloffset=+1]
 
 include::modules/creating_new_space.adoc[leveloffset=+1]
 
-include::modules/import_project.adoc[leveloffset=+1]
+include::modules/importing_your_project.adoc[leveloffset=+1]
 
 include::modules/create_che_workspace.adoc[leveloffset=+1]
 
@@ -17,6 +17,6 @@ include::modules/prerequisites_che_workspace.adoc[leveloffset=+1]
 
 include::modules/changing_project_code.adoc[leveloffset=+1]
 
-include::modules/commit_push_changes_git.adoc[leveloffset=+1]
+include::modules/commiting_pushing_changes_git.adoc[leveloffset=+1]
 
-include::modules/review_publish_changes.adoc[leveloffset=+1]
+include::modules/reviewing_publishing_changes.adoc[leveloffset=+1]

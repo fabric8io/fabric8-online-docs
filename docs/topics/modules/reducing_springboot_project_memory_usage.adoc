@@ -1,9 +1,9 @@
-[id="reduce_springboot_memory_usage"]
-= Reduce Spring Boot project memory usage
+[id="reducing_springboot_project_memory_usage"]
+= Reducing Spring Boot project memory usage
 
 Your OpenShift Online account must now share resources with two quickstart projects: the Hello World Vert.x project and the new Spring Boot HTTP project. 
 
-If you did not optimize memory usage for the Vert.X quickstart project earlier, use the instructions in <<reduce_hello_world_memory_usage>> now. To optimize memory for the Spring Boot HTTP quickstart:
+If you did not optimize memory usage for the Vert.X quickstart project earlier, use the instructions in <<reducing_hello_world_memory_usage>> now. To optimize memory for the Spring Boot HTTP quickstart:
 
 . In your Che workspace, expand the `src` > `main` > `fabric8` folders.
 +
