@@ -3,27 +3,30 @@
 
 To debug your project code using the Che workspace Debugger feature:
 
-. In the `Debug` drop down menu, select the `debug` option.
+. Click the `debug` option from the Debug drop-down.
 +
 image::debug_button.png[Debugger Button]
 +
+
 . In the new `debug` tab, look for the following lines when the debugging starts:
 +
-====
+----
 [INFO] The application will wait for a debugger to attach on debugPort 5005
 
 [INFO] Launching Vert.x Application
 
 [INFO] Listening for transport dt_socket at address: 5005
-====
+----
 +
-. When the debug process completes, click btn:[Run] from the menu at the top of the page and select `Edit Debug Configurations`.
+
+. When the debug process completes, click *Run* from the menu at the top of the page and select `Edit Debug Configurations`.
 +
 image::edit_debug_config.png[Edit Debug Configuration]
 +
+
 . In the `Debug Configurations` dialog box:
 .. Click btn:[+] for the `JAVA` item in the dialog box to add a Remote Java port.
-.. Change the `Port` value to *5050*.
+.. Change the `Port` value to *5005*.
 .. Click btn:[Save] and then btn:[Close].
 +
 image::debug_config.png[Debugger Configuration Dialog]
@@ -31,19 +34,23 @@ image::debug_config.png[Debugger Configuration Dialog]
 . To create a new breakpoint for your method:
 .. In the `HttpApplication.java` file, find the following line of code:
 +
-```java
+[source,java]
+----
     if (name == null) {
-```
+----
 +
-. Click the line number for this line of code:
+
+.. Click the line number for this line of code:
 +
 image::breakpoint.png[Create Breakpoint]
 +
+
 . Click the `Debug` option at the bottom of the workspace:
 +
 image::debug_option.png[Debug Option]
 +
-. The `Breakpoints` pane at the bottom right side of the workspace displays the added breakpoint:
+
+. The `Breakpoints` pane at the lower left of the *Debug* section displays the added breakpoint:
 +
 image::debug_breakpoint.png[Breakpoint View]
 
