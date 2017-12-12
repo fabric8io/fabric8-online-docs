@@ -1,4 +1,4 @@
-[id="import_project"]
+[id="importing_your_project"]
 = Importing your project
 
 After creating a Space, the `How would you like to get started?` menu appears. Access this menu later by clicking btn:[Add to space] in your Space dashboard.

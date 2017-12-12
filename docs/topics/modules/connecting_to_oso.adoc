@@ -1,4 +1,4 @@
-[id="connect_os"]
+[id="connecting_to_oso"]
 = Connecting {osio} to OpenShift Online and GitHub
 
 You will receive a welcome email when your request to join Red Hat's {osio} Developer Preview is accepted. When you receive this email, use the following steps to set up {osio}:

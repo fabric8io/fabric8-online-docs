@@ -1,4 +1,4 @@
-[id="review_publish_changes-{context}"]
+[id="reviewing_publishing_changes-{context}"]
 = Reviewing and publishing your changes
 
 The Git commit triggers a pipeline build in {osio}. To view the build:

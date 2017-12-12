@@ -1,7 +1,7 @@
-[id="confirm_che_jenkins_status"]
+[id="confirming_che_jenkins_status"]
 = Confirming Che and Jenkins status
 
-After <<connect_os>>, you must ensure that the Che and Jenkins tenant services are provisioned. This process requires several minutes after completing the following steps:
+After <<connecting_to_oso>>, you must ensure that the Che and Jenkins tenant services are provisioned. This process requires several minutes after completing the following steps:
 
 . To check the Che and Jenkins status, click the check mark icon (image:check_icon.png[title="Check Icon"]) at the upper-right of the page.
 
