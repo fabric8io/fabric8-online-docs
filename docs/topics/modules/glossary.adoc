@@ -3,11 +3,11 @@
 
 This glossary provides concise definitions of terms and explanations of concepts used in {rhosio} and in related documentation.
 
-Areas:: Use Areas to organize Work Items to distinguish between different types or functionalities that are being worked on within a Space.
+Areas:: Use Areas to organize Work Items to distinguish between different types or functionalities that are being worked on within a space.
 
 Backlog:: A Backlog is a list of Work Items that have not been triaged and assigned to a specific Iteration.
 
-Space:: A Space is the equivalent of a project. Each Iteration and Work Item must be attached to a Space, and a team of people can be attached to a Space in various roles. By default, a Space contains at least one Area and one Iteration.
+space:: A space is the equivalent of a project. Each Iteration and Work Item must be attached to a space, and a team of people can be attached to a space in various roles. By default, a space contains at least one Area and one Iteration.
 
 Iteration:: Iterations are used to organize Work Items for planning or implementation in a certain order. They are time bound and can be used to model Sprints when used with Scrum. Typically an Iteration comprises a mix of work items, ranging from Scenarios, Features, Papercuts, Experiences or Tasks, identified to be executed within the time frame of the Iteration.
 
@@ -15,7 +15,7 @@ Pipeline:: Pipelines are a continuous delivery system that, at each step, tests 
 
 Scenario-Driven Planning:: A software development methodology focused on real-world problems, or Scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular Value Propositions and are realized through Experiences.
 
-Work Item:: Work Items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a Space. Each Work Item must be attached to a Space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
+Work Item:: Work Items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each Work Item must be attached to a space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
 
 Usage Outliers:: Components of your software stack that are not commonly used in similar open source stacks or that rarely go together.
 

@@ -3,7 +3,7 @@
 
 The detailed method requires adding more details for the Work Item compared to the quick-add method, which only requires basic information to create the Work Item.
 
-. Click btn:[Analyze] to view the Space dashboard.
+. Click btn:[Analyze] to view the space dashboard.
 
 . In the `My Work Items` panel, click btn:[+].
 

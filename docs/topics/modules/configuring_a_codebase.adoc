@@ -1,11 +1,11 @@
 [id="configuring_a_codebase"]
 = Configuring a codebase
 
-After creating a Space, you can add a codebase from GitHub and set up a pipeline to build the code.
+After creating a space, you can add a codebase from GitHub and set up a pipeline to build the code.
 
 .Prerequisites
 
-* Create a Space. See <<creating_a_new_space>> for instructions.
+* Create a space. See <<creating_a_new_space>> for instructions.
 
 .Procedure
 
@@ -13,7 +13,7 @@ After creating a Space, you can add a codebase from GitHub and set up a pipeline
 
 . The *Codebases* section displays the following options:
 
- * If you already have codebases in your Space, they are listed and you can use the btn:[+] icon at the upper-right of the section to import more codebases.
+ * If you already have codebases in your space, they are listed and you can use the btn:[+] icon at the upper-right of the section to import more codebases.
 
  * If there are no codebases in your space, you can:
 

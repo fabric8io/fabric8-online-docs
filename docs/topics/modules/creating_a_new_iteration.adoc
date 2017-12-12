@@ -1,11 +1,11 @@
 [id="creating_a_new_iteration"]
-= Creating a New Iteration
+= Creating a new iteration
 
-Add Iterations to your Collaboration Space to plan and organize your Work Items. Click btn:[Plan] to view and modify existing Iterations and to add new Iterations.
+Add iterations to your space to plan and organize your Work Items. Click btn:[Plan] to view and modify existing Iterations and to add new Iterations.
 
 .Prerequisites
 
-* Ensure you have <<creating_a_new_space,created a Collaboration Space>>.
+* Ensure you have <<creating_a_new_space,created a space>>.
 
 .Procedure
 

@@ -3,12 +3,12 @@
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-When you create a new Space, the `How would you like to get started?` dialog box opens. Use this menu to create a new Quickstart project as follows:
+When you create a new space, the `How would you like to get started?` dialog box opens. Use this menu to create a new Quickstart project as follows:
 endif::[]
 
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-You will now learn how to create a second quickstart project in your Space. The Hello World project was a Vert.X application and the second quickstart is a Spring Boot application.
+You will now learn how to create a second quickstart project in your space. The Hello World project was a Vert.X application and the second quickstart is a Spring Boot application.
 
 . In your {osio} home page, double-click your new space.
 . In the dashboard of your space, click btn:[Add to space]. The `How would you like to get started?` dialog box opens.
@@ -43,17 +43,17 @@ endif::[]
 NOTE: Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment.
 +
 
-.. The `Build Config` screen displays the details for your `Jenkins Space` and options for adding continuous integration hooks and triggering a build when your application is deployed. Use the default options for these fields and click btn:[Finish].
+.. The `Build Config` screen displays the details for your `Jenkins space` and options for adding continuous integration hooks and triggering a build when your application is deployed. Use the default options for these fields and click btn:[Finish].
 .. The `Summary` screen displays your selected options. Click btn:[Ok] to continue.
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-Your new Vert.X project is now created in your Space.
+Your new Vert.X project is now created in your space.
 endif::[]
 
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-Your new Spring Boot project is now created in your Space.
+Your new Spring Boot project is now created in your space.
 endif::[]
 
 // end conditionals

@@ -3,8 +3,8 @@
 
 If you followed the instructions in this document, you have now learned about {osio} and its features. You are now able to:
 
-* Create Spaces for your projects. See <<creating_new_space-hello-world>> for instructions.
-* Add code from an existing project to your Space. See <<importing-existing-project>> for instructions.
+* Create spaces for your projects. See <<creating_new_space-hello-world>> for instructions.
+* Add code from an existing project to your space. See <<importing-existing-project>> for instructions.
 * Create new projects using the quickstart wizards and test them. See <<hello_world_developers>> for Vert.X project instructions and <<spring_boot_quickstart_tutorial>> for Spring Boot project instructions.
 * Create Work Items to track and manage your tasks. See <<creating_using_new_work_item>> for instructions.
 * Use the build pipelines to stage reviews in the `Stage` and `Run` environments. See <<working_with_pipelines>> for instructions.

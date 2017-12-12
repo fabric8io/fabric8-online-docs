@@ -9,7 +9,7 @@ Advanced users can change the settings for their project pipeline builds in Open
 
 .Procedure
 
-. Navigate to your Space dashboard.
+. Navigate to your space dashboard.
 . Click btn:[Create].
 . Click btn:[Pipelines]. The `Pipelines` page lists all the pipeline builds for your project.
 . Click btn:[Edit Pipeline] for the target pipeline build.

@@ -5,7 +5,7 @@ Before creating a workspace for your project, stop the workspace for your previo
 
 Review the workspaces in your OpenShift Online account as follows:
 
-. In your Space's dashboard, click btn:[Create].
+. In your the dashboard of your space, click btn:[Create].
 . In the `Codebases` view, click btn:[Open] for the older project's workspace. Allow several minutes for the project to load.
 +
 image::codebase_list.png[List of Codebases]

@@ -4,7 +4,7 @@
 After logging in and selecting the appropriate space, click btn:[Plan] to view the Iterations for that space. Existing Iterations are grouped into one of the following categories:
 
 * _Active Iteration_ lists active Iterations.
-* _All Iterations_ displays a list of all Iterations in the Space. These include active and closed Iterations, as well as Iterations that have not yet started.
+* _All Iterations_ displays a list of all Iterations in the space. These include active and closed Iterations, as well as Iterations that have not yet started.
 
 Select an Iteration listed in one of these groups to display the included Work Items. See <<associating_work_items_with_an_iteration,Associating Work Items with an Iteration>> for more information.
 

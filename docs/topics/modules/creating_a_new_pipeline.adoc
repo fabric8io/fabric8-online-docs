@@ -1,15 +1,15 @@
 [id="creating_a_new_pipeline"]
-= Creating a New Pipeline
+= Creating a new pipeline
 
-To create a new pipeline for your Collaboration Space, you must add a new project to the Space. {osio} includes templates to add new projects to your Space.
+To create a new pipeline for your space, you must add a new project to the space. {osio} includes templates to add new projects to your space.
 
 .Prerequisites
 
-* Ensure that you have created a Collaboration Space to use for the pipeline. See <<creating_a_new_space>> for instructions.
+* Ensure that you have created a space to use for the pipeline. See <<creating_a_new_space>> for instructions.
 
 .Procedure
 
-. Click the name of a Space to view the dashboard.
+. Click the name of a space to view the dashboard.
 
 . Click btn:[Add to space]. The `How would you like to get started?` menu appears for your new space.
 +
@@ -25,7 +25,7 @@ image::get_started_menu.png[How would you like to get started menu]
 
 . Select a build pipeline strategy. For this example, use the default value (`Release, Stage, Approve and Promote`) and click btn:[Next].
 
-. The `Build configuration` screen displays the details for your `Jenkins Space` and options for web hooks and triggering builds. Use the default options for these fields and click btn:[Finish].
+. The `Build configuration` screen displays the details for your `Jenkins space` and options for web hooks and triggering builds. Use the default options for these fields and click btn:[Finish].
 
 You have now added a Quickstart project to your space, which initiates a build pipeline for your new project. At this stage, {osio} also adds your project pipeline into your OpenShift Online account and creates a new GitHub repository for your project.
 
