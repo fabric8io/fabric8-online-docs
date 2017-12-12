@@ -1,7 +1,7 @@
 [id="creating_a_new_space"]
 = Creating a new space
 
-To start working with a new project, create a new Space. Each Space includes a team of users in assigned roles as well as unique <<about_work_items,Work Items>> and <<about_iterations,Iterations>> used to manage the new project.
+To start working with a new project, create a new space. Each space includes a team of users in assigned roles as well as unique <<about_work_items,Work Items>> and <<about_iterations,Iterations>> used to manage the new project.
 
 .Prerequisites
 
@@ -11,8 +11,8 @@ To start working with a new project, create a new Space. Each Space includes a t
 
 . On your {osio-link} home page, click your user name in the upper-left corner of the screen.
 . Select *Create space* from the drop-down menu.
-. In the *Name* field, add a unique name for the new Space.
-. From the *Template* drop-down list, select *Scenario Driven Planning*. This template creates Spaces based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.
+. In the *Name* field, add a unique name for the new space.
+. From the *Template* drop-down list, select *Scenario Driven Planning*. This template creates spaces based on Scenarios, which are real-world problems from the user's point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.
 //. Select a *Template* type from the drop-down menu. The available options are:
 //.. *Agile* - Your space is centered around Agile-based planning.
 //.. *Scrum* - Your space includes an iterative and incremental Agile-based development framework. This option is similar to the **Agile** option but with more specific planning and development tracking.
@@ -25,6 +25,6 @@ To start working with a new project, create a new Space. Each Space includes a t
 
 * *<<creating_a_new_quickstart_project,Create a new Quickstart project>>*: Use wizards to automatically set up your development environment and quickly create projects by using the desired tools.
 
-* btn:[No thanks, take me to the new space dashboard]: Go to your new Space dashboard to begin working in the space.
+* btn:[No thanks, take me to the new space dashboard]: Go to your new space dashboard to begin working in the space.
 +
-image::new_space_dialog.png[New Space Dialog Box]
+image::new_space_dialog.png[New space dialog box]

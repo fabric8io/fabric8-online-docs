@@ -1,7 +1,7 @@
 [id="creating_using_new_work_item"]
 = Creating and using a new work item
 
-After creating a project in your Space, create a Work Item and use it to track your changes to the project code.
+After creating a project in your space, create a Work Item and use it to track your changes to the project code.
 
 . On the top of the {osio} page, click `Plan`.
 . If you have not already activated the Experimental Features of {osio}, the `Experimental Features` warning appears. Check `I agree to the terms of this feature, as written above` and click btn:[Activate All Experimental Features] to proceed.

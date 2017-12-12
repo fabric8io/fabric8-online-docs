@@ -7,7 +7,7 @@ The build pipeline includes steps for a `Stage` build and a `Run` build. `Stage`
 
 To stage your application and review on `Stage`:
 
-. From your Space's dashboard, click btn:[Create] from the options at the top of the screen.
+. From your dashboard of your space, click btn:[Create] from the options at the top of the screen.
 . Click btn:[Pipelines].
 . Click the icon (image:rollout_icon.png[title="Rollout"]) next to `Rollout to Stage` in the displayed pipeline. OpenShift Online provides this public URL to access the staged Quickstart application. The Vert.x HTTP Booster Quickstart produces a simple API behind a REST endpoint over HTTP with a minimalist user interface.
 +

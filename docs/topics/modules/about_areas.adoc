@@ -1,8 +1,8 @@
 [id="about_areas"]
-= About Areas
+= About areas
 
-*Areas* can organize related <<about_work_items,Work Items>> into groups to distinguish between different types or functionalities that are worked on within a <<about_collaboration_spaces,Collaboration Space>>.
+*Areas* can organize related <<about_work_items,Work Items>> into groups to distinguish between different types or functionalities that are worked on within a <<about_collaboration_spaces,space>>.
 
-A Space can also include Areas. As an example, your Collaboration Space represents your software project, and each Area tracks components attached to the Space.
+A space can also include areas. As an example, your space represents your software project, and each area tracks components attached to the space.
 
-Each Area can have child Areas which represent the sub-components for your software project.
+Each area can have child areas which represent the sub-components for your software project.

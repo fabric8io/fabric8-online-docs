@@ -3,7 +3,7 @@
 
 To associate a Work Item with an Iteration:
 
-. Click btn:[Plan] to see the Planner for your Space.
+. Click btn:[Plan] to see the Planner for your space.
 
 . Click the icon (image:kabob_white.png[title="Options"]) adjoining the Work Item.
 

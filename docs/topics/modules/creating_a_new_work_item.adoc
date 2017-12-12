@@ -1,11 +1,11 @@
 [id="creating_a_new_work_item"]
-= Creating a New Work Item
+= Creating a new Work Item
 
-You can add <<about_work_items,Work Items>> to your Collaboration Space in one of several ways.
+You can add <<about_work_items,Work Items>> to your space in one of several ways.
 
 .Prerequisites
 
-* <<creating_a_new_space,Create a new Collaboration Space>> or select an existing Collaboration Space.
+* <<creating_a_new_space,Create a new space>> or select an existing space.
 
 include::quick_add_work_item.adoc[leveloffset=+1]
 

@@ -5,7 +5,7 @@ The Product Management team envisages Scenarios, identifies Fundamental and Pape
 
 You can create Scenario, Fundamental, or Papercut type of Work Items and associated child Value Propositions and Experiences as follows:
 
-. Click btn:[Plan] at the top of the page to view the Planner. The default *Backlog* view with *All* the Work Items in the Space is displayed.
+. Click btn:[Plan] at the top of the page to view the Planner. The default *Backlog* view with *All* the Work Items in the space is displayed.
 . Click btn:[Portfolio], and then btn:[Create work item] from the pane at the bottom of the screen to create a new work item.
 +
 NOTE: You can create only Portfolio type work items such as Scenario, Fundamental, and Papercuts.

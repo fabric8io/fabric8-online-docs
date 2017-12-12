@@ -10,7 +10,7 @@ Use the {osio} *Application wizard* to import an existing project codebase into 
 .. Select a build pipeline strategy. The default value *Release, Stage, Approve and Promote* is suitable for most use cases.
 .. Ensure that the *Override Jenkins and POM files* option is selected
 . Click btn:[Next].
-. In the *Build configuration* section the *Jenkins Space* field displays the name of your Jenkins space.
+. In the *Build configuration* section the *Jenkins space* field displays the name of your Jenkins space.
 
 .. Select *Trigger build* to trigger a build once your Application is deployed.
 .. Select *Add continuous integration web hooks* to add continuous integration web hooks to your Application.

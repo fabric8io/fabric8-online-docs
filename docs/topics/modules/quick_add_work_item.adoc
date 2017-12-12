@@ -1,9 +1,9 @@
 [id="quick_add_work_item"]
 = Quick-Add a New Work Item
 
-You can use the quick-add method as an instant widget to add Work Items to your Collaboration Space:
+You can use the quick-add method as an instant widget to add Work Items to your space:
 
-. Click btn:[Plan] to view the `Planner` for your Space.
+. Click btn:[Plan] to view the `Planner` for your space.
 
 * Either use the default `Backlog` view:
 .. Click btn:[Create Work Item] at the bottom of the page.

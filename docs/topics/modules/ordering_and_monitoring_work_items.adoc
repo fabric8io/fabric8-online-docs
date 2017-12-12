@@ -5,7 +5,7 @@ The `Backlog` displays a list view used to plan your work. You can order Work It
 
 The `Backlog` displays the list of Work Items as a list where all the Work Items display in a single file.
 
-Click btn:[Plan] to view the Planner. You can order the Work Items in your Space as follows:
+Click btn:[Plan] to view the Planner. You can order the Work Items in your space as follows:
 
 * In the btn:[Backlog] view, drag and drop a selected Work Item to reorder them. Alternatively, select btn:[Move to Top] or btn:[Move to Bottom] from the options (image:kabob_white.png[title="Options"]) menu.
 

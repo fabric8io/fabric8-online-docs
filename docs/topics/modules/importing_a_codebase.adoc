@@ -4,10 +4,10 @@
 Use the *Import Codebase* option to manually add the details for your existing codebase into {osio}.
 
 . Click btn:[Import Codebase].
-. If required, in the *Space Path* field, change the path to your Space.
+. If required, in the *Space Path* field, change the path to your space.
 . In the *GitHub Repository* field, add the GitHub repository path.
 . Click btn:[Sync] to retrieve details for the repository. If the sync is successful, metadata for the added repository is displayed under the btn:[Sync] button.
-. Click btn:[Associate Repository to Space] to add the repository to your Space. The menu:Create[Codebases] sub-tab now displays your repository with information about when it was created and the last commit date.
+. Click btn:[Associate Repository to Space] to add the repository to your space. The menu:Create[Codebases] sub-tab now displays your repository with information about when it was created and the last commit date.
 . Click *Create workspace* for the target repository from the displayed list. A success message appears when the Workspace is successfully created in Eclipse Che.
 . When your Workspace is ready, in the drop-down list, select the new Workspace for your repository, and then click btn:[Open].
 +

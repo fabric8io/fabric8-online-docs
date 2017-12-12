@@ -3,7 +3,7 @@
 
 After reviewing your pipeline build running in {osio} and OpenShift Online, view your project <<about_codebases,codebase>> in GitHub as follows:
 
-. Return to your Space dashboard.
+. Return to your space dashboard.
 . In the `Codebases` panel, click the GitHub link to the project code.
 +
 image::gh_link.png[GitHub Code Link]

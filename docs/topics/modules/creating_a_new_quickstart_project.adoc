@@ -11,6 +11,6 @@ Use the {osio} Quickstart project wizard to create a new project from the availa
 . Click btn:[Next].
 . In the *Configure Pipeline* section, select a build pipeline strategy. The default value *Release, Stage, Approve and Promote* is suitable for most use cases.
 . Click btn:[Next].
-. The *Build configuration* section displays the name of your *Jenkins Space* and options to *Trigger build* and *Add continuous integration web hooks* when your application is deployed.
+. The *Build configuration* section displays the name of your *Jenkins space* and options to *Trigger build* and *Add continuous integration web hooks* when your application is deployed.
 Use the default options for these fields and click btn:[Finish].
 . The *Summary* section displays your selected options for the Application. Click btn:[Ok] to continue.

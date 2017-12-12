@@ -5,10 +5,10 @@ You can remove an Iteration from a Work Item without selecting a replacement. Th
 
 To move a Work Item to the Backlog:
 
-. Click btn:[Plan] to see the Planner for your Space.
+. Click btn:[Plan] to see the Planner for your space.
 
 . Click the icon (image:kabob_white.png[title="Options"]) adjoining the Work Item.
 
 . From the displayed options, select btn:[Move to Backlog].
 
-Select btn:[Backlog] to display all the Work Items within a Space.
+Select btn:[Backlog] to display all the Work Items within a space.
