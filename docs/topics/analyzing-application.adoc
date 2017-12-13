@@ -5,6 +5,8 @@
 
 include::modules/analyze_che_dependencies.adoc[leveloffset=+1]
 
+include::modules/accessing_stack_reports.adoc[leveloffset=+1]
+
 include::modules/using_stack_reports.adoc[leveloffset=+1]
 
 include::modules/viewing_project_github.adoc[leveloffset=+1]

@@ -1,0 +1,15 @@
+[id="accessing_stack_reports"]
+= Accessing stack reports
+
+{osio} analytics stack report helps you make informed choices with respect to your development stack and its component libraries. It analyzes your stack and recommends alternate and additional components to improve your application.
+
+The stack report is available after the first pipeline build completes.
+
+. Return to your space dashboard in the {osio} browser tab.
+. The *Stack Report Recommendations* panel in the dashboard shows a summary of the stack report.
++
+image::stack_reports.png[Stack Reports]
++
+. Click *Show complete stack report* at the bottom of this panel to view the complete report.
++
+image::full_stack_reports.png[Full Stack Report]

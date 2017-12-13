@@ -12,6 +12,6 @@ A new browser tab displays your project code in GitHub.
 +
 image::proj_gh.png[Project Code in GitHub]
 +
-. Click *Jenkinsfile* to view the details for the pipeline's staging and rollout.
+. Click *Jenkinsfile* to view the details for the staging and rollout of the pipelines.
 
 Use this link to review code commits and details in your GitHub repository.

@@ -3,7 +3,7 @@
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-When you create a new space, the `How would you like to get started?` dialog box opens. Use this menu to create a new Quickstart project as follows:
+When you create a new space, the *How would you like to get started?* dialog box opens. Use this menu to create a new Quickstart project as follows:
 endif::[]
 
 // for spring-boot
