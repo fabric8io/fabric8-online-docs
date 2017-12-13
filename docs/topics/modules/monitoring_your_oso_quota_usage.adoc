@@ -1,64 +1,16 @@
 [id="monitoring_your_oso_quota_usage"]
 = Monitoring your OpenShift Online quota usage
 
-Monitor your OpenShift Online account's quota usage using the OpenShift CLI (oc) tool:
+After <<reducing_hello_world_memory_usage,optimizing the memory usage>> and committing and pushing your changes, view your memory quota details and compare with the earlier output.
 
-. Navigate to https://console.starter-us-east-2.openshift.com/console/ in your browser.
-. In the OpenShift Console, click the btn:[?] icon and select btn:[Command Line Tools] from the displayed options.
-+
-image::cl_tools.png[Command Line Tools]
-+
-. Use the instructions and download links from the `Command Line Tools` page for your operating system and install oc tools.
-. In your computer's terminal (not the `Terminal` tab for your workspace), run the following command and enter your OpenShift Online login credentials when prompted.
-+
-```cli
-oc login https://console.starter-us-east-2.openshift.com/
-```
-+
-When logged in, the terminal displays a list of your OpenShift Online projects:
-+
-image::login_octools.png[Log In OC Tools]
-+
-. Use the following command during and after using the new pod in OpenShift to monitor and compare resource usage:
-+
-```cli
-oc get quota compute-resources -o yaml -n USERNAME-stage
-```
-+
-An example of the output for this command is as follows:
-+
-```cli
-status:
-  hard:
-    limits.cpu: "2"
-    limits.memory: 1Gi
-  used:
-    limits.cpu: "1"
-    limits.memory: 512Mi
-```
-+
-. Follow the instructions in <<reducing_hello_world_memory_usage>> and then resume the next steps here. This allows you to view your memory quota details before and after optimizing the memory usage and compare the two results.
-. Click btn:[Create] and then btn:[Pipelines] to view the new pipeline build. Committing and pushing your new yaml file triggers a new pipeline build for your {osio} project. Proceed to the next step when the pipeline build rolls out to `Stage`:
+. Click btn:[Create] and then btn:[Pipelines] to view the new pipeline build. Committing and pushing your new YAML file triggers a new pipeline build for your {osio} project. Allow several minutes for the pipeline build to roll out to `Stage`:
 +
 image::rollout_to_stage.png[Rollout To Stage]
 +
-. In your terminal window, use the same command again to see the change in memory usage:
+. In the OpenShift Online console browser tab, refresh the <<reviewing_resource_information_gui,*Details*>> page to see the optimized memory usage for your Hello World project:
 +
-```cli
-oc get quota compute-resources -o yaml -n USERNAME-stage
-```
-+
-An example of the output for this command after committing the yaml file is as follows:
-+
-```cli
-status:
-  hard:
-    limits.cpu: "2"
-    limits.memory: 1Gi
-  used:
-    limits.cpu: 488m
-    limits.memory: 250Mi
+image::optimize_memory.png[Optimizing HW Memory Usage]
 
-```
+. <<approving_build_pipeline,Promote the application>> to the `Run` environment.
 
-Optimizing memory usage is important when creating more than one project in {osio}. Each additional project requires an additional share of your OpenShift Online resources. For the OpenShift Online Free Tier, see <<cleaning_up_oso_account>> to reset your OpenShift Online and {osio} accounts after creating two projects.
+In case you still fall short of resources and memory in the OpenShift Online Free Tier, see <<cleaning_up_oso_account>> to reset your OpenShift Online and {osio} accounts.
