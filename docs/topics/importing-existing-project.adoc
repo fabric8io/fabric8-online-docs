@@ -5,15 +5,15 @@
 
 This section contains instructions for adding an existing project to {osio} instead of creating a new project using quickstarts.
 
-include::modules/forking_repository.adoc[leveloffset=+1]
+include::modules/forking_example_repository.adoc[leveloffset=+1]
 
 include::modules/creating_new_space.adoc[leveloffset=+1]
 
 include::modules/importing_your_project.adoc[leveloffset=+1]
 
-include::modules/create_che_workspace.adoc[leveloffset=+1]
+include::modules/creating_che_workspace.adoc[leveloffset=+1]
 
-include::modules/prerequisites_che_workspace.adoc[leveloffset=+1]
+include::modules/configuring_your_che_workspace.adoc[leveloffset=+1]
 
 include::modules/changing_project_code.adoc[leveloffset=+1]
 
