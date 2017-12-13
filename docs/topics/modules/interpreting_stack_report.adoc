@@ -1,5 +1,5 @@
 [id="interpreting_stack_report"]
-= Interpreting your Stack Report
+= Interpreting your stack report
 
 The {osio} analytics report comprises three components:
 
