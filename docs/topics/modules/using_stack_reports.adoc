@@ -1,5 +1,5 @@
 [id="using_stack_reports"]
-= Using Stack Report
+= Using stack report
 
 The stack report provides you with data about your stack and its components and provides recommendations based on its analysis of your stack. It enables you to assess the credibility of your components and enhance your stack.
 
