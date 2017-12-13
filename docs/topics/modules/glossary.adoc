@@ -1,4 +1,5 @@
 [glossary]
+[id="glossary"]
 = Glossary
 
 This glossary provides concise definitions of terms and explanations of concepts used in {rhosio} and in related documentation.

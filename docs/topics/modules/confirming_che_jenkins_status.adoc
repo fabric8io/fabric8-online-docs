@@ -26,7 +26,7 @@ Use the following files to see the most recent versions of these services and co
 
 . If you see a version mismatch between that displayed on {osio} and the latest version in the above links, or if the status for one or both of the services is red (see screen capture), update your tenant services as follows:
 +
-image::tenant_error.png[Tenant Status Error]
+image::tenant_error.png[Tenant Status Error,257]
 +
 .. On your {osio} home page, click your name on the top right corner of the screen.
 .. In the drop down options, click btn:[Profile].
