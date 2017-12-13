@@ -6,6 +6,7 @@ SCRIPT_SRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P )"
 DOCS_SRC="$( dirname $SCRIPT_SRC )/docs"
 XML_SCHEMA="$SCRIPT_SRC/xml-schema/docbook.xsd"
 
+if [ -f /.dockerenv ]; then export TERM=xterm; fi
 RED="$(tput setaf 1)"
 GRN="$(tput setaf 2)"
 NOC="$(tput sgr0)"
