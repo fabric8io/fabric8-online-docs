@@ -1,4 +1,4 @@
-[id="prereqs"]
+[id="prerequsites"]
 = Prerequisites
 
 *Browser Requirements:*
@@ -9,3 +9,7 @@ Currently, only Google Chrome can be used with {osio}. Additional browsers will 
 
 . Ensure that you have a GitHub account.
 . Register to join the {osio} developer preview at link:https://openshift.io/[https://openshift.io/].
+
+include::connecting_to_oso.adoc[leveloffset=+1]
+
+include::confirming_che_jenkins_status.adoc[leveloffset=+1]
