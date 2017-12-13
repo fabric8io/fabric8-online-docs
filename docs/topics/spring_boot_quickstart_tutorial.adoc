@@ -7,7 +7,7 @@ include::modules/creating_new_project.adoc[leveloffset=+1]
 
 include::modules/stopping_existing_workspaces.adoc[leveloffset=+1]
 
-include::modules/create_che_workspace.adoc[leveloffset=+1]
+include::modules/creating_che_workspace.adoc[leveloffset=+1]
 
 include::modules/using_workspace_spring_boot_project.adoc[leveloffset=+1]
 

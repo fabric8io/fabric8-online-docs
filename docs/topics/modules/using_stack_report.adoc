@@ -8,7 +8,7 @@
 
 .Prerequisite
 
-Ensure that you use  link:e2e_workshop.html#create_che_workspace-hello-world[Che workspace] to develop an application.
+Ensure that you use link:e2e_workshop.html#creating_che_workspace-hello-world[Che workspace] to develop an application.
 
 .Procedure
 
