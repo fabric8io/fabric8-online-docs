@@ -24,7 +24,7 @@ image::pomxml.png[Pom.xml File]
 +
 image::red_x.png[Error Icon]
 +
-The error indicates that the dependency analyzer has identified a high Common Vulnerabilities and Exposures (CVE) issue  associated with the current version, 1.1.0. It also recommends using, an alternate, secure version, 1.2.1, instead to fix the issue.
+The error indicates that the dependency analyzer has identified a high Common Vulnerabilities and Exposures (CVE) score associated with the current version, 1.1.0. It also recommends using an alternate, secure version, 1.2.1, instead to fix the issue.
 
 . Update the version to `1.2.1`. The error icon disappears when the version number is updated.
 
