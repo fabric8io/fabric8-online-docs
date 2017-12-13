@@ -7,7 +7,7 @@ In addition to creating projects based on quickstarts, you can also add another 
 [discrete]
 == Prerequisites
 
-Reset your {osio} environment by following instructions in <<cleaning_up_oso_account>>.
+Reset your {osio} environment by following instructions in <<cleaning_oso_account>>.
 
 
 [discrete]

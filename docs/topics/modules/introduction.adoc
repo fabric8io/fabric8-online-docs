@@ -19,6 +19,6 @@ For us, an important aspect of the Early Access Program is to get feedback from 
 [id="resetting-your-environment"]
 == Resetting your environment
 
-If your {osio} environment is in a state where you find it difficult or impossible to move forward, refer to <<cleaning_up_oso_account, Cleaning up>> for instructions to reset your {osio} environment.
+If your {osio} environment is in a state where you find it difficult or impossible to move forward, see <<cleaning_oso_account>> for instructions on how to reset your environment.
 
 Welcome to the world of {osio}. We hope you enjoy your experience and look forward to hearing your feedback!
