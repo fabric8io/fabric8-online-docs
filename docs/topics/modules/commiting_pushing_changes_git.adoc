@@ -1,9 +1,13 @@
 [id="commiting_pushing_changes_git-{context}"]
 = Committing and pushing changes to GitHub
 
-After making the required changes, commit and push the changes to your project GitHub repository:
+After making the required changes to your code, commit and push the modifications to your project GitHub repository.
 
-IMPORTANT: Before committing your changes, ensure that your project pipeline build has completed (that is, the build has been promoted and is at the `Rollout to Run` stage). See <<approving_build_pipeline>> for instructions.
+IMPORTANT: Before committing your changes, ensure that your project pipeline build has completed (that is, the build has been promoted and is at the *Rollout to Run* stage). See <<approving_build_pipeline>> for instructions.
+
+
+[discrete]
+== Procedure
 
 . In the workspace browser tab, click *Git* from the menu options and select *Commit* from the displayed options.
 +
@@ -13,7 +17,7 @@ image::commit_menu.png[Git Commit Menu]
 
 .. Select all the changed and new files you wish to commit.
 .. Add a commit message describing your changes.
-.. Select the `Push committed changes to:` check box.
+.. Select the *Push committed changes to:* check box.
 .. Click btn:[Commit].
 +
 //for hello world
