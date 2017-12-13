@@ -4,11 +4,11 @@
 After creating your {osio} project, you can debug your application code in the Che workspace. This exercise is optional but recommended as an introduction to debugging code in {osio}.
 
 . Return to your project Che workspace browser tab.
-. If the `HttpApplication.java` file is not already loaded, double click on it in your Project Explorer (`src` > `main` > `Java` > `io.openshift.booster`) to view the contents.
+. If the `HttpApplication.java` file is not already loaded, double-click it in your *Projects Explorer* (`src` > `main` > `Java` > `io.openshift.booster`) to view the contents.
 +
 image::project_dir.png[Project Directory]
 +
-. In your `HttpApplication.java` file, add a line break between lines 21 and 22, then type *router.* and press kbd:[Ctrl+Space] to see the context aware assistance.
+. In your `HttpApplication.java` file, add a line break between lines 21 and 22, then type `router.` and press kbd:[Ctrl+Space] to see the context-aware assistance.
 +
 image::debug_router.png[Project Directory]
 +
@@ -41,15 +41,15 @@ private void goodbye(RoutingContext rc) {
 . Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.
 . If your application is already deployed, skip this step. To deploy the application, click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
 +
-```
-[INFO] INFO: Succeeded in deploying verticle
-```
+----
+INFO: Succeeded in deploying verticle
+----
 +
-. Click the `Terminal` tab at the bottom of the page, then test the new endpoint by typing the following command:
+. In the *Terminal* tab at the bottom of the page, test the new endpoint by typing the following command:
 +
-```
+----
 curl localhost:8080/api/goodbye
-```
+----
 +
 The following result appears if the changes were successful:
 +

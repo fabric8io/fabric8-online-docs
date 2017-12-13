@@ -25,7 +25,7 @@ endif::[]
 // end of conditions
 +
 .. In the `Project Configuration` window, select `Maven` and click btn:[Save].
-.. Click the `run` option from the Run button (image:tri_run.png[title="Run button"]). Maven then downloads the required dependencies, compiles the application, and starts the `verticle` (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options.
+.. Click the `run` option from the Run drop-down (image:tri_run.png[title="Run button"]). Maven then downloads the required dependencies, compiles the application, and starts the `verticle` (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options.
 . A run terminal appears at the bottom pane of the Che workspace. When the `mvn build` command finishes executing, the *run* view displays the following message:
 +
 ----

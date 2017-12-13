@@ -5,20 +5,14 @@
 +
 image::tri_run.png[Run Icon]
 +
-. Click *Terminal* for the terminal tab at the bottom of your workspace:
+. At the bottom of your workspace, click *Terminal* to see the terminal tab:
 +
 image::terminal_start.png[Terminal Tab]
 +
-. Type and execute the following command in the terminal tab:
+. Enter the following commands in the terminal tab:
 +
 ----
 cat /etc/os-release
-----
-+
-The terminal displays the details for your Linux container.
-. Type and execute the following command in the terminal tab:
-+
-----
 top
 ----
 +
@@ -28,13 +22,13 @@ image::terminal_top.png[Terminal Top Command]
 +
 . Experiment further with the following commands in your terminal tab:
 .. Press kbd:[Ctrl+c] to stop the *top* command.
-.. Type and execute the following:
+.. Enter the following:
 +
 ----
 curl localhost:8080
 ----
 +
-.. Type and execute the following:
+.. Enter the following:
 +
 ----
 curl localhost:8080/api/greeting
