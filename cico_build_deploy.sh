@@ -57,7 +57,7 @@ mkdir -m 777 ${TARGET_DIR}
 docker build -t ${BUILDER_IMAGE} -f Dockerfile.build .
 
 #RUN BUILDER CONTAINER ONCE, THUS BUILDING THE DOCS
-docker run --rm --name=${BUILDER_CONT} --tty=true --volume=$(pwd)/${TARGET_DIR}:/${TARGET_DIR}:Z ${BUILDER_IMAGE}
+docker run --rm --name=${BUILDER_CONT} -it --volume=$(pwd)/${TARGET_DIR}:/${TARGET_DIR}:Z ${BUILDER_IMAGE}
 
 #BUILD DEPLOY IMAGE
 docker build -t ${DEPLOY_IMAGE} -f Dockerfile.deploy .

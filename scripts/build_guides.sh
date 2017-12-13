@@ -5,8 +5,14 @@ DOCS_SRC="$( dirname $SCRIPT_SRC )/docs"
 BUILD_RESULTS="Build Results:"
 BUILD_MESSAGE=$BUILD_RESULTS
 
+# Validate guides
+if ! $SCRIPT_SRC/validate_guides.sh; then exit 1; fi
+
 # Move to docs dir
 cd $DOCS_SRC
+
+# Copy landing page template
+cp index-templ.adoc index.adoc
 
 echo -e "=== Building Guides ===\n"
 # Recurse through the guide directories and build them.
@@ -30,20 +36,37 @@ do
   GUIDE_NAME=${PWD##*/}
 
   asciidoctor master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.html
-  # Only build PDFs when in a container
-  if [ -f /.dockerenv ] && [ $(which asciidoctor-pdf 2> /dev/null) ]; then
-    asciidoctor -r asciidoctor-pdf -a imagesdir="topics/images" -b pdf master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.pdf
-  fi
+  if [ $? -eq 0 ]; then
+    GUIDE_TITLE=$(sed '/^= .*/!d; q' master.adoc | sed 's/^= //')
+    INDEX_LINK="* link:$GUIDE_NAME.html[$GUIDE_TITLE]"
 
-  if [ "$?" = "1" ]; then
+    # Only build PDFs when in a container & when PDF-building possible
+    if [ -f /.dockerenv ] && [ $(which asciidoctor-pdf 2> /dev/null) ]; then
+      asciidoctor -r asciidoctor-pdf -a imagesdir="topics/images" -b pdf master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.pdf
+      if [ $? -eq 0 ]; then
+        INDEX_LINK="$INDEX_LINK (link:$GUIDE_NAME.pdf[PDF])"
+      fi
+    fi
+
+    # Write completed link list item to landing page
+    echo "$INDEX_LINK" >> $DOCS_SRC/index.adoc
+
+  elif [ $? -eq 1 ]; then
     BUILD_ERROR="ERROR: Build of $GUIDE_NAME failed. See the log above for details."
     BUILD_MESSAGE="$BUILD_MESSAGE\n$BUILD_ERROR"
   fi
 done
 
 # Build the landing page
-echo "Building $DOCS_SRC/index.adoc"
-asciidoctor $DOCS_SRC/index.adoc -o $OUTPUT_DIR/index.html
+if [ -f $DOCS_SRC/index.adoc ]; then
+  echo "Building $DOCS_SRC/index.adoc"
+  asciidoctor $DOCS_SRC/index.adoc -o $OUTPUT_DIR/index.html
+  if [ $? -eq 1 ]; then
+    BUILD_ERROR="ERROR: Build of index.adoc failed. See the log above for details."
+    BUILD_MESSAGE="$BUILD_MESSAGE\n$BUILD_ERROR"
+  fi
+  rm $DOCS_SRC/index.adoc
+fi
 
 chmod -R a+rwX $OUTPUT_DIR/
 
