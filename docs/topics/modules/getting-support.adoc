@@ -1,7 +1,11 @@
 [id="getting-support"]
 = Getting support
 
-== Product questions
+For Red Hat, an important aspect of the <<early-access-program>> is to get feedback from users. Tell us what you like, what you hate, what you wish you could do, what you wish the service would stop doing, and anything else that you think we should know as we work on improving {osio}.
+
+
+[id="asking-questions-about-the-product"]
+== Asking questions about the product
 
 The {osio} support chat channel is the best way to ask questions or get immediate support for {osio} at any time. We encourage users to ask us questions and get immediate answers and assistance rather than spend additional time debugging or troubleshooting problems themselves.
 
