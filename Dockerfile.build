@@ -1,14 +1,12 @@
 FROM fedora:latest
 
-MAINTAINER Vašek Pavlín <vasek@redhat.com>
+MAINTAINER Robert Kratky <rkratky@redhat.com>
 
 # Install asciidoctor
-RUN dnf install -y findutils rubygem-asciidoctor rubygem-asciidoctor-pdf libxml2 && \
+RUN dnf install -y findutils which rubygem-asciidoctor rubygem-asciidoctor-pdf libxml2 && \
     dnf clean all
 
 COPY scripts/ scripts/
 COPY docs/ docs/
-
-RUN scripts/validate_guides.sh
 
 ENTRYPOINT ["sh", "scripts/build_guides.sh"]
