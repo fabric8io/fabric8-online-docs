@@ -1,7 +1,7 @@
 include::topics/templates/attributes.adoc[]
 
 = OpenShift.io User Guide
-:author: Red Hat Developer Documentation Team
+:author: {rhd} Documentation Team
 :email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 

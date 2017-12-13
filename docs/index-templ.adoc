@@ -7,7 +7,7 @@ include::topics/templates/attributes.adoc[]
 
 [id="red-hat-openshift-io-documentation"]
 = Red Hat OpenShift.io Documentation
-:author: Red Hat Developer Documentation Team
+:author: {rhd} Documentation Team
 :email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
