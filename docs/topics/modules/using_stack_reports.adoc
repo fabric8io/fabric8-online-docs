@@ -8,7 +8,7 @@ The {osio} analytics report comprises three components:
 
 === Stack summary
 The stack summary provides a synopsis of the analysis report.
-It highlights the security issues, <<glossary,usage outliers>>, and unknown or conflicting Licenses in your stack.
+It highlights the security issues, usage outliers, and unknown or conflicting licenses in your stack. For more information about these concepts see the link:user_guide.html#glossary[Glossary].
 
 === Detailed analysis of your stack components
 The detailed component analysis provides recommendations for relevant alternate components in case of license outliers (that is, licenses not used in similar stacks) and usage outliers (that is, components not used in similar stacks). It also recommends the appropriate versions for your stack components.
@@ -16,7 +16,7 @@ The detailed component analysis provides recommendations for relevant alternate 
 It helps you assess the credibility of your stack components by providing various usage statistics for your components such as:
 
 * Number of {osio} projects using these components
-* GitHub statistics such as watchers, usage count and so on
+* GitHub statistics such as watchers and usage count
 * Other GitHub projects dependent on these components
 * Tags associated with the components of your stack
 

@@ -13,4 +13,3 @@ image::stack_reports.png[Stack Reports]
 . Click *Show complete stack report* at the bottom of this panel to view the complete report.
 +
 image::full_stack_reports.png[Full Stack Report]
-+
