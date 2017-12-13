@@ -3,15 +3,15 @@
 
 If you followed the instructions in this document, you have now learned about {osio} and its features. You are now able to:
 
-* Create spaces for your projects. See <<creating_new_space-hello-world>> for instructions.
-* Add code from an existing project to your space. See <<importing-existing-project>> for instructions.
-* Create new projects using the quickstart wizards and test them. See <<hello_world_developers>> for Vert.X project instructions and <<spring_boot_quickstart_tutorial>> for Spring Boot project instructions.
-* Create Work Items to track and manage your tasks. See <<creating_using_new_work_item>> for instructions.
-* Use the build pipelines to stage reviews in the `Stage` and `Run` environments. See <<working_with_pipelines>> for instructions.
-* Create Che workspaces to edit your project code and commit the changes to GitHub. See <<creating_che_workspace-hello-world>> and <<commiting_pushing_changes_git-hello-world>> for instructions.
+* Create spaces for your projects. See <<creating_new_space-hello-world>>.
+* Add code from an existing project to your space. See <<importing-existing-project>>.
+* Create new projects using the quickstart wizards and test them. See <<hello_world_developers>> for a Vert.X project and <<spring_boot_quickstart_tutorial>> for a Spring Boot project.
+* Create Work Items to track and manage your tasks. See <<creating_using_new_work_item>>.
+* Use the build pipelines to stage reviews in the *Stage* and *Run* environments. See <<working_with_pipelines>>.
+* Create Che workspaces to edit your project code and commit the changes to GitHub. See <<creating_che_workspace-hello-world>> and <<commiting_pushing_changes_git-hello-world>>.
 * Optimize the memory usage for your Vert.X and Spring Boot projects to use your OpenShift Online resources more efficiently. See <<optimizing_memory_usage>> and <<reducing_springboot_project_memory_usage>>.
-* Use Stack reports to make improvements to your code. See <<using_stack_reports>> for instructions.
-* Debug your code using the Che workspace. See <<debugging_che_workspace>> for instructions.
-* Clean up your {osio} account so you can start afresh. See <<cleaning_up_oso_account>> for instructions.
+* Use stack reports to make improvements to your code. See <<using_stack_reports>>.
+* Debug your code using the Che workspace. See <<debugging_using_che_workspace>>.
+* Clean up your {osio} account so you can start afresh. See <<cleaning_up_oso_account>>.
 
 You can now try using what you have learned about {osio} with your own projects. See the link:user_guide.html[{osio} User Guide] for comprehensive information about {osio} and its features. {osio} is currently Early Access only (see <<early-access-program>> for details). If you have any questions or suggestions for improvement with {osio} or this document, let us know using one of the methods listed in <<getting-support>>.

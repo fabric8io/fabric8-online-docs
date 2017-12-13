@@ -1,7 +1,11 @@
-[id="debugging_che_workspace"]
-= Debugging your Che workspace
+[id="debugging_using_che_workspace"]
+= Debugging using your Che workspace
 
 After creating your {osio} project, you can debug your application code in the Che workspace. This exercise is optional but recommended as an introduction to debugging code in {osio}.
+
+
+[discrete]
+== Procedure
 
 . Return to your project Che workspace browser tab.
 . If the `HttpApplication.java` file is not already loaded, double-click it in your *Projects Explorer* (`src` > `main` > `Java` > `io.openshift.booster`) to view the contents.
@@ -12,15 +16,15 @@ image::project_dir.png[Project Directory]
 +
 image::debug_router.png[Project Directory]
 +
-. From the displayed list, select the *get():Route* method. This is the Vert.x Router get method and maps to the HTTP verb GET.
-. Edit the new line to include the *goodbye* endpoint. The following is an example of the completed new line:
+. From the displayed list, select the `get():Route` method. This is the Vert.x Router get method and maps to the HTTP verb GET.
+. Edit the new line to include the `goodbye` endpoint. The following is an example of the completed new line:
 +
 [source,java]
 ----
 router.get("/api/goodbye").handler(this::goodbye);
 ----
 +
-. Add a new line after line 52 and then add the following method for the *goodbye* endpoint:
+. Add a new line after line 52 and then add the following method for the `goodbye` endpoint:
 +
 [source,java]
 ----
@@ -39,7 +43,7 @@ private void goodbye(RoutingContext rc) {
 ----
 +
 . Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.
-. If your application is already deployed, skip this step. To deploy the application, click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
+. If your application is already deployed, skip this step. To deploy the application, click the *run* option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
 +
 ----
 INFO: Succeeded in deploying verticle
@@ -55,7 +59,7 @@ The following result appears if the changes were successful:
 +
 image::terminal_result.png[Terminal Test Result]
 +
-. In the `EXEC` bar on the top of the workspace page, click the stop button (a blue square icon) to stop the current run process.
+. In the *EXEC* bar on the top of the workspace page, click the stop button (a blue square icon) to stop the current run process.
 +
 image::bar_stop.png[EXEC Bar]
 +
