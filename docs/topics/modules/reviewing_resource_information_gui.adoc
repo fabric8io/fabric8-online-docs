@@ -5,7 +5,7 @@ The memory allowances for each OpenShift pod is 512{nbsp}MiB. As a result, each 
 
 To check the memory limit in OpenShift Online user interface:
 
-. In a new browser tab, navigate to the OpenShift Online console at https://console.starter-us-east-2.openshift.com/
+. In a new browser tab, navigate to the OpenShift Online console at link:https://console.starter-us-east-2.openshift.com/[console.starter-us-east-2.openshift.com].
 
 . From the list of projects, click *_username_-run* to see the resources used for the `Run` environment or *_username_-stage* to see the resources for the `Stage` environment.
 +
