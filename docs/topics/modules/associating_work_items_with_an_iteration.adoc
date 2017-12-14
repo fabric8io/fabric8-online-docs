@@ -7,7 +7,7 @@ To associate a Work Item with an Iteration:
 
 . Click the icon (image:kabob_white.png[title="Options"]) adjoining the Work Item.
 
-. From the displayed options, select btn:[Associate with Iteration]. The `Associate with Iteration` dialog box appears and displays which Iteration, if any, the Work Item is associated with.
+. From the displayed options, select btn:[Associate with Iteration]. The *Associate with Iteration* dialog box appears and displays which Iteration, if any, the Work Item is associated with.
 
 . From the drop-down list, select an Iteration for your Work Item.
 

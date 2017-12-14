@@ -1,9 +1,9 @@
 [id="ordering_and_monitoring_work_items"]
 = Ordering and Monitoring Work Items
 
-The `Backlog` displays a list view used to plan your work. You can order Work Items based on their priority, status, and other parameters to organize them.
+The *Backlog* displays a list view used to plan your work. You can order Work Items based on their priority, status, and other parameters to organize them.
 
-The `Backlog` displays the list of Work Items as a list where all the Work Items display in a single file.
+The *Backlog* displays the list of Work Items as a list where all the Work Items display in a single file.
 
 Click btn:[Plan] to view the Planner. You can order the Work Items in your space as follows:
 

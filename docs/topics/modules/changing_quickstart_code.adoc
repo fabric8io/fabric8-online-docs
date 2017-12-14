@@ -3,7 +3,7 @@
 
 To change your project code and preview the results:
 
-. In your Che workstation `Projects Explorer` view, navigate to the following file: `src` > `main` > `Java` > `io.openshift.booster` > `HttpApplication.java`.
+. In your Che workstation *Projects Explorer* view, navigate to the following file: `src` > `main` > `Java` > `io.openshift.booster` > `HttpApplication.java`.
 +
 image::project_dir.png[Project Directory]
 +
@@ -29,13 +29,13 @@ The workspace automatically saves your changes.
 
 ** If you have not run the application already as instructed in <<configuring_your_che_workspace-hello-world>>:
 
-*** Click the `run` option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
+*** Click the *run* option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
 +
-```
+----
 INFO: Succeeded in deploying verticle
-```
+----
 +
-*** Click the blue preview URL at the top of the `run` view to see your application.
+*** Click the blue preview URL at the top of the *run* view to see your application.
 +
 image::blue_link.png[Preview Link]
 +

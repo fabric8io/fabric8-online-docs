@@ -10,7 +10,7 @@ You can optimize your new quickstart to use less memory as follows:
 image::fabric8_folder.png[Fabric8 Folder]
 +
 
-. Right-click the `fabric8` folder icon and select `New` &#62; `File`.
+. Right-click the `fabric8` folder icon and select *New* &#62; *File*.
 +
 image::new_file.png[New File Menu]
 +

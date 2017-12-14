@@ -3,7 +3,7 @@
 
 Create a new <<about_workspaces,Che workspace>> for your project:
 
-. In the dashboard of your {osio} space, click btn:[Create]. The default view for this tab is `Codebases`.
+. In the dashboard of your {osio} space, click btn:[Create]. The default view for this tab is *Codebases*.
 +
 NOTE: Initially, {osio} displays a message about the workspaces loading (see screen capture). This message indicates that your Che instance is idle. Allow several minutes for the loading process to finish.
 +

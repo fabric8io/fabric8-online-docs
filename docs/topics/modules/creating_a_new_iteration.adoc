@@ -11,18 +11,18 @@ Add iterations to your space to plan and organize your Work Items. Click btn:[Pl
 
 . Click btn:[Plan] to view the Planner.
 
-. Click btn:[+] next to the `All Iterations` option.
+. Click btn:[+] next to the *All Iterations* option.
 
-. Enter a `Name` for your new Iteration.
+. Enter a *Name* for your new Iteration.
 
-. Optionally, create a parent-child link by selecting the parent Iteration from the `Parent Iteration` drop-down list.
+. Optionally, create a parent-child link by selecting the parent Iteration from the *Parent Iteration* drop-down list.
 
-. Add a `Description` for the new Iteration.
+. Add a *Description* for the new Iteration.
 
-. Add a `Start Date` and `End Date` for your new Iteration.
+. Add a *Start Date* and *End Date* for your new Iteration.
 
-. Toggle the `Force Active` switch to _ON_ to force start the Iteration.
+. Toggle the *Force Active* switch to _ON_ to force start the Iteration.
 
 . Click btn:[Create] to create the new Iteration.
 
-Your new Iteration appears under `All Iterations`. If you selected the `Force Active` option, your Iteration has started and appears under `Active Iteration`.
+Your new Iteration appears under *All Iterations*. If you selected the *Force Active* option, your Iteration has started and appears under *Active Iteration*.
