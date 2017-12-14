@@ -37,7 +37,7 @@ for book in $DOCS_SRC/*/master.adoc; do
     fi
 
     # Build title into DocBook XML and see if any errors or warnings were output
-    adoctor_stderr="$(asciidoctor master.adoc -b docbook5 2>&1)"
+    adoctor_stderr="$(asciidoctor -v master.adoc -b docbook5 2>&1)"
     if [ ! -z "$(echo "$adoctor_stderr" | grep "ERROR\|WARNING")" ]; then
         echo -e "${RED}failed to build${NOC}"
         echo -e "\n${adoctor_stderr}\n"
