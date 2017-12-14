@@ -39,13 +39,13 @@ Categories:: It lists the tags associated with the components of your stack.
 
 You can filter the detailed component analysis report to highlight:
 
-* *<<glossary.adoc#Usage Outliers, Usage Outliers>>* (image:usage_outlier.png[title="Usage Outlier"])
-* *<<glossary.adoc#Security Issues, Security Issues>>* (image:security_issues.png[title="Security Issues"])
-* *<<glossary.adoc#Alternate Components, Alternate Components>>* (image:alternate_component.png[title="Alternate Components"])
-* *Grouped Components* (image:alternate_component.png[title="Alternate Components"])
-* *<<glossary.adoc#License Outliers, License Outliers>>* (image:license_outlier.png[title="License Outliers"])
-* *<<glossary.adoc#Unknown Licenses, Unknown Licenses>>* (image:license_unknown.png[title="Unknown Licenses"])
-* *<<glossary.adoc#License conflict, License conflict in a Component>>* (image:license_conflicts.png[title="License Conflicts"])
+** Usage Outliers (image:usage_outlier.png[title="Usage Outlier"])
+** Security Issues (image:security_issues.png[title="Security Issues"])
+** Alternate Components (image:alternate_component.png[title="Alternate Components"])
+** Grouped Components (image:alternate_component.png[title="Alternate Components"])
+** License Outliers (image:license_outlier.png[title="License Outliers"])
+** Unknown Licenses (image:license_unknown.png[title="Unknown Licenses"])
+** License conflict in a Component (image:license_conflicts.png[title="License Conflicts"])
 
 == Additional components recommended by {osio}
 {osio} recommends additional components suitable for your stack based on its analysis of similar open source stacks. These components are commonly used by similar stacks and augment your stack. It also displays various parameters relevant to the components, so that you can assess their credibility and make informed choices on adding them to your stack.

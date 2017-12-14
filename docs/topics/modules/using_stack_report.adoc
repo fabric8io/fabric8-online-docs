@@ -45,17 +45,17 @@ The report displays:
 
 * *Additional components recommended by {osio}:* A list of additional components commonly used by similar stacks.
 +
-See <<interpreting_stack_report, Interpreting your Stack Report>> section for further details.
+See <<interpreting_stack_report>> section for further details.
 
 . Filter the *Detail analysis of your stack components* list to see:
 
-** *<<glossary.adoc#Usage Outliers, Usage Outliers>>* (image:usage_outlier.png[title="Usage Outlier"])
-** *<<glossary.adoc#Security Issues, Security Issues>>* (image:security_issues.png[title="Security Issues"])
-** *<<glossary.adoc#Alternate Components, Alternate Components>>* (image:alternate_component.png[title="Alternate Components"])
+** Usage Outliers (image:usage_outlier.png[title="Usage Outlier"])
+** Security Issues (image:security_issues.png[title="Security Issues"])
+** Alternate Components (image:alternate_component.png[title="Alternate Components"])
 ** Grouped Components (image:alternate_component.png[title="Alternate Components"])
-** *<<glossary.adoc#License Outliers, License Outliers>>* (image:license_outlier.png[title="License Outliers"])
-** *<<glossary.adoc#Unknown Licenses, Unknown Licenses>>* (image:license_unknown.png[title="Unknown Licenses"])
-** *<<glossary.adoc#License conflict, License conflict in a Component>>* (image:license_conflicts.png[title="License Conflicts"])
+** License Outliers (image:license_outlier.png[title="License Outliers"])
+** Unknown Licenses (image:license_unknown.png[title="Unknown Licenses"])
+** License conflict in a Component (image:license_conflicts.png[title="License Conflicts"])
 +
 Note that {osio} recommends *Alternate Components* for your stack if it identifies license or usage outliers.
 
