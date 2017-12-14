@@ -9,10 +9,10 @@
 
 . Click the desired Work Item Type symbol.
 
-. Add the title, `Area`, `Iteration`, `Label`, and `Description` for your new Work Item.
+. Add the title, *Area*, *Iteration*, *Label*, and *Description* for your new Work Item.
 
 . Individually click &#10003; to save the changes for each field.
 
 . Click btn:[X] at the top right corner of the screen after saving all changes.
 
-The new Work Item now displays in the `Backlog` view.
+The new Work Item now displays in the *Backlog* view.

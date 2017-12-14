@@ -13,7 +13,7 @@ After adding collaborators, you can view their details or remove them from your 
 
 . Click the *Equalizer* button (image:equalizer.png[title="Equalizer"]) at the top of the screen.
 . Click the *Collaborators* tab.
-. From the displayed list of collaborators on the `Collaborators` page, click the three dots next to the collaborator name.
+. From the displayed list of collaborators on the *Collaborators* page, click the three dots next to the collaborator name.
 . Either:
  * Select *View user* to view the collaborator details.
  * Select *Remove from space* to remove them from the space.

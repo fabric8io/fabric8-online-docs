@@ -5,7 +5,7 @@ The detailed method requires adding more details for the Work Item compared to t
 
 . Click btn:[Analyze] to view the space dashboard.
 
-. In the `My Work Items` panel, click btn:[+].
+. In the *My Work Items* panel, click btn:[+].
 
 . Click the desired Work Item type.
 
@@ -13,17 +13,17 @@ The detailed method requires adding more details for the Work Item compared to t
 
 .. Add a title for the Work Item and click &#10003; or press *Enter* to save the new Work Item. This creates a new Work Item. You must save each of the subsequent changes to fields individually.
 
-.. Assign the Work Item to a Collaborator in the `Assignees` field. The assignee field for a new Work Item is empty as a default.
+.. Assign the Work Item to a Collaborator in the *Assignees* field. The assignee field for a new Work Item is empty as a default.
 
-.. Assign an <<about_areas,Area>> to the Work Item from the `Area` field drop-down list and click &#10003; to save the change. By default, the name of your workspace is set as the _Root Area_ and is displayed as one of the options in the drop-down list.
+.. Assign an <<about_areas,Area>> to the Work Item from the *Area* field drop-down list and click &#10003; to save the change. By default, the name of your workspace is set as the _Root Area_ and is displayed as one of the options in the drop-down list.
 
-.. Assign a relevant <<about_iterations,Iteration>> to the Work Item from the `Iteration` drop-down list and click &#10003; to save. By default, the name of your workspace is set as the _Root Iteration_ and is displayed as one of the options in the drop-down list.
+.. Assign a relevant <<about_iterations,Iteration>> to the Work Item from the *Iteration* drop-down list and click &#10003; to save. By default, the name of your workspace is set as the _Root Iteration_ and is displayed as one of the options in the drop-down list.
 
 .. Click btn:[Add label] to add existing or new labels to your Work Item.
 
 .. Add a description for the Work Item in the *Edit Text* field and click &#10003; to save.
 
-.. Optionally, expand the `Total links` option to link to other related Work Items as follows:
+.. Optionally, expand the *Total links* option to link to other related Work Items as follows:
 
 ... Click the btn:[Create Link] button.
 
@@ -33,7 +33,7 @@ The detailed method requires adding more details for the Work Item compared to t
 
 ... Click btn:[Link] to save the relationship.
 
-.. Optionally, expand the `Comments` option to add or see comments for your Work Item. Users can edit or delete their own comments.
+.. Optionally, expand the *Comments* option to add or see comments for your Work Item. Users can edit or delete their own comments.
 
 . To close the new Work Item panel:
 

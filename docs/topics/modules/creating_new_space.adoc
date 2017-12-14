@@ -10,7 +10,7 @@ In {osio}, the first step for any new project is to create a new space. You can 
 Create a new space as follows:
 
 . In the {osio} home page, click btn:[Create a space].
-. In the dialog box, type `myspace` as the unique name for your space.
+. In the dialog box, type *myspace* as the unique name for your space.
 +
 image::create_space.png[Create new space]
 +

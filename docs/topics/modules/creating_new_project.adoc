@@ -11,40 +11,40 @@ ifeval::["{context}" == "spring-boot"]
 You will now learn how to create a second quickstart project in your space. The Hello World project was a Vert.X application and the second quickstart is a Spring Boot application.
 
 . In your {osio} home page, double-click your new space.
-. In the dashboard of your space, click btn:[Add to space]. The `How would you like to get started?` dialog box opens.
+. In the dashboard of your space, click btn:[Add to space]. The *How would you like to get started?* dialog box opens.
 endif::[]
 
 image::get_started_menu.png[Getting Started Menu]
 
-. In the `How would you like to get started?` dialog box, click btn:[Create a new Quickstart project].
+. In the *How would you like to get started?* dialog box, click btn:[Create a new Quickstart project].
 
-. In the `Application Wizard`:
+. In the *Application Wizard*:
 // conditional starts here
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-.. Click a project type from the displayed icons. For this example, click `Vert.x HTTP Booster`.
+.. Click a project type from the displayed icons. For this example, click *Vert.x HTTP Booster*.
 .. Click btn:[Next].
-.. In the `OpenShift Project Name` field, type *helloworldvertx* as the unique name for your project.
+.. In the *OpenShift Project Name* field, type *helloworldvertx* as the unique name for your project.
 endif::[]
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-.. In the `Name` field, type *spring* and press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
-.. From the displayed results, click `Spring Boot - HTTP`.
+.. In the *Name* field, type *spring* and press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
+.. From the displayed results, click *Spring Boot - HTTP*.
 +
 image::project_springboot.png[Spring Boot HTTP Project]
 +
 .. Click btn:[Next].
-.. In the `OpenShift Project Name` field, add *myspringboot* as the name for your project.
+.. In the *OpenShift Project Name* field, add *myspringboot* as the name for your project.
 endif::[]
 // conditional ends here
-.. Keep the default value for the `Organisation`, `Group Id`, and `Version` fields and click btn:[Next].
-.. Select a build pipeline strategy. For this example, use the default value `Release, Stage, Approve and Promote` and click btn:[Next].
+.. Keep the default value for the *Organisation*, *Group Id*, and *Version* fields and click btn:[Next].
+.. Select a build pipeline strategy. For this example, use the default value *Release, Stage, Approve and Promote* and click btn:[Next].
 +
 NOTE: Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment.
 +
 
-.. The `Build Config` screen displays the details for your `Jenkins space` and options for adding continuous integration hooks and triggering a build when your application is deployed. Use the default options for these fields and click btn:[Finish].
-.. The `Summary` screen displays your selected options. Click btn:[Ok] to continue.
+.. The *Build Config* screen displays the details for your *Jenkins space* and options for adding continuous integration hooks and triggering a build when your application is deployed. Use the default options for these fields and click btn:[Finish].
+.. The *Summary* screen displays your selected options. Click btn:[Ok] to continue.
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]

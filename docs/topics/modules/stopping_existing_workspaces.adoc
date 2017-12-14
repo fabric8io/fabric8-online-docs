@@ -6,7 +6,7 @@ Before creating a workspace for your project, stop the workspace for your previo
 Review the workspaces in your OpenShift Online account as follows:
 
 . In your the dashboard of your space, click btn:[Create].
-. In the `Codebases` view, click btn:[Open] for the older project's workspace. Allow several minutes for the project to load.
+. In the *Codebases* view, click btn:[Open] for the older project's workspace. Allow several minutes for the project to load.
 +
 image::codebase_list.png[List of Codebases]
 +
@@ -16,14 +16,14 @@ image::codebase_list.png[List of Codebases]
 image::stop_workspace_button.png[Stop Workspace Menu]
 +
 .. Alternatively, within the target workspace:
-... Click *>* next to the `Workspace` menu item on the left side of the workspace.
+... Click *>* next to the *Workspace* menu item on the left side of the workspace.
 +
 image::che_dash.png[Che Dashboard Link From Within a Workspace]
 +
 In the displayed list of all workspaces, a green dot next to the name indicates if a workspace is running.
 +
 image::workspace_eclipse.png[List of Workspaces]
-... For all running workspaces, click the stop icon under `ACTIONS`.
+... For all running workspaces, click the stop icon under *ACTIONS*.
 +
 image::stop_button_ws.png[Stop Button for Workspace]
 

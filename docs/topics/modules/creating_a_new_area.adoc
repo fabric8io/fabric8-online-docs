@@ -10,6 +10,6 @@ You can create a new child Area to group together related Work Items by type or 
 .Procedure
 
 . At the top of the page, click the *Equalizer* button (image:equalizer.png[title="Settings"]) to display a list of Areas in your space.
-. In the top right corner of the `Areas` view, click btn:[+ Add Areas].
-. In the `Add New Area` dialog box, add a name for your new Area and a parent Area.
+. In the top right corner of the *Areas* view, click btn:[+ Add Areas].
+. In the *Add New Area* dialog box, add a name for your new Area and a parent Area.
 . Click btn:[Create] to create the new child area.

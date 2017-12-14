@@ -22,4 +22,4 @@ NOTE: If your remote debugger connection fails, restart your browser and try aga
 curl localhost:8080/api/goodbye
 ----
 
-. Click the `Debug` option at the bottom of the workspace to review variables in the *Variables* pane. You can also use the `Resume`, `Step Into`, `Step Over`, and `Step Out` options during the debugging process.
+. Click the *Debug* option at the bottom of the workspace to review variables in the *Variables* pane. You can also use the *Resume*, *Step Into*, *Step Over*, and *Step Out* options during the debugging process.

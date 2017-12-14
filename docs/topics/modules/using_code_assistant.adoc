@@ -13,7 +13,7 @@ image::existing_workspace.png[Existing Workspace]
 image::project_dir.png[Project Directory]
 +
 
-. In the `HttpApplication.java` file, add a line break at line 9 after the `import` section.
+. In the `HttpApplication.java` file, add a line break at line 9 after the *import* section.
 . Type the following in the new line:
 +
 [source,java]
