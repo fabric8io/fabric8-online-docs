@@ -17,7 +17,7 @@ image::new_file.png[New File Menu]
 
 . Name the new file *deployment.yml* and click btn:[OK]. The new file displays in the editor.
 
-. Copy the contents of the following file to your new YAML file: https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml].
+. Copy the contents of the following file to your new YAML file: link:https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml].
 +
 IMPORTANT: Spaces are meaningful in YAML files. Ensure that the correct spacing is copied into your YAML file from the link.
 +

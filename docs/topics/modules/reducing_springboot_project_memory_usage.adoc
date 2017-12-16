@@ -11,12 +11,12 @@ image::sb_optimize_folders.png[File Tree]
 +
 . Right-click the `fabric8` folder and select *New* > *File*.
 
-. Name the new file *deployment.yaml*.
+. Name the new file `deployment.yaml`.
 +
 image::deploymentyaml.png[Deployment.Yaml]
 +
-. Copy the following file's contents to your new yaml file: https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml].
+. Copy the following file's contents to your new YAML file: link:https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml].
 +
-WARNING: Spaces are meaningful in yaml files. Ensure that the correct spacing is copied into your yaml file from the link.
+WARNING: Spaces are meaningful in YAML files. Ensure that the correct spacing is copied into your YAML file from the link.
 +
 . Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.

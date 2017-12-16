@@ -21,7 +21,7 @@ The {osio} team is also available in the *#openshiftio* channel on Freenode for 
 [id="providing-product-feedback"]
 == Providing product feedback
 
-To give the {osio} team feedback, https://github.com/openshiftio/openshift.io/issues[create an issue] with any detail required, including screenshots if necessary. You can also search for related issues at this link. When logged, the {osio} team triages and adds tags and other information to your issue.
+To give the {osio} team feedback, link:https://github.com/openshiftio/openshift.io/issues[create an issue] with any detail required, including screenshots if necessary. You can also search for related issues at this link. When logged, the {osio} team triages and adds tags and other information to your issue.
 
 If you prefer to send us feedback via email, send us the details at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
 
@@ -35,4 +35,4 @@ The documentation team welcomes all feedback.
 * Was a part of the documentation not useful for you?
 * Is there anything we did not document that you want to do with {osio}?
 
-https://github.com/fabric8io/fabric8-online-docs/issues[Create an issue] to send us your feedback.
+link:https://github.com/fabric8io/fabric8-online-docs/issues[Create an issue] to send us your feedback.
