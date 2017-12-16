@@ -19,9 +19,8 @@ The version numbers for Che and Jenkins in the screen capture are for illustrati
 
 Use the following files to see the most recent versions of these services and compare it to those displayed in {osio} for your account.
 
-* Che version information: https://github.com/fabric8-services/fabric8-tenant/blob/master/CHE_VERSION
-
-* Jenkins version information: https://github.com/fabric8-services/fabric8-tenant/blob/master/JENKINS_VERSION
+* Che version information: link:https://github.com/fabric8-services/fabric8-tenant/blob/master/CHE_VERSION[CHE_VERSION]
+* Jenkins version information: link:https://github.com/fabric8-services/fabric8-tenant/blob/master/JENKINS_VERSION[JENKINS_VERSION]
 ====
 
 . If you see a version mismatch between that displayed on {osio} and the latest version in the above links, or if the status for one or both of the services is red (see screen capture), update your tenant services as follows:

@@ -1,3 +1,5 @@
+// This module isn't used in any assembly.
+
 [id="reviewing_resource_information_cli"]
 = Reviewing the resource information using the `oc` tool
 
@@ -37,7 +39,7 @@ status:
     limits.memory: 512Mi
 ----
 
-. Follow the instructions in <<reduce_hello_world_memory_usage>> and <<commit_push_change>> and then resume the next steps here. This allows you to view your memory quota details before and after optimizing the memory usage and compare the two results.
+. Follow the instructions in <<reducing_hello_world_memory_usage>> and <<commiting_pushing_changes_git-hello-world>> and then resume the next steps here. This allows you to view your memory quota details before and after optimizing the memory usage and compare the two results.
 
 . Click btn:[Create] and then btn:[Pipelines] to view the new pipeline build. Committing and pushing your new YAML file triggers a new pipeline build for your {osio} project. Proceed to the next step when the pipeline build rolls out to *Stage*:
 +
@@ -49,7 +51,7 @@ image::rollout_to_stage.png[Rollout To Stage]
 oc get quota compute-resources -o yaml -n USERNAME-stage
 ----
 +
-An example of the output for this command after committing the yaml file is as follows:
+An example of the output for this command after committing the YAML file is as follows:
 +
 ----
 status:
@@ -59,5 +61,4 @@ status:
   used:
     limits.cpu: 488m
     limits.memory: 250Mi
-
 ----

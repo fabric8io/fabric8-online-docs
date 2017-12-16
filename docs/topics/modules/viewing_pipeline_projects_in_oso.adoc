@@ -1,7 +1,7 @@
-[id="view_pipelines_oso"]
-= Viewing the Pipelines Projects in OpenShift Online
+[id="viewing_the_pipeline_projects_in_oso"]
+= Viewing the Pipeline Projects in OpenShift Online
 
-To view the OpenShift Online projects that support your project pipeline, navigate to https://console.starter-us-east-2.openshift.com/. This page displays the following projects/namespaces that are created in OpenShift Online:
+To view the OpenShift Online projects that support your project pipeline, navigate to link:https://console.starter-us-east-2.openshift.com/[console.starter-us-east-2.openshift.com]. This page displays the following projects (or namespaces) that are created in OpenShift Online:
 
 * The _username_ project is where your pipelines run. This project name is your OpenShift Online user name.
 * The _username-che_ project is for your Che Host and workspaces.

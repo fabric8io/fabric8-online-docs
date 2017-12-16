@@ -17,7 +17,7 @@ image::environments.png[Environments Main Page]
 
 Optionally view the pipeline progress in OpenShift Online as follows:
 
-. Navigate to https://manage.openshift.com/ in a new browser tab and log in to your account.
+. Navigate to link:https://manage.openshift.com/[manage.openshift.com] in a new browser tab and log into your account.
 
 . Click btn:[Open Web Console] to view the console.
 
