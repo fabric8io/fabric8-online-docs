@@ -9,7 +9,7 @@ If you did not optimize memory usage for the Vert.X quickstart project earlier, 
 +
 image::sb_optimize_folders.png[File Tree]
 +
-. Right-click the `fabric8` folder and select *New* > *File*.
+. Right-click the `fabric8` folder and select menu:New[File].
 
 . Name the new file `deployment.yaml`.
 +
