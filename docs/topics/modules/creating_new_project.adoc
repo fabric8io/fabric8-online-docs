@@ -8,7 +8,7 @@ endif::[]
 
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-You will now learn how to create a second quickstart project in your space. The Hello World project was a Vert.X application and the second quickstart is a Spring Boot application.
+In this section, you learn how to create a quickstart project based on a Spring Boot application in your space. See the <<hello_world_developers,Hello World project>> for an example of a Vert.X application.
 
 . In your {osio} home page, double-click your new space.
 . In the dashboard of your space, click btn:[Add to space]. The *How would you like to get started?* dialog box opens.
@@ -24,17 +24,17 @@ image::get_started_menu.png[Getting Started Menu]
 ifeval::["{context}" == "hello-world"]
 .. Click a project type from the displayed icons. For this example, click *Vert.x HTTP Booster*.
 .. Click btn:[Next].
-.. In the *OpenShift Project Name* field, type *helloworldvertx* as the unique name for your project.
+.. In the *OpenShift Project Name* field, type `helloworldvertx` as the unique name for your project.
 endif::[]
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-.. In the *Name* field, type *spring* and press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
+.. In the *Name* field, type `spring` and press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
 .. From the displayed results, click *Spring Boot - HTTP*.
 +
 image::project_springboot.png[Spring Boot HTTP Project]
 +
 .. Click btn:[Next].
-.. In the *OpenShift Project Name* field, add *myspringboot* as the name for your project.
+.. In the *OpenShift Project Name* field, type `myspringboot` as the name for your project.
 endif::[]
 // conditional ends here
 .. Keep the default value for the *Organisation*, *Group Id*, and *Version* fields and click btn:[Next].

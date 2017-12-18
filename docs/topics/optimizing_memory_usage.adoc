@@ -7,7 +7,7 @@ include::modules/reviewing_resource_information_gui.adoc[leveloffset=+1]
 
 //include::modules/reviewing_resource_information_cli.adoc[leveloffset=+1]
 
-include::modules/reducing_hello_world_memory_usage.adoc[leveloffset=+1]
+include::modules/reducing_project_memory_usage.adoc[leveloffset=+1]
 
 include::modules/commiting_pushing_changes_git.adoc[leveloffset=+1]
 

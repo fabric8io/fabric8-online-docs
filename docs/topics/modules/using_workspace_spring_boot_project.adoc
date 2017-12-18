@@ -3,14 +3,14 @@
 
 When your Che workspace loads, edit your project code as follows:
 
-. In your new workspace, click the btn:[Terminal] tab and run the following commands:
+. In your new workspace, click the *Terminal* tab and run the following commands:
 +
 ----
 cd myspringboot
 mvn test
 ----
 +
-When the maven test succeeds, the *BUILD SUCCESS* message appears in the terminal view. You can commit and push changes to your GitHub repository after the maven test succeeds.
+When the maven test succeeds, you get a `BUILD SUCCESS` message. You can commit and push changes to your GitHub repository after the maven test succeeds.
 +
 image::maven_test_success.png[Maven Test Success]
 +
@@ -19,7 +19,7 @@ image::maven_test_success.png[Maven Test Success]
 image::sb_tree_view.png[Spring Boot Folders]
 +
 . Double-click the `GreetingController.java` file to view it in the editor.
-. Add a line break at line 37, then type *@* and then use kbd:[Ctrl+Space] to view a list of context-sensitive options.
+. Add a line break after line 37, then type `@` and then use kbd:[Ctrl+Space] to view a list of context-sensitive options.
 +
 image::sb_context_options.png[Context Sensitive Help]
 +
@@ -40,14 +40,13 @@ image::bs_code_add.png[Code Added to Spring Boot Project]
 +
 . Save your changes using kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS).
 
-. Click the *run* option (image:tri_run.png[title="Run button"]). This sets up the Spring Boot server. Unlike the Vert.x Quickstart project, the hot deploy option is not available for Spring Boot projects. As a result, changes are not automatically deployed.
+. Click the *run* option from the Run drop-down(image:tri_run.png[title="Run button"]). This sets up the Spring Boot server. Unlike in the Vert.x Quickstart project, the hot deploy option is not available for Spring Boot projects. As a result, changes are not automatically deployed.
 
-. In the *run* terminal, the application runs.
-. When the application run completes, click the blue preview URL at the top of the *run* view to view your project.
+. You can see the application run in the *run* tab. When the application run completes, click the blue preview URL at the top of the *run* tab to see your project.
 +
 image::sb_preview_link.png[Preview URL]
 +
-. The application displays in a new browser tab.
+The application displays in a new browser tab.
 +
 image::sb_app_test.png[SpringBoot App Test]
 +
