@@ -5,7 +5,7 @@ Create a new <<about_workspaces,Che workspace>> for your project:
 
 . In the dashboard of your {osio} space, click *Create*. The default view for this tab is *Codebases*.
 
-. In the *WORKSPACES* section click *Create workspace* for your project.
+. In the *WORKSPACES* section, click *Create workspace* for your project.
 +
 image::create_workspace.png[Create Workspace]
 +
@@ -26,7 +26,7 @@ image::che_terminal.png[Workspace Terminal]
 
 [IMPORTANT]
 ====
-If a new tab does not appear, your browser is blocking the pop-up window that displays the new workspace. To resolve this:
+If a new tab does not appear, your browser is blocking the pop-up window that displays the new workspace. To resolve this, allow pop-up windows from *++https://openshift.io++*. In Chromium-based browsers, do the following:
 
 . Click the blocked pop-up window icon in the URL field of your browser.
 . Select the *Always allow pop-ups from ++https://openshift.io++* option, and click btn:[Done].

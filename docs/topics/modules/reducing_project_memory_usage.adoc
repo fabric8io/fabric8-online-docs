@@ -15,7 +15,7 @@ Your OpenShift Online account must now share resources with two quickstart proje
 To optimize memory for the Spring Boot HTTP quickstart:
 endif::[]
 
-. In the *Projects Explorer* panel, double-click your project and navigate to menu:src[main>fabric8].
+. In the *Projects Explorer* panel, double-click your project and navigate to `src` > `main` > `fabric8`.
 +
 // for optimizing_memory_usage
 ifeval::["{context}" == "optimizing_memory_usage"]
@@ -27,7 +27,7 @@ ifeval::["{context}" == "spring-boot"]
 image::sb_optimize_folders.png[File tree]
 endif::[]
 +
-. Right-click the `fabric8` folder and select `New` &#62; `File`.
+. Right-click the `fabric8` folder and select menu:New[File].
 // for optimizing_memory_usage
 ifeval::["{context}" == "optimizing_memory_usage"]
 +
@@ -41,7 +41,7 @@ image::new_file_sb.png[New file spring-boot menu]
 +
 endif::[]
 
-. Name the new file *deployment.yml* and click btn:[OK]. The new file displays in the editor.
+. Name the new file `deployment.yml` and click btn:[OK]. The new file displays in the editor.
 // for optimizing_memory_usage
 ifeval::["{context}" == "optimizing_memory_usage"]
 +
@@ -54,7 +54,7 @@ ifeval::["{context}" == "spring-boot"]
 image::deploymentyaml.png[Deployment.Yaml]
 +
 endif::[]
-//end conditional
+// end conditional
 . Copy the contents of the following file to your new YAML file: https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml].
 +
 IMPORTANT: Spaces are meaningful in YAML files. Ensure that the correct spacing is copied into your YAML file from the link.

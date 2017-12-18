@@ -1,7 +1,7 @@
 [id="stopping_existing_workspaces"]
 = Stopping existing workspaces
 
-Each running workspace uses your OpenShift Online resources. The OpenShift Online Free Tier supports one running workspace at a time. When you start your new workspace for the Spring Boot quick start, your first workspace is automatically stopped. If it is not stopped, you must stop the running workspace for the older project before proceeding further.
+Each running workspace uses your OpenShift Online resources. The OpenShift Online Free Tier supports one running workspace at a time. When you start a new workspace, your other running workspace is automatically stopped. If it is not stopped, you must stop the running workspace for the older project before proceeding further.
 
 
 [discrete]
@@ -24,7 +24,7 @@ image::stop_workspace_button.png[Stop Workspace Menu]
 +
 image::che_dash.png[Che Dashboard Link From Within a Workspace]
 +
-A green dot next to the name of the workspace indicates if it is running.
+A green dot next to the name of the workspace indicates it is running.
 +
 image::workspace_eclipse.png[List of Workspaces]
 ... Click the stop icon under *ACTIONS* to stop the running workspace.
