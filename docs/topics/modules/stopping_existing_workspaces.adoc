@@ -1,29 +1,30 @@
 [id="stopping_existing_workspaces"]
 = Stopping existing workspaces
 
-Before creating a workspace for your project, stop the workspace for your previous project. Each running workspace uses your OpenShift Online resources. The OpenShift Online Free Tier supports one running workspace at a time. As a result, you must stop running workspaces for older projects each time before creating a new workspace.
+Each running workspace uses your OpenShift Online resources. The OpenShift Online Free Tier supports one running workspace at a time.
+When you start your new workspace for the Spring Boot quick start, your first workspace is automatically stopped. If it is not stopped, you must stop the running workspace for the older project before proceeding further.
 
 Review the workspaces in your OpenShift Online account as follows:
 
-. In your the dashboard of your space, click btn:[Create].
-. In the *Codebases* view, click btn:[Open] for the older project's workspace. Allow several minutes for the project to load.
+. In the dashboard of your space, click *Create*.
+. In the *Codebases* view, click btn:[Open] next to the workspace of your earlier project. Allow several minutes for the project to load.
 +
 image::codebase_list.png[List of Codebases]
 +
 . Stop the current workspace in one of two ways:
-.. Click btn:[Workspace] from the top of the page and click btn:[Stop].
+.. Click *Workspace* from the top of the page and click *Stop*.
 +
 image::stop_workspace_button.png[Stop Workspace Menu]
 +
 .. Alternatively, within the target workspace:
-... Click *>* next to the *Workspace* menu item on the left side of the workspace.
+... On the left of the *Workspace* menu item, click *>*. The Che dashboard displays a list of all your workspaces in a separate tab. Use this dashboard to track your workspaces.
 +
 image::che_dash.png[Che Dashboard Link From Within a Workspace]
 +
-In the displayed list of all workspaces, a green dot next to the name indicates if a workspace is running.
+A green dot next to the name of the workspace indicates if it is running.
 +
 image::workspace_eclipse.png[List of Workspaces]
-... For all running workspaces, click the stop icon under *ACTIONS*.
+... Click the stop icon under *ACTIONS* to stop the running workspace.
 +
 image::stop_button_ws.png[Stop Button for Workspace]
 

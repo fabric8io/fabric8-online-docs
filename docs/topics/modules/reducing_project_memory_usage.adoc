@@ -1,0 +1,51 @@
+[id="reducing_project_memory_usage-{context}"]
+= Reducing project memory usage
+
+Optimizing memory usage is important when using the Free Tier of OpenShift Online because this tier provides limited memory. Also, each additional project in {osio} requires an additional share of your OpenShift Online resources.
+
+// for optimizing_memory_usage
+ifeval::["{context}" == "optimizing_memory_usage"]
+You can optimize your new quickstart to use less memory as follows:
+endif::[]
+
+// for spring-boot
+ifeval::["{context}" == "spring-boot"]
+Your OpenShift Online account must now share resources with two quickstart projects: the Hello World Vert.x project and the new Spring Boot HTTP project.
+
+To optimize memory for the Spring Boot HTTP quickstart:
+endif::[]
+
+. In the Che workspace, expand the `src` &#62; `main` &#62; `fabric8` folders for your project.
++
+// for optimizing_memory_usage
+ifeval::["{context}" == "optimizing_memory_usage"]
+image::fabric8_folder.png[Fabric8 Folder]
+endif::[]
++
+// for spring-boot
+ifeval::["{context}" == "spring-boot"]
+image::sb_optimize_folders.png[File Tree]
+endif::[]
++
+. Right-click the `fabric8` folder and select `New` &#62; `File`.
+// for optimizing_memory_usage
+ifeval::["{context}" == "optimizing_memory_usage"]
++
+image::new_file.png[New File Menu]
++
+endif::[]
+
+. Name the new file *deployment.yml* and click btn:[OK]. The new file displays in the editor.
+// for spring-boot
+ifeval::["{context}" == "spring-boot"]
++
+image::deploymentyaml.png[Deployment.Yaml]
++
+endif::[]
+//end conditional
+. Copy the contents of the following file to your new YAML file: https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml].
++
+IMPORTANT: Spaces are meaningful in YAML files. Ensure that the correct spacing is copied into your YAML file from the link.
++
+
+. Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.
