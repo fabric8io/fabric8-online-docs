@@ -40,7 +40,7 @@ image::bs_code_add.png[Code Added to Spring Boot Project]
 +
 . Save your changes using kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS).
 
-. Click the *run* option from the Run drop-down(image:tri_run.png[title="Run button"]). This sets up the Spring Boot server. Unlike the Vert.x Quickstart project, the hot deploy option is not available for Spring Boot projects. As a result, changes are not automatically deployed.
+. Click the *run* option from the Run drop-down(image:tri_run.png[title="Run button"]). This sets up the Spring Boot server. Unlike in the Vert.x Quickstart project, the hot deploy option is not available for Spring Boot projects. As a result, changes are not automatically deployed.
 
 . You can see the application run in the *run* tab. When the application run completes, click the blue preview URL at the top of the *run* tab to see your project.
 +
