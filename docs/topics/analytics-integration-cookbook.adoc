@@ -1,0 +1,22 @@
+// Includes for all assemblies that form the top-level sections of the Analytics Integration Cookbook.
+
+[id='before-you-start']
+= Before You Start
+
+include::modules/about-analytics-integration-cookbook.adoc[leveloffset=+1]
+
+include::modules/getting-osio-authentication-token.adoc[leveloffset=+1]
+
+
+[id='case-studies']
+= Case Studies
+
+include::modules/case-study-1.adoc[leveloffset=+1]
+
+include::modules/case-study-2.adoc[leveloffset=+1]
+
+
+[id='api-specifications']
+= API Specifications
+
+include::api-specifications.adoc[leveloffset=+1]

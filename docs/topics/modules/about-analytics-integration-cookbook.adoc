@@ -1,0 +1,18 @@
+[id="about_collaborators"]
+= About Fabric8-Analytics integration cookbook
+
+Fabric8-Analytics is an open-source analytics platform aimed primarily at assisting developers in getting insights and recommendations on the stacks used for developing applications. This platform can be used to get an overview and recommendations for single application components as well.
+
+This cookbook is written for developers who are interested in integrating https://github.com/fabric8-analytics/[Fabric8-Analytics] _stack-analyses_ or _component-analyses_ services within their applications.
+
+The integration cookbook runs you through a couple of case-studies, which describe its usage and describes the other API resources you can invoke to use Fabric8-Analytics.
+
+== Supported Ecosystems
+
+Fabric8-Analytics _stack-analyses_ analyzes application stacks of the following ecosystems currently:
+
+. Python PyPI.
+. Maven Spring Boot.
+. Maven Vert.x .
+
+Support for more ecosystems will be introduced in the near future.

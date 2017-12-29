@@ -1,0 +1,61 @@
+== Case Study 2: Get Application Dependency Recommendations
+
+This scenario has to be addressed by two API method calls.
+
+. Initiate stack analysis by uploading manifest files. A typescript example for that is as follows:
++
+[source,typescript]
+----
+uploadStackAnalysesFile = () => {
+     let data = new FormData();
+       $.each((<HTMLInputElement>document.getElementById('stackAnalysesFile')).files, function (key: any, value: any) {
+         data.append('manifest[]', value.split(':')[0]);
+         data.append('filePath[]', value.split(':')[1]);
+     });
+     $('#stackSpinner').show();
+     $.ajax({
+         url: this.stackapiUrl + 'stack-analyses',
+         type: 'POST',
+         data: data,
+         headers: { "Authorization": 'Bearer ' + this.token},
+         cache: false,
+         contentType: false,
+         processData: false,
+         success: data => {
+             if (typeof data.error === 'undefined') {
+                 $('#pomStatusSuccess').show();
+                 this.stackID = data.id;
+             }
+             else {
+                 console.log('ERRORS: ' + data.error);
+             }
+         },
+         error: () => {
+             console.log('ERROR');
+         }
+     });
+ }
+----
++
+
+. Retrieve the response for the initiated stack analysis. A typescript example for that is as follows:
++
+[source,typescript]
+----
+callStackAnalysesReportApi = () => {
+     $.ajax({
+         url: this.stackapiUrl + 'stack-analyses/' + this.stackID,
+         method: 'GET',
+         headers: { "Authorization": 'Bearer ' + this.token},
+         dataType: 'json',
+         success: response => {
+              console.log(response.recommendation.recommendations);
+             }
+         },
+         error: () => {
+             $('#stackSpinner').hide();
+             console.log('Error calling stack report API')
+         }
+         });
+ }
+----

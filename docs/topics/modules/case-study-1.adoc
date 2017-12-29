@@ -1,0 +1,34 @@
+== Case Study 1: Detect security vulnerabilities associated with a component
+
+This scenario can be addressed by calling GET `/component-analyses` method and parsing the result for security vulnerabilities.
+Following is a typescript code snippet to invoke `/component-analyses` method:
+
+[source,typescript]
+----
+let get_metadata = (ecosystem, name, version, cb) => {
+    let cacheKey = ecosystem + " " + name + " " + version;
+    let metadata = metadataCache[cacheKey];
+    if (metadata != null) {
+        cb(metadata);
+        return
+    }
+    let part = [ecosystem, name, version].join('/');
+
+    const options = url.parse(config.server_url);
+    options['path'] += `/component-analyses/${part}/`;
+    options['headers'] = {'Authorization': 'Bearer ' + config.api_token};
+    https.get(options, function(res){
+        let body = '';
+        res.on('data', function(chunk) { body += chunk; });
+        res.on('end', function(){
+            winston.info('status ' + this.statusCode);
+            if (this.statusCode == 200 || this.statusCode == 202) {
+                let response = JSON.parse(body);
+                cb(response);
+            } else {
+                cb(null);
+            }
+        });
+    });
+};
+----

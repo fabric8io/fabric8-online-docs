@@ -1,0 +1,52 @@
+[id='api-post-stack-analyses-request']
+= POST /stack-analyses
+
+== Purpose
+
+Submits an application stack analysis request
+
+IMPORTANT: You require an OpenShift.io authentication token to invoke this method.
+
+
+
+== Resource URL
+//To be added later.
+
+== Resource Information
+
+|===
+| Response Format         | JSON
+| Requires Authentication | Yes
+|===
+
+== Parameters
+
+|===
+| Name                                                                                                                              | Required                                                                                                                          | Description                                                                                                                       | Example
+| manifest[]                                                                                                                        | required                                                                                                                          | Ecosystem specific Manifest file(s) available in the application. One can provide multiple manifest files to invoke the method.   | @pom.xml
+| filePath[]                                                                                                                        | required                                                                                                                          | Corresponding manifest file’s directory information. Care has to be taken to map the manifest filenames and file paths correctly. | /home/JohnDoe
+| origin                                                                                                                            | optional                                                                                                                          | Originator of the request. Can be the name of an application integrating to the endpoint. Maintained for historical reasons.      | "my-app"
+|===
+
+== Example Request with cURL
+
+[source,typescript]
+----
+curl -k -H "Authorization: Bearer <openshift.io authentication token>" -F "manifest[]=@./pom.xml" -F "filePath[]=/home/JohnDoe"https://recommender.api.openshift.io/api/v1/stack-analyses
+----
+
+== Example Response:
+
+*Success*
+
+[source,typescript]
+----
+{    "id": "421249d9e1e5464cbf3e77dde4941463",    "status": "success",    "submitted_at": "2017-10-20 05:09:01.165068"}
+----
+
+*Failure*
+
+[source,typescript]
+----
+401:{  "error": "Authentication failed - could not decode JWT token"}
+----
