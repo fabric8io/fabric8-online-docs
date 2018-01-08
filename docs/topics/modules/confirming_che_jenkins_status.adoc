@@ -3,6 +3,8 @@
 
 After <<connecting_to_oso>>, you must ensure that the Che and Jenkins tenant services are provisioned. This process requires several minutes after completing the following steps:
 
+IMPORTANT: Due to a system upgrade, the tenant status does not currently list Che. The current workaround for this is that users can safely ignore this and continue using {osio}.
+
 . To check the Che and Jenkins status, click the check mark icon (image:check_icon.png[title="Check Icon"]) at the upper-right of the page.
 
 * If the Che and Jenkins status indicates that all services are ready (see screen capture), Che and Jenkins are provisioned and ready for use.
