@@ -7,4 +7,4 @@ include::topics/templates/attributes.adoc[]
 
 The guide describes the features of Red Hat OpenShift.io. It also contains information about potential problems users may encounter while using the software. Where possible, workarounds are described for identified issues.
 
-include::topics/user_guide.adoc[]
+include::topics/user-guide.adoc[]
