@@ -1,0 +1,20 @@
+[id="old_introduction"]
+= Introduction
+
+Welcome to the {osio} Early Access Program. During this program, a small number of users are invited to use {osio} and give us feedback on their experience and help us improve {osio}.
+
+
+[id="old_about-this-document"]
+== About this document
+
+The purpose of this End to End document is to guide users who are new to {osio} through a series of simple scenarios. These scenarios are designed to use the major {osio} features. As a result, following the instructions in this document is the fastest way for users to learn how to set up simple applications using {osio} within an hour.
+
+See the link:user_guide.html[{osio} User Guide] for comprehensive information about {osio} and its features.
+
+
+[id="old_early-access-program"]
+== Early access program
+
+As members of the Early Access Program, we recommend approaching {osio} with a willingness to experiment. The service is currently pre-Beta quality. Improvements and changes are added to {osio} daily, and often multiple times in a day. As a result, the user interface changes often and small improvements are available each time you use the system. As a consequence of this approach, the changes and updates may result in bugs in the system. On rare occasions, these bugs are severe enough for the system to be unavailable. However, as part of our continuous delivery model, the person pushing changes live is also responsible for the impact of the change. As a result, severe bugs are quickly identified and addressed.
+
+Welcome to the world of {osio}. We hope you enjoy your experience and look forward to hearing your feedback!

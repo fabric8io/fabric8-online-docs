@@ -1,7 +1,7 @@
 [id="before_you_start"]
 = Before you start
 
-include::modules/new_introduction.adoc[leveloffset=+1]
+include::modules/introduction.adoc[leveloffset=+1]
 
 include::modules/getting-support.adoc[leveloffset=+1]
 
