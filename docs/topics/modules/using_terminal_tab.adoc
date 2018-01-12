@@ -1,7 +1,7 @@
 [id="using_terminal_tab"]
 = Using the terminal tab
 
-. If your application is not running, click run at the top of the screen and wait for the *run* command to complete.
+. In your Che workspace, if your application is not running, click run at the top of the screen and wait for the *run* command to complete.
 +
 image::tri_run.png[Run Icon]
 +

@@ -28,4 +28,6 @@ The error indicates that the dependency analyzer has identified a high Common Vu
 
 . Update the version to `1.2.1`. The error icon disappears when the version number is updated.
 
-You have now learned how {OSIO} anaytics automatically analyzes dependencies in your code, identifies security vulnerabilities, and recommends fixes.
+. Commit these changes to add this dependency to your stack.
+
+You have now learned how {OSIO} analytics automatically analyzes dependencies in your code, identifies security vulnerabilities, and recommends fixes.
