@@ -11,36 +11,32 @@ The stack summary provides a synopsis of the analysis report.
 It highlights the security issues, usage outliers, and unknown or conflicting licenses in your stack. For more information about these concepts see the link:user_guide.html#glossary[Glossary].
 
 === Detailed analysis of your stack components
-The detailed component analysis provides recommendations for relevant alternate components in case of license outliers (that is, licenses not used in similar stacks) and usage outliers (that is, components not used in similar stacks). It also recommends the appropriate versions for your stack components.
+The detailed component analysis provides recommendations for relevant alternate components in case of license outliers (licenses not commonly used in similar stacks) and usage outliers (components not commonly used in similar stacks). It also recommends the appropriate versions for your stack components.
 
-It helps you assess the credibility of your stack components by providing various usage statistics for your components such as:
+It helps you assess the credibility of your stack components by providing usage statistics for your components, such as the number of {osio} projects using these components, GitHub statistics, GitHub projects dependent on these components, and tags associated with the components of your stack.
 
-* Number of {osio} projects using these components
-* GitHub statistics such as watchers and usage count
-* Other GitHub projects dependent on these components
-* Tags associated with the components of your stack
-
-To act on the alternate component recommendations:
+To act on the alternate component recommendations, if any:
 
 . In the *Detailed analysis of your stack components*, select *Alternate Components* from the filter to see the recommended alternate components.
 +
-image::filtered_alt_componet.png[Filtered Alternate Component]
+. Click *Create Work Item* adjacent to the recommended alternate component to add the component to your stack.
+
+=== Additional components recommended by {osio}
+
+{osio} recommends additional components suitable for your stack based on its analysis of similar open source stacks. These components are commonly used by similar stacks and augment your stack.
+
+The Additional components section has one recommendation to enhance the application.
+
+. Click *Additional components recommended by {osio}* to see the recommended component. It includes a link to create a new work item to track the addition of this component to your stack:
 +
-. Click *Create Work Item* adjacent to the recommended alternate component to add the component to your stack. {osio} automatically creates a new work item and displays the following success message:
+image::action_item.png[Create Work Item]
++
+. Click *Create work item* to create an auto populated work item for this recommendation. The following message displays when the work item is created:
 +
 image::wi_created.png[Work Item Created]
 +
 . Click *View Work Item* to view the auto populated work item in a new browser tab.
 +
 image::automatic_wi.png[Automatically Created Work Item]
-
-=== Additional components recommended by {osio}
-
-{osio} recommends additional components suitable for your stack based on its analysis of similar open source stacks. These components are commonly used by similar stacks and augment your stack.
-
-* Click *Create work item* adjacent to the recommended additional component to add the component to your stack.
-+
-image::action_item.png[Create Work Item]
-+
 
 You have now learned how to use stack reports to analyze and improve your application stack and track the required changes using work items.

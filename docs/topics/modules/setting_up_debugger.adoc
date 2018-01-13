@@ -8,7 +8,7 @@ To debug your project code using the Che workspace Debugger feature:
 image::debug_button.png[Debugger Button]
 +
 
-. In the new *debug* tab, look for the following lines when the debugging starts:
+. In the new *debug* tab in the *Processes* pane at the bottom of the screen, look for the following lines when the debugging starts:
 +
 ----
 [INFO] The application will wait for a debugger to attach on debugPort 5005
@@ -25,8 +25,8 @@ image::edit_debug_config.png[Edit Debug Configuration]
 +
 
 . In the *Debug Configurations* dialog box:
-.. Click btn:[+] for the *JAVA* item in the dialog box to add a Remote Java port.
-.. Change the *Port* value to `5005`.
+.. In the left pane, click btn:[+] for the *JAVA* item in the dialog box to add a *Remote Java* port.
+.. In the right pane, change the *Port* value to `5005`.
 .. Click btn:[Save] and then btn:[Close].
 +
 image::debug_config.png[Debugger Configuration Dialog]
@@ -45,12 +45,11 @@ image::debug_config.png[Debugger Configuration Dialog]
 image::breakpoint.png[Create Breakpoint]
 +
 
-. Click the *Debug* option at the bottom of the workspace:
+. Click the *Debug* option at the bottom of the workspace to confirm the addition of the breakpoint:
 +
 image::debug_option.png[Debug Option]
 +
-
-. The *Breakpoints* pane at the lower left of the *Debug* section displays the added breakpoint:
+The *Breakpoints* pane at the lower left of the *Debug* section displays the added breakpoint:
 +
 image::debug_breakpoint.png[Breakpoint View]
 
