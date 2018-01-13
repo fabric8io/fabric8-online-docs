@@ -13,7 +13,7 @@ It highlights the security issues, usage outliers, and unknown or conflicting li
 === Detailed analysis of your stack components
 The detailed component analysis provides recommendations for relevant alternate components in case of license outliers (licenses not commonly used in similar stacks) and usage outliers (components not commonly used in similar stacks). It also recommends the appropriate versions for your stack components.
 
-It helps you assess the credibility of your stack components by providing usage statistics for your components such as number of {osio} projects using these components, GitHub statistics, GitHub projects dependent on these components, and tags associated with the components of your stack.
+It helps you assess the credibility of your stack components by providing usage statistics for your components, such as the number of {osio} projects using these components, GitHub statistics, GitHub projects dependent on these components, and tags associated with the components of your stack.
 
 To act on the alternate component recommendations, if any:
 
