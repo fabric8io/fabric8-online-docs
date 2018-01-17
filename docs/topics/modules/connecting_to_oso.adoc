@@ -4,15 +4,24 @@
 You will receive a welcome email when your request to join Red Hat's {osio} Developer Preview is accepted. When you receive this email, use the following steps to set up {osio}:
 
 . In your browser, navigate to link:https://openshift.io/[https://openshift.io/]
-. Log in using your Red Hat Developer (or other listed services) credentials.
+. Click btn:[Log In] at the top of the page.
+. Enter your Red Hat Developer (or other listed services) credentials.
 . In the *Getting started in {osio}* page, select the *GitHub* and *OpenShift.com* check boxes and click btn:[Connect accounts].
++
+image::connect_accounts.png[Connecting accounts]
++
 . Log in to your GitHub account, and when prompted, click btn:[Authorize openshiftio].
 +
 NOTE: During the Early Access Program, {osio} requires a large number of GitHub permissions. The number of permissions required will be reduced when {osio} formally launches.
 
 . Click btn:[LOGIN WITH RED HAT] to log in to your OpenShift Online account.
 +
-NOTE: Your OpenShift.io account and your OpenShift Online account are the same federated identity therefore you do not need to supply any additional credentials.
+image::log_into_oso.png[Log into OpenShift Online]
++
+NOTE: Your OpenShift.io account and your OpenShift Online account are the same federated identity. As a result, you do not need to supply any additional credentials.
 
 . Keep the *User:full* check box selected, and click btn:[Allow selected permissions] to give {osio} full permission to access your OpenShift Online account.
 . You are redirected to the *Getting Started in {osio}* page with green check marks indicating that you have successfully connected your GitHub and OpenShift Online accounts. Click btn:[Get Started] to start using {osio}.
++
+image::connected_success.png[Connected accounts]
+

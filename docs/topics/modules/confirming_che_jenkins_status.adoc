@@ -1,35 +1,45 @@
 [id="confirming_che_jenkins_status"]
 = Confirming Che and Jenkins status
 
-After <<connecting_to_oso>>, you must ensure that the Che and Jenkins tenant services are provisioned. This process requires several minutes after completing the following steps:
-
-IMPORTANT: Due to a system upgrade, the tenant status does not currently list Che. The current workaround for this is that users can safely ignore this and continue using {osio}.
+After <<connecting_to_oso>>, you must ensure that the Che and Jenkins tenant services are provisioned and running. This process requires several minutes after completing the following steps:
 
 . To check the Che and Jenkins status, click the check mark icon (image:check_icon.png[title="Check Icon"]) at the upper-right of the page.
-
-* If the Che and Jenkins status indicates that all services are ready (see screen capture), Che and Jenkins are provisioned and ready for use.
 +
-image::tenant_status.png[Tenant Status]
-+
-* If the Che and Jenkins status is gray (see screen capture), the services are loading. Wait several minutes until the services are either green (ready) or red(failed).
-+
-image::tenant_status_error.png[Tenant Status Waiting]
-+
-[WARNING]
+[IMPORTANT]
 ====
-The version numbers for Che and Jenkins in the screen capture are for illustration purposes and may be outdated.
+The version numbers for Che and Jenkins in the screen captures are for illustration purposes and may be outdated.
 
 Use the following files to see the most recent versions of these services and compare it to those displayed in {osio} for your account.
 
 * Che version information: link:https://github.com/fabric8-services/fabric8-tenant/blob/master/CHE_VERSION[CHE_VERSION]
 * Jenkins version information: link:https://github.com/fabric8-services/fabric8-tenant/blob/master/JENKINS_VERSION[JENKINS_VERSION]
 ====
-
++
+* If the Che and Jenkins status indicates that all services are ready (see screen capture for an example), Che and Jenkins are provisioned and ready for use.
++
+image::tenant_status.png[Tenant Status]
++
+NOTE: The Che service does not currently display a version number. If the service is green, Che is up to date and running. 
++
+* If the Che and Jenkins status is gray (see screen capture for example), the services are loading. Allow several minutes for the services to either display as green (ready) or red (failed).
++
+image::tenant_status_error.png[Tenant Status Waiting]
++
 . If you see a version mismatch between that displayed on {osio} and the latest version in the above links, or if the status for one or both of the services is red (see screen capture), update your tenant services as follows:
 +
 image::tenant_error.png[Tenant Status Error,257]
 +
 .. On your {osio} home page, click your name on the top right corner of the screen.
++
+image::profile_menu.png[Profile menu]
++
 .. In the drop down options, click btn:[Profile].
 .. On the profile page, click btn:[Update Profile].
++
+image::update_profile_button.png[Update profile]
++
 .. Scroll to the bottom of the page and click btn:[Update tenant]. This initiates an update in your OpenShift Online account. Allow approximately five minutes for the version numbers in the status display to refresh. When the update is complete, the green check marks appear with the updated version numbers for Che and Jenkins.
++
+image::update_tenant_button.png[Update tenant button]
+
+When the status indicators are all green, you are ready to start using {osio}.
