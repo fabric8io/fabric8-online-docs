@@ -7,29 +7,44 @@ For Red Hat, an important aspect of the Early Access Program is to get feedback 
 [id="asking-questions-about-the-product"]
 == Asking questions about the product
 
-The {osio} support chat channel is the best way to ask questions or get immediate support for {osio} at any time. We encourage users to ask us questions and get immediate answers and assistance rather than spend additional time debugging or troubleshooting problems themselves.
+The {osio} support chat channel is the best way to ask questions or get immediate support for {osio} at any time. We encourage users to ask us questions and get immediate answers and assistance rather than spend their time debugging or troubleshooting problems themselves.
 
-. Sign up at link:https://chat.openshift.io/signup_email[chat.openshift.io].
+If you don't already have a MatterMost account:
+
+. Navigate to link:https://chat.openshift.io/signup_email[https://chat.openshift.io/signup_email].
 . Add your details and click btn:[Create Account] to register.
++
+image::mm_create_account.png[Create an account]
++
 . In your email inbox, click the btn:[Verify Email] link.
-. Sign in when prompted. You are redirected to the *#openshiftio* channel.
++
+image::mm_verify.jpg[Verify email]
++
+. Sign in when prompted. When asked, select *Developers*.
++
+image::mm_team.jpg[Select team]
++
+. MatterMost offers an optional tutorial for new users, which you can skip.
+. You are redirected to the *#openshiftio* channel.
 . Ask a specific person your question or start with `@here` to tag everyone present in the channel.
 
-The {osio} team is also available in the *#openshiftio* channel on Freenode for IRC users.
+In the future, navigate to link:https://chat.openshift.io[https://chat.openshift.io] to view the {osio} MatterMost channel.
+
+If you prefer to use IRC, the {osio} team is also available in the *#openshiftio* channel on Freenode.
 
 
 [id="providing-product-feedback"]
-== Providing product feedback
+== Send us feedback about the product
 
-To give the {osio} team feedback, link:https://github.com/openshiftio/openshift.io/issues[create an issue] with any detail required, including screenshots if necessary. You can also search for related issues at this link. When logged, the {osio} team triages and adds tags and other information to your issue.
+To give the {osio} team feedback, navigate to link:https://github.com/openshiftio/openshift.io/issues[create an issue] and send us a description of the problem with the necessary details, including screenshots if necessary. You can also search for related issues at this link. When logged, the {osio} team triages and adds tags and other information to your issue.
 
 If you prefer to send us feedback via email, send us the details at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
 
 
 [id="providing-documentation-feedback"]
-== Providing documentation feedback
+== Send us feedback about the documentation
 
-The documentation team welcomes all feedback.
+The documentation team welcomes all feedback or requests for information that is helpful to you but isn't covered.
 
 * Is there anything we can do to improve the documentation?
 * Was a part of the documentation not useful for you?

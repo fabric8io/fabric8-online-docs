@@ -23,9 +23,16 @@ image::get_started_menu.png[Getting Started Menu]
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 .. Click a project type from the displayed icons. For this example, click *Vert.x HTTP Booster*.
++
+image::vertx_booster.png[Select Vert.X Booster]
++
 .. Click btn:[Next].
 .. In the *OpenShift Project Name* field, type `helloworldvertx` as the unique name for your project.
++
+image::vertx_name.png[Add a name for your project]
++
 endif::[]
+
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
 .. In the *Name* field, type `spring` and press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
@@ -38,16 +45,20 @@ image::project_springboot.png[Spring Boot HTTP Project]
 endif::[]
 // conditional ends here
 .. Keep the default value for the *Organisation*, *Group Id*, and *Version* fields and click btn:[Next].
-.. Select a build pipeline strategy. For this example, use the default value *Release, Stage, Approve and Promote* and click btn:[Next].
+.. Select a build pipeline strategy. Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment. For this example, use the default value *Release, Stage, Approve and Promote* and click btn:[Next]. 
 +
-NOTE: Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment.
+image::configure_pipeline.png[Configure pipeline]
 +
-
-.. The *Build Config* screen displays the details for your *Jenkins space* and options for adding continuous integration hooks and triggering a build when your application is deployed. Use the default options for these fields and click btn:[Finish].
+.. The *Build Config* screen displays the details for your *Jenkins space* and options for adding continuous integration hooks and triggering a build when your application deploys. Use the default options for these fields and click btn:[Finish].
++
+image::build_config.png[Build config screen]
++
 .. The *Summary* screen displays your selected options. Click btn:[Ok] to continue.
-
 // for hello-world
 ifeval::["{context}" == "hello-world"]
++
+image::vertx_final.png[Final Vert.X project screen]
++
 Your new Vert.X project is now created in your space.
 endif::[]
 
