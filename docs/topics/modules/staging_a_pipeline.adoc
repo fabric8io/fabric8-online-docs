@@ -5,7 +5,7 @@ In a build pipeline, _Stage_ and _Run_ are individual OpenShift projects. _Stage
 
 The new build pipeline pushes version 1.0.1 of your new project into _Stage_ and then, after user approval, to _Run_.
 
-image::pipeline_running.png[A Running Pipeline Build]
+image::vertx_pipeline_running.png[A Running Pipeline Build]
 
 Optionally, view the build pipeline details in OpenShift Online:
 

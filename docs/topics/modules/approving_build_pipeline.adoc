@@ -5,16 +5,22 @@ Several minutes after starting, your build pipeline is ready to be promoted to *
 
 The build pipeline includes steps for a *Stage* build and a *Run* build. *Stage* is a production staging area to review and test your application before finalizing it and deploying the build on *Run*.
 
-To stage your application and review on *Stage*:
+To stage your application and review it on *Stage*:
 
-. From your dashboard of your space, click btn:[Create] from the options at the top of the screen.
-. Click btn:[Pipelines].
-. Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline. OpenShift Online provides this public URL to access the staged Quickstart application. The Vert.x HTTP Booster Quickstart produces a simple API behind a REST endpoint over HTTP with a minimalist user interface.
+. If you are not on the `Pipelines` view, click btn:[Create] from the options at the top of the screen and then click btn:[Pipelines].
+. Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline. OpenShift Online provides this public URL to access the staged Quickstart application. 
 +
-image::hello_john.png[Test the Application]
+image::rollout_stage.png[Rollout to stage]
++
+. In a new browser tab, the HTTP Booster application runs on *Stage*. The Vert.x HTTP Booster Quickstart produces a simple API behind a REST endpoint over HTTP with a minimalist user interface. 
++
+image::vertx_stage.png[Test the Application]
 +
 [WARNING]
 ====
+[.lead]
+Troubleshooting information
+
 If the new tab displays a *Application is not available* error message (see screen capture), the application is not yet ready. After several minutes, refresh the page and the application loads as expected.
 
 image::app_doesnt_exist.png[Application Does Not Exist Error]
@@ -22,8 +28,10 @@ image::app_doesnt_exist.png[Application Does Not Exist Error]
 
 . In the application, enter a name in the *Name* field and click btn:[Invoke] to test the application. The *Result* field displays the JSON result returning
 from the API.
++
+image::hello_john.png[Test the Application]
 
-If the Quickstart application on the *Stage* build runs as expected, promote your application and build on *Run*:
+If the Quickstart application on the *Stage* build runs as expected, return to the {osio} browser tab and promote your application and build on *Run*:
 
 . Return to the {osio} tab which displays the *Pipeline* view.
 . Click btn:[Input Required] at the *Approve* stage of the pipeline.
@@ -34,9 +42,10 @@ image::pipeline_firstrun.png[Input Required]
 +
 image::promote.png[Promote build]
 +
-
-. Optionally, click *Build #1* to view the detailed progress in the OpenShift Online console view.
-
+. Optionally, click *Build #1* to view the detailed progress in the OpenShift Online console view as your build is promoted to *Run*.
++
+image::build1.png[Build #1 link]
++
 . When the *Pipeline* view indicates that the project is available in the *Run* environment, click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Run* to view the project in a new tab and test the application.
 +
 image::rollout_to_run.png[Rollout to Run]

@@ -1,14 +1,20 @@
 [id="viewing_build_pipeline_oso"]
 = Viewing the build pipeline logs
 
-Optionally, you can view the details of the build pipeline in the Jenkins log for that build. For experienced users, these logs can help troubleshoot problems with the build.
+Optionally, while you wait for the pipeline build, you can view the build details in the Jenkins log. For experienced users, these logs are useful when troubleshooting problems with builds if required.
 
 . In the *Pipeline* page, click *View Log* for the build pipeline in progress.
-. When prompted, log into Jenkins with your OpenShift Online account. When logged in, the page displays the logs for your pipeline build.
++
+image::view_log_link.png[View log link]
++
+. When prompted, log into Jenkins with your OpenShift Online account.
++
+image::jenkins_login.png[Logging into Jenkins]
++
+. When logged in, the page displays the logs for your pipeline build.
 +
 image::pipeline_jenkins.png[Pipeline Build Logs in Jenkins]
 +
 WARNING: Do not click the *Proceed* or *Abort* options at the end of the logs.
 +
-
-. After examining the logs, close the browser tab and return to the {osio} browser tab.
+. After examining the logs to familiarize yourself with the log output, you can close the browser tab and return to the {osio} browser tab.
