@@ -5,11 +5,11 @@ When you create a new Quickstart project, a new build/pipeline execution initiat
 
 After you create a new Quickstart project, you can see the new project build pipeline running in the space dashboard:
 
-image::pipeline_running.png[A Running Pipeline Build]
+image::vertx_pipeline_running.png[A Running Pipeline Build]
 
 To view your new Quickstart project pipeline:
 
-* Click btn:[Pipelines]. This page displays all running pipelines for your space.
+* Click the *Pipelines* above the running pipeline status. This page displays all running pipelines for your space.
 
 Your new project build pipeline displays on this page at the *Approve* stage:
 
@@ -23,4 +23,6 @@ If your pipeline build does not start for more than ten minutes, you can manuall
 
 . Click the icon (image:kabob_white.png[title="Options"]) adjoining the pipeline build.
 . From the displayed menu, click btn:[Start Pipeline].
++
+image::manual_start_pipeline.png[Manually start pipeline build]
 ====

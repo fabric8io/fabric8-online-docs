@@ -58,7 +58,7 @@ image::build_config.png[Build config screen]
 ifeval::["{context}" == "hello-world"]
 +
 image::vertx_final.png[Final Vert.X project screen]
-+
+
 Your new Vert.X project is now created in your space.
 endif::[]
 
