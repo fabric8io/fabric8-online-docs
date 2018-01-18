@@ -24,7 +24,7 @@ image::mm_verify_email.png[Verify email]
 +
 image::mm_teams.png[Select team]
 +
-. MatterMost offers an optional tutorial for new users, which you can skip.
+. MatterMost offers an optional tutorial for new users, which you can skip. Click *Skip tutorial* to continue.
 +
 image::mm_tutorial.png[Skip tutorial]
 +
