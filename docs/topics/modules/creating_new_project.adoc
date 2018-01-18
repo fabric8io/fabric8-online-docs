@@ -45,7 +45,7 @@ image::project_springboot.png[Spring Boot HTTP Project]
 endif::[]
 // conditional ends here
 .. Keep the default value for the *Organisation*, *Group Id*, and *Version* fields and click btn:[Next].
-.. Select a build pipeline strategy. Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment. For this example, use the default value *Release, Stage, Approve and Promote* and click btn:[Next]. 
+.. Select a build pipeline strategy. Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment. For this example, use the default value *Release, Stage, Approve and Promote* and click btn:[Next].
 +
 image::configure_pipeline.png[Configure pipeline]
 +
@@ -53,7 +53,8 @@ image::configure_pipeline.png[Configure pipeline]
 +
 image::build_config.png[Build config screen]
 +
-.. The *Summary* screen displays your selected options. Click btn:[Ok] to continue.
+.. The *Summary* screen displays the selected options for the project. Click btn:[Ok] to create the project.
+
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 +
