@@ -7,26 +7,38 @@ View the details for the *Environment* as follows:
 
 . At the top of the page, click btn:[Create].
 
-. From the options displayed, click btn:[Environments]. If you have not activated experimental features in {osio}, the *Experimental Features* warning appears. Select *I agree to the terms of this feature, as written above* and click btn:[Activate All Experimental Features] to proceed.
+. From the options displayed, click btn:[Environments]. If you have not activated experimental features in {osio}, the *Experimental Features* warning appears. Click btn:[Opt-in to Experimental Features] to proceed.
 +
-image::experimental_message.png[Experimental Features]
+image::environment_page.png[Environment page warning]
++
+. On the profile options page, select the `Experimental Features` option and click btn:[Update].
++
+image::features_options.png[Features options]
++
+. On the profile page, click the name of your space in the `My Spaces` box.
++
+image::spaces_box.png[Spaces box]
 +
 . When loaded, this view displays the details for each project on *Stage* and *Run*.
 +
 image::environments.png[Environments Main Page]
 
-Optionally view the pipeline progress in OpenShift Online as follows:
+Optionally, you can view the pipeline progress in OpenShift Online's console as follows:
 
-. Navigate to link:https://manage.openshift.com/[manage.openshift.com] in a new browser tab and log into your account.
-
-. Click btn:[Open Web Console] to view the console.
-
-. From the list of projects, click btn:[USERNAME-jenkins].
-
-. On the left side of the page, click btn:[Builds] and then *Builds* again in the menu options to see the new build for your project.
+. For either the *Stage* or *Run* environments, click the options button:
 +
-image::builds_builds.png[Builds > Builds in OpenShift Online]
+image::environment_options.png[Environment options]
 +
-. Click the name of the build to view details. If required, use this console to see the build progress.
+. From the options, click *OpenShift Console*.
 +
-image::monitor_build.png[Monitor Build in OpenShift Online]
+image::environment_options_details.png[Environment options]
++
+. If prompted, click btn:[LOGIN WITH RED HAT] to log in to your OpenShift Online account.
++
+image::log_into_oso.png[Log into OpenShift Online]
++
+. A detailed view of the build in OpenShift Online displays.
++
+image::openshift_online_console.png[OpenShift Online Console]
+
+Within this view, you can view the details of your build in the appropriate environment.

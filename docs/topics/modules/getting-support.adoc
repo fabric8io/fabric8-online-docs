@@ -11,7 +11,7 @@ The {osio} support chat channel is the best way to ask questions or get immediat
 
 If you don't already have a MatterMost account:
 
-. Navigate to link:https://chat.openshift.io[https://chat.openshift.io].
+. Navigate to link:https://chat.openshift.io[https://chat.openshift.io] and click *Create one now*.
 +
 image::mm_create_account.png[Create an account]
 +

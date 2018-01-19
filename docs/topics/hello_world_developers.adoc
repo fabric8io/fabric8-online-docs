@@ -16,9 +16,9 @@ include::modules/viewing_build_pipeline_oso.adoc[leveloffset=+1]
 include::modules/about_codebases.adoc[leveloffset=+1]
 
 include::modules/approving_build_pipeline.adoc[leveloffset=+1]
-//stopped here
-include::modules/optional_detailed_views.adoc[leveloffset=+1]
 
+include::modules/optional_detailed_views.adoc[leveloffset=+1]
+//stopped here
 include::modules/creating_using_new_work_item.adoc[leveloffset=+1]
 
 include::modules/about_workspaces.adoc[leveloffset=+1]
