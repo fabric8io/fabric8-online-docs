@@ -1,7 +1,7 @@
 [id="creating_new_space-{context}"]
 = Creating a new space
 
-In {osio}, the first step for any new project is to create a new space. You can then add users as collaborators, projects, iterations to plan your work, and track your tasks and changes within the space using Work Items. Each space must have a unique name.
+In {osio}, the first step for any new project is to create a new space. You can then add users as collaborators for the space and all the work is tracked within the space using work items. Each space must have a unique name.
 
 [discrete]
 == Procedure
@@ -17,5 +17,4 @@ image::create_space_first.png[Create your first space]
 image::create_space.png[Create new space]
 +
 . Use the drop-down menu for the *Template* field to select a template for your new space. For this example, select *Scenario Driven Planning* and click btn:[Create].
-. The *How would you like to get started?* menu displays for your new space. 
-
+. The *How would you like to get started?* menu displays for your new space.

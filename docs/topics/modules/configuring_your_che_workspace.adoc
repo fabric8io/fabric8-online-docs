@@ -1,9 +1,10 @@
 [id="configuring_your_che_workspace-{context}"]
 = Configuring your Che workspace
 
-After your Che workspace has loaded, you can see your project code at the top right side of the screen. You must now ensure the following prerequisites are met before you start using the workspace to edit the codebase:
+After your Che workspace has loaded, you can see your project code in the *Projects Explorer* panel, in the upper-left side of the screen. You must now ensure the following prerequisites are met before you start using the workspace to edit the codebase:
 
 . Ensure Git commands are available:
+.. In the *Projects Explorer* panel, click your project name to select it.
 .. Click *Git* in the workspace menu to ensure that all the listed commands (except *Initialize Repository*) are available.
 +
 image::git_menu.png[Git Menu Options]
@@ -12,7 +13,19 @@ image::git_menu.png[Git Menu Options]
 
 . Configure your project for Maven:
 .. In the *Projects Explorer* panel, click your project name to select it.
-.. From the menu options at the top of the page, click *Project* and then select *Update Project Configuration*.
+.. From the menu options at the top of the page, click *Project*, and then select *Update Project Configuration*.
++
+// for hello-world
+ifeval::["{context}" == "hello-world"]
+image::hw_project_menu.png[Configure Maven]
+endif::[]
+// for importing-existing-project
+ifeval::["{context}" == "importing-existing-project"]
+image::imp_project_menu.png[Configure Maven]
+endif::[]
+// end of conditions
++
+.. In the displayed *Project Configuration* window, select *Maven* and click btn:[Save].
 +
 // for hello-world
 ifeval::["{context}" == "hello-world"]
@@ -24,7 +37,7 @@ image::imp_config_maven.png[Configure Maven]
 endif::[]
 // end of conditions
 +
-.. In the *Project Configuration* window, select *Maven* and click btn:[Save].
+
 .. Click the *run* option from the Run button (image:tri_run.png[title="Run button"]). Maven then downloads the required dependencies, compiles the application, and starts the _verticle_ (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options. The hot deploy option automatically updates the application when you make a change.
 . A *run* terminal appears at the bottom pane of the Che workspace. When the `mvn{nbsp}build` command finishes executing, the *run* view displays the following message:
 +

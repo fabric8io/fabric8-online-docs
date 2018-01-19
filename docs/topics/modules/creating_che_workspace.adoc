@@ -20,10 +20,6 @@ image::loading_workspaces.png[Loading Workspaces]
 +
 image::new_ws.png[New Workspace]
 +
-. Like booting a computer, the workspace requires several minutes to start. The terminal window at the bottom of the Che workspace tab displays the progress:
-+
-image::che_terminal.png[Workspace Terminal]
-
 [IMPORTANT]
 ====
 If a new tab does not appear, your browser is blocking the pop-up window that displays the new workspace. To resolve this, allow pop-up windows from *++https://openshift.io++*. In Chromium-based browsers, do the following:
@@ -35,7 +31,15 @@ image::blocked_popup.png[Blocked Pop Up]
 +
 . Now, click btn:[Open] again to load the workspace.
 ====
-
++
+When the workspace is running, the following confirmation message displays:
++
+image::ws_running.png[Workspace Running success message]
++
+. Like booting a computer, the workspace requires several minutes to start. The terminal window at the bottom of the Che workspace tab displays the progress:
++
+image::che_terminal.png[Workspace Terminal]
++
 When loaded and ready to use, the new Che workspace tab displays the GitHub repository folder of your new project in the *Projects Explorer* panel.
 
 // for hello-world
@@ -50,6 +54,6 @@ endif::[]
 
 // for importing-existing-project
 ifeval::["{context}" == "importing-existing-project"]
-image::imp_loaded_springboot.png[Your GitHub Project in Che]
+image::imp_vertx_eventbus.png[Your GitHub Project in Che]
 endif::[]
 // end of conditions
