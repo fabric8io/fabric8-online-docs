@@ -54,7 +54,6 @@ image::configure_pipeline.png[Configure pipeline]
 image::build_config.png[Build config screen]
 +
 .. The *Summary* screen displays the selected options for the project. Click btn:[Ok] to create the project.
-
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 +

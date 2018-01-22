@@ -3,7 +3,7 @@
 
 Create a new <<about_workspaces,Che workspace>> for your project:
 
-. In the dashboard of your {osio} space, click *Create*. The default view for this tab is *Codebases*.
+. Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*.
 
 . In the *WORKSPACES* section, click *Create workspace* for your project.
 +
@@ -16,7 +16,7 @@ If you see a message about the workspaces loading (see screen capture), it indic
 image::loading_workspaces.png[Loading Workspaces]
 ====
 
-. When your workspace is ready, click btn:[Open] to view your new Che workspace in a new browser tab. This workspace loads the codebase for the listed project.
+. When your workspace is ready, it automatically loads in a new tab. Alternatively, click btn:[Open] to view your new Che workspace in a new browser tab. This workspace loads the codebase for the listed project.
 +
 image::new_ws.png[New Workspace]
 +

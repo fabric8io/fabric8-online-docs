@@ -18,7 +18,7 @@ include::modules/about_codebases.adoc[leveloffset=+1]
 include::modules/approving_build_pipeline.adoc[leveloffset=+1]
 
 include::modules/optional_detailed_views.adoc[leveloffset=+1]
-//stopped here
+
 include::modules/creating_using_new_work_item.adoc[leveloffset=+1]
 
 include::modules/about_workspaces.adoc[leveloffset=+1]
@@ -30,7 +30,7 @@ include::modules/configuring_your_che_workspace.adoc[leveloffset=+1]
 include::modules/changing_quickstart_code.adoc[leveloffset=+1]
 
 include::modules/commiting_pushing_changes_git.adoc[leveloffset=+1]
-
+//stopped here
 include::modules/reviewing_publishing_changes.adoc[leveloffset=+1]
 
 include::modules/closing_workitem.adoc[leveloffset=+1]
