@@ -1,27 +1,40 @@
 [id="creating_using_new_work_item"]
 = Creating and using a new work item
 
-After creating a project in your space, create a Work Item and use it to track your changes to the project code.
+After creating a project in your space, you can make changes to the code. You can now create a Work Item and use it to track a task which includes changes to the project code.
 
-. On the top of the {osio} page, click *Plan*.
-. If you have not already activated the Experimental Features of {osio}, the *Experimental Features* warning appears. Check *I agree to the terms of this feature, as written above* and click btn:[Activate All Experimental Features] to proceed.
-. In the *Backlog* view, click btn:[Create Work Item] at the bottom of the screen. This is the quickest option to create a new Work Item.
+. On the top of the {osio} page, click *Plan*. The Planner's `Backlog` view appears as a default.
+. In the *Backlog* view, the `Add Work Item` option is the quickest way to create a new Work Item.
 +
-image::create_wi.png[Create Work Item]
+image::backlog_quickadd.png[The Backlog's Quick Add Work Item option]
 +
-. Click the work item type icon (image:wi_type_icon.png[title="Work Item Type"]) in the quick add to select a Work Item Type. For this example, select the default *Feature* option.
+. Click the work item type drop down menu to see the available options. For this example, use the default *Scenario* option.
++
+image::quickadd_wi_type.png[Quick Add Work Item type]
++
 . In the *Work Item Title* field, type *Change greeting*.
-. In the *Work Item Description* field, type *Change the greeting from Hello to Hello from Che*.
-. Click &#10004; to create the Work Item. The new Work Item displays in the list of work items.
+. Click btn:[Add and Open] to create the Work Item and view it.
 +
 image::new_wi.png[New Work Item]
 +
-. Double click the new Work Item to see a Quick Preview on the right:
+. Double click the title of the new Work Item to see a Quick Preview on the right:
 +
 image::wi_edit.png[Edit Work Item]
 +
-. Click *Unassigned* and add your name as the new assignee for this Work Item. Close the Preview to save your changes.
+. Click *Add Assignee* and add your name as the new assignee for this Work Item. Click *X* to close the menu and save changes.
++
+image::wi_add_assignee.png[Add Asignee]
++
+. Click the *Description* field and type *Change the greeting from Hello to Hello from Che*. Click &#10004; to save.
++
+image::wi_change_desc.png[Change description]
++
 . Click *Board* from the menu options at the top of the screen to see the board view for the Work Items.
-. Your new Work Item appears in the *new* column. Drag the Work Item into the *open* column. You can track the progress of your Work Item by moving it to *in progress*, *resolved*, or *closed* states.
++
+image::backlog_board.png[Backlog and Board]
++
+. Your new Work Item appears in the *new* column. Drag the Work Item into the *in progress* column. This indicates that the Work Item is now being worked on. You can track the progress of your Work Item by moving it to *open*, *in progress*, *resolved*, or *closed* states.
 +
 image::move_workitem.png[Move Work Item]
+
+You have now created a Work Item assigned to yourself that tracks the change we will implement in the code. s
