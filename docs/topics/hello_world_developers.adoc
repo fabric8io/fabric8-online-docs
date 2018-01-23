@@ -30,7 +30,7 @@ include::modules/configuring_your_che_workspace.adoc[leveloffset=+1]
 include::modules/changing_quickstart_code.adoc[leveloffset=+1]
 
 include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
-//stopped here
+
 include::modules/reviewing_publishing_changes.adoc[leveloffset=+1]
 
 include::modules/closing_workitem.adoc[leveloffset=+1]

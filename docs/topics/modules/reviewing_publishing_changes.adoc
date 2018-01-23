@@ -1,8 +1,7 @@
 [id="reviewing_publishing_changes-{context}"]
 = Reviewing and publishing your changes
 
-A Git commit triggers a pipeline build in {osio}.
-
+Now that we have committed and pushed our changes to GitHub, a pipeline build is automatically triggered in {osio}. 
 
 [discrete]
 == Procedure
@@ -22,7 +21,7 @@ image::imp_build_2.png[Build #2 Runs]
 endif::[]
 //end conditional
 +
-. In the *Create* tab, switch to the *Applications* view to see the following information:
+. In the *Create* tab, click *Applications* to see the following information:
 +
 //for hello world
 ifeval::["{context}" == "hello-world"]
@@ -34,7 +33,7 @@ image::imp_versions_applications.png[Versions of the Application]
 endif::[]
 //end conditional
 +
-** Different versions of your application are deployed to *Stage* and *Run*. Version 1.0.2 of the application is deployed to *Stage* because you have not yet promoted it to *Run*. The older version, 1.0.1, is deployed to *Run* because you approved it the last time the pipeline build executed.
+** Different versions of your application are deployed to *Stage* and *Run*. Version 1.0.2 of the application, which includes your committed change to the code, is deployed to *Stage* because you have not yet promoted it to *Run*. The older version, 1.0.1, is deployed to *Run* because you approved it the last time the pipeline build executed.
 ** The green check marks indicate that both builds are operational.
 ** The number `1` indicates that each of the application builds is scaled to one pod in OpenShift Online. The number of pods indicates the number of running instances of the application.
 ** The version numbers link to individual running applications. If you move your mouse pointer over the version numbers, you will see a message about the environments. Click the version numbers to see the relevant application version running in *Stage*. You can share these URLs to compare the old and new versions of the application.
@@ -45,4 +44,7 @@ image::mouse_over_version.png[Mouse Over the Application Version]
 . At the *Approve* stage, click btn:[Input Required].
 . Click btn:[Promote] to promote version 1.0.2 of the application to *Run*.
 
-Your changes are now available on both *Stage* and *Run*.
+Your changes are now available on both *Stage* and *Run*. If you return to the `Applications` view, you can see the version for both *Stage* and *Run* are now 1.02.
+
+image::updated_app.png[Updated applications]
+
