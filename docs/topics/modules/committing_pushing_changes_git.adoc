@@ -1,4 +1,4 @@
-[id="commiting_pushing_changes_git-{context}"]
+[id="committing_pushing_changes_git-{context}"]
 = Committing and pushing changes to GitHub
 
 After making the required changes to your code, commit and push the modifications to your project GitHub repository.

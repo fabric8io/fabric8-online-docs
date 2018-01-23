@@ -39,7 +39,7 @@ status:
     limits.memory: 512Mi
 ----
 
-. Follow the instructions in <<reducing_project_memory_usage-hello-world>> and <<commiting_pushing_changes_git-hello-world>> and then resume the next steps here. This allows you to view your memory quota details before and after optimizing the memory usage and compare the two results.
+. Follow the instructions in <<reducing_project_memory_usage-hello-world>> and <<committing_pushing_changes_git-hello-world>> and then resume the next steps here. This allows you to view your memory quota details before and after optimizing the memory usage and compare the two results.
 
 . Click btn:[Create] and then btn:[Pipelines] to view the new pipeline build. Committing and pushing your new YAML file triggers a new pipeline build for your {osio} project. Proceed to the next step when the pipeline build rolls out to *Stage*:
 +

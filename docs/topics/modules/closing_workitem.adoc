@@ -3,11 +3,11 @@
 
 After implementing and reviewing your code changes, update the relevant Work Item to track the work done.
 
-. Click the *Plan* tab and then *Board* to see the Planner Board view.
+. Click the *Plan* tab and then *Board* to return to the Planner Board view.
 . Drag the Work Item to the *Resolved* state.
 +
 image::resolved_wi.png[Resolved Work Item]
 
 Resolving a Work Item communicates to the team that the task being tracked is complete. Once your task is reviewed and approved you can drag it to the *Closed* state.
 
-You have now created your first quickstart project in {osio}, made changes to your project code, committed the changes to GitHub, and published the new version of your project, and updated the Work Item to reflect your work.
+Congratulations! You have now created your first quickstart project in {osio}, made changes to your project code, committed the changes to GitHub, and published the new version of your project, and updated the Work Item to reflect your work.

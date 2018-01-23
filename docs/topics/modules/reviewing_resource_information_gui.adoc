@@ -7,7 +7,7 @@ To check the memory limit in OpenShift Online user interface:
 
 . In a new browser tab, navigate to the OpenShift Online console at link:https://console.starter-us-east-2.openshift.com/[console.starter-us-east-2.openshift.com].
 
-. From the list of projects, click *_username_-run* to see the resources used for the *Run* environment or *_username_-stage* to see the resources for the *Stage* environment.
+. From the list of projects at the right side of the page, click *_username_-run* to see the resources used for the *Run* environment or *_username_-stage* to see the resources for the *Stage* environment.
 +
 image::select_project_run.png[Select the Run Project]
 +
@@ -18,7 +18,9 @@ See <<viewing_projects_oso>> for details about the listed projects.
 image::app_pods.png[Application Pods]
 +
 . The *Pods* page lists your Hello World project pod. Click the project name to see the resource information for the project.
-
++
+image::hw_pod.png[Hello World Project Pod]
++
 . The *Details* page lists the *Status* of the pod and the container resource information:
 +
 image::resources.png[Resources]

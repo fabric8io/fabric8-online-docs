@@ -13,4 +13,4 @@ include::modules/using_workspace_spring_boot_project.adoc[leveloffset=+1]
 
 include::modules/reducing_project_memory_usage.adoc[leveloffset=+1]
 
-include::modules/commiting_pushing_changes_git.adoc[leveloffset=+1]
+include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
