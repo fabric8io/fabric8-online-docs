@@ -5,6 +5,8 @@
 
 include::introduction_to_red_hat_openshift_io.adoc[leveloffset=+1]
 
+include::modules/getting-support.adoc[leveloffset=+1]
+
 include::accessing_red_hat_openshift_io.adoc[leveloffset=+1]
 
 
