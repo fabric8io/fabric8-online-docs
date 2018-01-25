@@ -13,10 +13,10 @@ After creating your {osio} project, you can debug your application code in the C
 image::project_dir.png[Project Directory]
 +
 . In your `HttpApplication.java` file, add a line break between lines 21 and 22, then type `router.` and press kbd:[Ctrl+Space] to see the context-aware assistance.
+. From the displayed list, select the `get():Route` method. This is the Vert.x Router get method and maps to the HTTP verb GET.
 +
 image::debug_router.png[Project Directory]
 +
-. From the displayed list, select the `get():Route` method. This is the Vert.x Router get method and maps to the HTTP verb GET.
 . Edit the new line to include the `goodbye` endpoint. The following is an example of the completed new line:
 +
 [source,java]
@@ -24,7 +24,7 @@ image::debug_router.png[Project Directory]
 router.get("/api/goodbye").handler(this::goodbye);
 ----
 +
-. Add a new line after line 52 and then add the following method for the `goodbye` endpoint:
+. Add a new line after line 53 and then add the following method for the `goodbye` endpoint:
 +
 [source,java]
 ----
