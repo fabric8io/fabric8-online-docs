@@ -21,7 +21,7 @@ image::new_wi.png[New Work Item]
 +
 image::wi_edit.png[Edit Work Item]
 +
-. Click *Add Assignee* and add your name as the new assignee for this Work Item. Click *X* to close the menu and save changes.
+. Click *Add Assignee* and add your name as the new assignee for this Work Item. Click *X* to close the menu and save changes. Assigning a Work Item sends that person an email notification. Depending on your mail server and account, this notification email may be arrive after a delay of several minutes. 
 +
 image::wi_add_assignee.png[Add Asignee]
 +
