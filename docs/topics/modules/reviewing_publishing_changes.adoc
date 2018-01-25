@@ -36,7 +36,10 @@ endif::[]
 ** Different versions of your application are now deployed to *Stage* and *Run*. Version 1.0.2 of the application, which includes your committed change to the code, is deployed to *Stage* because you have not yet promoted it to *Run*. The older version, 1.0.1, is deployed to *Run* because you approved it the last time the pipeline build executed.
 ** The green check marks indicate that both builds are operational.
 ** The number `1` indicates that each of the application builds is scaled to one pod in OpenShift Online. The number of pods indicates the number of running instances of the application.
-** The version numbers link to individual running applications. If you move your mouse pointer over the version numbers, you will see a message about the environments. Click the version numbers to see the relevant application version running in *Stage*. You can share these URLs to compare the old and new versions of the application. Note that clicking *1.0.1* loads the old version of your application ("Hello, %name!") and clicking *1.0.2* loads the new version of the application ("Hello from Che, %name!"). You can use these separate staging areas to share different versions of your application before *Promoting* a change.
+** The version numbers link to individual running applications. If you move your mouse pointer over the version numbers, you will see a message about the environments. Click the version numbers to see the relevant application version running in *Stage*. You can share these URLs to compare the old and new versions of the application. Note that:
+*** clicking *1.0.1* loads the old version of your application ("Hello, %name!")
+*** clicking *1.0.2* loads the new version of the application ("Hello from Che, %name!")
+You can use these separate staging areas to share different versions of your application before *Promoting* a change.
 +
 image::mouse_over_version.png[Mouse Over the Application Version]
 +
