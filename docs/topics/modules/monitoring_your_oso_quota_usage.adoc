@@ -10,7 +10,9 @@ image::rollout_to_stage.png[Rollout To Stage]
 . In the OpenShift Online console browser tab, refresh the <<reviewing_resource_information_gui,*Details*>> page to see the optimized memory usage for your Hello World project:
 +
 image::optimize_memory.png[Optimizing HW Memory Usage]
++
+Compare these results to your earlier resource information to see the optimization of various resources.
 
 . <<approving_build_pipeline,Promote the application>> to the *Run* environment.
 
-In case you still fall short of resources and memory in the OpenShift Online Free Tier, see <<cleaning_oso_account>> to reset your OpenShift Online and {osio} accounts.
+NOTE: If you have completed these instructions for optimizing your resources but still do not have enough OpenShift Online resources, see <<cleaning_oso_account>> to reset your OpenShift Online and {osio} accounts.

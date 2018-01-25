@@ -19,35 +19,9 @@ image::commit_menu.png[Git Commit Menu]
 .. Add a commit message describing your changes.
 .. Select the *Push committed changes to:* check box.
 .. Click btn:[Commit].
-+
-//for hello world
-ifeval::["{context}" == "hello-world"]
-image::hw_commit_dialog.png[Git Commit Dialog]
 
 When the commit succeeds, the following message displays:
 
-image::hw_commit_successful.png[Pushed to Origin Message]
-endif::[]
-//for springboot
-ifeval::["{context}" == "spring-boot"]
-image::sb_commit_dialog.png[Git Commit Dialog]
-
-When the commit succeeds, the following message displays:
-
-//image::springboot_commit_successful.png[Pushed to Origin Message]
-endif::[]
-//for optimizing memory usage
-ifeval::["{context}" == "optimizing_memory_usage"]
-image::opt_commit_dialog.png[Git Commit Dialog]
-
-When the commit succeeds, the following message displays:
-
-//image::optmem_commit_successful.png[Pushed to Origin Message]
-endif::[]
-//for importing code
-ifeval::["{context}" == "importing-existing-project"]
-image::imp_commit_dialog.png[Git Commit Dialog]
-endif::[]
-//end conditional
+image::pushed_to_origin.png[Pushed to origin]
 
 You have now committed your code changes to GitHub.
