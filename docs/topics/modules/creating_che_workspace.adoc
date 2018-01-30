@@ -1,10 +1,25 @@
 [id="creating_che_workspace-{context}"]
 = Creating a Che workspace
 
+// for hello-world
+ifeval::["{context}" == "hello-world"]
 Create a new <<about_workspaces,Che workspace>> for your project:
 
-. Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*.
+. Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*
+endif::[]
 
+// for spring-boot
+ifeval::["{context}" == "spring-boot"]
+Return to the *Codebases* view in your {osio} browser tab to create a new workspace.
+endif::[]
+
+// for importing-existing-project
+ifeval::["{context}" == "importing-existing-project"]
+Create a new <<about_workspaces,Che workspace>> for your project:
+
+. Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*
+endif::[]
+// end of conditions
 . In the *WORKSPACES* section, click *Create workspace* for your project.
 +
 image::create_workspace.png[Create Workspace]
