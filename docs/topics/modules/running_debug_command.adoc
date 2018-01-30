@@ -1,14 +1,14 @@
 [id="running_debug_command"]
 = Running the debug command
 
-After setting up the Debugger, you can use the Debug command for your project:
+Now that you have set up the Debugger for your project, you can use the debug command as follows:
 
-. Navigate to menu:Run[Debug>Remote Java].
+. In your workspace tab, navigate to menu:Run[Debug>Remote Java].
 +
 image::debug_remote_java.png[Debug Remote Java]
 +
 
-. A success message is displayed when the remote debugger connects.
+. A success message displays when the remote debugger connects.
 +
 image::success_remote.png[Successful Connection to Remote Debugger]
 +
@@ -16,10 +16,15 @@ NOTE: If your remote debugger connection fails, restart your browser and try aga
 +
 
 . Navigate to menu:Run[Terminal] to view the terminal tab.
++
+image::run_terminal.png[Run>Terminal]
++
 . Run the following command to start debugging:
 +
 ----
 curl localhost:8080/api/goodbye
 ----
 
-. Click the *Debug* option at the bottom of the workspace to review variables in the *Variables* pane. You can also use the *Resume*, *Step Into*, *Step Over*, and *Step Out* options during the debugging process.
+. Click the *Debug* option at the bottom of the workspace to review variables in the *Variables* pane. 
+
+You can also use the *Resume*, *Step Into*, *Step Over*, and *Step Out* options during the debugging process. When you have finished exploring the debugging features, close the workspace tab and return to the {osio} tab.

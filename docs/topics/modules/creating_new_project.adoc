@@ -10,14 +10,15 @@ endif::[]
 ifeval::["{context}" == "spring-boot"]
 In this section, you learn how to create a quickstart project based on a Spring Boot application in your space. See the <<hello_world_developers,Hello World project>> for an example of a Vert.X application.
 
-. In your {osio} home page, double-click your new space.
-. In the dashboard of your space, click btn:[Add to space]. The *How would you like to get started?* dialog box opens.
+. In the dashboard of your space, click btn:[Add to space]. 
++
+image::add_to_space.png[Add to space button]
++
 endif::[]
-
-image::get_started_menu.png[Getting Started Menu]
-
 . In the *How would you like to get started?* dialog box, click btn:[Create a new Quickstart project].
-
++
+image::get_started_menu.png[Getting Started Menu]
++
 . In the *Application Wizard*:
 // conditional starts here
 // for hello-world
@@ -42,6 +43,9 @@ image::project_springboot.png[Spring Boot HTTP Project]
 +
 .. Click btn:[Next].
 .. In the *OpenShift Project Name* field, type `myspringboot` as the name for your project.
++
+image::springboot_name.png[Add a name for your project]
++
 endif::[]
 // conditional ends here
 .. Keep the default value for the *Organisation*, *Group Id*, and *Version* fields and click btn:[Next].
@@ -54,9 +58,9 @@ image::configure_pipeline.png[Configure pipeline]
 image::build_config.png[Build config screen]
 +
 .. The *Summary* screen displays the selected options for the project. Click btn:[Ok] to create the project.
++
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-+
 image::vertx_final.png[Final Vert.X project screen]
 
 Your new Vert.X project is now created in your space.
@@ -64,6 +68,8 @@ endif::[]
 
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
+image::springboot_final.png[Final Vert.X project screen]
+
 Your new Spring Boot project is now created in your space.
 endif::[]
 

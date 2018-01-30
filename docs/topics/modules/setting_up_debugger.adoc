@@ -1,7 +1,7 @@
 [id="setting_up_debugger"]
 = Setting up the debugger
 
-To debug your project code using the Che workspace Debugger feature:
+To debug your project code, set up the Che workspace Debugger feature:
 
 . Click the *debug* option from the Debug drop-down.
 +
@@ -27,10 +27,10 @@ image::edit_debug_config.png[Edit Debug Configuration]
 . In the *Debug Configurations* dialog box:
 .. In the left pane, click btn:[+] for the *JAVA* item in the dialog box to add a *Remote Java* port.
 .. In the right pane, change the *Port* value to `5005`.
-.. Click btn:[Save] and then btn:[Close].
 +
 image::debug_config.png[Debugger Configuration Dialog]
 +
+.. Click btn:[Save] and then btn:[Close].
 . To create a new breakpoint for your method:
 .. In the `HttpApplication.java` file, find the following line of code:
 +
@@ -49,7 +49,7 @@ image::breakpoint.png[Create Breakpoint]
 +
 image::debug_option.png[Debug Option]
 +
-The *Breakpoints* pane at the lower left of the *Debug* section displays the added breakpoint:
+The *Breakpoints* pane at the lower left of the *Debug* section displays the added breakpoint at the appropriate line:
 +
 image::debug_breakpoint.png[Breakpoint View]
 
