@@ -7,27 +7,25 @@ After <<connecting_to_oso>>, you must ensure that the Che and Jenkins tenant ser
 +
 [IMPORTANT]
 ====
-The version numbers for Che and Jenkins in the screen captures are for illustration purposes and may be outdated.
+The version numbers for Jenkins in the screen captures are for illustration purposes and can be outdated.
 
-Use the following files to see the most recent versions of these services and compare it to those displayed in {osio} for your account.
+Use the following file to see the most recent version for Jenkins and compare it to the version displayed in {osio} for your account.
 
-* Che version information: link:https://github.com/fabric8-services/fabric8-tenant/blob/master/CHE_VERSION[CHE_VERSION]
+//* Che version information: link:https://github.com/fabric8-services/fabric8-tenant/blob/master/CHE_VERSION[CHE_VERSION]
 * Jenkins version information: link:https://github.com/fabric8-services/fabric8-tenant/blob/master/JENKINS_VERSION[JENKINS_VERSION]
 ====
 +
-* If the Che and Jenkins status indicates that all services are ready (see screen capture for an example), Che and Jenkins are provisioned and ready for use.
+* If the tenant status indicates that all services are ready (see screen capture for an example), Che and Jenkins are provisioned and ready for use.
 +
-image::tenant_status.png[Tenant Status]
+image::tenant_status_success.png[Tenant Status]
+
+* If the Jenkins status is gray (see screen capture for example), this service is still loading. Allow several minutes for all services to either display as green (ready) or red (failed).
 +
-NOTE: The Che service does not currently display a version number. If the service is green, Che is up to date and running. 
+image::tenant_status_waiting.png[Tenant Status Waiting]
 +
-* If the Che and Jenkins status is gray (see screen capture for example), the services are loading. Allow several minutes for the services to either display as green (ready) or red (failed).
+. If you see a version mismatch between that displayed on {osio} and the latest version in the above links, or if the status for Jenkins is red (see screen capture), update your tenant services as follows:
 +
-image::tenant_status_error.png[Tenant Status Waiting]
-+
-. If you see a version mismatch between that displayed on {osio} and the latest version in the above links, or if the status for one or both of the services is red (see screen capture), update your tenant services as follows:
-+
-image::tenant_error.png[Tenant Status Error,257]
+image::tenant_status_error.png[Tenant Status Error,257]
 +
 .. On your {osio} home page, click your name on the top right corner of the screen.
 +
