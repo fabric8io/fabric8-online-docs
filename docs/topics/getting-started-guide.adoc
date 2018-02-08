@@ -7,7 +7,6 @@ include::modules/getting-support.adoc[leveloffset=+1]
 
 include::modules/prereqs.adoc[leveloffset=+1]
 
-
 = Start using {osio}
 
 include::hello_world_developers.adoc[leveloffset=+1]
@@ -18,7 +17,11 @@ include::analyzing-application.adoc[leveloffset=+1]
 
 include::using_advanced_che_features.adoc[leveloffset=+1]
 
-include::spring_boot_quickstart_tutorial.adoc[leveloffset=+1]
+//include::spring_boot_quickstart_tutorial.adoc[leveloffset=+1]
+//asciidoctor: WARNING: invalid reference: spring_boot_quickstart_tutorial
+//asciidoctor: WARNING: invalid reference: spring_boot_quickstart_tutorial
+//asciidoctor: WARNING: invalid reference: reducing_project_memory_usage-spring-boot
+// look for commented out references listed above and uncomment them when SB part is available again
 
 include::modules/cleaning_oso_account.adoc[leveloffset=+1]
 
