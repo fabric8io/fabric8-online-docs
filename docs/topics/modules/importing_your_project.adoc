@@ -8,14 +8,28 @@ After <<creating_new_space-importing-existing-project,creating a space>>, the *H
 image::get_started_menu.png[Get Started Menu]
 +
 . In the *Application Wizard*, select an *Organization* from the drop-down options. The default (and recommended for this tutorial) option is your personal GitHub account name.
-. Click btn:[Next], the *GitHub Repositories* screen is displayed.
-.  The *Repository name pattern* field automatically queries GitHub for all of your repositories. Click the filter icon (image:funnel.png[title="Filter"]) and type `vertx-` to filter the results for your forked example repository.
++
+image::organization_personal.png[Personal organization]
++
+. Click btn:[Next] to continue.
+.  The *Repository name pattern* field automatically queries GitHub for all your repositories. Click the filter icon (image:funnel.png[title="Filter"]) and type `vertx-` to filter the results for your forked example repository.
 +
 image::add_example_repo.png[Add Forked Repository]
 +
 . From the results, select the forked `vertx-eventbus` repository and click btn:[Next] after the repository is validated.
++
+image::select_vertx_eventbus.png[Select VertX Eventbus Repository]
++
 . On the *Configure Pipeline* screen, use the default settings and click btn:[Next].
++
+image::configure_pipeline.png[Configure pipeline]
++
 . On the *Build Config* screen, use the default values, and click btn:[Finish].
++
+image::build_config.png[Build config screen]
++
 . The *Summary* screen displays the selected options for the project. Click btn:[Ok] to import the project.
++
+image::eventbus_final.png[Build config screen]
 
 You have now added the code from your existing repository to {osio}.

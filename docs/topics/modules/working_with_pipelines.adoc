@@ -5,6 +5,10 @@ When you create a new Quickstart project, a new build/pipeline execution initiat
 
 After you create a new Quickstart project, you can see the new project build pipeline running in the space dashboard:
 
+image::vertx_pipeline_new.png[New pipeline build]
+
+After a few seconds, the status of the pipeline build changes from *New* to *Running*, which indicates that the build has successfully started.
+
 image::vertx_pipeline_running.png[A Running Pipeline Build]
 
 To view your new Quickstart project pipeline:

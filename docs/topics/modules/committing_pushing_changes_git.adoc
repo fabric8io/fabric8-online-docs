@@ -19,6 +19,8 @@ image::commit_menu.png[Git Commit Menu]
 .. Add a commit message describing your changes.
 .. Select the *Push committed changes to:* check box.
 .. Click btn:[Commit].
++
+image::vertxeventbus_commit.png[Commit changes]
 
 When the commit succeeds, the following message displays:
 
