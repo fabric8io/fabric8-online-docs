@@ -10,6 +10,14 @@ The stack report is available after the first pipeline build completes. To view 
 +
 image::stack_reports.png[Stack Reports]
 +
-. The detailed stack report appears and reports information about *Security Issues*, *Licenses*, *Insights*, and *Dependency Deatails* for your project. Click each of these options to view the details.
+. The detailed stack report appears and reports information about *Security Issues*, *Licenses*, *Insights*, and *Dependency Details* for your project. Click each of these options to view details.
 +
 image::full_stack_reports.png[Full Stack Report]
+
+The four types of information in Stack Reports are as follows:
+
+. *Security issues* list any known vulnerabilities for your code and dependencies.
+. *Licenses* analyzes the project code for unknown licenses or license conflicts and suggest alternatives to resolve the conflicts.
+. *Insights* analyzes your project dependencies and recommends alternatives to improve your stack.
+. *Dependency Details* identifies dependencies and suggests replacements for dependencies with issues.
+
