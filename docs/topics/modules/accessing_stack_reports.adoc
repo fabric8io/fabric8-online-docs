@@ -1,15 +1,23 @@
 [id="accessing_stack_reports"]
 = Accessing stack reports
 
-{osio} analytics stack report helps you make informed choices with respect to your development stack and its component libraries. It analyzes your stack and recommends alternate and additional components to improve your application.
+{osio} analytics stack report provides information in a condensed way that helps you make informed choices regarding your development stack and its component libraries. It analyzes your stack and recommends alternate and additional components to improve your application.
 
-The stack report is available after the first pipeline build completes.
+The stack report is available after the first pipeline build completes. To view the stack report for your quickstart project:
 
-. Return to your space dashboard in the {osio} browser tab.
-. The *Stack Report Recommendations* panel in the dashboard shows a summary of the stack report.
+. Return to your space dashboard in the {osio} browser tab. The *Stack Report Recommendations* panel in the dashboard shows a summary of the stack report.
+. Click *Show complete stack report* at the bottom of this panel to view the complete report.
 +
 image::stack_reports.png[Stack Reports]
 +
-. Click *Show complete stack report* at the bottom of this panel to view the complete report.
+. The detailed stack report appears and reports information about *Security Issues*, *Licenses*, *Insights*, and *Dependency Details* for your project. Click each of these options to view details.
 +
 image::full_stack_reports.png[Full Stack Report]
+
+The four types of information in Stack Reports are as follows:
+
+. *Security issues* list any known vulnerabilities for your code and dependencies.
+. *Licenses* analyzes the project code for unknown licenses or license conflicts and suggest alternatives to resolve the conflicts.
+. *Insights* analyzes your project dependencies and recommends alternatives to improve your stack.
+. *Dependency Details* identifies dependencies and suggests replacements for dependencies with issues.
+
