@@ -7,20 +7,13 @@ View the details for the *Deployments* as follows:
 
 . At the top of the page, click btn:[Create].
 
-//. From the options displayed, click btn:[Deployments]. If you have not activated Internal features in {osio}, the *Internal Features Opt-in* warning appears. Click btn:[Opt-in to Internal Features] to proceed.      COMMENT: This does not work at the moment. Review and add back when it does work.
-. From the displayed options, click btn:[Deployments]. If you have not activated Internal features in {osio}, the *Internal Features Opt-in* warning appears.
+. From the options displayed, click btn:[Deployments]. If you have not activated Internal features in {osio}, the *Internal Features Opt-in* warning appears. Click btn:[Opt-in to Internal Features] to proceed.
 +
 image::deployments_page.png[Deployments page warning]
 +
-. Click your name in the upper right corner of the screen and select *Profile* from the displayed options.
-+
-image::profile_menu.png[Profile options]
-+
-. In the Profile page, click btn:[Update Profile].
-+
-image::update_profile_button.png[Update profile button]
-+
-. On the profile options page, select the `Internal Features` option and click btn:[Update].
+. Click btn:[Opt-in to Experimental Features].
+
+. On the profile options page, select the `Experimental Features` option and click btn:[Update].
 +
 image::features_options.png[Features options]
 +
@@ -28,28 +21,22 @@ image::features_options.png[Features options]
 +
 image::spaces_home.png[Spaces box]
 +
-. At the top of the page, click btn:[Create] and then click btn:[Deployments].
-. The *Deployments* page now loads and displays details about the Applications and Environments.
+. At the top of the page, click btn:[Create] and then click btn:[Deployments]. The *Deployments* page now loads and displays details about the Applications and Environments.
++
+image::deployments_experimental.png[Deployments page]
 
-// add a screenshot for this from production
-// everything below here needs testing on production
+Optionally, you can view the pipeline progress in the OpenShift Online console as follows:
 
-//Optionally, you can view the pipeline progress in the OpenShift Online console as follows:
+. For either the *Stage* or *Run* environments, click the options button and then click *OpenShift Console*.
++
+image::environment_options.png[Environment options]
++
+. If prompted, click btn:[LOGIN WITH RED HAT] to log in to your OpenShift Online account.
++
+image::log_into_oso.png[Log into OpenShift Online]
++
+. A detailed view of the build in OpenShift Online displays. Click *Applications* > *Applications* in the sidebar to view details about the application.
++
+image::openshift_online_console.png[OpenShift Online Console]
 
-//. For either the *Stage* or *Run* environments, click the options button:
-//+
-//image::environment_options.png[Environment options]
-//+
-//. From the options, click *OpenShift Console*.
-//+
-//image::environment_options_details.png[Environment options]
-//+
-//. If prompted, click btn:[LOGIN WITH RED HAT] to log in to your OpenShift Online account.
-//+
-//image::log_into_oso.png[Log into OpenShift Online]
-//+
-//. A detailed view of the build in OpenShift Online displays.
-//+
-//image::openshift_online_console.png[OpenShift Online Console]
-
-//Within this view, you can view the details of your build in the appropriate environment.
+Within this view, you can view the details of your build in the appropriate environment.

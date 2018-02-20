@@ -25,7 +25,7 @@ image::tenant_status_waiting.png[Tenant Status Waiting]
 +
 . If you see a version mismatch between that displayed on {osio} and the latest version in the above links, or if the status for Jenkins is red (see screen capture), update your tenant services as follows:
 +
-image::tenant_status_error.png[Tenant Status Error,257]
+image::tenant_status_error.png[Tenant Status Error]
 +
 .. On your {osio} home page, click your name on the top right corner of the screen.
 .. In the drop down options, click btn:[Profile].
