@@ -1,3 +1,5 @@
 FROM fabric8/caddy:v8759201
 
 COPY html /var/www/html/
+RUN mkdir -p /var/www/html/json/
+COPY json /var/www/html/json/
