@@ -2,32 +2,81 @@
 [id="glossary"]
 = Glossary
 
-This glossary provides concise definitions of terms and explanations of concepts used in {rhosio} and in related documentation.
+This glossary provides concise definitions of terms and explanations of concepts used in Red Hat OpenShift.io and in related documentation.
 
-Areas:: Use Areas to organize Work Items to distinguish between different types or functionalities that are being worked on within a space.
+////
 
-Backlog:: A Backlog is a list of Work Items that have not been triaged and assigned to a specific Iteration.
+Rules for this file:
 
+This file is consumed for the automatic generation of infotips used by OSIO web components. Certain rules need to be observed.
+
+* Only use the AsciiDoc syntax for a definition list to define terms.
+* Don't capitalize terms arbitrarily.
+* Use singulars for term names.
+* Each term needs to be bracketed in the following:
+
+  // term: $uuid
+  // endterm
+
+* When adding a new term, use the 'uuidgen' tool to generate a new UUID for it.
+* Never changes existing UUIDs; even when correcting the name of the term.
+* Never remove terms, unless first agreed on with the respective OSIO team that uses its definition.
+* Alphabetize the terms for easy orientation.
+
+////
+
+// term: 6cff4ab8-c380-4aa9-9980-17b6f223d181
+alternate component:: Components recommended by OpenShift.io to replace license or usage outliers.
+// endterm
+
+// term: a99bf72a-baf4-436e-8095-3955e39d5af0
+area:: Use Areas to organize Work Items to distinguish between different types or functionalities that are being worked on within a space.
+// endterm
+
+// term: d6c3bc51-f623-4aa4-bea4-4e1d68a27661
+backlog:: A Backlog is a list of Work Items that have not been triaged and assigned to a specific Iteration.
+// endterm
+
+// term: 5c1b8158-a351-4092-8780-3ad22e1eb173
+iteration:: Iterations are used to organize Work Items for planning or implementation in a certain order. They are time bound and can be used to model Sprints when used with Scrum. Typically an Iteration comprises a mix of work items, ranging from Scenarios, Features, Papercuts, Experiences or Tasks, identified to be executed within the time frame of the Iteration.
+// endterm
+
+// term: f05a151a-61fa-45b1-8d8b-b3fd7bc63ea9
+license conflict:: Licenses that conflict at the stack or component level.
+// endterm
+
+// term: 3a953b07-0cc3-4b45-b891-bf490216eae3
+license outlier:: Licenses in your stack that are not commonly used in similar stacks or that rarely go together.
+// endterm
+
+// term: 5bd840a6-2f62-4bea-bb04-63252f6ce381
+pipeline:: Pipelines are a continuous delivery system that, at each step, tests and deploys the code to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements different levels of testing and deployment tasks, provides results, and then passes the code on to the next step.
+// endterm
+
+// term: eb05f2b6-8a3c-4054-b28c-3eb1a47c125f
+scenario-driven planning:: (SDD) A software development methodology focused on real-world problems, or Scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular Value Propositions and are realized through Experiences.
+// endterm
+
+// term: a5fad1f2-7d5c-4d62-b269-d3637495422a
+security issue:: OpenShift.io analyzes the CVEs of all your components and flags components that have security vulnerabilities.
+// endterm
+
+// term: 5c543e22-8ae9-4b66-9112-1513d47ab1b4
 space:: A space is the equivalent of a project. Each Iteration and Work Item must be attached to a space, and a team of people can be attached to a space in various roles. By default, a space contains at least one Area and one Iteration.
+// endterm
 
-Iteration:: Iterations are used to organize Work Items for planning or implementation in a certain order. They are time bound and can be used to model Sprints when used with Scrum. Typically an Iteration comprises a mix of work items, ranging from Scenarios, Features, Papercuts, Experiences or Tasks, identified to be executed within the time frame of the Iteration.
+// term: 0b52988d-9cea-47a6-9769-d677bff95ed3
+unknown license:: Licenses unknown to OpenShift.io.
+// endterm
 
-Pipeline:: Pipelines are a continuous delivery system that, at each step, tests and deploys the code to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements different levels of testing and deployment tasks, provides results, and then passes the code on to the next step.
+// term: 203160dd-cb50-4383-a2d6-84efcd472c98
+usage outlier:: Components of your software stack that are not commonly used in similar open source stacks or that rarely go together.
+// endterm
 
-Scenario-Driven Planning:: A software development methodology focused on real-world problems, or Scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular Value Propositions and are realized through Experiences.
+// term: 83e7953e-9335-428c-b1af-7aa4b00cd662
+work item:: Work Items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each Work Item must be attached to a space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
+// endterm
 
-Work Item:: Work Items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each Work Item must be attached to a space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
-
-Usage Outliers:: Components of your software stack that are not commonly used in similar open source stacks or that rarely go together.
-
-Security Issues:: {osio} analyzes the CVEs of all your components and flags components that have security vulnerabilities.
-
-License Outliers:: Licenses in your stack that are not commonly used in similar stacks or that rarely go together.
-
-Alternate Components:: Components recommended by {osio} to replace license or usage outliers.
-
-Unknown Licenses:: Licenses unknown to {osio}.
-
-License Conflicts:: Licenses that conflict at the stack or component level.
-
-Workspace:: Workspaces are fully configured web-based development environments suitable for your code and runtime needs. They are runtime environments where you can modify, test, debug, or run your code.
+// term: e4c8beb4-1ed1-4275-af20-9ee3cb6dafd1
+workspace:: Workspaces are fully configured web-based development environments suitable for your code and runtime needs. They are runtime environments where you can modify, test, debug, or run your code.
+// endterm
