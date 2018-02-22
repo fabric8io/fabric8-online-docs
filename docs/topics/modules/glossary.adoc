@@ -19,7 +19,7 @@ This file is consumed for the automatic generation of infotips used by OSIO web 
   // endterm
 
 * When adding a new term, use the 'uuidgen' tool to generate a new UUID for it.
-* Never changes existing UUIDs; even when correcting the name of the term.
+* Never change existing UUIDs; even when correcting the name of the term.
 * Never remove terms, unless first agreed on with the respective OSIO team that uses its definition.
 * Alphabetize the terms for easy orientation.
 
@@ -30,15 +30,27 @@ alternate component:: Components recommended by OpenShift.io to replace license 
 // endterm
 
 // term: a99bf72a-baf4-436e-8095-3955e39d5af0, en_EN
-area:: Use Areas to organize Work Items to distinguish between different types or functionalities that are being worked on within a space.
+area:: Use areas to organize work items to distinguish between different types or functionalities that are being worked on within a space.
 // endterm
 
 // term: d6c3bc51-f623-4aa4-bea4-4e1d68a27661, en_EN
-backlog:: A Backlog is a list of Work Items that have not been triaged and assigned to a specific Iteration.
+backlog:: A backlog is a list of work items that have not been triaged and assigned to a specific iteration.
+// endterm
+
+// term: e8d54bf3-f89e-46e5-86f7-4af6475863b0, en_EN
+bug:: Defect that causes unexpected behavior in the software. It needs to be fixed to ensure that the software behaves as expected.
+// endterm
+
+// term: 23c322f1-53b1-4286-b524-37ab58124823, en_EN
+experience:: Experience describes the envisioned user experience in the product to actualize a parent work item. Each parent work item can have multiple experiences.
+// endterm
+
+// term: dbfc82e1-5a40-44bd-af70-f2dc1a1927a4, en_EN
+feature:: A feature is a detailed user-story that helps actualize parent experiences. It can support multiple experiences and is generally achievable within a sprint.
 // endterm
 
 // term: 5c1b8158-a351-4092-8780-3ad22e1eb173, en_EN
-iteration:: Iterations are used to organize Work Items for planning or implementation in a certain order. They are time bound and can be used to model Sprints when used with Scrum. Typically an Iteration comprises a mix of work items, ranging from Scenarios, Features, Papercuts, Experiences or Tasks, identified to be executed within the time frame of the Iteration.
+iteration:: An iteration is used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.
 // endterm
 
 // term: f05a151a-61fa-45b1-8d8b-b3fd7bc63ea9, en_EN
@@ -54,7 +66,7 @@ pipeline:: Pipelines are a continuous delivery system that, at each step, tests 
 // endterm
 
 // term: eb05f2b6-8a3c-4054-b28c-3eb1a47c125f, en_EN
-scenario-driven planning:: (SDD) A software development methodology focused on real-world problems, or Scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular Value Propositions and are realized through Experiences.
+scenario-driven planning:: A software development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.
 // endterm
 
 // term: a5fad1f2-7d5c-4d62-b269-d3637495422a, en_EN
@@ -62,7 +74,11 @@ security issue:: OpenShift.io analyzes the CVEs of all your components and flags
 // endterm
 
 // term: 5c543e22-8ae9-4b66-9112-1513d47ab1b4, en_EN
-space:: A space is the equivalent of a project. Each Iteration and Work Item must be attached to a space, and a team of people can be attached to a space in various roles. By default, a space contains at least one Area and one Iteration.
+space:: A space is the equivalent of a project. Each iteration and work item must be attached to a space, and a team of people can be attached to a space in various roles. By default, a space contains at least one area and one iteration.
+// endterm
+
+// term: cc2d6cb4-7690-4c02-989c-7d75e3419b7d, en_EN
+task:: Actual work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours.
 // endterm
 
 // term: 0b52988d-9cea-47a6-9769-d677bff95ed3, en_EN
@@ -73,8 +89,12 @@ unknown license:: Licenses unknown to OpenShift.io.
 usage outlier:: Components of your software stack that are not commonly used in similar open source stacks or that rarely go together.
 // endterm
 
+// term: 83e52577-cdc4-4687-97d1-86151db74bdc, en_EN
+value proposition:: Work item type that states the value provided to the user by addressing a parent work item. Each parent work item can have multiple value propositions.
+// endterm
+
 // term: 83e7953e-9335-428c-b1af-7aa4b00cd662, en_EN
-work item:: Work Items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each Work Item must be attached to a space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
+work item:: Work items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each work item must be attached to a space and an area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
 // endterm
 
 // term: e4c8beb4-1ed1-4275-af20-9ee3cb6dafd1, en_EN
