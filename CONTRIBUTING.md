@@ -4,8 +4,8 @@
 
 Briefly, this is what you need to know about the documentation repository structure before contributing:
 
-* The documentation is module-based, which means most sections are individual modules. These modules are available in the */docs/topics/modules/* folder.
-* The modules are linked together to form a chapter, document, or guide using assemblies. These assemblies are asciidoc files in the */docs/topics/* folder. For example, the */docs/topics/getting-started-guide.adoc* file is the main assembly for the Getting Started Guide and links to other, smaller assemblies for parts or chapters within the guide.
+* The documentation is module-based, which means most sections are individual modules. These modules are available in the `/docs/topics/modules/` folder.
+* The modules are linked together to form a chapter, document, or guide using assemblies. These assemblies are asciidoc files in the `/docs/topics/` folder. For example, the `/docs/topics/getting-started-guide.adoc` file is the main assembly for the Getting Started Guide and links to other, smaller assemblies for parts or chapters within the guide.
 * Module files naming conventions closely follow the title of the corresponding section. For example, a section in the Getting Started document with the title *Working with pipelines* is named **working_with_pipelines.adoc** in the *modules* folder. In some cases, this is not a direct match, so to confirm the name of the asciidoc file for a section, click the section title and the ID after the *#* in the URL is the name of the module file. For example, a URL such as https://docs.openshift.io/getting-started-guide.html#viewing_build_pipeline_oso has a slightly different title but the ID after the hash symbol (**viewing_build_pipeline_oso**) is the name of the file.
 
 ## Conventions and style guidelines
@@ -17,9 +17,9 @@ To get started quickly, we recommend reviewing the following conventions that ar
 * For instructions, state the location, then action and subject. For example:
   * Incorrect: *Click OK in the XYZ tab to continue.*
   * Correct: *In the XYZ tab, click OK to continue.*
-  * Use gerunds in titles when possible. For example:
-    * Incorrect: *1.1 Create a new project*
-    * Correct: *1.1 Creating a new project*
+* Use gerunds in titles when possible. For example:
+  * Incorrect: *1.1 Create a new project*
+  * Correct: *1.1 Creating a new project*
 * All titles should be in sentence case. Exceptions for words that are proper nouns. For example:
   * Incorrect: *1.2 Configuring Your Che Workspace*
   * Correct: *1.2 Configuring your Che workspace*
@@ -47,11 +47,11 @@ To edit the documentation:
 
 3. Locally build and test the changes. For details on the instructions and tools to do this, see [Locally building the documentation](#locally-building-the-documentation).
 
-3. After the local builds are successful, commit your changes and create a PR for the fixes. In the assignee field, select one of the writers to do a quick review before merging your changes. You can tag Robert Kratky, Misha Husnain Ali, or Preeti Chandrashekar as reviewers.
+4. After the local builds are successful, commit your changes and create a PR for the fixes. In the assignee field, select one of the writers to do a quick review before merging your changes. You can tag Robert Kratky, Misha Husnain Ali, or Preeti Chandrashekar as reviewers.
 
-4. For each push to the *master* branch and each PR, a preview build of the documentation is created and available at https://docs.prod-preview.openshift.io/. Build status: [![Build Status](https://ci.centos.org/view/Devtools/job/devtools-fabric8-online-docs-build-master/badge/icon)](https://ci.centos.org/view/Devtools/job/devtools-fabric8-online-docs-build-master/). The creator of the PR and reviewers can use this build for testing, which is why it is essential to test your changes locally before creating the PR.
+5. For each push to the *master* branch and each PR, a preview build of the documentation is created and available at https://docs.prod-preview.openshift.io/. Build status: [![Build Status](https://ci.centos.org/view/Devtools/job/devtools-fabric8-online-docs-build-master/badge/icon)](https://ci.centos.org/view/Devtools/job/devtools-fabric8-online-docs-build-master/). The creator of the PR and reviewers can use this build for testing, which is why it is essential to test your changes locally before creating the PR.
 
-5. When reviewed, and after any changes necessary are completed, the PR is merged into the documentation.
+6. When reviewed, and after any changes necessary are completed, the PR is merged into the documentation.
 
 ## Locally building the documentation
 
