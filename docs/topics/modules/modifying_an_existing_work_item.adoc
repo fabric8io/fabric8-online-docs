@@ -13,5 +13,3 @@ You can modify the following Work Item attributes:
 * Description
 * Relations with other Work Items
 * Comments
-
-See <<using_detailed_method_to_create_work_items>> for more information on modifying the above attributes.
