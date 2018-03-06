@@ -38,7 +38,7 @@ backlog:: A backlog is a list of work items that have not been triaged and assig
 // endterm
 
 // term: e8d54bf3-f89e-46e5-86f7-4af6475863b0, en_EN
-bug:: Defect that causes unexpected behavior in the software. It needs to be fixed to ensure that the software behaves as expected.
+bug:: Defect that causes unexpected behavior in the software.
 // endterm
 
 // term: 23c322f1-53b1-4286-b524-37ab58124823, en_EN
@@ -96,7 +96,7 @@ space:: A space is the equivalent of a project. Each iteration and work item mus
 // endterm
 
 // term: cc2d6cb4-7690-4c02-989c-7d75e3419b7d, en_EN
-task:: Actual work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours.
+task:: Work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours.
 // endterm
 
 // term: 0b52988d-9cea-47a6-9769-d677bff95ed3, en_EN
