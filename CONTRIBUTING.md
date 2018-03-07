@@ -6,7 +6,7 @@ To edit the documentation:
 
 1. Learn about the general repository structure in the [Repository structure HTML](./README.html#repository-structure) or [Repository structure HTML](./README.md#repository-structure) section.
 
-2. Red the writing and markup conventions summary in the [Conventions and style guidelines](#conventions-and-style-guidelines)section.
+2. Read the writing and markup conventions summary in the [Conventions and style guidelines](#conventions-and-style-guidelines)section.
 
 3. Ensure that you log an issue with the details of the problem in the [Documentation Repository Issue Tracker](https://github.com/fabric8io/fabric8-online-docs/issues) for context and assign it to yourself.
 
