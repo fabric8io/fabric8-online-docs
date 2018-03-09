@@ -39,31 +39,47 @@ To get started quickly, we recommend reviewing the following conventions that ar
   
 ### Markup conventions 
 
-* Use the **btn:[Button UI Text]** markup for clickable buttons in the User Interface. For example: *Click btn:[Finish] to continue.*
-* Use the **kbd:[button+button]** markup for keyboard shortcuts.
-  * Example for a single key: *Press kbd:[Enter] to filter the options for Spring Boot quickstart applications.*  
-  * Example for a combination of keys: *Press kbd:[Ctrl+s] to save your progress.*
+* Use both grave accents and asterisks to mark up system items such as library names, channel and repository names, and user names. For example:
+```
+Install the `*library_name*` library to continue.
+```
+* Use underscores for replaceable text within code blocks or inline commands. For example:
+```
+execute `command _yourConfigFile.txt_`
+```
+* Use grave accents for inline commands. For example: 
+```
+Run the `maven build` command in your terminal.
+```
+* Use the `btn:[Button UI Text]` markup for clickable buttons in the User Interface. For example:
+```
+Click btn:[Finish] to continue.
+```
+* Use the `kbd:[button+button]` markup for keyboard shortcuts.
+  * Example for a single key: 
+  ```
+Press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
+  ```
+  * Example for a combination of keys: 
+```
+Press kbd:[Ctrl+s] to save your progress.
+```
+* For instructions to add a specific string to a field, use grave accents for the string. For example:
 ```
 In the *Name* field, type `spring`.
 ```
+
 * Names of UI elements are marked up with asterisks. For example: `In the *Plan* tab, view the listed elements.` 
 
-* Mark up code snippets as follows:
-
-```
-[source, $LANGUAGE]
-----
-code snippet
-----
-```
-For example:
-
+* Mark up code snippets with square brackets stating *source* and the language and then the snippet itself with four hyphens at the beginning and end of the code. For example:
+  
 ```
 [source,java]
 ----
   protected static final String template = "Aloha, %s!";
 ----
 ```
+* sjhsjdhsd
 
 For comprehensive references for documentation conventions, see the following:
 
