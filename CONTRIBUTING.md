@@ -39,54 +39,13 @@ To get started quickly, we recommend reviewing the following conventions that ar
   
 ### Markup conventions 
 
-* Use both grave accents and asterisks to mark up system items such as library names, channel and repository names, and user names. For example:
-```
-Install the `*library_name*` library to continue.
-```
-* Use underscores for replaceable text within code blocks or inline commands. For example:
-```
-execute `command _yourConfigFile.txt_`
-```
-* Use grave accents for inline commands. For example: 
-```
-Run the `maven build` command in your terminal.
-```
-* Use the `btn:[Button UI Text]` markup for clickable buttons in the User Interface. For example:
+For a quick primer about the Asciidoc conventions, see the [Red Hat Asciidoc Markup conventions](https://redhat-documentation.github.io/asciidoc-markup-conventions/) document. 
 
-```
-Click btn:[Finish] to continue.
-```
-
-* Use the `kbd:[button+button]` markup for keyboard shortcuts.
-  * Example for single and combination keys: 
-
-  ```
-Press kbd:[Ctrl+s] to save your progress and then kbd:[Enter] confirm the changes.
-  ```
-
-* For instructions to add a specific string to a field, use grave accents for the string. For example:
-```
-In the *Name* field, type `spring`.
-```
-
-* Names of UI elements are marked up with asterisks. For example: 
-```
-In the *Plan* tab, view the listed elements.
-``` 
-
-* Mark up code snippets with square brackets stating *source* and the language and then the snippet itself with four hyphens at the beginning and end of the code. For example:
-  
-```
-[source,java]
-----
-  protected static final String template = "Aloha, %s!";
-----
-```
+### Additional Convention References
 
 For comprehensive references for documentation conventions, see the following:
 
   * The IBM Style Guide. A subset of this guide is available [here](https://www.ibm.com/developerworks/library/styleguidelines/).
-  * The [Red Hat Asciidoc Markup conventions](https://redhat-documentation.github.io/asciidoc-markup-conventions/)
   <!-- * The [CCS Documentation Conventions][url here when available] UNCOMMENT THIS WHEN READY but won't be for a while because nobody owns this task-->
   * The [Red Hat modular documentation reference guide](https://redhat-documentation.github.io/modular-docs/#introduction).
 
