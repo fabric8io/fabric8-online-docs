@@ -56,14 +56,10 @@ Run the `maven build` command in your terminal.
 Click btn:[Finish] to continue.
 ```
 * Use the `kbd:[button+button]` markup for keyboard shortcuts.
-  * Example for a single key: 
+  * Example for single and combination keys: 
   ```
-Press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
+Press kbd:[Ctrl+s] to save your progress and then kbd:[Enter] confirm the changes.
   ```
-  * Example for a combination of keys: 
-```
-Press kbd:[Ctrl+s] to save your progress.
-```
 * For instructions to add a specific string to a field, use grave accents for the string. For example:
 ```
 In the *Name* field, type `spring`.
