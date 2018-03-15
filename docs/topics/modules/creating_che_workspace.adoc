@@ -20,7 +20,7 @@ Create a new <<about_workspaces,Che workspace>> for your project:
 . Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*
 endif::[]
 // end of conditions
-. In the *WORKSPACES* section, click *Create workspace* for your project.
+. In the *WORKSPACES* column, click *Create workspace* for your project.
 +
 image::create_workspace.png[Create Workspace]
 +
