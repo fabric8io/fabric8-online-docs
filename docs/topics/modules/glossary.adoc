@@ -50,7 +50,7 @@ feature:: A feature is a detailed user-story that helps actualize parent experie
 // endterm
 
 // term: 4d85adba-817d-41ca-b85f-1e4a938d1282, en_EN
-fundamental:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+//fundamental:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 // endterm
 
 //fundamental:: Work item type that focuses on getting the basic foundations of a product right to make it more efficient.
@@ -68,7 +68,7 @@ license outlier:: Licenses in your stack that are not commonly used in similar s
 // endterm
 
 // term: 83b7cf12-558e-41bd-bcd7-822ca6307db1, en_EN
-papercuts:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+//papercuts:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 // endterm
 
 //papercuts:: Papercuts are logical aggregations of minor issues that collectively have a negative impact on the user. This aggregation receives higher priority and enables efficient handling of such issues.
@@ -78,7 +78,7 @@ pipeline:: Pipelines are a continuous delivery system that, at each step, tests 
 // endterm
 
 // term: 01e76137-ab89-4a3c-8765-48f54078154a, en_EN
-scenario:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+//scenario:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 // endterm
 
 //scenario:: Work item type that identifies and tries to resolve real world problems faced by users, mostly defined in a broad sense.
