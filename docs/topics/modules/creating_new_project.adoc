@@ -48,7 +48,7 @@ image::springboot_name.png[Add a name for your project]
 +
 endif::[]
 // conditional ends here
-.. Keep the default value for the *Organisation*, *Group Id*, and *Version* fields and click btn:[Next].
+.. Keep the default value for the *Organization*, *Group Id*, and *Version* fields and click btn:[Next].
 .. Select a build pipeline strategy. Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment. For this example, use the default value *Release, Stage, Approve and Promote* and click btn:[Next].
 +
 image::configure_pipeline.png[Configure pipeline]
