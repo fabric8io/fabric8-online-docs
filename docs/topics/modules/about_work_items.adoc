@@ -1,10 +1,10 @@
 [id="about_work_items"]
 = About Work Items
 
-_Work Items_ (WI) are trackable and measurable units of work within a <<about_spaces,space>>. They are captured representations of work, and can be modified based on the requirements of the development project.
+_Work Items_ are trackable and measurable units of work within a <<about_spaces,space>>. They are captured representations of work, and can be modified based on the requirements of the development project.
 
-Users can create and manage Work Items within a space using the *Planner*. Work Items track data such as ideas, user stories, bugs, and tasks. Work Items can be grouped and categorized into <<about_areas,Areas>> and <<about_iterations,Iterations>> to track progress and plan work.
+Users can create and manage work items within a space using the *Planner*. Work items track data such as ideas, user stories, bugs, and tasks. Work items can be grouped and categorized into <<about_areas,areas>> and <<about_iterations,iterations>> to track progress and plan work.
 
-Work Items are assigned to users and their status is changed to indicate the progress of the Work Item. Link Work Items to each other based on their relationships, enabling users to plan the scope of work better. For example, you can link Work Item A as the parent of Work Item B, enabling you to prioritize and order your work.
+Work items are assigned to users and their status is changed to indicate the progress of the work item. Link work items to each other based on their relationships, enabling users to plan the scope of work better. For example, you can link work item A as the parent of work item B, enabling you to prioritize and order your work.
 
-The *Planner* includes a set of predefined templates based on common planning methodologies such as _Scrum_, _Agile_, and _Scenario Driven Development_. These templates determine the structure and features of the included Work Item types and states that are available for a space.
+The *Planner* includes a set of predefined templates based on common planning methodologies such as _Scrum_, _Agile_, and _Scenario Driven Development_. These templates determine the structure and features of the included work item types and states that are available for a space.

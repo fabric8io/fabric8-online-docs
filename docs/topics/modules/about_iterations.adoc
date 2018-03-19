@@ -1,6 +1,6 @@
 [id="about_iterations"]
 = About Iterations
 
-Use Iterations to organize <<about_work_items,Work Items>> to plan and implement tasks for a development project. When used with Scrum, Iterations can be utilized to model Sprints.
+Use _iterations_ to organize <<about_work_items,work items>> to plan and implement tasks for a development project. When used with Scrum, iterations can be utilized to model sprints.
 
-You can use the Planner to map your Work Items to Iterations to plan your work based on your project requirements. It enables you to set time-specific goals by grouping priority Work Items into a single development cycle. It also helps you track your progress for each Iteration and compare it with past Iterations and associated Work Items.
+You can use the Planner to map your work items to iterations to plan your work based on your project requirements. It enables you to set time-specific goals by grouping priority work items into a single development cycle. It also helps you track your progress for each iteration and compare it with past iterations and associated work items.
