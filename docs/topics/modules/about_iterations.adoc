@@ -1,5 +1,5 @@
 [id="about_iterations"]
-= About Iterations
+= About iterations
 
 Use _iterations_ to organize <<about_work_items,work items>> to plan and implement tasks for a development project. When used with Scrum, iterations can be utilized to model sprints.
 
