@@ -1,4 +1,4 @@
 [id="about_collaborators"]
-= About Collaborators
+= About collaborators
 
-*Collaborators* are members assigned to particular <<about_work_items,Work Items>> within a <<about_spaces,space>>. They are assigned tasks for the development project which are tracked using Work Items. You can add Collaborators to your space and then assign the relevant Work Items to them.
+_Collaborators_ are members assigned to particular <<about_work_items,work items>> within a <<about_spaces,space>>. They are assigned tasks for the development project which are tracked using work items. You can add collaborators to your space and then assign the relevant work items to them.

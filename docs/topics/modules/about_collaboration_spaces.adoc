@@ -1,4 +1,4 @@
 [id="about_spaces"]
 = About spaces
 
-Spaces are the equivalent of projects. Each <<about_iterations,Iteration>> and <<about_work_items,Work Item>> must be attached to a space, and a team of users can be assigned to a project (space) for the appropriate roles. By default, a space contains one or more <<about_areas,Areas>> and Iterations.
+_Collaboration spaces_ or _spaces_ are the equivalent of projects. Each <<about_iterations,iteration>> and <<about_work_items,work item>> must be attached to a space, and a team of users can be assigned to a space for the appropriate roles. By default, a space contains one or more <<about_areas,areas>> and iterations.
