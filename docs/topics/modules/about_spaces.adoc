@@ -1,4 +1,6 @@
 [id="about_spaces"]
 = About spaces
 
-Spaces are the equivalent of projects. Each <<about_iterations,Iteration>> and <<about_work_items,Work Item>> must be attached to a space, and a team of users can be assigned to a space for the appropriate roles. By default, a space contains one or more <<about_areas,Areas>> and Iterations.
+A Space is the first thing a user creates in {osio}. All other elements are created within a Space to organize them for each project. Each codebase, <<about_iterations,Iteration>> and <<about_work_items,Work Item>> are attached to a space, and users are also assigned to a Space for the appropriate roles. By default, a space contains one or more <<about_areas,Areas>> and Iterations.
+
+As an example, each Space can contain multiple codebases, Work Items tracking work to be done in a project and Iterations to track when the Work Items are to be done. 

@@ -1,7 +1,7 @@
 [id="viewing_projects_oso"]
 = Viewing projects in OpenShift Online
 
-To view the OpenShift Online projects that support the pipeline for your project, navigate to link:https://console.starter-us-east-2.openshift.com/[console.starter-us-east-2.openshift.com].
+To view the OpenShift Online projects that support the pipeline for your project, navigate to your link:https://console.starter-us-east-2.openshift.com/console/projects/[OpenShift Online Console].
 
 image::oso_projects.png[OpenShift Online Projects]
 
