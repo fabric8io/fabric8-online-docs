@@ -1,7 +1,7 @@
 [id="adding_collaborators"]
 = Adding Collaborators
 
-You can add users as Collaborators to a space and then assign Work Items to each person.
+You can add other {osio} users as Collaborators to your space and then assign work items to each person.
 
 .Prerequisites
 
@@ -13,7 +13,18 @@ You can add users as Collaborators to a space and then assign Work Items to each
 . From your {osio} dashboard, click the name of a space to view its dashboard.
 . Click the btn:[Equalizer] button (image:equalizer.png[title="Settings"]) at the top of the screen.
 . Click btn:[Collaborators].
-. Click the blue plus (*+*) icon in the top right corner. The *Add collaborators* dialog box displays.
-.. Click btn:[Select] and type a name in the text box to search for a user.
-.. From the displayed results, select the name of one or multiple users to add as Collaborators for your space.
-.. Click *Add* to add the selected users as collaborators.
++
+image::collaborators_button.png[Collaborators button]
++
+. Click *Add Collaborators* in the top right corner.
++
+image::add_collaborators.png[Add collaborators button]
++
+. In the `Add collaborators` dialog box, click btn:[Select] and type a name in the text box to search for a user.
++
+image::add_collaborators_dialog.png[Add collaboraters dialog]
++
+. From the displayed results, select the name of one or multiple users to add as Collaborators for your space.
+. Click btn:[Add] to add the selected users as collaborators.
+
+The `Collaborators` page now includes the users you selected as Collaborators for your space.
