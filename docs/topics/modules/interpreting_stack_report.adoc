@@ -1,53 +1,42 @@
 [id="interpreting_stack_report"]
 = Interpreting your stack report
 
-The {osio} analytics report comprises three components:
+The Stack report provides a detailed analysis of your stack and it dependencies in the form of four cards. Click each of the cards to see information about the four key aspects relevant to your stack.
 
-* <<Stack summary>>
-* <<Detailed analysis of your stack components>>
-* <<Additional components recommended by {osio}>>
+* <<Security Issues>>
+* <<Licenses>>
+* <<Insights>>
+* <<Dependency Details>>
 
-== Stack summary
-The Stack summary provides a synopsis of the analysis report.
+== Security Issues
+The stack report highlights:
 
-It displays:
+* Dependencies with security issues
+* The number of Common Vulnerabilities and Exposures (CVEs) found in each of your dependencies
+* The highest Common Vulnerability Scoring System (CVSS) score in your dependency and its CVE ID.
++
+[NOTE]
+====
+A CVSS score highlighted in:
 
-Security Issues:: {osio} analytics examines Common Vulnerabilities and Exposures (CVEs) of the components in the stack and highlights vulnerabilities, if any.
+* Red indicates a severe vulnerability, with a score in the range of 7 - 10.
+* Orange indicates a moderate vulnerability, with a score in the range of 4 - 6.9.
+====
 
-Usage Outliers:: {osio} analytics analyzes your overall stack composition, compares it to other similar stacks, and displays the number of components in your stack that are not commonly used in similar stacks or that rarely go together.
+== Licences
+{osio} Analytics verifies the licenses in your stack and provides the following detailed information:
 
-Licenses:: {osio} analytics analyzes the licenses used in your stack, and displays the number of unknown licenses. It also displays the number of license conflicts in your stack.
+* The *Conflicting license(s) details* tab lists dependencies that conflict with licenses of other dependency or with the stack level license. It highlights the licenses which are affected in the dependency, and suggests alternate dependencies that go well with your stack, and avoid such conflicts.
+* The *Unknown license(s) details* tab lists the licenses unknown to {osio}, highlights the unknown license, and suggests alternate dependencies to replace such dependencies.
 
-== Detailed analysis of your stack components
-The detailed component analysis helps you assess the credibility of your stack components.
+== Insights:
+The stack report provides the following insights:
 
-It provides recommendations for relevant alternate components by analyzing all the components in the stack and their parameters such as:
+* The *Usage outliers details* tab identifies and lists dependencies in your stack that are not commonly used in similar stacks or that do not work well with other dependencies in the stack. It suggests alternate dependencies, suitable to your stack, to replace them. The *Confidence score* depicts the confidence of {osio} Analytics on the suitability of the alternate dependency to your stack.
+* The *Companion component details* tab lists additional dependencies that you can add to your stack to enhance it. Based on the confidence score, you can decide on the suitability of the dependency to your stack and add it. You can also provide your feedback on the suggested dependencies.
 
-Versions:: The detailed analysis report lists current, recommended, and latest available versions of the components in your stack, so that you can select a suitable version for your stack.
+== Dependency details:
+The stack report provides details of all the dependencies analyzed by it, and lists the unknown ones.
 
-Security Issue:: Based on the CVEs of the stack components, {osio} Analytics identifies security vulnerabilities in your stack components. The CVE scores are displayed when you move the mouse pointer over components identified with security vulnerabilities.
-
-License:: The detailed analysis report lists licenses for each component, flags unknown and conflicting licenses, and recommends *Alternate Components* in case of *License Outliers*.
-
-OSIO Usage:: The detailed analysis report tracks the number of projects in {osio} that use the same component. It recommends *Alternate Components* in case of *Usage Outliers*.
-
-GitHub Statistics:: {osio} analytics tracks GitHub statistics, such as *Usage Count* and number of *Watchers* for the components of your stack.
-
-GitHub Dependents:: The detailed analysis report  lists all the projects dependent on this component.
-
-Tags:: The detailed analysis report lists the tags associated with the components of your stack.
-
-You can filter the detailed component analysis report to highlight:
-
-** Usage Outliers (image:usage_outlier.png[title="Usage Outlier"])
-** Security Issues (image:security_issues.png[title="Security Issues"])
-** Alternate Components (image:alternate_component.png[title="Alternate Components"])
-** Grouped Components (image:alternate_component.png[title="Alternate Components"])
-** License Outliers (image:license_outlier.png[title="License Outliers"])
-** Unknown Licenses (image:license_unknown.png[title="Unknown Licenses"])
-** License conflict in a Component (image:license_conflicts.png[title="License Conflicts"])
-
-== Additional components recommended by {osio}
-{osio} recommends additional components suitable for your stack based on its analysis of similar open source stacks. These components are commonly used by similar stacks and augment your stack. It also displays various parameters relevant to the components, so that you can assess their credibility and make informed choices on adding them to your stack.
-
-To add the recommended component to your stack, click *Create work item* adjacent to the recommended alternate or additional component.
+* The *Analyzed dependency details* tab lists details of all the dependencies analyzed by {osio} and *Components check* highlights security, usage, and license issues in them. It suggests alternate dependencies to replace dependencies with usage and license issues.
+* The *Unknown dependency details* tab lists dependencies unknown to {osio} Analytics.
