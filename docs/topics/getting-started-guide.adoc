@@ -28,4 +28,3 @@ include::modules/cleaning_oso_account.adoc[leveloffset=+1]
 include::importing-existing-project.adoc[leveloffset=+1]
 
 include::modules/next_steps.adoc[leveloffset=+1]
-
