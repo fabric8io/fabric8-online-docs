@@ -44,6 +44,7 @@
 :rhdp: Red{nbsp}Hat Developer Program
 :rhdb: Red{nbsp}Hat Developer Blog
 :rhd: Red{nbsp}Hat Developers
+:oso: OpenShift(nbsp}Online
 
 // URLs
 :osio-url: https://openshift.io/
