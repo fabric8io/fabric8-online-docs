@@ -16,5 +16,21 @@ image::create_space_first.png[Create your first space]
 +
 image::create_space.png[Create new space]
 +
+// for hello-world
+ifeval::["{context}" == "hello-world"]
+
+. If this is the first space you are creating with your {osio} account, a message about connecting to GitHub appears. To connect your GitHub account to {osio}:
+
+.. Click btn:[Connect to GitHub].
++
+image::github_disconnected.png[GitHub Disconnected] 
++
+.. When prompted, add your GitHub credentials to connect the account to {osio}.
++
+image::connect_github.png[Connect to GitHub]
++
+. When the accounts are connected, the {osio} dashboard view displays. Click btn:[Create a space] again.
+endif::[]
+
 . Use the drop-down menu for the *Template* field to select a template for your new space. For this example, select *Scenario Driven Planning* and click btn:[Create].
 . The *How would you like to get started?* menu displays for your new space.
