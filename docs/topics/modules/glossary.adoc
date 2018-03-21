@@ -49,11 +49,10 @@ experience:: Experience describes the envisioned user experience in the product 
 feature:: A feature is a detailed user-story that helps actualize parent experiences. It can support multiple experiences and is generally achievable within a sprint.
 // endterm
 
-// term: 4d85adba-817d-41ca-b85f-1e4a938d1282, en_EN
-fundamental:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+//// term: 4d85adba-817d-41ca-b85f-1e4a938d1282, en_EN
+fundamental:: Work item type that focuses on getting the basic foundations of a product right to make it more efficient.
 // endterm
-
-//fundamental:: Work item type that focuses on getting the basic foundations of a product right to make it more efficient.
+////
 
 // term: 5c1b8158-a351-4092-8780-3ad22e1eb173, en_EN
 iteration:: An iteration is used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.
@@ -67,21 +66,19 @@ license conflict:: Licenses that conflict at the stack or component level.
 license outlier:: Licenses in your stack that are not commonly used in similar stacks or that rarely go together.
 // endterm
 
-// term: 83b7cf12-558e-41bd-bcd7-822ca6307db1, en_EN
-papercuts:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+//// term: 83b7cf12-558e-41bd-bcd7-822ca6307db1, en_EN
+papercuts:: Papercuts are logical aggregations of minor issues that collectively have a negative impact on the user. This aggregation receives higher priority and enables efficient handling of such issues.
 // endterm
-
-//papercuts:: Papercuts are logical aggregations of minor issues that collectively have a negative impact on the user. This aggregation receives higher priority and enables efficient handling of such issues.
+////
 
 // term: 5bd840a6-2f62-4bea-bb04-63252f6ce381, en_EN
 pipeline:: Pipelines are a continuous delivery system that, at each step, tests and deploys the code to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements different levels of testing and deployment tasks, provides results, and then passes the code on to the next step.
 // endterm
 
-// term: 01e76137-ab89-4a3c-8765-48f54078154a, en_EN
-scenario:: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+//// term: 01e76137-ab89-4a3c-8765-48f54078154a, en_EN
+scenario:: Work item type that identifies and tries to resolve real world problems faced by users, mostly defined in a broad sense.
 // endterm
-
-//scenario:: Work item type that identifies and tries to resolve real world problems faced by users, mostly defined in a broad sense.
+////
 
 // term: eb05f2b6-8a3c-4054-b28c-3eb1a47c125f, en_EN
 scenario-driven planning:: A software development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.
