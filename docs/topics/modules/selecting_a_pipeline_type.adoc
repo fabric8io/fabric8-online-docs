@@ -1,0 +1,46 @@
+[id="selecting_a_pipeline_type"]
+= Selecting a pipeline type
+
+When creating a new project using the Quickstart wizard, three types of Maven-based pipelines are available for your new project:
+
+image::build_pipeline_strategies.png[Build pipeline strategies]
+
+1. *Release* is the basic option. After creating the pipeline, this option runs an integration test in the *Test* environment but does not stage the results.
+
+2. *Release and Stage* stages the new version of your project in the *Stage* environment after running integration tests.
+
+3. *Release, Stage, Approve and Promote* stages your project in the *Stage* environment and then requires manual approval to promote the changes to the *Run* environment.
+
+== Dashboard Deployments View
+
+Depending on which of the three options was selected for your project, the {osio} dashboard's `Deployments` section displays the version of the project and which stage type each version currently includes.
+
+For example, for the *Release* option, the `Deployments` section of the {osio} dashboard only shows the name of your project because there is no staging required.
+
+image::release_only_deploy_dash.png[Build only]
+
+For the *Release and Stage* option, the dashboard displays the version and the *Stage* label because the application is staged.
+
+image::build_stage_deploy_dash.png[Build and Stage]
+
+For the *Release, Stage, Approve and Promote* option, once you promote a version of the project, the dashboard displays both the *Stage* and *Run* environment versions.
+
+image::build_stage_run_dash.png[Build, stage, run]
+
+== Deployment Information
+
+Click *Deployments* on the dashboard to view the detailed *Deployments* screen. This view also displays different types of information depending on the type of pipeline selected for your project.
+
+For the *Release* pipeline, the *Stage* and *Run* details contain no information because this pipeline type does not use these environments.
+
+image::release_only_deployments.png[Release deployments]
+
+For the *Release and Stage* option, the *Stage* details are available, including resource usage and the version of the project.
+
+image::build_stage_deployment.png[Release and Stage]
+
+For the *Release, Stage, Approve and Promote* pipeline type, the details for both *Stage* and *Run* are listed, along with resource and pod usage.
+
+image::build_stage_run_deployment.png[Build, stage, run deployment]
+
+Using the *Release, Stage, Approve and Promote* pipeline option is recommended because this gives you the most information and control over your project.
