@@ -11,11 +11,11 @@ image::build_pipeline_strategies.png[Build pipeline strategies]
 
 3. *Release, Stage, Approve and Promote* stages your project in the *Stage* environment and then requires manual approval to promote the changes to the *Run* environment.
 
-== Dashboard Deployments View
+== Dashboard Deployments view
 
-Depending on which of the three options was selected for your project, the {osio} dashboard's `Deployments` section displays the version of the project and which stage type each version currently includes.
+Depending on which of the three options was selected for your project, the *Deployments* section of the {osio} dashboard displays the version of the project and which stage type each version currently includes.
 
-For example, for the *Release* option, the `Deployments` section of the {osio} dashboard only shows the name of your project because there is no staging required.
+For example, for the *Release* option, the *Deployments* section of the {osio} dashboard only shows the name of your project because there is no staging required.
 
 image::release_only_deploy_dash.png[Build only]
 
@@ -27,7 +27,7 @@ For the *Release, Stage, Approve and Promote* option, once you promote a version
 
 image::build_stage_run_dash.png[Build, stage, run]
 
-== Deployment Information
+== Deployment information
 
 Click *Deployments* on the dashboard to view the detailed *Deployments* screen. This view also displays different types of information depending on the type of pipeline selected for your project.
 
