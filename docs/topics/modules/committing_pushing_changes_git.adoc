@@ -15,12 +15,24 @@ image::commit_menu.png[Git Commit Menu]
 +
 . In the *Commit to repository* dialog box:
 
-.. Select all the changed and new files you wish to commit.
+.. Select all the changed and new files to commit.
 .. Add a commit message describing your changes.
 .. Select the *Push committed changes to:* check box.
 .. Click btn:[Commit].
 +
+// for hello-world
+ifeval::["{context}" == "hello-world"]
+image::hw_commit_dialog.png[Commit changes]
+endif::[]
+// for optimizing_memory_usage
+ifeval::["{context}" == "optimizing_memory_usage"]
+image::opt_commit_dialog.png[Commit changes]
+endif::[]
+// for importing-existing-project
+ifeval::["{context}" == "importing-existing-project"]
 image::vertxeventbus_commit.png[Commit changes]
+endif::[]
+// end of conditions
 
 When the commit succeeds, the following message displays:
 
