@@ -26,7 +26,7 @@ At the Deployment stage, {osio} Analytics analyzes your stack and provides a det
 
 .Prerequisites
 
-Ensure that you deploy your project and <<creating_a_new_pipeline, create a build pipeline>> for your project.
+Ensure that you deploy your project and <<creating_new_project-user-guide>> for your project.
 
 .Procedure
 
