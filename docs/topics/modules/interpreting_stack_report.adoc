@@ -1,7 +1,13 @@
 [id="interpreting_stack_report"]
 = Interpreting your stack report
 
-The Stack report provides a detailed analysis of your stack and it dependencies in the form of four cards. Click each of the cards to see information about the four key aspects relevant to your stack.
+The Stack report provides a detailed analysis of your stack and it dependencies in the form of four cards.
+
+Click each of the cards to see detailed information about the following four key aspects relevant to your stack:
+
++
+image::detailed_stackreport.png[Detailed Stack Report]
++
 
 * <<Security Issues>>
 * <<Licenses>>
@@ -23,19 +29,19 @@ A CVSS score highlighted in:
 * Orange indicates a moderate vulnerability, with a score in the range of 4 - 6.9.
 ====
 
-== Licences
+== Licenses
 {osio} Analytics verifies the licenses in your stack and provides the following detailed information:
 
 * The *Conflicting license(s) details* tab lists dependencies that conflict with licenses of other dependency or with the stack level license. It highlights the licenses which are affected in the dependency, and suggests alternate dependencies that go well with your stack, and avoid such conflicts.
 * The *Unknown license(s) details* tab lists the licenses unknown to {osio}, highlights the unknown license, and suggests alternate dependencies to replace such dependencies.
 
-== Insights:
+== Insights
 The stack report provides the following insights:
 
 * The *Usage outliers details* tab identifies and lists dependencies in your stack that are not commonly used in similar stacks or that do not work well with other dependencies in the stack. It suggests alternate dependencies, suitable to your stack, to replace them. The *Confidence score* depicts the confidence of {osio} Analytics on the suitability of the alternate dependency to your stack.
 * The *Companion component details* tab lists additional dependencies that you can add to your stack to enhance it. Based on the confidence score, you can decide on the suitability of the dependency to your stack and add it. You can also provide your feedback on the suggested dependencies.
 
-== Dependency details:
+== Dependency Details
 The stack report provides details of all the dependencies analyzed by it, and lists the unknown ones.
 
 * The *Analyzed dependency details* tab lists details of all the dependencies analyzed by {osio} and *Components check* highlights security, usage, and license issues in them. It suggests alternate dependencies to replace dependencies with usage and license issues.
