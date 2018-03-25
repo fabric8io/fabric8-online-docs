@@ -1,6 +1,11 @@
 [id="creating_new_project-{context}"]
 = Creating a new project
 
+// for user-guide
+ifeval::["{context}" == "user-guide"]
+When you create a new space, the *How would you like to get started?* dialog box opens. Use this menu to create a new Quickstart project as follows:
+endif::[]
+
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 When you create a new space, the *How would you like to get started?* dialog box opens. Use this menu to create a new Quickstart project as follows:
@@ -21,6 +26,18 @@ image::get_started_menu.png[Getting Started Menu]
 +
 . In the *Application Wizard*:
 // conditional starts here
+// for user-guide
+ifeval::["{context}" == "user-guide"]
+.. Click a project type from the displayed icons.
++
+image::vertx_booster.png[Select Vert.X Booster]
++
+.. Click btn:[Next].
+.. In the *OpenShift Project Name* field, add a unique name for your project.
++
+image::ug_project_name.png[Add a name for your project]
++
+endif::[]
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 .. Click a project type from the displayed icons. For this example, click *Vert.x HTTP Booster*.
@@ -50,6 +67,10 @@ endif::[]
 // conditional ends here
 .. Keep the default value for the *Organization*, *Group Id*, and *Version* fields and click btn:[Next].
 .. Select a build pipeline strategy. Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment. For this example, use the default value *Release, Stage, Approve and Promote* and click btn:[Next].
+// for user guide
+ifeval::["{context}" == "user-guide"]
+See <<selecting_a_pipeline_type>> for details about pipeline build types.
+endif::[]
 +
 image::configure_pipeline.png[Configure pipeline]
 +
@@ -59,20 +80,22 @@ image::build_config.png[Build config screen]
 +
 .. The *Summary* screen displays the selected options for the project. Click btn:[Ok] to create the project.
 +
+image::{context}_final.png[Final project screen]
+
+// for user-guide
+ifeval::["{context}" == "user-guide"]
+Your new project is now created in your space.
+endif::[]
+
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-image::vertx_final.png[Final Vert.X project screen]
-
 Your new Vert.X project is now created in your space.
 endif::[]
 
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-image::springboot_final.png[Final Vert.X project screen]
-
 Your new Spring Boot project is now created in your space.
 endif::[]
-
 // end conditionals
 
 {osio} has now hosted the project source code in the linked account and specified organization on GitHub. It  has also hosted the pipeline for the project in OpenShift Online.

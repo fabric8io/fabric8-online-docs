@@ -57,18 +57,4 @@ image::che_terminal.png[Workspace Terminal]
 +
 When loaded and ready to use, the new Che workspace tab displays the GitHub repository folder of your new project in the *Projects Explorer* panel.
 
-// for hello-world
-ifeval::["{context}" == "hello-world"]
-image::ws_loaded_codebase.png[Your GitHub Project in Che]
-endif::[]
-
-// for spring-boot
-ifeval::["{context}" == "spring-boot"]
-image::ws_loaded_springboot.png[Your GitHub Project in Che]
-endif::[]
-
-// for importing-existing-project
-ifeval::["{context}" == "importing-existing-project"]
-image::imp_vertx_eventbus.png[Your GitHub Project in Che]
-endif::[]
-// end of conditions
+image::{context}_loaded_codebase.png[Your GitHub Project in Che]

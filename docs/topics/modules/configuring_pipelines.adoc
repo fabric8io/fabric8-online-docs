@@ -5,14 +5,19 @@ Advanced users can change the settings for their project pipeline builds in Open
 
 .Prerequisites
 
-. Ensure that you have created a build pipeline for your project. See <<creating_a_new_pipeline>> for instructions.
+. Ensure that you have created a build pipeline for your project. See <<creating_new_project-user-guide>> for instructions.
 
 .Procedure
 
 . Navigate to your space dashboard.
-. Click btn:[Create].
-. Click btn:[Pipelines]. The *Pipelines* page lists all the pipeline builds for your project.
+. Click the *Pipelines* link to view the `Pipelines` page, which lists all the pipeline builds for your project.
++
+image::ug_pipeline_link.png[Link to pipelines]
++
 . Click btn:[Edit Pipeline] for the target pipeline build.
++
+image::ug_edit_pipeline.png[Edit pipeline]
++
 . Enter your OpenShift Online credentials when prompted. When successful, you are redirected to your OpenShift Online account Console.
 +
 WARNING: {osio} sets up the required default options for your pipeline build. We do not recommended changing these default settings.
@@ -21,4 +26,4 @@ WARNING: {osio} sets up the required default options for your pipeline build. We
 .. Use the *Source Configuration* section to edit your project Git Repository URL.
 .. Use the *Jenkinsfile Type* option to select the source of your Jenkinsfile for the build.
 .. Use the *Jenkinsfile Source Path* option to provide a relative path to your Jenkinsfile.
-. When ready, click btn:[Save] to save your changes.
+. When ready, click btn:[Save] to save your changes and return to the {osio} browser tab.

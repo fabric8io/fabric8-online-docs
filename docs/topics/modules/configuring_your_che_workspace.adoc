@@ -14,27 +14,11 @@ image::git_menu.png[Git Menu Options]
 .. In the *Projects Explorer* panel, click your project name to select it.
 .. From the menu options at the top of the page, click *Project*, and then select *Update Project Configuration*.
 +
-// for hello-world
-ifeval::["{context}" == "hello-world"]
-image::hw_project_menu.png[Configure Maven]
-endif::[]
-// for importing-existing-project
-ifeval::["{context}" == "importing-existing-project"]
-image::imp_project_menu.png[Configure Maven]
-endif::[]
-// end of conditions
+image::{context}_project_menu.png[Configure Maven]
 +
 .. In the displayed *Project Configuration* window, select *Maven* and click btn:[Save].
 +
-// for hello-world
-ifeval::["{context}" == "hello-world"]
-image::hw_config_maven.png[Configure Maven]
-endif::[]
-// for importing-existing-project
-ifeval::["{context}" == "importing-existing-project"]
-image::imp_config_maven.png[Configure Maven]
-endif::[]
-// end of conditions
+image::{context}_config_maven.png[Configure Maven]
 +
 .. Click the *run* option from the Run button (image:tri_run.png[title="Run button"]). Maven then downloads the required dependencies, compiles the application, and starts the _verticle_ (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options. The hot deploy option automatically updates the application when you make a change.
 . A *run* terminal appears at the bottom pane of the Che workspace. When the `mvn{nbsp}build` command finishes executing, the *run* view displays the following message:
@@ -49,14 +33,6 @@ image::run_proj.png[Run project link]
 +
 . Enter a name in the *Name* field and click btn:[Invoke] to test the application.
 +
-// for hello-world
-ifeval::["{context}" == "hello-world"]
-image::hello_john.png[Testing the application]
-endif::[]
-// for importing-existing-project
-ifeval::["{context}" == "importing-existing-project"]
-image::aloha_john.png[Testing the application]
-endif::[]
-// end of conditions
+image::{context}_john.png[Testing the application]
 
 This is the same version of the application that the pipeline deployed to *Stage* and you subsequently promoted to *Run*. The URL for this build of the application is different from the URLs used by OpenShift Online for *Stage* and *Run*. This is your private sandbox hosted within Che. You can still share this URL with others and interactively debug the application while they run it in their browser.

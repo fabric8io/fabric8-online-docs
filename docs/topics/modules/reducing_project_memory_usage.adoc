@@ -18,44 +18,18 @@ endif::[]
 . Return to your Workspace browser tab. If your closed the tab, click *Create* and then the btn:[Open] to run your workspace.
 . In the *Projects Explorer* panel, double-click your project and navigate to `src` > `main` > `fabric8`.
 +
-// for optimizing_memory_usage
-ifeval::["{context}" == "optimizing_memory_usage"]
-image::fabric8_folder.png[Fabric8 folder]
-endif::[]
-+
-// for spring-boot
-ifeval::["{context}" == "spring-boot"]
-image::sb_optimize_folders.png[File tree]
-endif::[]
+image::{context}_folder.png[Fabric8 folder]
 +
 . Right-click the `fabric8` folder and select menu:New[File].
-// for optimizing_memory_usage
-ifeval::["{context}" == "optimizing_memory_usage"]
 +
-image::new_file.png[New File Menu]
+image::{context}_newfile.png[New File Menu]
 +
-endif::[]
-// for spring-boot
-ifeval::["{context}" == "spring-boot"]
-+
-image::new_file_sb.png[New file spring-boot menu]
-+
-endif::[]
-
 . Name the new file `deployment.yml` and click btn:[OK]. The new file displays in the editor.
 // for optimizing_memory_usage
 ifeval::["{context}" == "optimizing_memory_usage"]
 +
-image::deploymentyaml_vertx.png[Deployment.Yaml Vertx]
+image::{context}_deployment.png[Deployment.Yaml Vertx]
 +
-endif::[]
-// for spring-boot
-ifeval::["{context}" == "spring-boot"]
-+
-image::deploymentyaml.png[Deployment.Yaml]
-+
-endif::[]
-// end conditional
 . Copy the contents of the following file to your new YAML file: https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml].
 +
 IMPORTANT: Spaces are meaningful in YAML files. Ensure that the correct spacing is copied into your YAML file from the link.

@@ -5,7 +5,6 @@ After making the required changes to your code, commit and push the modification
 
 IMPORTANT: Before committing your changes, ensure that your project pipeline build has completed (that is, the build has been promoted and is at the *Rollout to Run* stage). See <<approving_build_pipeline>> for instructions.
 
-
 [discrete]
 == Procedure
 
@@ -20,19 +19,7 @@ image::commit_menu.png[Git Commit Menu]
 .. Select the *Push committed changes to:* check box.
 .. Click btn:[Commit].
 +
-// for hello-world
-ifeval::["{context}" == "hello-world"]
-image::hw_commit_dialog.png[Commit changes]
-endif::[]
-// for optimizing_memory_usage
-ifeval::["{context}" == "optimizing_memory_usage"]
-image::opt_commit_dialog.png[Commit changes]
-endif::[]
-// for importing-existing-project
-ifeval::["{context}" == "importing-existing-project"]
-image::vertxeventbus_commit.png[Commit changes]
-endif::[]
-// end of conditions
+image::{context}_commit_dialog.png[Commit changes]
 
 When the commit succeeds, the following message displays:
 
