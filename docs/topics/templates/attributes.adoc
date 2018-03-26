@@ -22,6 +22,9 @@
 :attribute-missing: warn
 :experimental:
 
+// Context attributes
+:secondary:
+
 // Guide directory structure
 :imagesdir: images
 :filesdir: files
