@@ -1,5 +1,5 @@
 [id="using_guided_hierarchy_to_create_work_item"]
-= Using the Guided Hierarchy to Create a Work Item
+= Using the guided hierarchy to create a work item
 
 The space template you select determines the guided work item type hierarchy.
 Create work items using the guided hierarchy as follows:

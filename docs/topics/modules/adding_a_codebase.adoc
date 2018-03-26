@@ -12,4 +12,4 @@ image::get_started_menu.png[How would you like to get started menu]
 
 include::importing_existing_code.adoc[leveloffset=+1]
 
-include::creating_a_new_quickstart_project.adoc[leveloffset=+1]
+include::creating_new_project.adoc[leveloffset=+1]

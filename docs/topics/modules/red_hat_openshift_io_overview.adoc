@@ -1,5 +1,5 @@
 [id="red_hat_openshift_io_overview"]
-= {rhosio} Overview
+= {rhosio} overview
 
 {rhosio} is a highly collaborative open-source, web-based _application life cycle management_ (ALM) solution. It is a next-generation product for developers to manage the development life cycle with one efficient tool.
 
@@ -7,12 +7,12 @@
 
 {osio} offers features to seamlessly manage end-to-end application development. Members of distributed teams can use it to perform the following tasks without leaving the browser window:
 
-*Project Management:*
+*Project management:*
 
 * Project planning and issue tracking using your choice of Agile methodology.
 * Automating project releases.
 
-*Project Development:*
+*Project development:*
 
 * Creating development environments and testing based on requirements.
 * Coding using an integrated development environment based on Eclipse Che, which provides a workspace for developing your application.
@@ -22,18 +22,18 @@
 * Use the QuickStart wizards to create basic applications with their own new repo on GitHub, a build pipeline integrated with Jenkins, and a related new OpenShift project.
 * Using migration wizards to migrate legacy J2EE applications to the cloud.
 
-*Deployment and Testing:*
+*Deployment and testing:*
 
 * Building, testing, deploying, and monitoring codebases using Continuous Integration pipelines that can be tailored to the requirements of a team or an individual.
 * Deploying applications packaged as a set of containers to OpenShift, which powers the underlying services such as the Eclipse Che workspaces and Pipelines.
 * Using integrated but customizable Jenkins build pipelines to facilitate rapid testing and environment promotion.
 
-*Analysis and Recommendations:*
+*Analysis and recommendations:*
 
 * Use the full-stack analysis feature on your project open source components to identify potential security issues and recommend safer alternative components or component versions to use instead.
 * Use the self-learning analytics engine to improve the code quality and make data-based choices. The engine scans community libraries, security vulnerabilities, and other GitHub metrics to provide useful real-time assistance for developers that learns and improves over time.
 
-== Registration and Early Access
+== Registration and early access
 
 Currently, {osio} is available for a limited early access program. In the {osio} home page, click btn:[Sign up for the Preview] to join a waiting list for Early Access. You will receive an email informing you when you have been given access to use the system.
 

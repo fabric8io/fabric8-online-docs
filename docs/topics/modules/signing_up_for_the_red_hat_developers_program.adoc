@@ -3,7 +3,7 @@
 
 To start using {rhosio}, create a new Red Hat Developers (RHD) account or use an existing RHD or social media account.
 
-IMPORTANT: Early access to the service is limited and will be allocated as resources become available. When you sign up, you are added to a waiting list. You are notified when access to the system is available.
+IMPORTANT: Early access to the service is limited and allocated as resources become available. When you sign up, you are added to a waiting list. You are notified when access to the system is available.
 
 . Navigate to link:{osio-url}[{rhosio}].
 
@@ -20,7 +20,7 @@ IMPORTANT: Early access to the service is limited and will be allocated as resou
     ... Click the appropriate social account button.
     ... Add your login credentials for the selected service and authorize the creation of the account.
 
-== Related Information
+== Related information
 
 The following links provide additional resources about accessing Red Hat's offering for developers:
 
