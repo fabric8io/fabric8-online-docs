@@ -11,7 +11,7 @@ The {osio} analytics report comprises three components:
 
 === Stack summary
 The stack summary provides a synopsis of the analysis report.
-It highlights the security issues, usage outliers, and unknown or conflicting licenses in your stack. For more information about these concepts see the link:user_guide.html#glossary[Glossary].
+It highlights the security issues, usage outliers, and unknown or conflicting licenses in your stack. For more information about these concepts see the link:user-guide.html#glossary[Glossary].
 
 === Detailed analysis of your stack components
 The detailed component analysis provides recommendations for relevant alternate components in case of license outliers (licenses not commonly used in similar stacks) and usage outliers (components not commonly used in similar stacks). It also recommends the appropriate versions for your stack components.
