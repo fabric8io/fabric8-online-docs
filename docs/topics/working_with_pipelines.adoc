@@ -1,7 +1,7 @@
+:secondary: _pipelines
+
 [id="working_with_pipelines"]
 = Working with Pipelines
-
-:context: user-guide
 
 include::modules/about_pipelines.adoc[leveloffset=+1]
 
