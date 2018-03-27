@@ -1,5 +1,5 @@
 [id="working_with_collaborators"]
-= Working with Collaborators
+= Working with collaborators
 //start here
 include::modules/about_collaborators.adoc[leveloffset=+1]
 

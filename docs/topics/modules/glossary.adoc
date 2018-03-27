@@ -45,6 +45,10 @@ experience:: Experience describes the envisioned user experience in the product 
 feature:: A feature is a detailed user-story that helps actualize parent experiences. It can support multiple experiences and is generally achievable within a sprint.
 // endterm
 
+// term: e8d54bf3-f89e-46e5-86f7-4af6475863b0, en_EN
+bug:: Defect that causes unexpected behavior in the software.
+// endterm
+
 // term: 4d85adba-817d-41ca-b85f-1e4a938d1282, en_EN
 fundamental:: Work item type that focuses on getting the basic foundations of a product right to make it more efficient.
 // endterm

@@ -1,7 +1,7 @@
 [id="creating_a_new_space"]
 = Creating a new space
 
-To start working with a new project, create a new space. Each space includes a team of users in assigned roles as well as unique <<about_work_items,Work Items>> and <<about_iterations,Iterations>> used to manage the new project.
+To start working with a new project, create a new space. Each space includes a team of users in assigned roles as well as unique <<about_work_items,work items>> and <<about_iterations,iterations>> used to manage the new project.
 
 .Prerequisites
 

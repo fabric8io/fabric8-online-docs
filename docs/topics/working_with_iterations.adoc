@@ -1,5 +1,5 @@
 [id="working_with_iterations"]
-= Working with Iterations
+= Working with iterations
 
 include::modules/about_iterations.adoc[leveloffset=+1]
 

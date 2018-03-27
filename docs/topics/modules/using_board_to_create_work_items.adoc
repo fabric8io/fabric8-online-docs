@@ -1,12 +1,12 @@
 [id="using_board_to_create_work_items"]
-= Using the Board to Create a Work Item
+= Using the board to create a work item
 
 . Click btn:[Plan] to view the *Planner* for your space.
 
 . Click btn:[Board] to see the Planner's Board view.
 
-. In the *new* column, click btn:[+] to display the quick-add Work Item widget.
+. In the *new* column, click btn:[+] to display the quick-add work item widget.
 
-. Select a Work Item type from the drop down options and add a title and description for your Work Item.
+. Select a work item type from the drop down options and add a title and description for your work item.
 
-. Click the check button to save your new Work Item in the *new* column.
+. Click the check button to save your new work item in the *new* column.

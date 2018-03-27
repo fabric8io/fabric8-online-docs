@@ -1,5 +1,5 @@
 [id="creating_a_new_work_item"]
-= Creating a new Work Item
+= Creating a new work item
 
 The space template you select determines the structure of the guided work item type hierarchy, the work item types available for a space, and their features.
 

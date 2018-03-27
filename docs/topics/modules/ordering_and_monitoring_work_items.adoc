@@ -1,14 +1,14 @@
 [id="ordering_and_monitoring_work_items"]
-= Ordering and monitoring Work Items
+= Ordering and monitoring work items
 
-The *Backlog* displays a list view used to plan your work. You can order Work Items based on their priority, status, and other parameters to organize them.
+The *Backlog* displays a list view used to plan your work. You can order work items based on their priority, status, and other parameters to organize them.
 
-The *Backlog* displays the list of Work Items as a list where all the Work Items display in a single file.
+The *Backlog* displays the list of work items as a list where all the work items display in a single file.
 
-Click btn:[Plan] to view the Planner. You can order the Work Items in your space as follows:
+Click btn:[Plan] to view the Planner. You can order the work items in your space as follows:
 
-* In the btn:[Backlog] view, drag and drop a selected Work Item to reorder them. Alternatively, select btn:[Move to Top] or btn:[Move to Bottom] from the options (image:kabob_white.png[title="Options"]) menu.
+* In the btn:[Backlog] view, drag and drop a selected work item to reorder them. Alternatively, select btn:[Move to Top] or btn:[Move to Bottom] from the options (image:kabob_white.png[title="Options"]) menu.
 
-The btn:[Board] view displays a visual representation of your Work Item progress. Based on their status, the Work Items are sorted into the _new_, _open_, _in progress_, _resolved_, or _closed_ columns. Use this feature to track and update the status of Work Items as you progress through your task list.
+The btn:[Board] view displays a visual representation of your work item progress. Based on their status, the work items are sorted into the _new_, _open_, _in progress_, _resolved_, or _closed_ columns. Use this feature to track and update the status of work items as you progress through your task list.
 
-In the btn:[Board] view, you can drag and drop the selected Work Item to the relevant column based on the progress of the Work Item.
+In the btn:[Board] view, you can drag and drop the selected work item to the relevant column based on the progress of the work item.

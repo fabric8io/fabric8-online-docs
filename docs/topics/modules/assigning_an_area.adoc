@@ -1,15 +1,15 @@
 [id="Assigning_an_area"]
-= Assigning an Area to a Work Item
+= Assigning an area to a work item
 
-You can group Work Items by type or functionality by assigning relevant Areas to the Work Items as follows:
+You can group work items by type or functionality by assigning relevant areas to the work items as follows:
 
 .Prerequisites
 * Ensure that the user is <<adding_collaborators,added as a collaborator>> to your space.
-* Ensure that you have <<creating_a_new_work_item, created a Work Item>> for the space.
+* Ensure that you have <<creating_a_new_work_item, created a work item>> for the space.
 
 .Procedure
-. Click the btn:[Plan] tab to view a list of Work Items for your space.
-. Double-click a Work Item to view its details.
-. Click the *Area* field to view a list of Areas to assign to the space. By default, your Root Area is assigned to a new Work Item.
-. Select one of the existing Areas to assign to your Work Item.
-. Click the check box to confirm the name of the Area.
+. Click the btn:[Plan] tab to view a list of work items for your space.
+. Double-click a work item to view its details.
+. Click the *Area* field to view a list of areas to assign to the space. By default, your root area is assigned to a new work item.
+. Select one of the existing areas to assign to your work item.
+. Click the check box to confirm the name of the area.
