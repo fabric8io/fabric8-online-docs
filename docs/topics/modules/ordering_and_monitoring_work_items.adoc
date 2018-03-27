@@ -1,5 +1,5 @@
 [id="ordering_and_monitoring_work_items"]
-= Ordering and Monitoring Work Items
+= Ordering and monitoring Work Items
 
 The *Backlog* displays a list view used to plan your work. You can order Work Items based on their priority, status, and other parameters to organize them.
 

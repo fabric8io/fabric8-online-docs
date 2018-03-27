@@ -1,3 +1,5 @@
+:secondary: _spaces
+
 [id="working_with_spaces"]
 = Working with spaces
 

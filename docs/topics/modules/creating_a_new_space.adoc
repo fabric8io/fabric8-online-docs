@@ -23,7 +23,7 @@ To start working with a new project, create a new space. Each space includes a t
 
 * *<<importing_existing_code,Import existing code>>*: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.
 
-* *<<creating_a_new_quickstart_project,Create a new Quickstart project>>*: Use wizards to automatically set up your development environment and quickly create projects by using the desired tools.
+* *<<creating_new_project-user-guide_spaces,Create a new Quickstart project>>*: Use wizards to automatically set up your development environment and quickly create projects by using the desired tools.
 
 * btn:[No thanks, take me to the new space dashboard]: Go to your new space dashboard to begin working in the space.
 +

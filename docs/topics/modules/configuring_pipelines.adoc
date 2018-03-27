@@ -5,7 +5,7 @@ Advanced users can change the settings for their project pipeline builds in Open
 
 .Prerequisites
 
-. Ensure that you have created a build pipeline for your project. See <<creating_new_project-user-guide>> for instructions.
+. Ensure that you have created a build pipeline for your project. See <<creating_new_project-user-guide_pipelines>> for instructions.
 
 .Procedure
 

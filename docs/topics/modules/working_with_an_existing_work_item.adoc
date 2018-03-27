@@ -1,5 +1,5 @@
 [id="working_with_an_existing_work_item"]
-= Working with an Existing Work Item
+= Working with an existing Work Item
 
 Click btn:[Plan] to use the Planner to track your Work Items and Iterations using either the list view or the board view. The Planner contains two views:
 

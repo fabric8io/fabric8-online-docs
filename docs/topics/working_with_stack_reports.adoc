@@ -1,3 +1,5 @@
+:secondary: _stacks
+
 [id="working_with_stack_reports"]
 = Working with Stack Reports
 

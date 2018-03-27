@@ -7,7 +7,7 @@ This section introduces {rhosio} and provides an overview of the main features o
 
 include::modules/red_hat_openshift_io_overview.adoc[leveloffset=+1]
 
-== Related Information
+== Related information
 
 See also the following related Red Hat resources related to the {rhdp}:
 
