@@ -1,5 +1,5 @@
 [id="working_with_work_items"]
-= Working with Work Items
+= Working with work items
 
 include::modules/about_work_items.adoc[leveloffset=+1]
 

@@ -1,32 +1,32 @@
 [id="selecting_an_iteration"]
-= Selecting an Iteration
+= Selecting an iteration
 
-After logging in and selecting the appropriate space, click btn:[Plan] to view the Iterations for that space. Existing Iterations are grouped into one of the following categories:
+After logging in and selecting the appropriate space, click btn:[Plan] to view the iterations for that space. Existing iterations are grouped into one of the following categories:
 
-* _Active Iteration_ lists active Iterations.
-* _All Iterations_ displays a list of all Iterations in the space. These include active and closed Iterations, as well as Iterations that have not yet started.
+* _Active Iteration_ lists active iterations.
+* _All Iterations_ displays a list of all iterations in the space. These include active and closed iterations, as well as iterations that have not yet started.
 
-Select an Iteration listed in one of these groups to display the included Work Items. See <<associating_work_items_with_an_iteration,Associating Work Items with an Iteration>> for more information.
+Select an iteration listed in one of these groups to display the included work items. See <<associating_work_items_with_an_iteration>> for more information.
 
-== All Iterations
+== All iterations
 
-After <<creating_a_new_iteration, creating an Iteration>>, the new Iteration displays in the _All Iterations_ view.
+After <<creating_a_new_iteration, creating an iteration>>, the new iteration displays in the _All Iterations_ view.
 
-Select one of the following options after clicking the options (image:kabob.png[title="Options"]) icon for the target Iteration:
+Select one of the following options after clicking the options (image:kabob.png[title="Options"]) icon for the target iteration:
 
-* Select btn:[Edit] to change the Iteration details.
-* Select btn:[Close] to end your Iteration.
-* Select btn:[Create Child] to create a child Iteration for the target Iteration.
+* Select btn:[Edit] to change the iteration details.
+* Select btn:[Close] to end your iteration.
+* Select btn:[Create Child] to create a child iteration for the target iteration.
 
-== Active Iteration
+== Active iteration
 
-When an Iteration starts, it is added to the _Active Iteration_ list. The _Active Iteration_ list displays:
+When an iteration starts, it is added to the _Active Iteration_ list. The _Active Iteration_ list displays:
 
-* The start and end dates for the Iteration.
-* A tracker to track the Iteration status based on the completion of the Work Items associated with it.
-* The description of the Iteration.
+* The start and end dates for the iteration.
+* A tracker to track the iteration status based on the completion of the work items associated with it.
+* The description of the iteration.
 
-To end an Iteration:
+To end an iteration:
 
-. Click the options (image:kabob.png[title="Options"]) icon for the Iteration and select btn:[Close].
+. Click the options (image:kabob.png[title="Options"]) icon for the iteration and select btn:[Close].
 . In the dialog box, click btn:[Close].

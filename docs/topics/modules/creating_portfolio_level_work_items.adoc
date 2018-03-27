@@ -1,11 +1,11 @@
 [id="creating_portfolio_level_work_items"]
 = Creating Portfolio level work items
 
-The Product Management team envisages Scenarios, identifies Fundamental and Papercut type of work items within a Portfolio. These are further broken down into Experiences and Value Propositions.
+The Product Management team envisages Scenarios, identifies Fundamental and Papercut work items within a Portfolio. These are further broken down into Experiences and Value Propositions.
 
-You can create Scenario, Fundamental, or Papercut type of Work Items and associated child Value Propositions and Experiences as follows:
+You can create Scenario, Fundamental, or Papercut type of work items and associated child Value Propositions and Experiences as follows:
 
-. Click btn:[Plan] at the top of the page to view the Planner. The default *Backlog* view with *All* the Work Items in the space is displayed.
+. Click btn:[Plan] at the top of the page to view the Planner. The default *Backlog* view with *All* the work items in the space is displayed.
 . Click btn:[Portfolio], and then btn:[Create work item] from the pane at the bottom of the screen to create a new work item.
 +
 NOTE: You can create only Portfolio type work items such as Scenario, Fundamental, and Papercuts.

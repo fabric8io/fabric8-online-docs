@@ -1,5 +1,5 @@
 [id="working_with_areas"]
-= Working with Areas
+= Working with areas
 
 include::modules/about_areas.adoc[leveloffset=+1]
 

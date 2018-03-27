@@ -32,14 +32,14 @@ The Additional components section has one recommendation to enhance the applicat
 
 . Click *Additional components recommended by {osio}* to see the recommended component. It includes a link to create a new work item to track the addition of this component to your stack:
 +
-image::action_item.png[Create Work Item]
+image::action_item.png[Create work item]
 +
 . Click *Create work item* to create an auto populated work item for this recommendation. The following message displays when the work item is created:
 +
-image::wi_created.png[Work Item Created]
+image::wi_created.png[work item vreated]
 +
 . Click *View Work Item* to view the auto populated work item in a new browser tab.
 +
-image::automatic_wi.png[Automatically Created Work Item]
+image::automatic_wi.png[Automatically Created work item]
 
 You have now learned how to use stack reports to analyze and improve your application stack and track the required changes using work items.

@@ -1,18 +1,18 @@
 [id="using_backlog_to_create_work_item"]
-= Using the Backlog to Create a Work Item
+= Using the backlog to create a work item
 
 . Click btn:[Plan] in your space.
 
-. Click btn:[Backlog] to view the Work Item backlog.
+. Click btn:[Backlog] to view the work item backlog.
 
 . Click btn:[Create].
 
-. Click the desired Work Item Type symbol.
+. Click the desired work item type symbol.
 
-. Add the title, *Area*, *Iteration*, *Label*, and *Description* for your new Work Item.
+. Add the title, *Area*, *Iteration*, *Label*, and *Description* for your new work item.
 
 . Individually click &#10003; to save the changes for each field.
 
 . Click btn:[X] at the top right corner of the screen after saving all changes.
 
-The new Work Item now displays in the *Backlog* view.
+The new work item now displays in the *Backlog* view.
