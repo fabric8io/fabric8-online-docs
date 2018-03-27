@@ -1,28 +1,32 @@
 [id="using_stack_report"]
-= Using your Stack Report
+= Using your stack report
 
-{osio} Analytics helps you make informed choices with respect to your development stack and its component libraries by analyzing your stack at the development stage, within your IDE, and at the deployment stage.
+{osio} analytics helps you make informed choices with respect to your development stack and its dependencies by analyzing your stack at the development stage, within your IDE, and at the deployment stage.
 
 == Development Stage
-{osio} Analytics analyzes your stack at the development stage and flags components with security vulnerabilities in your Che workspace. It also recommends a secure, alternate version for your stack.
+{osio} provides an integrated development environment in the form of an Eclipse Che workspace to develop your code.
+{osio} analytics flags dependencies with security vulnerabilities by analyzing your stack, while you modify it, at the development stage within your Che workspace. It also suggests a secure, alternate version of the dependency for your stack.
 
 .Prerequisite
 
-Ensure that you use link:getting-started-guide.html#creating_che_workspace-hello-world[Che workspace] to develop an application.
+. Create a link:getting-started-guide.html#creating_che_workspace-hello-world[Che workspace] to develop your stack.
+. link:getting-started-guide.html#configuring_your_che_workspace-hello-world[Configure your Che workspace].
 
 .Procedure
 
-You can access inputs from {osio} Analytics within the Che IDE as follows:
+You can access inputs from {osio} analytics within the Che IDE as follows:
 
-. In your Che workspace, open the manifest file of your project, for example, `pom.xml` for a Maven Stack, `package.json` for NPM, or `requirements.txt` for Python. {osio} analyzes the stack, flags (image:che_cve_issue.png[title="CVE Flag"]) components with security vulnerabilities, and recommends an alternate secure version.
-. Mouse hover the flagged component to see the CVE for the flagged component and the recommended alternate version.
+. In your Che workspace, open the manifest file of your project, for example, `pom.xml` for a Maven Stack, `package.json` for NPM, or `requirements.txt` for Python.
+. Make modifications to your code.   {osio} analyzes the stack, flags (image:che_cve_issue.png[title="CVE Flag"]) the dependency if it has any security vulnerabilities, and suggests an alternate secure version.
+. Move the mouse pointer over the icon to see the Common Vulnerabilities and Exposures (CVE) for the flagged dependency and the suggested alternate version.
 +
-image::che_alt_recommendations.png[Stack Recommendations on Che]
+image::red_x.png[Error Icon]
 +
-. Update the component to the recommended version.
+. Update the dependencies to the suggested version.
+//looks like there is some change in the above step raised a bug, behavior on Che error now only flags CVE and does not recommend alternate version, this affects both GSG and UG.
 
 == Deployment Stage
-At the Deployment stage, {osio} Analytics analyzes your stack and provides a detailed stack analysis report. It analyzes various parameters of your stack components and recommends alternative and additional components suitable for your stack.
+When you create a new quickstart project, a new build is executed. {osio} analytics is triggered during the *Build Release* stage of the build. It analyzes your stack and its dependencies and provides a detailed stack analysis report with insights on alternate and additional dependencies suitable for your stack.
 
 .Prerequisites
 
@@ -30,33 +34,29 @@ Ensure that you deploy your project and <<creating_new_project-user-guide_pipeli
 
 .Procedure
 
-* In the *Stack Report Recommendations* section of your space dashboard, click *Show complete stack report* to access the detailed stack report for your manifest files.
-
-Alternatively, you can access your stack report as follows:
-
-. Click *Create* and then *Pipelines* to view the pipeline builds for your project.
-. Click *Stack Report* to see the stack and component level analyses for your project.
+. Navigate to menu:Create[Pipelines] to view the pipeline builds for your project.
+. In the *Pipelines* view, under the *Build Release* stage, click btn:[Stack Report] to see the analysis report for your entire stack.
 +
-The report displays:
-
-* *Stack report:* A synopsis of the stack's analysis report.
-
-* *Detail analysis of your stack components:* A list of all the stack components and their various parameters, including recommendations of alternate components in case of license outliers or usage outliers.
-
-* *Additional components recommended by {osio}:* A list of additional components commonly used by similar stacks.
+image::pipeline_stackreport.png[Acessing Stack Report]
 +
-See <<interpreting_stack_report>> section for further details.
-
-. Filter the *Detail analysis of your stack components* list to see:
-
-** Usage Outliers (image:usage_outlier.png[title="Usage Outlier"])
-** Security Issues (image:security_issues.png[title="Security Issues"])
-** Alternate Components (image:alternate_component.png[title="Alternate Components"])
-** Grouped Components (image:alternate_component.png[title="Alternate Components"])
-** License Outliers (image:license_outlier.png[title="License Outliers"])
-** Unknown Licenses (image:license_unknown.png[title="Unknown Licenses"])
-** License conflict in a Component (image:license_conflicts.png[title="License Conflicts"])
+The report displays a summary of four key aspects relevant to your stack in the form of cards:
 +
-Note that {osio} recommends *Alternate Components* for your stack if it identifies license or usage outliers.
+image::full_stack_reports.png[Full Stack Report]
++
+Security Issues:: This card highlights the number of security issues in your stack, the highest Common Vulnerability Scoring System (CVSS) score, and the number of dependencies with this high score.
+Licenses:: This card suggests an appropriate stack level license and flags conflicting, unknown, and restrictive licenses (licenses that are not commonly used in similar stacks or that do not work well with the stack’s representative license) affecting your stack.
+Insights:: Based on the analysis of other similar stacks, this card identifies usage outliers (dependencies not commonly used in similar stacks and that rarely go well together) in your stack and also highlights the number of companion (additional) dependencies that could augment your stack.
+Dependency Details:: This card lists the number of dependencies analyzed by {osio} and those unknown to it.
+. Click each of the cards to see <<interpreting_stack_report,detailed information>> about each of the aspects relevant to your stack.
+. Expand the arrow adjacent to the dependency to see information about:
 
-. In the *Action* column adjacent to the recommended alternate or additional components, click *Create Work Item* to create a work item in the {osio} Planner and <<working_with_an_existing_work_item,follow through>> on the recommendations.
+* The current and latest available version
+* Licenses and tags associated with it
+* GitHub statistics relevant to it that help assess its popularity
+
++
+These statistics help you compare the existing dependency with the alternate dependency and make a smart choice for your stack.
+
+. To act on the analytics and insights provided by the report:
+* In the *Security Issues* detailed view, click *Report an issue* to report a security vulnerability highlighted in the report as an issue in the {osio} planner.
+* In the *Insights* detailed view, click *Create work item* to create issues for adding the suggested alternate or companion dependency. The issue is created in the {osio} planner and auto-populated with the information about the suggested dependency.
