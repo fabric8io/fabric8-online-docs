@@ -11,5 +11,10 @@ You can group work items by type or functionality by assigning relevant areas to
 . Click the btn:[Plan] tab to view a list of work items for your space.
 . Double-click a work item to view its details.
 . Click the *Area* field to view a list of areas to assign to the space. By default, your root area is assigned to a new work item.
++
+image::assign_area.png[Assign area]
++
 . Select one of the existing areas to assign to your work item.
 . Click the check box to confirm the name of the area.
+
+Your work item is now assigned to the selected area.
