@@ -1,4 +1,4 @@
-dependencies[glossary]
+[glossary]
 [id="glossary"]
 = Glossary
 
