@@ -29,7 +29,7 @@ image::app_doesnt_exist.png[Application Does Not Exist Error]
 . In the application, enter a name in the *Name* field and click btn:[Invoke] to test the application. The *Result* field displays the JSON result returning
 from the API.
 +
-image::hello_john.png[Test the Application]
+image::hello-world_john.png[Test the Application]
 
 If the Quickstart application on the *Stage* build runs as expected, return to the {osio} browser tab and promote your application and build on *Run*:
 

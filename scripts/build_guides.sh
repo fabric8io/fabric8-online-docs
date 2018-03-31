@@ -1,7 +1,7 @@
 CURRENT_DIR="$( pwd -P)"
 SCRIPT_SRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P )"
 OUTPUT_DIR="$( dirname $SCRIPT_SRC )/html"
-DOCS_SRC="$( dirname $SCRIPT_SRC )/docs"
+DOCS_SRC="$( dirname $SCRIPT_SRC )/docs/titles"
 BUILD_RESULTS="Build Results:"
 BUILD_MESSAGE=$BUILD_RESULTS
 
@@ -21,7 +21,7 @@ subdirs=`find . -maxdepth 1 -type d ! -iname ".*" ! -iname "topics" | sort`
 # We need to remove OUTPUT_DIR when not building in container because
 # otherwise, permissions wouldn't be changeable later on.
 if [ ! -f /.dockerenv ] && [ -d $OUTPUT_DIR ]; then rm -rf $OUTPUT_DIR/ && mkdir -p $OUTPUT_DIR; fi
-if [ -d topics/images/ ]; then mkdir -p $OUTPUT_DIR/images/ && cp -r topics/images/ $OUTPUT_DIR; fi
+if [ -d ../images/ ]; then mkdir -p $OUTPUT_DIR/images/ && cp -r ../images/ $OUTPUT_DIR; fi
 
 #echo $PWD
 for subdir in $subdirs
@@ -42,7 +42,7 @@ do
 
     # Only build PDFs when in a container & when PDF-building possible
     if [ -f /.dockerenv ] && [ $(which asciidoctor-pdf 2> /dev/null) ]; then
-      asciidoctor -r asciidoctor-pdf -a imagesdir="topics/images" -b pdf master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.pdf
+      asciidoctor -r asciidoctor-pdf -b pdf master.adoc -o $OUTPUT_DIR/$GUIDE_NAME.pdf
       if [ $? -eq 0 ]; then
         INDEX_LINK="$INDEX_LINK (link:$GUIDE_NAME.pdf[PDF])"
       fi

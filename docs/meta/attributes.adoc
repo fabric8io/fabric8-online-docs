@@ -7,7 +7,7 @@
 
 :doctype: book
 
-:docinfodir: topics/styles
+:docinfodir: docs/styles/
 :docinfo1:
 :icons: font
 :source-highlighter: highlightjs
@@ -15,7 +15,7 @@
 :linkcss:
 :stylesdir: styles/
 :stylesheet: foundation.css
-:copycss: topics/styles/{stylesheet}
+:copycss: styles/foundation.css
 
 // AsciiDoc rendering
 :last-update-label!:
