@@ -2,8 +2,9 @@
 //   the real 'index.adoc' is completed when
 //   the 'scripts/build_guides.sh' script is run
 
-include::topics/templates/attributes.adoc[]
+include::../meta/attributes.adoc[]
 
+:docinfodir: ../styles/
 
 [id="red-hat-openshift-io-documentation"]
 = Red Hat OpenShift.io Documentation

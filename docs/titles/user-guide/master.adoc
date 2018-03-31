@@ -1,4 +1,4 @@
-include::topics/templates/attributes.adoc[]
+include::meta/attributes.adoc[]
 
 = OpenShift.io User Guide
 :author: {rhd} Documentation Team
