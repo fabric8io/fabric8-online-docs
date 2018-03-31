@@ -54,6 +54,7 @@ for book in $DOCS_SRC/*/master.adoc; do
         failed_validations="$failed_validations $dir"
     else
         echo -e "${GRN}validation success${NOC}"
+        rm master.xml
     fi
     popd >/dev/null
 done
