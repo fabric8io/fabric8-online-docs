@@ -7,7 +7,7 @@
 
 :doctype: book
 
-:docinfodir: docs/styles/
+:docinfodir: styles/
 :docinfo1:
 :icons: font
 :source-highlighter: highlightjs
