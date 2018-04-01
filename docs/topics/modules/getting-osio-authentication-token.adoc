@@ -1,9 +1,9 @@
 [id="getting_osio_authentication"]
 = Getting OpenShift.io authentication token
 
-You require an OpenShift.io authentication token to invoke all Fabric8-Analytics API resources.
+You require an {osio} authentication token to invoke all Fabric8-Analytics API resources.
 
-Get the openshift.io authentication token as follows:
+Get the {osio} authentication token as follows:
 
 . Log into link:https://openshift.io[{osio}]
 . Open the user profile.

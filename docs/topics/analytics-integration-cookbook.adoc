@@ -1,4 +1,5 @@
 // Includes for all assemblies that form the top-level sections of the Analytics Integration Cookbook.
+:context: analytics-integration-cookbook
 
 [id="before_you_start"]
 = Before You Start

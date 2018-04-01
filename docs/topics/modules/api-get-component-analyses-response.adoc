@@ -4,11 +4,11 @@
 == Purpose
 Fetches various data points for a selected component.
 
-IMPORTANT: You require an OpenShift.io authentication token to invoke this method.
+IMPORTANT: You require an {osio} authentication token to invoke this method.
 
 == Resource URL
 
-For information on the resource URL reach out to us on the OpenShift.io support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+For information on the resource URL reach out to us on the {osio} support chat channel at link:https://chat.{osio}[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
 
 == Resource Information
 
