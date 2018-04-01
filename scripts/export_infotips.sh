@@ -1,8 +1,7 @@
 #!/bin/bash
 
 GLOSSARY_FILE=docs/topics/modules/glossary.adoc
-JSON_FILE=json/infotips.jo
-JO=""
+JSON_FILE=json/infotips.json
 
 if [ -f $JSON_FILE ]; then rm $JSON_FILE; fi
 
@@ -16,16 +15,9 @@ for (( i=1; i<=$terms; i++ )); do
                                  -e 's|^\([^::]*\):: .*$|\1|')"
   TERM_DEFINITION="$(echo "$TERM" | sed -e '/^\/\/ term:/d; /^\/\/ endterm/d' \
                                        -e 's|^[^::]*:: ||')"
-
-  JO="$JO ${UUID}[term]='$TERM_NAME' ${UUID}[${L10N}]='$TERM_DEFINITION' "
-#   echo $L10N
-#   echo "$TERM_NAME"
-#   echo "$TERM_DEFINITION"
-#   sed -e '/^\/\/ endterm/d' \
-#       -e 's|^// term: \([^,]*\), \(.*\)$|\1[\2]=|' \
-#       -e '/=$/N; s/=\n/=/' \
-#       -e 's/^\([^=]*\)=\(.*\):: \(.*\)$/\1[term]=\2 \1=/';
+  echo -e "${UUID}[term]="$TERM_NAME"\n${UUID}[${L10N}]="$TERM_DEFINITION"" | jo -p >> $JSON_FILE
 done
 
-echo $JO > $JSON_FILE
-#jo -p $(echo $JO)
+sed -i -e 's/^\}/},/' \
+       -e '1i\[' \
+       -e '$s/\},/}\n\]/' $JSON_FILE
