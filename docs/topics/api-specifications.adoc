@@ -1,7 +1,7 @@
-[id='api-specifications']
+[id="api_specifications"]
 = API Specifications
 
-The following section lists the primary API endpoints you can use to use Fabric8-Analytics in your application.
+The following section lists the primary API endpoints you can use to integrate Fabric8-Analytics within your application.
 
 include::modules/api-post-stack-analyses-request.adoc[leveloffset=+1]
 

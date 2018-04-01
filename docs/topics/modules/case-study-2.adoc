@@ -1,4 +1,5 @@
-== Case Study 2: Get Application Dependency Recommendations
+[id="case_study_2"]
+= Case Study 2: Getting application dependency recommendations
 
 This scenario has to be addressed by two API method calls.
 

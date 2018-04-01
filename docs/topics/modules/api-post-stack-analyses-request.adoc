@@ -1,4 +1,4 @@
-[id='api-post-stack-analyses-request']
+[id="api_post_stack_analyses_request"]
 = POST /stack-analyses
 
 == Purpose
@@ -10,7 +10,8 @@ IMPORTANT: You require an OpenShift.io authentication token to invoke this metho
 
 
 == Resource URL
-//To be added later.
+
+For information on the resource URL reach out to us on the OpenShift.io support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
 
 == Resource Information
 
@@ -42,7 +43,7 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" -F "manif
 [source,typescript]
 ----
 {    "id": "421249d9e1e5464cbf3e77dde4941463",    "status": "success",    "submitted_at": "2017-10-20 05:09:01.165068"}
-----
+----"
 
 *Failure*
 

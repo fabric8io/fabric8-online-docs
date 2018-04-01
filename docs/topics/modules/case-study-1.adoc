@@ -1,4 +1,5 @@
-== Case Study 1: Detect security vulnerabilities associated with a component
+[id="case_study_1"]
+= Case Study 1: Detecting security vulnerabilities associated with a component
 
 This scenario can be addressed by calling GET `/component-analyses` method and parsing the result for security vulnerabilities.
 Following is a typescript code snippet to invoke `/component-analyses` method:
