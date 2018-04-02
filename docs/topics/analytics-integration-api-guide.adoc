@@ -1,0 +1,5 @@
+// Includes for all assemblies that form the top-level sections of the Analytics Integration API Guide
+:context: analytics-integration-api-guide
+
+[id="first-section"]
+= First section
