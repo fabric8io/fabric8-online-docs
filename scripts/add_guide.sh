@@ -95,8 +95,13 @@ cat > topics/$DIR_NAME.adoc << EOF
 // Includes for all assemblies that form the top-level sections of the $GUIDE_NAME
 :context: $DIR_NAME
 
-[id="first-section"]
-= First section
+[id="book-part-i"]
+= Book part I
+
+// The following is to be substituted with 'include::' statements
+== First assembly
+
+Content
 EOF
 
 # Offer a basic commit command
