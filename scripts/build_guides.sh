@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 CURRENT_DIR="$( pwd -P)"
 SCRIPT_SRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P )"
 OUTPUT_DIR="$( dirname $SCRIPT_SRC )/html"
