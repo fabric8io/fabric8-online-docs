@@ -1,0 +1,10 @@
+include::meta/attributes.adoc[]
+
+= OpenShift.io Analytics Integration API Guide
+:author: {rhd} Documentation Team
+:email: openshiftio@redhat.com
+:revdate: {docdate} {doctime}
+
+This is the abstract for the new guide.
+
+include::topics/analytics-integration-api-guide.adoc[]
