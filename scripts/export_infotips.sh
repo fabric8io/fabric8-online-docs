@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 GLOSSARY_FILE=docs/topics/modules/glossary.adoc
 JSON_FILE=json/infotips.json
