@@ -1,10 +1,20 @@
-// Includes for all assemblies that form the top-level sections of the Analytics Integration API Guide
+// Includes for all assemblies that form the top-level sections of the Analytics Integration Cookbook.
 :context: analytics-integration-api-guide
 
-[id="book-part-i"]
-= Book part I
+[id="before_you_start"]
+= Before you start
 
-// The following is to be substituted with 'include::' statements
-== First assembly
+include::modules/about-analytics-integration-api-guide.adoc[leveloffset=+1]
 
-Content
+include::modules/getting-osio-authentication-token.adoc[leveloffset=+1]
+
+
+[id="case_studies"]
+= Case studies
+
+include::modules/api-usage-examples.adoc[leveloffset=+1]
+
+[id="api_specifications"]
+= API specifications
+
+include::api-specifications.adoc[leveloffset=+1]

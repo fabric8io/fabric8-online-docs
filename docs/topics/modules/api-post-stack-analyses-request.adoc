@@ -1,19 +1,18 @@
 [id="api_post_stack_analyses_request"]
 = POST /stack-analyses
 
+
 == Purpose
 
-Submits an application stack analysis request
+Submits an application stack analysis request.
 
-IMPORTANT: You require an {osio} authentication token to invoke this method.
-
-
+NOTE: You require an {osio} authentication token to invoke this method.
 
 == Resource URL
 
-For information on the resource URL reach out to us on the {osio} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+For information about the resource URL, reach out to us on the {osio} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
 
-== Resource Information
+== Resource information
 
 |===
 | Response Format         | JSON
@@ -29,25 +28,34 @@ For information on the resource URL reach out to us on the {osio} support chat c
 | origin                                                                                                                            | optional                                                                                                                          | Originator of the request. Can be the name of an application integrating to the endpoint. Maintained for historical reasons.      | "my-app"
 |===
 
-== Example Request with cURL
+== Example request with cURL
 
-[source,typescript]
 ----
 curl -k -H "Authorization: Bearer <openshift.io authentication token>" -F "manifest[]=@./pom.xml" -F "filePath[]=/home/JohnDoe"https://recommender.api.openshift.io/api/v1/stack-analyses
 ----
 
-== Example Response:
+== Example response:
 
 *Success*
 
 [source,typescript]
 ----
-{    "id": "421249d9e1e5464cbf3e77dde4941463",    "status": "success",    "submitted_at": "2017-10-20 05:09:01.165068"}
-----"
+
+{
+    "id": "510a314561104e8ba14bac489b31efe0",
+    "status": "success",
+    "submitted_at": "2017-07-18 08:04:49.165068"
+}
+
+----
 
 *Failure*
 
 [source,typescript]
 ----
-401:{  "error": "Authentication failed - could not decode JWT token"}
+401:
+{
+  "error": "Authentication failed - could not decode JWT token"
+}
+
 ----

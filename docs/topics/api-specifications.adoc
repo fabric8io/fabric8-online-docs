@@ -1,5 +1,5 @@
 [id="api_specifications"]
-= API Specifications
+= API specifications
 
 The following section lists the primary API endpoints you can use to integrate Fabric8-Analytics within your application.
 

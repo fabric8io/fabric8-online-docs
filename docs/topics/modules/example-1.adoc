@@ -1,8 +1,10 @@
-[id="case_study_1"]
-= Case Study 1: Detecting security vulnerabilities associated with a component
+[id="example_1"]
+= Example 1: Detecting security vulnerabilities associated with a component
 
-This scenario can be addressed by calling GET `/component-analyses` method and parsing the result for security vulnerabilities.
-Following is a typescript code snippet to invoke `/component-analyses` method:
+This API enables you flag security vulnerabilities affecting a component in your stack.
+
+This scenario can be addressed by calling the GET `/component-analyses` method and parsing the result for security vulnerabilities.
+The following is a typescript code snippet to invoke the `/component-analyses` method:
 
 [source,typescript]
 ----

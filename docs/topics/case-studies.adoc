@@ -1,8 +1,0 @@
-[id="case_studies"]
-= Case Studies
-
-The following section lists a couple of case studies for the Fabric8-Analytics platform.
-
-include::modules/case-study-1.adoc[leveloffset=+1]
-
-include::modules/case-study-2.adoc[leveloffset=+1]
