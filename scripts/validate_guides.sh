@@ -6,7 +6,8 @@ SCRIPT_SRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P )"
 DOCS_SRC="$( dirname $SCRIPT_SRC )/docs/titles"
 XML_SCHEMA="$SCRIPT_SRC/xml-schema/docbook.xsd"
 
-#if [ -f /.dockerenv ]; then export TERM=xterm; fi
+# Set TERM, so that tput doesn't complain
+if [ -f /.dockerenv ]; then export TERM=xterm; fi
 
 # Check if env supports colors
 if which tput 2> /dev/null && [[ $(tput colors) -ge 8 ]]; then
