@@ -1,10 +1,10 @@
 // Docs landing page template
-//   the real 'index.adoc' is completed when
-//   the 'scripts/build_guides.sh' script is run
 
 include::../meta/attributes.adoc[]
 
 :docinfodir: ../styles/
+:toc!:
+
 
 [id="red-hat-openshift-io-documentation"]
 = Red Hat OpenShift.io Documentation
@@ -12,7 +12,15 @@ include::../meta/attributes.adoc[]
 :email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
-{zwsp}
 
-// Automatically assembled list of links to docs is added below;
-//   links to PDF versions are only added when PDF are actually being built
+[discrete]
+== Documentation for End Users
+
+* link:getting-started-guide.html[OpenShift.io Getting Started Guide] (link:getting-started-guide.pdf[PDF])
+* link:user-guide.html[OpenShift.io User Guide] (link:user-guide.pdf[PDF])
+
+
+[discrete]
+== Documentation for Project Contributors
+
+* link:analytics-integration-api-guide.html[OpenShift.io Analytics Integration API Guide] (link:analytics-integration-api-guide.pdf[PDF])
