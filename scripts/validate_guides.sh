@@ -6,20 +6,6 @@ SCRIPT_SRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P )"
 DOCS_SRC="$( dirname $SCRIPT_SRC )/docs/titles"
 XML_SCHEMA="$SCRIPT_SRC/xml-schema/docbook.xsd"
 
-# Set TERM, so that tput doesn't complain
-if [ -f /.dockerenv ]; then export TERM=xterm; fi
-
-# Check if env supports colors
-if which tput > /dev/null 2>&1 && [[ $(tput colors) -ge 8 ]]; then
-  RED="$(tput setaf 1)"
-  GRN="$(tput setaf 2)"
-  NOC="$(tput sgr0)"
-else
-  RED=""
-  GRN=""
-  NOC=""
-fi
-
 failed_builds=""
 failed_validations=""
 exit_status=0
@@ -47,7 +33,7 @@ for book in $DOCS_SRC/*/master.adoc; do
     adoctor_stderr="$(asciidoctor -v -a data-uri master.adoc -b docbook5 2>&1)"
     if [ ! -z "$(echo "$adoctor_stderr" | grep "ERROR\|WARNING")" ]; then
         columns_left=$(( 79 - ${#name} ))
-        printf '%*s\n' $columns_left "${RED}${build_fail_msg}${NOC}"
+        printf '%*s\n' $columns_left "$build_fail_msg"
         echo -e "\n${adoctor_stderr}\n"
         failed_builds="$failed_builds $dir"
         popd >/dev/null
@@ -58,12 +44,12 @@ for book in $DOCS_SRC/*/master.adoc; do
     xmllint_stderr="$(xmllint --noout --schema $XML_SCHEMA master.xml 2>&1)"
     if [ ! $? -eq 0 ]; then
         columns_left=$(( 79 - ${#name} ))
-        printf '%*s\n' $columns_left "${RED}${valid_fail_msg}${NOC}"
+        printf '%*s\n' $columns_left "$valid_fail_msg"
         echo -e "\n${xmllint_stderr}\n"
         failed_validations="$failed_validations $dir"
     else
         columns_left=$(( 79 - ${#name} ))
-        printf '%*s\n' $columns_left "${GRN}${valid_succ_msg}${NOC}"
+        printf '%*s\n' $columns_left "$valid_succ_msg"
         rm master.xml
     fi
     popd >/dev/null
@@ -91,9 +77,9 @@ fi
 
 # Output result
 if (($exit_status)); then
-    echo -e "Testing ${RED}failed${NOC}.\n"
+    echo -e "Testing failed.\n"
 else
-    echo -e "Testing ${GRN}passed${NOC}.\n"
+    echo -e "Testing passed.\n"
 fi
 
 exit $exit_status
