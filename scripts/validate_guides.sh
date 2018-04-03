@@ -10,7 +10,7 @@ XML_SCHEMA="$SCRIPT_SRC/xml-schema/docbook.xsd"
 if [ -f /.dockerenv ]; then export TERM=xterm; fi
 
 # Check if env supports colors
-if which tput 2> /dev/null && [[ $(tput colors) -ge 8 ]]; then
+if which tput > /dev/null 2>&1 && [[ $(tput colors) -ge 8 ]]; then
   RED="$(tput setaf 1)"
   GRN="$(tput setaf 2)"
   NOC="$(tput sgr0)"
