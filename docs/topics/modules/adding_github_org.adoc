@@ -1,0 +1,40 @@
+[id="adding_github_org"]
+= Adding a GitHub organization
+
+
+. In a new browser tab, navigate to https://github.com/settings/organizations
+
+. To create a new organization in GitHub:
+.. Click btn:[New organization] to create a new organization.
+.. Add a name and email address for your new organization.
++
+image:new_org_fields.png[New organization fields]
++
+.. Under `Choose your plan`, select *Free*.
+.. Click btn:[Create organization].
+.. In the `Invite organization members` screen, add users or click btn:[Continue] to skip this step.
+.. Either select details for your organization and click btn:[Submit] or click *skip this step*. The new organization details now display.
+
+. In the same browser tab, navigate to https://github.com/settings/organizations
+
+. Click *Openshift.io* from the list of applications.
+
+. In the details page for the application, your new organization is listed under `Organization access`. Click btn:[Grant] to give the new organization access.
+
+. Return to the {osio} tab in your browser.
+
+. Navigate to your `Profile` view:
+
+.. Click your name on the top right corner of the screen.
+
+.. Click *Profile* from the displayed options.
++
+image::profile_menu.png[Profile menu button]
++
+. In `My Connected Account`, click the refresh icon for your GitHub account.
++
+image::refresh_github.png[Refresh github]
++
+. After the reloaded {osio} screen loads, your new organization is added. 
+
+To use the new organization, create a new project and in the *Organization* drop-down menu, your new organization is listed.
