@@ -1,0 +1,12 @@
+[id="changing_user_preferences"]
+= Changing user preferences
+
+After logging in to {osio}, you can change your user preferences in the `Profile` section.
+
+include::modules/changing_your_privacy_settings.adoc[leveloffset=+1]
+
+include::modules/changing_your_password.adoc[leveloffset=+1]
+
+include::modules/opting_in_to_features.adoc[leveloffset=+1]
+
+include::modules/adding_github_org.adoc[leveloffset=+1]
