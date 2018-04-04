@@ -1,0 +1,1665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc maxdepth="3"?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>OpenShift.io User Guide</title>
+<date>2018-04-02 11:49:28 IST</date>
+<author>
+<personname>
+<firstname>Red&#160;Hat</firstname>
+<othername>Developers</othername>
+<surname>Documentation Team</surname>
+</personname>
+<email>openshiftio@redhat.com</email>
+</author>
+<authorinitials>RDD</authorinitials>
+</info>
+<preface>
+<title></title>
+<simpara>The guide describes the features of Red Hat OpenShift.io. It also contains information about potential problems users may encounter while using the software. Where possible, workarounds are described for identified issues.</simpara>
+</preface>
+<part xml:id="before_you_start">
+<title>Before You Start</title>
+<chapter xml:id="introduction_to_rhosio">
+<title>Introduction to Red&#160;Hat OpenShift.io</title>
+<simpara>Red&#160;Hat Developer Program offers a <emphasis>Software as a Service</emphasis> (SaaS) product for developers called <emphasis role="strong">Red&#160;Hat OpenShift.io</emphasis> to meet your software development requirements.</simpara>
+<simpara>This section introduces Red&#160;Hat OpenShift.io and provides an overview of the main features of the product. Read it to understand the benefits of using <link xl:href="https://openshift.io/">OpenShift.io</link> and to learn about how organizations and developers can use it for their everyday tasks.</simpara>
+<section xml:id="red_hat_openshift_io_overview">
+<title>Red&#160;Hat OpenShift.io Overview</title>
+<simpara>Red&#160;Hat OpenShift.io is a highly collaborative open-source, web-based <emphasis>application life cycle management</emphasis> (ALM) solution. It is a next-generation product for developers to manage the development life cycle with one efficient tool.</simpara>
+<section xml:id="_features">
+<title>Features</title>
+<simpara>OpenShift.io offers features to seamlessly manage end-to-end application development. Members of distributed teams can use it to perform the following tasks without leaving the browser window:</simpara>
+<simpara><emphasis role="strong">Project Management:</emphasis></simpara>
+<itemizedlist>
+<listitem>
+<simpara>Project planning and issue tracking using your choice of Agile methodology.</simpara>
+</listitem>
+<listitem>
+<simpara>Automating project releases.</simpara>
+</listitem>
+</itemizedlist>
+<simpara><emphasis role="strong">Project Development:</emphasis></simpara>
+<itemizedlist>
+<listitem>
+<simpara>Creating development environments and testing based on requirements.</simpara>
+</listitem>
+<listitem>
+<simpara>Coding using an integrated development environment based on Eclipse Che, which provides a workspace for developing your application.</simpara>
+</listitem>
+<listitem>
+<simpara>Development in this context-aware environment provides the appropriate context for the developer and project, such as which branch, repository, language, and files are referenced.</simpara>
+</listitem>
+<listitem>
+<simpara>Interacting with integrated GitHub repositories.</simpara>
+</listitem>
+<listitem>
+<simpara>Compiling and reviewing code in Pull Requests as required.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the QuickStart wizards to create basic applications with their own new repo on GitHub, a build pipeline integrated with Jenkins, and a related new OpenShift project.</simpara>
+</listitem>
+<listitem>
+<simpara>Using migration wizards to migrate legacy J2EE applications to the cloud.</simpara>
+</listitem>
+</itemizedlist>
+<simpara><emphasis role="strong">Deployment and Testing:</emphasis></simpara>
+<itemizedlist>
+<listitem>
+<simpara>Building, testing, deploying, and monitoring codebases using Continuous Integration pipelines that can be tailored to the requirements of a team or an individual.</simpara>
+</listitem>
+<listitem>
+<simpara>Deploying applications packaged as a set of containers to OpenShift, which powers the underlying services such as the Eclipse Che workspaces and Pipelines.</simpara>
+</listitem>
+<listitem>
+<simpara>Using integrated but customizable Jenkins build pipelines to facilitate rapid testing and environment promotion.</simpara>
+</listitem>
+</itemizedlist>
+<simpara><emphasis role="strong">Analysis and Recommendations:</emphasis></simpara>
+<itemizedlist>
+<listitem>
+<simpara>Use the full-stack analysis feature on your project open source components to identify potential security issues and recommend safer alternative components or component versions to use instead.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the self-learning analytics engine to improve the code quality and make data-based choices. The engine scans community libraries, security vulnerabilities, and other GitHub metrics to provide useful real-time assistance for developers that learns and improves over time.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_registration_and_early_access">
+<title>Registration and Early Access</title>
+<simpara>Currently, OpenShift.io is available for a limited early access program. In the OpenShift.io home page, click <guibutton>Sign up for the Preview</guibutton> to join a waiting list for Early Access. You will receive an email informing you when you have been given access to use the system.</simpara>
+</section>
+<section xml:id="_support">
+<title>Support</title>
+<simpara>Red Hat currently does not offer a support subscription for OpenShift.io. The service is available as a free <emphasis>Developer Preview</emphasis> for open-source projects and developers.</simpara>
+</section>
+</section>
+<section xml:id="_related_information">
+<title>Related Information</title>
+<simpara>See also the following related Red Hat resources related to the Red&#160;Hat Developer Program:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><link xl:href="https://developers.redhat.com/">Red&#160;Hat Developers</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://developers.redhat.com/blog">Red&#160;Hat Developer Blog</link></simpara>
+</listitem>
+</itemizedlist>
+</section>
+</chapter>
+<chapter xml:id="accessing_red_hat_openshift_io">
+<title>Accessing Red&#160;Hat OpenShift.io</title>
+<simpara>This section explains how to register and gain access to Red&#160;Hat OpenShift.io. It also outlines how to log in to and log out of the service.</simpara>
+<section xml:id="signing_up_for_the_red_hat_developers_program">
+<title>Signing up for the Red Hat Developers Program</title>
+<simpara>To start using Red&#160;Hat OpenShift.io, create a new Red Hat Developers (RHD) account or use an existing RHD or social media account.</simpara>
+<important>
+<simpara>Early access to the service is limited and will be allocated as resources become available. When you sign up, you are added to a waiting list. You are notified when access to the system is available.</simpara>
+</important>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Navigate to <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Sign Up For The Preview</guibutton>. You can register using an existing social or Red Hat account.</simpara>
+<itemizedlist>
+<listitem>
+<simpara>To register a new Red Hat account:</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara>At the Red&#160;Hat OpenShift.io Developer Preview page, click <guibutton>Register</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Enter your name, email address, company, and password in the appropriate fields.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the terms and conditions check boxes.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Create my account</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Verify your email address to complete registration.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>To register using your existing Red Hat account or a social account from services such as JBoss Developer, GitHub, Stack Overflow, LinkedIn, Twitter, Facebook, Google, or Microsoft:</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara>Click the appropriate social account button.</simpara>
+</listitem>
+<listitem>
+<simpara>Add your login credentials for the selected service and authorize the creation of the account.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</itemizedlist>
+</listitem>
+</orderedlist>
+<section xml:id="_related_information_2">
+<title>Related Information</title>
+<simpara>The following links provide additional resources about accessing Red Hat&#8217;s offering for developers:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><link xl:href="https://developers.redhat.com/articles/red-hat-developer-program-benefits/">Red Hat Developer Program Benefits</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-suite">Red Hat Enterprise Linux Developer Suite</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-workstation">Red Hat Enterprise Linux Developer Workstation</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-support">Red Hat Enterprise Linux Developer Support</link></simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+<section xml:id="logging_into_red_hat_openshift_io">
+<title>Logging into Red&#160;Hat OpenShift.io</title>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that you have <link linkend="signing_up_for_the_red_hat_developers_program">registered for a Red&#160;Hat Developer Program account</link>.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Navigate to the <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link> website in a browser window.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Log In</guibutton> at the top of the OpenShift.io main page.</simpara>
+</listitem>
+<listitem>
+<simpara>Log in either manually (with your Red Hat Developers account) or using a social account:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Log in using your Red Hat account:</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara>Enter your email address or Red Hat Developers Login ID and password.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Log In</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Log in using a social account:</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara>Click the appropriate social account button from the listed options.</simpara>
+</listitem>
+<listitem>
+<simpara>Follow the instructions to allow the social account to log in.</simpara>
+</listitem>
+<listitem>
+<simpara>If asked, add information about yourself on the <emphasis role="strong">Additional Action Required</emphasis> page. If the provided email address already has an account, an option to link your social account with your Red Hat Developers account is available. An email arrives in the account to confirm linking the two accounts.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Select the check boxes to indicate agreement with the terms and conditions if required and click <guibutton>Submit</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="logging_out_of_red_hat_openshift_io">
+<title>Logging out of Red&#160;Hat OpenShift.io</title>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that you have logged in to the Red&#160;Hat OpenShift.io website.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click your name in the top right corner of the application. If the current page does not show the profile menu, navigate to the main page at <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the drop-down menu, click the <emphasis role="strong">Log Out</emphasis> option.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</chapter>
+</part>
+<part xml:id="getting_started_with_openshift_io">
+<title>Getting Started with OpenShift.io</title>
+<chapter xml:id="working_with_spaces">
+<title>Working with spaces</title>
+<section xml:id="about_spaces">
+<title>About spaces</title>
+<simpara>Spaces are the equivalent of projects. Each <link linkend="about_iterations">Iteration</link> and <link linkend="about_work_items">Work Item</link> must be attached to a space, and a team of users can be assigned to a space for the appropriate roles. By default, a space contains one or more <link linkend="about_areas">Areas</link> and Iterations.</simpara>
+</section>
+<section xml:id="creating_a_new_space">
+<title>Creating a new space</title>
+<simpara>To start working with a new project, create a new space. Each space includes a team of users in assigned roles as well as unique <link linkend="about_work_items">Work Items</link> and <link linkend="about_iterations">Iterations</link> used to manage the new project.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that you have <link linkend="logging_into_red_hat_openshift_io">logged in to <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link></link>.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>On your <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link> home page, click your user name in the upper-left corner of the screen.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Create space</emphasis> from the drop-down menu.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Name</emphasis> field, add a unique name for the new space.</simpara>
+</listitem>
+<listitem>
+<simpara>From the <emphasis role="strong">Template</emphasis> drop-down list, select <emphasis role="strong">Scenario Driven Planning</emphasis>. This template creates spaces based on Scenarios, which are real-world problems from the user&#8217;s point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Create</guibutton> to create your new space. The <emphasis role="strong">How would you like to get started?</emphasis> dialog box displays the following options:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong"><link linkend="importing_existing_code">Import existing code</link></emphasis>: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong"><link linkend="creating_a_new_quickstart_project">Create a new Quickstart project</link></emphasis>: Use wizards to automatically set up your development environment and quickly create projects by using the desired tools.</simpara>
+</listitem>
+<listitem>
+<simpara><guibutton>No thanks, take me to the new space dashboard</guibutton>: Go to your new space dashboard to begin working in the space.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/new_space_dialog.png"/>
+</imageobject>
+<textobject><phrase>New space dialog box</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</itemizedlist>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="deleting_existing_space">
+<title>Deleting an existing space</title>
+<simpara>If an OpenShift.io space is no longer required, delete it as follows:</simpara>
+<warning>
+<simpara>When deleted, the space and all its contents (Work Items, Codebases, Workspaces, etc.) are also permanently deleted.</simpara>
+</warning>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>On your <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link> home page, click your user name in the upper-left corner of the screen.</simpara>
+</listitem>
+<listitem>
+<simpara>On the drop-down list, click  <emphasis role="strong">View all spaces</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the (image:delete.png [Delete]) icon, the <emphasis role="strong">Remove Space</emphasis> dialog box is displayed asking for confirmation.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Remove</guibutton> to confirm and delete your space.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="configuring_a_codebase">
+<title>Configuring a codebase</title>
+<simpara>After creating a space, you can add a codebase from GitHub and set up a pipeline to build the code.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Create a space. See <xref linkend="creating_a_new_space"/> for instructions.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click <emphasis role="strong">Analyze</emphasis> at the top of the screen to view the dashboard for your space.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Codebases</emphasis> section displays the following options:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>If you already have codebases in your space, they are listed and you can use the <guibutton>+</guibutton> icon at the upper-right of the section to import more codebases.</simpara>
+</listitem>
+<listitem>
+<simpara>If there are no codebases in your space, you can:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>use <guibutton>Add Codebase</guibutton> to manually add a codebase.</simpara>
+</listitem>
+<listitem>
+<simpara>use <guibutton>Import Codebase</guibutton> to add an existing codebase.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</itemizedlist>
+</listitem>
+</orderedlist>
+<section xml:id="adding_a_codebase">
+<title>Adding a codebase</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <guibutton>Add Codebase</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">How would you like to get started?</emphasis> dialog box, select one of the following options:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">Import existing code</emphasis></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Create a new Quickstart project</emphasis></simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/get_started_menu.png"/>
+</imageobject>
+<textobject><phrase>How would you like to get started menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</itemizedlist>
+</listitem>
+</orderedlist>
+<section xml:id="importing_existing_code">
+<title>Importing existing code</title>
+<simpara>Use the OpenShift.io <emphasis role="strong">Application wizard</emphasis> to import an existing project codebase into OpenShift.io.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the <emphasis role="strong">GitHub Organization</emphasis> section, select your organization name from the <emphasis role="strong">Organization</emphasis> drop-down list. For this example, use the organization name assigned to your personal GitHub account.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">GitHub Repositories</emphasis> section, select the repository to import into OpenShift.io from the <emphasis role="strong">Repository Name Pattern</emphasis> list, and then click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Configure Pipeline</emphasis> section:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select a build pipeline strategy. The default value <emphasis role="strong">Release, Stage, Approve and Promote</emphasis> is suitable for most use cases.</simpara>
+</listitem>
+<listitem>
+<simpara>Ensure that the <emphasis role="strong">Override Jenkins and POM files</emphasis> option is selected</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Build configuration</emphasis> section the <emphasis role="strong">Jenkins space</emphasis> field displays the name of your Jenkins space.</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select <emphasis role="strong">Trigger build</emphasis> to trigger a build once your Application is deployed.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Add continuous integration web hooks</emphasis> to add continuous integration web hooks to your Application.</simpara>
+<simpara>Use the default options for these fields.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Finish</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Summary</emphasis> section displays your selected options for the Application. Click <guibutton>Ok</guibutton> to continue.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="creating_a_new_quickstart_project">
+<title>Creating a new quickstart project</title>
+<simpara>Use the OpenShift.io Quickstart project wizard to create a new project from the available templates.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the <emphasis role="strong">Select Stack</emphasis> section, use the drop-down menu or click one of the displayed technology stack icons to select a project type and click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Define Project</emphasis> section:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select your organization from the <emphasis role="strong">Organization</emphasis> drop-down list. The drop-down lists the GitHub organizations where you are a member. A new repository for the Quickstart project will be created in the selected organization.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">OpenShift Project Name</emphasis> field, type a unique name for your project.</simpara>
+</listitem>
+<listitem>
+<simpara>Keep the default value for the <emphasis role="strong">Group Id</emphasis> and <emphasis role="strong">Version</emphasis> fields.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Configure Pipeline</emphasis> section, select a build pipeline strategy. The default value <emphasis role="strong">Release, Stage, Approve and Promote</emphasis> is suitable for most use cases.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Build configuration</emphasis> section displays the name of your <emphasis role="strong">Jenkins space</emphasis> and options to <emphasis role="strong">Trigger build</emphasis> and <emphasis role="strong">Add continuous integration web hooks</emphasis> when your application is deployed.
+Use the default options for these fields and click <guibutton>Finish</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Summary</emphasis> section displays your selected options for the Application. Click <guibutton>Ok</guibutton> to continue.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</section>
+<section xml:id="importing_a_codebase">
+<title>Importing a codebase</title>
+<simpara>Use the <emphasis role="strong">Import Codebase</emphasis> option to manually add the details for your existing codebase into OpenShift.io.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <guibutton>Import Codebase</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>If required, in the <emphasis role="strong">Space Path</emphasis> field, change the path to your space.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">GitHub Repository</emphasis> field, add the GitHub repository path.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Sync</guibutton> to retrieve details for the repository. If the sync is successful, metadata for the added repository is displayed under the <guibutton>Sync</guibutton> button.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Associate Repository to Space</guibutton> to add the repository to your space. The <menuchoice><guimenu>Create</guimenu> <guimenuitem>Codebases</guimenuitem></menuchoice> sub-tab now displays your repository with information about when it was created and the last commit date.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create workspace</emphasis> for the target repository from the displayed list. A success message appears when the Workspace is successfully created in Eclipse Che.</simpara>
+</listitem>
+<listitem>
+<simpara>When your Workspace is ready, in the drop-down list, select the new Workspace for your repository, and then click <guibutton>Open</guibutton>.</simpara>
+<simpara>A new browser tab loads and displays the Eclipse Che Workspace with your repository codebase.</simpara>
+<note>
+<simpara>In case a new Workspace is not created, check and ensure that your browser allows pop-up windows from this page.</simpara>
+</note>
+</listitem>
+</orderedlist>
+</section>
+</section>
+</chapter>
+<chapter xml:id="working_with_collaborators">
+<title>Working with Collaborators</title>
+<section xml:id="about_collaborators">
+<title>About Collaborators</title>
+<simpara><emphasis role="strong">Collaborators</emphasis> are members assigned to particular <link linkend="about_work_items">Work Items</link> within a <link linkend="about_spaces">space</link>. They are assigned tasks for the development project which are tracked using Work Items. You can add Collaborators to your space and then assign the relevant Work Items to them.</simpara>
+</section>
+<section xml:id="adding_collaborators">
+<title>Adding Collaborators</title>
+<simpara>You can add users as Collaborators to a space and then assign Work Items to each person.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara><link linkend="creating_a_new_space">Create a new space</link> or select an existing space.</simpara>
+</listitem>
+<listitem>
+<simpara>Ensure that the target user has an OpenShift.io account.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>From your OpenShift.io dashboard, click the name of a space to view its dashboard.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <guibutton>Equalizer</guibutton> button (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/equalizer.png"/>
+</imageobject>
+<textobject><phrase>equalizer</phrase></textobject>
+</inlinemediaobject>) at the top of the screen.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Collaborators</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the blue plus (<emphasis role="strong">+</emphasis>) icon in the top right corner. The <emphasis role="strong">Add collaborators</emphasis> dialog box displays.</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Click <guibutton>Select</guibutton> and type a name in the text box to search for a user.</simpara>
+</listitem>
+<listitem>
+<simpara>From the displayed results, select the name of one or multiple users to add as Collaborators for your space.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Add</emphasis> to add the selected users as collaborators.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="viewing_and_changing_collaborators">
+<title>Viewing and changing collaborators</title>
+<simpara>After adding collaborators, you can view their details or remove them from your space.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Log in to <link xl:href="https://openshift.io/">Red&#160;Hat OpenShift.io</link> with a valid user account. See <xref linkend="logging_into_red_hat_openshift_io"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><link linkend="creating_a_new_space">Create a new space</link> or select an existing space.</simpara>
+</listitem>
+<listitem>
+<simpara>Ensure you have <link linkend="adding_collaborators">added collaborators</link> to your space.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click the <emphasis role="strong">Equalizer</emphasis> button (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/equalizer.png"/>
+</imageobject>
+<textobject><phrase>equalizer</phrase></textobject>
+</inlinemediaobject>) at the top of the screen.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Collaborators</emphasis> tab.</simpara>
+</listitem>
+<listitem>
+<simpara>From the displayed list of collaborators on the <emphasis role="strong">Collaborators</emphasis> page, click the three dots next to the collaborator name.</simpara>
+</listitem>
+<listitem>
+<simpara>Either:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Select <emphasis role="strong">View user</emphasis> to view the collaborator details.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Remove from space</emphasis> to remove them from the space.</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="assigning_a_collaborator">
+<title>Assigning a collaborator</title>
+<simpara>After adding Collaborators to your space, you can assign <link linkend="about_work_items">Work Items</link> to them:</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that the user is <link linkend="adding_collaborators">added as a Collaborator</link> to your space.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click the <emphasis role="strong">Plan</emphasis> tab to view a list of Work Items for your space.</simpara>
+</listitem>
+<listitem>
+<simpara>Double-click a Work Item to view its details.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Assignee</emphasis> text box for a drop-down search window. Type the name of a Collaborator in your space to assign them to this Work Item.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</chapter>
+<chapter xml:id="working_with_work_items">
+<title>Working with Work Items</title>
+<section xml:id="about_work_items">
+<title>About Work Items</title>
+<simpara><emphasis>Work Items</emphasis> (WI) are trackable and measurable units of work within a <link linkend="about_spaces">space</link>. They are captured representations of work, and can be modified based on the requirements of the development project.</simpara>
+<simpara>Users can create and manage Work Items within a space using the <emphasis role="strong">Planner</emphasis>. Work Items track data such as ideas, user stories, bugs, and tasks. Work Items can be grouped and categorized into <link linkend="about_areas">Areas</link> and <link linkend="about_iterations">Iterations</link> to track progress and plan work.</simpara>
+<simpara>Work Items are assigned to users and their status is changed to indicate the progress of the Work Item. Link Work Items to each other based on their relationships, enabling users to plan the scope of work better. For example, you can link Work Item A as the parent of Work Item B, enabling you to prioritize and order your work.</simpara>
+<simpara>The <emphasis role="strong">Planner</emphasis> includes a set of predefined templates based on common planning methodologies such as <emphasis>Scrum</emphasis>, <emphasis>Agile</emphasis>, and <emphasis>Scenario Driven Development</emphasis>. These templates determine the structure and features of the included Work Item types and states that are available for a space.</simpara>
+</section>
+<section xml:id="creating_a_new_work_item">
+<title>Creating a new Work Item</title>
+<simpara>You can add <link linkend="about_work_items">Work Items</link> to your space in one of several ways.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara><link linkend="creating_a_new_space">Create a new space</link> or select an existing space.</simpara>
+</listitem>
+</itemizedlist>
+<section xml:id="quick_add_work_item">
+<title>Quick-Add a New Work Item</title>
+<simpara>You can use the quick-add method as an instant widget to add Work Items to your space:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <guibutton>Plan</guibutton> to view the <emphasis role="strong">Planner</emphasis> for your space.</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Either use the default <emphasis role="strong">Backlog</emphasis> view:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Click <guibutton>Create Work Item</guibutton> at the bottom of the page.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a title and description in the displayed fields.</simpara>
+</listitem>
+<listitem>
+<simpara>Click &#10003; to create the Work Item.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Or click <guibutton>Board</guibutton> for the <emphasis role="strong">Board</emphasis> view:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In the <emphasis role="strong">new</emphasis> column, click <guibutton>+</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the displayed fields, select a Work Item type, add a title, and add a description for your new Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>Click &#10003; to create the Work Item.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</itemizedlist>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="using_backlog_to_create_work_item">
+<title>Using the Backlog to Create a Work Item</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <guibutton>Plan</guibutton> in your space.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Backlog</guibutton> to view the Work Item backlog.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Create</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the desired Work Item Type symbol.</simpara>
+</listitem>
+<listitem>
+<simpara>Add the title, <emphasis role="strong">Area</emphasis>, <emphasis role="strong">Iteration</emphasis>, <emphasis role="strong">Label</emphasis>, and <emphasis role="strong">Description</emphasis> for your new Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>Individually click &#10003; to save the changes for each field.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>X</guibutton> at the top right corner of the screen after saving all changes.</simpara>
+</listitem>
+</orderedlist>
+<simpara>The new Work Item now displays in the <emphasis role="strong">Backlog</emphasis> view.</simpara>
+</section>
+<section xml:id="using_detailed_method_to_create_work_items">
+<title>Using the Detailed Method to Create Work Items</title>
+<simpara>The detailed method requires adding more details for the Work Item compared to the quick-add method, which only requires basic information to create the Work Item.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <guibutton>Analyze</guibutton> to view the space dashboard.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">My Work Items</emphasis> panel, click <guibutton>+</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the desired Work Item type.</simpara>
+</listitem>
+<listitem>
+<simpara>In the new Work Item form:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Add a title for the Work Item and click &#10003; or press <emphasis role="strong">Enter</emphasis> to save the new Work Item. This creates a new Work Item. You must save each of the subsequent changes to fields individually.</simpara>
+</listitem>
+<listitem>
+<simpara>Assign the Work Item to a Collaborator in the <emphasis role="strong">Assignees</emphasis> field. The assignee field for a new Work Item is empty as a default.</simpara>
+</listitem>
+<listitem>
+<simpara>Assign an <link linkend="about_areas">Area</link> to the Work Item from the <emphasis role="strong">Area</emphasis> field drop-down list and click &#10003; to save the change. By default, the name of your workspace is set as the <emphasis>Root Area</emphasis> and is displayed as one of the options in the drop-down list.</simpara>
+</listitem>
+<listitem>
+<simpara>Assign a relevant <link linkend="about_iterations">Iteration</link> to the Work Item from the <emphasis role="strong">Iteration</emphasis> drop-down list and click &#10003; to save. By default, the name of your workspace is set as the <emphasis>Root Iteration</emphasis> and is displayed as one of the options in the drop-down list.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Add label</guibutton> to add existing or new labels to your Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a description for the Work Item in the <emphasis role="strong">Edit Text</emphasis> field and click &#10003; to save.</simpara>
+</listitem>
+<listitem>
+<simpara>Optionally, expand the <emphasis role="strong">Total links</emphasis> option to link to other related Work Items as follows:</simpara>
+<orderedlist numeration="lowerroman">
+<listitem>
+<simpara>Click the <guibutton>Create Link</guibutton> button.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the <guibutton>Select Link Type</guibutton> drop-down menu to select the appropriate relationship between the current and new Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>Start typing the title or ID of a Work Item in the <emphasis role="strong">Search for work items</emphasis> field. Select one of the listed suggestions.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Link</guibutton> to save the relationship.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Optionally, expand the <emphasis role="strong">Comments</emphasis> option to add or see comments for your Work Item. Users can edit or delete their own comments.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>To close the new Work Item panel:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Ensure that all your changes are individually saved.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>x</guibutton> at the top of the panel.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</section>
+</section>
+<section xml:id="working_with_an_existing_work_item">
+<title>Working with an Existing Work Item</title>
+<simpara>Click <guibutton>Plan</guibutton> to use the Planner to track your Work Items and Iterations using either the list view or the board view. The Planner contains two views:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>The <guibutton>Backlog</guibutton> is the default Planner view. This view displays all Work Items in a flat or hierarchal view organized by Iterations and type. This view lists the active and future Iterations and their Work Items.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Board</guibutton> to see Work Items in a Kanban-based view. Each Work Item appears in the appropriate column depending on its current status. You can edit Work Items in this view and drag and drop them in the appropriate status column.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>Use the Planner to change the attributes of a Work Item, associate them with Iterations, update their progress, and filter them according to your requirements.</simpara>
+<section xml:id="modifying_an_existing_work_item">
+<title>Modifying an existing work item</title>
+<simpara>Modify an existing Work Item by double-clicking on it in the <emphasis role="strong">Backlog</emphasis> or <emphasis role="strong">Board</emphasis> view. Alternatively, click the icon (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/kabob_white.png"/>
+</imageobject>
+<textobject><phrase>kabob white</phrase></textobject>
+</inlinemediaobject>) adjoining the Work Item and select <emphasis role="strong">Open</emphasis> from the displayed options. The detailed Work Item panel is displayed.</simpara>
+<simpara>You can modify the following Work Item attributes:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Status</simpara>
+</listitem>
+<listitem>
+<simpara>Owner</simpara>
+</listitem>
+<listitem>
+<simpara>Area</simpara>
+</listitem>
+<listitem>
+<simpara>Iteration</simpara>
+</listitem>
+<listitem>
+<simpara>Label</simpara>
+</listitem>
+<listitem>
+<simpara>Description</simpara>
+</listitem>
+<listitem>
+<simpara>Relations with other Work Items</simpara>
+</listitem>
+<listitem>
+<simpara>Comments</simpara>
+</listitem>
+</itemizedlist>
+<simpara>See <xref linkend="using_detailed_method_to_create_work_items"/> for more information on modifying the above attributes.</simpara>
+</section>
+<section xml:id="associating_work_items_with_an_iteration">
+<title>Associating Work Items with an Iteration</title>
+<simpara>To associate a Work Item with an Iteration:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <guibutton>Plan</guibutton> to see the Planner for your space.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the icon (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/kabob_white.png"/>
+</imageobject>
+<textobject><phrase>kabob white</phrase></textobject>
+</inlinemediaobject>) adjoining the Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>From the displayed options, select <guibutton>Associate with Iteration</guibutton>. The <emphasis role="strong">Associate with Iteration</emphasis> dialog box appears and displays which Iteration, if any, the Work Item is associated with.</simpara>
+</listitem>
+<listitem>
+<simpara>From the drop-down list, select an Iteration for your Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Reassociate</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+<simpara>The Work Item is now associated with the selected Iteration.</simpara>
+</section>
+<section xml:id="ordering_and_monitoring_work_items">
+<title>Ordering and Monitoring Work Items</title>
+<simpara>The <emphasis role="strong">Backlog</emphasis> displays a list view used to plan your work. You can order Work Items based on their priority, status, and other parameters to organize them.</simpara>
+<simpara>The <emphasis role="strong">Backlog</emphasis> displays the list of Work Items as a list where all the Work Items display in a single file.</simpara>
+<simpara>Click <guibutton>Plan</guibutton> to view the Planner. You can order the Work Items in your space as follows:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>In the <guibutton>Backlog</guibutton> view, drag and drop a selected Work Item to reorder them. Alternatively, select <guibutton>Move to Top</guibutton> or <guibutton>Move to Bottom</guibutton> from the options (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/kabob_white.png"/>
+</imageobject>
+<textobject><phrase>kabob white</phrase></textobject>
+</inlinemediaobject>) menu.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>The <guibutton>Board</guibutton> view displays a visual representation of your Work Item progress. Based on their status, the Work Items are sorted into the <emphasis>new</emphasis>, <emphasis>open</emphasis>, <emphasis>in progress</emphasis>, <emphasis>resolved</emphasis>, or <emphasis>closed</emphasis> columns. Use this feature to track and update the status of Work Items as you progress through your task list.</simpara>
+<simpara>In the <guibutton>Board</guibutton> view, you can drag and drop the selected Work Item to the relevant column based on the progress of the Work Item.</simpara>
+</section>
+<section xml:id="filtering_work_items">
+<title>Filtering Work Items</title>
+<simpara>Filter your Work Item view in the Planner as follows:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Click <guibutton>Plan</guibutton> and then click either <guibutton>Backlog</guibutton> or <guibutton>Board</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the <guibutton>Select</guibutton> drop-down menu to select a Work Item attribute.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the text box next to the <emphasis role="strong">Select</emphasis> option. This displays a list of potential filters.</simpara>
+</listitem>
+<listitem>
+<simpara>You can filter Work Items by <emphasis>Assignee</emphasis>, <emphasis>Creator</emphasis>, <emphasis>Area</emphasis>, <emphasis>State</emphasis>, and <emphasis>Label</emphasis>. Select the appropriate option from the drop down menu. The text box displays a list of valid options for the selected field.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the appropriate option to filter the Work Items.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+</chapter>
+<chapter xml:id="working_with_areas">
+<title>Working with Areas</title>
+<section xml:id="about_areas">
+<title>About areas</title>
+<simpara><emphasis role="strong">Areas</emphasis> can organize related <link linkend="about_work_items">Work Items</link> into groups to distinguish between different types or functionalities that are worked on within a <link linkend="about_spaces">space</link>.</simpara>
+<simpara>A space can also include areas. As an example, your space represents your software project, and each area tracks components attached to the space.</simpara>
+<simpara>Each area can have child areas which represent the sub-components for your software project.</simpara>
+</section>
+<section xml:id="creating_a_new_area">
+<title>Creating a New Area</title>
+<simpara>You can create a new child Area to group together related Work Items by type or functionality. When you create a new space, OpenShift.io automatically creates a root Area with the same name. Each additional Area within the space is created as a child of the root Area or another existing Area in the space.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure you have <link linkend="creating_a_new_space">created a space</link> to use.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>At the top of the page, click the <emphasis role="strong">Equalizer</emphasis> button (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/equalizer.png"/>
+</imageobject>
+<textobject><phrase>equalizer</phrase></textobject>
+</inlinemediaobject>) to display a list of Areas in your space.</simpara>
+</listitem>
+<listitem>
+<simpara>In the top right corner of the <emphasis role="strong">Areas</emphasis> view, click <guibutton>+ Add Areas</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Add New Area</emphasis> dialog box, add a name for your new Area and a parent Area.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Create</guibutton> to create the new child area.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="Assigning_an_area">
+<title>Assigning an Area to a Work Item</title>
+<simpara>You can group Work Items by type or functionality by assigning relevant Areas to the Work Items as follows:</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that the user is <link linkend="adding_collaborators">added as a collaborator</link> to your space.</simpara>
+</listitem>
+<listitem>
+<simpara>Ensure that you have <link linkend="creating_a_new_work_item">created a Work Item</link> for the space.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click the <guibutton>Plan</guibutton> tab to view a list of Work Items for your space.</simpara>
+</listitem>
+<listitem>
+<simpara>Double-click a Work Item to view its details.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Area</emphasis> field to view a list of Areas to assign to the space. By default, your Root Area is assigned to a new Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>Select one of the existing Areas to assign to your Work Item.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the check box to confirm the name of the Area.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</chapter>
+<chapter xml:id="working_with_iterations">
+<title>Working with Iterations</title>
+<section xml:id="about_iterations">
+<title>About Iterations</title>
+<simpara>Use Iterations to organize <link linkend="about_work_items">Work Items</link> to plan and implement tasks for a development project. When used with Scrum, Iterations can be utilized to model Sprints.</simpara>
+<simpara>You can use the Planner to map your Work Items to Iterations to plan your work based on your project requirements. It enables you to set time-specific goals by grouping priority Work Items into a single development cycle. It also helps you track your progress for each Iteration and compare it with past Iterations and associated Work Items.</simpara>
+</section>
+<section xml:id="creating_a_new_iteration">
+<title>Creating a new iteration</title>
+<simpara>Add iterations to your space to plan and organize your Work Items. Click <guibutton>Plan</guibutton> to view and modify existing Iterations and to add new Iterations.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure you have <link linkend="creating_a_new_space">created a space</link>.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click <guibutton>Plan</guibutton> to view the Planner.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>+</guibutton> next to the <emphasis role="strong">All Iterations</emphasis> option.</simpara>
+</listitem>
+<listitem>
+<simpara>Enter a <emphasis role="strong">Name</emphasis> for your new Iteration.</simpara>
+</listitem>
+<listitem>
+<simpara>Optionally, create a parent-child link by selecting the parent Iteration from the <emphasis role="strong">Parent Iteration</emphasis> drop-down list.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a <emphasis role="strong">Description</emphasis> for the new Iteration.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a <emphasis role="strong">Start Date</emphasis> and <emphasis role="strong">End Date</emphasis> for your new Iteration.</simpara>
+</listitem>
+<listitem>
+<simpara>Toggle the <emphasis role="strong">Force Active</emphasis> switch to <emphasis>ON</emphasis> to force start the Iteration.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Create</guibutton> to create the new Iteration.</simpara>
+</listitem>
+</orderedlist>
+<simpara>Your new Iteration appears under <emphasis role="strong">All Iterations</emphasis>. If you selected the <emphasis role="strong">Force Active</emphasis> option, your Iteration has started and appears under <emphasis role="strong">Active Iteration</emphasis>.</simpara>
+</section>
+<section xml:id="selecting_an_iteration">
+<title>Selecting an Iteration</title>
+<simpara>After logging in and selecting the appropriate space, click <guibutton>Plan</guibutton> to view the Iterations for that space. Existing Iterations are grouped into one of the following categories:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><emphasis>Active Iteration</emphasis> lists active Iterations.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis>All Iterations</emphasis> displays a list of all Iterations in the space. These include active and closed Iterations, as well as Iterations that have not yet started.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>Select an Iteration listed in one of these groups to display the included Work Items. See <link linkend="associating_work_items_with_an_iteration">Associating Work Items with an Iteration</link> for more information.</simpara>
+<section xml:id="_all_iterations">
+<title>All Iterations</title>
+<simpara>After <link linkend="creating_a_new_iteration">creating an Iteration</link>, the new Iteration displays in the <emphasis>All Iterations</emphasis> view.</simpara>
+<simpara>Select one of the following options after clicking the options (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/kabob.png"/>
+</imageobject>
+<textobject><phrase>kabob</phrase></textobject>
+</inlinemediaobject>) icon for the target Iteration:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Select <guibutton>Edit</guibutton> to change the Iteration details.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <guibutton>Close</guibutton> to end your Iteration.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <guibutton>Create Child</guibutton> to create a child Iteration for the target Iteration.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_active_iteration">
+<title>Active Iteration</title>
+<simpara>When an Iteration starts, it is added to the <emphasis>Active Iteration</emphasis> list. The <emphasis>Active Iteration</emphasis> list displays:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>The start and end dates for the Iteration.</simpara>
+</listitem>
+<listitem>
+<simpara>A tracker to track the Iteration status based on the completion of the Work Items associated with it.</simpara>
+</listitem>
+<listitem>
+<simpara>The description of the Iteration.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>To end an Iteration:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click the options (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/kabob.png"/>
+</imageobject>
+<textobject><phrase>kabob</phrase></textobject>
+</inlinemediaobject>) icon for the Iteration and select <guibutton>Close</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the dialog box, click <guibutton>Close</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</section>
+</chapter>
+<chapter xml:id="working_with_pipelines">
+<title>Working with Pipelines</title>
+<section xml:id="about_pipelines">
+<title>About Pipelines</title>
+<simpara>Pipelines are a continuous delivery system that test and deploy the code at each step to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements a different level of testing and deployment tasks, provides results, and then passes the code on to the next step.</simpara>
+<simpara>In OpenShift.io, you configure a pipeline build when creating or importing a project. The pipeline build is triggered when a Collaborator commits a change to the code repository.</simpara>
+</section>
+<section xml:id="creating_a_new_pipeline">
+<title>Creating a new pipeline</title>
+<simpara>To create a new pipeline for your space, you must add a new project to the space. OpenShift.io includes templates to add new projects to your space.</simpara>
+<itemizedlist>
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that you have created a space to use for the pipeline. See <xref linkend="creating_a_new_space"/> for instructions.</simpara>
+</listitem>
+</itemizedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Click the name of a space to view the dashboard.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Add to space</guibutton>. The <emphasis role="strong">How would you like to get started?</emphasis> menu appears for your new space.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/get_started_menu.png"/>
+</imageobject>
+<textobject><phrase>How would you like to get started menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Create a new Quickstart project</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the first step of the <emphasis role="strong">Application Wizard</emphasis>:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select a Technology Stack from the listed tiles.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>From the options in the <emphasis role="strong">Organisation</emphasis> field, select an organization. For this example, use the organization name assigned to your personal GitHub account.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">OpenShift Project Name</emphasis> field, add a unique name for your project.</simpara>
+</listitem>
+<listitem>
+<simpara>Leave the default value for the <emphasis role="strong">Group Id</emphasis> and <emphasis role="strong">Version</emphasis> fields and click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Select a build pipeline strategy. For this example, use the default value (<emphasis role="strong">Release, Stage, Approve and Promote</emphasis>) and click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Build configuration</emphasis> screen displays the details for your <emphasis role="strong">Jenkins space</emphasis> and options for web hooks and triggering builds. Use the default options for these fields and click <guibutton>Finish</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+<simpara>You have now added a Quickstart project to your space, which initiates a build pipeline for your new project. At this stage, OpenShift.io also adds your project pipeline into your OpenShift Online account and creates a new GitHub repository for your project.</simpara>
+<simpara>A confirmation screen appears, which includes a <emphasis role="strong">Git repositories</emphasis> link. Use this link to view your new project GitHub repository.</simpara>
+</section>
+<section xml:id="staging_a_pipeline">
+<title>Staging a Pipeline</title>
+<simpara>In a build pipeline, <emphasis>Stage</emphasis> and <emphasis>Run</emphasis> are individual OpenShift projects. <emphasis>Stage</emphasis> is a production staging area to review and test changes before they are finalized and staged on <emphasis>Run</emphasis>.</simpara>
+<simpara>The new build pipeline pushes version 1.0.1 of your new project into <emphasis>Stage</emphasis> and then, after user approval, to <emphasis>Run</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/pipeline_running.png"/>
+</imageobject>
+<textobject><phrase>A Running Pipeline Build</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>Optionally, view the build pipeline details in OpenShift Online:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the <emphasis role="strong">Pipeline</emphasis> page, click <guibutton>Build #1</guibutton> for the build pipeline in progress.</simpara>
+</listitem>
+<listitem>
+<simpara>When redirected, log into your OpenShift Online account.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>View Log</guibutton> to view the Jenkins instance logs.</simpara>
+</listitem>
+</orderedlist>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/oso_pipeline.png"/>
+</imageobject>
+<textobject><phrase>A Running Pipeline Build in OpenShift Online</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="configuring_pipelines">
+<title>Configuring Pipelines</title>
+<simpara>Advanced users can change the settings for their project pipeline builds in OpenShift Online. For most users, we do not recommend changing the default values OpenShift.io sets up.</simpara>
+<orderedlist numeration="arabic">
+<title>Prerequisites</title>
+<listitem>
+<simpara>Ensure that you have created a build pipeline for your project. See <xref linkend="creating_a_new_pipeline"/> for instructions.</simpara>
+</listitem>
+</orderedlist>
+<orderedlist numeration="arabic">
+<title>Procedure</title>
+<listitem>
+<simpara>Navigate to your space dashboard.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Create</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Pipelines</guibutton>. The <emphasis role="strong">Pipelines</emphasis> page lists all the pipeline builds for your project.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Edit Pipeline</guibutton> for the target pipeline build.</simpara>
+</listitem>
+<listitem>
+<simpara>Enter your OpenShift Online credentials when prompted. When successful, you are redirected to your OpenShift Online account Console.</simpara>
+<warning>
+<simpara>OpenShift.io sets up the required default options for your pipeline build. We do not recommended changing these default settings.</simpara>
+</warning>
+</listitem>
+<listitem>
+<simpara>In this page, you can edit the following attributes for your build pipelines:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Use the <emphasis role="strong">Source Configuration</emphasis> section to edit your project Git Repository URL.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the <emphasis role="strong">Jenkinsfile Type</emphasis> option to select the source of your Jenkinsfile for the build.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the <emphasis role="strong">Jenkinsfile Source Path</emphasis> option to provide a relative path to your Jenkinsfile.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>When ready, click <guibutton>Save</guibutton> to save your changes.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="viewing_the_pipeline_projects_in_oso">
+<title>Viewing the Pipeline Projects in OpenShift Online</title>
+<simpara>To view the OpenShift Online projects that support your project pipeline, navigate to <link xl:href="https://console.starter-us-east-2.openshift.com/">console.starter-us-east-2.openshift.com</link>. This page displays the following projects (or namespaces) that are created in OpenShift Online:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>The <emphasis>username</emphasis> project is where your pipelines run. This project name is your OpenShift Online user name.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis>username-che</emphasis> project is for your Che Host and workspaces.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis>username-jenkins</emphasis> project runs your Jenkins Master or your Jenkins Slaves. Click <guibutton>Monitoring</guibutton> after clicking this project to access your Jenkins console.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis>username-stage</emphasis> project is for your personal use. In this project, pods display as running or previously run pipelines. For maintenance, click this project and power down individual pods as required.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis>username-run</emphasis> project is identical to the <emphasis>username-stage</emphasis> project and is an environment for experimenting with your OpenShift pods.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</chapter>
+<chapter xml:id="working_with_stack_reports">
+<title>Working with Stack Reports</title>
+<section xml:id="about_stack_reports">
+<title>About Stack Reports</title>
+<simpara>OpenShift.io analyzes the health of your entire stack and its component libraries and provides recommendations to help you use relevant application components for your stack in the form of a stack report. The stack report enables you to make informed decisions on the choice of open source components, augment your development stack, and reduce the risk to your organization.</simpara>
+<simpara>The OpenShift.io analytics stack report provides you information about:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>The components comprising your stack</simpara>
+</listitem>
+<listitem>
+<simpara>Security issues and version incompatibilities</simpara>
+</listitem>
+<listitem>
+<simpara>Popularity of the components used in the stack</simpara>
+</listitem>
+<listitem>
+<simpara>The purpose or tags associated with the components</simpara>
+</listitem>
+<listitem>
+<simpara>License conflicts at the stack and component level</simpara>
+</listitem>
+<listitem>
+<simpara>Outlier application components in your stack</simpara>
+</listitem>
+</itemizedlist>
+<simpara>Based on the analyses it recommends:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Additional application components that match or better suit your stack by comparing with similar stacks.</simpara>
+</listitem>
+<listitem>
+<simpara>Alternative components to replace existing components in case of license conflicts, security issues, compatibility with the rest of your stack, and so on.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>Based on these recommendations, you can create work items and <link linkend="working_with_an_existing_work_item">follow through in the Planner</link> to update your stack as required.</simpara>
+</section>
+<section xml:id="using_stack_report">
+<title>Using your Stack Report</title>
+<simpara>OpenShift.io Analytics helps you make informed choices with respect to your development stack and its component libraries by analyzing your stack at the development stage, within your IDE, and at the deployment stage.</simpara>
+<section xml:id="_development_stage">
+<title>Development Stage</title>
+<simpara>OpenShift.io Analytics analyzes your stack at the development stage and flags components with security vulnerabilities in your Che workspace. It also recommends a secure, alternate version for your stack.</simpara>
+<formalpara>
+<title>Prerequisite</title>
+<para>Ensure that you use <link xl:href="e2e_workshop.html#creating_che_workspace-hello-world">Che workspace</link> to develop an application.</para>
+</formalpara>
+<formalpara>
+<title>Procedure</title>
+<para>You can access inputs from OpenShift.io Analytics within the Che IDE as follows:</para>
+</formalpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In your Che workspace, open the manifest file of your project, for example, <literal>pom.xml</literal> for a Maven Stack, <literal>package.json</literal> for NPM, or <literal>requirements.txt</literal> for Python. OpenShift.io analyzes the stack, flags (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/che_cve_issue.png"/>
+</imageobject>
+<textobject><phrase>che cve issue</phrase></textobject>
+</inlinemediaobject>) components with security vulnerabilities, and recommends an alternate secure version.</simpara>
+</listitem>
+<listitem>
+<simpara>Mouse hover the flagged component to see the CVE for the flagged component and the recommended alternate version.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/che_alt_recommendations.png"/>
+</imageobject>
+<textobject><phrase>Stack Recommendations on Che</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Update the component to the recommended version.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_deployment_stage">
+<title>Deployment Stage</title>
+<simpara>At the Deployment stage, OpenShift.io Analytics analyzes your stack and provides a detailed stack analysis report. It analyzes various parameters of your stack components and recommends alternative and additional components suitable for your stack.</simpara>
+<formalpara>
+<title>Prerequisites</title>
+<para>Ensure that you deploy your project and <link linkend="creating_a_new_pipeline">create a build pipeline</link> for your project.</para>
+</formalpara>
+<itemizedlist>
+<title>Procedure</title>
+<listitem>
+<simpara>In the <emphasis role="strong">Stack Report Recommendations</emphasis> section of your space dashboard, click <emphasis role="strong">Show complete stack report</emphasis> to access the detailed stack report for your manifest files.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>Alternatively, you can access your stack report as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <emphasis role="strong">Create</emphasis> and then <emphasis role="strong">Pipelines</emphasis> to view the pipeline builds for your project.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Stack Report</emphasis> to see the stack and component level analyses for your project.</simpara>
+<simpara>The report displays:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">Stack report:</emphasis> A synopsis of the stack&#8217;s analysis report.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Detail analysis of your stack components:</emphasis> A list of all the stack components and their various parameters, including recommendations of alternate components in case of license outliers or usage outliers.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Additional components recommended by OpenShift.io:</emphasis> A list of additional components commonly used by similar stacks.</simpara>
+<simpara>See <xref linkend="interpreting_stack_report"/> section for further details.</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>Filter the <emphasis role="strong">Detail analysis of your stack components</emphasis> list to see:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Usage Outliers (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/usage_outlier.png"/>
+</imageobject>
+<textobject><phrase>usage outlier</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>Security Issues (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/security_issues.png"/>
+</imageobject>
+<textobject><phrase>security issues</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>Alternate Components (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/alternate_component.png"/>
+</imageobject>
+<textobject><phrase>alternate component</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>Grouped Components (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/alternate_component.png"/>
+</imageobject>
+<textobject><phrase>alternate component</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>License Outliers (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/license_outlier.png"/>
+</imageobject>
+<textobject><phrase>license outlier</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>Unknown Licenses (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/license_unknown.png"/>
+</imageobject>
+<textobject><phrase>license unknown</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>License conflict in a Component (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/license_conflicts.png"/>
+</imageobject>
+<textobject><phrase>license conflicts</phrase></textobject>
+</inlinemediaobject>)</simpara>
+<simpara>Note that OpenShift.io recommends <emphasis role="strong">Alternate Components</emphasis> for your stack if it identifies license or usage outliers.</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Action</emphasis> column adjacent to the recommended alternate or additional components, click <emphasis role="strong">Create Work Item</emphasis> to create a work item in the OpenShift.io Planner and <link linkend="working_with_an_existing_work_item">follow through</link> on the recommendations.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</section>
+<section xml:id="interpreting_stack_report">
+<title>Interpreting your stack report</title>
+<simpara>The OpenShift.io analytics report comprises three components:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><xref linkend="_stack_summary"/></simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="_detailed_analysis_of_your_stack_components"/></simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="_additional_components_recommended_by_openshift_io"/></simpara>
+</listitem>
+</itemizedlist>
+<section xml:id="_stack_summary">
+<title>Stack summary</title>
+<simpara>The Stack summary provides a synopsis of the analysis report.</simpara>
+<simpara>It displays:</simpara>
+<variablelist>
+<varlistentry>
+<term>Security Issues</term>
+<listitem>
+<simpara>OpenShift.io analytics examines Common Vulnerabilities and Exposures (CVEs) of the components in the stack and highlights vulnerabilities, if any.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Usage Outliers</term>
+<listitem>
+<simpara>OpenShift.io analytics analyzes your overall stack composition, compares it to other similar stacks, and displays the number of components in your stack that are not commonly used in similar stacks or that rarely go together.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Licenses</term>
+<listitem>
+<simpara>OpenShift.io analytics analyzes the licenses used in your stack, and displays the number of unknown licenses. It also displays the number of license conflicts in your stack.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+</section>
+<section xml:id="_detailed_analysis_of_your_stack_components">
+<title>Detailed analysis of your stack components</title>
+<simpara>The detailed component analysis helps you assess the credibility of your stack components.</simpara>
+<simpara>It provides recommendations for relevant alternate components by analyzing all the components in the stack and their parameters such as:</simpara>
+<variablelist>
+<varlistentry>
+<term>Versions</term>
+<listitem>
+<simpara>The detailed analysis report lists current, recommended, and latest available versions of the components in your stack, so that you can select a suitable version for your stack.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Security Issue</term>
+<listitem>
+<simpara>Based on the CVEs of the stack components, OpenShift.io Analytics identifies security vulnerabilities in your stack components. The CVE scores are displayed when you move the mouse pointer over components identified with security vulnerabilities.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>License</term>
+<listitem>
+<simpara>The detailed analysis report lists licenses for each component, flags unknown and conflicting licenses, and recommends <emphasis role="strong">Alternate Components</emphasis> in case of <emphasis role="strong">License Outliers</emphasis>.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>OSIO Usage</term>
+<listitem>
+<simpara>The detailed analysis report tracks the number of projects in OpenShift.io that use the same component. It recommends <emphasis role="strong">Alternate Components</emphasis> in case of <emphasis role="strong">Usage Outliers</emphasis>.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>GitHub Statistics</term>
+<listitem>
+<simpara>OpenShift.io analytics tracks GitHub statistics, such as <emphasis role="strong">Usage Count</emphasis> and number of <emphasis role="strong">Watchers</emphasis> for the components of your stack.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>GitHub Dependents</term>
+<listitem>
+<simpara>The detailed analysis report  lists all the projects dependent on this component.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Tags</term>
+<listitem>
+<simpara>The detailed analysis report lists the tags associated with the components of your stack.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+<simpara>You can filter the detailed component analysis report to highlight:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Usage Outliers (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/usage_outlier.png"/>
+</imageobject>
+<textobject><phrase>usage outlier</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>Security Issues (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/security_issues.png"/>
+</imageobject>
+<textobject><phrase>security issues</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>Alternate Components (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/alternate_component.png"/>
+</imageobject>
+<textobject><phrase>alternate component</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>Grouped Components (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/alternate_component.png"/>
+</imageobject>
+<textobject><phrase>alternate component</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>License Outliers (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/license_outlier.png"/>
+</imageobject>
+<textobject><phrase>license outlier</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>Unknown Licenses (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/license_unknown.png"/>
+</imageobject>
+<textobject><phrase>license unknown</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+<listitem>
+<simpara>License conflict in a Component (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/license_conflicts.png"/>
+</imageobject>
+<textobject><phrase>license conflicts</phrase></textobject>
+</inlinemediaobject>)</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_additional_components_recommended_by_openshift_io">
+<title>Additional components recommended by OpenShift.io</title>
+<simpara>OpenShift.io recommends additional components suitable for your stack based on its analysis of similar open source stacks. These components are commonly used by similar stacks and augment your stack. It also displays various parameters relevant to the components, so that you can assess their credibility and make informed choices on adding them to your stack.</simpara>
+<simpara>To add the recommended component to your stack, click <emphasis role="strong">Create work item</emphasis> adjacent to the recommended alternate or additional component.</simpara>
+</section>
+</section>
+</chapter>
+<glossary xml:id="glossary">
+<title>Glossary</title>
+<simpara>This glossary provides concise definitions of terms and explanations of concepts used in Red&#160;Hat OpenShift.io and in related documentation.</simpara>
+<variablelist>
+<varlistentry>
+<term>Areas</term>
+<listitem>
+<simpara>Use Areas to organize Work Items to distinguish between different types or functionalities that are being worked on within a space.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Backlog</term>
+<listitem>
+<simpara>A Backlog is a list of Work Items that have not been triaged and assigned to a specific Iteration.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>space</term>
+<listitem>
+<simpara>A space is the equivalent of a project. Each Iteration and Work Item must be attached to a space, and a team of people can be attached to a space in various roles. By default, a space contains at least one Area and one Iteration.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Iteration</term>
+<listitem>
+<simpara>Iterations are used to organize Work Items for planning or implementation in a certain order. They are time bound and can be used to model Sprints when used with Scrum. Typically an Iteration comprises a mix of work items, ranging from Scenarios, Features, Papercuts, Experiences or Tasks, identified to be executed within the time frame of the Iteration.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Pipeline</term>
+<listitem>
+<simpara>Pipelines are a continuous delivery system that, at each step, tests and deploys the code to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements different levels of testing and deployment tasks, provides results, and then passes the code on to the next step.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Scenario-Driven Planning</term>
+<listitem>
+<simpara>A software development methodology focused on real-world problems, or Scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular Value Propositions and are realized through Experiences.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Work Item</term>
+<listitem>
+<simpara>Work Items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each Work Item must be attached to a space and an Area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Usage Outliers</term>
+<listitem>
+<simpara>Components of your software stack that are not commonly used in similar open source stacks or that rarely go together.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Security Issues</term>
+<listitem>
+<simpara>OpenShift.io analyzes the CVEs of all your components and flags components that have security vulnerabilities.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>License Outliers</term>
+<listitem>
+<simpara>Licenses in your stack that are not commonly used in similar stacks or that rarely go together.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Alternate Components</term>
+<listitem>
+<simpara>Components recommended by OpenShift.io to replace license or usage outliers.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Unknown Licenses</term>
+<listitem>
+<simpara>Licenses unknown to OpenShift.io.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>License Conflicts</term>
+<listitem>
+<simpara>Licenses that conflict at the stack or component level.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Workspace</term>
+<listitem>
+<simpara>Workspaces are fully configured web-based development environments suitable for your code and runtime needs. They are runtime environments where you can modify, test, debug, or run your code.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+</glossary>
+</part>
+</book>

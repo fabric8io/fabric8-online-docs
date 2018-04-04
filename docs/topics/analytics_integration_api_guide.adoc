@@ -1,4 +1,4 @@
-// Includes for all assemblies that form the top-level sections of the Analytics Integration Cookbook.
+// Includes for all assemblies that form the top-level sections of the Analytics Integration API guide.
 :context: analytics_integration_api_guide
 
 [id="before_you_start"]

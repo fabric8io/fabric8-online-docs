@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
+<meta name="author" content="Red&#160;Hat Developers Documentation Team">
+<title>OpenShift.io Analytics Integration API Guide</title>
+<link rel="stylesheet" href="styles/foundation.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<p style="position: absolute; top: 0">
+  <a href="/index.html" style="display: block;width:400px;height:80px"></a>
+</p>
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>OpenShift.io Analytics Integration API Guide</h1>
+<div class="details">
+<span id="author" class="author">Red&#160;Hat Developers Documentation Team</span><br>
+<span id="email" class="email"><a href="mailto:openshiftio@redhat.com">openshiftio@redhat.com</a></span><br>
+<span id="revdate">2018-04-04 12:05:43 IST</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel0">
+<li><a href="#before_you_start">Before you start</a>
+<ul class="sectlevel1">
+<li><a href="#about_fabric8_analytics">1. About Fabric8-Analytics</a>
+<ul class="sectlevel2">
+<li><a href="#_supported_ecosystems">1.1. Supported ecosystems</a></li>
+</ul>
+</li>
+<li><a href="#getting_osio_authentication">2. Getting OpenShift.io authentication token</a></li>
+</ul>
+</li>
+<li><a href="#start_using_analytics_APIs">Using analytics APIs</a>
+<ul class="sectlevel1">
+<li><a href="#api_usage_examples">3. API usage examples</a>
+<ul class="sectlevel2">
+<li><a href="#api_usage_example_1">3.1. API usage example 1: Detecting security vulnerabilities associated with a component</a></li>
+<li><a href="#api_usage_example_2">3.2. API usage example 2: Getting application dependency recommendations</a></li>
+</ul>
+</li>
+<li><a href="#api_specifications">4. API specifications</a>
+<ul class="sectlevel2">
+<li><a href="#api_post_stack_analyses_request">4.1. POST /stack-analyses</a>
+<ul class="sectlevel3">
+<li><a href="#_purpose">4.1.1. Purpose</a></li>
+<li><a href="#_resource_url">4.1.2. Resource URL</a></li>
+<li><a href="#_resource_information">4.1.3. Resource information</a></li>
+<li><a href="#_parameters">4.1.4. Parameters</a></li>
+<li><a href="#_example_request_with_curl">4.1.5. Example request with cURL</a></li>
+<li><a href="#_example_response">4.1.6. Example response:</a></li>
+</ul>
+</li>
+<li><a href="#api_get_stack_analyses_response">4.2. GET /stack-analyses/{request ID}</a>
+<ul class="sectlevel3">
+<li><a href="#_purpose_2">4.2.1. Purpose</a></li>
+<li><a href="#_resource_url_2">4.2.2. Resource URL</a></li>
+<li><a href="#_resource_information_2">4.2.3. Resource information</a></li>
+<li><a href="#_parameters_2">4.2.4. Parameters</a></li>
+<li><a href="#_example_request_with_curl_2">4.2.5. Example request with cURL</a></li>
+<li><a href="#_example_response_2">4.2.6. Example response</a></li>
+</ul>
+</li>
+<li><a href="#api_get_component_analyses_response">4.3. GET /component-analyses/{ecosystem}/{component name}/{component version}</a>
+<ul class="sectlevel3">
+<li><a href="#_purpose_3">4.3.1. Purpose</a></li>
+<li><a href="#_resource_url_3">4.3.2. Resource URL</a></li>
+<li><a href="#_resource_information_3">4.3.3. Resource information</a></li>
+<li><a href="#_parameters_3">4.3.4. Parameters</a></li>
+<li><a href="#_example_request_with_curl_3">4.3.5. Example request with cURL</a></li>
+<li><a href="#_example_response_3">4.3.6. Example response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Analytics integration API guide is written for developers who are interested in integrating <a href="https://github.com/fabric8-analytics/">Fabric8-Analytics</a> <em>stack-analyses</em> or <em>component-analyses</em> services within their applications.</p>
+</div>
+<div class="paragraph">
+<p>The integration guide provides two examples, which describe its usage and describes the other API resources you can call to use Fabric8-Analytics.</p>
+</div>
+</div>
+</div>
+<h1 id="before_you_start" class="sect0"><a class="anchor" href="#before_you_start"></a><a class="link" href="#before_you_start">Before you start</a></h1>
+<div class="sect1">
+<h2 id="about_fabric8_analytics"><a class="anchor" href="#about_fabric8_analytics"></a><a class="link" href="#about_fabric8_analytics">1. About Fabric8-Analytics</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Fabric8-Analytics is an open source analytics platform aimed primarily at assisting developers in getting insights and recommendations on the stacks used for developing applications. This platform can be used to get an overview and recommendations for single application components as well.</p>
+</div>
+<div class="sect2">
+<h3 id="_supported_ecosystems"><a class="anchor" href="#_supported_ecosystems"></a><a class="link" href="#_supported_ecosystems">1.1. Supported ecosystems</a></h3>
+<div class="paragraph">
+<p>Fabric8-Analytics <em>stack-analyses</em> currently analyzes application stacks of the following ecosystems:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Python PyPI</p>
+</li>
+<li>
+<p>Maven Spring Boot</p>
+</li>
+<li>
+<p>Maven Vert.x</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Support for more ecosystems will be introduced in the near future.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="getting_osio_authentication"><a class="anchor" href="#getting_osio_authentication"></a><a class="link" href="#getting_osio_authentication">2. Getting OpenShift.io authentication token</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You require an OpenShift.io authentication token to invoke all Fabric8-Analytics API resources.</p>
+</div>
+<div class="paragraph">
+<p>Get the OpenShift.io authentication token as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Log into <a href="https://openshift.io">OpenShift.io</a>.</p>
+</li>
+<li>
+<p>On your OpenShift.io home page, click your name on the top right corner of the screen to see the drop-down list.</p>
+</li>
+<li>
+<p>Select <strong>Profile</strong> from the list to see your profile page.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/ig_user_profile.png" alt="user profile">
+</div>
+</div>
+</li>
+<li>
+<p>Click <b class="button">Update Profile</b> to edit your profile.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/ig_update_profile.png" alt="update profile">
+</div>
+</div>
+</li>
+<li>
+<p>In the <strong>Edit Profile</strong> page, scroll down to the <strong>Advanced</strong> section and copy your <strong>Personal Access Token</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/ig_access_token.png" alt="access token">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You can now use this token in the various API resources mentioned below.</p>
+</div>
+</div>
+</div>
+<h1 id="start_using_analytics_APIs" class="sect0"><a class="anchor" href="#start_using_analytics_APIs"></a><a class="link" href="#start_using_analytics_APIs">Using analytics APIs</a></h1>
+<div class="sect1">
+<h2 id="api_usage_examples"><a class="anchor" href="#api_usage_examples"></a><a class="link" href="#api_usage_examples">3. API usage examples</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following section lists two examples demonstrating the usage of the Fabric8-Analytics platform.</p>
+</div>
+<div class="sect2">
+<h3 id="api_usage_example_1"><a class="anchor" href="#api_usage_example_1"></a><a class="link" href="#api_usage_example_1">3.1. API usage example 1: Detecting security vulnerabilities associated with a component</a></h3>
+<div class="paragraph">
+<p>This API enables you flag security vulnerabilities affecting a component in your stack.</p>
+</div>
+<div class="paragraph">
+<p>This scenario can be addressed by calling the GET <code>/component-analyses</code> method and parsing the result for security vulnerabilities.
+The following is a typescript code snippet to invoke the <code>/component-analyses</code> method:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">let get_metadata = (ecosystem, name, version, cb) =&gt; {
+    let cacheKey = ecosystem + " " + name + " " + version;
+    let metadata = metadataCache[cacheKey];
+    if (metadata != null) {
+        cb(metadata);
+        return
+    }
+    let part = [ecosystem, name, version].join('/');
+
+    const options = url.parse(config.server_url);
+    options['path'] += `/component-analyses/${part}/`;
+    options['headers'] = {'Authorization': 'Bearer ' + config.api_token};
+    https.get(options, function(res){
+        let body = '';
+        res.on('data', function(chunk) { body += chunk; });
+        res.on('end', function(){
+            winston.info('status ' + this.statusCode);
+            if (this.statusCode == 200 || this.statusCode == 202) {
+                let response = JSON.parse(body);
+                cb(response);
+            } else {
+                cb(null);
+            }
+        });
+    });
+};</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="api_usage_example_2"><a class="anchor" href="#api_usage_example_2"></a><a class="link" href="#api_usage_example_2">3.2. API usage example 2: Getting application dependency recommendations</a></h3>
+<div class="paragraph">
+<p>This API enables you to get recommendations for the dependencies in your stack.</p>
+</div>
+<div class="paragraph">
+<p>This scenario has to be addressed by two API method calls.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Initiate stack analysis by uploading manifest files. A typescript example for that is as follows:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">uploadStackAnalysesFile = () =&gt; {
+     let data = new FormData();
+       $.each((&lt;HTMLInputElement&gt;document.getElementById('stackAnalysesFile')).files, function (key: any, value: any) {
+         data.append('manifest[]', value.split(':')[0]);
+         data.append('filePath[]', value.split(':')[1]);
+     });
+     $('#stackSpinner').show();
+     $.ajax({
+         url: this.stackapiUrl + 'stack-analyses',
+         type: 'POST',
+         data: data,
+         headers: { "Authorization": 'Bearer ' + this.token},
+         cache: false,
+         contentType: false,
+         processData: false,
+         success: data =&gt; {
+             if (typeof data.error === 'undefined') {
+                 $('#pomStatusSuccess').show();
+                 this.stackID = data.id;
+             }
+             else {
+                 console.log('ERRORS: ' + data.error);
+             }
+         },
+         error: () =&gt; {
+             console.log('ERROR');
+         }
+     });
+ }</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Retrieve the response for the initiated stack analysis. A typescript example for that is as follows:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">callStackAnalysesReportApi = () =&gt; {
+     $.ajax({
+         url: this.stackapiUrl + 'stack-analyses/' + this.stackID,
+         method: 'GET',
+         headers: { "Authorization": 'Bearer ' + this.token},
+         dataType: 'json',
+         success: response =&gt; {
+              console.log(response.recommendation.recommendations);
+             }
+         },
+         error: () =&gt; {
+             $('#stackSpinner').hide();
+             console.log('Error calling stack report API')
+         }
+         });
+ }</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="api_specifications"><a class="anchor" href="#api_specifications"></a><a class="link" href="#api_specifications">4. API specifications</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following section lists the primary API endpoints you can use to integrate Fabric8-Analytics within your application.</p>
+</div>
+<div class="sect2">
+<h3 id="api_post_stack_analyses_request"><a class="anchor" href="#api_post_stack_analyses_request"></a><a class="link" href="#api_post_stack_analyses_request">4.1. POST /stack-analyses</a></h3>
+<div class="sect3">
+<h4 id="_purpose"><a class="anchor" href="#_purpose"></a><a class="link" href="#_purpose">4.1.1. Purpose</a></h4>
+<div class="paragraph">
+<p>Submits an application stack analysis request.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You require an OpenShift.io authentication token to invoke this method.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_resource_url"><a class="anchor" href="#_resource_url"></a><a class="link" href="#_resource_url">4.1.2. Resource URL</a></h4>
+<div class="paragraph">
+<p>For information about the resource URL, reach out to us on the OpenShift.io support chat channel at <a href="https://chat.openshift.io">https://chat.openshift.io</a> or email us at <a href="mailto:openshiftio@redhat.com">openshiftio@redhat.com</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_resource_information"><a class="anchor" href="#_resource_information"></a><a class="link" href="#_resource_information">4.1.3. Resource information</a></h4>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Response Format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JSON</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Requires Authentication</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_parameters"><a class="anchor" href="#_parameters"></a><a class="link" href="#_parameters">4.1.4. Parameters</a></h4>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">manifest[]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">required</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ecosystem specific Manifest file(s) available in the application. One can provide multiple manifest files to invoke the method.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">@pom.xml</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">filePath[]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">required</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding manifest file’s directory information. Care has to be taken to map the manifest filenames and file paths correctly.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/home/JohnDoe</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">origin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Originator of the request. Can be the name of an application integrating to the endpoint. Maintained for historical reasons.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"my-app"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_example_request_with_curl"><a class="anchor" href="#_example_request_with_curl"></a><a class="link" href="#_example_request_with_curl">4.1.5. Example request with cURL</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre>curl -k -H "Authorization: Bearer &lt;openshift.io authentication token&gt;" -F "manifest[]=@./pom.xml" -F "filePath[]=/home/JohnDoe"https://recommender.api.openshift.io/api/v1/stack-analyses</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_response"><a class="anchor" href="#_example_response"></a><a class="link" href="#_example_response">4.1.6. Example response:</a></h4>
+<div class="paragraph">
+<p><strong>Success</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">{
+    "id": "510a314561104e8ba14bac489b31efe0",
+    "status": "success",
+    "submitted_at": "2017-07-18 08:04:49.165068"
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Failure</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">401:
+{
+  "error": "Authentication failed - could not decode JWT token"
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="api_get_stack_analyses_response"><a class="anchor" href="#api_get_stack_analyses_response"></a><a class="link" href="#api_get_stack_analyses_response">4.2. GET /stack-analyses/{request ID}</a></h3>
+<div class="sect3">
+<h4 id="_purpose_2"><a class="anchor" href="#_purpose_2"></a><a class="link" href="#_purpose_2">4.2.1. Purpose</a></h4>
+<div class="paragraph">
+<p>Fetches stack analysis response by using the request identifier returned by /stack-analyses POST.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You require an OpenShift.io authentication token to invoke this method.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_resource_url_2"><a class="anchor" href="#_resource_url_2"></a><a class="link" href="#_resource_url_2">4.2.2. Resource URL</a></h4>
+<div class="paragraph">
+<p>For information about the resource URL, reach out to us on the OpenShift.io support chat channel at <a href="https://chat.openshift.io">https://chat.openshift.io</a> or email us at <a href="mailto:openshiftio@redhat.com">openshiftio@redhat.com</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_resource_information_2"><a class="anchor" href="#_resource_information_2"></a><a class="link" href="#_resource_information_2">4.2.3. Resource information</a></h4>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Response Format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JSON</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Requires Authentication</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_parameters_2"><a class="anchor" href="#_parameters_2"></a><a class="link" href="#_parameters_2">4.2.4. Parameters</a></h4>
+<div class="paragraph">
+<p>None</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_request_with_curl_2"><a class="anchor" href="#_example_request_with_curl_2"></a><a class="link" href="#_example_request_with_curl_2">4.2.5. Example request with cURL</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre>curl -k -H "Authorization: Bearer &lt;openshift.io authentication token&gt;" https://recommender.api.openshift.io/api/v1/stack-analyses/421249d9e1e5464cbf3e77dde4941463</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_response_2"><a class="anchor" href="#_example_response_2"></a><a class="link" href="#_example_response_2">4.2.6. Example response</a></h4>
+<div class="paragraph">
+<p><strong>Success</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">{
+    "finished_at": "2017-07-18T08:05:28.867886",
+    "recommendation": {
+        "_audit": {
+            "ended_at": "2017-07-18T08:06:29.128140",
+            "started_at": "2017-07-18T08:05:58.350028",
+            "version": "v1"
+        },
+        "_release": "None:None:None",
+        "recommendations": [
+            {
+                "component_level": null,
+                "manifest_file_path": "\"/Users/JohnDoe/Archive/qodfather_pom\"",
+                "similar_stacks": [
+                    {
+                        "analysis": {
+                            "missing_packages": [],
+                            "version_mismatch": []
+                        },
+                        "similarity": 0.6666666666666666,
+                        "source": "manually curated",
+                        "stack_id": "cca357b72bb544f5908f62e186a5f6ac",
+                        "stack_name": "Vert.x HTTP Booster",
+                        "usage": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "request_id": "510a314561104e8ba14bac489b31efe0",
+    "result": [
+        {
+            "_audit": {
+                "ended_at": "2017-07-18T08:05:28.867886",
+                "started_at": "2017-07-18T08:05:27.717445",
+                "version": "v1"
+            },
+            "_release": "None:None:None",
+            "stack_data": [
+                {
+                    "analyzed_components": 3,
+                    "components": [
+                        {
+                            "code_metrics": {
+                                "average_cyclomatic_complexity": 1.22,
+                                "code_lines": 37699,
+                                "total_files": 239
+                            },
+                            "ecosystem": "maven",
+                            "github_details": {
+                                "forks_count": -1,
+                                "issues": {
+                                    "month": {
+                                        "closed": -1,
+                                        "opened": -1
+                                    },
+                                    "year": {
+                                        "closed": -1,
+                                        "opened": -1
+                                    }
+                                },
+                                "pull_requests": {
+                                    "month": {
+                                        "closed": -1,
+                                        "opened": -1
+                                    },
+                                    "year": {
+                                        "closed": -1,
+                                        "opened": -1
+                                    }
+                                },
+                                "stargazers_count": -1
+                            },
+                            "id": "maven:io.vertx:vertx-web:3.4.1",
+                            "latest_version": "3.4.1",
+                            "licenses": [
+                                "Apache 2.0",
+                                "EPL 1.0"
+                            ],
+                            "name": "io.vertx:vertx-web",
+                            "redhat_usage": {
+                                "all_rhn_channels": [],
+                                "all_rhsm_content_sets": [],
+                                "all_rhsm_product_names": [],
+                                "package_names": [],
+                                "published_in": [],
+                                "registered_srpms": [],
+                                "rh_mvn_matched_versions": []
+                            },
+                            "security": {},
+                            "version": "3.4.1"
+                        }
+                    ],
+                    "distinct_licenses": [
+                        "MIT License",
+                        "Apache 2.0",
+                        "EPL 1.0"
+                    ],
+                    "ecosystem": "maven",
+                    "manifest_file_path": "\"/Users/JohnDoe/Archive/qodfather_pom\"",
+                    "manifest_name": "pom.xml",
+                    "popularity": {
+                        "average_forks": "NA",
+                        "average_stars": "NA",
+                        "low_popularity_components": 0
+                    },
+                    "total_licenses": 3
+                }
+            ]
+        }
+    ],
+    "schema": {
+        "name": "stack_analyses",
+        "url": "http://recommender.api.openshift.io/api/v1/schemas/api/stack_analyses/2-1-4/",
+        "version": "2-1-4"
+    },
+    "started_at": "2017-07-18T08:05:27.717445"
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>In-Progress</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">200:
+{
+    "error": "Analysis for request ID '510a314561104e8ba14bac489b31efe0' is in progress"
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Failure</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">401:
+{
+  "error": "Authentication failed - could not decode JWT token"
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="api_get_component_analyses_response"><a class="anchor" href="#api_get_component_analyses_response"></a><a class="link" href="#api_get_component_analyses_response">4.3. GET /component-analyses/{ecosystem}/{component name}/{component version}</a></h3>
+<div class="sect3">
+<h4 id="_purpose_3"><a class="anchor" href="#_purpose_3"></a><a class="link" href="#_purpose_3">4.3.1. Purpose</a></h4>
+<div class="paragraph">
+<p>Fetches various data points for a selected component.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You require an OpenShift.io authentication token to invoke this method.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_resource_url_3"><a class="anchor" href="#_resource_url_3"></a><a class="link" href="#_resource_url_3">4.3.2. Resource URL</a></h4>
+<div class="paragraph">
+<p>For information about the resource URL, reach out to us on the OpenShift.io support chat channel at <a href="https://chat.OpenShift.io">https://chat.openshift.io</a> or email us at <a href="mailto:openshiftio@redhat.com">openshiftio@redhat.com</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_resource_information_3"><a class="anchor" href="#_resource_information_3"></a><a class="link" href="#_resource_information_3">4.3.3. Resource information</a></h4>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Response Format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JSON</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Requires Authentication</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_parameters_3"><a class="anchor" href="#_parameters_3"></a><a class="link" href="#_parameters_3">4.3.4. Parameters</a></h4>
+<div class="paragraph">
+<p>None</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_request_with_curl_3"><a class="anchor" href="#_example_request_with_curl_3"></a><a class="link" href="#_example_request_with_curl_3">4.3.5. Example request with cURL</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre>curl -k -H "Authorization: Bearer &lt;openshift.io authentication token&gt;" https://recommender.api.openshift.io/api/v1/component-analyses/maven/io.vertx:vertx-core/3.4.1</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_response_3"><a class="anchor" href="#_example_response_3"></a><a class="link" href="#_example_response_3">4.3.6. Example response</a></h4>
+<div class="paragraph">
+<p><strong>Success</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">{
+    "result": {
+        "data": [
+            {
+                "package": {
+                    "ecosystem": [ "maven" ],
+                    "gh_forks": [ -1 ],
+                    "gh_issues_last_month_closed": [ -1 ],
+                    "gh_issues_last_month_opened": [ -1 ],
+                    "gh_issues_last_year_closed": [ -1 ],
+                    "gh_issues_last_year_opened": [ -1 ],
+                    "gh_prs_last_month_closed": [ -1 ],
+                    "gh_prs_last_month_opened": [ -1 ],
+                    "gh_prs_last_year_closed": [ -1 ],
+                    "gh_prs_last_year_opened": [ -1 ],
+                    "gh_stargazers": [ -1 ],
+                    "last_updated": [ 1500339683.76 ],
+                    "latest_version": [ "3.4.1" ],
+                    "name": [ "io.vertx:vertx-core" ],
+                    "package_dependents_count": [ -1 ],
+                    "package_relative_used": [ "not used" ],
+                    "tokens": [ "core", "io", "vertx" ],
+                    "vertex_label": [ "Package" ]
+                },
+                "version": {
+                    "cm_avg_cyclomatic_complexity": [ 1.34 ],
+                    "cm_loc": [ 80586 ],
+                    "cm_num_files": [ 441 ],
+                    "dependents_count": [ -1 ],
+                    "description": [ "sonatype helps open source projects to set up maven repositories on httpsosssonatypeorg" ],
+                    "last_updated": [ 1499416928.83 ],
+                    "licenses": [ "Apache 2.0", "EPL 1.0", "MIT License" ],
+                    "pecosystem": [ "maven" ],
+                    "pname": [ "io.vertx:vertx-core" ],
+                    "relative_used": [ "" ],
+                    "shipped_as_downstream": [ false ],
+                    "version": [ "3.4.1" ],
+                    "vertex_label": [ "Version" ]
+                }
+            }
+        ],
+        "recommendation": {}
+    },
+    "schema": {
+        "name": "analyses_graphdb",
+        "url": "http://recommender.api.openshift.io/api/v1/schemas/api/analyses_graphdb/1-2-0/",
+        "version": "1-2-0"
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Failure</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">401:
+{
+  "error": "Authentication failed - could not decode JWT token"
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">404:
+{
+  "error": "No data found for maven Package io.vertx:vertx-core/3.4.1"
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-2 col-md-2 logo">
+        <a href="https://www.redhat.com/" target="top"></a>
+      </div>
+      <div class="col-xs-10 col-md-10 footer-content">
+        <span class="conditions">
+          <a href="https://www.redhat.com">Copyright &copy;2017 Red Hat, Inc.</a>
+          <a class="legal" href="https://www.redhat.com/en/about/privacy-policy" target="top">Privacy Statement</a>
+          <a class="legal" href="http://www.redhat.com/en/about/terms-use" target="top">Terms of Use</a>
+          <a href="http://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International License</a>
+        </span>
+        <span class="summit">
+          <a href="https://www.facebook.com/RedHatDeveloperProgram" target="top">
+            <i class="fa fa-facebook fa-lg"></i>
+          </a>
+          <a href="https://twitter.com/rhdevelopers" target="top">
+            <i class="fa fa-twitter fa-lg"></i>
+          </a>
+        </span>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+</body>
+</html>

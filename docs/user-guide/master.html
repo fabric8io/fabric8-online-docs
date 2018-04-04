@@ -1,0 +1,2290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
+<meta name="author" content="Red&#160;Hat Developers Documentation Team">
+<title>OpenShift.io User Guide</title>
+<link rel="stylesheet" href="styles/foundation.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<p style="position: absolute; top: 0">
+  <a href="/index.html" style="display: block;width:400px;height:80px"></a>
+</p>
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>OpenShift.io User Guide</h1>
+<div class="details">
+<span id="author" class="author">Red&#160;Hat Developers Documentation Team</span><br>
+<span id="email" class="email"><a href="mailto:openshiftio@redhat.com">openshiftio@redhat.com</a></span><br>
+<span id="revdate">2018-02-20 12:57:36 IST</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel0">
+<li><a href="#before_you_start">Before You Start</a>
+<ul class="sectlevel1">
+<li><a href="#introduction_to_rhosio">1. Introduction to Red&#160;Hat OpenShift.io</a>
+<ul class="sectlevel2">
+<li><a href="#red_hat_openshift_io_overview">1.1. Red&#160;Hat OpenShift.io Overview</a>
+<ul class="sectlevel3">
+<li><a href="#_features">1.1.1. Features</a></li>
+<li><a href="#_registration_and_early_access">1.1.2. Registration and Early Access</a></li>
+<li><a href="#_support">1.1.3. Support</a></li>
+</ul>
+</li>
+<li><a href="#_related_information">1.2. Related Information</a></li>
+</ul>
+</li>
+<li><a href="#getting-support">2. Getting support</a>
+<ul class="sectlevel2">
+<li><a href="#asking-questions-about-the-product">2.1. Asking questions about the product</a></li>
+<li><a href="#providing-product-feedback">2.2. Send us feedback about the product</a></li>
+<li><a href="#providing-documentation-feedback">2.3. Send us feedback about the documentation</a></li>
+</ul>
+</li>
+<li><a href="#accessing_red_hat_openshift_io">3. Accessing Red&#160;Hat OpenShift.io</a>
+<ul class="sectlevel2">
+<li><a href="#signing_up_for_the_red_hat_developers_program">3.1. Signing up for the Red Hat Developers Program</a>
+<ul class="sectlevel3">
+<li><a href="#_related_information_2">3.1.1. Related Information</a></li>
+</ul>
+</li>
+<li><a href="#logging_into_red_hat_openshift_io">3.2. Logging into Red&#160;Hat OpenShift.io</a></li>
+<li><a href="#logging_out_of_red_hat_openshift_io">3.3. Logging out of Red&#160;Hat OpenShift.io</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#getting_started_with_openshift_io">Getting Started with OpenShift.io</a>
+<ul class="sectlevel1">
+<li><a href="#working_with_spaces">4. Working with spaces</a>
+<ul class="sectlevel2">
+<li><a href="#about_spaces">4.1. About spaces</a></li>
+<li><a href="#creating_a_new_space">4.2. Creating a new space</a></li>
+<li><a href="#deleting_existing_space">4.3. Deleting an existing space</a></li>
+<li><a href="#configuring_a_codebase">4.4. Configuring a codebase</a>
+<ul class="sectlevel3">
+<li><a href="#adding_a_codebase">4.4.1. Adding a codebase</a></li>
+<li><a href="#importing_a_codebase">4.4.2. Importing a codebase</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#working_with_collaborators">5. Working with Collaborators</a>
+<ul class="sectlevel2">
+<li><a href="#about_collaborators">5.1. About Collaborators</a></li>
+<li><a href="#adding_collaborators">5.2. Adding Collaborators</a></li>
+<li><a href="#viewing_and_changing_collaborators">5.3. Viewing and changing collaborators</a></li>
+<li><a href="#assigning_a_collaborator">5.4. Assigning a collaborator</a></li>
+</ul>
+</li>
+<li><a href="#working_with_work_items">6. Working with Work Items</a>
+<ul class="sectlevel2">
+<li><a href="#about_work_items">6.1. About Work Items</a></li>
+<li><a href="#creating_a_new_work_item">6.2. Creating a new Work Item</a>
+<ul class="sectlevel3">
+<li><a href="#quick_add_work_item">6.2.1. Quick-Add a New Work Item</a></li>
+<li><a href="#using_backlog_to_create_work_item">6.2.2. Using the Backlog to Create a Work Item</a></li>
+<li><a href="#using_detailed_method_to_create_work_items">6.2.3. Using the Detailed Method to Create Work Items</a></li>
+</ul>
+</li>
+<li><a href="#working_with_an_existing_work_item">6.3. Working with an Existing Work Item</a>
+<ul class="sectlevel3">
+<li><a href="#modifying_an_existing_work_item">6.3.1. Modifying an existing work item</a></li>
+<li><a href="#associating_work_items_with_an_iteration">6.3.2. Associating Work Items with an Iteration</a></li>
+<li><a href="#ordering_and_monitoring_work_items">6.3.3. Ordering and Monitoring Work Items</a></li>
+<li><a href="#filtering_work_items">6.3.4. Filtering Work Items</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#working_with_areas">7. Working with Areas</a>
+<ul class="sectlevel2">
+<li><a href="#about_areas">7.1. About areas</a></li>
+<li><a href="#creating_a_new_area">7.2. Creating a New Area</a></li>
+<li><a href="#Assigning_an_area">7.3. Assigning an Area to a Work Item</a></li>
+</ul>
+</li>
+<li><a href="#working_with_iterations">8. Working with Iterations</a>
+<ul class="sectlevel2">
+<li><a href="#about_iterations">8.1. About Iterations</a></li>
+<li><a href="#creating_a_new_iteration">8.2. Creating a new iteration</a></li>
+<li><a href="#selecting_an_iteration">8.3. Selecting an Iteration</a>
+<ul class="sectlevel3">
+<li><a href="#_all_iterations">8.3.1. All Iterations</a></li>
+<li><a href="#_active_iteration">8.3.2. Active Iteration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#working_with_pipelines">9. Working with Pipelines</a>
+<ul class="sectlevel2">
+<li><a href="#about_pipelines">9.1. About Pipelines</a></li>
+<li><a href="#creating_a_new_pipeline">9.2. Creating a new pipeline</a></li>
+<li><a href="#staging_a_pipeline">9.3. Staging a Pipeline</a></li>
+<li><a href="#configuring_pipelines">9.4. Configuring Pipelines</a></li>
+<li><a href="#viewing_the_pipeline_projects_in_oso">9.5. Viewing the Pipeline Projects in OpenShift Online</a></li>
+</ul>
+</li>
+<li><a href="#working_with_stack_reports">10. Working with Stack Reports</a>
+<ul class="sectlevel2">
+<li><a href="#about_stack_reports">10.1. About Stack Reports</a></li>
+<li><a href="#using_stack_report">10.2. Using your Stack Report</a>
+<ul class="sectlevel3">
+<li><a href="#_development_stage">10.2.1. Development Stage</a></li>
+<li><a href="#_deployment_stage">10.2.2. Deployment Stage</a></li>
+</ul>
+</li>
+<li><a href="#interpreting_stack_report">10.3. Interpreting your stack report</a>
+<ul class="sectlevel3">
+<li><a href="#_stack_summary">10.3.1. Stack summary</a></li>
+<li><a href="#_detailed_analysis_of_your_stack_components">10.3.2. Detailed analysis of your stack components</a></li>
+<li><a href="#_additional_components_recommended_by_openshift_io">10.3.3. Additional components recommended by OpenShift.io</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#glossary">Glossary</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The guide describes the features of Red Hat OpenShift.io. It also contains information about potential problems users may encounter while using the software. Where possible, workarounds are described for identified issues.</p>
+</div>
+</div>
+</div>
+<h1 id="before_you_start" class="sect0"><a class="anchor" href="#before_you_start"></a><a class="link" href="#before_you_start">Before You Start</a></h1>
+<div class="sect1">
+<h2 id="introduction_to_rhosio"><a class="anchor" href="#introduction_to_rhosio"></a><a class="link" href="#introduction_to_rhosio">1. Introduction to Red&#160;Hat OpenShift.io</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Red&#160;Hat Developer Program offers a <em>Software as a Service</em> (SaaS) product for developers called <strong>Red&#160;Hat OpenShift.io</strong> to meet your software development requirements.</p>
+</div>
+<div class="paragraph">
+<p>This section introduces Red&#160;Hat OpenShift.io and provides an overview of the main features of the product. Read it to understand the benefits of using <a href="https://openshift.io/">OpenShift.io</a> and to learn about how organizations and developers can use it for their everyday tasks.</p>
+</div>
+<div class="sect2">
+<h3 id="red_hat_openshift_io_overview"><a class="anchor" href="#red_hat_openshift_io_overview"></a><a class="link" href="#red_hat_openshift_io_overview">1.1. Red&#160;Hat OpenShift.io Overview</a></h3>
+<div class="paragraph">
+<p>Red&#160;Hat OpenShift.io is a highly collaborative open-source, web-based <em>application life cycle management</em> (ALM) solution. It is a next-generation product for developers to manage the development life cycle with one efficient tool.</p>
+</div>
+<div class="sect3">
+<h4 id="_features"><a class="anchor" href="#_features"></a><a class="link" href="#_features">1.1.1. Features</a></h4>
+<div class="paragraph">
+<p>OpenShift.io offers features to seamlessly manage end-to-end application development. Members of distributed teams can use it to perform the following tasks without leaving the browser window:</p>
+</div>
+<div class="paragraph">
+<p><strong>Project Management:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Project planning and issue tracking using your choice of Agile methodology.</p>
+</li>
+<li>
+<p>Automating project releases.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Project Development:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Creating development environments and testing based on requirements.</p>
+</li>
+<li>
+<p>Coding using an integrated development environment based on Eclipse Che, which provides a workspace for developing your application.</p>
+</li>
+<li>
+<p>Development in this context-aware environment provides the appropriate context for the developer and project, such as which branch, repository, language, and files are referenced.</p>
+</li>
+<li>
+<p>Interacting with integrated GitHub repositories.</p>
+</li>
+<li>
+<p>Compiling and reviewing code in Pull Requests as required.</p>
+</li>
+<li>
+<p>Use the QuickStart wizards to create basic applications with their own new repo on GitHub, a build pipeline integrated with Jenkins, and a related new OpenShift project.</p>
+</li>
+<li>
+<p>Using migration wizards to migrate legacy J2EE applications to the cloud.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Deployment and Testing:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Building, testing, deploying, and monitoring codebases using Continuous Integration pipelines that can be tailored to the requirements of a team or an individual.</p>
+</li>
+<li>
+<p>Deploying applications packaged as a set of containers to OpenShift, which powers the underlying services such as the Eclipse Che workspaces and Pipelines.</p>
+</li>
+<li>
+<p>Using integrated but customizable Jenkins build pipelines to facilitate rapid testing and environment promotion.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Analysis and Recommendations:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the full-stack analysis feature on your project open source components to identify potential security issues and recommend safer alternative components or component versions to use instead.</p>
+</li>
+<li>
+<p>Use the self-learning analytics engine to improve the code quality and make data-based choices. The engine scans community libraries, security vulnerabilities, and other GitHub metrics to provide useful real-time assistance for developers that learns and improves over time.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_registration_and_early_access"><a class="anchor" href="#_registration_and_early_access"></a><a class="link" href="#_registration_and_early_access">1.1.2. Registration and Early Access</a></h4>
+<div class="paragraph">
+<p>Currently, OpenShift.io is available for a limited early access program. In the OpenShift.io home page, click <b class="button">Sign up for the Preview</b> to join a waiting list for Early Access. You will receive an email informing you when you have been given access to use the system.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_support"><a class="anchor" href="#_support"></a><a class="link" href="#_support">1.1.3. Support</a></h4>
+<div class="paragraph">
+<p>Red Hat currently does not offer a support subscription for OpenShift.io. The service is available as a free <em>Developer Preview</em> for open-source projects and developers.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_information"><a class="anchor" href="#_related_information"></a><a class="link" href="#_related_information">1.2. Related Information</a></h3>
+<div class="paragraph">
+<p>See also the following related Red Hat resources related to the Red&#160;Hat Developer Program:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://developers.redhat.com/">Red&#160;Hat Developers</a></p>
+</li>
+<li>
+<p><a href="https://developers.redhat.com/blog">Red&#160;Hat Developer Blog</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="getting-support"><a class="anchor" href="#getting-support"></a><a class="link" href="#getting-support">2. Getting support</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For Red Hat, an important aspect of the Early Access Program is to get feedback from users. Tell us what you like, what you hate, what you wish you could do, what you wish the service would stop doing, and anything else that you think we should know as we work on improving OpenShift.io.</p>
+</div>
+<div class="sect2">
+<h3 id="asking-questions-about-the-product"><a class="anchor" href="#asking-questions-about-the-product"></a><a class="link" href="#asking-questions-about-the-product">2.1. Asking questions about the product</a></h3>
+<div class="paragraph">
+<p>The OpenShift.io support chat channel is the best way to ask questions or get immediate support for OpenShift.io at any time. We encourage users to ask us questions and get immediate answers and assistance rather than spend their time debugging or troubleshooting problems themselves.</p>
+</div>
+<div class="paragraph">
+<p>If you don&#8217;t already have a MatterMost account:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <a href="https://chat.openshift.io">https://chat.openshift.io</a> and click <strong>Create one now</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/mm_create_account.png" alt="Create an account">
+</div>
+</div>
+</li>
+<li>
+<p>Add your details and click <b class="button">Create Account</b> to register.</p>
+</li>
+<li>
+<p>In your email inbox, click the <b class="button">Verify Email</b> link.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/mm_verify_email.png" alt="Verify email">
+</div>
+</div>
+</li>
+<li>
+<p>Sign in when prompted. When asked, select <strong>Developers</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/mm_teams.png" alt="Select team">
+</div>
+</div>
+</li>
+<li>
+<p>MatterMost offers an optional tutorial for new users, which you can skip. Click <strong>Skip tutorial</strong> to continue.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/mm_tutorial.png" alt="Skip tutorial">
+</div>
+</div>
+</li>
+<li>
+<p>You are redirected to the <strong>#openshiftio</strong> channel.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/mm_main_view.png" alt="Main view">
+</div>
+</div>
+</li>
+<li>
+<p>Ask a specific person your question or start with <code>@here</code> to tag everyone present in the channel.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>In the future, navigate to <a href="https://chat.openshift.io">https://chat.openshift.io</a> to view the OpenShift.io MatterMost channel.</p>
+</div>
+<div class="paragraph">
+<p>If you prefer to use IRC, the OpenShift.io team is also available in the <strong>#openshiftio</strong> channel on Freenode.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="providing-product-feedback"><a class="anchor" href="#providing-product-feedback"></a><a class="link" href="#providing-product-feedback">2.2. Send us feedback about the product</a></h3>
+<div class="paragraph">
+<p>To give the OpenShift.io team feedback, navigate to <a href="https://github.com/openshiftio/openshift.io/issues">create an issue</a> and send us a description of the problem with the necessary details, including screenshots if necessary. You can also search for related issues at this link. When logged, the OpenShift.io team triages and adds tags and other information to your issue.</p>
+</div>
+<div class="paragraph">
+<p>If you prefer to send us feedback via email, send us the details at <a href="mailto:openshiftio@redhat.com">openshiftio@redhat.com</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="providing-documentation-feedback"><a class="anchor" href="#providing-documentation-feedback"></a><a class="link" href="#providing-documentation-feedback">2.3. Send us feedback about the documentation</a></h3>
+<div class="paragraph">
+<p>The documentation team welcomes all feedback or requests for information that is helpful to you but isn&#8217;t covered.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Is there anything we can do to improve the documentation?</p>
+</li>
+<li>
+<p>Was a part of the documentation not useful for you?</p>
+</li>
+<li>
+<p>Is there anything we did not document that you want to do with OpenShift.io?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/fabric8io/fabric8-online-docs/issues">Create an issue</a> to send us your feedback.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="accessing_red_hat_openshift_io"><a class="anchor" href="#accessing_red_hat_openshift_io"></a><a class="link" href="#accessing_red_hat_openshift_io">3. Accessing Red&#160;Hat OpenShift.io</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section explains how to register and gain access to Red&#160;Hat OpenShift.io. It also outlines how to log in to and log out of the service.</p>
+</div>
+<div class="sect2">
+<h3 id="signing_up_for_the_red_hat_developers_program"><a class="anchor" href="#signing_up_for_the_red_hat_developers_program"></a><a class="link" href="#signing_up_for_the_red_hat_developers_program">3.1. Signing up for the Red Hat Developers Program</a></h3>
+<div class="paragraph">
+<p>To start using Red&#160;Hat OpenShift.io, create a new Red Hat Developers (RHD) account or use an existing RHD or social media account.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Early access to the service is limited and will be allocated as resources become available. When you sign up, you are added to a waiting list. You are notified when access to the system is available.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <a href="https://openshift.io/">Red&#160;Hat OpenShift.io</a>.</p>
+</li>
+<li>
+<p>Click <b class="button">Sign Up For The Preview</b>. You can register using an existing social or Red Hat account.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>To register a new Red Hat account:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>At the Red&#160;Hat OpenShift.io Developer Preview page, click <b class="button">Register</b>.</p>
+</li>
+<li>
+<p>Enter your name, email address, company, and password in the appropriate fields.</p>
+</li>
+<li>
+<p>Select the terms and conditions check boxes.</p>
+</li>
+<li>
+<p>Click <b class="button">Create my account</b>.</p>
+</li>
+<li>
+<p>Verify your email address to complete registration.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>To register using your existing Red Hat account or a social account from services such as JBoss Developer, GitHub, Stack Overflow, LinkedIn, Twitter, Facebook, Google, or Microsoft:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Click the appropriate social account button.</p>
+</li>
+<li>
+<p>Add your login credentials for the selected service and authorize the creation of the account.</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="_related_information_2"><a class="anchor" href="#_related_information_2"></a><a class="link" href="#_related_information_2">3.1.1. Related Information</a></h4>
+<div class="paragraph">
+<p>The following links provide additional resources about accessing Red Hat&#8217;s offering for developers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://developers.redhat.com/articles/red-hat-developer-program-benefits/">Red Hat Developer Program Benefits</a></p>
+</li>
+<li>
+<p><a href="https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-suite">Red Hat Enterprise Linux Developer Suite</a></p>
+</li>
+<li>
+<p><a href="https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-workstation">Red Hat Enterprise Linux Developer Workstation</a></p>
+</li>
+<li>
+<p><a href="https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-support">Red Hat Enterprise Linux Developer Support</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="logging_into_red_hat_openshift_io"><a class="anchor" href="#logging_into_red_hat_openshift_io"></a><a class="link" href="#logging_into_red_hat_openshift_io">3.2. Logging into Red&#160;Hat OpenShift.io</a></h3>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Ensure that you have <a href="#signing_up_for_the_red_hat_developers_program">registered for a Red&#160;Hat Developer Program account</a>.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the <a href="https://openshift.io/">Red&#160;Hat OpenShift.io</a> website in a browser window.</p>
+</li>
+<li>
+<p>Click <b class="button">Log In</b> at the top of the OpenShift.io main page.</p>
+</li>
+<li>
+<p>Log in either manually (with your Red Hat Developers account) or using a social account:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Log in using your Red Hat account:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Enter your email address or Red Hat Developers Login ID and password.</p>
+</li>
+<li>
+<p>Click <b class="button">Log In</b>.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Log in using a social account:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Click the appropriate social account button from the listed options.</p>
+</li>
+<li>
+<p>Follow the instructions to allow the social account to log in.</p>
+</li>
+<li>
+<p>If asked, add information about yourself on the <strong>Additional Action Required</strong> page. If the provided email address already has an account, an option to link your social account with your Red Hat Developers account is available. An email arrives in the account to confirm linking the two accounts.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Select the check boxes to indicate agreement with the terms and conditions if required and click <b class="button">Submit</b>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="logging_out_of_red_hat_openshift_io"><a class="anchor" href="#logging_out_of_red_hat_openshift_io"></a><a class="link" href="#logging_out_of_red_hat_openshift_io">3.3. Logging out of Red&#160;Hat OpenShift.io</a></h3>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Ensure that you have logged in to the Red&#160;Hat OpenShift.io website.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click your name in the top right corner of the application. If the current page does not show the profile menu, navigate to the main page at <a href="https://openshift.io/">Red&#160;Hat OpenShift.io</a>.</p>
+</li>
+<li>
+<p>In the drop-down menu, click the <strong>Log Out</strong> option.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<h1 id="getting_started_with_openshift_io" class="sect0"><a class="anchor" href="#getting_started_with_openshift_io"></a><a class="link" href="#getting_started_with_openshift_io">Getting Started with OpenShift.io</a></h1>
+<div class="sect1">
+<h2 id="working_with_spaces"><a class="anchor" href="#working_with_spaces"></a><a class="link" href="#working_with_spaces">4. Working with spaces</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="about_spaces"><a class="anchor" href="#about_spaces"></a><a class="link" href="#about_spaces">4.1. About spaces</a></h3>
+<div class="paragraph">
+<p>Spaces are the equivalent of projects. Each <a href="#about_iterations">Iteration</a> and <a href="#about_work_items">Work Item</a> must be attached to a space, and a team of users can be assigned to a space for the appropriate roles. By default, a space contains one or more <a href="#about_areas">Areas</a> and Iterations.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating_a_new_space"><a class="anchor" href="#creating_a_new_space"></a><a class="link" href="#creating_a_new_space">4.2. Creating a new space</a></h3>
+<div class="paragraph">
+<p>To start working with a new project, create a new space. Each space includes a team of users in assigned roles as well as unique <a href="#about_work_items">Work Items</a> and <a href="#about_iterations">Iterations</a> used to manage the new project.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Ensure that you have <a href="#logging_into_red_hat_openshift_io">logged in to <a href="https://openshift.io/">Red&#160;Hat OpenShift.io</a></a>.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>On your <a href="https://openshift.io/">Red&#160;Hat OpenShift.io</a> home page, click your user name in the upper-left corner of the screen.</p>
+</li>
+<li>
+<p>Select <strong>Create space</strong> from the drop-down menu.</p>
+</li>
+<li>
+<p>In the <strong>Name</strong> field, add a unique name for the new space.</p>
+</li>
+<li>
+<p>From the <strong>Template</strong> drop-down list, select <strong>Scenario Driven Planning</strong>. This template creates spaces based on Scenarios, which are real-world problems from the user&#8217;s point of view. The Scenarios deliver Value Propositions and are realized through (user) Experiences.</p>
+</li>
+<li>
+<p>Click <b class="button">Create</b> to create your new space. The <strong>How would you like to get started?</strong> dialog box displays the following options:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><a href="#importing_existing_code">Import existing code</a></strong>: Import existing code into the new space and set up a continuous integration (CI) pipeline using OpenShift Online and Jenkins.</p>
+</li>
+<li>
+<p><strong><a href="#creating_a_new_quickstart_project">Create a new Quickstart project</a></strong>: Use wizards to automatically set up your development environment and quickly create projects by using the desired tools.</p>
+</li>
+<li>
+<p><b class="button">No thanks, take me to the new space dashboard</b>: Go to your new space dashboard to begin working in the space.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/new_space_dialog.png" alt="New space dialog box">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deleting_existing_space"><a class="anchor" href="#deleting_existing_space"></a><a class="link" href="#deleting_existing_space">4.3. Deleting an existing space</a></h3>
+<div class="paragraph">
+<p>If an OpenShift.io space is no longer required, delete it as follows:</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+When deleted, the space and all its contents (Work Items, Codebases, Workspaces, etc.) are also permanently deleted.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On your <a href="https://openshift.io/">Red&#160;Hat OpenShift.io</a> home page, click your user name in the upper-left corner of the screen.</p>
+</li>
+<li>
+<p>On the drop-down list, click  <strong>View all spaces</strong>.</p>
+</li>
+<li>
+<p>Click the (image:delete.png [Delete]) icon, the <strong>Remove Space</strong> dialog box is displayed asking for confirmation.</p>
+</li>
+<li>
+<p>Click <b class="button">Remove</b> to confirm and delete your space.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="configuring_a_codebase"><a class="anchor" href="#configuring_a_codebase"></a><a class="link" href="#configuring_a_codebase">4.4. Configuring a codebase</a></h3>
+<div class="paragraph">
+<p>After creating a space, you can add a codebase from GitHub and set up a pipeline to build the code.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Create a space. See <a href="#creating_a_new_space">Creating a new space</a> for instructions.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Analyze</strong> at the top of the screen to view the dashboard for your space.</p>
+</li>
+<li>
+<p>The <strong>Codebases</strong> section displays the following options:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If you already have codebases in your space, they are listed and you can use the <b class="button">+</b> icon at the upper-right of the section to import more codebases.</p>
+</li>
+<li>
+<p>If there are no codebases in your space, you can:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>use <b class="button">Add Codebase</b> to manually add a codebase.</p>
+</li>
+<li>
+<p>use <b class="button">Import Codebase</b> to add an existing codebase.</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="adding_a_codebase"><a class="anchor" href="#adding_a_codebase"></a><a class="link" href="#adding_a_codebase">4.4.1. Adding a codebase</a></h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <b class="button">Add Codebase</b>.</p>
+</li>
+<li>
+<p>In the <strong>How would you like to get started?</strong> dialog box, select one of the following options:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Import existing code</strong></p>
+</li>
+<li>
+<p><strong>Create a new Quickstart project</strong></p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/get_started_menu.png" alt="How would you like to get started menu">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect4">
+<h5 id="importing_existing_code"><a class="anchor" href="#importing_existing_code"></a><a class="link" href="#importing_existing_code">Importing existing code</a></h5>
+<div class="paragraph">
+<p>Use the OpenShift.io <strong>Application wizard</strong> to import an existing project codebase into OpenShift.io.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the <strong>GitHub Organization</strong> section, select your organization name from the <strong>Organization</strong> drop-down list. For this example, use the organization name assigned to your personal GitHub account.</p>
+</li>
+<li>
+<p>Click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <strong>GitHub Repositories</strong> section, select the repository to import into OpenShift.io from the <strong>Repository Name Pattern</strong> list, and then click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <strong>Configure Pipeline</strong> section:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select a build pipeline strategy. The default value <strong>Release, Stage, Approve and Promote</strong> is suitable for most use cases.</p>
+</li>
+<li>
+<p>Ensure that the <strong>Override Jenkins and POM files</strong> option is selected</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <strong>Build configuration</strong> section the <strong>Jenkins space</strong> field displays the name of your Jenkins space.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select <strong>Trigger build</strong> to trigger a build once your Application is deployed.</p>
+</li>
+<li>
+<p>Select <strong>Add continuous integration web hooks</strong> to add continuous integration web hooks to your Application.</p>
+<div class="paragraph">
+<p>Use the default options for these fields.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Click <b class="button">Finish</b>.</p>
+</li>
+<li>
+<p>The <strong>Summary</strong> section displays your selected options for the Application. Click <b class="button">Ok</b> to continue.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="creating_a_new_quickstart_project"><a class="anchor" href="#creating_a_new_quickstart_project"></a><a class="link" href="#creating_a_new_quickstart_project">Creating a new quickstart project</a></h5>
+<div class="paragraph">
+<p>Use the OpenShift.io Quickstart project wizard to create a new project from the available templates.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the <strong>Select Stack</strong> section, use the drop-down menu or click one of the displayed technology stack icons to select a project type and click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <strong>Define Project</strong> section:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select your organization from the <strong>Organization</strong> drop-down list. The drop-down lists the GitHub organizations where you are a member. A new repository for the Quickstart project will be created in the selected organization.</p>
+</li>
+<li>
+<p>In the <strong>OpenShift Project Name</strong> field, type a unique name for your project.</p>
+</li>
+<li>
+<p>Keep the default value for the <strong>Group Id</strong> and <strong>Version</strong> fields.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <strong>Configure Pipeline</strong> section, select a build pipeline strategy. The default value <strong>Release, Stage, Approve and Promote</strong> is suitable for most use cases.</p>
+</li>
+<li>
+<p>Click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>The <strong>Build configuration</strong> section displays the name of your <strong>Jenkins space</strong> and options to <strong>Trigger build</strong> and <strong>Add continuous integration web hooks</strong> when your application is deployed.
+Use the default options for these fields and click <b class="button">Finish</b>.</p>
+</li>
+<li>
+<p>The <strong>Summary</strong> section displays your selected options for the Application. Click <b class="button">Ok</b> to continue.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="importing_a_codebase"><a class="anchor" href="#importing_a_codebase"></a><a class="link" href="#importing_a_codebase">4.4.2. Importing a codebase</a></h4>
+<div class="paragraph">
+<p>Use the <strong>Import Codebase</strong> option to manually add the details for your existing codebase into OpenShift.io.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <b class="button">Import Codebase</b>.</p>
+</li>
+<li>
+<p>If required, in the <strong>Space Path</strong> field, change the path to your space.</p>
+</li>
+<li>
+<p>In the <strong>GitHub Repository</strong> field, add the GitHub repository path.</p>
+</li>
+<li>
+<p>Click <b class="button">Sync</b> to retrieve details for the repository. If the sync is successful, metadata for the added repository is displayed under the <b class="button">Sync</b> button.</p>
+</li>
+<li>
+<p>Click <b class="button">Associate Repository to Space</b> to add the repository to your space. The <span class="menuseq"><b class="menu">Create</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Codebases</b></span> sub-tab now displays your repository with information about when it was created and the last commit date.</p>
+</li>
+<li>
+<p>Click <strong>Create workspace</strong> for the target repository from the displayed list. A success message appears when the Workspace is successfully created in Eclipse Che.</p>
+</li>
+<li>
+<p>When your Workspace is ready, in the drop-down list, select the new Workspace for your repository, and then click <b class="button">Open</b>.</p>
+<div class="paragraph">
+<p>A new browser tab loads and displays the Eclipse Che Workspace with your repository codebase.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In case a new Workspace is not created, check and ensure that your browser allows pop-up windows from this page.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="working_with_collaborators"><a class="anchor" href="#working_with_collaborators"></a><a class="link" href="#working_with_collaborators">5. Working with Collaborators</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="about_collaborators"><a class="anchor" href="#about_collaborators"></a><a class="link" href="#about_collaborators">5.1. About Collaborators</a></h3>
+<div class="paragraph">
+<p><strong>Collaborators</strong> are members assigned to particular <a href="#about_work_items">Work Items</a> within a <a href="#about_spaces">space</a>. They are assigned tasks for the development project which are tracked using Work Items. You can add Collaborators to your space and then assign the relevant Work Items to them.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="adding_collaborators"><a class="anchor" href="#adding_collaborators"></a><a class="link" href="#adding_collaborators">5.2. Adding Collaborators</a></h3>
+<div class="paragraph">
+<p>You can add users as Collaborators to a space and then assign Work Items to each person.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p><a href="#creating_a_new_space">Create a new space</a> or select an existing space.</p>
+</li>
+<li>
+<p>Ensure that the target user has an OpenShift.io account.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>From your OpenShift.io dashboard, click the name of a space to view its dashboard.</p>
+</li>
+<li>
+<p>Click the <b class="button">Equalizer</b> button (<span class="image"><img src="topics/images/equalizer.png" alt="equalizer" title="Settings"></span>) at the top of the screen.</p>
+</li>
+<li>
+<p>Click <b class="button">Collaborators</b>.</p>
+</li>
+<li>
+<p>Click the blue plus (<strong>+</strong>) icon in the top right corner. The <strong>Add collaborators</strong> dialog box displays.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Click <b class="button">Select</b> and type a name in the text box to search for a user.</p>
+</li>
+<li>
+<p>From the displayed results, select the name of one or multiple users to add as Collaborators for your space.</p>
+</li>
+<li>
+<p>Click <strong>Add</strong> to add the selected users as collaborators.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="viewing_and_changing_collaborators"><a class="anchor" href="#viewing_and_changing_collaborators"></a><a class="link" href="#viewing_and_changing_collaborators">5.3. Viewing and changing collaborators</a></h3>
+<div class="paragraph">
+<p>After adding collaborators, you can view their details or remove them from your space.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Log in to <a href="https://openshift.io/">Red&#160;Hat OpenShift.io</a> with a valid user account. See <a href="#logging_into_red_hat_openshift_io">Logging into Red&#160;Hat OpenShift.io</a>.</p>
+</li>
+<li>
+<p><a href="#creating_a_new_space">Create a new space</a> or select an existing space.</p>
+</li>
+<li>
+<p>Ensure you have <a href="#adding_collaborators">added collaborators</a> to your space.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click the <strong>Equalizer</strong> button (<span class="image"><img src="topics/images/equalizer.png" alt="equalizer" title="Equalizer"></span>) at the top of the screen.</p>
+</li>
+<li>
+<p>Click the <strong>Collaborators</strong> tab.</p>
+</li>
+<li>
+<p>From the displayed list of collaborators on the <strong>Collaborators</strong> page, click the three dots next to the collaborator name.</p>
+</li>
+<li>
+<p>Either:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Select <strong>View user</strong> to view the collaborator details.</p>
+</li>
+<li>
+<p>Select <strong>Remove from space</strong> to remove them from the space.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="assigning_a_collaborator"><a class="anchor" href="#assigning_a_collaborator"></a><a class="link" href="#assigning_a_collaborator">5.4. Assigning a collaborator</a></h3>
+<div class="paragraph">
+<p>After adding Collaborators to your space, you can assign <a href="#about_work_items">Work Items</a> to them:</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Ensure that the user is <a href="#adding_collaborators">added as a Collaborator</a> to your space.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click the <strong>Plan</strong> tab to view a list of Work Items for your space.</p>
+</li>
+<li>
+<p>Double-click a Work Item to view its details.</p>
+</li>
+<li>
+<p>Click the <strong>Assignee</strong> text box for a drop-down search window. Type the name of a Collaborator in your space to assign them to this Work Item.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="working_with_work_items"><a class="anchor" href="#working_with_work_items"></a><a class="link" href="#working_with_work_items">6. Working with Work Items</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="about_work_items"><a class="anchor" href="#about_work_items"></a><a class="link" href="#about_work_items">6.1. About Work Items</a></h3>
+<div class="paragraph">
+<p><em>Work Items</em> (WI) are trackable and measurable units of work within a <a href="#about_spaces">space</a>. They are captured representations of work, and can be modified based on the requirements of the development project.</p>
+</div>
+<div class="paragraph">
+<p>Users can create and manage Work Items within a space using the <strong>Planner</strong>. Work Items track data such as ideas, user stories, bugs, and tasks. Work Items can be grouped and categorized into <a href="#about_areas">Areas</a> and <a href="#about_iterations">Iterations</a> to track progress and plan work.</p>
+</div>
+<div class="paragraph">
+<p>Work Items are assigned to users and their status is changed to indicate the progress of the Work Item. Link Work Items to each other based on their relationships, enabling users to plan the scope of work better. For example, you can link Work Item A as the parent of Work Item B, enabling you to prioritize and order your work.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Planner</strong> includes a set of predefined templates based on common planning methodologies such as <em>Scrum</em>, <em>Agile</em>, and <em>Scenario Driven Development</em>. These templates determine the structure and features of the included Work Item types and states that are available for a space.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating_a_new_work_item"><a class="anchor" href="#creating_a_new_work_item"></a><a class="link" href="#creating_a_new_work_item">6.2. Creating a new Work Item</a></h3>
+<div class="paragraph">
+<p>You can add <a href="#about_work_items">Work Items</a> to your space in one of several ways.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p><a href="#creating_a_new_space">Create a new space</a> or select an existing space.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="quick_add_work_item"><a class="anchor" href="#quick_add_work_item"></a><a class="link" href="#quick_add_work_item">6.2.1. Quick-Add a New Work Item</a></h4>
+<div class="paragraph">
+<p>You can use the quick-add method as an instant widget to add Work Items to your space:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <b class="button">Plan</b> to view the <strong>Planner</strong> for your space.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Either use the default <strong>Backlog</strong> view:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Click <b class="button">Create Work Item</b> at the bottom of the page.</p>
+</li>
+<li>
+<p>Add a title and description in the displayed fields.</p>
+</li>
+<li>
+<p>Click &#10003; to create the Work Item.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Or click <b class="button">Board</b> for the <strong>Board</strong> view:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>In the <strong>new</strong> column, click <b class="button">+</b>.</p>
+</li>
+<li>
+<p>In the displayed fields, select a Work Item type, add a title, and add a description for your new Work Item.</p>
+</li>
+<li>
+<p>Click &#10003; to create the Work Item.</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="using_backlog_to_create_work_item"><a class="anchor" href="#using_backlog_to_create_work_item"></a><a class="link" href="#using_backlog_to_create_work_item">6.2.2. Using the Backlog to Create a Work Item</a></h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <b class="button">Plan</b> in your space.</p>
+</li>
+<li>
+<p>Click <b class="button">Backlog</b> to view the Work Item backlog.</p>
+</li>
+<li>
+<p>Click <b class="button">Create</b>.</p>
+</li>
+<li>
+<p>Click the desired Work Item Type symbol.</p>
+</li>
+<li>
+<p>Add the title, <strong>Area</strong>, <strong>Iteration</strong>, <strong>Label</strong>, and <strong>Description</strong> for your new Work Item.</p>
+</li>
+<li>
+<p>Individually click &#10003; to save the changes for each field.</p>
+</li>
+<li>
+<p>Click <b class="button">X</b> at the top right corner of the screen after saving all changes.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The new Work Item now displays in the <strong>Backlog</strong> view.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="using_detailed_method_to_create_work_items"><a class="anchor" href="#using_detailed_method_to_create_work_items"></a><a class="link" href="#using_detailed_method_to_create_work_items">6.2.3. Using the Detailed Method to Create Work Items</a></h4>
+<div class="paragraph">
+<p>The detailed method requires adding more details for the Work Item compared to the quick-add method, which only requires basic information to create the Work Item.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <b class="button">Analyze</b> to view the space dashboard.</p>
+</li>
+<li>
+<p>In the <strong>My Work Items</strong> panel, click <b class="button">+</b>.</p>
+</li>
+<li>
+<p>Click the desired Work Item type.</p>
+</li>
+<li>
+<p>In the new Work Item form:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Add a title for the Work Item and click &#10003; or press <strong>Enter</strong> to save the new Work Item. This creates a new Work Item. You must save each of the subsequent changes to fields individually.</p>
+</li>
+<li>
+<p>Assign the Work Item to a Collaborator in the <strong>Assignees</strong> field. The assignee field for a new Work Item is empty as a default.</p>
+</li>
+<li>
+<p>Assign an <a href="#about_areas">Area</a> to the Work Item from the <strong>Area</strong> field drop-down list and click &#10003; to save the change. By default, the name of your workspace is set as the <em>Root Area</em> and is displayed as one of the options in the drop-down list.</p>
+</li>
+<li>
+<p>Assign a relevant <a href="#about_iterations">Iteration</a> to the Work Item from the <strong>Iteration</strong> drop-down list and click &#10003; to save. By default, the name of your workspace is set as the <em>Root Iteration</em> and is displayed as one of the options in the drop-down list.</p>
+</li>
+<li>
+<p>Click <b class="button">Add label</b> to add existing or new labels to your Work Item.</p>
+</li>
+<li>
+<p>Add a description for the Work Item in the <strong>Edit Text</strong> field and click &#10003; to save.</p>
+</li>
+<li>
+<p>Optionally, expand the <strong>Total links</strong> option to link to other related Work Items as follows:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Click the <b class="button">Create Link</b> button.</p>
+</li>
+<li>
+<p>Use the <b class="button">Select Link Type</b> drop-down menu to select the appropriate relationship between the current and new Work Item.</p>
+</li>
+<li>
+<p>Start typing the title or ID of a Work Item in the <strong>Search for work items</strong> field. Select one of the listed suggestions.</p>
+</li>
+<li>
+<p>Click <b class="button">Link</b> to save the relationship.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Optionally, expand the <strong>Comments</strong> option to add or see comments for your Work Item. Users can edit or delete their own comments.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>To close the new Work Item panel:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Ensure that all your changes are individually saved.</p>
+</li>
+<li>
+<p>Click <b class="button">x</b> at the top of the panel.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="working_with_an_existing_work_item"><a class="anchor" href="#working_with_an_existing_work_item"></a><a class="link" href="#working_with_an_existing_work_item">6.3. Working with an Existing Work Item</a></h3>
+<div class="paragraph">
+<p>Click <b class="button">Plan</b> to use the Planner to track your Work Items and Iterations using either the list view or the board view. The Planner contains two views:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <b class="button">Backlog</b> is the default Planner view. This view displays all Work Items in a flat or hierarchal view organized by Iterations and type. This view lists the active and future Iterations and their Work Items.</p>
+</li>
+<li>
+<p>Click <b class="button">Board</b> to see Work Items in a Kanban-based view. Each Work Item appears in the appropriate column depending on its current status. You can edit Work Items in this view and drag and drop them in the appropriate status column.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Use the Planner to change the attributes of a Work Item, associate them with Iterations, update their progress, and filter them according to your requirements.</p>
+</div>
+<div class="sect3">
+<h4 id="modifying_an_existing_work_item"><a class="anchor" href="#modifying_an_existing_work_item"></a><a class="link" href="#modifying_an_existing_work_item">6.3.1. Modifying an existing work item</a></h4>
+<div class="paragraph">
+<p>Modify an existing Work Item by double-clicking on it in the <strong>Backlog</strong> or <strong>Board</strong> view. Alternatively, click the icon (<span class="image"><img src="topics/images/kabob_white.png" alt="kabob white" title="Options"></span>) adjoining the Work Item and select <strong>Open</strong> from the displayed options. The detailed Work Item panel is displayed.</p>
+</div>
+<div class="paragraph">
+<p>You can modify the following Work Item attributes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Status</p>
+</li>
+<li>
+<p>Owner</p>
+</li>
+<li>
+<p>Area</p>
+</li>
+<li>
+<p>Iteration</p>
+</li>
+<li>
+<p>Label</p>
+</li>
+<li>
+<p>Description</p>
+</li>
+<li>
+<p>Relations with other Work Items</p>
+</li>
+<li>
+<p>Comments</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>See <a href="#using_detailed_method_to_create_work_items">Using the Detailed Method to Create Work Items</a> for more information on modifying the above attributes.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="associating_work_items_with_an_iteration"><a class="anchor" href="#associating_work_items_with_an_iteration"></a><a class="link" href="#associating_work_items_with_an_iteration">6.3.2. Associating Work Items with an Iteration</a></h4>
+<div class="paragraph">
+<p>To associate a Work Item with an Iteration:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <b class="button">Plan</b> to see the Planner for your space.</p>
+</li>
+<li>
+<p>Click the icon (<span class="image"><img src="topics/images/kabob_white.png" alt="kabob white" title="Options"></span>) adjoining the Work Item.</p>
+</li>
+<li>
+<p>From the displayed options, select <b class="button">Associate with Iteration</b>. The <strong>Associate with Iteration</strong> dialog box appears and displays which Iteration, if any, the Work Item is associated with.</p>
+</li>
+<li>
+<p>From the drop-down list, select an Iteration for your Work Item.</p>
+</li>
+<li>
+<p>Click <b class="button">Reassociate</b>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The Work Item is now associated with the selected Iteration.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ordering_and_monitoring_work_items"><a class="anchor" href="#ordering_and_monitoring_work_items"></a><a class="link" href="#ordering_and_monitoring_work_items">6.3.3. Ordering and Monitoring Work Items</a></h4>
+<div class="paragraph">
+<p>The <strong>Backlog</strong> displays a list view used to plan your work. You can order Work Items based on their priority, status, and other parameters to organize them.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Backlog</strong> displays the list of Work Items as a list where all the Work Items display in a single file.</p>
+</div>
+<div class="paragraph">
+<p>Click <b class="button">Plan</b> to view the Planner. You can order the Work Items in your space as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the <b class="button">Backlog</b> view, drag and drop a selected Work Item to reorder them. Alternatively, select <b class="button">Move to Top</b> or <b class="button">Move to Bottom</b> from the options (<span class="image"><img src="topics/images/kabob_white.png" alt="kabob white" title="Options"></span>) menu.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <b class="button">Board</b> view displays a visual representation of your Work Item progress. Based on their status, the Work Items are sorted into the <em>new</em>, <em>open</em>, <em>in progress</em>, <em>resolved</em>, or <em>closed</em> columns. Use this feature to track and update the status of Work Items as you progress through your task list.</p>
+</div>
+<div class="paragraph">
+<p>In the <b class="button">Board</b> view, you can drag and drop the selected Work Item to the relevant column based on the progress of the Work Item.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="filtering_work_items"><a class="anchor" href="#filtering_work_items"></a><a class="link" href="#filtering_work_items">6.3.4. Filtering Work Items</a></h4>
+<div class="paragraph">
+<p>Filter your Work Item view in the Planner as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click <b class="button">Plan</b> and then click either <b class="button">Backlog</b> or <b class="button">Board</b>.</p>
+</li>
+<li>
+<p>Use the <b class="button">Select</b> drop-down menu to select a Work Item attribute.</p>
+</li>
+<li>
+<p>Click the text box next to the <strong>Select</strong> option. This displays a list of potential filters.</p>
+</li>
+<li>
+<p>You can filter Work Items by <em>Assignee</em>, <em>Creator</em>, <em>Area</em>, <em>State</em>, and <em>Label</em>. Select the appropriate option from the drop down menu. The text box displays a list of valid options for the selected field.</p>
+</li>
+<li>
+<p>Select the appropriate option to filter the Work Items.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="working_with_areas"><a class="anchor" href="#working_with_areas"></a><a class="link" href="#working_with_areas">7. Working with Areas</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="about_areas"><a class="anchor" href="#about_areas"></a><a class="link" href="#about_areas">7.1. About areas</a></h3>
+<div class="paragraph">
+<p><strong>Areas</strong> can organize related <a href="#about_work_items">Work Items</a> into groups to distinguish between different types or functionalities that are worked on within a <a href="#about_spaces">space</a>.</p>
+</div>
+<div class="paragraph">
+<p>A space can also include areas. As an example, your space represents your software project, and each area tracks components attached to the space.</p>
+</div>
+<div class="paragraph">
+<p>Each area can have child areas which represent the sub-components for your software project.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating_a_new_area"><a class="anchor" href="#creating_a_new_area"></a><a class="link" href="#creating_a_new_area">7.2. Creating a New Area</a></h3>
+<div class="paragraph">
+<p>You can create a new child Area to group together related Work Items by type or functionality. When you create a new space, OpenShift.io automatically creates a root Area with the same name. Each additional Area within the space is created as a child of the root Area or another existing Area in the space.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Ensure you have <a href="#creating_a_new_space">created a space</a> to use.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>At the top of the page, click the <strong>Equalizer</strong> button (<span class="image"><img src="topics/images/equalizer.png" alt="equalizer" title="Settings"></span>) to display a list of Areas in your space.</p>
+</li>
+<li>
+<p>In the top right corner of the <strong>Areas</strong> view, click <b class="button">+ Add Areas</b>.</p>
+</li>
+<li>
+<p>In the <strong>Add New Area</strong> dialog box, add a name for your new Area and a parent Area.</p>
+</li>
+<li>
+<p>Click <b class="button">Create</b> to create the new child area.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Assigning_an_area"><a class="anchor" href="#Assigning_an_area"></a><a class="link" href="#Assigning_an_area">7.3. Assigning an Area to a Work Item</a></h3>
+<div class="paragraph">
+<p>You can group Work Items by type or functionality by assigning relevant Areas to the Work Items as follows:</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Ensure that the user is <a href="#adding_collaborators">added as a collaborator</a> to your space.</p>
+</li>
+<li>
+<p>Ensure that you have <a href="#creating_a_new_work_item">created a Work Item</a> for the space.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click the <b class="button">Plan</b> tab to view a list of Work Items for your space.</p>
+</li>
+<li>
+<p>Double-click a Work Item to view its details.</p>
+</li>
+<li>
+<p>Click the <strong>Area</strong> field to view a list of Areas to assign to the space. By default, your Root Area is assigned to a new Work Item.</p>
+</li>
+<li>
+<p>Select one of the existing Areas to assign to your Work Item.</p>
+</li>
+<li>
+<p>Click the check box to confirm the name of the Area.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="working_with_iterations"><a class="anchor" href="#working_with_iterations"></a><a class="link" href="#working_with_iterations">8. Working with Iterations</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="about_iterations"><a class="anchor" href="#about_iterations"></a><a class="link" href="#about_iterations">8.1. About Iterations</a></h3>
+<div class="paragraph">
+<p>Use Iterations to organize <a href="#about_work_items">Work Items</a> to plan and implement tasks for a development project. When used with Scrum, Iterations can be utilized to model Sprints.</p>
+</div>
+<div class="paragraph">
+<p>You can use the Planner to map your Work Items to Iterations to plan your work based on your project requirements. It enables you to set time-specific goals by grouping priority Work Items into a single development cycle. It also helps you track your progress for each Iteration and compare it with past Iterations and associated Work Items.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating_a_new_iteration"><a class="anchor" href="#creating_a_new_iteration"></a><a class="link" href="#creating_a_new_iteration">8.2. Creating a new iteration</a></h3>
+<div class="paragraph">
+<p>Add iterations to your space to plan and organize your Work Items. Click <b class="button">Plan</b> to view and modify existing Iterations and to add new Iterations.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Ensure you have <a href="#creating_a_new_space">created a space</a>.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <b class="button">Plan</b> to view the Planner.</p>
+</li>
+<li>
+<p>Click <b class="button">+</b> next to the <strong>All Iterations</strong> option.</p>
+</li>
+<li>
+<p>Enter a <strong>Name</strong> for your new Iteration.</p>
+</li>
+<li>
+<p>Optionally, create a parent-child link by selecting the parent Iteration from the <strong>Parent Iteration</strong> drop-down list.</p>
+</li>
+<li>
+<p>Add a <strong>Description</strong> for the new Iteration.</p>
+</li>
+<li>
+<p>Add a <strong>Start Date</strong> and <strong>End Date</strong> for your new Iteration.</p>
+</li>
+<li>
+<p>Toggle the <strong>Force Active</strong> switch to <em>ON</em> to force start the Iteration.</p>
+</li>
+<li>
+<p>Click <b class="button">Create</b> to create the new Iteration.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Your new Iteration appears under <strong>All Iterations</strong>. If you selected the <strong>Force Active</strong> option, your Iteration has started and appears under <strong>Active Iteration</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="selecting_an_iteration"><a class="anchor" href="#selecting_an_iteration"></a><a class="link" href="#selecting_an_iteration">8.3. Selecting an Iteration</a></h3>
+<div class="paragraph">
+<p>After logging in and selecting the appropriate space, click <b class="button">Plan</b> to view the Iterations for that space. Existing Iterations are grouped into one of the following categories:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Active Iteration</em> lists active Iterations.</p>
+</li>
+<li>
+<p><em>All Iterations</em> displays a list of all Iterations in the space. These include active and closed Iterations, as well as Iterations that have not yet started.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Select an Iteration listed in one of these groups to display the included Work Items. See <a href="#associating_work_items_with_an_iteration">Associating Work Items with an Iteration</a> for more information.</p>
+</div>
+<div class="sect3">
+<h4 id="_all_iterations"><a class="anchor" href="#_all_iterations"></a><a class="link" href="#_all_iterations">8.3.1. All Iterations</a></h4>
+<div class="paragraph">
+<p>After <a href="#creating_a_new_iteration">creating an Iteration</a>, the new Iteration displays in the <em>All Iterations</em> view.</p>
+</div>
+<div class="paragraph">
+<p>Select one of the following options after clicking the options (<span class="image"><img src="topics/images/kabob.png" alt="kabob" title="Options"></span>) icon for the target Iteration:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select <b class="button">Edit</b> to change the Iteration details.</p>
+</li>
+<li>
+<p>Select <b class="button">Close</b> to end your Iteration.</p>
+</li>
+<li>
+<p>Select <b class="button">Create Child</b> to create a child Iteration for the target Iteration.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_active_iteration"><a class="anchor" href="#_active_iteration"></a><a class="link" href="#_active_iteration">8.3.2. Active Iteration</a></h4>
+<div class="paragraph">
+<p>When an Iteration starts, it is added to the <em>Active Iteration</em> list. The <em>Active Iteration</em> list displays:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The start and end dates for the Iteration.</p>
+</li>
+<li>
+<p>A tracker to track the Iteration status based on the completion of the Work Items associated with it.</p>
+</li>
+<li>
+<p>The description of the Iteration.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To end an Iteration:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the options (<span class="image"><img src="topics/images/kabob.png" alt="kabob" title="Options"></span>) icon for the Iteration and select <b class="button">Close</b>.</p>
+</li>
+<li>
+<p>In the dialog box, click <b class="button">Close</b>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="working_with_pipelines"><a class="anchor" href="#working_with_pipelines"></a><a class="link" href="#working_with_pipelines">9. Working with Pipelines</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="about_pipelines"><a class="anchor" href="#about_pipelines"></a><a class="link" href="#about_pipelines">9.1. About Pipelines</a></h3>
+<div class="paragraph">
+<p>Pipelines are a continuous delivery system that test and deploy the code at each step to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements a different level of testing and deployment tasks, provides results, and then passes the code on to the next step.</p>
+</div>
+<div class="paragraph">
+<p>In OpenShift.io, you configure a pipeline build when creating or importing a project. The pipeline build is triggered when a Collaborator commits a change to the code repository.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating_a_new_pipeline"><a class="anchor" href="#creating_a_new_pipeline"></a><a class="link" href="#creating_a_new_pipeline">9.2. Creating a new pipeline</a></h3>
+<div class="paragraph">
+<p>To create a new pipeline for your space, you must add a new project to the space. OpenShift.io includes templates to add new projects to your space.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Ensure that you have created a space to use for the pipeline. See <a href="#creating_a_new_space">Creating a new space</a> for instructions.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click the name of a space to view the dashboard.</p>
+</li>
+<li>
+<p>Click <b class="button">Add to space</b>. The <strong>How would you like to get started?</strong> menu appears for your new space.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/get_started_menu.png" alt="How would you like to get started menu">
+</div>
+</div>
+</li>
+<li>
+<p>Click <b class="button">Create a new Quickstart project</b>.</p>
+</li>
+<li>
+<p>In the first step of the <strong>Application Wizard</strong>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select a Technology Stack from the listed tiles.</p>
+</li>
+<li>
+<p>Click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>From the options in the <strong>Organisation</strong> field, select an organization. For this example, use the organization name assigned to your personal GitHub account.</p>
+</li>
+<li>
+<p>In the <strong>OpenShift Project Name</strong> field, add a unique name for your project.</p>
+</li>
+<li>
+<p>Leave the default value for the <strong>Group Id</strong> and <strong>Version</strong> fields and click <b class="button">Next</b>.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Select a build pipeline strategy. For this example, use the default value (<strong>Release, Stage, Approve and Promote</strong>) and click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>The <strong>Build configuration</strong> screen displays the details for your <strong>Jenkins space</strong> and options for web hooks and triggering builds. Use the default options for these fields and click <b class="button">Finish</b>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>You have now added a Quickstart project to your space, which initiates a build pipeline for your new project. At this stage, OpenShift.io also adds your project pipeline into your OpenShift Online account and creates a new GitHub repository for your project.</p>
+</div>
+<div class="paragraph">
+<p>A confirmation screen appears, which includes a <strong>Git repositories</strong> link. Use this link to view your new project GitHub repository.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="staging_a_pipeline"><a class="anchor" href="#staging_a_pipeline"></a><a class="link" href="#staging_a_pipeline">9.3. Staging a Pipeline</a></h3>
+<div class="paragraph">
+<p>In a build pipeline, <em>Stage</em> and <em>Run</em> are individual OpenShift projects. <em>Stage</em> is a production staging area to review and test changes before they are finalized and staged on <em>Run</em>.</p>
+</div>
+<div class="paragraph">
+<p>The new build pipeline pushes version 1.0.1 of your new project into <em>Stage</em> and then, after user approval, to <em>Run</em>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/vertx_pipeline_running.png" alt="A Running Pipeline Build">
+</div>
+</div>
+<div class="paragraph">
+<p>Optionally, view the build pipeline details in OpenShift Online:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the <strong>Pipeline</strong> page, click <b class="button">Build #1</b> for the build pipeline in progress.</p>
+</li>
+<li>
+<p>When redirected, log into your OpenShift Online account.</p>
+</li>
+<li>
+<p>Click <b class="button">View Log</b> to view the Jenkins instance logs.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/oso_pipeline.png" alt="A Running Pipeline Build in OpenShift Online">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="configuring_pipelines"><a class="anchor" href="#configuring_pipelines"></a><a class="link" href="#configuring_pipelines">9.4. Configuring Pipelines</a></h3>
+<div class="paragraph">
+<p>Advanced users can change the settings for their project pipeline builds in OpenShift Online. For most users, we do not recommend changing the default values OpenShift.io sets up.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Prerequisites</div>
+<ol class="arabic">
+<li>
+<p>Ensure that you have created a build pipeline for your project. See <a href="#creating_a_new_pipeline">Creating a new pipeline</a> for instructions.</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Navigate to your space dashboard.</p>
+</li>
+<li>
+<p>Click <b class="button">Create</b>.</p>
+</li>
+<li>
+<p>Click <b class="button">Pipelines</b>. The <strong>Pipelines</strong> page lists all the pipeline builds for your project.</p>
+</li>
+<li>
+<p>Click <b class="button">Edit Pipeline</b> for the target pipeline build.</p>
+</li>
+<li>
+<p>Enter your OpenShift Online credentials when prompted. When successful, you are redirected to your OpenShift Online account Console.</p>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+OpenShift.io sets up the required default options for your pipeline build. We do not recommended changing these default settings.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>In this page, you can edit the following attributes for your build pipelines:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Use the <strong>Source Configuration</strong> section to edit your project Git Repository URL.</p>
+</li>
+<li>
+<p>Use the <strong>Jenkinsfile Type</strong> option to select the source of your Jenkinsfile for the build.</p>
+</li>
+<li>
+<p>Use the <strong>Jenkinsfile Source Path</strong> option to provide a relative path to your Jenkinsfile.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>When ready, click <b class="button">Save</b> to save your changes.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="viewing_the_pipeline_projects_in_oso"><a class="anchor" href="#viewing_the_pipeline_projects_in_oso"></a><a class="link" href="#viewing_the_pipeline_projects_in_oso">9.5. Viewing the Pipeline Projects in OpenShift Online</a></h3>
+<div class="paragraph">
+<p>To view the OpenShift Online projects that support your project pipeline, navigate to <a href="https://console.starter-us-east-2.openshift.com/">console.starter-us-east-2.openshift.com</a>. This page displays the following projects (or namespaces) that are created in OpenShift Online:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <em>username</em> project is where your pipelines run. This project name is your OpenShift Online user name.</p>
+</li>
+<li>
+<p>The <em>username-che</em> project is for your Che Host and workspaces.</p>
+</li>
+<li>
+<p>The <em>username-jenkins</em> project runs your Jenkins Master or your Jenkins Slaves. Click <b class="button">Monitoring</b> after clicking this project to access your Jenkins console.</p>
+</li>
+<li>
+<p>The <em>username-stage</em> project is for your personal use. In this project, pods display as running or previously run pipelines. For maintenance, click this project and power down individual pods as required.</p>
+</li>
+<li>
+<p>The <em>username-run</em> project is identical to the <em>username-stage</em> project and is an environment for experimenting with your OpenShift pods.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="working_with_stack_reports"><a class="anchor" href="#working_with_stack_reports"></a><a class="link" href="#working_with_stack_reports">10. Working with Stack Reports</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="about_stack_reports"><a class="anchor" href="#about_stack_reports"></a><a class="link" href="#about_stack_reports">10.1. About Stack Reports</a></h3>
+<div class="paragraph">
+<p>OpenShift.io analyzes the health of your entire stack and its component libraries and provides recommendations to help you use relevant application components for your stack in the form of a stack report. The stack report enables you to make informed decisions on the choice of open source components, augment your development stack, and reduce the risk to your organization.</p>
+</div>
+<div class="paragraph">
+<p>The OpenShift.io analytics stack report provides you information about:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The components comprising your stack</p>
+</li>
+<li>
+<p>Security issues and version incompatibilities</p>
+</li>
+<li>
+<p>Popularity of the components used in the stack</p>
+</li>
+<li>
+<p>The purpose or tags associated with the components</p>
+</li>
+<li>
+<p>License conflicts at the stack and component level</p>
+</li>
+<li>
+<p>Outlier application components in your stack</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Based on the analyses it recommends:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Additional application components that match or better suit your stack by comparing with similar stacks.</p>
+</li>
+<li>
+<p>Alternative components to replace existing components in case of license conflicts, security issues, compatibility with the rest of your stack, and so on.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Based on these recommendations, you can create work items and <a href="#working_with_an_existing_work_item">follow through in the Planner</a> to update your stack as required.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="using_stack_report"><a class="anchor" href="#using_stack_report"></a><a class="link" href="#using_stack_report">10.2. Using your Stack Report</a></h3>
+<div class="paragraph">
+<p>OpenShift.io Analytics helps you make informed choices with respect to your development stack and its component libraries by analyzing your stack at the development stage, within your IDE, and at the deployment stage.</p>
+</div>
+<div class="sect3">
+<h4 id="_development_stage"><a class="anchor" href="#_development_stage"></a><a class="link" href="#_development_stage">10.2.1. Development Stage</a></h4>
+<div class="paragraph">
+<p>OpenShift.io Analytics analyzes your stack at the development stage and flags components with security vulnerabilities in your Che workspace. It also recommends a secure, alternate version for your stack.</p>
+</div>
+<div class="paragraph">
+<div class="title">Prerequisite</div>
+<p>Ensure that you use <a href="e2e_workshop.html#creating_che_workspace-hello-world">Che workspace</a> to develop an application.</p>
+</div>
+<div class="paragraph">
+<div class="title">Procedure</div>
+<p>You can access inputs from OpenShift.io Analytics within the Che IDE as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In your Che workspace, open the manifest file of your project, for example, <code>pom.xml</code> for a Maven Stack, <code>package.json</code> for NPM, or <code>requirements.txt</code> for Python. OpenShift.io analyzes the stack, flags (<span class="image"><img src="topics/images/che_cve_issue.png" alt="che cve issue" title="CVE Flag"></span>) components with security vulnerabilities, and recommends an alternate secure version.</p>
+</li>
+<li>
+<p>Mouse hover the flagged component to see the CVE for the flagged component and the recommended alternate version.</p>
+<div class="imageblock">
+<div class="content">
+<img src="topics/images/che_alt_recommendations.png" alt="Stack Recommendations on Che">
+</div>
+</div>
+</li>
+<li>
+<p>Update the component to the recommended version.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_deployment_stage"><a class="anchor" href="#_deployment_stage"></a><a class="link" href="#_deployment_stage">10.2.2. Deployment Stage</a></h4>
+<div class="paragraph">
+<p>At the Deployment stage, OpenShift.io Analytics analyzes your stack and provides a detailed stack analysis report. It analyzes various parameters of your stack components and recommends alternative and additional components suitable for your stack.</p>
+</div>
+<div class="paragraph">
+<div class="title">Prerequisites</div>
+<p>Ensure that you deploy your project and <a href="#creating_a_new_pipeline">create a build pipeline</a> for your project.</p>
+</div>
+<div class="ulist">
+<div class="title">Procedure</div>
+<ul>
+<li>
+<p>In the <strong>Stack Report Recommendations</strong> section of your space dashboard, click <strong>Show complete stack report</strong> to access the detailed stack report for your manifest files.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Alternatively, you can access your stack report as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <strong>Create</strong> and then <strong>Pipelines</strong> to view the pipeline builds for your project.</p>
+</li>
+<li>
+<p>Click <strong>Stack Report</strong> to see the stack and component level analyses for your project.</p>
+<div class="paragraph">
+<p>The report displays:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Stack report:</strong> A synopsis of the stack&#8217;s analysis report.</p>
+</li>
+<li>
+<p><strong>Detail analysis of your stack components:</strong> A list of all the stack components and their various parameters, including recommendations of alternate components in case of license outliers or usage outliers.</p>
+</li>
+<li>
+<p><strong>Additional components recommended by OpenShift.io:</strong> A list of additional components commonly used by similar stacks.</p>
+<div class="paragraph">
+<p>See <a href="#interpreting_stack_report">Interpreting your stack report</a> section for further details.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Filter the <strong>Detail analysis of your stack components</strong> list to see:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Usage Outliers (<span class="image"><img src="topics/images/usage_outlier.png" alt="usage outlier" title="Usage Outlier"></span>)</p>
+</li>
+<li>
+<p>Security Issues (<span class="image"><img src="topics/images/security_issues.png" alt="security issues" title="Security Issues"></span>)</p>
+</li>
+<li>
+<p>Alternate Components (<span class="image"><img src="topics/images/alternate_component.png" alt="alternate component" title="Alternate Components"></span>)</p>
+</li>
+<li>
+<p>Grouped Components (<span class="image"><img src="topics/images/alternate_component.png" alt="alternate component" title="Alternate Components"></span>)</p>
+</li>
+<li>
+<p>License Outliers (<span class="image"><img src="topics/images/license_outlier.png" alt="license outlier" title="License Outliers"></span>)</p>
+</li>
+<li>
+<p>Unknown Licenses (<span class="image"><img src="topics/images/license_unknown.png" alt="license unknown" title="Unknown Licenses"></span>)</p>
+</li>
+<li>
+<p>License conflict in a Component (<span class="image"><img src="topics/images/license_conflicts.png" alt="license conflicts" title="License Conflicts"></span>)</p>
+<div class="paragraph">
+<p>Note that OpenShift.io recommends <strong>Alternate Components</strong> for your stack if it identifies license or usage outliers.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>In the <strong>Action</strong> column adjacent to the recommended alternate or additional components, click <strong>Create Work Item</strong> to create a work item in the OpenShift.io Planner and <a href="#working_with_an_existing_work_item">follow through</a> on the recommendations.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="interpreting_stack_report"><a class="anchor" href="#interpreting_stack_report"></a><a class="link" href="#interpreting_stack_report">10.3. Interpreting your stack report</a></h3>
+<div class="paragraph">
+<p>The OpenShift.io analytics report comprises three components:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_stack_summary">Stack summary</a></p>
+</li>
+<li>
+<p><a href="#_detailed_analysis_of_your_stack_components">Detailed analysis of your stack components</a></p>
+</li>
+<li>
+<p><a href="#_additional_components_recommended_by_openshift_io">Additional components recommended by OpenShift.io</a></p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_stack_summary"><a class="anchor" href="#_stack_summary"></a><a class="link" href="#_stack_summary">10.3.1. Stack summary</a></h4>
+<div class="paragraph">
+<p>The Stack summary provides a synopsis of the analysis report.</p>
+</div>
+<div class="paragraph">
+<p>It displays:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Security Issues</dt>
+<dd>
+<p>OpenShift.io analytics examines Common Vulnerabilities and Exposures (CVEs) of the components in the stack and highlights vulnerabilities, if any.</p>
+</dd>
+<dt class="hdlist1">Usage Outliers</dt>
+<dd>
+<p>OpenShift.io analytics analyzes your overall stack composition, compares it to other similar stacks, and displays the number of components in your stack that are not commonly used in similar stacks or that rarely go together.</p>
+</dd>
+<dt class="hdlist1">Licenses</dt>
+<dd>
+<p>OpenShift.io analytics analyzes the licenses used in your stack, and displays the number of unknown licenses. It also displays the number of license conflicts in your stack.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_detailed_analysis_of_your_stack_components"><a class="anchor" href="#_detailed_analysis_of_your_stack_components"></a><a class="link" href="#_detailed_analysis_of_your_stack_components">10.3.2. Detailed analysis of your stack components</a></h4>
+<div class="paragraph">
+<p>The detailed component analysis helps you assess the credibility of your stack components.</p>
+</div>
+<div class="paragraph">
+<p>It provides recommendations for relevant alternate components by analyzing all the components in the stack and their parameters such as:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Versions</dt>
+<dd>
+<p>The detailed analysis report lists current, recommended, and latest available versions of the components in your stack, so that you can select a suitable version for your stack.</p>
+</dd>
+<dt class="hdlist1">Security Issue</dt>
+<dd>
+<p>Based on the CVEs of the stack components, OpenShift.io Analytics identifies security vulnerabilities in your stack components. The CVE scores are displayed when you move the mouse pointer over components identified with security vulnerabilities.</p>
+</dd>
+<dt class="hdlist1">License</dt>
+<dd>
+<p>The detailed analysis report lists licenses for each component, flags unknown and conflicting licenses, and recommends <strong>Alternate Components</strong> in case of <strong>License Outliers</strong>.</p>
+</dd>
+<dt class="hdlist1">OSIO Usage</dt>
+<dd>
+<p>The detailed analysis report tracks the number of projects in OpenShift.io that use the same component. It recommends <strong>Alternate Components</strong> in case of <strong>Usage Outliers</strong>.</p>
+</dd>
+<dt class="hdlist1">GitHub Statistics</dt>
+<dd>
+<p>OpenShift.io analytics tracks GitHub statistics, such as <strong>Usage Count</strong> and number of <strong>Watchers</strong> for the components of your stack.</p>
+</dd>
+<dt class="hdlist1">GitHub Dependents</dt>
+<dd>
+<p>The detailed analysis report  lists all the projects dependent on this component.</p>
+</dd>
+<dt class="hdlist1">Tags</dt>
+<dd>
+<p>The detailed analysis report lists the tags associated with the components of your stack.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>You can filter the detailed component analysis report to highlight:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Usage Outliers (<span class="image"><img src="topics/images/usage_outlier.png" alt="usage outlier" title="Usage Outlier"></span>)</p>
+</li>
+<li>
+<p>Security Issues (<span class="image"><img src="topics/images/security_issues.png" alt="security issues" title="Security Issues"></span>)</p>
+</li>
+<li>
+<p>Alternate Components (<span class="image"><img src="topics/images/alternate_component.png" alt="alternate component" title="Alternate Components"></span>)</p>
+</li>
+<li>
+<p>Grouped Components (<span class="image"><img src="topics/images/alternate_component.png" alt="alternate component" title="Alternate Components"></span>)</p>
+</li>
+<li>
+<p>License Outliers (<span class="image"><img src="topics/images/license_outlier.png" alt="license outlier" title="License Outliers"></span>)</p>
+</li>
+<li>
+<p>Unknown Licenses (<span class="image"><img src="topics/images/license_unknown.png" alt="license unknown" title="Unknown Licenses"></span>)</p>
+</li>
+<li>
+<p>License conflict in a Component (<span class="image"><img src="topics/images/license_conflicts.png" alt="license conflicts" title="License Conflicts"></span>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_additional_components_recommended_by_openshift_io"><a class="anchor" href="#_additional_components_recommended_by_openshift_io"></a><a class="link" href="#_additional_components_recommended_by_openshift_io">10.3.3. Additional components recommended by OpenShift.io</a></h4>
+<div class="paragraph">
+<p>OpenShift.io recommends additional components suitable for your stack based on its analysis of similar open source stacks. These components are commonly used by similar stacks and augment your stack. It also displays various parameters relevant to the components, so that you can assess their credibility and make informed choices on adding them to your stack.</p>
+</div>
+<div class="paragraph">
+<p>To add the recommended component to your stack, click <strong>Create work item</strong> adjacent to the recommended alternate or additional component.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="glossary"><a class="anchor" href="#glossary"></a><a class="link" href="#glossary">Glossary</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This glossary provides concise definitions of terms and explanations of concepts used in Red Hat OpenShift.io and in related documentation.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">alternate component</dt>
+<dd>
+<p>Components recommended by OpenShift.io to replace license or usage outliers.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">area</dt>
+<dd>
+<p>Use areas to organize work items to distinguish between different types or functionalities that are being worked on within a space.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">backlog</dt>
+<dd>
+<p>A backlog is a list of work items that have not been triaged and assigned to a specific iteration.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">bug</dt>
+<dd>
+<p>Defect that causes unexpected behavior in the software. It needs to be fixed to ensure that the software behaves as expected.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">experience</dt>
+<dd>
+<p>Experience describes the envisioned user experience in the product to actualize a parent work item. Each parent work item can have multiple experiences.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">feature</dt>
+<dd>
+<p>A feature is a detailed user-story that helps actualize parent experiences. It can support multiple experiences and is generally achievable within a sprint.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">fundamental</dt>
+<dd>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">iteration</dt>
+<dd>
+<p>An iteration is used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">license conflict</dt>
+<dd>
+<p>Licenses that conflict at the stack or component level.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">license outlier</dt>
+<dd>
+<p>Licenses in your stack that are not commonly used in similar stacks or that rarely go together.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">papercuts</dt>
+<dd>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">pipeline</dt>
+<dd>
+<p>Pipelines are a continuous delivery system that, at each step, tests and deploys the code to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements different levels of testing and deployment tasks, provides results, and then passes the code on to the next step.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">scenario</dt>
+<dd>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">scenario-driven planning</dt>
+<dd>
+<p>A software development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">security issue</dt>
+<dd>
+<p>OpenShift.io analyzes the CVEs of all your components and flags components that have security vulnerabilities.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">space</dt>
+<dd>
+<p>A space is the equivalent of a project. Each iteration and work item must be attached to a space, and a team of people can be attached to a space in various roles. By default, a space contains at least one area and one iteration.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">task</dt>
+<dd>
+<p>Actual work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">unknown license</dt>
+<dd>
+<p>Licenses unknown to OpenShift.io.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">usage outlier</dt>
+<dd>
+<p>Components of your software stack that are not commonly used in similar open source stacks or that rarely go together.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">value proposition</dt>
+<dd>
+<p>Work item type that states the value provided to the user by addressing a parent work item. Each parent work item can have multiple value propositions.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">work item</dt>
+<dd>
+<p>Work items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each work item must be attached to a space and an area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">workspace</dt>
+<dd>
+<p>Workspaces are fully configured web-based development environments suitable for your code and runtime needs. They are runtime environments where you can modify, test, debug, or run your code.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-2 col-md-2 logo">
+        <a href="https://www.redhat.com/" target="top"></a>
+      </div>
+      <div class="col-xs-10 col-md-10 footer-content">
+        <span class="conditions">
+          <a href="https://www.redhat.com">Copyright &copy;2017 Red Hat, Inc.</a>
+          <a class="legal" href="https://www.redhat.com/en/about/privacy-policy" target="top">Privacy Statement</a>
+          <a class="legal" href="http://www.redhat.com/en/about/terms-use" target="top">Terms of Use</a>
+          <a href="http://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International License</a>
+        </span>
+        <span class="summit">
+          <a href="https://www.facebook.com/RedHatDeveloperProgram" target="top">
+            <i class="fa fa-facebook fa-lg"></i>
+          </a>
+          <a href="https://twitter.com/rhdevelopers" target="top">
+            <i class="fa fa-twitter fa-lg"></i>
+          </a>
+        </span>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+</body>
+</html>
