@@ -8,13 +8,9 @@ include::modules/about-analytics-integration-api-guide.adoc[leveloffset=+1]
 
 include::modules/getting-osio-authentication-token.adoc[leveloffset=+1]
 
+[id="start_using_analytics_APIs"]
+= Using analytics APIs
 
-[id="case_studies"]
-= Case studies
-
-include::modules/api-usage-examples.adoc[leveloffset=+1]
-
-[id="api_specifications"]
-= API specifications
+include::api-usage-examples.adoc[leveloffset=+1]
 
 include::api-specifications.adoc[leveloffset=+1]
