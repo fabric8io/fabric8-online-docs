@@ -1,11 +1,9 @@
 [id="working_with_an_existing_work_item"]
 = Working with an existing work item
 
-Click btn:[Plan] to use the Planner to track your work items and iterations using either the list view or the board view. The Planner contains two views:
+Click btn:[Plan] to use the Planner to track your work items and iterations using the list view.
 
 * The btn:[Backlog] is the default Planner view. This view displays all work items in a flat or hierarchal view organized by iterations and type. This view lists the active and future iterations and their work items.
-
-* Click btn:[Board] to see work items in a Kanban-based view. Each work item appears in the appropriate column depending on its current status. You can edit work items in this view and drag and drop them in the appropriate status column.
 
 Use the Planner to change the attributes of a work item, associate them with iterations, update their progress, and filter them according to your requirements.
 

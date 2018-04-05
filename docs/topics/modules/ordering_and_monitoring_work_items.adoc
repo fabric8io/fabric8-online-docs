@@ -9,6 +9,3 @@ Click btn:[Plan] to view the Planner. You can order the work items in your space
 
 * In the btn:[Backlog] view, drag and drop a selected work item to reorder them. Alternatively, select btn:[Move to Top] or btn:[Move to Bottom] from the options (image:kabob_white.png[title="Options"]) menu.
 
-The btn:[Board] view displays a visual representation of your work item progress. Based on their status, the work items are sorted into the _new_, _open_, _in progress_, _resolved_, or _closed_ columns. Use this feature to track and update the status of work items as you progress through your task list.
-
-In the btn:[Board] view, you can drag and drop the selected work item to the relevant column based on the progress of the work item.
