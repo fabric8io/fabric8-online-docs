@@ -1,0 +1,22 @@
+[id="getting_osio_authentication"]
+= Getting OpenShift.io authentication token
+
+You require an {osio} authentication token to invoke all Fabric8-Analytics API resources.
+
+Get the {osio} authentication token as follows:
+
+. Log into link:https://openshift.io[{osio}].
+. On your OpenShift.io home page, click your name on the top right corner of the screen to see the drop-down list.
+. Select *Profile* from the list to see your profile page.
++
+image::ig_user_profile.png[user profile]
++
+. Click btn:[Update Profile] to edit your profile.
++
+image::ig_update_profile.png[update profile]
++
+. In the *Edit Profile* page, scroll down to the *Advanced* section and copy your *Personal Access Token*.
++
+image::ig_access_token.png[access token]
+
+You can now use this token in the various API resources mentioned below.
