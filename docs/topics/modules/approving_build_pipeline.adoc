@@ -16,16 +16,8 @@ image::rollout_stage.png[Rollout to stage]
 +
 image::vertx_stage.png[Test the Application]
 +
-[WARNING]
-====
-[.lead]
-Troubleshooting information
-
-If the new tab displays a *Application is not available* error message (see screen capture), the application is not yet ready. After several minutes, refresh the page and the application loads as expected.
-
-image::app_doesnt_exist.png[Application Does Not Exist Error]
-====
-
+NOTE: If the application does not load, see <<application_not_available>> for troubleshooting information.
++
 . In the application, enter a name in the *Name* field and click btn:[Invoke] to test the application. The *Result* field displays the JSON result returning
 from the API.
 +

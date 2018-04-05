@@ -5,9 +5,7 @@ The stack report provides a detailed analysis of your stack and it dependencies 
 
 Click each of the cards to see detailed information about the following four key aspects relevant to your stack:
 
-+
 image::detailed_stackreport.png[Detailed Stack Report]
-+
 
 * <<Security Issues>>
 * <<Licenses>>

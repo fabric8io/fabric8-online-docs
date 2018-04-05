@@ -33,4 +33,3 @@ include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
 
 include::modules/reviewing_publishing_changes.adoc[leveloffset=+1]
 
-include::modules/closing_workitem.adoc[leveloffset=+1]

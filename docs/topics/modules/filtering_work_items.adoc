@@ -3,7 +3,7 @@
 
 Filter your work item view in the Planner as follows:
 
-* Click btn:[Plan] and then click either btn:[Backlog] or btn:[Board].
+* Click btn:[Plan] and then click btn:[Backlog].
 
 * Use the btn:[Select] drop-down menu to select a work item attribute.
 

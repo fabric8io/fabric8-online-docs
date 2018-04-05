@@ -1,0 +1,10 @@
+[id="application_not_available"]
+= Application not available error
+
+When you click *Rollout to Stage* or *Rollout to Run*, a new browser tab displays your application.
+
+If the new tab displays a *Application is not available* error message (see screen capture), the application is not yet ready. 
+
+image::app_doesnt_exist.png[Application Does Not Exist Error]
+
+To fix this issue, wait several minutes and then refresh the page. The application then loads as expected.
