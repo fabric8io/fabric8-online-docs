@@ -1,0 +1,18 @@
+[id="about_analytics_integration_api_guide"]
+= About Analytics integration API Guide
+
+Fabric8-Analytics is an open source analytics platform aimed primarily at assisting developers in getting insights and recommendations on the stacks used for developing applications. This platform can be used to get an overview and recommendations for single application components as well.
+
+The Analytics integration API guide is written for developers who are interested in integrating https://github.com/fabric8-analytics/[Fabric8-Analytics] _stack-analyses_ or _component-analyses_ services within their applications.
+
+The integration guide provides two examples, which describe its usage and describes the other API resources you can call to use Fabric8-Analytics.
+
+== Supported ecosystems
+
+Fabric8-Analytics _stack-analyses_ currently analyzes application stacks of the following ecosystems:
+
+. Python PyPI
+. Maven Spring Boot
+. Maven Vert.x
+
+Support for more ecosystems will be introduced in the near future.

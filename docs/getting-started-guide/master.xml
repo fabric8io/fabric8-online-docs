@@ -1,0 +1,2698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc maxdepth="3"?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>OpenShift.io Getting Started Guide</title>
+<date>2018-02-20 12:57:36 IST</date>
+<author>
+<personname>
+<firstname>Red&#160;Hat</firstname>
+<othername>Developers</othername>
+<surname>Documentation Team</surname>
+</personname>
+<email>openshiftio@redhat.com</email>
+</author>
+<authorinitials>RDD</authorinitials>
+</info>
+<preface>
+<title></title>
+<simpara>The guide shows how to get up to speed using Red Hat OpenShift.io. The main focus is on documenting the demo user stories that are used to onboard new users to the platform.</simpara>
+</preface>
+<part xml:id="before_you_start">
+<title>Before you start</title>
+<chapter xml:id="introduction">
+<title>Introduction</title>
+<simpara>Thank you for your interest in the OpenShift.io Early Access Program and providing us feedback during this pre-beta phase of development! The purpose of this document is to guide you
+through your first experiences with OpenShift.io. Within minutes you will have an application running in the cloud and shortly thereafter you will have customized and then deployed a new version of that application.</simpara>
+<simpara>As a member of the Early Access Program, approach OpenShift.io with a willingness for adventure. The service is pre-beta quality. Updates and changes to the system are delivered
+continuously, often dozens of times each day. Consequently, features and elements of the user interface change often and, yes, sometimes bugs are a part of that delivery&#8201;&#8212;&#8201;bugs which can, at times, be severe and take the entire system offline. However, as part of our continuous delivery model, everyone who pushes a change out to the live system assumes responsibility for the impact of that change, so even the severe bugs are addressed quickly. A more important aspect of the Early Access Program is to get your feedback. Tell us what you like, what you hate, what you wish you could do, what you wish the service would stop doing, etc. Everything is fair game. See the <xref linkend="providing-product-feedback"/> section for information on how to contact us.</simpara>
+<simpara>If your OpenShift.io environment gets into a state where you are finding it difficult or impossible to move forward, please refer to the <xref linkend="cleaning_oso_account"/> section of this document for information on how to factory reset your OpenShift.io (and OpenShift Online) environment. Welcome to the world of OpenShift.io&#8201;&#8212;&#8201;we hope you enjoy your experience and look forward to hearing your feedback!</simpara>
+<section xml:id="about-this-document">
+<title>About this document</title>
+<simpara>The purpose of this getting started guide is to walk you through your initial set up of OpenShift.io and quickly expose you to some key functionality in OpenShift.io. If this document is successful, the majority of first time OpenShift.io users will have a custom, albeit simple, application running on the internet in under one hour.</simpara>
+</section>
+</chapter>
+<chapter xml:id="getting-support">
+<title>Getting support</title>
+<simpara>For Red Hat, an important aspect of the Early Access Program is to get feedback from users. Tell us what you like, what you hate, what you wish you could do, what you wish the service would stop doing, and anything else that you think we should know as we work on improving OpenShift.io.</simpara>
+<section xml:id="asking-questions-about-the-product">
+<title>Asking questions about the product</title>
+<simpara>The OpenShift.io support chat channel is the best way to ask questions or get immediate support for OpenShift.io at any time. We encourage users to ask us questions and get immediate answers and assistance rather than spend their time debugging or troubleshooting problems themselves.</simpara>
+<simpara>If you don&#8217;t already have a MatterMost account:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Navigate to <link xl:href="https://chat.openshift.io">https://chat.openshift.io</link> and click <emphasis role="strong">Create one now</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/mm_create_account.png"/>
+</imageobject>
+<textobject><phrase>Create an account</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Add your details and click <guibutton>Create Account</guibutton> to register.</simpara>
+</listitem>
+<listitem>
+<simpara>In your email inbox, click the <guibutton>Verify Email</guibutton> link.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/mm_verify_email.png"/>
+</imageobject>
+<textobject><phrase>Verify email</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Sign in when prompted. When asked, select <emphasis role="strong">Developers</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/mm_teams.png"/>
+</imageobject>
+<textobject><phrase>Select team</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>MatterMost offers an optional tutorial for new users, which you can skip. Click <emphasis role="strong">Skip tutorial</emphasis> to continue.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/mm_tutorial.png"/>
+</imageobject>
+<textobject><phrase>Skip tutorial</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>You are redirected to the <emphasis role="strong">#openshiftio</emphasis> channel.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/mm_main_view.png"/>
+</imageobject>
+<textobject><phrase>Main view</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Ask a specific person your question or start with <literal>@here</literal> to tag everyone present in the channel.</simpara>
+</listitem>
+</orderedlist>
+<simpara>In the future, navigate to <link xl:href="https://chat.openshift.io">https://chat.openshift.io</link> to view the OpenShift.io MatterMost channel.</simpara>
+<simpara>If you prefer to use IRC, the OpenShift.io team is also available in the <emphasis role="strong">#openshiftio</emphasis> channel on Freenode.</simpara>
+</section>
+<section xml:id="providing-product-feedback">
+<title>Send us feedback about the product</title>
+<simpara>To give the OpenShift.io team feedback, navigate to <link xl:href="https://github.com/openshiftio/openshift.io/issues">create an issue</link> and send us a description of the problem with the necessary details, including screenshots if necessary. You can also search for related issues at this link. When logged, the OpenShift.io team triages and adds tags and other information to your issue.</simpara>
+<simpara>If you prefer to send us feedback via email, send us the details at <link xl:href="mailto:openshiftio@redhat.com">openshiftio@redhat.com</link>.</simpara>
+</section>
+<section xml:id="providing-documentation-feedback">
+<title>Send us feedback about the documentation</title>
+<simpara>The documentation team welcomes all feedback or requests for information that is helpful to you but isn&#8217;t covered.</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Is there anything we can do to improve the documentation?</simpara>
+</listitem>
+<listitem>
+<simpara>Was a part of the documentation not useful for you?</simpara>
+</listitem>
+<listitem>
+<simpara>Is there anything we did not document that you want to do with OpenShift.io?</simpara>
+</listitem>
+</itemizedlist>
+<simpara><link xl:href="https://github.com/fabric8io/fabric8-online-docs/issues">Create an issue</link> to send us your feedback.</simpara>
+</section>
+</chapter>
+<chapter xml:id="prerequsites">
+<title>Prerequisites</title>
+<simpara><emphasis role="strong">Browser Requirements:</emphasis></simpara>
+<simpara>Currently, only Google Chrome can be used with OpenShift.io. Additional browsers will be listed here when they are tested and can be used with OpenShift.io.</simpara>
+<simpara><emphasis role="strong">General Requirements:</emphasis></simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Ensure that you have a GitHub account.</simpara>
+</listitem>
+<listitem>
+<simpara>Register to join the OpenShift.io developer preview at <link xl:href="https://openshift.io/">https://openshift.io/</link>.</simpara>
+</listitem>
+</orderedlist>
+<section xml:id="connecting_to_oso">
+<title>Connecting OpenShift.io to OpenShift Online and GitHub</title>
+<simpara>You will receive a welcome email when your request to join Red Hat&#8217;s OpenShift.io Developer Preview is accepted. When you receive this email, use the following steps to set up OpenShift.io:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In your browser, navigate to <link xl:href="https://openshift.io/">https://openshift.io/</link></simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Log In</guibutton> at the top of the page.</simpara>
+</listitem>
+<listitem>
+<simpara>Enter your Red Hat Developer (or other listed services) credentials.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Getting started in OpenShift.io</emphasis> page, select the <emphasis role="strong">GitHub</emphasis> and <emphasis role="strong">OpenShift.com</emphasis> check boxes and click <guibutton>Connect accounts</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/connect_accounts.png"/>
+</imageobject>
+<textobject><phrase>Connecting accounts</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Log in to your GitHub account, and when prompted, click <guibutton>Authorize openshiftio</guibutton>.</simpara>
+<note>
+<simpara>During the Early Access Program, OpenShift.io requires a large number of GitHub permissions. The number of permissions required will be reduced when OpenShift.io formally launches.</simpara>
+</note>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>LOGIN WITH RED HAT</guibutton> to log in to your OpenShift Online account.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/log_into_oso.png"/>
+</imageobject>
+<textobject><phrase>Log into OpenShift Online</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<note>
+<simpara>Your OpenShift.io account and your OpenShift Online account are the same federated identity. As a result, you do not need to supply any additional credentials.</simpara>
+</note>
+</listitem>
+<listitem>
+<simpara>Keep the <emphasis role="strong">User:full</emphasis> check box selected, and click <guibutton>Allow selected permissions</guibutton> to give OpenShift.io full permission to access your OpenShift Online account.</simpara>
+</listitem>
+<listitem>
+<simpara>You are redirected to the <emphasis role="strong">Getting Started in OpenShift.io</emphasis> page with green check marks indicating that you have successfully connected your GitHub and OpenShift Online accounts. Click <guibutton>Get Started</guibutton> to start using OpenShift.io.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/connected_success.png"/>
+</imageobject>
+<textobject><phrase>Connected accounts</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="confirming_che_jenkins_status">
+<title>Confirming Che and Jenkins status</title>
+<simpara>After <xref linkend="connecting_to_oso"/>, you must ensure that the Che and Jenkins tenant services are provisioned and running. This process requires several minutes after completing the following steps:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>To check the Che and Jenkins status, click the check mark icon (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/check_icon.png"/>
+</imageobject>
+<textobject><phrase>check icon</phrase></textobject>
+</inlinemediaobject>) at the upper-right of the page.</simpara>
+<important>
+<simpara>The version numbers for Jenkins in the screen captures are for illustration purposes and can be outdated.</simpara>
+<simpara>Use the following file to see the most recent version for Jenkins and compare it to the version displayed in OpenShift.io for your account.</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Jenkins version information: <link xl:href="https://github.com/fabric8-services/fabric8-tenant/blob/master/JENKINS_VERSION">JENKINS_VERSION</link></simpara>
+</listitem>
+</itemizedlist>
+</important>
+<itemizedlist>
+<listitem>
+<simpara>If the tenant status indicates that all services are ready (see screen capture for an example), Che and Jenkins are provisioned and ready for use.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/tenant_status_success.png"/>
+</imageobject>
+<textobject><phrase>Tenant Status</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>If the Jenkins status is gray (see screen capture for example), this service is still loading. Allow several minutes for all services to either display as green (ready) or red (failed).</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/tenant_status_waiting.png"/>
+</imageobject>
+<textobject><phrase>Tenant Status Waiting</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>If you see a version mismatch between that displayed on OpenShift.io and the latest version in the above links, or if the status for Jenkins is red (see screen capture), update your tenant services as follows:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/tenant_status_error.png"/>
+</imageobject>
+<textobject><phrase>Tenant Status Error</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>On your OpenShift.io home page, click your name on the top right corner of the screen.</simpara>
+</listitem>
+<listitem>
+<simpara>In the drop down options, click <guibutton>Profile</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/profile_menu.png"/>
+</imageobject>
+<textobject><phrase>Profile menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>On the profile page, click <guibutton>Update Profile</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/update_profile_button.png"/>
+</imageobject>
+<textobject><phrase>Update profile</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Scroll to the bottom of the page and click <guibutton>Update tenant</guibutton>. This initiates an update in your OpenShift Online account. Allow approximately five minutes for the version numbers in the status display to refresh. When the update is complete, the green check marks appear with the updated version numbers for Che and Jenkins.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/update_tenant_button.png"/>
+</imageobject>
+<textobject><phrase>Update tenant button</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+<simpara>When the status indicators are all green, you are ready to start using OpenShift.io.</simpara>
+</section>
+</chapter>
+</part>
+<part xml:id="_start_using_openshift_io">
+<title>Start using OpenShift.io</title>
+<chapter xml:id="hello_world_developers">
+<title>Hello World for Developers</title>
+<section xml:id="creating_new_space-hello-world">
+<title>Creating a new space</title>
+<simpara>In OpenShift.io, the first step for any new project is to create a new space. You can then add users as collaborators for the space and all the work is tracked within the space using work items. Each space must have a unique name.</simpara>
+<bridgehead xml:id="_procedure" renderas="sect3">Procedure</bridgehead>
+<simpara>Create a new space as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the OpenShift.io home page, click <guibutton>Create a space</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/create_space_first.png"/>
+</imageobject>
+<textobject><phrase>Create your first space</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the dialog box, type <emphasis role="strong">myspace</emphasis> as the unique name for your space.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/create_space.png"/>
+</imageobject>
+<textobject><phrase>Create new space</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Use the drop-down menu for the <emphasis role="strong">Template</emphasis> field to select a template for your new space. For this example, select <emphasis role="strong">Scenario Driven Planning</emphasis> and click <guibutton>Create</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">How would you like to get started?</emphasis> menu displays for your new space.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="creating_new_project-hello-world">
+<title>Creating a new project</title>
+<simpara>When you create a new space, the <emphasis role="strong">How would you like to get started?</emphasis> dialog box opens. Use this menu to create a new Quickstart project as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the <emphasis role="strong">How would you like to get started?</emphasis> dialog box, click <guibutton>Create a new Quickstart project</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/get_started_menu.png"/>
+</imageobject>
+<textobject><phrase>Getting Started Menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Application Wizard</emphasis>:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Click a project type from the displayed icons. For this example, click <emphasis role="strong">Vert.x HTTP Booster</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/vertx_booster.png"/>
+</imageobject>
+<textobject><phrase>Select Vert.X Booster</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">OpenShift Project Name</emphasis> field, type <literal>helloworldvertx</literal> as the unique name for your project.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/vertx_name.png"/>
+</imageobject>
+<textobject><phrase>Add a name for your project</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Keep the default value for the <emphasis role="strong">Organization</emphasis>, <emphasis role="strong">Group Id</emphasis>, and <emphasis role="strong">Version</emphasis> fields and click <guibutton>Next</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Select a build pipeline strategy. Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment. For this example, use the default value <emphasis role="strong">Release, Stage, Approve and Promote</emphasis> and click <guibutton>Next</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/configure_pipeline.png"/>
+</imageobject>
+<textobject><phrase>Configure pipeline</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Build Config</emphasis> screen displays the details for your <emphasis role="strong">Jenkins space</emphasis> and options for adding continuous integration hooks and triggering a build when your application deploys. Use the default options for these fields and click <guibutton>Finish</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/build_config.png"/>
+</imageobject>
+<textobject><phrase>Build config screen</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Summary</emphasis> screen displays the selected options for the project. Click <guibutton>Ok</guibutton> to create the project.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/vertx_final.png"/>
+</imageobject>
+<textobject><phrase>Final Vert.X project screen</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+<simpara>Your new Vert.X project is now created in your space.</simpara>
+<simpara>OpenShift.io has now hosted the project source code in the linked account and specified organization on GitHub. It  has also hosted the pipeline for the project in OpenShift Online.</simpara>
+</section>
+<section xml:id="about_stage_run">
+<title>About the stage and run environments</title>
+<simpara>Next, you will learn about pipelines and staging environments in OpenShift.io. After you create or add an application to your space, a pipeline is created to publish your application.</simpara>
+<simpara>When you get an OpenShift.io subscription, you also get an OpenShift Online Starter subscription, which includes two environments named <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis> to deploy your applications. Initially, applications deploy to <emphasis role="strong">Stage</emphasis>, which is accessible to stakeholders for review using a public URL. If approved and promoted, the application deploys to <emphasis role="strong">Run</emphasis>, which is similar to a production environment but is another staging area.</simpara>
+<simpara>The reason <emphasis role="strong">Run</emphasis> is not named <emphasis role="strong">Production</emphasis> is that the OpenShift Online Starter subscription does not support running production applications. See <link xl:href="https://www.openshift.com/pricing/index.html">purchasing an OpenShift Online Pro subscription</link> for information about support for running production applications.</simpara>
+<simpara>OpenShift.io includes a <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis> environment to allow developers to experience the modern workflow of pushing an application to a staging environment before production. As a result, <emphasis role="strong">Run</emphasis> is a pseudo-production environment for educational purposes.</simpara>
+</section>
+<section xml:id="working_with_pipelines">
+<title>Working with pipelines</title>
+<simpara>When you create a new Quickstart project, a new build/pipeline execution initiates. In a build pipeline, <link linkend="about_stage_run"><emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis></link> are individual OpenShift projects. <emphasis role="strong">Stage</emphasis> is a production staging area to review and test changes before they are finalized and then staged on <emphasis role="strong">Run</emphasis>.</simpara>
+<simpara>After you create a new Quickstart project, you can see the new project build pipeline running in the space dashboard:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/vertx_pipeline_new.png"/>
+</imageobject>
+<textobject><phrase>New pipeline build</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>After several minutes, the status of the pipeline build changes from <emphasis role="strong">New</emphasis> to <emphasis role="strong">Running</emphasis>, which indicates that the build has successfully started.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/vertx_pipeline_running.png"/>
+</imageobject>
+<textobject><phrase>A Running Pipeline Build</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>To view your new Quickstart project pipeline:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Click <emphasis role="strong">Pipelines</emphasis> above the running pipeline status. This page displays all running pipelines for your space.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/click_pipelines.png"/>
+</imageobject>
+<textobject><phrase>Click pipelines</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</itemizedlist>
+<simpara>Your new project build pipeline displays on this page at the <emphasis role="strong">Approve</emphasis> stage:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/pipeline_firstrun.png"/>
+</imageobject>
+<textobject><phrase>Pipeline First Run</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>For your new Quickstart project, the new build pipeline pushes version 1.0.1 into <emphasis role="strong">Stage</emphasis> and then, after user approval, it pushes the changes to <emphasis role="strong">Run</emphasis>.</simpara>
+<note>
+<simpara>If your pipeline build does not start for more than ten minutes, you can manually start a pipeline build:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click the icon (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/kabob_white.png"/>
+</imageobject>
+<textobject><phrase>kabob white</phrase></textobject>
+</inlinemediaobject>) adjoining the pipeline build.</simpara>
+</listitem>
+<listitem>
+<simpara>From the displayed menu, click <guibutton>Start Pipeline</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/manual_start_pipeline.png"/>
+</imageobject>
+<textobject><phrase>Manually start pipeline build</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+</note>
+</section>
+<section xml:id="viewing_build_pipeline_oso">
+<title>Viewing the build pipeline logs</title>
+<simpara>Optionally, while you wait for the pipeline build, you can view the build details in the Jenkins log. For experienced users, these logs are useful when troubleshooting problems with builds if required.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the <emphasis role="strong">Pipeline</emphasis> page, click <emphasis role="strong">View Log</emphasis> for the build pipeline in progress.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/view_log_link.png"/>
+</imageobject>
+<textobject><phrase>View log link</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>When prompted, log into Jenkins with your OpenShift Online account.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/jenkins_login.png"/>
+</imageobject>
+<textobject><phrase>Logging into Jenkins</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>When logged in, the page displays the logs for your pipeline build.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/pipeline_jenkins.png"/>
+</imageobject>
+<textobject><phrase>Pipeline Build Logs in Jenkins</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<warning>
+<simpara>Do not click the <emphasis role="strong">Proceed</emphasis> or <emphasis role="strong">Abort</emphasis> options at the end of the logs.</simpara>
+</warning>
+</listitem>
+<listitem>
+<simpara>After examining the logs to familiarize yourself with the log output, you can close the browser tab and return to the OpenShift.io browser tab.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="about_codebases">
+<title>About codebases</title>
+<simpara>When you create a new project using the quickstart wizard, OpenShift.io creates a new code repository for your project and stores it in GitHub. OpenShift.io also maintains additional metadata for version control of your project code. OpenShift.io <emphasis>codebases</emphasis> are a generic representation of a project&#8217;s code.</simpara>
+<simpara>Currently, codebases in OpenShift.io are GitHub code repositories. In the future, OpenShift.io may support additional git hosts and even non-git options for version control.</simpara>
+</section>
+<section xml:id="approving_build_pipeline">
+<title>Approving the build pipeline</title>
+<simpara>Several minutes after starting, your build pipeline is ready to be promoted to <emphasis role="strong">Stage</emphasis>.</simpara>
+<simpara>The build pipeline includes steps for a <emphasis role="strong">Stage</emphasis> build and a <emphasis role="strong">Run</emphasis> build. <emphasis role="strong">Stage</emphasis> is a production staging area to review and test your application before finalizing it and deploying the build on <emphasis role="strong">Run</emphasis>.</simpara>
+<simpara>To stage your application and review it on <emphasis role="strong">Stage</emphasis>:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>If you are not on the <literal>Pipelines</literal> view, click <guibutton>Create</guibutton> from the options at the top of the screen and then click <guibutton>Pipelines</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the icon (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/rollout_icon.png"/>
+</imageobject>
+<textobject><phrase>rollout icon</phrase></textobject>
+</inlinemediaobject>) next to <emphasis role="strong">Rollout to Stage</emphasis> in the displayed pipeline. OpenShift Online provides this public URL to access the staged Quickstart application.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/rollout_stage.png"/>
+</imageobject>
+<textobject><phrase>Rollout to stage</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In a new browser tab, the HTTP Booster application runs on <emphasis role="strong">Stage</emphasis>. The Vert.x HTTP Booster Quickstart produces a simple API behind a REST endpoint over HTTP with a minimalist user interface.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/vertx_stage.png"/>
+</imageobject>
+<textobject><phrase>Test the Application</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<warning>
+<simpara role="lead">Troubleshooting information</simpara>
+<simpara>If the new tab displays a <emphasis role="strong">Application is not available</emphasis> error message (see screen capture), the application is not yet ready. After several minutes, refresh the page and the application loads as expected.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/app_doesnt_exist.png"/>
+</imageobject>
+<textobject><phrase>Application Does Not Exist Error</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</warning>
+</listitem>
+<listitem>
+<simpara>In the application, enter a name in the <emphasis role="strong">Name</emphasis> field and click <guibutton>Invoke</guibutton> to test the application. The <emphasis role="strong">Result</emphasis> field displays the JSON result returning
+from the API.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/hello_john.png"/>
+</imageobject>
+<textobject><phrase>Test the Application</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>If the Quickstart application on the <emphasis role="strong">Stage</emphasis> build runs as expected, return to the OpenShift.io browser tab and promote your application and build on <emphasis role="strong">Run</emphasis>:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Return to the OpenShift.io tab which displays the <emphasis role="strong">Pipeline</emphasis> view.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Input Required</guibutton> at the <emphasis role="strong">Approve</emphasis> stage of the pipeline.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/pipeline_firstrun.png"/>
+</imageobject>
+<textobject><phrase>Input Required</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Promote</guibutton> to promote the build from the <emphasis role="strong">Stage</emphasis> environment to the <emphasis role="strong">Run</emphasis> environment. The rollout process from <emphasis role="strong">Stage</emphasis> to <emphasis role="strong">Run</emphasis> requires several minutes.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/promote.png"/>
+</imageobject>
+<textobject><phrase>Promote build</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Optionally, click <emphasis role="strong">Build #1</emphasis> to view the detailed progress in the OpenShift Online console view as your build is promoted to <emphasis role="strong">Run</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/build1.png"/>
+</imageobject>
+<textobject><phrase>Build #1 link</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>When the <emphasis role="strong">Pipeline</emphasis> view indicates that the project is available in the <emphasis role="strong">Run</emphasis> environment, click the icon (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/rollout_icon.png"/>
+</imageobject>
+<textobject><phrase>rollout icon</phrase></textobject>
+</inlinemediaobject>) next to <emphasis role="strong">Rollout to Run</emphasis> to view the project in a new tab and test the application.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/rollout_to_run.png"/>
+</imageobject>
+<textobject><phrase>Rollout to Run</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="optional_detailed_views">
+<title>(Optional) Detailed views</title>
+<simpara>Optionally, you can see an experimental detailed <emphasis role="strong">Deployments</emphasis> view for the <emphasis role="strong">Test</emphasis>, <link linkend="about_stage_run"><emphasis role="strong">Stage</emphasis>, and <emphasis role="strong">Run</emphasis></link> environments. This view displays the environment deployments, pods, events, and other information.</simpara>
+<simpara>View the details for the <emphasis role="strong">Deployments</emphasis> as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>At the top of the page, click <guibutton>Create</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>From the options displayed, click <guibutton>Deployments</guibutton>. If you have not activated Internal features in OpenShift.io, the <emphasis role="strong">Internal Features Opt-in</emphasis> warning appears. Click <guibutton>Opt-in to Internal Features</guibutton> to proceed.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/deployments_page.png"/>
+</imageobject>
+<textobject><phrase>Deployments page warning</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Opt-in to Experimental Features</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>On the profile options page, select the <literal>Experimental Features</literal> option and click <guibutton>Update</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/features_options.png"/>
+</imageobject>
+<textobject><phrase>Features options</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>On the profile page, click your username in the upper left corner of the screen. In the displayed options, click the name of your space.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/spaces_home.png"/>
+</imageobject>
+<textobject><phrase>Spaces box</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>At the top of the page, click <guibutton>Create</guibutton> and then click <guibutton>Deployments</guibutton>. The <emphasis role="strong">Deployments</emphasis> page now loads and displays details about the Applications and Environments.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/deployments_experimental.png"/>
+</imageobject>
+<textobject><phrase>Deployments page</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>Optionally, you can view the pipeline progress in the OpenShift Online console as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>For either the <emphasis role="strong">Stage</emphasis> or <emphasis role="strong">Run</emphasis> environments, click the options button and then click <emphasis role="strong">OpenShift Console</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/environment_options.png"/>
+</imageobject>
+<textobject><phrase>Environment options</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>If prompted, click <guibutton>LOGIN WITH RED HAT</guibutton> to log in to your OpenShift Online account.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/log_into_oso.png"/>
+</imageobject>
+<textobject><phrase>Log into OpenShift Online</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>A detailed view of the build in OpenShift Online displays. Click <emphasis role="strong">Applications</emphasis> &gt; <emphasis role="strong">Applications</emphasis> in the sidebar to view details about the application.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/openshift_online_console.png"/>
+</imageobject>
+<textobject><phrase>OpenShift Online Console</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>Within this view, you can view the details of your build in the appropriate environment.</simpara>
+</section>
+<section xml:id="creating_using_new_work_item">
+<title>Creating and using a new work item</title>
+<simpara>After creating a project in your space, you can make changes to the code. You can now create a Work Item and use it to track a task which includes changes to the project code.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>On the top of the OpenShift.io page, click <emphasis role="strong">Plan</emphasis>. The Planner&#8217;s <literal>Backlog</literal> view appears as a default.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Backlog</emphasis> view, the <literal>Add Work Item</literal> option is the quickest way to create a new Work Item.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/backlog_quickadd.png"/>
+</imageobject>
+<textobject><phrase>The Backlog&#8217;s Quick Add Work Item option</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click the work item type drop down menu to see the available options. For this example, use the default <emphasis role="strong">Scenario</emphasis> option.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/quickadd_wi_type.png"/>
+</imageobject>
+<textobject><phrase>Quick Add Work Item type</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Work Item Title</emphasis> field, type <emphasis role="strong">Change greeting</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Add and Open</guibutton> to create the Work Item and view it.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/new_wi.png"/>
+</imageobject>
+<textobject><phrase>New Work Item</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Double click the title of the new Work Item to see a Quick Preview on the right:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/wi_edit.png"/>
+</imageobject>
+<textobject><phrase>Edit Work Item</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Add Assignee</emphasis> and add your name as the new assignee for this Work Item. Click <emphasis role="strong">X</emphasis> to close the menu and save changes. Assigning a Work Item sends that person an email notification. Depending on your mail server and account, this notification email may arrive after a delay of several minutes.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/wi_add_assignee.png"/>
+</imageobject>
+<textobject><phrase>Add Asignee</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Description</emphasis> field and type <emphasis role="strong">Change the greeting from Hello to Hello from Che</emphasis>. Click &#10004; to save.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/wi_change_desc.png"/>
+</imageobject>
+<textobject><phrase>Change description</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Board</emphasis> from the menu options at the top of the screen to see the board view for the Work Items.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/backlog_board.png"/>
+</imageobject>
+<textobject><phrase>Backlog and Board</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Your new Work Item appears in the <emphasis role="strong">new</emphasis> column. Drag the Work Item into the <emphasis role="strong">in progress</emphasis> column. This indicates that the Work Item is now being worked on. You can track the progress of your Work Item by moving it to <emphasis role="strong">open</emphasis>, <emphasis role="strong">in progress</emphasis>, <emphasis role="strong">resolved</emphasis>, or <emphasis role="strong">closed</emphasis> states.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/move_workitem.png"/>
+</imageobject>
+<textobject><phrase>Move Work Item</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>You have now created a Work Item assigned to yourself that tracks the change we will implement in the code. s</simpara>
+</section>
+<section xml:id="about_workspaces">
+<title>About workspaces</title>
+<simpara>After creating and testing your new Vert.x Quickstart application, you can make changes to the project code. OpenShift.io provides hosted instances of Eclipse Che within your browser to edit, test, and debug your project code.</simpara>
+<simpara>One of the key features of Eclipse Che is Che <emphasis>workspaces</emphasis>, which provide a fully configured runtime environment for running your code. As a result, OpenShift.io provides a lightweight, next generation IDE as well as a containerized development and testing environment.</simpara>
+<simpara>When you use the Quickstart Application Wizard in OpenShift.io, the development and testing environment is automatically configured with the necessary runtime components and is ready to use. Thereby OpenShift.io uses Che workspaces to provide you with a personal development machine each time you start working on a new project.</simpara>
+</section>
+<section xml:id="creating_che_workspace-hello-world">
+<title>Creating a Che workspace</title>
+<simpara>Create a new <link linkend="about_workspaces">Che workspace</link> for your project:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <emphasis role="strong">Create</emphasis> from the top of the OpenShift.io page. The default view for this tab is <emphasis role="strong">Codebases</emphasis></simpara>
+</listitem>
+</orderedlist>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the <emphasis role="strong">WORKSPACES</emphasis> column, click <emphasis role="strong">Create workspace</emphasis> for your project.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/create_workspace.png"/>
+</imageobject>
+<textobject><phrase>Create Workspace</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<note>
+<simpara>If you see a message about the workspaces loading (see screen capture), it indicates that your Che instance is idle. Allow several minutes for the loading process to finish.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/loading_workspaces.png"/>
+</imageobject>
+<textobject><phrase>Loading Workspaces</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</note>
+</listitem>
+<listitem>
+<simpara>When your workspace is ready, it automatically loads in a new tab. Alternatively, click <guibutton>Open</guibutton> to view your new Che workspace in a new browser tab. This workspace loads the codebase for the listed project.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/new_ws.png"/>
+</imageobject>
+<textobject><phrase>New Workspace</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<important>
+<simpara>If a new tab does not appear, your browser is blocking the pop-up window that displays the new workspace. To resolve this, allow pop-up windows from <emphasis role="strong">https://openshift.io</emphasis>. In Chromium-based browsers, do the following:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click the blocked pop-up window icon in the URL field of your browser.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the <emphasis role="strong">Always allow pop-ups from https://openshift.io</emphasis> option, and click <guibutton>Done</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/blocked_popup.png"/>
+</imageobject>
+<textobject><phrase>Blocked Pop Up</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Now, click <guibutton>Open</guibutton> again to load the workspace.</simpara>
+</listitem>
+</orderedlist>
+</important>
+<simpara>When the workspace is running, the following confirmation message displays:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/ws_running.png"/>
+</imageobject>
+<textobject><phrase>Workspace Running success message</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Like booting a computer, the workspace requires several minutes to start. The terminal window at the bottom of the Che workspace tab displays the progress:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/che_terminal.png"/>
+</imageobject>
+<textobject><phrase>Workspace Terminal</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>When loaded and ready to use, the new Che workspace tab displays the GitHub repository folder of your new project in the <emphasis role="strong">Projects Explorer</emphasis> panel.</simpara>
+</listitem>
+</orderedlist>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/ws_loaded_codebase.png"/>
+</imageobject>
+<textobject><phrase>Your GitHub Project in Che</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="configuring_your_che_workspace-hello-world">
+<title>Configuring your Che workspace</title>
+<simpara>After your Che workspace loads, you can see your project code listed in the <emphasis role="strong">Projects Explorer</emphasis> panel, in the upper-left side of the screen. You must now ensure the following prerequisites are met before you start using the workspace to edit the codebase:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Ensure Git commands are available:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Click <emphasis role="strong">Git</emphasis> in the workspace menu to ensure that all the listed commands (except <emphasis role="strong">Initialize Repository</emphasis>) are available.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/git_menu.png"/>
+</imageobject>
+<textobject><phrase>Git Menu Options</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>If they are not available, reload the workspace browser tab.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Configure your project for Maven:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In the <emphasis role="strong">Projects Explorer</emphasis> panel, click your project name to select it.</simpara>
+</listitem>
+<listitem>
+<simpara>From the menu options at the top of the page, click <emphasis role="strong">Project</emphasis>, and then select <emphasis role="strong">Update Project Configuration</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/hw_project_menu.png"/>
+</imageobject>
+<textobject><phrase>Configure Maven</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the displayed <emphasis role="strong">Project Configuration</emphasis> window, select <emphasis role="strong">Maven</emphasis> and click <guibutton>Save</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/hw_config_maven.png"/>
+</imageobject>
+<textobject><phrase>Configure Maven</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">run</emphasis> option from the Run button (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/tri_run.png"/>
+</imageobject>
+<textobject><phrase>tri run</phrase></textobject>
+</inlinemediaobject>). Maven then downloads the required dependencies, compiles the application, and starts the <emphasis>verticle</emphasis> (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options. The hot deploy option automatically updates the application when you make a change.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>A <emphasis role="strong">run</emphasis> terminal appears at the bottom pane of the Che workspace. When the <literal>mvn&#160;build</literal> command finishes executing, the <emphasis role="strong">run</emphasis> view displays the following message:</simpara>
+<screen>INFO: Succeeded in deploying verticle</screen>
+</listitem>
+<listitem>
+<simpara>Click the blue preview URL at the top of the <emphasis role="strong">run</emphasis> view to see your application running in Che.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/run_proj.png"/>
+</imageobject>
+<textobject><phrase>Run project link</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Enter a name in the <emphasis role="strong">Name</emphasis> field and click <guibutton>Invoke</guibutton> to test the application.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/hello_john.png"/>
+</imageobject>
+<textobject><phrase>Testing the application</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>This is the same version of the application that the pipeline deployed to <emphasis role="strong">Stage</emphasis> and you subsequently promoted to <emphasis role="strong">Run</emphasis>. The URL for this build of the application is different from the URLs used by OpenShift Online for <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis>. This is your private sandbox hosted within Che. You can still share this URL with others and interactively debug the application while they run it in their browser.</simpara>
+</section>
+<section xml:id="changing_quickstart_code-hello-world">
+<title>Changing the quickstart code</title>
+<simpara>To change your project code and preview the results:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In your Che workstation <emphasis role="strong">Projects Explorer</emphasis> view, navigate to the following file: <literal>src</literal> &gt; <literal>main</literal> &gt; <literal>Java</literal> &gt; <literal>io.openshift.booster</literal> &gt; <literal>HttpApplication.java</literal>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/project_dir.png"/>
+</imageobject>
+<textobject><phrase>Project Directory</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Find the following line in the file, which is the template for API&#8217;s returned message in the application:</simpara>
+<programlisting language="java" linenumbering="unnumbered">protected static final String template = "Hello, %s!";</programlisting>
+</listitem>
+<listitem>
+<simpara>Change <emphasis role="strong">Hello</emphasis> to <emphasis role="strong">Hello from Che</emphasis> in the line.</simpara>
+<programlisting language="java" linenumbering="unnumbered">protected static final String template = "Hello from Che, %s!";</programlisting>
+<simpara>The workspace automatically saves your changes.</simpara>
+</listitem>
+<listitem>
+<simpara>To test your changes:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>If you already ran the application earlier as instructed in <xref linkend="configuring_your_che_workspace-hello-world"/>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip the rest of this step.</simpara>
+</listitem>
+<listitem>
+<simpara>If you have not run the application already as instructed in <xref linkend="configuring_your_che_workspace-hello-world"/>:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Click the <emphasis role="strong">run</emphasis> option (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/tri_run.png"/>
+</imageobject>
+<textobject><phrase>tri run</phrase></textobject>
+</inlinemediaobject>). The following message displays when the run process completes:</simpara>
+<screen>INFO: Succeeded in deploying verticle</screen>
+</listitem>
+<listitem>
+<simpara>Click the blue preview URL at the top of the <emphasis role="strong">run</emphasis> view to see your application.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/blue_link.png"/>
+</imageobject>
+<textobject><phrase>Preview Link</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</itemizedlist>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>Add a name in the <emphasis role="strong">Name</emphasis> field and click <guibutton>Invoke</guibutton> to test the application. The displayed message shows the amended text template.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/hello_from_che.png"/>
+</imageobject>
+<textobject><phrase>Testing the Application</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>You have now learned how the workspace automatically saves and applies your changes.</simpara>
+</section>
+<section xml:id="committing_pushing_changes_git-hello-world">
+<title>Committing and pushing changes to GitHub</title>
+<simpara>After making the required changes to your code, commit and push the modifications to your project GitHub repository.</simpara>
+<important>
+<simpara>Before committing your changes, ensure that your project pipeline build has completed (that is, the build has been promoted and is at the <emphasis role="strong">Rollout to Run</emphasis> stage). See <xref linkend="approving_build_pipeline"/> for instructions.</simpara>
+</important>
+<bridgehead xml:id="_procedure_2" renderas="sect3">Procedure</bridgehead>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the workspace browser tab, click <emphasis role="strong">Git</emphasis> from the menu options and select <emphasis role="strong">Commit</emphasis> from the displayed options.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/commit_menu.png"/>
+</imageobject>
+<textobject><phrase>Git Commit Menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Commit to repository</emphasis> dialog box:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select all the changed and new files you wish to commit.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a commit message describing your changes.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the <emphasis role="strong">Push committed changes to:</emphasis> check box.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Commit</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/vertxeventbus_commit.png"/>
+</imageobject>
+<textobject><phrase>Commit changes</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+<simpara>When the commit succeeds, the following message displays:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/pushed_to_origin.png"/>
+</imageobject>
+<textobject><phrase>Pushed to origin</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>You have now committed your code changes to GitHub.</simpara>
+</section>
+<section xml:id="reviewing_publishing_changes-hello-world">
+<title>Reviewing and publishing your changes</title>
+<simpara>Now that we have committed and pushed our changes to GitHub, a pipeline build is automatically triggered in OpenShift.io.</simpara>
+<bridgehead xml:id="_procedure_3" renderas="sect3">Procedure</bridgehead>
+<simpara>To view the build:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Return to the OpenShift.io browser tab.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create</emphasis> and then <emphasis role="strong">Pipelines</emphasis> to view the build pipelines. After several moments, the build pipeline stops at the <emphasis role="strong">Approve</emphasis> stage. Do not approve the build yet.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/hw_build_2.png"/>
+</imageobject>
+<textobject><phrase>Build #2 Runs</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Create</emphasis> tab, click <emphasis role="strong">Deployments</emphasis> to see the following information:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/hw_versions_applications.png"/>
+</imageobject>
+<textobject><phrase>Versions of the Application</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<itemizedlist>
+<listitem>
+<simpara>Different versions of your application are now deployed to <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis>. Version 1.0.2 of the application, which includes your committed change to the code, is deployed to <emphasis role="strong">Stage</emphasis> because you have not yet promoted it to <emphasis role="strong">Run</emphasis>. The older version, 1.0.1, is deployed to <emphasis role="strong">Run</emphasis> because you approved it the last time the pipeline build executed.</simpara>
+</listitem>
+<listitem>
+<simpara>The green check marks indicate that both builds are operational.</simpara>
+</listitem>
+<listitem>
+<simpara>The <literal>1 pod</literal> indicates that each of the application builds is scaled to one pod in OpenShift Online. The number of pods indicates the number of running instances of the application.</simpara>
+</listitem>
+<listitem>
+<simpara>The version numbers link to individual running applications. You can use these separate staging areas to share different versions of your application before <emphasis role="strong">Promoting</emphasis> a change. Click the version numbers to view the details for that deployment.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/expand_version.png"/>
+</imageobject>
+<textobject><phrase>Expand the application version</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Pipelines</emphasis> to return to the pipelines view.</simpara>
+</listitem>
+<listitem>
+<simpara>At the <emphasis role="strong">Approve</emphasis> stage, click <guibutton>Input Required</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Promote</guibutton> to promote version 1.0.2 of the application to <emphasis role="strong">Run</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+<simpara>Your changes are now available on both <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis>. If you return to the <literal>Deployments</literal> tab, you can see the version for both <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis> are now 1.0.2.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/updated_app.png"/>
+</imageobject>
+<textobject><phrase>Updated applications</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="closing_workitem">
+<title>Closing a work item</title>
+<simpara>After implementing and reviewing your code changes, update the relevant Work Item to track the work done.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click the <emphasis role="strong">Plan</emphasis> tab and then <emphasis role="strong">Board</emphasis> to return to the Planner Board view.</simpara>
+</listitem>
+<listitem>
+<simpara>Drag the Work Item to the <emphasis role="strong">Resolved</emphasis> state.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/resolved_wi.png"/>
+</imageobject>
+<textobject><phrase>Resolved Work Item</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>Resolving a Work Item communicates to the team that the task being tracked is complete. Once your task is reviewed and approved you can drag it to the <emphasis role="strong">Closed</emphasis> state.</simpara>
+<simpara>Congratulations! You have now created your first quickstart project in OpenShift.io, made changes to your project code, committed the changes to GitHub, and published the new version of your project, and updated the Work Item to reflect your work.</simpara>
+</section>
+</chapter>
+<chapter xml:id="optimizing_memory_usage">
+<title>Optimizing your memory usage</title>
+<simpara>After creating your first quickstart project, you will now learn to optimize your memory usage in OpenShift.io. First, you will learn how to review your resource usage, then how to reduce your quickstart project&#8217;s memory usage. Lastly, you will learn how to monitor your OpenShift Online memory quota usage.</simpara>
+<section xml:id="reviewing_resource_information_gui">
+<title>Reviewing the resource information in OpenShift Online</title>
+<simpara>The memory allowances for each OpenShift pod is 512&#160;MiB. As a result, each application consumes nearly 1&#160;GiB of memory for the <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis> environments.</simpara>
+<simpara>To check the memory limit in OpenShift Online user interface:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In a new browser tab, navigate to the OpenShift Online console at <link xl:href="https://console.starter-us-east-2.openshift.com/">console.starter-us-east-2.openshift.com</link>.</simpara>
+</listitem>
+<listitem>
+<simpara>From the list of projects at the right side of the page, click <emphasis role="strong"><emphasis>username</emphasis>-run</emphasis> to see the resources used for the <emphasis role="strong">Run</emphasis> environment or <emphasis role="strong"><emphasis>username</emphasis>-stage</emphasis> to see the resources for the <emphasis role="strong">Stage</emphasis> environment.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/select_project_run.png"/>
+</imageobject>
+<textobject><phrase>Select the Run Project</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>See <xref linkend="viewing_projects_oso"/> for details about the listed projects.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Applications</guibutton> and then select <emphasis role="strong">Pods</emphasis> in the displayed submenu.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/app_pods.png"/>
+</imageobject>
+<textobject><phrase>Application Pods</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Pods</emphasis> page lists your Hello World project pod. Click the project name to see the resource information for the project.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/hw_pod.png"/>
+</imageobject>
+<textobject><phrase>Hello World Project Pod</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Details</emphasis> page lists the <emphasis role="strong">Status</emphasis> of the pod and the container resource information:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/resources.png"/>
+</imageobject>
+<textobject><phrase>Resources</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>Use this page to review the memory usage for your OpenShift.io project.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="reducing_project_memory_usage-optimizing_memory_usage">
+<title>Reducing project memory usage</title>
+<simpara>Optimizing memory usage is important when using the Free Tier of OpenShift Online because this tier provides limited memory. Also, each additional project in OpenShift.io requires an additional share of your OpenShift Online resources.</simpara>
+<simpara>You can optimize your new quickstart to use less memory as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Return to your Workspace browser tab. If your closed the tab, click <emphasis role="strong">Create</emphasis> and then the <guibutton>Open</guibutton> to run your workspace.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Projects Explorer</emphasis> panel, double-click your project and navigate to <literal>src</literal> &gt; <literal>main</literal> &gt; <literal>fabric8</literal>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/fabric8_folder.png"/>
+</imageobject>
+<textobject><phrase>Fabric8 folder</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Right-click the <literal>fabric8</literal> folder and select <menuchoice><guimenu>New</guimenu> <guimenuitem>File</guimenuitem></menuchoice>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/new_file.png"/>
+</imageobject>
+<textobject><phrase>New File Menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Name the new file <literal>deployment.yml</literal> and click <guibutton>OK</guibutton>. The new file displays in the editor.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/deploymentyaml_vertx.png"/>
+</imageobject>
+<textobject><phrase>Deployment.Yaml Vertx</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Copy the contents of the following file to your new YAML file: <link xl:href="https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml">deployment.yaml</link>.</simpara>
+<important>
+<simpara>Spaces are meaningful in YAML files. Ensure that the correct spacing is copied into your YAML file from the link.</simpara>
+</important>
+</listitem>
+<listitem>
+<simpara>Use <keycombo><keycap>Ctrl</keycap><keycap>s</keycap></keycombo> (or <keycombo><keycap>Cmd</keycap><keycap>s</keycap></keycombo> for macOS) to save your changes.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="committing_pushing_changes_git-optimizing_memory_usage">
+<title>Committing and pushing changes to GitHub</title>
+<simpara>After making the required changes to your code, commit and push the modifications to your project GitHub repository.</simpara>
+<important>
+<simpara>Before committing your changes, ensure that your project pipeline build has completed (that is, the build has been promoted and is at the <emphasis role="strong">Rollout to Run</emphasis> stage). See <xref linkend="approving_build_pipeline"/> for instructions.</simpara>
+</important>
+<bridgehead xml:id="_procedure_4" renderas="sect3">Procedure</bridgehead>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the workspace browser tab, click <emphasis role="strong">Git</emphasis> from the menu options and select <emphasis role="strong">Commit</emphasis> from the displayed options.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/commit_menu.png"/>
+</imageobject>
+<textobject><phrase>Git Commit Menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Commit to repository</emphasis> dialog box:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select all the changed and new files you wish to commit.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a commit message describing your changes.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the <emphasis role="strong">Push committed changes to:</emphasis> check box.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Commit</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/vertxeventbus_commit.png"/>
+</imageobject>
+<textobject><phrase>Commit changes</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+<simpara>When the commit succeeds, the following message displays:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/pushed_to_origin.png"/>
+</imageobject>
+<textobject><phrase>Pushed to origin</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>You have now committed your code changes to GitHub.</simpara>
+</section>
+<section xml:id="monitoring_your_oso_quota_usage">
+<title>Monitoring your OpenShift Online quota usage</title>
+<simpara>After <xref linkend="reducing_project_memory_usage-optimizing_memory_usage"/> and committing and pushing your changes, view your memory quota details and compare with the earlier output.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <guibutton>Create</guibutton> and then <guibutton>Pipelines</guibutton> to view the new pipeline build. Committing and pushing your new YAML file triggers a new pipeline build for your OpenShift.io project. Allow several minutes for the pipeline build to roll out to <emphasis role="strong">Stage</emphasis>:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/rollout_to_stage.png"/>
+</imageobject>
+<textobject><phrase>Rollout To Stage</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the OpenShift Online console browser tab, refresh the <link linkend="reviewing_resource_information_gui"><emphasis role="strong">Details</emphasis></link> page to see the optimized memory usage for your Hello World project:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/optimize_memory.png"/>
+</imageobject>
+<textobject><phrase>Optimizing HW Memory Usage</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>Compare these results to your earlier resource information to see the optimization of various resources.</simpara>
+</listitem>
+<listitem>
+<simpara><link linkend="approving_build_pipeline">Promote the application</link> to the <emphasis role="strong">Run</emphasis> environment.</simpara>
+</listitem>
+</orderedlist>
+<note>
+<simpara>If you have completed these instructions for optimizing your resources but still do not have enough OpenShift Online resources, see <xref linkend="cleaning_oso_account"/> to reset your OpenShift Online and OpenShift.io accounts.</simpara>
+</note>
+</section>
+</chapter>
+<chapter xml:id="analyzing-application">
+<title>Analyzing the application</title>
+<section xml:id="analyze_che_dependencies">
+<title>Analyzing Che dependencies</title>
+<simpara>The Che workspace automatically analyzes dependencies for the code while you modify it. To see how this analyzer works:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Return to the Che workspace browser tab.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Projects Explorer</emphasis> panel, double-click the <literal>pom.xml</literal> file.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/pomxml.png"/>
+</imageobject>
+<textobject><phrase>Pom.xml File</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the file, go to line 43 and add a line break.</simpara>
+</listitem>
+<listitem>
+<simpara>Modify the file by adding the following XML code to the file after the line break:</simpara>
+<programlisting language="xml" linenumbering="unnumbered">&lt;dependency&gt;
+  &lt;groupId&gt;ch.qos.logback&lt;/groupId&gt;
+  &lt;artifactId&gt;logback-core&lt;/artifactId&gt;
+  &lt;version&gt;1.1.0&lt;/version&gt;
+&lt;/dependency&gt;</programlisting>
+</listitem>
+<listitem>
+<simpara>An error icon appears next to the lines of code you modified. Move the mouse pointer over the icon to view the error message.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/red_x.png"/>
+</imageobject>
+<textobject><phrase>Error Icon</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>The error indicates that the dependency analyzer has identified a high Common Vulnerabilities and Exposures (CVE) score associated with the current version, 1.1.0. It also recommends using an alternate, secure version, 1.2.1, instead to fix the issue.</simpara>
+</listitem>
+<listitem>
+<simpara>Update the version to <literal>1.2.1</literal>. The error icon disappears when the version number is updated.</simpara>
+</listitem>
+<listitem>
+<simpara>Commit these changes to add this dependency to your stack.</simpara>
+</listitem>
+</orderedlist>
+<simpara>You have now learned how OpenShift.io analytics automatically analyzes dependencies in your code, identifies security vulnerabilities, and recommends fixes.</simpara>
+</section>
+<section xml:id="accessing_stack_reports">
+<title>Accessing stack reports</title>
+<simpara>OpenShift.io analytics stack report provides information regarding your  application stack and its component libraries that helps you make informed choices. OpenShift.io analyzes your stack and recommends alternate and additional components to improve your application.</simpara>
+<simpara>The stack report is available after the first pipeline build completes. To view the stack report for your quickstart application:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Return to your space dashboard in the OpenShift.io browser tab. The <emphasis role="strong">Stack Report Recommendations</emphasis> panel in the dashboard shows a summary of the stack report.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/stack_reports.png"/>
+</imageobject>
+<textobject><phrase>Stack Reports</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">View complete stack report</emphasis> to view the detailed stack report. The detailed stack report provides information about <emphasis role="strong">Security Issues</emphasis>, <emphasis role="strong">Licenses</emphasis>, <emphasis role="strong">Insights</emphasis>, and <emphasis role="strong">Dependency Details</emphasis> for your stack.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/detailed_stackreport.png"/>
+</imageobject>
+<textobject><phrase>Detailed Stack Report</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click each of the cards to view the following detailed information:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">Security Issues</emphasis> lists dependencies with known security vulnerabilities and the relevant Common Vulnerabilities and Exposures (CVE) information.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Licenses</emphasis> lists dependencies with license conflicts and unknown licenses and suggests alternate dependencies to resolve the conflicts.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Insights</emphasis> identifies dependencies that do not work well with the stack and recommends alternate dependencies for them. In addition it recommends companion dependencies to enhance your stack.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Dependency Details</emphasis> lists all the  dependencies in your stack, flags security, usage, and license issues for them, and suggests replacements for dependencies with issues.</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="viewing_project_github">
+<title>Viewing your project in GitHub</title>
+<simpara>After reviewing your pipeline build running in OpenShift.io and OpenShift Online, view your project <link linkend="about_codebases">codebase</link> in GitHub as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Return to your space dashboard.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Codebases</emphasis> panel, click the GitHub link to the project code.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/gh_link.png"/>
+</imageobject>
+<textobject><phrase>GitHub Code Link</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>A new browser tab displays your project code in GitHub.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/proj_gh.png"/>
+</imageobject>
+<textobject><phrase>Project Code in GitHub</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Jenkinsfile</emphasis> to view the details for the staging and rollout of the pipelines.</simpara>
+</listitem>
+</orderedlist>
+<simpara>Use this link to review code commits and details in your GitHub repository.</simpara>
+</section>
+<section xml:id="viewing_projects_oso">
+<title>Viewing projects in OpenShift Online</title>
+<simpara>To view the OpenShift Online projects that support the pipeline for your project, navigate to your <link xl:href="https://console.starter-us-east-2.openshift.com/console/projects/">OpenShift Online Console</link>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/oso_projects.png"/>
+</imageobject>
+<textobject><phrase>OpenShift Online Projects</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>This page displays the following projects and namespaces that are created in OpenShift Online:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>The <emphasis role="strong"><emphasis>username</emphasis></emphasis> project is where your pipelines run. Your OpenShift Online user name is the name of your project.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong"><emphasis>username-che</emphasis></emphasis> project represents your <link linkend="about_workspaces">Che Host and workspaces</link>.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong"><emphasis>username-jenkins</emphasis></emphasis> project represents your Jenkins Master or your Jenkins Slaves. Click <emphasis role="strong">Monitoring</emphasis> after clicking this project to access your Jenkins console.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong"><emphasis>username-run</emphasis></emphasis> project is identical to the <emphasis role="strong"><emphasis>username-stage</emphasis></emphasis> project and is an environment for experimenting with your OpenShift pods and monitoring the memory usage for your application.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong"><emphasis>username-stage</emphasis></emphasis> project is for your personal use. Use this project to see the pods that are created when pipelines are triggered in OpenShift.io. For maintenance, select this project and power down individual pods as required.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</chapter>
+<chapter xml:id="advanced_che_features">
+<title>Using advanced Che features</title>
+<section xml:id="using_code_assistant">
+<title>Using the code assistant</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Return to the Che workspace browser tab. If you closed your earlier workspace tab, use the following instructions:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In OpenShift.io, click the <emphasis role="strong">Create</emphasis> tab. The default <emphasis role="strong">Codebases</emphasis> view lists your project workspace:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/existing_workspace.png"/>
+</imageobject>
+<textobject><phrase>Existing Workspace</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Open</guibutton> to view the existing workspace in a new tab. If the new tab does not load, ensure your browser is not blocking pop-up windows.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>When the workspace loads, navigate to the following file: <literal>src</literal> &gt; <literal>main</literal> &gt; <literal>Java</literal> &gt; <literal>io.openshift.booster</literal> &gt; <literal>HttpApplication.java</literal>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/project_dir.png"/>
+</imageobject>
+<textobject><phrase>Project Directory</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <literal>HttpApplication.java</literal> file, add a line break at line 9 after the <emphasis role="strong">import</emphasis> section.</simpara>
+</listitem>
+<listitem>
+<simpara>Type the following in the new line:</simpara>
+<programlisting language="java" linenumbering="unnumbered">import io.</programlisting>
+</listitem>
+<listitem>
+<simpara>Press <keycombo><keycap>Ctrl</keycap><keycap>Space</keycap></keycombo> to view the options for this line and select any one of the options.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/code_options.png"/>
+</imageobject>
+<textobject><phrase>Code Autocomplete Options</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Move the mouse pointer over the error icon next to the line number to view the error, which warns you that import is not used.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/code_error.png"/>
+</imageobject>
+<textobject><phrase>Code Error</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Delete the added line to clear the error.</simpara>
+</listitem>
+</orderedlist>
+<simpara>You have now learned how the Che workspace uses Code Assistant to make recommendations and identify errors.</simpara>
+<simpara>Click <emphasis role="strong">Assistant</emphasis> at the top of the page to view additional IDE features.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/assistant.png"/>
+</imageobject>
+<textobject><phrase>Assistant Menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="using_terminal_tab">
+<title>Using the terminal tab</title>
+<simpara>Your Che workspace displays a terminal tab at the bottom of the screen. This terminal is for your private Linux container (i.e. your workspace). You can use Unix commands in the terminal tab as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In your Che workspace, if your application is not running, Click the <emphasis role="strong">run</emphasis> option (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/tri_run.png"/>
+</imageobject>
+<textobject><phrase>tri run</phrase></textobject>
+</inlinemediaobject>). The following message displays in the terminal tab when the run process completes:</simpara>
+<screen>INFO: Succeeded in deploying verticle</screen>
+</listitem>
+<listitem>
+<simpara>At the bottom of your workspace, click <emphasis role="strong">Terminal</emphasis> to see the terminal tab:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/terminal_start.png"/>
+</imageobject>
+<textobject><phrase>Terminal Tab</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Enter the following commands in the terminal tab:</simpara>
+<screen>cat /etc/os-release
+top</screen>
+<simpara>The terminal tab displays the following information about your Linux container:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/terminal_top.png"/>
+</imageobject>
+<textobject><phrase>Terminal Top Command</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Experiment further with the following commands in your terminal tab:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Press <keycombo><keycap>Ctrl</keycap><keycap>c</keycap></keycombo> to stop the <emphasis role="strong">top</emphasis> command.</simpara>
+</listitem>
+<listitem>
+<simpara>Enter the following:</simpara>
+<screen>curl localhost:8080</screen>
+</listitem>
+<listitem>
+<simpara>Enter the following:</simpara>
+<screen>curl localhost:8080/api/greeting</screen>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>After experimenting with the terminal commands, use the stop icon at the top of the page to stop the application.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/bar_stop.png"/>
+</imageobject>
+<textobject><phrase>Stop Bar</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="debugging_using_che_workspace">
+<title>Debugging using your Che workspace</title>
+<simpara>After creating your OpenShift.io project, you can debug your application code in the Che workspace. This exercise is optional but recommended as an introduction to debugging code in OpenShift.io.</simpara>
+<bridgehead xml:id="_procedure_5" renderas="sect3">Procedure</bridgehead>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Return to your project Che workspace browser tab.</simpara>
+</listitem>
+<listitem>
+<simpara>If the <literal>HttpApplication.java</literal> file is not already loaded, double-click it in your <emphasis role="strong">Projects Explorer</emphasis> (<literal>src</literal> &gt; <literal>main</literal> &gt; <literal>Java</literal> &gt; <literal>io.openshift.booster</literal>) to view the contents.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/project_dir.png"/>
+</imageobject>
+<textobject><phrase>Project Directory</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In your <literal>HttpApplication.java</literal> file, add a line break between lines 21 and 22, then type <literal>router.</literal> and press <keycombo><keycap>Ctrl</keycap><keycap>Space</keycap></keycombo> to see the context-aware assistance.</simpara>
+</listitem>
+<listitem>
+<simpara>From the displayed list, select the <literal>get():Route</literal> method. This is the Vert.x Router get method and maps to the HTTP verb GET.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/debug_router.png"/>
+</imageobject>
+<textobject><phrase>Project Directory</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Edit the new line to include the <literal>goodbye</literal> endpoint. The following is an example of the completed new line:</simpara>
+<programlisting language="java" linenumbering="unnumbered">router.get("/api/goodbye").handler(this::goodbye);</programlisting>
+</listitem>
+<listitem>
+<simpara>Add a new line after line 53 and then add the following method for the <literal>goodbye</literal> endpoint:</simpara>
+<programlisting language="java" linenumbering="unnumbered">private void goodbye(RoutingContext rc) {
+  String name = rc.request().getParam("name");
+  if (name == null) {
+    name = "World";
+  }
+  JsonObject response = new JsonObject()
+    .put("content", "Goodbye " + name);
+
+    rc.response()
+      .putHeader(CONTENT_TYPE, "application/json; charset=utf-8")
+        .end(response.encodePrettily());
+}</programlisting>
+</listitem>
+<listitem>
+<simpara>Use <keycombo><keycap>Ctrl</keycap><keycap>s</keycap></keycombo> (or <keycombo><keycap>Cmd</keycap><keycap>s</keycap></keycombo> for macOS) to save your changes.</simpara>
+</listitem>
+<listitem>
+<simpara>If your application is already deployed, skip this step. To deploy the application, click the <emphasis role="strong">run</emphasis> option (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/tri_run.png"/>
+</imageobject>
+<textobject><phrase>tri run</phrase></textobject>
+</inlinemediaobject>). The following message displays when the run process completes:</simpara>
+<screen>INFO: Succeeded in deploying verticle</screen>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Terminal</emphasis> tab at the bottom of the page, test the new endpoint by typing the following command:</simpara>
+<screen>curl localhost:8080/api/goodbye</screen>
+<simpara>The following result appears if the changes were successful:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/terminal_result.png"/>
+</imageobject>
+<textobject><phrase>Terminal Test Result</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">EXEC</emphasis> bar on the top of the workspace page, click the stop button (a blue square icon) to stop the current run process.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/bar_stop.png"/>
+</imageobject>
+<textobject><phrase>EXEC Bar</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>When stopped, the square icon becomes a circular arrow (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/run_stopped.png"/>
+</imageobject>
+<textobject><phrase>run stopped</phrase></textobject>
+</inlinemediaobject>).</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="setting_up_debugger">
+<title>Setting up the debugger</title>
+<simpara>To debug your project code, set up the Che workspace Debugger feature:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click the <emphasis role="strong">debug</emphasis> option from the Debug drop-down.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/debug_button.png"/>
+</imageobject>
+<textobject><phrase>Debugger Button</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the new <emphasis role="strong">debug</emphasis> tab in the <emphasis role="strong">Processes</emphasis> pane at the bottom of the screen, look for the following lines when the debugging starts:</simpara>
+<screen>[INFO] The application will wait for a debugger to attach on debugPort 5005
+
+[INFO] Launching Vert.x Application
+
+[INFO] Listening for transport dt_socket at address: 5005</screen>
+</listitem>
+<listitem>
+<simpara>When the debug process completes, click <emphasis role="strong">Run</emphasis> from the menu at the top of the page and select <emphasis role="strong">Edit Debug Configurations</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/edit_debug_config.png"/>
+</imageobject>
+<textobject><phrase>Edit Debug Configuration</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Debug Configurations</emphasis> dialog box:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In the left pane, click <guibutton>+</guibutton> for the <emphasis role="strong">JAVA</emphasis> item in the dialog box to add a <emphasis role="strong">Remote Java</emphasis> port.</simpara>
+</listitem>
+<listitem>
+<simpara>In the right pane, change the <emphasis role="strong">Port</emphasis> value to <literal>5005</literal>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/debug_config.png"/>
+</imageobject>
+<textobject><phrase>Debugger Configuration Dialog</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Save</guibutton> and then <guibutton>Close</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>To create a new breakpoint for your method:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In the <literal>HttpApplication.java</literal> file, find the following line of code:</simpara>
+<programlisting language="java" linenumbering="unnumbered">    if (name == null) {</programlisting>
+</listitem>
+<listitem>
+<simpara>Click the line number for this line of code:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/breakpoint.png"/>
+</imageobject>
+<textobject><phrase>Create Breakpoint</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Debug</emphasis> option at the bottom of the workspace to confirm the addition of the breakpoint:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/debug_option.png"/>
+</imageobject>
+<textobject><phrase>Debug Option</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>The <emphasis role="strong">Breakpoints</emphasis> pane at the lower left of the <emphasis role="strong">Debug</emphasis> section displays the added breakpoint at the appropriate line:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/debug_breakpoint.png"/>
+</imageobject>
+<textobject><phrase>Breakpoint View</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>The Debugger is now set up for your project.</simpara>
+</section>
+<section xml:id="running_debug_command">
+<title>Running the debug command</title>
+<simpara>Now that you have set up the Debugger for your project, you can use the debug command as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In your workspace tab, navigate to <menuchoice><guimenu>Run</guimenu> <guisubmenu>Debug</guisubmenu> <guimenuitem>Remote Java</guimenuitem></menuchoice>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/debug_remote_java.png"/>
+</imageobject>
+<textobject><phrase>Debug Remote Java</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>A success message displays when the remote debugger connects.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/success_remote.png"/>
+</imageobject>
+<textobject><phrase>Successful Connection to Remote Debugger</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<note>
+<simpara>If your remote debugger connection fails, restart your browser and try again.</simpara>
+</note>
+</listitem>
+<listitem>
+<simpara>Navigate to <menuchoice><guimenu>Run</guimenu> <guimenuitem>Terminal</guimenuitem></menuchoice> to view the terminal tab.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/run_terminal.png"/>
+</imageobject>
+<textobject><phrase>Run&gt;Terminal</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Run the following command to start debugging:</simpara>
+<screen>curl localhost:8080/api/goodbye</screen>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Debug</emphasis> option at the bottom of the workspace to review variables in the <emphasis role="strong">Variables</emphasis> pane.</simpara>
+</listitem>
+</orderedlist>
+<simpara>You can also use the <emphasis role="strong">Resume</emphasis>, <emphasis role="strong">Step Into</emphasis>, <emphasis role="strong">Step Over</emphasis>, and <emphasis role="strong">Step Out</emphasis> options during the debugging process. When you have finished exploring the debugging features, close the workspace tab and return to the OpenShift.io tab.</simpara>
+</section>
+</chapter>
+<chapter xml:id="cleaning_oso_account">
+<title>Cleaning your OpenShift Online account</title>
+<simpara>OpenShift.io generates artifacts within five projects (Kubernetes namespaces) in OpenShift Online. See <xref linkend="viewing_projects_oso"/> for details. This section describes how to reset your OpenShift Online account, which can serve two purposes:</simpara>
+<variablelist>
+<varlistentry>
+<term>Freeing resources used by tutorials</term>
+<listitem>
+<simpara>After you create the <link linkend="hello_world_developers">Vert.X</link> quickstart project, the limited resources available in the OpenShift Online Free Tier are nearly exhausted. You can reset your OpenShift.io and Openshift Online account resources to start afresh.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+<variablelist>
+<varlistentry>
+<term>General troubleshooting</term>
+<listitem>
+<simpara>If your OpenShift.io environment is in a state where you find it difficult or impossible to move forward, you can reset your environment to start afresh.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+<bridgehead xml:id="_procedure_6" renderas="sect2">Procedure</bridgehead>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>On your OpenShift.io home page, click your name in the top right corner of the screen.</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In the drop-down options, click <emphasis role="strong">Profile</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>On the profile page, click <guibutton>Update Profile</guibutton>.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Reset Environment</guibutton>. A warning page appears with a summary of your OpenShift.io account.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/reset_env.png"/>
+</imageobject>
+<textobject><phrase>Reset environment</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Erase my OpenShift.io Environment</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/erase.png"/>
+</imageobject>
+<textobject><phrase>Erase My OpenShift.io environment</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the dialog box, add your OpenShift.io user name and click <guibutton>I understand my actions - erase my environment</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/are_you_sure.png"/>
+</imageobject>
+<textobject><phrase>Confirm</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>After the environment is successfully erased, the success page displays:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/status_success.png"/>
+</imageobject>
+<textobject><phrase>Success</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click the check-mark icon on the top right side of the page to see the <emphasis role="strong">Jenkins</emphasis> and <emphasis role="strong">Che</emphasis> status. Allow several minutes for this to load. When all the status indicators are green (see screen capture), you can use your OpenShift.io account again. If the status indicators are not green after several minutes, see <xref linkend="confirming_che_jenkins_status"/> for troubleshooting information.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/tenant_status_success.png"/>
+</imageobject>
+<textobject><phrase>Che and Jenkins successfully restored</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<note>
+<simpara>The version numbers for Che and Jenkins in the screen capture are for illustration purposes and may not be the most recent versions. See <xref linkend="confirming_che_jenkins_status"/> for details.</simpara>
+</note>
+</listitem>
+</orderedlist>
+<simpara>After completing these steps, your OpenShift.io and OpenShift Online account resources are reset and ready for use with a new project.</simpara>
+</chapter>
+<chapter xml:id="importing-existing-project">
+<title>Importing an existing project from GitHub</title>
+<simpara>This section contains instructions for adding an existing project to OpenShift.io instead of creating a new project using quickstarts.</simpara>
+<section xml:id="forking_example_repository">
+<title>Forking an example repository</title>
+<simpara>In addition to creating projects based on quickstarts, you can also add projects by using the <emphasis role="strong">Import existing code</emphasis> feature.</simpara>
+<bridgehead xml:id="_prerequisites" renderas="sect3">Prerequisites</bridgehead>
+<simpara>Reset your OpenShift.io environment by following instructions in <xref linkend="cleaning_oso_account"/>.</simpara>
+<bridgehead xml:id="_procedure_7" renderas="sect3">Procedure</bridgehead>
+<simpara>As an example for this tutorial, use our sample repositories in GitHub. Fork one of the following (the examples in this tutorial are for the <literal>vertx-eventbus</literal> repository):</simpara>
+<itemizedlist>
+<listitem>
+<simpara><link xl:href="https://github.com/burrsutter/vertx-eventbus">https://github.com/burrsutter/vertx-eventbus</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://github.com/burrsutter/vertx-paint">https://github.com/burrsutter/vertx-paint</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://github.com/burrsutter/vertx-wiki2">https://github.com/burrsutter/vertx-wiki2</link></simpara>
+</listitem>
+</itemizedlist>
+<note>
+<simpara>The OpenShift Online Free Tier provides two pods, and each project requires one pod.</simpara>
+</note>
+<simpara>While you can import all three projects into OpenShift.io simultaneously, it can result in a 12-15 minute delay. We recommend trying to import the projects one at a time.</simpara>
+</section>
+<section xml:id="creating_new_space-importing-existing-project">
+<title>Creating a new space</title>
+<simpara>In OpenShift.io, the first step for any new project is to create a new space. You can then add users as collaborators for the space and all the work is tracked within the space using work items. Each space must have a unique name.</simpara>
+<bridgehead xml:id="_procedure_8" renderas="sect3">Procedure</bridgehead>
+<simpara>Create a new space as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the OpenShift.io home page, click <guibutton>Create a space</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/create_space_first.png"/>
+</imageobject>
+<textobject><phrase>Create your first space</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the dialog box, type <emphasis role="strong">myspace</emphasis> as the unique name for your space.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/create_space.png"/>
+</imageobject>
+<textobject><phrase>Create new space</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Use the drop-down menu for the <emphasis role="strong">Template</emphasis> field to select a template for your new space. For this example, select <emphasis role="strong">Scenario Driven Planning</emphasis> and click <guibutton>Create</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">How would you like to get started?</emphasis> menu displays for your new space.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="importing_your_project">
+<title>Importing your project</title>
+<simpara>After <link linkend="creating_new_space-importing-existing-project">creating a space</link>, the <emphasis role="strong">How would you like to get started?</emphasis> menu appears. You can also access this menu later by clicking <guibutton>Add to space</guibutton> in your space dashboard.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the <emphasis role="strong">How would you like to get started?</emphasis> menu, click <emphasis role="strong">Import existing code</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/get_started_menu.png"/>
+</imageobject>
+<textobject><phrase>Get Started Menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Application Wizard</emphasis>, select an <emphasis role="strong">Organization</emphasis> from the drop-down options. The default (and recommended for this tutorial) option is your personal GitHub account name.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/organization_personal.png"/>
+</imageobject>
+<textobject><phrase>Personal organization</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Next</guibutton> to continue.</simpara>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Repository name pattern</emphasis> field automatically queries GitHub for all your repositories. Click the filter icon (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/funnel.png"/>
+</imageobject>
+<textobject><phrase>funnel</phrase></textobject>
+</inlinemediaobject>) and type <literal>vertx-</literal> to filter the results for your forked example repository.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/add_example_repo.png"/>
+</imageobject>
+<textobject><phrase>Add Forked Repository</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>From the results, select the forked <literal>vertx-eventbus</literal> repository and click <guibutton>Next</guibutton> after the repository is validated.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/select_vertx_eventbus.png"/>
+</imageobject>
+<textobject><phrase>Select VertX Eventbus Repository</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>On the <emphasis role="strong">Configure Pipeline</emphasis> screen, use the default settings and click <guibutton>Next</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/configure_pipeline.png"/>
+</imageobject>
+<textobject><phrase>Configure pipeline</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>On the <emphasis role="strong">Build Config</emphasis> screen, use the default values, and click <guibutton>Finish</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/build_config.png"/>
+</imageobject>
+<textobject><phrase>Build config screen</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>The <emphasis role="strong">Summary</emphasis> screen displays the selected options for the project. Click <guibutton>Ok</guibutton> to import the project.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/eventbus_final.png"/>
+</imageobject>
+<textobject><phrase>Build config screen</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>You have now added the code from your existing repository to OpenShift.io.</simpara>
+</section>
+<section xml:id="creating_che_workspace-importing-existing-project">
+<title>Creating a Che workspace</title>
+<simpara>Create a new <link linkend="about_workspaces">Che workspace</link> for your project:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <emphasis role="strong">Create</emphasis> from the top of the OpenShift.io page. The default view for this tab is <emphasis role="strong">Codebases</emphasis></simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">WORKSPACES</emphasis> column, click <emphasis role="strong">Create workspace</emphasis> for your project.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/create_workspace.png"/>
+</imageobject>
+<textobject><phrase>Create Workspace</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<note>
+<simpara>If you see a message about the workspaces loading (see screen capture), it indicates that your Che instance is idle. Allow several minutes for the loading process to finish.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/loading_workspaces.png"/>
+</imageobject>
+<textobject><phrase>Loading Workspaces</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</note>
+</listitem>
+<listitem>
+<simpara>When your workspace is ready, it automatically loads in a new tab. Alternatively, click <guibutton>Open</guibutton> to view your new Che workspace in a new browser tab. This workspace loads the codebase for the listed project.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/new_ws.png"/>
+</imageobject>
+<textobject><phrase>New Workspace</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<important>
+<simpara>If a new tab does not appear, your browser is blocking the pop-up window that displays the new workspace. To resolve this, allow pop-up windows from <emphasis role="strong">https://openshift.io</emphasis>. In Chromium-based browsers, do the following:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click the blocked pop-up window icon in the URL field of your browser.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the <emphasis role="strong">Always allow pop-ups from https://openshift.io</emphasis> option, and click <guibutton>Done</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/blocked_popup.png"/>
+</imageobject>
+<textobject><phrase>Blocked Pop Up</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Now, click <guibutton>Open</guibutton> again to load the workspace.</simpara>
+</listitem>
+</orderedlist>
+</important>
+<simpara>When the workspace is running, the following confirmation message displays:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/ws_running.png"/>
+</imageobject>
+<textobject><phrase>Workspace Running success message</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Like booting a computer, the workspace requires several minutes to start. The terminal window at the bottom of the Che workspace tab displays the progress:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/che_terminal.png"/>
+</imageobject>
+<textobject><phrase>Workspace Terminal</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>When loaded and ready to use, the new Che workspace tab displays the GitHub repository folder of your new project in the <emphasis role="strong">Projects Explorer</emphasis> panel.</simpara>
+</listitem>
+</orderedlist>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/imp_vertx_eventbus.png"/>
+</imageobject>
+<textobject><phrase>Your GitHub Project in Che</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="configuring_your_che_workspace-importing-existing-project">
+<title>Configuring your Che workspace</title>
+<simpara>After your Che workspace loads, you can see your project code listed in the <emphasis role="strong">Projects Explorer</emphasis> panel, in the upper-left side of the screen. You must now ensure the following prerequisites are met before you start using the workspace to edit the codebase:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Ensure Git commands are available:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Click <emphasis role="strong">Git</emphasis> in the workspace menu to ensure that all the listed commands (except <emphasis role="strong">Initialize Repository</emphasis>) are available.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/git_menu.png"/>
+</imageobject>
+<textobject><phrase>Git Menu Options</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>If they are not available, reload the workspace browser tab.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Configure your project for Maven:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In the <emphasis role="strong">Projects Explorer</emphasis> panel, click your project name to select it.</simpara>
+</listitem>
+<listitem>
+<simpara>From the menu options at the top of the page, click <emphasis role="strong">Project</emphasis>, and then select <emphasis role="strong">Update Project Configuration</emphasis>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/imp_project_menu.png"/>
+</imageobject>
+<textobject><phrase>Configure Maven</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the displayed <emphasis role="strong">Project Configuration</emphasis> window, select <emphasis role="strong">Maven</emphasis> and click <guibutton>Save</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/imp_config_maven.png"/>
+</imageobject>
+<textobject><phrase>Configure Maven</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">run</emphasis> option from the Run button (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/tri_run.png"/>
+</imageobject>
+<textobject><phrase>tri run</phrase></textobject>
+</inlinemediaobject>). Maven then downloads the required dependencies, compiles the application, and starts the <emphasis>verticle</emphasis> (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options. The hot deploy option automatically updates the application when you make a change.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>A <emphasis role="strong">run</emphasis> terminal appears at the bottom pane of the Che workspace. When the <literal>mvn&#160;build</literal> command finishes executing, the <emphasis role="strong">run</emphasis> view displays the following message:</simpara>
+<screen>INFO: Succeeded in deploying verticle</screen>
+</listitem>
+<listitem>
+<simpara>Click the blue preview URL at the top of the <emphasis role="strong">run</emphasis> view to see your application running in Che.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/run_proj.png"/>
+</imageobject>
+<textobject><phrase>Run project link</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Enter a name in the <emphasis role="strong">Name</emphasis> field and click <guibutton>Invoke</guibutton> to test the application.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/aloha_john.png"/>
+</imageobject>
+<textobject><phrase>Testing the application</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>This is the same version of the application that the pipeline deployed to <emphasis role="strong">Stage</emphasis> and you subsequently promoted to <emphasis role="strong">Run</emphasis>. The URL for this build of the application is different from the URLs used by OpenShift Online for <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis>. This is your private sandbox hosted within Che. You can still share this URL with others and interactively debug the application while they run it in their browser.</simpara>
+</section>
+<section xml:id="changing_project_code">
+<title>Changing the project code</title>
+<simpara>The example project code includes a new route for <emphasis role="strong">eventbus</emphasis> and its supporting method. The project sets up <emphasis role="strong">eventbus</emphasis> to only allow outbound communications for the <emphasis role="strong">my-feed</emphasis> channel. Messages arriving in the <emphasis role="strong">my-feed</emphasis> channel are pushed to the browser using the SockJS bridge. This project includes a <literal>vertx-eventbus.js</literal> file along with the <literal>index.html</literal> file and also includes tweaks to the <literal>index.html</literal> file.</simpara>
+<bridgehead xml:id="_procedure_9" renderas="sect3">Procedure</bridgehead>
+<simpara>You can change the code of your project and preview the results as follows:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the <emphasis role="strong">Project Explorer</emphasis> view, double-click the following directories to expand them: <literal>src</literal> &gt; <literal>main</literal> &gt; <literal>Java</literal> &gt; <literal>io.openshift.booster</literal>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/imp_folder.png"/>
+</imageobject>
+<textobject><phrase>Folder View</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <literal>HttpApplication.java</literal> file of your project, find the following line:</simpara>
+<programlisting language="java" linenumbering="unnumbered">  protected static final String template = "Aloha, %s!";</programlisting>
+</listitem>
+<listitem>
+<simpara>Add exclamation marks to the string. The line should now be:</simpara>
+<programlisting language="java" linenumbering="unnumbered">  protected static final String template = "Aloha !!!, %s!";</programlisting>
+</listitem>
+<listitem>
+<simpara>Save the changes (<keycombo><keycap>Ctrl</keycap><keycap>s</keycap></keycombo> or <keycombo><keycap>Cmd</keycap><keycap>s</keycap></keycombo> for macOS).</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">run</emphasis> option from the Run button (<inlinemediaobject>
+<imageobject>
+<imagedata fileref="images/tri_run.png"/>
+</imageobject>
+<textobject><phrase>tri run</phrase></textobject>
+</inlinemediaobject>). This runs the application and also provides the hot deploy feature. The following message appears when the run process completes:</simpara>
+<screen>[INFO] INFO: Succeeded in deploying verticle</screen>
+</listitem>
+<listitem>
+<simpara>Click the blue preview URL at the top of the <emphasis role="strong">run</emphasis> view to view your project.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/run_proj.png"/>
+</imageobject>
+<textobject><phrase>Run project link</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>Type a name in the text box and click <guibutton>Invoke</guibutton> to test the application.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/imp_test_change.png"/>
+</imageobject>
+<textobject><phrase>Test Application</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+<simpara>You have now changed your application code and tested the change.</simpara>
+</section>
+<section xml:id="committing_pushing_changes_git-importing-existing-project">
+<title>Committing and pushing changes to GitHub</title>
+<simpara>After making the required changes to your code, commit and push the modifications to your project GitHub repository.</simpara>
+<important>
+<simpara>Before committing your changes, ensure that your project pipeline build has completed (that is, the build has been promoted and is at the <emphasis role="strong">Rollout to Run</emphasis> stage). See <xref linkend="approving_build_pipeline"/> for instructions.</simpara>
+</important>
+<bridgehead xml:id="_procedure_10" renderas="sect3">Procedure</bridgehead>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the workspace browser tab, click <emphasis role="strong">Git</emphasis> from the menu options and select <emphasis role="strong">Commit</emphasis> from the displayed options.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/commit_menu.png"/>
+</imageobject>
+<textobject><phrase>Git Commit Menu</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Commit to repository</emphasis> dialog box:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select all the changed and new files you wish to commit.</simpara>
+</listitem>
+<listitem>
+<simpara>Add a commit message describing your changes.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the <emphasis role="strong">Push committed changes to:</emphasis> check box.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Commit</guibutton>.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/vertxeventbus_commit.png"/>
+</imageobject>
+<textobject><phrase>Commit changes</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+<simpara>When the commit succeeds, the following message displays:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/pushed_to_origin.png"/>
+</imageobject>
+<textobject><phrase>Pushed to origin</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>You have now committed your code changes to GitHub.</simpara>
+</section>
+<section xml:id="reviewing_publishing_changes-importing-existing-project">
+<title>Reviewing and publishing your changes</title>
+<simpara>Now that we have committed and pushed our changes to GitHub, a pipeline build is automatically triggered in OpenShift.io.</simpara>
+<bridgehead xml:id="_procedure_11" renderas="sect3">Procedure</bridgehead>
+<simpara>To view the build:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Return to the OpenShift.io browser tab.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create</emphasis> and then <emphasis role="strong">Pipelines</emphasis> to view the build pipelines. After several moments, the build pipeline stops at the <emphasis role="strong">Approve</emphasis> stage. Do not approve the build yet.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/imp_build_2.png"/>
+</imageobject>
+<textobject><phrase>Build #2 Runs</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Create</emphasis> tab, click <emphasis role="strong">Deployments</emphasis> to see the following information:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/imp_versions_applications.png"/>
+</imageobject>
+<textobject><phrase>Versions of the Application</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<itemizedlist>
+<listitem>
+<simpara>Different versions of your application are now deployed to <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis>. Version 1.0.2 of the application, which includes your committed change to the code, is deployed to <emphasis role="strong">Stage</emphasis> because you have not yet promoted it to <emphasis role="strong">Run</emphasis>. The older version, 1.0.1, is deployed to <emphasis role="strong">Run</emphasis> because you approved it the last time the pipeline build executed.</simpara>
+</listitem>
+<listitem>
+<simpara>The green check marks indicate that both builds are operational.</simpara>
+</listitem>
+<listitem>
+<simpara>The <literal>1 pod</literal> indicates that each of the application builds is scaled to one pod in OpenShift Online. The number of pods indicates the number of running instances of the application.</simpara>
+</listitem>
+<listitem>
+<simpara>The version numbers link to individual running applications. You can use these separate staging areas to share different versions of your application before <emphasis role="strong">Promoting</emphasis> a change. Click the version numbers to view the details for that deployment.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/expand_version.png"/>
+</imageobject>
+<textobject><phrase>Expand the application version</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Pipelines</emphasis> to return to the pipelines view.</simpara>
+</listitem>
+<listitem>
+<simpara>At the <emphasis role="strong">Approve</emphasis> stage, click <guibutton>Input Required</guibutton>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <guibutton>Promote</guibutton> to promote version 1.0.2 of the application to <emphasis role="strong">Run</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+<simpara>Your changes are now available on both <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis>. If you return to the <literal>Deployments</literal> tab, you can see the version for both <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis> are now 1.0.2.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/updated_app.png"/>
+</imageobject>
+<textobject><phrase>Updated applications</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</chapter>
+<chapter xml:id="next_steps">
+<title>Next steps</title>
+<simpara>If you followed the instructions in this document, you have now learned about OpenShift.io and its features. You are now able to:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Create spaces for your projects. See <xref linkend="creating_new_space-hello-world"/>.</simpara>
+</listitem>
+<listitem>
+<simpara>Add code from an existing project to your space. See <xref linkend="importing-existing-project"/>.</simpara>
+</listitem>
+<listitem>
+<simpara>Create new projects using the quickstart wizards and test them. See <xref linkend="hello_world_developers"/> for a Vert.X project.</simpara>
+</listitem>
+<listitem>
+<simpara>Create Work Items to track and manage your tasks. See <xref linkend="creating_using_new_work_item"/>.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the build pipelines to stage reviews in the <emphasis role="strong">Stage</emphasis> and <emphasis role="strong">Run</emphasis> environments. See <xref linkend="working_with_pipelines"/>.</simpara>
+</listitem>
+<listitem>
+<simpara>Create Che workspaces to edit your project code and commit the changes to GitHub. See <xref linkend="creating_che_workspace-hello-world"/> and <xref linkend="committing_pushing_changes_git-hello-world"/>.</simpara>
+</listitem>
+<listitem>
+<simpara>Optimize the memory usage for your projects to use your OpenShift Online resources more efficiently. See <xref linkend="optimizing_memory_usage"/>.</simpara>
+</listitem>
+<listitem>
+<simpara>Use stack reports to make improvements to your code. See <xref linkend="accessing_stack_reports"/>.</simpara>
+</listitem>
+<listitem>
+<simpara>Debug your code using the Che workspace. See <xref linkend="debugging_using_che_workspace"/>.</simpara>
+</listitem>
+<listitem>
+<simpara>Clean up your OpenShift.io account so you can start afresh. See <xref linkend="cleaning_oso_account"/>.</simpara>
+</listitem>
+</itemizedlist>
+<simpara>You can now try using what you have learned about OpenShift.io with your own projects. See the <link xl:href="user-guide.html">OpenShift.io User Guide</link> for comprehensive information about OpenShift.io and its features. OpenShift.io is currently Early Access only. If you have any questions or suggestions for improvement with OpenShift.io or this document, let us know using one of the methods listed in <xref linkend="getting-support"/>.</simpara>
+</chapter>
+</part>
+</book>

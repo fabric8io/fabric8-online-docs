@@ -1,0 +1,16 @@
+// Includes for all assemblies that form the top-level sections of the Analytics Integration API guide.
+:context: analytics_integration_api_guide
+
+[id="before_you_start"]
+= Before you start
+
+include::modules/about_fabric8_analytics.adoc[leveloffset=+1]
+
+include::modules/getting_osio_authentication_token.adoc[leveloffset=+1]
+
+[id="start_using_analytics_APIs"]
+= Using analytics APIs
+
+include::api_usage_examples.adoc[leveloffset=+1]
+
+include::api_specifications.adoc[leveloffset=+1]

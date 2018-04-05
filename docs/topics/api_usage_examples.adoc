@@ -1,0 +1,8 @@
+[id="api_usage_examples"]
+= API usage examples
+
+The following section lists two examples demonstrating the usage of the Fabric8-Analytics platform.
+
+include::modules/api_usage_example_1.adoc[leveloffset=+1]
+
+include::modules/api_usage_example_2.adoc[leveloffset=+1]

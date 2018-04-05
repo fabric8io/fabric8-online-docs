@@ -1,0 +1,178 @@
+[id="api_get_stack_analyses_response"]
+= GET /stack-analyses/+{request ID}+
+
+== Purpose
+
+Fetches stack analysis response by using the request identifier returned by /stack-analyses POST.
+
+NOTE: You require an {osio} authentication token to invoke this method.
+
+== Resource URL
+
+For information about the resource URL, reach out to us on the {osio} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+
+== Resource information
+
+|===
+| Response Format         | JSON
+| Requires Authentication | Yes
+|===
+
+== Parameters
+
+None
+
+== Example request with cURL
+
+----
+curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://recommender.api.openshift.io/api/v1/stack-analyses/421249d9e1e5464cbf3e77dde4941463
+----
+
+== Example response
+
+*Success*
+
+[source,typescript]
+----
+{
+    "finished_at": "2017-07-18T08:05:28.867886",
+    "recommendation": {
+        "_audit": {
+            "ended_at": "2017-07-18T08:06:29.128140",
+            "started_at": "2017-07-18T08:05:58.350028",
+            "version": "v1"
+        },
+        "_release": "None:None:None",
+        "recommendations": [
+            {
+                "component_level": null,
+                "manifest_file_path": "\"/Users/JohnDoe/Archive/qodfather_pom\"",
+                "similar_stacks": [
+                    {
+                        "analysis": {
+                            "missing_packages": [],
+                            "version_mismatch": []
+                        },
+                        "similarity": 0.6666666666666666,
+                        "source": "manually curated",
+                        "stack_id": "cca357b72bb544f5908f62e186a5f6ac",
+                        "stack_name": "Vert.x HTTP Booster",
+                        "usage": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "request_id": "510a314561104e8ba14bac489b31efe0",
+    "result": [
+        {
+            "_audit": {
+                "ended_at": "2017-07-18T08:05:28.867886",
+                "started_at": "2017-07-18T08:05:27.717445",
+                "version": "v1"
+            },
+            "_release": "None:None:None",
+            "stack_data": [
+                {
+                    "analyzed_components": 3,
+                    "components": [
+                        {
+                            "code_metrics": {
+                                "average_cyclomatic_complexity": 1.22,
+                                "code_lines": 37699,
+                                "total_files": 239
+                            },
+                            "ecosystem": "maven",
+                            "github_details": {
+                                "forks_count": -1,
+                                "issues": {
+                                    "month": {
+                                        "closed": -1,
+                                        "opened": -1
+                                    },
+                                    "year": {
+                                        "closed": -1,
+                                        "opened": -1
+                                    }
+                                },
+                                "pull_requests": {
+                                    "month": {
+                                        "closed": -1,
+                                        "opened": -1
+                                    },
+                                    "year": {
+                                        "closed": -1,
+                                        "opened": -1
+                                    }
+                                },
+                                "stargazers_count": -1
+                            },
+                            "id": "maven:io.vertx:vertx-web:3.4.1",
+                            "latest_version": "3.4.1",
+                            "licenses": [
+                                "Apache 2.0",
+                                "EPL 1.0"
+                            ],
+                            "name": "io.vertx:vertx-web",
+                            "redhat_usage": {
+                                "all_rhn_channels": [],
+                                "all_rhsm_content_sets": [],
+                                "all_rhsm_product_names": [],
+                                "package_names": [],
+                                "published_in": [],
+                                "registered_srpms": [],
+                                "rh_mvn_matched_versions": []
+                            },
+                            "security": {},
+                            "version": "3.4.1"
+                        }
+                    ],
+                    "distinct_licenses": [
+                        "MIT License",
+                        "Apache 2.0",
+                        "EPL 1.0"
+                    ],
+                    "ecosystem": "maven",
+                    "manifest_file_path": "\"/Users/JohnDoe/Archive/qodfather_pom\"",
+                    "manifest_name": "pom.xml",
+                    "popularity": {
+                        "average_forks": "NA",
+                        "average_stars": "NA",
+                        "low_popularity_components": 0
+                    },
+                    "total_licenses": 3
+                }
+            ]
+        }
+    ],
+    "schema": {
+        "name": "stack_analyses",
+        "url": "http://recommender.api.openshift.io/api/v1/schemas/api/stack_analyses/2-1-4/",
+        "version": "2-1-4"
+    },
+    "started_at": "2017-07-18T08:05:27.717445"
+}
+
+----
+
+*In-Progress*
+
+[source,typescript]
+----
+200:
+{
+    "error": "Analysis for request ID '510a314561104e8ba14bac489b31efe0' is in progress"
+}
+
+----
+
+*Failure*
+
+[source,typescript]
+----
+401:
+{
+  "error": "Authentication failed - could not decode JWT token"
+}
+
+----
