@@ -1,0 +1,33 @@
+[id="modifying_a_work_item"]
+= Modifying a work item
+
+After you create a new work item the planner provides you the option to preview your work item or see a detailed, full page view of the work item.
+
+You can use preview or the detailed view of your work item to modify your work item as required.
+
+* *Preview*: Click the title of a work item to preview the work item on the right of your screen.
+* *Detailed view*: Click the *Detailed view* icon next to the work item to see the detailed view of the work item.
+
+You can make the following modifications to the work item, in the preview or the detailed view, to facilitate tracking and execution of the work item:
+
+
+include::tracking_status_of_a_work_item.adoc[leveloffset=+1]
+
+include::editing_work_item_title.adoc[leveloffset=+1]
+
+include::assigning_the_work_item.adoc[leveloffset=+1]
+
+include::associating_work_item_with_area.adoc[leveloffset=+1]
+
+include::associating_work_items_with_an_iteration.adoc[leveloffset=+1]
+
+include::adding_assigning_labels_to_a_work_item.adoc[leveloffset=+1]
+
+include::adding_description_to_a_work_item.adoc[leveloffset=+1]
+
+include::adding_comments_to_a_work_item.adoc[leveloffset=+1]
+
+
+Click *x* at the top right of the preview or detailed view to close it.
+
+NOTE: Before closing the preview or detailed view ensure that all your changes are individually saved.

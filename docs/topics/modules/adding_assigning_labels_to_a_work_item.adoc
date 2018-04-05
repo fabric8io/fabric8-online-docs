@@ -1,0 +1,19 @@
+[id="adding_assigning_labels_to_a_work_item"]
+= Adding and assigning labels to a work item
+
+You can use labels to categorize and group work items as required.
+
+Assign existing labels to your work items as follows:
+
+. In the *Labels* field, click *Add label* to see the available labels in your space.
+. Select the suitable labels and click *x* to assign the labels to the work item.
+
+Add and assign new labels as follows:
+
+. In the *Labels* field, click *Add label* to see the available labels in your space.
+. At the bottom of the *Add label* list, click *Create new label* to add new labels to the work item.
+. Click the default color displayed for the label to see a list of colors you can assign to the label and select the color you want to assign your label.
+. Add an appropriate name to the label and click *✓* to save the label and add it to the list.
+. Select the label and click *x* to assign the label to the work item.
+
+NOTE: Once the labels are created for a work item they are available for all the work items in the space.

@@ -1,0 +1,11 @@
+[id="associating_work_item_with_area"]
+= Associating a work item with an area
+
+You can allocate a work item to a particular area to group it by functionality or type.
+
+By default, the name of your workspace is set as the root area for a work item.
+
+To assign a new area for your work item:
+
+. In the *Area* field, click the root area to see the the areas you can associate the work item with. The list of available areas for a space is set by the administrator for the space.
+. Select the required area and click *✓* to save the change.

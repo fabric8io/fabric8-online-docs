@@ -1,11 +1,13 @@
 [id="working_with_an_existing_work_item"]
 = Working with an existing work item
 
-Click btn:[Plan] to use the Planner to track your work items and iterations using the list view.
+Click btn:[Plan] to use the planner to track your work items and iterations for your space.
 
-* The btn:[Backlog] is the default Planner view. This view displays all work items in a flat or hierarchal view organized by iterations and type. This view lists the active and future iterations and their work items.
+The planner displays all work items in a flat or hierarchical list. These work items are grouped based on the work item types, which are determined by the space template. It lists the iterations and the work items associated to these iterations enabling effective execution of the project plan.
 
-Use the Planner to change the attributes of a work item, associate them with iterations, update their progress, and filter them according to your requirements.
+* Click btn:[Board] to see work items in a Kanban-based view. Each work item appears in the appropriate column depending on its current status. You can edit work items in this view and drag and drop them in the appropriate status column.
+
+You can use the planner to change the attributes of a work item, associate them with iterations, update their progress, and filter them according to your requirements.
 
 include::modifying_an_existing_work_item.adoc[leveloffset=+1]
 

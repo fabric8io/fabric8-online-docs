@@ -1,0 +1,7 @@
+[id="editing_work_item_title"]
+= Editing the work item title
+
+You can modify the title of your work item after it is created as follows:
+
+. Click the title of the work item to modify it.
+. Make your changes and press kbd:[Enter] to save the change.

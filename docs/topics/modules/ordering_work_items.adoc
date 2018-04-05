@@ -1,0 +1,21 @@
+[id="ordering_work_items"]
+= Ordering work items
+
+The planner work items can be moved higher or lower the list depending on their priority or the order of execution.
+
+Click btn:[Plan] to view the planner work item list.
+You can move a work item higher or lower the list as follows:
+
+. Move the mouse pointer over the work item you want to reorder to highlight it.
+. Move the mouse pointer over the vertical blue dotted line <screenshot> to the left of the selected work item, the pointer changes to the move-cursor.
+. Use the move-cursor to drag the work item to the required position in the list.
+
+////
+The *Backlog* displays a list view used to plan your work. You can order work items based on their priority, status, and other parameters to organize them.
+
+The *Backlog* displays the list of work items as a list where all the work items display in a single file.
+
+The btn:[Board] view displays a visual representation of your work item progress. Based on their status, the work items are sorted into the _new_, _open_, _in progress_, _resolved_, or _closed_ columns. Use this feature to track and update the status of work items as you progress through your task list.
+
+In the btn:[Board] view, you can drag and drop the selected work item to the relevant column based on the progress of the work item.
+////

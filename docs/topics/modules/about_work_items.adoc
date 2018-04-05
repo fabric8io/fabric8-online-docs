@@ -1,10 +1,20 @@
 [id="about_work_items"]
 = About work items
 
-_Work items_ are trackable and measurable units of work within a <<about_spaces,space>>. They are captured representations of work, and can be modified based on the requirements of the development project.
+Work items are measurable units of work within a <<about_spaces,space>> that can be tracked. They are captured representations of work, assigned to a team member. Work items track data such as user stories, scenarios, tasks, and bugs.
 
-Users can create and manage work items within a space using the *Planner*. Work items track data such as ideas, user stories, bugs, and tasks. Work items can be grouped and categorized into <<about_areas,areas>> and <<about_iterations,iterations>> to track progress and plan work.
+{osio} planner is a task or work item tracker to plan and execute your project work.
 
-Work items are assigned to users and their status is changed to indicate the progress of the work item. Link work items to each other based on their relationships, enabling users to plan the scope of work better. For example, you can link work item A as the parent of work item B, enabling you to prioritize and order your work.
+The planner includes a set of predefined templates based on common development methodologies such as _Scrum_ and _Scenario Driven Development_. These templates determine the structure and features of the included work item types and states that are available for a space.
 
-The *Planner* includes a set of predefined templates based on common planning methodologies such as _Scrum_, _Agile_, and _Scenario Driven Development_. These templates determine the structure and features of the included work-item types and states that are available for a space.
+Work items can be grouped and categorized into various work item types depending on the template you select for a space. In addition, you can associate the work items to <<about_iterations,Iterations>> and sprints to track progress and plan work.
+
+This enables you to plan, execute, and track your development work based on the project management methodology you adopt.
+
+////
+Backlog and Board Views
+Planner provides you two views to track your work items:
+The backlog or list view: This lists your work items in a flat or tree (hierarchical) structure. The tree structure enables you to see a work item, its parent and child work items. This helps you to order and prioritize your work.
+
+The board view: This displays your work items in a kanban based board view. The work items are categorized on the basis of their completion status enabling easy tracking of your work items.
+////
