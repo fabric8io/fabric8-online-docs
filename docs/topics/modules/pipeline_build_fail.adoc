@@ -1,0 +1,33 @@
+[id="pipeline_build_failure"]
+= Pipeline Build Failure
+
+Occasionally, a pipeline build can fail due to a network connectivity issue with Maven. This displays a red line and cross in the Pipeline Build information as seen in the following screen capture:
+
+image::pipeline_fail.png[Pipeline build failure]
+
+If you click *View Log* for the failed build, the build log includes error information such as the following:
+
+----
+[INFO] --- fabric8-maven-plugin:3.5.38:resource (fmp) @ test4 ---
+Mar 22, 2018 2:54:10 PM org.apache.maven.wagon.providers.http.httpclient.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {s}->https://repo1.maven.org:443: Connection reset
+Mar 22, 2018 2:54:10 PM org.apache.maven.wagon.providers.http.httpclient.impl.execchain.RetryExec execute
+INFO: Retrying request to {s}->https://repo1.maven.org:443
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 50.518 s
+[INFO] Finished at: 2018-03-22T14:54:12+00:00
+[INFO] Final Memory: 22M/29M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal io.fabric8:fabric8-maven-plugin:3.5.38:resource (fmp) on project test4: Execution fmp of goal io.fabric8:fabric8-maven-plugin:3.5.38:resource failed: Plugin io.fabric8:fabric8-maven-plugin:3.5.38 or one of its dependencies could not be resolved: Could not transfer artifact io.fabric8:kubernetes-model:jar:2.0.4 from/to central (https://repo1.maven.org/maven2): GET request of: io/fabric8/kubernetes-model/2.0.4/kubernetes-model-2.0.4.jar from central failed: Connection reset -> [Help 1]
+----
+
+To resolve this issue, restart the pipeline build as follows:
+
+. Click the additional options icon (image:kabob_white.png[title="Options"]) at the right side of the build.
+. From the displayed options, select *Start Pipeline*.
++
+image::manual_start_pipeline.png[Manually start pipeline]
+
+The pipeline restarts and will successfully complete.

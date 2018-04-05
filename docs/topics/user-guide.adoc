@@ -30,5 +30,8 @@ include::working_with_pipelines.adoc[leveloffset=+1]
 
 include::working_with_stack_reports.adoc[leveloffset=+1]
 
+//troubleshooting
+include::troubleshooting.adoc[leveloffset=+1]
+
 // glossary
 include::modules/glossary.adoc[leveloffset=+1]

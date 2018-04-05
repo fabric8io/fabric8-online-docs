@@ -25,10 +25,5 @@ For your new Quickstart project, the new build pipeline pushes version 1.0.1 int
 
 [NOTE]
 ====
-If your pipeline build does not start for more than ten minutes, you can manually start a pipeline build:
-
-. Click the icon (image:kabob_white.png[title="Options"]) adjoining the pipeline build.
-. From the displayed menu, click btn:[Start Pipeline].
-+
-image::manual_start_pipeline.png[Manually start pipeline build]
+If your pipeline build does not start for more than ten minutes, you can manually start a pipeline build using the instructions at <<pipeline_build_failure>>.
 ====

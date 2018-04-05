@@ -83,7 +83,7 @@ pipeline:: Pipelines are a continuous delivery system that, at each step, tests 
 restrictive license:: Licenses that are not commonly used in similar stacks or that do not work well with the stack’s representative license.
 // endterm
 
-//// term: 01e76137-ab89-4a3c-8765-48f54078154a, en_EN
+// term: 01e76137-ab89-4a3c-8765-48f54078154a, en_EN
 scenario:: Work item type that identifies and tries to resolve real world problems faced by users, mostly defined in a broad sense.
 // endterm
 ////

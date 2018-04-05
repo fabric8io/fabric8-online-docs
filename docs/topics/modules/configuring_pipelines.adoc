@@ -27,3 +27,8 @@ WARNING: {osio} sets up the required default options for your pipeline build. We
 .. Use the *Jenkinsfile Type* option to select the source of your Jenkinsfile for the build.
 .. Use the *Jenkinsfile Source Path* option to provide a relative path to your Jenkinsfile.
 . When ready, click btn:[Save] to save your changes and return to the {osio} browser tab.
+
+[NOTE]
+====
+If your pipeline build does not start for more than ten minutes, you can manually start a pipeline build using the instructions at <<pipeline_build_failure>>.
+====
