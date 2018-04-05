@@ -1,10 +1,18 @@
 // Includes for all assemblies that form the top-level sections of the Analytics Integration API Guide
 :context: analytics-integration-api-guide
 
-[id="book-part-i"]
-= Book part I
 
-// The following is to be substituted with 'include::' statements
-== First assembly
+[id="before_you_start"]
+= Before you start
 
-Content
+include::modules/about_fabric8_analytics.adoc[leveloffset=+1]
+
+include::modules/getting_osio_authentication_token.adoc[leveloffset=+1]
+
+
+[id="start_using_analytics_APIs"]
+= Using analytics APIs
+
+include::api_usage_examples.adoc[leveloffset=+1]
+
+include::api_specifications.adoc[leveloffset=+1]

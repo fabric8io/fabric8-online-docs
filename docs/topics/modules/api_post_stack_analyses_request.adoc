@@ -1,0 +1,61 @@
+[id="api_post_stack_analyses_request"]
+= POST /stack-analyses
+
+
+== Purpose
+
+Submits an application stack analysis request.
+
+NOTE: You require an {osio} authentication token to invoke this method.
+
+== Resource URL
+
+For information about the resource URL, reach out to us on the {osio} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+
+== Resource information
+
+|===
+| Response Format         | JSON
+| Requires Authentication | Yes
+|===
+
+== Parameters
+
+|===
+| Name                                                                                                                              | Required                                                                                                                          | Description                                                                                                                       | Example
+| manifest[]                                                                                                                        | required                                                                                                                          | Ecosystem specific Manifest file(s) available in the application. One can provide multiple manifest files to invoke the method.   | @pom.xml
+| filePath[]                                                                                                                        | required                                                                                                                          | Corresponding manifest file’s directory information. Care has to be taken to map the manifest filenames and file paths correctly. | /home/JohnDoe
+| origin                                                                                                                            | optional                                                                                                                          | Originator of the request. Can be the name of an application integrating to the endpoint. Maintained for historical reasons.      | "my-app"
+|===
+
+== Example request with cURL
+
+----
+curl -k -H "Authorization: Bearer <openshift.io authentication token>" -F "manifest[]=@./pom.xml" -F "filePath[]=/home/JohnDoe"https://recommender.api.openshift.io/api/v1/stack-analyses
+----
+
+== Example response:
+
+*Success*
+
+[source,typescript]
+----
+
+{
+    "id": "510a314561104e8ba14bac489b31efe0",
+    "status": "success",
+    "submitted_at": "2017-07-18 08:04:49.165068"
+}
+
+----
+
+*Failure*
+
+[source,typescript]
+----
+401:
+{
+  "error": "Authentication failed - could not decode JWT token"
+}
+
+----
