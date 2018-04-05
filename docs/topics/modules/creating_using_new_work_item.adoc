@@ -28,13 +28,5 @@ image::wi_add_assignee.png[Add Asignee]
 . Click the *Description* field and type *Change the greeting from Hello to Hello from Che*. Click &#10004; to save.
 +
 image::wi_change_desc.png[Change description]
-+
-. Click *Board* from the menu options at the top of the screen to see the board view for the work items.
-+
-image::backlog_board.png[Backlog and Board]
-+
-. Your new work item appears in the *new* column. Drag the work item into the *in progress* column. This indicates that the work item is now being worked on. You can track the progress of your work item by moving it to *open*, *in progress*, *resolved*, or *closed* states.
-+
-image::move_workitem.png[Move work item]
 
 You have now created a work item assigned to yourself that tracks the changes you implement in the code. 

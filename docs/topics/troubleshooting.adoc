@@ -1,4 +1,6 @@
 [id="troubleshooting"]
 = Troubleshooting
 
+include::modules/application_not_available.adoc[leveloffset=+1]
+
 include::modules/pipeline_build_fail.adoc[leveloffset=+1]
