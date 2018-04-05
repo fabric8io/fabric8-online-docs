@@ -1,0 +1,4 @@
+[id="troubleshooting"]
+= Troubleshooting
+
+include::modules/pipeline_build_fail.adoc[leveloffset=+1]

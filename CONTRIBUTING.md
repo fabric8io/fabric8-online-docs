@@ -78,7 +78,7 @@ $ cd docs/<guide>/
 
 2. Run the build command:
 ```
-$ asciidoctor --attribute imagesdir=topics/images master.adoc
+$ asciidoctor --attribute imagesdir=../../images master.adoc
 ```
 
 3. View the built guide in a browser:
