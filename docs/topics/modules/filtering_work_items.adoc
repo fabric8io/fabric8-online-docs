@@ -7,15 +7,15 @@ You can filter your work item list in the planner as follows:
 
 . Click the *Select* drop-down list to select a filter type. You can filter work items by *Assignee*, *Creator*, *Area*, *Workitem type*, *State*, *Label* and *Title*.  The drop-down next to the *Select* drop-down auto-populates options based on the selected filter type.
 
-. Click the *Filter by <filter type>* drop-down to see a list of valid options for the selected filter type.
+. Click the *Filter by _filter type_* drop-down to see a list of valid options for the selected filter type.
 +
 For example, in the *Select* drop-down list, if you select *State* as your filter type, the *Filter by state* drop-down displays all the possible states by which you can filter the work item such as, *new*, *open*, *in progress*, *resolved*, and *closed*.
 . Select the appropriate option to filter the work items and see the filtered list.
 
 You can add multiple filters to further refine your work item list as follows:
 
-. Use the above procedure to add multiple filters successively. The added filters are displayed at the top of the filtered list.
-For example, you can see all the _new tasks_ in your space by adding the *state: new* and the *workitemtype: Task* filters successively.
+. Use the above procedure to add multiple filters successively. The applied filters are displayed at the top of the filtered list.
+For example, you can see all the new tasks in your space by adding the *state: new* and the *workitemtype: Task* filters successively.
 . Use the *Clear all filters* to clear all the filters applied to the work item list or click *x* next to the filter you wish to remove to clear that filter.
 
 // add instructions on save filters feature after they are in the prod
