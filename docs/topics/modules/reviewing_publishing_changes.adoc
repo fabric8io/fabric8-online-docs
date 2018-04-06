@@ -11,27 +11,11 @@ To view the build:
 . Return to the {osio} browser tab.
 . Click *Create* and then *Pipelines* to view the build pipelines. After several moments, the build pipeline stops at the *Approve* stage. Do not approve the build yet.
 +
-//for hello world
-ifeval::["{context}" == "hello-world"]
-image::hw_build_2.png[Build #2 Runs]
-endif::[]
-//for importing code
-ifeval::["{context}" == "importing-existing-project"]
-image::imp_build_2.png[Build #2 Runs]
-endif::[]
-//end conditional
+image::{context}_build_2.png[Build #2 Runs]
 +
 . In the *Create* tab, click *Deployments* to see the following information:
 +
-//for hello world
-ifeval::["{context}" == "hello-world"]
-image::hw_versions_applications.png[Versions of the Application]
-endif::[]
-//for importing code
-ifeval::["{context}" == "importing-existing-project"]
-image::imp_versions_applications.png[Versions of the Application]
-endif::[]
-//end conditional
+image::{context}_versions_applications.png[Versions of the Application]
 +
 ** Different versions of your application are now deployed to *Stage* and *Run*. Version 1.0.2 of the application, which includes your committed change to the code, is deployed to *Stage* because you have not yet promoted it to *Run*. The older version, 1.0.1, is deployed to *Run* because you approved it the last time the pipeline build executed.
 ** The green check marks indicate that both builds are operational.
@@ -48,3 +32,11 @@ Your changes are now available on both *Stage* and *Run*. If you return to the `
 
 image::updated_app.png[Updated applications]
 
+//for hello world
+ifeval::["{context}" == "hello-world"]
+Congratulations! You have now created your first quickstart project in {osio}, used a work item to track your work, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
+endif::[]
+//for importing existing 
+ifeval::["{context}" == "importing-existing-project"]
+Congratulations! You have now imported an existing project into {osio}, used a work item to track your work, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
+endif::[]
