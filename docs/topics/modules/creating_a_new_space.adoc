@@ -27,4 +27,4 @@ To start working with a new project, create a new space. Each space includes a t
 
 * btn:[No thanks, take me to the new space dashboard]: Go to your new space dashboard to begin working in the space.
 +
-image::new_space_dialog.png[New space dialog box]
+image::get_started_menu.png[How would you like to get started menu]

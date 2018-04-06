@@ -30,4 +30,4 @@ To resolve this issue, restart the pipeline build as follows:
 +
 image::manual_start_pipeline.png[Manually start pipeline]
 
-The pipeline restarts and will successfully complete.
+The pipeline restarts and successfully completes.
