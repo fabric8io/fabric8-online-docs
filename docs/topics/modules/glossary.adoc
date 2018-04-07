@@ -42,7 +42,7 @@ bug:: Defect that causes unexpected behavior in the software.
 // endterm
 
 // term: 1694e637-2f9b-40ec-8fa8-a22472850ff9, en_EN
-companinon dependency:: Based on the analysis of your stack, {osio} suggests additional dependencies that can add value to your stack.
+companion dependency:: Based on the analysis of your stack, {osio} suggests additional dependencies that can add value to your stack.
 // endterm
 
 // term: 23c322f1-53b1-4286-b524-37ab58124823, en_EN
@@ -53,11 +53,8 @@ experience:: Experience describes the envisioned user experience in the product 
 feature:: A feature is a detailed user-story that helps actualize parent experiences. It can support multiple experiences and is generally achievable within a sprint.
 // endterm
 
-// term: e8d54bf3-f89e-46e5-86f7-4af6475863b0, en_EN
-bug:: Defect that causes unexpected behavior in the software.
-// endterm
-
-// term: 4d85adba-817d-41ca-b85f-1e4a938d1282, en_EN
+////
+term: 4d85adba-817d-41ca-b85f-1e4a938d1282, en_EN
 fundamental:: Work item type that focuses on getting the basic foundations of a product right to make it more efficient.
 // endterm
 ////
@@ -70,7 +67,8 @@ iteration:: An iteration is used to organize, plan, and execute work items in a 
 license conflict:: Licenses that conflict at the stack or dependency level.
 // endterm
 
-//// term: 83b7cf12-558e-41bd-bcd7-822ca6307db1, en_EN
+////
+term: 83b7cf12-558e-41bd-bcd7-822ca6307db1, en_EN
 papercuts:: Papercuts are logical aggregations of minor issues that collectively have a negative impact on the user. This aggregation receives higher priority and enables efficient handling of such issues.
 // endterm
 ////
@@ -83,7 +81,8 @@ pipeline:: Pipelines are a continuous delivery system that, at each step, tests 
 restrictive license:: Licenses that are not commonly used in similar stacks or that do not work well with the stack’s representative license.
 // endterm
 
-// term: 01e76137-ab89-4a3c-8765-48f54078154a, en_EN
+////
+term: 01e76137-ab89-4a3c-8765-48f54078154a, en_EN
 scenario:: Work item type that identifies and tries to resolve real world problems faced by users, mostly defined in a broad sense.
 // endterm
 ////
