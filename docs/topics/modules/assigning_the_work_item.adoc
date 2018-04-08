@@ -7,5 +7,5 @@ By default, the *Assignees* field for a new work item displays *Unassigned*.
 
 To assign your work item to a collaborator:
 
-. In the *Assignees* field, click *Add Assignee* to see the list of collaborators you can assign the work item to. The list of available collaborators for a space is set by the admin for a space.
+. In the *Assignees* field, click *Add Assignee* to see the list of collaborators you can assign the work item to. The list of available collaborators for a space is set by the administrator for a space.
 . Select the assignees you wish to assign the work item to and click *x* to save the selection.
