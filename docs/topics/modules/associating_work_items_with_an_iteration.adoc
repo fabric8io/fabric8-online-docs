@@ -1,6 +1,17 @@
 [id="associating_work_items_with_an_iteration"]
-= Associating work items with an iteration
+= Associating a work item with an iteration
 
+You can associate work items with relevant iterations based on your order of execution.
+
+By default, the name of your workspace is set as the root iteration for a work item.
+
+To associate a work item with a relevant iteration:
+
+. In the *Iteration* field, click the root iteration to see the iterations you can associate the work item with.
+. Select an iteration and click *✓* to save the change.
+
+////
+This part has been removed from the planner, there would be no kebab menu, but am retaining this in case the iteration dialog box resurfaces  some other way.
 To associate a work item with an iteration:
 
 . Click btn:[Plan] to see the Planner for your space.
@@ -14,3 +25,4 @@ To associate a work item with an iteration:
 . Click btn:[Reassociate].
 
 The work item is now associated with the selected iteration.
+////

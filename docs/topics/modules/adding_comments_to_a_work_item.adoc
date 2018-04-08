@@ -1,0 +1,13 @@
+[id="adding_comments_to_a_work_item"]
+= Adding comments to a work item
+
+A team collaborating on a work item can add comments regarding the work item as follows:
+
+. In the *Add a new comment* field, add your comment. You can preview your rendered markdown comment using the *Preview* tab.
+. Click *✓* to submit your comment.
+
+[NOTE]
+====
+* Use the pencil icon to edit a submitted comment.
+* Use the kebab menu adjoining the comment to delete the comment.
+====

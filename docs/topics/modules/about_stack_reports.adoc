@@ -14,4 +14,4 @@ Based on the analyses, it provides insights on:
 * Alternate dependencies to replace existing dependencies in case of usage and license outliers.
 * Additional dependencies that enhance your stack based on comparison with similar stacks.
 
-Based on these insights, you can create work items and <<working_with_an_existing_work_item,follow through in the Planner>> to update your stack as required.
+Based on these insights, you can create work items and <<modifying_a_work_item,follow through in the planner>> to update your stack as required.

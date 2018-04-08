@@ -1,0 +1,38 @@
+[id=viewing_work_items]
+= Viewing work items
+
+The list of work items in your space can be viewed in the planner using the _tree view_ or the _flat view_.
+
+== Tree view
+The tree view is the default view of the planner. It displays the list of work items along with their parent and child work item links in a hierarchical structure, providing you the context of the work item in relation to the broader project goals.
+
+It ensures your features and tasks have appropriate parent experiences or value propositions associated with them, limiting the chance of feature creep in your development work. This enables you to plan and take up work items focused on delivering actual customer value.
+
+The tree view helps you create appropriate child work items based on the guided work item type planning hierarchy, aiding better planning, prioritizing, and execution.
+
+You can view, track, and plan your work items along with their parent-child links using the tree view as follows:
+
+NOTE: Ensure that the *Show Tree* check box is selected.
+
+. Navigate to Menu:Plan[Backlog]. The *Scenarios* for your space are displayed by default in a tree hierarchy.
+. Expand the work items to see the child *Experiences* and *Requirements* type work items associated to them.
+. In the left pane, select *Experiences* to see the Experiences and Value Propositions. They are highlighted in bold and display both the associated parent *Scenarios* and child *Requirements*.
+. Similarly, select *Requirements* to see the Features and Bugs. They are highlighted in bold and display their parent *Scenarios* and *Experiences* and their child *Tasks*.
+
+
+== Flat view
+The flat list view is useful to track your work items based on their work item type groups. Depending on the selection of the work item type groups in the left pane of the planner, it displays the *Scenarios*, *Experiences*, or *Requirements* for your space.
+
+It does not display the hierarchical parent-child links for the work items and focuses only on the selected work item type group. This helps you plan and draw out your *Scenarios* and *Experiences* or assign your *Requirements* to appropriate *Iterations*<link>.
+
+You can track a particular work item type group using the flat list as follows:
+
+NOTE: Ensure that the *Show Tree* check box is cleared.
+
+* Navigate to Menu:Plan[Backlog]. The *Scenarios* for your space are displayed by default.
+* To see the *Experiences* or *Requirements* for your space, in the left pane, select *Experiences* or *Requirements* respectively.
+
+
+include::ordering_work_items.adoc[leveloffset=+1]
+
+include::filtering_work_items.adoc[leveloffset=+1]

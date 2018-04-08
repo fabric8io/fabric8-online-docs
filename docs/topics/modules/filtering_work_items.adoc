@@ -1,14 +1,21 @@
 [id="filtering_work_items"]
 = Filtering work items
 
-Filter your work item view in the Planner as follows:
+You can filter your work item list in the planner as follows:
 
-* Click btn:[Plan] and then click btn:[Backlog].
+. Navigate to Menu:Plan[Backlog] to see a list of your work items for the space.
 
-* Use the btn:[Select] drop-down menu to select a work item attribute.
+. Click the *Select* drop-down list to select a filter type. You can filter work items by *Assignee*, *Creator*, *Area*, *Workitem type*, *State*, *Label* and *Title*.  The drop-down next to the *Select* drop-down auto-populates options based on the selected filter type.
 
-* Click the text box next to the *Select* option. This displays a list of potential filters.
+. Click the *Filter by _filter type_* drop-down to see a list of valid options for the selected filter type.
++
+For example, in the *Select* drop-down list, if you select *State* as your filter type, the *Filter by state* drop-down displays all the possible states by which you can filter the work item such as, *new*, *open*, *in progress*, *resolved*, and *closed*.
+. Select the appropriate option to filter the work items and see the filtered list.
 
-* You can filter work items by _Assignee_, _Creator_, _Area_, _State_, and _Label_. Select the appropriate option from the drop down menu. The text box displays a list of valid options for the selected field.
+You can add multiple filters to further refine your work item list as follows:
 
-* Select the appropriate option to filter the work items.
+. Use the above procedure to add multiple filters successively. The applied filters are displayed at the top of the filtered list.
+For example, you can see all the new tasks in your space by adding the *state: new* and the *workitemtype: Task* filters successively.
+. Use the *Clear all filters* to clear all the filters applied to the work item list or click *x* next to the filter you wish to remove to clear that filter.
+
+// add instructions on save filters feature after they are in the prod
