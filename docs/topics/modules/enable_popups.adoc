@@ -1,0 +1,11 @@
+[id="enable_popups"]
+= Enable popups
+
+If a new tab does not appear, your browser is blocking the pop-up window that displays the new workspace. To resolve this, allow pop-up windows from *++https://openshift.io++*. In Chromium-based browsers, do the following:
+
+. Click the blocked pop-up window icon in the URL field of your browser.
+. Select the *Always allow pop-ups from ++https://openshift.io++* option, and click btn:[Done].
++
+image::blocked_popup.png[Blocked Pop Up]
++
+. Now, click btn:[Open] again to load the workspace.
