@@ -21,11 +21,9 @@ image::{context}_project_menu.png[Configure Maven]
 image::{context}_config_maven.png[Configure Maven]
 +
 .. Click the *run* option from the Run button (image:tri_run.png[title="Run button"]). Maven then downloads the required dependencies, compiles the application, and starts the _verticle_ (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options. The hot deploy option automatically updates the application when you make a change.
-. A *run* terminal appears at the bottom pane of the Che workspace. When the `mvn{nbsp}build` command finishes executing, the *run* view displays the following message:
+. A *run* terminal appears at the bottom pane of the Che workspace. When the `mvn{nbsp}build` command finishes executing, the *run* view displays the *Succeeded in Deploying verticle* message:
 +
-----
-INFO: Succeeded in deploying verticle
-----
+image::deployed_verticle.png[Successfully deployed verticle]
 +
 . Click the blue preview URL at the top of the *run* view to see your application running in Che.
 +

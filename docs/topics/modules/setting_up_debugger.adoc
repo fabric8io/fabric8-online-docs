@@ -32,7 +32,7 @@ image::debug_config.png[Debugger Configuration Dialog]
 +
 .. Click btn:[Save] and then btn:[Close].
 . To create a new breakpoint for your method:
-.. In the `HttpApplication.java` file, find the following line of code:
+.. In the `HttpApplication.java` file, go to the following line of code at line 43:
 +
 [source,java]
 ----
@@ -45,7 +45,7 @@ image::debug_config.png[Debugger Configuration Dialog]
 image::breakpoint.png[Create Breakpoint]
 +
 
-. Click the *Debug* option at the bottom of the workspace to confirm the addition of the breakpoint:
+. Click the debug icon at the bottom of the workspace to confirm the addition of the breakpoint:
 +
 image::debug_option.png[Debug Option]
 +

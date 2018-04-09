@@ -13,7 +13,7 @@ After creating your {osio} project, you can debug your application code in the C
 image::project_dir.png[Project Directory]
 +
 . In your `HttpApplication.java` file, add a line break between lines 21 and 22, then type `router.` and press kbd:[Ctrl+Space] to see the context-aware assistance.
-. From the displayed list, select the `get():Route` method. This is the Vert.x Router get method and maps to the HTTP verb GET.
+. Scroll down in the displayed list and select the `get():Route` method. This is the Vert.x Router get method and maps to the HTTP verb GET.
 +
 image::debug_router.png[Project Directory]
 +
