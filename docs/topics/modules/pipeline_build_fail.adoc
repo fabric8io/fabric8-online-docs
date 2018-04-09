@@ -1,5 +1,5 @@
 [id="pipeline_build_failure"]
-= Pipeline Build Failure
+= Pipeline build failure
 
 Occasionally, a pipeline build can fail due to a network connectivity issue with Maven. This displays a red line and cross in the Pipeline Build information as seen in the following screen capture:
 

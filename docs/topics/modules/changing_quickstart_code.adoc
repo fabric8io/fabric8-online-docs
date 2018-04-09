@@ -23,21 +23,11 @@ protected static final String template = "Hello from Che, %s!";
 +
 The workspace automatically saves your changes.
 
-. To test your changes:
-
-** If you already ran the application earlier as instructed in <<configuring_your_che_workspace-hello-world>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip the rest of this step.
-
-** If you have not run the application already as instructed in <<configuring_your_che_workspace-hello-world>>:
-
-*** Click the *run* option (image:tri_run.png[title="Run button"]). The following message displays when the run process completes:
-+
-----
-INFO: Succeeded in deploying verticle
-----
-+
-*** Click the blue preview URL at the top of the *run* view to see your application.
+. To test your changes, click the blue preview URL at the top of the *run* view to see your application.
 +
 image::blue_link.png[Preview Link]
++
+NOTE: If you already ran the application earlier as instructed in <<configuring_your_che_workspace-hello-world>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip the rest of this step.
 +
 . Add a name in the *Name* field and click btn:[Invoke] to test the application. The displayed message shows the amended text template.
 +

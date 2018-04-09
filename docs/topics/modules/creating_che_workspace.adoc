@@ -35,26 +35,15 @@ image::loading_workspaces.png[Loading Workspaces]
 +
 image::new_ws.png[New Workspace]
 +
-[IMPORTANT]
-====
-If a new tab does not appear, your browser is blocking the pop-up window that displays the new workspace. To resolve this, allow pop-up windows from *++https://openshift.io++*. In Chromium-based browsers, do the following:
+NOTE: If a new tab does not appear, see <<enable_popups>> for troubleshooting information.
++
+. As the workspace loads, the *Workspace Status* window at the bottom of the Che workspace tab displays the progress:
++
+image::workspace_loading.png[Workspace loading]
+//image::che_terminal.png[Workspace Terminal]
++
+When loaded and ready to use, the new Che workspace tab displays the following confirmation message:
 
-. Click the blocked pop-up window icon in the URL field of your browser.
-. Select the *Always allow pop-ups from ++https://openshift.io++* option, and click btn:[Done].
-+
-image::blocked_popup.png[Blocked Pop Up]
-+
-. Now, click btn:[Open] again to load the workspace.
-====
-+
-When the workspace is running, the following confirmation message displays:
-+
-image::ws_running.png[Workspace Running success message]
-+
-. Like booting a computer, the workspace requires several minutes to start. The terminal window at the bottom of the Che workspace tab displays the progress:
-+
-image::che_terminal.png[Workspace Terminal]
-+
-When loaded and ready to use, the new Che workspace tab displays the GitHub repository folder of your new project in the *Projects Explorer* panel.
-
-image::{context}_loaded_codebase.png[Your GitHub Project in Che]
+//image::{context}_workspace_running.png[Workspace Running success message]
+// delete below image for import and then uncomment top
+// old image::{context}_loaded_codebase.png[Your GitHub Project in Che]
