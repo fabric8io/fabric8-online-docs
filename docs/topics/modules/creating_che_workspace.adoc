@@ -43,6 +43,6 @@ image::che_terminal.png[Workspace Terminal]
 +
 When loaded and ready to use, the new Che workspace tab displays the following confirmation message:
 
-image::{context}_workspace_running.png[Workspace Running success message]
+//image::{context}_workspace_running.png[Workspace Running success message]
 
 // old image::{context}_loaded_codebase.png[Your GitHub Project in Che]
