@@ -25,7 +25,7 @@ None
 == Example request with cURL
 
 ----
-curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://recommender.api.openshift.io/api/v1/stack-analyses/421249d9e1e5464cbf3e77dde4941463
+curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<recommender api url>/api/v1/stack-analyses/421249d9e1e5464cbf3e77dde4941463
 ----
 
 == Example response
@@ -147,7 +147,7 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://r
     ],
     "schema": {
         "name": "stack_analyses",
-        "url": "http://recommender.api.openshift.io/api/v1/schemas/api/stack_analyses/2-1-4/",
+        "url": "http://<recommender api url>/api/v1/schemas/api/stack_analyses/2-1-4/",
         "version": "2-1-4"
     },
     "started_at": "2017-07-18T08:05:27.717445"
