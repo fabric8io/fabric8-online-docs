@@ -3,7 +3,6 @@
 
 The example project code includes a new route for *eventbus* and its supporting method. The project sets up *eventbus* to only allow outbound communications for the *my-feed* channel. Messages arriving in the *my-feed* channel are pushed to the browser using the SockJS bridge. This project includes a `vertx-eventbus.js` file along with the `index.html` file and also includes tweaks to the `index.html` file.
 
-
 [discrete]
 == Procedure
 
