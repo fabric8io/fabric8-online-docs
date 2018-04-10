@@ -6,7 +6,12 @@ After you <<creating_a_new_work_item,create a new work item>> the planner provid
 You can use preview or the detailed view of your work item to modify your work item as required.
 
 * *Preview*: Click the title of a work item to preview the work item on the right of your screen.
-* *Detailed view*: Click the *Detailed view* icon next to the work item to see the detailed view of the work item.
++
+image::wi_preview.png[Work Item Preview]
+* *Detailed view*: Click the *Detailed view* icon (image:wi_detailed_view_icon.png[Detailed View Icon])next to the work item to see the detailed view of the work item.
++
+image::wi_detailed_view.png[Work Item Detailed View]
+
 
 You can make the following modifications to the work item, in the preview or the detailed view, to facilitate tracking and execution of the work item:
 

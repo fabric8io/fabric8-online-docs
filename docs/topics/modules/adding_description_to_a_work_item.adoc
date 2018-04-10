@@ -3,8 +3,12 @@
 
 You can describe the details for your work item as follows:
 
-. In the *Description* field, click in the text box to add description for the work item.
-. Click *Preview* to see the rendered markdown for your description, if you are satisfied, click *✓* to save the description.
+. In the *Description* field, click in the text box to add description for the work item. Use the *Preview* tab to see the rendered markdown for your description.
++
+image::wi_description_preview.png[Preview Description]
+. If you are satisfied, click *✓* to save the description.
++
+image::wi_description.png[Description]
 
 NOTE: Click the pencil icon to edit a saved description.
 

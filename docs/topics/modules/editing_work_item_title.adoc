@@ -4,4 +4,6 @@
 You can modify the title of your work item after it is created as follows:
 
 . Click the title of the work item to modify it.
++
+image::wi_edit_title.png[Edit Work Item Title]
 . Make your changes and press kbd:[Enter] to save the change.

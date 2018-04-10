@@ -3,8 +3,12 @@
 
 A team collaborating on a work item can add comments regarding the work item as follows:
 
-. In the *Add a new comment* field, add your comment. You can preview your rendered markdown comment using the *Preview* tab.
+. In the *Add a new comment* field, add your comment. Use the *Preview* tab to see the rendered markdown for your comment.
++
+image::wi_comment_preview.png[Preview Comment]
 . Click *✓* to submit your comment.
++
+image::wi_comment.png[Comment]
 
 [NOTE]
 ====

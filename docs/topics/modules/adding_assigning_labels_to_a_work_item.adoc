@@ -7,13 +7,22 @@ Assign existing labels to your work items as follows:
 
 . In the *Labels* field, click *Add label* to see the available labels in your space.
 . Select the suitable labels and click *x* to assign the labels to the work item.
++
+image::wi_assign_label.png[Assign Labels]
 
 Add and assign new labels as follows:
 
 . In the *Labels* field, click *Add label* to see the available labels in your space.
 . At the bottom of the *Add label* list, click *Create new label* to add new labels to the work item.
-. Click the default color displayed for the label to see a list of colors you can assign to the label and select the color you want to assign your label.
+. Optionally, click the default color displayed for the label to see a list of colors you can assign to the label and select the color you want to assign your label.
 . Add an appropriate name to the label and click *✓* to save the label and add it to the list.
++
+image::wi_add_label.png[Add Labels]
+
 . Select the label and click *x* to assign the label to the work item.
 
-NOTE: Once the labels are created for a work item they are available for all the work items in the space.
+[NOTE]
+====
+. After the labels are created for a work item they are available for all the work items in the space.
+. You can assign multiple relevant labels to a work item.
+====
