@@ -6,3 +6,5 @@ include::modules/enable_popups.adoc[leveloffset=+1]
 include::modules/application_not_available.adoc[leveloffset=+1]
 
 include::modules/pipeline_build_fail.adoc[leveloffset=+1]
+
+include::modules/create_run_command_macro.adoc[leveloffset=+1]

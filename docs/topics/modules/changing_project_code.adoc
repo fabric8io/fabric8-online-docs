@@ -36,7 +36,7 @@ image::imp_folder.png[Folder View]
 +
 . Click the blue preview URL at the top of the *run* view to view your project.
 +
-image::run_proj.png[Run project link]
+image::{context}_run_proj.png[Run project link]
 +
 . Type a name in the text box and click btn:[Invoke] to test the application.
 +
