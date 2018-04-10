@@ -7,8 +7,10 @@ Click btn:[Plan] to view the planner work item list.
 You can move a work item higher or lower the list as follows:
 
 . Move the mouse pointer over the work item you want to reorder to highlight it.
-. Move the mouse pointer over the vertical blue dotted line <screenshot> to the left of the selected work item, the pointer changes to the move-cursor.
+. Move the mouse pointer over the vertical blue dotted line to the left of the selected work item, the pointer changes to the move-cursor (image:wi_move_cursor.png[title="Move Cursor"]).
 . Use the move-cursor to drag the work item to the required position in the list.
++
+image::wi_drag_drop.png[Reorder Work Items]
 
 ////
 The *Backlog* displays a list view used to plan your work. You can order work items based on their priority, status, and other parameters to organize them.

@@ -16,8 +16,14 @@ NOTE: Ensure that the *Show Tree* check box is selected.
 
 . Navigate to Menu:Plan[Backlog]. The *Scenarios* for your space are displayed by default in a tree hierarchy.
 . Expand the work items to see the child *Experiences* and *Requirements* type work items associated to them.
++
+image::scenarios_tree_view.png[Scenario with Child Work Items]
 . In the left pane, select *Experiences* to see the Experiences and Value Propositions. They are highlighted in bold and display both the associated parent *Scenarios* and child *Requirements*.
++
+image::experiences_tree_view.png[Experience with Parent and Child Work Items]
 . Similarly, select *Requirements* to see the Features and Bugs. They are highlighted in bold and display their parent *Scenarios* and *Experiences* and their child *Tasks*.
++
+image::requirements_tree_view.png[Requirement with Parent and Child Work Items]
 
 
 == Flat view
@@ -27,10 +33,15 @@ It does not display the hierarchical parent-child links for the work items and f
 
 You can track a particular work item type group using the flat list as follows:
 
-NOTE: Ensure that the *Show Tree* check box is cleared.
+NOTE: Ensure that the *Show Tree* check box is cleared to see the flat view.
 
-* Navigate to Menu:Plan[Backlog]. The *Scenarios* for your space are displayed by default.
-* To see the *Experiences* or *Requirements* for your space, in the left pane, select *Experiences* or *Requirements* respectively.
+. Navigate to Menu:Plan[Backlog]. The *Scenarios* for your space are displayed by default in a tree hierarchy.
+. Clear the *Show Tree* check box to see all your *Scenarios* in a flat view.
++
+image::scenarios_flat_view.png[Scenarios Flat View]
+. In the left pane, select *Experiences* or *Requirements* to see the *Experiences* or *Requirements* for your space, respectively.
++
+image::experiences_flat_view.png[Experiences Flat View]
 
 
 include::ordering_work_items.adoc[leveloffset=+1]
