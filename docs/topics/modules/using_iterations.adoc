@@ -1,0 +1,8 @@
+[id="using_an_iteration"]
+= Using an iteration
+
+In your space, click *Plan* to view the iterations for that space in the left pane.
+
+include::setting_iteration_goals.adoc[leveloffset=+1]
+
+include::modifying_an_iteration.adoc[leveloffset=+1]

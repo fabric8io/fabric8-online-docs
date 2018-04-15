@@ -3,7 +3,7 @@
 
 You can associate work items with relevant iterations based on your order of execution.
 
-By default, the name of your workspace is set as the root iteration for a work item.
+By default, the name of your space is set as the root iteration for a work item.
 
 To associate a work item with a relevant iteration:
 

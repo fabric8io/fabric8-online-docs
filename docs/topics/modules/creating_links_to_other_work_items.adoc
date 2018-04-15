@@ -1,0 +1,14 @@
+[id="creating_links_to_other_work_items"]
+= Creating links to other work items
+
+You can see existing links or create links to other work items establishing relations between them as follows:
+
+. Expand the *Links* option to see the work items linked to this work item.
+. To create new links to work items click btn:[Create Link].
+. Use the *Select Link Type* drop-down list to select the appropriate relationship between two work items. You have the following options: *blocks*, *relates to*, *parent of*, *blocked by*, *is related to*, *child of*.
++
+image::wi_linking.png[Linking Work Items]
+. In the *Search for work items* field, type the title or the ID of the required work item and select the work item.
+. Click *Link* to save the relationship.
+
+The linked work item is now listed under *Links*.

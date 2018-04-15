@@ -1,0 +1,17 @@
+[id="flat_view_of_work_items"]
+= Flat view of work items
+The flat list view is useful to track your work items based on their work item type groups. Depending on the selection of the work item type groups in the left pane of the planner, it displays the *Scenarios*, *Experiences*, or *Requirements* for your space.
+
+It does not display the hierarchical parent-child links for the work items and focuses only on the selected work item type group. This helps you plan and draw out your *Scenarios* and *Experiences* or assign your *Requirements* to appropriate *Iterations*<link>.
+
+You can track a particular work item type group using the flat list as follows:
+
+NOTE: Ensure that the *Show Tree* check box is cleared to see the flat view.
+
+. Navigate to Menu:Plan[Backlog]. The *Scenarios* for your space are displayed by default in a tree hierarchy.
+. Clear the *Show Tree* check box to see all your *Scenarios* in a flat view.
++
+image::scenarios_flat_view.png[Scenarios Flat View]
+. In the left pane, select *Experiences* or *Requirements* to see the *Experiences* or *Requirements* for your space, respectively.
++
+image::experiences_flat_view.png[Experiences Flat View]

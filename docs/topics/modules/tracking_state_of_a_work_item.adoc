@@ -1,5 +1,5 @@
-[id="tracking_status_of_a_work_item"]
-= Tracking the status of a work item
+[id="tracking_state_of_a_work_item"]
+= Tracking the state of a work item
 
 You can set the state for each of your work items enabling you to track the status of your work item from creation to completion.
 
@@ -10,3 +10,5 @@ You can track and update the status of work items as you progress through your t
 +
 image::wi_state.png[Work Item state]
 . Select the appropriate state based on the completion level of your work item. The state for the work item gets updated.
+
+NOTE: By default, closed work items are not listed in the work item list. Select the *Show Completed* checkbox to see the closed work items.
