@@ -3,7 +3,7 @@
 
 You can allocate a work item to a particular area to group it by functionality or type.
 
-By default, the name of your workspace is set as the root area for a work item.
+By default, the name of your space is set as the root area for a work item.
 
 To assign a new area for your work item:
 

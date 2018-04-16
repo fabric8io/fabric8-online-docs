@@ -5,7 +5,9 @@ A team collaborating on a work item can add comments regarding the work item as 
 
 . In the *Add a new comment* field, add your comment. Use the *Preview* tab to see the rendered markdown for your comment.
 +
-image::wi_comment_preview.png[Preview Comment]
+NOTE: In addition to the standard link:https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet[markdown syntax], refer to link:https://github.com/russross/blackfriday#extensions[these extensions]  for more information about the syntax.
++
+image::wi_comment_md.png[Markdown Comment]
 . Click *✓* to submit your comment.
 +
 image::wi_comment.png[Comment]

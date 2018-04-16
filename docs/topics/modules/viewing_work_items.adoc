@@ -1,48 +1,34 @@
 [id=viewing_work_items]
 = Viewing work items
 
-The list of work items in your space can be viewed in the planner using the _tree view_ or the _flat view_.
+The planner provides an interface to plan and execute your development work by creating work items, grouping them into work item type groups for efficient planning, and associating them with iterations for effective execution.
 
-== Tree view
-The tree view is the default view of the planner. It displays the list of work items along with their parent and child work item links in a hierarchical structure, providing you the context of the work item in relation to the broader project goals.
+The _left pane_ of the planner displays:
 
-It ensures your features and tasks have appropriate parent experiences or value propositions associated with them, limiting the chance of feature creep in your development work. This enables you to plan and take up work items focused on delivering actual customer value.
+* The work item type groups determined by the space template
+* Your iterations outlining your development work
+* Your saved filters
 
-The tree view helps you create appropriate child work items based on the guided work item type planning hierarchy, aiding better planning, prioritizing, and execution.
+image::left_pane.png[Left Pane]
 
-You can view, track, and plan your work items along with their parent-child links using the tree view as follows:
+This pane can be hidden or displayed using the *Hide Panel* or *Show Panel* icon as required.
 
-NOTE: Ensure that the *Show Tree* check box is selected.
+The _right pane_ displays the list of work items in your space that can be viewed either using the _tree view_ or the _flat view_.
 
-. Navigate to Menu:Plan[Backlog]. The *Scenarios* for your space are displayed by default in a tree hierarchy.
-. Expand the work items to see the child *Experiences* and *Requirements* type work items associated to them.
+image::right_pane.png[Right Pane]
+
+[NOTE]
+====
+. By default, closed work items are not listed in the work item list. Select the *Show Completed* checkbox to see the closed work items.
+. Use the gear icon next to the *Add and Open* button to select the attributes you want to see for your list of work items.
 +
-image::scenarios_tree_view.png[Scenario with Child Work Items]
-. In the left pane, select *Experiences* to see the Experiences and Value Propositions. They are highlighted in bold and display both the associated parent *Scenarios* and child *Requirements*.
-+
-image::experiences_tree_view.png[Experience with Parent and Child Work Items]
-. Similarly, select *Requirements* to see the Features and Bugs. They are highlighted in bold and display their parent *Scenarios* and *Experiences* and their child *Tasks*.
-+
-image::requirements_tree_view.png[Requirement with Parent and Child Work Items]
+image:wi_toggle_attributes.png[Display Work Item Attributes]
+====
 
 
-== Flat view
-The flat list view is useful to track your work items based on their work item type groups. Depending on the selection of the work item type groups in the left pane of the planner, it displays the *Scenarios*, *Experiences*, or *Requirements* for your space.
+include::tree_view_of_work_items.adoc[leveloffset=+1]
 
-It does not display the hierarchical parent-child links for the work items and focuses only on the selected work item type group. This helps you plan and draw out your *Scenarios* and *Experiences* or assign your *Requirements* to appropriate *Iterations*<link>.
-
-You can track a particular work item type group using the flat list as follows:
-
-NOTE: Ensure that the *Show Tree* check box is cleared to see the flat view.
-
-. Navigate to Menu:Plan[Backlog]. The *Scenarios* for your space are displayed by default in a tree hierarchy.
-. Clear the *Show Tree* check box to see all your *Scenarios* in a flat view.
-+
-image::scenarios_flat_view.png[Scenarios Flat View]
-. In the left pane, select *Experiences* or *Requirements* to see the *Experiences* or *Requirements* for your space, respectively.
-+
-image::experiences_flat_view.png[Experiences Flat View]
-
+include::flat_view_of_work_items.adoc[leveloffset=+1]
 
 include::ordering_work_items.adoc[leveloffset=+1]
 

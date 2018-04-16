@@ -17,7 +17,7 @@ You can make the following modifications to the work item, in the preview or the
 
 NOTE: Before closing the preview or detailed view ensure that all your changes are individually saved.
 
-include::tracking_status_of_a_work_item.adoc[leveloffset=+1]
+include::tracking_state_of_a_work_item.adoc[leveloffset=+1]
 
 include::editing_work_item_title.adoc[leveloffset=+1]
 
@@ -30,5 +30,7 @@ include::associating_work_items_with_an_iteration.adoc[leveloffset=+1]
 include::adding_assigning_labels_to_a_work_item.adoc[leveloffset=+1]
 
 include::adding_description_to_a_work_item.adoc[leveloffset=+1]
+
+include::creating_links_to_other_work_items.adoc[leveloffset=+1]
 
 include::adding_comments_to_a_work_item.adoc[leveloffset=+1]

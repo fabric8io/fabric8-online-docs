@@ -12,6 +12,8 @@ You can move a work item higher or lower the list as follows:
 +
 image::wi_drag_drop.png[Reorder Work Items]
 
+NOTE: In the tree view, only work items which are on the same level in the tree hierarchy can be moved.
+
 ////
 The *Backlog* displays a list view used to plan your work. You can order work items based on their priority, status, and other parameters to organize them.
 

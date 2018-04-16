@@ -1,0 +1,15 @@
+[id="setting_iteration_goals"]
+= Setting iteration goals
+
+Use iterations to prioritize work items slated for execution in the development cycle as follows:
+
+. After you <<creating_a_new_iteration,create an iteration>>, associate work items slated for the iteration using the preview of the work item. See <<associating_work_items_with_an_iteration>> for more details.
+. In the left pane, select the iteration to display the associated work items.
++
+NOTE: Only execution work item types such as *Feature*, *Task* and *Bug* are displayed in the iteration view. You can use the tree view to see the parent *Scenarios* or *Experiences* linked to the work items in the iteration.
++
+image::iteration_view.png[Iteration View]
+
+. Use the options (image:kabob.png[title="Options"]) menu to edit the iteration and make it active by setting the date range appropriately or by using the *Force Active* toggle. See <<creating_a_new_iteration>> for further information.
+. Use the *Add Work Item* pane to <<creating_a_new_work_item,add new work items>> to the iteration.
+. Use the options (image:kabob.png[title="Options"]) menu to close the iteration after the completion of the development cycle.
