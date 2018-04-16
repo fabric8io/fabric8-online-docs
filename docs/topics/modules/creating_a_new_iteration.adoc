@@ -16,17 +16,17 @@ Add iterations to your space to plan and organize your work items. Click btn:[Pl
 image::create_iteration.png[Create Iteration]
 . Enter a *Name* for your new iteration.
 
-. Optionally, create a parent link to another Iteration by selecting the parent iteration from the *Parent Iteration* drop-down list. By default, the name of your space is set as the parent iteration.
+. Optionally, create a parent link to another iteration by selecting the parent iteration from the *Parent Iteration* drop-down list. By default, the name of your space is set as the parent iteration.
 
 . Add a *Description* for the new iteration.
 
 . Add a *Start Date* and *End Date* for your new iteration.
 
-. The iteration automatically becomes *Active*, if the current date falls within the start and end date range. Alternatively, if required, toggle the *Force Active* switch to *ON* to force start the iteration.
+. The iteration automatically becomes *Active* if the current date falls within the start and end date range. Alternatively, if required, toggle the *Force Active* switch to *ON* to force start the iteration.
 NOTE: You can have multiple iterations active at the same time.
 
 . Click btn:[Create] to create the new iteration.
 
-Your new iteration appears under *Iterations* in the left pane. It is tagged as *Active* if the current date falls within the start and end date range or if you force activated it.
+Your new iteration appears under *Iterations* in the left pane. It is tagged as *Active* if the current date falls within the start and end date range or if you force-activated it.
 +
 image::iterations_left_pane.png[Iterations]

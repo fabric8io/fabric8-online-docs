@@ -15,7 +15,7 @@ For example, in the *Select* drop-down list, if you select *State* as your filte
 image::wi_filter_type_options.png[Filter Type Options]
 . Select the appropriate option to filter the work items and see the filtered list.
 
-. Similarly, add multiple filters successively to further refine your work item list. The applied filters are displayed at the top of the filtered list.
+. Similarly, add multiple filters successively to further refine your work item list. The applied filters are displayed at the top of the filtered work item list.
 For example, you can see all the open bugs in your space by adding the *state: open* and the *workitemtype: Bug* filters successively.
 +
 image::wi_multiple_filters.png[Multiple Filters]
