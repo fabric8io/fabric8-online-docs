@@ -12,6 +12,10 @@ Create a new space as follows:
 +
 image::create_space_first.png[Create your first space]
 +
+If your account has an existing space, click *+* to create an additional space instead:
++
+image::second_space.png[Second space]
++
 . In the dialog box, type *myspace* as the unique name for your space.
 +
 image::create_space.png[Create new space]
