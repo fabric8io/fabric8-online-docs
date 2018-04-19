@@ -514,7 +514,7 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<
 ----
 200:
 {
-    "error": "Analysis for request ID '510a314561104e8ba14bac489b31efe0' is in progress"
+    "error": "Analysis for request ID 'add9caf0a1ff47969a8f27a4241a0230' is in progress"
 }
 
 ----

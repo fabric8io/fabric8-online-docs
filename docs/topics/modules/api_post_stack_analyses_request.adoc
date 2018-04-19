@@ -42,9 +42,9 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" -F "manif
 ----
 
 {
-    "id": "510a314561104e8ba14bac489b31efe0",
+    "id": "add9caf0a1ff47969a8f27a4241a0230",
     "status": "success",
-    "submitted_at": "2017-07-18 08:04:49.165068"
+    "submitted_at": "2018-04-10 08:59:24.472832"
 }
 
 ----
