@@ -13,7 +13,7 @@ image::vertx_pipeline_running.png[A Running Pipeline Build]
 
 To view your new Quickstart project pipeline:
 
-* Click *Pipelines* above the running pipeline status. This page displays all running pipelines for your space.
+* After the pipeline status changes to *Running*, click *Pipelines* above the running pipeline status. This page displays all running pipelines for your space.
 +
 image::click_pipelines.png[Click pipelines]
 

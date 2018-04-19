@@ -12,4 +12,3 @@ Currently, only Google Chrome can be used with {osio}. Additional browsers will 
 
 include::connecting_to_oso.adoc[leveloffset=+1]
 
-include::confirming_che_jenkins_status.adoc[leveloffset=+1]
