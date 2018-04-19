@@ -40,39 +40,157 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<
         "data": [
             {
                 "package": {
-                    "ecosystem": [ "maven" ],
-                    "gh_forks": [ -1 ],
-                    "gh_issues_last_month_closed": [ -1 ],
-                    "gh_issues_last_month_opened": [ -1 ],
-                    "gh_issues_last_year_closed": [ -1 ],
-                    "gh_issues_last_year_opened": [ -1 ],
-                    "gh_prs_last_month_closed": [ -1 ],
-                    "gh_prs_last_month_opened": [ -1 ],
-                    "gh_prs_last_year_closed": [ -1 ],
-                    "gh_prs_last_year_opened": [ -1 ],
-                    "gh_stargazers": [ -1 ],
-                    "last_updated": [ 1500339683.76 ],
-                    "latest_version": [ "3.4.1" ],
-                    "name": [ "io.vertx:vertx-core" ],
-                    "package_dependents_count": [ -1 ],
-                    "package_relative_used": [ "not used" ],
-                    "tokens": [ "core", "io", "vertx" ],
-                    "vertex_label": [ "Package" ]
+                    "ecosystem": [
+                        "maven"
+                    ],
+                    "gh_contributors_count": [
+                        30
+                    ],
+                    "gh_forks": [
+                        1314
+                    ],
+                    "gh_issues_last_month_closed": [
+                        -1
+                    ],
+                    "gh_issues_last_month_opened": [
+                        -1
+                    ],
+                    "gh_issues_last_year_closed": [
+                        -1
+                    ],
+                    "gh_issues_last_year_opened": [
+                        -1
+                    ],
+                    "gh_open_issues_count": [
+                        156
+                    ],
+                    "gh_prs_last_month_closed": [
+                        -1
+                    ],
+                    "gh_prs_last_month_opened": [
+                        -1
+                    ],
+                    "gh_prs_last_year_closed": [
+                        -1
+                    ],
+                    "gh_prs_last_year_opened": [
+                        -1
+                    ],
+                    "gh_stargazers": [
+                        7381
+                    ],
+                    "gh_subscribers_count": [
+                        591
+                    ],
+                    "last_updated": [
+                        1520569765.48
+                    ],
+                    "last_updated_sentiment_score": [
+                        "2017-10-09"
+                    ],
+                    "latest_version": [
+                        "-1"
+                    ],
+                    "libio_dependents_projects": [
+                        "144"
+                    ],
+                    "libio_dependents_repos": [
+                        "3454"
+                    ],
+                    "libio_latest_release": [
+                        1502117662
+                    ],
+                    "libio_latest_version": [
+                        "3.5.0.Beta1"
+                    ],
+                    "libio_total_releases": [
+                        "48"
+                    ],
+                    "libio_usedby": [
+                        "TechEmpower/FrameworkBenchmarks:2976",
+                        "apiman/apiman:366",
+                        "boonproject/boon:474",
+                        "hawkular/hawkular-apm:132",
+                        "isaiah/jubilee:342",
+                        "jbosstm/narayana:77",
+                        "jhalterman/failsafe:1981",
+                        "vert-x3/vertx-stack:78",
+                        "wildfly-swarm/wildfly-swarm:204",
+                        "wisdom-framework/wisdom:72"
+                    ],
+                    "name": [
+                        "io.vertx:vertx-core"
+                    ],
+                    "package_dependents_count": [
+                        -1
+                    ],
+                    "package_relative_used": [
+                        "not used"
+                    ],
+                    "sentiment_magnitude": [
+                        "0"
+                    ],
+                    "sentiment_score": [
+                        "0"
+                    ],
+                    "tokens": [
+                        "core",
+                        "io",
+                        "vertx"
+                    ],
+                    "vertex_label": [
+                        "Package"
+                    ]
                 },
                 "version": {
-                    "cm_avg_cyclomatic_complexity": [ 1.34 ],
-                    "cm_loc": [ 80586 ],
-                    "cm_num_files": [ 441 ],
-                    "dependents_count": [ -1 ],
-                    "description": [ "sonatype helps open source projects to set up maven repositories on httpsosssonatypeorg" ],
-                    "last_updated": [ 1499416928.83 ],
-                    "licenses": [ "Apache 2.0", "EPL 1.0", "MIT License" ],
-                    "pecosystem": [ "maven" ],
-                    "pname": [ "io.vertx:vertx-core" ],
-                    "relative_used": [ "" ],
-                    "shipped_as_downstream": [ false ],
-                    "version": [ "3.4.1" ],
-                    "vertex_label": [ "Version" ]
+                    "cm_avg_cyclomatic_complexity": [
+                        1.34
+                    ],
+                    "cm_loc": [
+                        80586
+                    ],
+                    "cm_num_files": [
+                        441
+                    ],
+                    "declared_licenses": [
+                        "Eclipse Public License - v 1.0",
+                        "The Apache Software License, Version 2.0"
+                    ],
+                    "dependents_count": [
+                        11
+                    ],
+                    "description": [
+                        "Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/"
+                    ],
+                    "last_updated": [
+                        1517474419.35
+                    ],
+                    "licenses": [
+                        "Apache 2.0",
+                        "EPL 1.0",
+                        "MIT License"
+                    ],
+                    "osio_usage_count": [
+                        11
+                    ],
+                    "pecosystem": [
+                        "maven"
+                    ],
+                    "pname": [
+                        "io.vertx:vertx-core"
+                    ],
+                    "relative_used": [
+                        ""
+                    ],
+                    "shipped_as_downstream": [
+                        false
+                    ],
+                    "version": [
+                        "3.4.1"
+                    ],
+                    "vertex_label": [
+                        "Version"
+                    ]
                 }
             }
         ],
@@ -80,12 +198,12 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<
     },
     "schema": {
         "name": "analyses_graphdb",
-        "url": "http://<recommender api url>/api/v1/schemas/api/analyses_graphdb/1-2-0/",
+        "url": "http://recommender.api.openshift.io/api/v1/schemas/api/analyses_graphdb/1-2-0/",
         "version": "1-2-0"
     }
 }
-
 ----
+
 
 *Failure*
 
