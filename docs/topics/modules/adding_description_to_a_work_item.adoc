@@ -5,10 +5,10 @@ You can describe the details for your work item as follows:
 
 . In the *Description* field, click in the text box to add description for the work item. Use the *Preview* tab to see the rendered markdown for your description.
 +
-NOTE: In addition to the standard link:https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet[markdown syntax], refer to link:https://github.com/russross/blackfriday#extensions[these extensions]  for more information about the syntax.
+NOTE: In addition to the standard link:https://access.redhat.com/help/markdown[markdown syntax], refer to link:https://github.com/russross/blackfriday#extensions[these extensions] for more information about the syntax.
 +
 image::wi_description_md.png[Markdown Description]
-
++
 . If you are satisfied, click *✓* to save the description.
 +
 image::wi_description.png[Description]
