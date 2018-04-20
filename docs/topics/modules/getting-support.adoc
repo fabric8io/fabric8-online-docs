@@ -1,8 +1,7 @@
 [id="getting-support"]
 = Getting support
 
-For Red Hat, an important aspect of the Early Access Program is to get feedback from users. Tell us what you like, what you hate, what you wish you could do, what you wish the service would stop doing, and anything else that you think we should know as we work on improving {osio}.
-
+The {osio} team love to get feedback from our users. Tell us what you like, what you hate, what you wish you could do, what you wish the service would stop doing, and anything else that you think we should know as we work on improving {osio}.
 
 [id="asking-questions-about-the-product"]
 == Asking questions about the product

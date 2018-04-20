@@ -33,10 +33,6 @@
 * Use the full-stack analysis feature on your project open source components to identify potential security issues and recommend safer alternative components or component versions to use instead.
 * Use the self-learning analytics engine to improve the code quality and make data-based choices. The engine scans community libraries, security vulnerabilities, and other GitHub metrics to provide useful real-time assistance for developers that learns and improves over time.
 
-== Registration and early access
-
-Currently, {osio} is available for a limited early access program. In the {osio} home page, click btn:[Sign up for the Preview] to join a waiting list for Early Access. You will receive an email informing you when you have been given access to use the system.
-
-== Support
-
-Red Hat currently does not offer a support subscription for {osio}. The service is available as a free _Developer Preview_ for open-source projects and developers.
+//== Support
+//Update after checking with Todd
+//Red Hat currently does not offer a support subscription for {osio}. The service is available as a free _Developer Preview_ for open-source projects and developers.
