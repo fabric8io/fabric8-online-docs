@@ -3,8 +3,6 @@
 
 To start using {rhosio}, create a new Red Hat Developers (RHD) account or use an existing RHD or social media account.
 
-IMPORTANT: Early access to the service is limited and allocated as resources become available. When you sign up, you are added to a waiting list. You are notified when access to the system is available.
-
 . Navigate to link:{osio-url}[{rhosio}].
 
 . Click btn:[Sign Up For The Preview]. You can register using an existing social or Red Hat account.
