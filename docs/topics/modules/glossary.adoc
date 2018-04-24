@@ -49,9 +49,11 @@ companion dependency:: Based on the analysis of your stack, {osio} suggests addi
 experience:: An experience is a way to address a scenario, fundamental, or a set of papercuts, each of which often have multiple realizing experiences. Often written as a demonstration script, it describes the ideal end-user work flow for realizing one or more of the associated value propositions.
 // endterm
 
+////
 // term: 9ee45d71-1efe-4fec-b1bb-ac92563327a6, en_EN
 experiences:: Work item type group that focuses on the experience and value proposition work item types that address the scenarios.
 // endterm
+////
 
 // term: dbfc82e1-5a40-44bd-af70-f2dc1a1927a4, en_EN
 feature:: Features, often expressed as user stories, are required to actualize parent experiences. They are scoped so that they are generally achievable within a sprint.
@@ -89,9 +91,11 @@ requirements:: Work item type group that focuses on execution oriented work item
 scenario:: A scenario identifies a real-world user problem to resolve. Addressing the scenario provides tangible user value. Prioritize scenarios that deliver maximum user value by evaluating their associated value propositions.
 // endterm
 
+////
 // term: 376d7613-4eaf-425e-a2f2-b434205ebdeb, en_EN
 scenarios:: Work item type group that focuses on the planning oriented work item types such as scenario, fundamental and papercuts.
 // endterm
+////
 
 // term: eb05f2b6-8a3c-4054-b28c-3eb1a47c125f, en_EN
 scenario-driven planning:: A software development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.
@@ -128,3 +132,4 @@ work item:: Work items describe and keep track of work that needs to be complete
 // term: e4c8beb4-1ed1-4275-af20-9ee3cb6dafd1, en_EN
 workspace:: Workspaces are fully configured web-based development environments suitable for your code and runtime needs. They are runtime environments where you can modify, test, debug, or run your code.
 // endterm
+
