@@ -16,10 +16,6 @@ If your account has an existing space, click *+* to create an additional space i
 +
 image::second_space.png[Second space]
 +
-. In the dialog box, type *myspace* as the unique name for your space.
-+
-image::create_space.png[Create new space]
-+
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 
@@ -29,12 +25,17 @@ ifeval::["{context}" == "hello-world"]
 +
 image::github_disconnected.png[GitHub Disconnected] 
 +
-.. When prompted, add your GitHub credentials to connect the account to {osio}.
+.. If your broswer session is already logged in to a GitHub account, {osio} uses it for the GitHub connection step. If not, you are prompted to add your GitHub credentials to connect the account to {osio}.
 +
 image::connect_github.png[Connect to GitHub]
 +
 . When the accounts are connected, the {osio} dashboard view displays. Click btn:[Create a space] again.
 endif::[]
++
+. Use the drop-down menu for the *Development Process* field to select a template for your new space. For this example, keep the default option for this field.
 
-. Use the drop-down menu for the *Template* field to select a template for your new space. For this example, select *Scenario Driven Planning* and click btn:[Create].
+. In the dialog box, type *myspace* as the unique name for your space and click btn:[Ok].
++
+image::create_space.png[Create new space]
++
 . The *How would you like to get started?* menu displays for your new space.
