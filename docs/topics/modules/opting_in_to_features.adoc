@@ -7,18 +7,20 @@ In the {osio} dashboard view, use the following steps to opt in or out of featur
 
 .. Click your name on the top right corner of the screen.
 
-.. Click *Profile* from the displayed options.
+.. Click *Settings* from the displayed options.
 +
-image::profile_menu.png[Profile menu button]
+image::profile_settings.png[Profile menu button]
 +
-. In the `Profile` screen, click btn:[Update Profile] to edit your profile.
+. In the `Settings` screen, click *Features Opt-in*.
 +
-image::update_profile_button.png[Update profile button]
+image::features_optin.png[Features Opt In]
 +
-. Select the appropriate option under `Features Opt-in` on the right side of the page. The *Production Features* option is recommended for users who only want the stable {osio} features.
+. Select the appropriate option from the list. The *Production Features* option is recommended for users who only want the stable {osio} features.
 +
-image::features_opt_in.png[Opt in features]
+image::features_optin_options.png[Opt in features]
 +
-. Click btn:[Update] to save your changes.
+The change is automatically applied to your profile. The following message displays to confirm that you have opted in to the selected features:
++
+image::profile_updated.png[Profile updated]
 
 You have now opted in to the desired features in {osio}.

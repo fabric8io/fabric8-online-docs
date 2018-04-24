@@ -23,15 +23,15 @@ image:new_org_fields.png[New organization fields]
 
 . Return to the {osio} tab in your browser.
 
-. Navigate to your `Profile` view:
+. Navigate to your `Settings` view:
 
 .. Click your name on the top right corner of the screen.
 
-.. Click *Profile* from the displayed options.
+.. Click *Settings* from the displayed options.
 +
-image::profile_menu.png[Profile menu button]
+image::profile_settings.png[Profile menu button]
 +
-. In `My Connected Account`, click the refresh icon for your GitHub account.
+. Under `Connected Accounts`, click the refresh icon for your GitHub account.
 +
 image::refresh_github.png[Refresh github]
 +
