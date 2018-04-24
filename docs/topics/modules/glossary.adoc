@@ -38,7 +38,7 @@ backlog:: A backlog is a list of work items that have not been triaged and assig
 // endterm
 
 // term: e8d54bf3-f89e-46e5-86f7-4af6475863b0, en_EN
-bug:: Defect that causes unexpected behavior in the software.
+bug:: A defect that causes unexpected behavior in the software and that needs to be fixed.
 // endterm
 
 // term: 1694e637-2f9b-40ec-8fa8-a22472850ff9, en_EN
@@ -46,32 +46,34 @@ companion dependency:: Based on the analysis of your stack, {osio} suggests addi
 // endterm
 
 // term: 23c322f1-53b1-4286-b524-37ab58124823, en_EN
-experience:: Experience describes the envisioned user experience in the product to actualize a parent work item. Each parent work item can have multiple experiences.
+experience:: An experience is a way to address a scenario, fundamental, or a set of papercuts, each of which often have multiple realizing experiences. Often written as a demonstration script, it describes the ideal end-user work flow for realizing one or more of the associated value propositions.
 // endterm
+
+////
+// term: 9ee45d71-1efe-4fec-b1bb-ac92563327a6, en_EN
+experiences:: Work item type group that focuses on the experience and value proposition work item types that address the scenarios.
+// endterm
+////
 
 // term: dbfc82e1-5a40-44bd-af70-f2dc1a1927a4, en_EN
-feature:: A feature is a detailed user-story that helps actualize parent experiences. It can support multiple experiences and is generally achievable within a sprint.
+feature:: Features, often expressed as user stories, are required to actualize parent experiences. They are scoped so that they are generally achievable within a sprint.
 // endterm
 
-////
-term: 4d85adba-817d-41ca-b85f-1e4a938d1282, en_EN
-fundamental:: Work item type that focuses on getting the basic foundations of a product right to make it more efficient.
+// term: 4d85adba-817d-41ca-b85f-1e4a938d1282, en_EN
+fundamental:: A fundamental describes the basic essentials of a software product, such as quality and performance standards. It is a non-negotiable aspect of a product and its absence reduces the value provided to the user.
 // endterm
-////
 
 // term: 5c1b8158-a351-4092-8780-3ad22e1eb173, en_EN
-iteration:: An iteration is used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.
+iteration:: A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.
 // endterm
 
 // term: f05a151a-61fa-45b1-8d8b-b3fd7bc63ea9, en_EN
 license conflict:: Licenses that conflict at the stack or dependency level.
 // endterm
 
-////
-term: 83b7cf12-558e-41bd-bcd7-822ca6307db1, en_EN
-papercuts:: Papercuts are logical aggregations of minor issues that collectively have a negative impact on the user. This aggregation receives higher priority and enables efficient handling of such issues.
+// term: 83b7cf12-558e-41bd-bcd7-822ca6307db1, en_EN
+papercut:: A papercut is a minor issue, often too small to be individually prioritized to be addressed; collectively, papercuts degrade the perception of the product. Grouped together, they receive higher priority and can be tackled together within a development cycle.
 // endterm
-////
 
 // term: 5bd840a6-2f62-4bea-bb04-63252f6ce381, en_EN
 pipeline:: Pipelines are a continuous delivery system that, at each step, tests and deploys the code to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements different levels of testing and deployment tasks, provides results, and then passes the code on to the next step.
@@ -81,9 +83,17 @@ pipeline:: Pipelines are a continuous delivery system that, at each step, tests 
 restrictive license:: Licenses that are not commonly used in similar stacks or that do not work well with the stack’s representative license.
 // endterm
 
+// term: a0b10d4f-f639-4978-a2e5-6e858a56f6df, en_EN
+requirements:: Work item type group that focuses on execution oriented work item types such as feature, task, and bug.
+// endterm
+
+// term: 01e76137-ab89-4a3c-8765-48f54078154a, en_EN
+scenario:: A scenario identifies a real-world user problem to resolve. Addressing the scenario provides tangible user value. Prioritize scenarios that deliver maximum user value by evaluating their associated value propositions.
+// endterm
+
 ////
-term: 01e76137-ab89-4a3c-8765-48f54078154a, en_EN
-scenario:: Work item type that identifies and tries to resolve real world problems faced by users, mostly defined in a broad sense.
+// term: 376d7613-4eaf-425e-a2f2-b434205ebdeb, en_EN
+scenarios:: Work item type group that focuses on the planning oriented work item types such as scenario, fundamental and papercuts.
 // endterm
 ////
 
@@ -112,7 +122,7 @@ usage outlier:: Dependencies in your stack that are not commonly used in similar
 // endterm
 
 // term: 83e52577-cdc4-4687-97d1-86151db74bdc, en_EN
-value proposition:: Work item type that states the value provided to the user by addressing a parent work item. Each parent work item can have multiple value propositions.
+value proposition:: A statement of the value provided to the user by addressing a scenario, fundamental, or papercut. Each of which can have multiple value propositions.
 // endterm
 
 // term: 83e7953e-9335-428c-b1af-7aa4b00cd662, en_EN
@@ -122,3 +132,4 @@ work item:: Work items describe and keep track of work that needs to be complete
 // term: e4c8beb4-1ed1-4275-af20-9ee3cb6dafd1, en_EN
 workspace:: Workspaces are fully configured web-based development environments suitable for your code and runtime needs. They are runtime environments where you can modify, test, debug, or run your code.
 // endterm
+

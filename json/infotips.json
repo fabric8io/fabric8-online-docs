@@ -20,49 +20,55 @@
 {
    "e8d54bf3-f89e-46e5-86f7-4af6475863b0": {
       "term": "bug",
-      "en_EN": "Defect that causes unexpected behavior in the software."
+      "en_EN": "A defect that causes unexpected behavior in the software and that needs to be fixed."
    }
 },
 {
    "1694e637-2f9b-40ec-8fa8-a22472850ff9": {
-      "term": "companinon dependency",
+      "term": "companion dependency",
       "en_EN": "Based on the analysis of your stack, {osio} suggests additional dependencies that can add value to your stack."
    }
 },
 {
    "23c322f1-53b1-4286-b524-37ab58124823": {
       "term": "experience",
-      "en_EN": "Experience describes the envisioned user experience in the product to actualize a parent work item. Each parent work item can have multiple experiences."
+      "en_EN": "An experience is a way to address a scenario, fundamental, or a set of papercuts, each of which often have multiple realizing experiences. Often written as a demonstration script, it describes the ideal end-user work flow for realizing one or more of the associated value propositions."
+   }
+},
+{
+   "9ee45d71-1efe-4fec-b1bb-ac92563327a6": {
+      "term": "experiences",
+      "en_EN": "Work item type group that focuses on the experience and value proposition work item types that address the scenarios."
    }
 },
 {
    "dbfc82e1-5a40-44bd-af70-f2dc1a1927a4": {
       "term": "feature",
-      "en_EN": "A feature is a detailed user-story that helps actualize parent experiences. It can support multiple experiences and is generally achievable within a sprint."
-   }
-},
-{
-   "e8d54bf3-f89e-46e5-86f7-4af6475863b0": {
-      "term": "bug",
-      "en_EN": "Defect that causes unexpected behavior in the software."
+      "en_EN": "Features, often expressed as user stories, are required to actualize parent experiences. They are scoped so that they are generally achievable within a sprint."
    }
 },
 {
    "4d85adba-817d-41ca-b85f-1e4a938d1282": {
       "term": "fundamental",
-      "en_EN": "Work item type that focuses on getting the basic foundations of a product right to make it more efficient."
+      "en_EN": "A fundamental describes the basic essentials of a software product, such as quality and performance standards. It is a non-negotiable aspect of a product and its absence reduces the value provided to the user."
    }
 },
 {
    "5c1b8158-a351-4092-8780-3ad22e1eb173": {
       "term": "iteration",
-      "en_EN": "An iteration is used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration."
+      "en_EN": "A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration."
    }
 },
 {
    "f05a151a-61fa-45b1-8d8b-b3fd7bc63ea9": {
       "term": "license conflict",
       "en_EN": "Licenses that conflict at the stack or dependency level."
+   }
+},
+{
+   "83b7cf12-558e-41bd-bcd7-822ca6307db1": {
+      "term": "papercut",
+      "en_EN": "A papercut is a minor issue, often too small to be individually prioritized to be addressed; collectively, papercuts degrade the perception of the product. Grouped together, they receive higher priority and can be tackled together within a development cycle."
    }
 },
 {
@@ -75,6 +81,24 @@
    "3a953b07-0cc3-4b45-b891-bf490216eae3": {
       "term": "restrictive license",
       "en_EN": "Licenses that are not commonly used in similar stacks or that do not work well with the stack’s representative license."
+   }
+},
+{
+   "a0b10d4f-f639-4978-a2e5-6e858a56f6df": {
+      "term": "requirements",
+      "en_EN": "Work item type group that focuses on execution oriented work item types such as feature, task, and bug."
+   }
+},
+{
+   "01e76137-ab89-4a3c-8765-48f54078154a": {
+      "term": "scenario",
+      "en_EN": "A scenario identifies a real-world user problem to resolve. Addressing the scenario provides tangible user value. Prioritize scenarios that deliver maximum user value by evaluating their associated value propositions."
+   }
+},
+{
+   "376d7613-4eaf-425e-a2f2-b434205ebdeb": {
+      "term": "scenarios",
+      "en_EN": "Work item type group that focuses on the planning oriented work item types such as scenario, fundamental and papercuts."
    }
 },
 {
@@ -116,7 +140,7 @@
 {
    "83e52577-cdc4-4687-97d1-86151db74bdc": {
       "term": "value proposition",
-      "en_EN": "Work item type that states the value provided to the user by addressing a parent work item. Each parent work item can have multiple value propositions."
+      "en_EN": "A statement of the value provided to the user by addressing a scenario, fundamental, or papercut. Each of which can have multiple value propositions."
    }
 },
 {
