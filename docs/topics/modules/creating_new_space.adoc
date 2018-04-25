@@ -37,5 +37,6 @@ endif::[]
 . In the dialog box, type *myspace* as the unique name for your space and click btn:[Ok].
 +
 image::create_space.png[Create new space]
-+
-. The *How would you like to get started?* menu displays for your new space.
+
+You have now created your first space.
+
