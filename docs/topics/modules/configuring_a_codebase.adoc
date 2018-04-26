@@ -5,7 +5,7 @@ After creating a space, you can add a codebase from GitHub and set up a pipeline
 
 .Prerequisites
 
-* Create a space. See <<creating_a_new_space>> for instructions.
+* Create a space. See <<creating_new_space-user-guide>> for instructions.
 
 .Procedure
 

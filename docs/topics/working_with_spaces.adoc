@@ -5,7 +5,7 @@
 
 include::modules/about_spaces.adoc[leveloffset=+1]
 
-include::modules/creating_a_new_space.adoc[leveloffset=+1]
+include::modules/creating_new_space.adoc[leveloffset=+1]
 
 include::modules/deleting_a_space.adoc[leveloffset=+1]
 

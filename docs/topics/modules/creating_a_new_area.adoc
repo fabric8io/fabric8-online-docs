@@ -5,7 +5,7 @@ You can create a new child area to group together related work items by type or 
 
 .Prerequisites
 
-* Ensure you have <<creating_a_new_space,created a space>> to use.
+* Ensure you have <<creating_new_space-user-guide,created a space>> to use.
 
 .Procedure
 

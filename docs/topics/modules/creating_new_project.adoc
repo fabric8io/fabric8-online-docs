@@ -46,6 +46,7 @@ image::{context}_app_information.png[Application information]
 +
 image::{context}_application_ready.png[Application ready]
 
+Your new Vert.X project is now created in your space.
 endif::[]
 
 
@@ -86,13 +87,8 @@ image::{context}_app_information.png[Application information]
 +
 image::{context}_application_ready.png[Application ready]
 
-
-
-
-
+Your new project is now created in your space.
 endif::[]
-
-
 
 // for spring-boot
 //ifeval::["{context}" == "spring-boot"]
@@ -100,33 +96,10 @@ endif::[]
 //+
 //endif::[]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// for user-guide
-ifeval::["{context}" == "user-guide"]
-Your new project is now created in your space.
-endif::[]
-
-// for hello-world
-ifeval::["{context}" == "hello-world"]
-Your new Vert.X project is now created in your space.
-endif::[]
-
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
 Your new Spring Boot project is now created in your space.
 endif::[]
 // end conditionals
 
-{osio} has now hosted the project source code in the linked account and specified organization on GitHub. It  has also hosted the pipeline for the project in OpenShift Online.
+{osio} has now hosted the project source code in the linked account and specified organization on GitHub. It has also hosted the pipeline for the project in OpenShift Online.

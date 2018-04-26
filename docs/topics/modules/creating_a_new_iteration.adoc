@@ -5,7 +5,7 @@ Add iterations to your space to plan and organize your work items. Click btn:[Pl
 
 .Prerequisites
 
-* Ensure that you have <<creating_a_new_space,created a space>>.
+* Ensure that you have <<creating_new_space-user-guide,created a space>>.
 
 .Procedure
 
