@@ -1,5 +1,24 @@
-FROM fabric8/caddy:v8759201
+FROM centos:7
+LABEL maintainer "Devtools <devtools@redhat.com>"
+LABEL author "Devtools <devtools@redhat.com>"
 
-COPY html /var/www/html/
-RUN mkdir -p /var/www/html/json/
-COPY json /var/www/html/json/
+ENV LANG=en_US.utf8
+ENV FABRIC8_USER_NAME=fabric8
+
+ADD root /
+
+RUN yum install --setopt=tsflags=nodocs -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
+    yum -y install --setopt=tsflags=nodocs nginx gettext && \
+    yum clean all && \
+    rm -f /usr/share/nginx/html/* && \
+    useradd --no-create-home -s /bin/bash ${FABRIC8_USER_NAME} && \
+    chmod -R 777 /run.sh /usr/share/nginx/html /run /var/log/nginx && \
+    chmod -R a+rw /etc/nginx
+
+COPY html /usr/share/nginx/html/
+COPY json /usr/share/nginx/html/json/
+
+USER ${FABRIC8_USER_NAME}
+
+EXPOSE 8080
+ENTRYPOINT ["/run.sh"]

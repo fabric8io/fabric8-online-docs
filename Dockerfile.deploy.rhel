@@ -1,0 +1,6 @@
+FROM prod.registry.devshift.net/osio-prod/base/openshift-nginx:latest
+LABEL maintainer "Devtools <devtools@redhat.com>"
+LABEL author "Devtools <devtools@redhat.com>"
+
+COPY html /usr/share/nginx/html/
+COPY json /usr/share/nginx/html/json/

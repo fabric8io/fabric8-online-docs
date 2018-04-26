@@ -98,7 +98,7 @@ objects:
           group: io.fabric8.apps
       spec:
         containers:
-        - image: registry.devshift.net/fabric8io/fabric8-online-docs:${IMAGE_TAG}
+        - image: ${IMAGE}:${IMAGE_TAG}
           livenessProbe:
             httpGet:
               path: /
@@ -139,5 +139,7 @@ objects:
       kind: Service
       name: fabric8-online-docs-app
 parameters:
+- name: IMAGE
+  value: registry.devshift.net/fabric8io/fabric8-online-docs
 - name: IMAGE_TAG
   value: latest
