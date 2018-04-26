@@ -4,11 +4,11 @@
 . Click btn:[Add Codebase].
 . In the *How would you like to get started?* dialog box, select one of the following options:
 
-* *Import existing code*
+* *Import an existing codebase*
 
-* *Create a new Quickstart project*
+* *Create a new codebase*
 +
-image::get_started_menu.png[How would you like to get started menu]
+image::start_creating_apps.png[Start creating apps]
 
 include::importing_existing_code.adoc[leveloffset=+1]
 

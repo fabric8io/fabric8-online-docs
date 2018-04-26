@@ -5,7 +5,7 @@ You can add other {osio} users as collaborators to your space and then assign wo
 
 .Prerequisites
 
-* <<creating_a_new_space,Create a new space>> or select an existing space.
+* <<creating_new_space-user-guide,Create a new space>> or select an existing space.
 * Ensure that the target user has an {osio} account.
 
 .Procedure

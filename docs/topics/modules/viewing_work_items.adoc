@@ -19,7 +19,7 @@ image::right_pane.png[Right Pane]
 
 [NOTE]
 ====
-. By default, closed work items are not listed in the work item list. Select the *Show Completed* checkbox to see the closed work items.
+. By default, closed work items are not listed in the work item list. Select the *Show Completed* check box to see the closed work items.
 . Use the gear icon next to the *Add and Open* button to select the attributes you want to see for your list of work items.
 +
 image:wi_toggle_attributes.png[Display Work Item Attributes]

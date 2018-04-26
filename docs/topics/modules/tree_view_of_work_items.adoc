@@ -10,7 +10,7 @@ You can view, track, and plan your work items along with their parent-child link
 
 NOTE: Ensure that the *Show Tree* check box is selected.
 
-. Navigate to Menu:Plan[Backlog]. The *Scenarios* for your space are displayed by default in a tree hierarchy.
+. Click *Plan* and then *Backlog*. The *Scenarios* for your space are displayed by default in a tree hierarchy.
 . Expand the work items to see the child *Experiences* and *Requirements* type work items associated to them.
 +
 image::scenarios_tree_view.png[Scenario with Child Work Items]

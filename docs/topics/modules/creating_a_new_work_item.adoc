@@ -7,7 +7,7 @@ The fastest way to create work items in the planner is to use the quick-add opti
 
 .Prerequisites
 
-* <<creating_a_new_space,Create a new space>> or select an existing space with the required template.
+* <<creating_new_space-user-guide,Create a new space>> or select an existing space with the required template.
 
 .Procedure
 

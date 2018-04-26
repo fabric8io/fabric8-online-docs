@@ -1,96 +1,100 @@
 [id="creating_new_project-{context}{secondary}"]
 = Creating a new project
 
-// for user-guide
-ifeval::["{context}" == "user-guide"]
-When you create a new space, the *How would you like to get started?* dialog box opens. Use this menu to create a new Quickstart project as follows:
-endif::[]
-
-// for hello-world
-ifeval::["{context}" == "hello-world"]
-When you create a new space, the *How would you like to get started?* dialog box opens. Use this menu to create a new Quickstart project as follows:
-endif::[]
-
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
 In this section, you learn how to create a quickstart project based on a Spring Boot application in your space. See the <<hello_world_developers,Hello World project>> for an example of a Vert.X application.
+endif::[]
 
-. In the dashboard of your space, click btn:[Add to space]. 
-+
-image::add_to_space.png[Add to space button]
-+
-endif::[]
-. In the *How would you like to get started?* dialog box, click btn:[Create a new Quickstart project].
-+
-image::get_started_menu.png[Getting Started Menu]
-+
-. In the *Application Wizard*:
-// conditional starts here
-// for user-guide
-ifeval::["{context}" == "user-guide"]
-.. Click a project type from the displayed icons.
-+
-image::vertx_booster.png[Select Vert.X Booster]
-+
-.. Click btn:[Next].
-.. In the *OpenShift Project Name* field, add a unique name for your project.
-+
-image::ug_project_name.png[Add a name for your project]
-+
-endif::[]
+When you create a new space, the wizard to create applications displays. Use this menu to create a new Quickstart project as follows:
+
+image::start_creating_apps.png[Start creating apps]
+
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-.. Click a project type from the displayed icons. For this example, click *Vert.x HTTP Booster*.
+. In the `Name your application` field, type *helloworldvertx*.
+
+. Select the *Create a new codebase* radio button and click btn:[Continue].
+
+. Select the mission and runtime for your new project:
+
+.. In the `Choose a mission` section, select the *Externalized Configuration* option.
+
+.. In the `Choose a runtime` section, select *Eclipse Vert.x*.
+
+.. Click the blue downward arrow button to continue.
 +
-image::vertx_booster.png[Select Vert.X Booster]
+image::{context}_choose_mission_runtime.png[Choose mission and runtime]
 +
-.. Click btn:[Next].
-.. In the *OpenShift Project Name* field, type `helloworldvertx` as the unique name for your project.
+. In the `Select Pipeline` section, select the first option, then click the blue arrow to continue to the next step.
 +
-image::vertx_name.png[Add a name for your project]
+image::{context}_select_pipeline.png[Select a pipeline]
 +
+. In the `Authorize Git Provider` section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
++
+image::authorize_github_screen.png[Authorize GitHub]
++
+. The next screen displays a summary of your application options. Scroll down in your browser to view the `Application Information` section. For this example, do not edit these options. If desired, you can change the project name, version, Group ID, which space it is in, and the target environment for your new application at this step.
++
+image::{context}_app_information.png[Application information]
++
+. Click btn:[Set Up Application] to finalize your choices and create the new application.
+
+. The progress screen displays a confirmation message when your application is ready.
+.. Optionally, click the blue link to view your new codebase in your Git provider.
+.. When ready, click btn:[View New Application].
++
+image::{context}_application_ready.png[Application ready]
+
+Your new Vert.X project is now created in your space.
 endif::[]
 
-// for spring-boot
-ifeval::["{context}" == "spring-boot"]
-.. In the *Name* field, type `spring` and press kbd:[Enter] to filter the options for Spring Boot quickstart applications.
-.. From the displayed results, click *Spring Boot - HTTP*.
-+
-image::project_springboot.png[Spring Boot HTTP Project]
-+
-.. Click btn:[Next].
-.. In the *OpenShift Project Name* field, type `myspringboot` as the name for your project.
-+
-image::springboot_name.png[Add a name for your project]
-+
-endif::[]
-// conditional ends here
-.. Keep the default value for the *Organization*, *Group Id*, and *Version* fields and click btn:[Next].
-.. Select a build pipeline strategy. Pipelines allow developers to create a repeatable, reliable, and incrementally improving process to move the software from code to the execution environment. For this example, use the default value *Release, Stage, Approve and Promote* and click btn:[Next].
-// for user guide
-ifeval::["{context}" == "user-guide"]
-See <<selecting_a_pipeline_type>> for details about pipeline build types.
-endif::[]
-+
-image::configure_pipeline.png[Configure pipeline]
-+
-.. The *Build Config* screen displays the details for your *Jenkins space* and options for adding continuous integration hooks and triggering a build when your application deploys. Use the default options for these fields and click btn:[Finish].
-+
-image::build_config.png[Build config screen]
-+
-.. The *Summary* screen displays the selected options for the project. Click btn:[Ok] to create the project.
-+
-image::{context}_final.png[Final project screen]
+
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
+. In the *Name your application* field, type a unique name for your new project.
+
+. Select the *Create a new codebase* radio button and click btn:[Continue].
+
+. Select the mission and runtime for your new project:
+
+.. In the `Choose a mission` section, select the the appropriate option.
+
+.. In the `Choose a runtime` section, select the appropriate runtime. When you select the options at each step, the gray arrow at the bottom of the screen turns blue.
+
+.. Click the blue downward arrow button to continue.
++
+image::{context}_choose_mission_runtime.png[Choose mission and runtime]
++
+. In the `Select Pipeline` section, select the appropriate option, then click the blue arrow to continue to the next step. We recommend using the first option for most use cases because it provides stages to test your changes for each pipeline build.
++
+image::{context}_select_pipeline.png[Select a pipeline]
++
+. In the `Authorize Git Provider` section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
++
+image::authorize_github_screen.png[Authorize GitHub]
++
+. The next screen displays a summary of your application options. Scroll down in your browser to view the `Application Information` section. For this example, do not edit these options. If desired, you can change the project name, version, Group ID, which space it is in, and the target environment for your new application at this step.
++
+image::{context}_app_information.png[Application information]
++
+. Click btn:[Set Up Application] to finalize your choices and create the new application.
+
+. The progress screen displays a confirmation message when your application is ready.
+.. Optionally, click the blue link to view your new codebase in your Git provider.
+.. When ready, click btn:[View New Application].
++
+image::{context}_application_ready.png[Application ready]
+
 Your new project is now created in your space.
 endif::[]
 
-// for hello-world
-ifeval::["{context}" == "hello-world"]
-Your new Vert.X project is now created in your space.
-endif::[]
+// for spring-boot
+//ifeval::["{context}" == "spring-boot"]
+//. In the *Name your application* field, type a unique name for your new project.
+//+
+//endif::[]
 
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
@@ -98,4 +102,4 @@ Your new Spring Boot project is now created in your space.
 endif::[]
 // end conditionals
 
-{osio} has now hosted the project source code in the linked account and specified organization on GitHub. It  has also hosted the pipeline for the project in OpenShift Online.
+{osio} has now hosted the project source code in the linked account and specified organization on GitHub. It has also hosted the pipeline for the project in OpenShift Online.

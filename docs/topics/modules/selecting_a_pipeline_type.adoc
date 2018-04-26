@@ -3,29 +3,31 @@
 
 When creating a new project using the Quickstart wizard, three types of Maven-based pipelines are available for your new project:
 
-image::build_pipeline_strategies.png[Build pipeline strategies]
+image::{context}_select_pipeline.png[Select a pipeline]
 
-1. *Release* is the basic option. After creating the pipeline, this option runs an integration test in the *Test* environment but does not stage the results.
+. *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* is the recommended option for most projects. It stages your project in the *Stage* environment and then requires manual approval to promote the changes to the *Run* environment.
 
-2. *Release and Stage* stages the new version of your project in the *Stage* environment after running integration tests.
+. *Build Release, Integration Test* is the most basic option. After creating the pipeline, this option runs an integration test in the *Test* environment but does not stage the results.
 
-3. *Release, Stage, Approve and Promote* stages your project in the *Stage* environment and then requires manual approval to promote the changes to the *Run* environment.
+. *Build Release, Integration Test, Rollout to Stage* stages the new version of your project in the *Stage* environment after running integration tests.
 
-== Dashboard deployments view
 
-Depending on which of the three options was selected for your project, the *Deployments* section of the {osio} dashboard displays the version of the project and which stage type each version currently includes.
+//== Dashboard deployments view
 
-For example, for the *Release* option, the *Deployments* section of the {osio} dashboard only shows the name of your project because there is no staging required.
+//Depending on which of the three options was selected for your project, the *Deployments* section of the {osio} dashboard displays the version of the project and which stage type each version currently includes.
 
-image::release_only_deploy_dash.png[Build only]
+//For example, for the *Release* option, the *Deployments* section of the {osio} dashboard only shows the name of your project because there is no staging required.
 
-For the *Release and Stage* option, the dashboard displays the version and the *Stage* label because the application is staged.
+//image::release_only_deploy_dash.png[Build only]
 
-image::build_stage_deploy_dash.png[Build and Stage]
+//For the *Release and Stage* option, the dashboard displays the version and the *Stage* label because the application is staged.
 
-For the *Release, Stage, Approve and Promote* option, once you promote a version of the project, the dashboard displays both the *Stage* and *Run* environment versions.
+//image::build_stage_deploy_dash.png[Build and Stage]
 
-image::build_stage_run_dash.png[Build, stage, run]
+//For the *Release, Stage, Approve and Promote* option, once you promote a version of the project, the dashboard displays both the *Stage* and *Run* environment versions.
+
+//image::build_stage_run_dash.png[Build, stage, run]
+// TODO when ready to review in prod-preview
 
 == Deployment information
 
