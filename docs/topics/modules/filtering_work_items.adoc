@@ -3,7 +3,7 @@
 
 You can filter your work item list in the planner as follows:
 
-. Navigate to Menu:Plan[Backlog] to see a list of your work items for the space.
+. Click *Plan* and then *Backlog* to see a list of your work items for the space.
 . Click the *Select* drop-down list to select a filter type. You can filter work items by *Assignee*, *Creator*, *Area*, *Workitem type*, *State*, *Label* and *Title*.  The drop-down next to the *Select* drop-down auto-populates options based on the selected filter type.
 +
 image::wi_select_filter.png[Select Filter]

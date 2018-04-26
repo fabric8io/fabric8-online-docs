@@ -8,7 +8,7 @@ You can track a particular work item type group using the flat list as follows:
 
 NOTE: Ensure that the *Show Tree* check box is cleared to see the flat view.
 
-. Navigate to Menu:Plan[Backlog]. The *Scenarios* for your space are displayed by default in a tree hierarchy.
+. Click *Plan* and then *Backlog*. The *Scenarios* for your space are displayed by default in a tree hierarchy.
 . Clear the *Show Tree* check box to see all your *Scenarios* in a flat view.
 +
 image::scenarios_flat_view.png[Scenarios Flat View]

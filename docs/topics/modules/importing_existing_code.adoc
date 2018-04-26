@@ -3,18 +3,17 @@
 
 Use the {osio} *Application wizard* to import an existing project codebase into {osio}.
 
-. In the *GitHub Organization* section, select your organization name from the *Organization* drop-down list. For this example, use the organization name assigned to your personal GitHub account.
-. Click btn:[Next].
-. In the *GitHub Repositories* section, select the repository to import into {osio} from the *Repository Name Pattern* list, and then click btn:[Next].
-. In the *Configure Pipeline* section:
-.. Select a build pipeline strategy. The default value *Release, Stage, Approve and Promote* is suitable for most use cases.
-.. Ensure that the *Override Jenkins and POM files* option is selected
-. Click btn:[Next].
-. In the *Build configuration* section the *Jenkins space* field displays the name of your Jenkins space.
+. In the *Authorize Git Provider* step:
+.. Add the location of your code.
+.. Select the appropriate repository for your code.
+.. Click the blue arrow at the bottom of the screen to continue.
 
-.. Select *Trigger build* to trigger a build once your Application is deployed.
-.. Select *Add continuous integration web hooks* to add continuous integration web hooks to your Application.
+. In the *Select pipeline* step, select an option for your project's pipeline build, then click the blue arrow to continue to the next step. We recommend using the first option for most use cases because it provides stages to test your changes for each pipeline build.
 +
-Use the default options for these fields.
-. Click btn:[Finish].
-. The *Summary* section displays your selected options for the Application. Click btn:[Ok] to continue.
+image::{context}_select_pipeline.png[Select a pipeline]
+
+. The next step displays a summary for your imported code. Review the information and click btn:[Import Application] to confirm.
+
+. The progress screen displays when your code is imported. Click btn:[View New Application] to continue when all the steps have a green check mark next to them.
++
+image::add_codebase_final.png[Final step adding codebase]

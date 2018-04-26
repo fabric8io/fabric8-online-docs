@@ -7,5 +7,5 @@ WARNING: When deleted, the space and all its contents (work items, codebases, wo
 
 . On your {osio-link} home page, click your user name in the upper-left corner of the screen.
 . On the drop-down list, click  *View all spaces*.
-. Click the (image:delete.png [Delete]) icon, the *Remove Space* dialog box is displayed asking for confirmation.
+. Click the trash can icon (image:delete.png[title="Delete"]), the *Remove Space* dialog box displays asking for confirmation.
 . Click btn:[Remove] to confirm and delete your space.
