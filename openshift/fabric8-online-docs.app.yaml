@@ -40,20 +40,6 @@ objects:
       version: 1.0.7
       group: io.fabric8.apps
     name: fabric8-online-docs-app
-  data:
-    Caddyfile: |-
-      0.0.0.0:8080
-
-      root /var/www/html
-
-      log stdout
-
-      errors stdout
-
-      ext .html .htm
-
-      browse
-      prometheus
 - apiVersion: v1
   kind: DeploymentConfig
   metadata:
@@ -105,24 +91,13 @@ objects:
               port: 8080
             initialDelaySeconds: 60
             timeoutSeconds: 10
-          name: caddy
+          name: nginx
           readinessProbe:
             httpGet:
               path: /
               port: 8080
             initialDelaySeconds: 5
             timeoutSeconds: 5
-          volumeMounts:
-          - mountPath: /etc/caddy/
-            name: caddy-config
-            readOnly: true
-        volumes:
-        - configMap:
-            items:
-            - key: Caddyfile
-              path: Caddyfile
-            name: fabric8-online-docs-app
-          name: caddy-config
     triggers:
     - type: ConfigChange
 - apiVersion: v1
