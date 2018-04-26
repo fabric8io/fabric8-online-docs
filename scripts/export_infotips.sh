@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
 GLOSSARY_FILE=docs/topics/modules/glossary.adoc
+STAGE_FILE=json/infotips.jo
 JSON_FILE=json/infotips.json
 
 if [ -f $JSON_FILE ]; then rm $JSON_FILE; fi
+if [ -f $STAGE_FILE ]; then rm $STAGE_FILE; fi
 
 terms=$(grep '^// term:' $GLOSSARY_FILE | wc -l);
 
@@ -15,9 +17,11 @@ for (( i=1; i<=$terms; i++ )); do
                                  -e 's|^\([^::]*\):: .*$|\1|')"
   TERM_DEFINITION="$(echo "$TERM" | sed -e '/^\/\/ term:/d; /^\/\/ endterm/d' \
                                        -e 's|^[^::]*:: ||')"
-  echo -e "${UUID}[term]="$TERM_NAME"\n${UUID}[${L10N}]="$TERM_DEFINITION"" | jo -p >> $JSON_FILE
+  echo -e "${UUID}[term]="$TERM_NAME"\n${UUID}[${L10N}]="$TERM_DEFINITION"" >> $STAGE_FILE
 done
 
-sed -i -e 's/^\}/},/' \
-       -e '1i\[' \
-       -e '$s/\},/}\n\]/' $JSON_FILE
+cat $STAGE_FILE | jo -p > $JSON_FILE
+
+if [ $(python -m json.tool $JSON_FILE > /dev/null) ]; then
+  rm $STAGE_FILE
+fi
