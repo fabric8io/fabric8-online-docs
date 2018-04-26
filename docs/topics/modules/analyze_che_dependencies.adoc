@@ -1,5 +1,5 @@
 [id="analyze_che_dependencies"]
-= Analyzing Che dependencies
+= Analyzing stack dependencies within Che
 
 The Che workspace automatically analyzes dependencies for the code while you modify it. To see how this analyzer works:
 

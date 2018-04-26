@@ -11,6 +11,9 @@ This example walks you through the Scenario Driven Development planning process 
 . Select the *Show Tree* check box to see the work items in a tree view. The tree view allows you to quickly add work items according to the guided hierarchy using the quick-add and in-line add options.
 . Use the quick-add option to create a *Scenario* as follows:
 .. In the *Add Work Item* pane, select *Scenario* from the drop-down list.
++
+image::quickadd_wi_type.png[Quick Add work item type]
++
 .. In the *Work Item Title* field, add `Enable an end to end, quick, developer work-flow, within a continuous integration and deployment model` as the title.
 .. Press kbd:[Enter] to create the scenario.
 +
@@ -55,26 +58,34 @@ Click the above tasks to see instructions on executing these tasks.
 image::gs_tasks_egs.png[Example Tasks]
 
 
-. Similarly, create a child Experience, Feature, and Task for the *Fundamental* - `The application should be secure with appropriate licenses`. The task could be titled <<accessing_stack_reports,`Use analytics to identify and resolve security and license issues in the application`>>.
+. Similarly, create a child Experience, Feature, and Task for the *Fundamental* - `The application should be secure with appropriate licenses`. The task could be titled <<analytics_stack_reports,`Use analytics to identify and resolve security and license issues in the application`>>.
 +
 image::gs_fundamental_task_eg.png[Example Fundamental Task]
 +
-For each of these tasks ensure that you use the preview to:
+For each of these tasks click on the work item to preview and:
 
-* link:user-guide.html#assigning_the_work_item[Assign the tasks to the collaborators] in your team.
-* link:user-guide.html#tracking_state_of_a_work_item[Change the state of the work items] from *New* to *In Progress* when you start working on them and mark it *Closed* once work is completed.
-
+* link:user-guide.html#assigning_the_work_item[Assign the tasks to the collaborators] in your team. For this example, add your name as the assignee.
+Assigning a work item sends that person an email notification. Depending on your mail server and account, this notification email may arrive after a delay of several minutes.
 +
-For more information, see link:user-guide.html#working_with_work_items[working with work items] in planner.
+image::gs_add_assignee.png[Add Asignee]
++
+* link:user-guide.html#tracking_state_of_a_work_item[Change the state of the work items] from *New* to *In Progress* when you start working on them and mark it *Closed* once work is completed.
++
+image::gs_change_state.png[Change State]
++
+See link:user-guide.html#working_with_work_items[working with work items] to further modify your workitems.
 
-. Click the (+) icon adjacent to *Iterations* to link:user-guide.html#creating_a_new_iteration[create an iteration] and make it active.
+. Click the (+) icon adjacent to *Iterations* to link:user-guide.html#creating_a_new_iteration[create an iteration] called `Test Iteration` and make it active.
 +
 image::create_iteration.png[Create Iteration]
 +
 
-You can link:user-guide.html#associating_work_items_with_an_iteration[associate the features and child tasks to the iteration] to track them and close them within this iteration.
+.. link:user-guide.html#associating_work_items_with_an_iteration[Associate the features and child tasks to the *Test Iteration*] to track them and close them within this iteration.
++
+image::gs_iteration_wi_assocn.png[Assocaiting Work Item with an Iteration]
++
+.. Click *Test Iteration* to see the associated work items.
 +
 image::gs_iteration_assocd_wis.png[Work Items associated to an Iteration]
-+
 
-You have now learned how to use the Scenario Driven Development planning methodology to plan your work and create work items to track them.
+You have now learned how to use the Scenario Driven Development planning methodology to plan your work by creating work items and to track and execute them by associating them to iterative development cycles.
