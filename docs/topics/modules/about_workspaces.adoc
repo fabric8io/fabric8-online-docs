@@ -1,7 +1,15 @@
-[id="about_workspaces"]
+[id="about_workspaces-{context}"]
 = About workspaces
 
+// for hello-world
+ifeval::["{context}" == "hello-world"]
 After creating and testing your new Vert.x Quickstart application, you can make changes to the project code. {osio} provides hosted instances of Eclipse Che within your browser to edit, test, and debug your project code.
+endif::[]
+
+// for user-guide
+ifeval::["{context}" == "user-guide"]
+After importing an existing application or creating and then testing a new application, you can make changes to the code using workspaces. {osio} provides hosted instances of Eclipse Che within your browser to edit, test, and debug your project code. 
+endif::[]
 
 One of the key features of Eclipse Che is Che _workspaces_, which provide a fully configured runtime environment for running your code. As a result, {osio} provides a lightweight, next generation IDE as well as a containerized development and testing environment.
 
