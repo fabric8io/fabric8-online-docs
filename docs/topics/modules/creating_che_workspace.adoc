@@ -1,6 +1,13 @@
 [id="creating_che_workspace-{context}"]
 = Creating a Che workspace
 
+// for user-guide
+ifeval::["{context}" == "user-guide"]
+To edit your project code, you must create a new <<about_workspaces_user-guide,Che workspace>> for your project.
+
+. Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*
+endif::[]
+
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 Create a new <<about_workspaces,Che workspace>> for your project:

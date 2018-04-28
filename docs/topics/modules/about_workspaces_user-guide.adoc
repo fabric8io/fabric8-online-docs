@@ -1,0 +1,8 @@
+[id="about_workspaces_user-guide"]
+= About workspaces
+
+After importing an existing application or creating and then testing a new application, you can make changes to the code using workspaces. {osio} provides hosted instances of Eclipse Che within your browser to edit, test, and debug your project code. 
+
+One of the key features of Eclipse Che is Che _workspaces_, which provide a fully configured runtime environment for running your code. As a result, {osio} provides a lightweight, next generation IDE as well as a containerized development and testing environment.
+
+When you use the Quickstart Application Wizard in {osio}, the development and testing environment is automatically configured with the necessary runtime components and is ready to use. Thereby {osio} uses Che workspaces to provide you with a personal development machine each time you start working on a new project.

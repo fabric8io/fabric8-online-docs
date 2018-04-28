@@ -1,0 +1,26 @@
+[id="editing_quickstart_code-{context}"]
+= Editing the quickstart code
+
+.Prerequisites
+
+* Add a new or existing codebase to {osio}.
+* Create a Che workspace for your target codebase.
+* Click the *run* option from the Run button (image:tri_run.png[title="Run button"]) to start running your project code. This allows the hot deploy feature to automatically save and deploy your changes.
+
+.Procedure
+
+To edit your project's code and preview the results:
+
+. In your Che workstation *Projects Explorer* view, double click folder and file names to navigate to the target file you want to edit.
++
+image::navigate_folders_che.png[Navigate folders in Che workspace]
++
+. In the file, make the desired changes to the code. The Che workspace automatically saves your changes.
+
+. To test your changes, click the blue preview URL at the top of the *run* view to see your application in a new browser tab.
++
+image::blue_link.png[Preview Link]
++
+NOTE: If you already ran the application earlier as instructed in <<configuring_your_che_workspace-user-guide>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip the rest of this step.
+
+You have now learned how the workspace automatically saves and applies your changes.
