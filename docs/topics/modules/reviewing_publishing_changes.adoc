@@ -3,6 +3,16 @@
 
 Now that we have committed and pushed our changes to GitHub, a pipeline build is automatically triggered in {osio}. 
 
+// for user-guide
+ifeval::["{context}" == "user-guide"]
+.Prerequisites
+
+* Add a new or existing codebase to {osio}.
+* Create a Che workspace for your target codebase.
+* Make the required changes to your code and then run and test the code by clicking the *run* option from the Run button (image:tri_run.png[title="Run button"]).
+* Commit your changes to your Git repository.
+endif::[]
+
 [discrete]
 == Procedure
 
@@ -39,4 +49,8 @@ endif::[]
 //for importing existing 
 ifeval::["{context}" == "importing-existing-project"]
 Congratulations! You have now imported an existing project into {osio}, used a work item to track your work, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
+endif::[]
+//for user guide
+ifeval::["{context}" == "user-guide"]
+You have now used Che workspaces to edit the code for your project, committed the changes to GitHub, and published the new version of your project.
 endif::[]
