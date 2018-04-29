@@ -48,7 +48,7 @@ image::{context}_application_ready.png[Application ready]
 
 Your new Vert.X project is now created in your space.
 
-You have now completed the first task *Launch a sample quickstart application* in the *Test Iteration*, ensure that you change the state of the work item to *Closed* using the *Plan* tab.
+. You have now completed the task, *Launch a sample quickstart application*, in the *Test Iteration*. Ensure that you change the state of the work item to *Closed* using the *Plan* tab.
 endif::[]
 
 

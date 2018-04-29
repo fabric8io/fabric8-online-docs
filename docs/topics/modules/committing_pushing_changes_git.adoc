@@ -36,4 +36,4 @@ image::pushed_to_origin.png[Pushed to origin]
 
 You have now committed your code changes to GitHub.
 
-Now that you have completed the third task *Modify the quickstart codebase* in the *Test Iteration*, ensure that you change the state of the work item to *Closed* using the *Plan* tab.
+. You have now completed the task, *Modify the quickstart codebase*, in the *Test Iteration*. Ensure that you change the state of the work item to *Closed* using the *Plan* tab.

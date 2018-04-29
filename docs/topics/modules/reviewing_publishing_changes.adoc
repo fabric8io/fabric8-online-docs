@@ -44,18 +44,18 @@ image::updated_app.png[Updated applications]
 
 //for hello world
 ifeval::["{context}" == "hello-world"]
-You have now completed the fourth task *Review and publish changes to your codebase* in the *Test Iteration*, ensure that you change the state of the work item to *Closed* using the *Plan* tab.
+. You have now completed the task, *Review and publish changes to your codebase*, in the *Test Iteration*. Ensure that you change the state of the work item to *Closed* using the *Plan* tab.
 
-Also close the feature *User should be able to easily launch a sample vertx application using a smooth developer work-flow* now that all its child tasks have been completed.
+. Also, close the feature *User should be able to easily launch a sample Vert.x application using a smooth developer work-flow* now that all its child tasks have been completed.
 
-Congratulations! You have now created your first quickstart project in {osio}, used the planner to track and execute your work, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
+Well done! You have now created your first quickstart project in {osio}, used the planner to track and execute your work, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
 endif::[]
 //for importing existing
 ifeval::["{context}" == "importing-existing-project"]
-Congratulations! You have now imported an existing project into {osio}, used a work item to track your work, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
+Well done! You have now imported an existing project into {osio}, used a work item to track your work, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
 endif::[]
 
 //for user guide
-+ifeval::["{context}" == "user-guide"]
-+You have now used Che workspaces to edit the code for your project, committed the changes to GitHub, and published the new version of your project.
-+endif::[]
+ifeval::["{context}" == "user-guide"]
+You have now used Che workspaces to edit the code for your project, committed the changes to GitHub, and published the new version of your project.
+endif::[]

@@ -12,7 +12,7 @@ If you followed the instructions in this document, you have now learned about {o
 * Create Che workspaces to edit your project code and commit the changes to GitHub. See <<creating_che_workspace-hello-world>> and <<committing_pushing_changes_git-hello-world>>.
 * Optimize the memory usage for your projects to use your OpenShift Online resources more efficiently. See <<optimizing_memory_usage>>.
 // and <<reducing_project_memory_usage-spring-boot>>.
-* Use stack reports to make improvements to your code. See <<analytics_stack_reports>>.
+* Use stack reports to make improvements to your code. See <<analytics_stack_report>>.
 * Debug your code using the Che workspace. See <<debugging_using_che_workspace>>.
 * Clean up your {osio} account so you can start afresh. See <<cleaning_oso_account>>.
 

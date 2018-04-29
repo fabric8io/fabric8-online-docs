@@ -3,7 +3,7 @@
 
 After creating a space, use the {osio} planner to plan your development work and to ensure efficient execution of your project.
 
-NOTE: The development process you select, while creating the space, determines the planner's guided work item type hierarchy.
+NOTE: The development process you select while creating the space determines the planner's guided work item type hierarchy.
 
 This example walks you through the Scenario Driven Development planning process to plan an end to end development flow of launching and deploying a sample application.
 
@@ -14,13 +14,13 @@ This example walks you through the Scenario Driven Development planning process 
 +
 image::quickadd_wi_type.png[Quick Add work item type]
 +
-.. In the *Work Item Title* field, add `Enable an end to end, quick, developer work-flow, within a continuous integration and deployment model` as the title.
+.. In the *Work Item Title* field, add *Enable an end to end, quick, developer work-flow, within a continuous integration and deployment model* as the title.
 .. Press kbd:[Enter] to create the scenario.
 +
 image::gs_scenario_eg.png[Example Scenario]
 +
 
-. Similarly, select *Fundamental* in the *Add Work Item* pane, to create a fundamental work item with the title `The application should be secure with appropriate licenses`.
+. Similarly, select *Fundamental* in the *Add Work Item* pane, to create a fundamental work item with the title *The application should be secure with appropriate licenses*.
 +
 image::gs_fundamental_eg.png[Example Fundamental]
 +
@@ -31,51 +31,46 @@ image::gs_fundamental_eg.png[Example Fundamental]
 image::gs_inline-add_eg.png[Inline Add]
 +
 
-.. Select *Experience* from the drop-down list, add the title `User should be able to launch any application through a simple work-flow`, and Press kbd:[Enter].
-.. Similarly, select *Value Proposition* and add the title `Easy end to end developer experience`.
+.. Select *Experience* from the drop-down list, add the title *User should be able to launch any application through a simple work-flow*, and Press kbd:[Enter].
+.. Similarly, select *Value Proposition* and add the title *Easy end to end developer experience*.
 +
 image::gs_exp_vp_egs.png[Example Experiences and Value Propositions]
 +
-NOTE: A Scenario can have multiple realizing experiences and supporting value-propositions.
+NOTE: A scenario can have multiple realizing experiences and supporting value propositions.
 +
 
-. Create a child *Feature* to actualize the *Experience* using the in-line add option with the title `User should be able to easily launch a sample vertx application using a smooth developer work-flow`.
+. Create an execution oriented child *Feature* for the *Experience* using the in-line add option with the title *User should be able to easily launch a sample Vert.x application using a smooth developer work-flow*.
 +
 image::gs_feature_eg.png[Example Feature]
 
 
 . Create the following child *Task* work items to implement the *Feature* using the in-line add option:
-+
-* <<creating_new_project-hello-world,`Launch a sample quickstart application`>>
-* <<approving_build_pipeline,`Test the application in Stage and approve to the Run environment`>>
-* <<creating_che_workspace-hello-world,`Modify the quickstart codebase`>>
-* <<reviewing_publishing_changes-hello-world,`Review and publish changes to your codebase`>>
 
+* <<creating_new_project-hello-world,*Launch a sample quickstart application*>>
+* <<approving_build_pipeline,*Test the application in Stage and approve to the Run environment*>>
+* <<creating_che_workspace-hello-world,*Modify the quickstart codebase*>>
+* <<reviewing_publishing_changes-hello-world,*Review and publish changes to your codebase*>>
 +
 Click the above tasks to see instructions on executing these tasks.
-
 +
 image::gs_tasks_egs.png[Example Tasks]
 
-
-. Similarly, create a child Experience, Feature, and Task for the *Fundamental* - `The application should be secure with appropriate licenses`. The task could be titled <<analytics_stack_reports,`Use analytics to identify and resolve security and license issues in the application`>>.
+. Similarly, for the *Fundamental* - *The application should be secure with appropriate licenses*, create a child experience*, feature, and task . The task could be titled <<analytics_stack_report,*Use analytics to identify and resolve security and license issues in the application*>>.
 +
 image::gs_fundamental_task_eg.png[Example Fundamental Task]
 +
-For each of these tasks click on the work item to preview and:
-
-* link:user-guide.html#assigning_the_work_item[Assign the tasks to the collaborators] in your team. For this example, add your name as the assignee.
+For each of these tasks, click on the work item to preview it and link:user-guide.html#assigning_the_work_item[assign the tasks to the collaborators] in your team. For this example, add your name as the assignee.
 Assigning a work item sends that person an email notification. Depending on your mail server and account, this notification email may arrive after a delay of several minutes.
 +
 image::gs_add_assignee.png[Add Asignee]
 +
-* link:user-guide.html#tracking_state_of_a_work_item[Change the state of the work items] from *New* to *In Progress* when you start working on them and mark it *Closed* once work is completed.
+Also, ensure that you link:user-guide.html#tracking_state_of_a_work_item[change the state of the work items] from *New* to *In Progress* when you start working on them and mark it *Closed* once work is completed.
 +
 image::gs_change_state.png[Change State]
 +
 See link:user-guide.html#working_with_work_items[working with work items] to further modify your workitems.
 
-. Click the (+) icon adjacent to *Iterations* to link:user-guide.html#creating_a_new_iteration[create an iteration] called `Test Iteration` and make it active.
+. Click the (+) icon adjacent to *Iterations* to link:user-guide.html#creating_a_new_iteration[create an iteration] called *Test Iteration* and make it active.
 +
 image::create_iteration.png[Create Iteration]
 +

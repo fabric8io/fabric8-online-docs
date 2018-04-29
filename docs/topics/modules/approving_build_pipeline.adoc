@@ -41,4 +41,5 @@ image::build1.png[Build #1 link]
 . When the *Pipeline* view indicates that the project is available in the *Run* environment, click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Run* to view the project in a new tab and test the application.
 +
 image::rollout_to_run.png[Rollout to Run]
-You have now completed the second task *Test the application in Stage and approve to the Run environment* in the *Test Iteration*, ensure that you change the state of the work item to *Closed* using the *Plan* tab.
++
+. You have now completed the task, *Test the application in Stage and approve to the Run environment*, in the *Test Iteration*. Ensure that you change the state of the work item to *Closed* using the *Plan* tab.
