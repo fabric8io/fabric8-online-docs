@@ -10,7 +10,7 @@ Use the {osio} *Application wizard* to import an existing project codebase into 
 
 . In the *Select pipeline* step, select an option for your project's pipeline build, then click the blue arrow to continue to the next step. We recommend using the first option for most use cases because it provides stages to test your changes for each pipeline build.
 +
-image::{context}_select_pipeline.png[Select a pipeline]
+image::select_pipeline.png[Select a pipeline]
 
 . The next step displays a summary for your imported code. Review the information and click btn:[Import Application] to confirm.
 

@@ -3,7 +3,7 @@
 
 When creating a new project using the Quickstart wizard, three types of Maven-based pipelines are available for your new project:
 
-image::{context}_select_pipeline.png[Select a pipeline]
+image::user-guide_select_pipeline.png[Select a pipeline]
 
 . *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* is the recommended option for most projects. It stages your project in the *Stage* environment and then requires manual approval to promote the changes to the *Run* environment.
 
