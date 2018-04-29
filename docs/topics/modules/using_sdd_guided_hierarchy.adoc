@@ -1,0 +1,33 @@
+[id="using_sdd_guided_hierarchy"]
+= Using the Scenario Driven Development guided hierarchy
+
+Use the scenario driven guided hierarchy to create work items as follows:
+
+.Prerequisites
+
+* <<creating_new_space-user-guide,Create a space>> using *Scenario Driven Development* as your *Development Process*.
+
+.Procedure
+. Select the *Plan* tab at the top of the page to view the planner. The default *Backlog* view displays the top level work item type group, that is *Scenarios*, for your space.
+. Select the *Show Tree* check box to see the work items in a tree view. The tree view allows you to quickly add work items according to the guided hierarchy using the quick-add and the in-line add options.
+. Based on the vision statement for the product, use the quick-add option to create high level planning oriented work items, as follows:
+.. In the *Add Work Item* pane, select the required high level work item type from the work item type drop-down list. As per the scenario driven development process, you can create *Scenario*, *Fundamental*, or *Papercuts* type of work items, which are tracked under the *Scenarios* work item type group.
++
+image::select_wit1.png[Select Scenarios]
+
+.. Specify an appropriate title for the work item in the *Work Item Title* field.
+.. Press kbd:[Enter] to create the work item. Alternatively, to create the work item and see the detailed view for the work item, click btn:[Add and open].
+. Create child work items for the *Scenarios* using the in-line add option as follows:
+.. In the work item list, click the (+) icon adjacent to the work item for which you want to add child work items. The in-line *Add Child Work Item* pane is displayed below the work item.
+.. From the work item type drop-down list, select the required child work item type. As per the scenario driven hierarchy, you can create *Experience*, or *Value Proposition* type of child work items. These work items are tracked under the *Experiences* work item type group.
++
+image::select_wit2.png[Select Experiences]
+.. Add a title to the work item and press kbd:[Enter] to create the work item.
+. Similarly, use the in-line add option to create execution oriented child work item types for the *Experiences*. The scenario driven hierarchy enables you to create *Feature* or *Bug* to track such work items.
++
+image::select_wit3.png[Select Requirements]
+. Use the in-line add option again to further break down the execution oriented work items. The scenario driven template gives you the option to create action oriented *Task* or *Bug* type of work items.
++
+image::select_wit4.png[Select Tasks]
++
+All the execution oriented, *Feature*, *Task*, and *Bug* work item types are tracked under the *Requirements* work item type group.

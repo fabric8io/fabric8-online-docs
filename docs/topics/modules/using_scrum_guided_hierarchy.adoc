@@ -1,0 +1,36 @@
+[id="using_scrum_guided_hierarchy"]
+= Using the Scrum guided hierarchy
+
+Use the scrum guided hierarchy to create work items as follows:
+
+.Prerequisites
+
+* <<creating_new_space-user-guide,Create a space>> using *Scrum* as your *Development Process*.
+
+.Procedure
+
+. Select the *Plan* tab at the top of the page to view the planner. The default *Backlog* view displays the top level work item type group, that is *Epics*, for your space.
+. Select the *Show Tree* check box to see the work items in a tree view. The tree view allows you to quickly add work items according to the guided hierarchy using the quick-add and in-line add options.
+. Based on the vision statement for the product, use the quick-add option to create a high level, planning oriented *Epic*, as follows:
+.. In the *Add Work Item* pane, specify an appropriate title for the *Epic* in the *Work Item Title* field.
+.. Press kbd:[Enter] to create the work item. Alternatively, to create the work item and see the detailed view for the work item, click btn:[Add and open].
++
+image::create_epic.png[Create Epic]
+. Create a child *Feature* for the *Epic* using the in-line add option as follows:
+.. In the work item list, click the (+) icon adjacent to the *Epic* for which you want to add a child *Feature*. The in-line *Add Child Work Item* pane is displayed below it.
++
+image::inline_add_feature.png[In-Line Add Feature]
+.. Add a title to the *Feature* and press kbd:[Enter] to create the feature.
+. Similarly, for the *Feature*, use the in-line add option to create execution oriented child *Product Backlog Item* or *Bug* type work items.
++
+image::pbi_bug_dropdown.png[PBI or Bug drop-down]
+. Use the in-line add option again to further break down the *Product Backlog Item* into action oriented, more granular *Product Backlog Item* type or  *Task* type of work items.
++
+image::granular_pbi_task.png[Granular PBI or Tasks]
++
+All the execution oriented, *Product Backlog Item*, *Task*, and *Bug* work item types are tracked under the *Requirements* work item type group.
+
+For more information see:
+
+* <<modifying_a_work_item>> to add details to your work item
+* <<working_with_iterations>> to execute the work items using iterations

@@ -24,7 +24,5 @@ image::wi_create.png[Create Work Item]
 +
 image::wi_first.png[First Work Item]
 
-See <<modifying_a_work_item>> for more information about how you can further add details to your work item.
-
-
-include::using_guided_hierarchy_to_create_work_item.adoc[leveloffset=+1]
+The planner provides guided work item type hierarchies based on established development methodologies such as *Scenario Driven Development* and *Scrum*.
+See <<using_guided_hierarchy_to_create_work_item, using the work item type hierarchy>> for information about planning your development work by creating appropriate work items,and executing them according to these development methodologies.
