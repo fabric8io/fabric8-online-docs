@@ -13,9 +13,10 @@ Use the scrum guided hierarchy to create work items as follows:
 . Select the *Show Tree* check box to see the work items in a tree view. The tree view allows you to quickly add work items according to the guided hierarchy using the quick-add and in-line add options.
 . Based on the vision statement for the product, use the quick-add option to create a high level, planning oriented *Epic*, as follows:
 .. In the *Add Work Item* pane, specify an appropriate title for the *Epic* in the *Work Item Title* field.
-.. Press kbd:[Enter] to create the work item. Alternatively, to create the work item and see the detailed view for the work item, click btn:[Add and open].
 +
 image::create_epic.png[Create Epic]
+.. Press kbd:[Enter] to create the work item. Alternatively, to create the work item and see the detailed view for the work item, click btn:[Add and open].
+
 . Create a child *Feature* for the *Epic* using the in-line add option as follows:
 .. In the work item list, click the (+) icon adjacent to the *Epic* for which you want to add a child *Feature*. The in-line *Add Child Work Item* pane is displayed below it.
 +

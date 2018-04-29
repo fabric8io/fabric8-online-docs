@@ -31,3 +31,8 @@ image::select_wit3.png[Select Requirements]
 image::select_wit4.png[Select Tasks]
 +
 All the execution oriented, *Feature*, *Task*, and *Bug* work item types are tracked under the *Requirements* work item type group.
+
+For more information see:
+
+* <<modifying_a_work_item>> to add details to your work item
+* <<working_with_iterations>> to execute the work items using iterations
