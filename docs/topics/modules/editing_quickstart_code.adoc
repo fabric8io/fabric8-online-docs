@@ -21,6 +21,6 @@ image::navigate_folders_che.png[Navigate folders in Che workspace]
 +
 image::blue_link.png[Preview Link]
 +
-NOTE: If you already ran the application earlier as instructed in <<configuring_your_che_workspace-user-guide>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip the rest of this step.
+NOTE: If you already ran the application earlier as instructed in <<running_your_project-user-guide>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip the rest of this step.
 
 You have now learned how the workspace automatically saves and applies your changes.

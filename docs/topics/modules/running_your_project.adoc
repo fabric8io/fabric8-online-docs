@@ -1,5 +1,5 @@
-[id="configuring_your_che_workspace-{context}"]
-= Configuring your Che workspace
+[id="running_your_project-{context}"]
+= Running your project in the Che workspace
 
 After your Che workspace loads, you can see your project code listed in the *Projects Explorer* panel, in the upper-left side of the screen. You must now ensure the following prerequisites are met before you start using the workspace to edit the codebase:
 
@@ -13,24 +13,7 @@ ifeval::["{context}" == "user-guide"]
 .Procedure
 endif::[]
 
-. Ensure Git commands are available:
-.. Click *Git* in the workspace menu to ensure that all the listed commands (except *Initialize Repository*) are available.
-+
-image::git_menu.png[Git Menu Options]
-+
-.. If they are not available, reload the workspace browser tab.
-
-. Configure your project for Maven:
-.. In the *Projects Explorer* panel, click your project name to select it.
-.. From the menu options at the top of the page, click *Project*, and then select *Update Project Configuration*.
-+
-image::{context}_project_menu.png[Configure Maven]
-+
-.. In the displayed *Project Configuration* window, select *Maven* and click btn:[Save].
-+
-image::{context}_config_maven.png[Configure Maven]
-+
-.. Click the *run* option from the Run button (image:tri_run.png[title="Run button"]). Maven then downloads the required dependencies, compiles the application, and starts the _verticle_ (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options. The hot deploy option automatically updates the application when you make a change.
+. Click the *run* option from the Run button (image:tri_run.png[title="Run button"]). Maven then downloads the required dependencies, compiles the application, and starts the _verticle_ (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options. The hot deploy option automatically updates the application when you make a change.
 +
 [NOTE]
 ====
