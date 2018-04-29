@@ -5,7 +5,7 @@ include::modules/about_workspaces_user-guide.adoc[leveloffset=+1]
 
 include::modules/creating_che_workspace.adoc[leveloffset=+1]
 
-include::modules/configuring_your_che_workspace.adoc[leveloffset=+1]
+include::modules/running_your_project.adoc[leveloffset=+1]
 
 include::modules/editing_quickstart_code.adoc[leveloffset=+1]
 //done
