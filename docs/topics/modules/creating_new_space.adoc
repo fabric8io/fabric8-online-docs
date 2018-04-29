@@ -8,7 +8,8 @@ endif::[]
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
-To start working with a new project, create a new space. Each space includes a team of users in assigned roles as well as unique <<about_work_items,work items>> and <<about_iterations,iterations>> used to manage the new project.
+To start working with a new project, you need to first create a new space.
+A space allows you to plan your development work using <<about_work_items,work items>> and <<about_iterations,iterations>>, assign work items to <<about_collaborators,collaborators>> within your team, and create and manage software applications within it.
 
 .Prerequisites
 
@@ -38,24 +39,28 @@ image::github_disconnected.png[GitHub Disconnected]
 .. If your browser session is already logged in to a GitHub account, {osio} uses it for the GitHub connection step. If not, you are prompted to add your GitHub credentials to connect the account to {osio}.
 +
 image::connect_github.png[Connect to GitHub]
-+
-. When the accounts are connected, the {osio} dashboard view displays. Click btn:[Create a space] again.
-+
-. Use the drop-down menu for the *Development Process* field to select a template for your new space. For this example, keep the default option for this field.
 
+. When the accounts are connected, the {osio} dashboard view displays. Click btn:[Create a space] again.
+
++
 // for hello-world
 ifeval::["{context}" == "hello-world"]
+. Use the *Development Process* drop-down list to select a template for your new space. For this example, keep the default option for this field.
 . In the dialog box, type *myspace* as the unique name for your space and click btn:[Ok].
 +
 image::{context}_create_space.png[Create new space]
 endif::[]
 
++
 // for user-guide
 ifeval::["{context}" == "user-guide"]
+. Use the *Development Process* drop-down list to select a template for your new space. You can select *Scenario Driven Development* or the *Scrum* template. For this example, keep the default option for this field.
++
+NOTE: The *Development Process* you select while creating your space determines the guided work item type hierarchy in planner and the available work item types to plan your development work.
+
 . In the dialog box, type a unique name for your space and click btn:[Ok].
 +
 image::{context}_create_space.png[Create new space]
 endif::[]
 
 You have now created your first space.
-

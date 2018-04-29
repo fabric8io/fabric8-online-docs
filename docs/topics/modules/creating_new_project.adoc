@@ -6,7 +6,7 @@ ifeval::["{context}" == "spring-boot"]
 In this section, you learn how to create a quickstart project based on a Spring Boot application in your space. See the <<hello_world_developers,Hello World project>> for an example of a Vert.X application.
 endif::[]
 
-When you create a new space, the wizard to create applications displays. Use this menu to create a new Quickstart project as follows:
+When you create a new space, the *Create an Application* wizard to create applications displays. If you closed the wizard earlier, click btn:[Add to space] in your space dashboard to see the wizard again. Use this menu to create a new quickstart project as follows:
 
 image::start_creating_apps.png[Start creating apps]
 
@@ -48,7 +48,6 @@ image::{context}_application_ready.png[Application ready]
 
 Your new Vert.X project is now created in your space.
 endif::[]
-
 
 
 // for user-guide
