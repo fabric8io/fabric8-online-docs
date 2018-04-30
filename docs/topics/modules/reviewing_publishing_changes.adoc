@@ -37,11 +37,11 @@ image::expand_version.png[Expand the application version]
 . Click *Pipelines* to return to the pipelines view.
 . At the *Approve* stage, click btn:[Input Required].
 . Click btn:[Promote] to promote version 1.0.2 of the application to *Run*.
-
++
 Your changes are now available on both *Stage* and *Run*. If you return to the `Deployments` tab, you can see the version for both *Stage* and *Run* are now 1.0.2.
-
++
 image::updated_app.png[Updated applications]
-
++
 //for hello world
 ifeval::["{context}" == "hello-world"]
 . You have now completed the task, *Review and publish changes to your codebase*, in the *Test Iteration*. Ensure that you change the state of the work item to *Closed* using the *Plan* tab.
