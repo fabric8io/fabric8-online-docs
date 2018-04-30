@@ -22,6 +22,6 @@ done
 
 cat $STAGE_FILE | jo -p > $JSON_FILE
 
-if [ $(python -m json.tool $JSON_FILE > /dev/null) ]; then
+if python -m json.tool $JSON_FILE > /dev/null; then
   rm $STAGE_FILE
 fi
