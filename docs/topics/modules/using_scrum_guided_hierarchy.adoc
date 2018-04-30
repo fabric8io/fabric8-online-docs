@@ -18,9 +18,14 @@ image::create_epic.png[Create Epic]
 .. Press kbd:[Enter] to create the work item. Alternatively, to create the work item and see the detailed view for the work item, click btn:[Add and open].
 
 . Create a child *Feature* for the *Epic* using the in-line add option as follows:
-.. In the work item list, click the (+) icon adjacent to the *Epic* for which you want to add a child *Feature*. The in-line *Add Child Work Item* pane is displayed below it.
+.. In the work item list, click the (+) icon adjacent to the *Epic* for which you want to add a child *Feature*.
 +
-image::inline_add_feature.png[In-Line Add Feature]
+image::inline_add.png[Inline Add]
++
+The in-line *Add Child Work Item* pane is displayed below it.
++
+image::add_feature.png[Add Feature]
+
 .. Add a title to the *Feature* and press kbd:[Enter] to create the feature.
 . Similarly, for the *Feature*, use the in-line add option to create execution oriented child *Product Backlog Item* or *Bug* type work items.
 +
@@ -29,7 +34,7 @@ image::pbi_bug_dropdown.png[PBI or Bug drop-down]
 +
 image::granular_pbi_task.png[Granular PBI or Tasks]
 +
-All the execution oriented, *Product Backlog Item*, *Task*, and *Bug* work item types are tracked under the *Requirements* work item type group.
+All the execution oriented, *Product Backlog Item*, *Task*, and *Bug* work item types are tracked under the *Backlog items* work item type group.
 
 For more information see:
 
