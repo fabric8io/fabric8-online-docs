@@ -90,7 +90,7 @@ if [ ! -z $CICO_LOCAL ]; then
   docker ps -a | grep -q $DEPLOY_CONT && docker rm $DEPLOY_CONT
 
   #RUN THE DEPLOY (CADDY) CONTAINER
-  docker run --detach=true --name $DEPLOY_CONT --publish 2015:2015 $DEPLOY_IMAGE && \
-    echo "Docs are now available for local preview at http://127.0.0.1:2015/"    || \
+  docker run --detach=true --name $DEPLOY_CONT --publish 8080:8080 $DEPLOY_IMAGE && \
+    echo "Docs are now available for local preview at http://127.0.0.1:8080/"    || \
     echo "Local deployment of docs failed."
 fi
