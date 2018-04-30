@@ -19,6 +19,10 @@
       "term": "companion dependency",
       "en_EN": "Based on the analysis of your stack, {osio} suggests additional dependencies that can add value to your stack."
    },
+   "7af1ca55-3cfc-4893-87ff-b51288f4a119": {
+      "term": "epic",
+      "en_EN": "A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic."
+   },
    "23c322f1-53b1-4286-b524-37ab58124823": {
       "term": "experience",
       "en_EN": "An experience is a way to address a scenario, fundamental, or a set of papercuts, each of which often have multiple realizing experiences. Often written as a demonstration script, it describes the ideal end-user work flow for realizing one or more of the associated value propositions."
@@ -35,6 +39,10 @@
       "term": "fundamental",
       "en_EN": "A fundamental describes the basic essentials of a software product, such as quality and performance standards. It is a non-negotiable aspect of a product and its absence reduces the value provided to the user."
    },
+   "": {
+      "term": "impediment",
+      "en_EN": "An impediment is anything that affects team performance or progress. It may include high probability risks that are likely to occur fairly soon."
+   },
    "5c1b8158-a351-4092-8780-3ad22e1eb173": {
       "term": "iteration",
       "en_EN": "A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration."
@@ -50,6 +58,10 @@
    "5bd840a6-2f62-4bea-bb04-63252f6ce381": {
       "term": "pipeline",
       "en_EN": "Pipelines are a continuous delivery system that, at each step, tests and deploys the code to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements different levels of testing and deployment tasks, provides results, and then passes the code on to the next step."
+   },
+   "58cb3a32-65d9-4087-afbd-4d91035c8e9f": {
+      "term": "product backlog item",
+      "en_EN": "A small unit of work that can be completed by a team within an iteration and that can be broken down into tasks. It is commonly described in the format of a user story, with clearly specified requirements, an owner, an estimated size, and ordered based on the order of execution."
    },
    "3a953b07-0cc3-4b45-b891-bf490216eae3": {
       "term": "restrictive license",
@@ -69,7 +81,11 @@
    },
    "eb05f2b6-8a3c-4054-b28c-3eb1a47c125f": {
       "term": "scenario-driven planning",
-      "en_EN": "A software development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences."
+      "en_EN": "An agile development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences."
+   },
+   "d6cb8344-ce3b-4aed-b517-78303d253bcf": {
+      "term": "scrum",
+      "en_EN": "An iterative and incremental agile software development framework for managing product development."
    },
    "a5fad1f2-7d5c-4d62-b269-d3637495422a": {
       "term": "security issue",
