@@ -37,6 +37,12 @@ area:: Use areas to organize work items to distinguish between different types o
 backlog:: A backlog is a list of work items that have not been triaged and assigned to a specific iteration.
 // endterm
 
+////
+// term: 6468002f-b783-4d82-a468-effe62a5a505, en
+backlog items:: Work item type group that focuses on the execution oriented work item types such as product backlog item, task, and bug.
+// endterm
+////
+
 // term: 26787039-b68f-4e28-8814-c2f93be1ef4e, en
 bug:: A defect that causes unexpected behavior in the software and that needs to be fixed.
 // endterm
