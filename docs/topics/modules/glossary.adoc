@@ -95,7 +95,7 @@ pipeline:: Pipelines are a continuous delivery system that, at each step, tests 
 // endterm
 
 // term: 58cb3a32-65d9-4087-afbd-4d91035c8e9f, en_EN
-product backlog item:: A small unit of work that can be completed by a team within an iteration and that can be broken down into tasks. It is commonly described in the format of an user story, with clearly specified requirements, an owner, an estimated size and ordered as per the order of execution.
+product backlog item:: A small unit of work that can be completed by a team within an iteration and that can be broken down into tasks. It is commonly described in the format of a user story, with clearly specified requirements, an owner, an estimated size, and ordered based on the order of execution.
 // endterm
 
 // term: 3a953b07-0cc3-4b45-b891-bf490216eae3, en_EN
