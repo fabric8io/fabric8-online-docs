@@ -8,11 +8,11 @@ The build pipeline includes steps for a *Stage* build and a *Run* build. *Stage*
 To stage your application and review it on *Stage*:
 
 . If you are not on the `Pipelines` view, click btn:[Create] from the options at the top of the screen and then click btn:[Pipelines].
-. Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline. OpenShift Online provides this public URL to access the staged Quickstart application. 
+. Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline. OpenShift Online provides this public URL to access the staged Quickstart application.
 +
 image::rollout_stage.png[Rollout to stage]
 +
-. In a new browser tab, the HTTP Booster application runs on *Stage*. The Vert.x HTTP Booster Quickstart produces a simple API behind a REST endpoint over HTTP with a minimalist user interface. 
+. In a new browser tab, the HTTP Booster application runs on *Stage*. The Vert.x HTTP Booster Quickstart produces a simple API behind a REST endpoint over HTTP with a minimalist user interface.
 +
 image::vertx_stage.png[Test the Application]
 +
@@ -41,3 +41,5 @@ image::build1.png[Build #1 link]
 . When the *Pipeline* view indicates that the project is available in the *Run* environment, click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Run* to view the project in a new tab and test the application.
 +
 image::rollout_to_run.png[Rollout to Run]
++
+. You have now completed the task, *Test the application in Stage and approve to the Run environment*, in the *Test Iteration*. Ensure that you change the state of the work item to *Closed* using the *Plan* tab.

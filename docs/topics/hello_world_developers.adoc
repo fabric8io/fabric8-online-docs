@@ -5,6 +5,8 @@
 
 include::modules/creating_new_space.adoc[leveloffset=+1]
 
+include::modules/planning_development_work.adoc[leveloffset=+1]
+
 include::modules/creating_new_project.adoc[leveloffset=+1]
 
 include::modules/about_stage_run.adoc[leveloffset=+1]
@@ -19,7 +21,7 @@ include::modules/approving_build_pipeline.adoc[leveloffset=+1]
 
 include::modules/optional_detailed_views.adoc[leveloffset=+1]
 
-include::modules/creating_using_new_work_item.adoc[leveloffset=+1]
+//include::modules/creating_using_new_work_item.adoc[leveloffset=+1]
 
 include::modules/about_workspaces.adoc[leveloffset=+1]
 
@@ -32,4 +34,3 @@ include::modules/changing_quickstart_code.adoc[leveloffset=+1]
 include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
 
 include::modules/reviewing_publishing_changes.adoc[leveloffset=+1]
-
