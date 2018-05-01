@@ -1,0 +1,10 @@
+[id="login_isses"]
+= Login issues
+
+When logging in to {osio}, an error about an account already existing with your email address can display. 
+
+image::login_error.png[Login error]
+
+If you encounter this issue, the workaround is to log in using your username instead of your email address.
+
+//https://github.com/openshiftio/openshift.io/issues/2332
