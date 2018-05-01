@@ -29,11 +29,15 @@ image::commit_menu.png[Git Commit Menu]
 .. Click btn:[Commit].
 +
 image::{context}_commit_dialog.png[Commit changes]
-
++
 When the commit succeeds, the following message displays:
-
++
 image::pushed_to_origin.png[Pushed to origin]
-
++
 You have now committed your code changes to GitHub.
 
++
+//for hello world
+ifeval::["{context}" == "hello-world"]
 . You have now completed the task, *Modify the quickstart codebase*, in the *Test Iteration*. Ensure that you change the state of the work item to *Closed* using the *Plan* tab.
+endif::[]
