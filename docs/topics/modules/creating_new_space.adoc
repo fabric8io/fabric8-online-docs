@@ -1,14 +1,15 @@
 [id="creating_new_space-{context}"]
 = Creating a new space
 
+In {osio}, the first step for any new project is to create a new space.
+
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-In {osio}, the first step for any new project is to create a new space. You can then add users as collaborators for the space and all the work is tracked within the space using work items. Each space must have a unique name.
+ You can then add users as collaborators for the space and all the work is tracked within the space using work items. Each space must have a unique name.
 endif::[]
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
-To start working with a new project, you need to first create a new space.
 A space allows you to plan your development work using <<about_work_items,work items>> and <<about_iterations,iterations>>, assign work items to <<about_collaborators,collaborators>> within your team, and create and manage software applications within it.
 
 .Prerequisites
@@ -42,14 +43,10 @@ image::connect_github.png[Connect to GitHub]
 
 . When the accounts are connected, the {osio} dashboard view displays. Click btn:[Create a space] again.
 
-+
-// for hello-world
-ifeval::["{context}" == "hello-world"]
 . Use the *Development Process* drop-down list to select a template for your new space. For this example, keep the default option for this field.
 . In the dialog box, type *myspace* as the unique name for your space and click btn:[Ok].
 +
-image::{context}_create_space.png[Create new space]
-endif::[]
+image::create_space.png[Create new space]
 
 +
 // for user-guide
@@ -60,7 +57,7 @@ NOTE: The *Development Process* you select while creating your space determines 
 
 . In the dialog box, type a unique name for your space and click btn:[Ok].
 +
-image::{context}_create_space.png[Create new space]
+image::create_space.png[Create new space]
 endif::[]
 
 You have now created your first space.

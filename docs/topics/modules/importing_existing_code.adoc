@@ -12,7 +12,7 @@ Use the {osio} *Application wizard* to import an existing project codebase into 
 +
 image::select_pipeline.png[Select a pipeline]
 
-. The next step displays a summary for your imported code. Review the information and click btn:[Import Application] to confirm.
+. The *Confirm Application Summary & Import* step displays a summary for your imported code. Review the information and click btn:[Import Application] to confirm.
 
 . The progress screen displays when your code is imported. Click btn:[View New Application] to continue when all the steps have a green check mark next to them.
 +
