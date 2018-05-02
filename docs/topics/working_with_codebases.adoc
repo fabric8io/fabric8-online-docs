@@ -1,7 +1,6 @@
 [id="working_with_codebases"]
 = Working with codebases
 
-<Expand this section to cover creating an application and importing an existing codebase>
 After creating a space, {osio} enables you to create a new application codebase or import an existing codebase from GitHub and set up pipelines to build the code.
 
 
