@@ -1,0 +1,36 @@
+[id="working_with_codebases"]
+= Working with codebases
+
+After creating a space, {osio} enables you to create a new application codebase or import an existing codebase from GitHub and set up pipelines to build the code.
+
+
+include::modules/about_codebases.adoc[leveloffset=+1]
+
+.Prerequisites
+
+* Create a space. See <<creating_new_space-user-guide>> for instructions.
+
+include::modules/creating_new_project.adoc[leveloffset=+1]
+
+include::modules/importing_your_project.adoc[leveloffset=+1]
+
+
+
+////
+Deliberately retaining this section, the codebase section is being reworked to point to the new launcher workflow, once that is done, we can uncomment and add this to the workflow.
+.Procedure
+
+. Click *Analyze* at the top of the screen to view the dashboard for your space.
+
+. The *Codebases* section displays the following options:
+
+ * If you already have codebases in your space, they are listed and you can use the btn:[+] icon at the upper-right of the section to import more codebases.
+
+ * If there are no codebases in your space, you can:
+
+.. use btn:[Add Codebase] to manually add a codebase.
+
+.. use btn:[Import Codebase] to add an existing codebase.
+
+
+////

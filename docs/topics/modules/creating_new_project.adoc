@@ -6,35 +6,35 @@ ifeval::["{context}" == "spring-boot"]
 In this section, you learn how to create a quickstart project based on a Spring Boot application in your space. See the <<hello_world_developers,Hello World project>> for an example of a Vert.X application.
 endif::[]
 
-When you create a new space, the *Create an Application* wizard to create applications displays. If you closed the wizard earlier, click btn:[Add to space] in your space dashboard to see the wizard again. Use this menu to create a new quickstart project as follows:
+When you create a new space, the *Create an Application* wizard to create applications displays. If you closed the wizard earlier, click btn:[Add to space] in your space dashboard to see the wizard again. Use this wizard to create a new quickstart project as follows:
 
 image::start_creating_apps.png[Start creating apps]
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-. In the `Name your application` field, type *helloworldvertx*.
+. In the *Name your application* field, type `helloworldvertx`.
 
 . Select the *Create a new codebase* radio button and click btn:[Continue].
 
 . Select the mission and runtime for your new project:
 
-.. In the `Choose a mission` section, select the *Externalized Configuration* option.
+.. In the *Choose a mission* section, select the *Externalized Configuration* option.
 
-.. In the `Choose a runtime` section, select *Eclipse Vert.x*.
+.. In the *Choose a runtime* section, select *Eclipse Vert.x*.
 
 .. Click the blue downward arrow button to continue.
 +
 image::{context}_choose_mission_runtime.png[Choose mission and runtime]
 +
-. In the `Select Pipeline` section, select the first option, then click the blue arrow to continue to the next step.
+. In the *Select Pipeline* section, select the first option, then click the blue arrow to continue to the next step.
 +
 image::select_pipeline.png[Select a pipeline]
 +
-. In the `Authorize Git Provider` section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
+. In the *Authorize Git Provider* section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
 +
 image::authorize_github_screen.png[Authorize GitHub]
 +
-. The next screen displays a summary of your application options. Scroll down in your browser to view the `Application Information` section. For this example, do not edit these options. If desired, you can change the project name, version, Group ID, which space it is in, and the target environment for your new application at this step.
+. The next screen displays a summary of your application options. Scroll down in your browser to view the *Application Information* section. For this example, do not edit these options. If desired, you can change the project name, version, Group ID, which space it is in, and the target environment for your new application at this step.
 +
 image::{context}_app_information.png[Application information]
 +
@@ -60,23 +60,23 @@ ifeval::["{context}" == "user-guide"]
 
 . Select the mission and runtime for your new project:
 
-.. In the `Choose a mission` section, select the the appropriate option.
+.. In the *Choose a mission* section, select the the appropriate option.
 
-.. In the `Choose a runtime` section, select the appropriate runtime. When you select the options at each step, the gray arrow at the bottom of the screen turns blue.
+.. In the *Choose a runtime* section, select the appropriate runtime. When you select the options at each step, the gray arrow at the bottom of the screen turns blue.
 
 .. Click the blue downward arrow button to continue.
 +
 image::{context}_choose_mission_runtime.png[Choose mission and runtime]
 +
-. In the `Select Pipeline` section, select the appropriate option, then click the blue arrow to continue to the next step. We recommend using the first option for most use cases because it provides stages to test your changes for each pipeline build.
+. In the *Select Pipeline* section, select the appropriate option, then click the blue arrow to continue to the next step. We recommend using the first option for most use cases because it provides stages to test your changes for each pipeline build.
 +
 image::user-guide_select_pipeline.png[Select a pipeline]
 +
-. In the `Authorize Git Provider` section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
+. In the *Authorize Git Provider* section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
 +
 image::authorize_github_screen.png[Authorize GitHub]
 +
-. The next screen displays a summary of your application options. Scroll down in your browser to view the `Application Information` section. For this example, do not edit these options. If desired, you can change the project name, version, Group ID, which space it is in, and the target environment for your new application at this step.
+. The next screen displays a summary of your application options. Scroll down in your browser to view the *Application Information* section. For this example, do not edit these options. If desired, you can change the project name, version, Group ID, which space it is in, and the target environment for your new application at this step.
 +
 image::{context}_app_information.png[Application information]
 +
@@ -93,7 +93,7 @@ endif::[]
 
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-. In the `Create an application` step:
+. In the *Create an application* step:
 
 .. In the *Name your application* field, type *myspringboot*.
 
@@ -103,23 +103,23 @@ image::{context}_name_app.png[Create a Spring Boot app]
 +
 . Select the mission and runtime for your new project:
 
-.. In the `Choose a mission` section, select the *Externalized Configuration* option.
+.. In the *Choose a mission* section, select the *Externalized Configuration* option.
 
-.. In the `Choose a runtime` section, select *Spring Boot*.
+.. In the *Choose a runtime* section, select *Spring Boot*.
 
 .. Click the blue downward arrow button to continue.
 +
 image::{context}_choose_mission_runtime.png[Choose mission and runtime]
 +
-. In the `Select Pipeline` section, select the first option, then click the blue arrow to continue to the next step.
+. In the *Select Pipeline* section, select the first option, then click the blue arrow to continue to the next step.
 +
 image::select_pipeline.png[Select a pipeline]
 +
-. In the `Authorize Git Provider` section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
+. In the *Authorize Git Provider* section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
 +
 image::{context}_authorize_github_screen.png[Authorize GitHub]
 +
-. The next screen displays a summary of your application options. Scroll down in your browser to view the `Application Information` section. For this example, do not edit these options. If desired, you can change the project name, version, Group ID, which space it is in, and the target environment for your new application at this step.
+. The next screen displays a summary of your application options. Scroll down in your browser to view the *Application Information* section. For this example, do not edit these options. If desired, you can change the project name, version, Group ID, which space it is in, and the target environment for your new application at this step.
 +
 image::{context}_app_information.png[Application information]
 +
