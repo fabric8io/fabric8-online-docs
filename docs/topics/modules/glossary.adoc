@@ -22,6 +22,8 @@ This file is consumed for the automatic generation of infotips used by OSIO web 
 * Never change existing UUIDs; even when correcting the name of the term.
 * Never remove terms, unless first agreed on with the respective OSIO team that uses its definition.
 * Alphabetize the terms for easy orientation.
+* Use $ ./scripts/export_infotips.sh to update json file.
+* Use $ cat json/infotips.json | jq to verify the updated json and then add, commit and push both glossary.adoc ans the json file.
 
 ////
 
