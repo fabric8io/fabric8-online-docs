@@ -11,7 +11,7 @@
       "term": "backlog",
       "en": "A backlog is a list of work items that have not been triaged and assigned to a specific iteration."
    },
-   "e8d54bf3-f89e-46e5-86f7-4af6475863b0": {
+   "26787039-b68f-4e28-8814-c2f93be1ef4e": {
       "term": "bug",
       "en": "A defect that causes unexpected behavior in the software and that needs to be fixed."
    },
@@ -23,25 +23,29 @@
       "term": "epic",
       "en": "A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic."
    },
-   "23c322f1-53b1-4286-b524-37ab58124823": {
+   "b9a71831-c803-4f66-8774-4193fffd1311": {
       "term": "experience",
       "en": "An experience is a way to address a scenario, fundamental, or a set of papercuts, each of which often have multiple realizing experiences. Often written as a demonstration script, it describes the ideal end-user work flow for realizing one or more of the associated value propositions."
    },
-   "9ee45d71-1efe-4fec-b1bb-ac92563327a6": {
+   "6d254168-6937-447f-a093-0c38404bd072": {
       "term": "experiences",
       "en": "Work item type group that focuses on the experience and value proposition work item types that address the scenarios."
    },
-   "dbfc82e1-5a40-44bd-af70-f2dc1a1927a4": {
+   "0a24d3c2-e0a6-4686-8051-ec0ea1915a28": {
       "term": "feature",
       "en": "Features, often expressed as user stories, are required to actualize parent experiences. They are scoped so that they are generally achievable within a sprint."
    },
-   "4d85adba-817d-41ca-b85f-1e4a938d1282": {
+   "ee7ca005-f81d-4eea-9b9b-1965df0988d0": {
       "term": "fundamental",
       "en": "A fundamental describes the basic essentials of a software product, such as quality and performance standards. It is a non-negotiable aspect of a product and its absence reduces the value provided to the user."
    },
-   "": {
+   "fca1397f-cd58-4f12-ad22-0cce8451a764": {
       "term": "impediment",
       "en": "An impediment is anything that affects team performance or progress. It may include high probability risks that are likely to occur fairly soon."
+   },
+   "d5bd6f64-cee4-46d7-9b12-b3cb5e70145e": {
+      "term": "issue",
+      "en": "An issue is an unmet user expectation, an observation that something doesn't work as one expects it to. It could represent bugs, feature requests, or enhancements and are linked to an appropriate work item in the backlog as part of the triage process. // endterm ////"
    },
    "5c1b8158-a351-4092-8780-3ad22e1eb173": {
       "term": "iteration",
@@ -51,7 +55,7 @@
       "term": "license conflict",
       "en": "Licenses that conflict at the stack or dependency level."
    },
-   "83b7cf12-558e-41bd-bcd7-822ca6307db1": {
+   "6d603ab4-7c5e-4c5f-bba8-a3ba9d370985": {
       "term": "papercut",
       "en": "A papercut is a minor issue, often too small to be individually prioritized to be addressed; collectively, papercuts degrade the perception of the product. Grouped together, they receive higher priority and can be tackled together within a development cycle."
    },
@@ -67,15 +71,15 @@
       "term": "restrictive license",
       "en": "Licenses that are not commonly used in similar stacks or that do not work well with the stack’s representative license."
    },
-   "a0b10d4f-f639-4978-a2e5-6e858a56f6df": {
+   "44795662-db7a-44f7-a4e7-c6d41d3eff27": {
       "term": "requirements",
       "en": "Work item type group that focuses on execution oriented work item types such as feature, task, and bug."
    },
-   "01e76137-ab89-4a3c-8765-48f54078154a": {
+   "71171e90-6d35-498f-a6a7-2083b5267c18": {
       "term": "scenario",
       "en": "A scenario identifies a real-world user problem to resolve. Addressing the scenario provides tangible user value. Prioritize scenarios that deliver maximum user value by evaluating their associated value propositions."
    },
-   "376d7613-4eaf-425e-a2f2-b434205ebdeb": {
+   "679a563c-ac9b-4478-9f3e-4187f708dd30": {
       "term": "scenarios",
       "en": "Work item type group that focuses on the planning oriented work item types such as scenario, fundamental and papercuts."
    },
@@ -95,7 +99,7 @@
       "term": "space",
       "en": "A space is the equivalent of a project. Each iteration and work item must be attached to a space, and a team of people can be attached to a space in various roles. By default, a space contains at least one area and one iteration."
    },
-   "cc2d6cb4-7690-4c02-989c-7d75e3419b7d": {
+   "bbf35418-04b6-426c-a60b-7f80beb0b624": {
       "term": "task",
       "en": "Work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours."
    },
@@ -107,7 +111,7 @@
       "term": "usage outlier",
       "en": "Dependencies in your stack that are not commonly used in similar open source stacks or that rarely work well together."
    },
-   "83e52577-cdc4-4687-97d1-86151db74bdc": {
+   "3194ab60-855b-4155-9005-9dce4a05f1eb": {
       "term": "value proposition",
       "en": "A statement of the value provided to the user by addressing a scenario, fundamental, or papercut. Each of which can have multiple value propositions."
    },
