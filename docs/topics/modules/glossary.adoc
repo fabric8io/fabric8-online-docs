@@ -38,7 +38,7 @@ backlog:: A backlog is a list of work items that have not been triaged and assig
 // endterm
 
 ////
-// term: 6468002f-b783-4d82-a468-effe62a5a505, en
+// term: ad7b1eb4-b385-4eb8-b1ea-9c447aa5bf0b, en
 backlog items:: Work item type group that focuses on the execution oriented work item types such as product backlog item, task, and bug.
 // endterm
 ////
@@ -47,13 +47,25 @@ backlog items:: Work item type group that focuses on the execution oriented work
 bug:: A defect that causes unexpected behavior in the software and that needs to be fixed.
 // endterm
 
+////
+// term: 90e961d1-0de8-49f4-b197-ba13418c20a8, en
+(scrum) bug:: A defect that causes unexpected behavior in the software and that needs to be fixed.
+// endterm
+////
+
 // term: 1694e637-2f9b-40ec-8fa8-a22472850ff9, en
 companion dependency:: Based on the analysis of your stack, {osio} suggests additional dependencies that can add value to your stack.
 // endterm
 
-// term: 7af1ca55-3cfc-4893-87ff-b51288f4a119, en
+// term: f450d7d0-3d38-4887-83ca-38d27c109b59, en
 epic:: A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic.
 // endterm
+
+////
+// term: d0d33acf-7629-4653-9551-97ed9156f127, en
+(wig) epic:: A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic.
+// endterm
+////
 
 // term: b9a71831-c803-4f66-8774-4193fffd1311, en
 experience:: An experience is a way to address a scenario, fundamental, or a set of papercuts, each of which often have multiple realizing experiences. Often written as a demonstration script, it describes the ideal end-user work flow for realizing one or more of the associated value propositions.
@@ -66,8 +78,20 @@ experiences:: Work item type group that focuses on the experience and value prop
 ////
 
 // term: 0a24d3c2-e0a6-4686-8051-ec0ea1915a28, en
-feature:: Features, often expressed as user stories, are required to actualize parent experiences. They are scoped so that they are generally achievable within a sprint.
+feature:: Features, often expressed as user stories, are required to actualize parent experiences or epics. They are scoped so that they are generally achievable within a sprint.
 // endterm
+
+////
+// term: 83852318-a69a-4092-a412-bb67527c4ba6, en
+(scrum) feature:: Features, often expressed as user stories, are required to actualize parent experiences or epics. They are scoped so that they are generally achievable within a sprint.
+// endterm
+////
+
+////
+// term: 9e41be6f-9e16-4e39-bb46-bd130855f2e5, en
+(wig) feature:: Features, often expressed as user stories, are required to actualize parent experiences or epics. They are scoped so that they are generally achievable within a sprint.
+// endterm
+////
 
 // term: ee7ca005-f81d-4eea-9b9b-1965df0988d0, en
 fundamental:: A fundamental describes the basic essentials of a software product, such as quality and performance standards. It is a non-negotiable aspect of a product and its absence reduces the value provided to the user.
@@ -84,9 +108,15 @@ impediment:: An impediment is anything that affects team performance or progress
 issue:: An issue is an unmet user expectation, an observation that something doesn't work as one expects it to. It could represent bugs, feature requests, or enhancements and are linked to an appropriate work item in the backlog as part of the triage process. // endterm
 ////
 
-// term: 5c1b8158-a351-4092-8780-3ad22e1eb173, en
+// term:  5c3ee317-3cdd-4ee6-a27f-85965f777ee3, en
 iteration:: A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.
 // endterm
+
+////
+// term: 4d187330-0efb-4077-8745-8a61384a6540, en
+(scrum) iteration:: A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.
+// endterm
+////
 
 // term: f05a151a-61fa-45b1-8d8b-b3fd7bc63ea9, en
 license conflict:: Licenses that conflict at the stack or dependency level.
@@ -100,7 +130,7 @@ papercut:: A papercut is a minor issue, often too small to be individually prior
 pipeline:: Pipelines are a continuous delivery system that, at each step, tests and deploys the code to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements different levels of testing and deployment tasks, provides results, and then passes the code on to the next step.
 // endterm
 
-// term: 58cb3a32-65d9-4087-afbd-4d91035c8e9f, en
+// term: 23b1dfd5-f497-4843-97c3-e3eefdc9930e, en
 product backlog item:: A small unit of work that can be completed by a team within an iteration and that can be broken down into tasks. It is commonly described in the format of a user story, with clearly specified requirements, an owner, an estimated size, and ordered based on the order of execution.
 // endterm
 
@@ -109,7 +139,7 @@ restrictive license:: Licenses that are not commonly used in similar stacks or t
 // endterm
 
 // term: 44795662-db7a-44f7-a4e7-c6d41d3eff27, en
-requirements:: Work item type group that focuses on execution oriented work item types such as feature, task, and bug.
+requirement:: Work item type group that focuses on execution oriented work item types such as feature, task, and bug.
 // endterm
 
 // term: 71171e90-6d35-498f-a6a7-2083b5267c18, en
@@ -141,6 +171,12 @@ space:: A space is the equivalent of a project. Each iteration and work item mus
 // term: bbf35418-04b6-426c-a60b-7f80beb0b624, en
 task:: Work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours.
 // endterm
+
+////
+// term: db906e00-a5fa-4a86-8ef7-772c89f703ac, en
+(scrum) task:: Work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours.
+// endterm
+////
 
 // term: 0b52988d-9cea-47a6-9769-d677bff95ed3, en
 unknown license:: Licenses unknown to OpenShift.io.
