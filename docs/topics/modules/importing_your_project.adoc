@@ -23,7 +23,7 @@ endif::[]
 ifeval::["{context}" == "importing-existing-project"]
 . In the *Authorize Git Provider* step:
 .. Click the *Location* drop-down to select the location of your codebase. The default (and recommended for this tutorial) option is your personal GitHub account name.
-.. In the *Repository* field, click *Select Repository* to select the repository from which you want to import the codebase. For this tutorial, select the forked `vertx-eventbus` repository option.
+.. In the *Repository* field, click *Select Repository* to select the repository from which you want to import the codebase. For this tutorial, select the forked *vertx-eventbus* repository option.
 .. Click the blue arrow at the bottom of the screen to continue.
 +
 image::ip_authorize_git_provider.png[Personal organization]
@@ -52,7 +52,7 @@ image::organization_personal.png[Personal organization]
 +
 image::add_example_repo.png[Add Forked Repository]
 +
-. From the results, select the forked `vertx-eventbus` repository and click btn:[Next] after the repository is validated.
+. From the results, select the forked *vertx-eventbus* repository and click btn:[Next] after the repository is validated.
 +
 image::select_vertx_eventbus.png[Select VertX Eventbus Repository]
 +
