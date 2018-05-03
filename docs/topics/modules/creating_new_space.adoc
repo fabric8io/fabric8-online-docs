@@ -5,7 +5,7 @@ In {osio}, the first step for any new project is to create a new space.
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]
- You can then add users as collaborators for the space and all the work is tracked within the space using work items. Each space must have a unique name.
+You can then add users as collaborators for the space and all the work is tracked within the space using work items. Each space must have a unique name.
 endif::[]
 
 // for user-guide
