@@ -8,7 +8,7 @@ USER root
 
 ADD root /
 
-RUN chmod -R a+rw /etc/nginx
+RUN chmod -R a+rw /etc/nginx && chmod 777 /run.sh
 
 USER ${FABRIC8_USER_NAME}
 
