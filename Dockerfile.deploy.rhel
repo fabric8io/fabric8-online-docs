@@ -2,5 +2,15 @@ FROM prod.registry.devshift.net/osio-prod/base/openshift-nginx:latest
 LABEL maintainer "Devtools <devtools@redhat.com>"
 LABEL author "Devtools <devtools@redhat.com>"
 
+ENV FABRIC8_USER_NAME=fabric8
+
+USER root
+
+ADD root /
+
+RUN chmod -R a+rw /etc/nginx
+
+USER ${FABRIC8_USER_NAME}
+
 COPY html /usr/share/nginx/html/
 COPY json /usr/share/nginx/html/json/
