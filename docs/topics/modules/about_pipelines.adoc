@@ -1,6 +1,6 @@
 [id="about_pipelines"]
 = About pipelines
 
-_Pipelines_ define how your application is deployed. Each pipeline has multiple stages with a varying set of capabilities. They are crucial to ensure a continuous delivery system that test and deploy the code at each step to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements a different level of testing and deployment tasks, provides results, and then passes the code on to the next step.
+_Pipelines_ are a continuous delivery system that test and deploy the code at each step to provide feedback to the user. Examples of such steps are unit testing, performance, integration, and deployment. Each step of the pipeline implements a different level of testing and deployment tasks, provides results, and then passes the code on to the next step.
 
 In {osio}, you configure a pipeline build when creating or importing a project. The pipeline build is triggered when a collaborator commits a change to the code repository.

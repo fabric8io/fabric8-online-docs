@@ -1,11 +1,11 @@
 [id="selecting_a_pipeline_type"]
 = Selecting a pipeline type
 
-When <<creating_new_project-user-guide>> using the quickstart wizard, three types of Maven-based pipelines are available for your new project:
+When creating a new project using the Quickstart wizard, three types of Maven-based pipelines are available for your new project:
 
 image::user-guide_select_pipeline.png[Select a pipeline]
 
-. *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* is the recommended option for most projects. It provides an end to end pipeline that moves your application through all the stages of application development, that is, build your source code, test your changes, rollout to the *Stage* environment, review, manually approve, and promote the changes to the *Run* environment.
+. *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* is the recommended option for most projects. It stages your project in the *Stage* environment and then requires manual approval to promote the changes to the *Run* environment.
 
 . *Build Release, Integration Test* is the most basic option. After creating the pipeline, this option runs an integration test in the *Test* environment but does not stage the results.
 
