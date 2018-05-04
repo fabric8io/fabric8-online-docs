@@ -1,4 +1,4 @@
-[id="creating_new_project-{context}"]
+[id="creating_new_project-{context}{secondary}"]
 = Creating a new project
 
 // for spring-boot
@@ -68,7 +68,7 @@ ifeval::["{context}" == "user-guide"]
 +
 image::{context}_choose_mission_runtime.png[Choose mission and runtime]
 +
-. In the *Select Pipeline* section, select the appropriate option, then click the blue arrow to continue to the next step. We recommend using the first option for most use cases because it provides stages to test your changes for each pipeline build. For more information see <<working_with_pipelines>>.
+. In the *Select Pipeline* section, select the appropriate option, then click the blue arrow to continue to the next step. We recommend using the first option for most use cases because it provides stages to test your changes for each pipeline build.
 +
 image::user-guide_select_pipeline.png[Select a pipeline]
 +
