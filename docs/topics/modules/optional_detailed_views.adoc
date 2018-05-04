@@ -31,8 +31,8 @@ image::spaces_home.png[Spaces box]
 +
 . At the top of the page, click btn:[Create] and then click btn:[Deployments]. The *Deployments* page now loads and displays details about the Applications and Environments.
 +
-image::deployments_experimental.png[Deployments page]
-//TODO update screenshot
+image::hello-world_deployments.png[Deployments page]
+
 Optionally, you can view the pipeline progress in the OpenShift Online console as follows:
 
 . For either the *Stage* or *Run* environments, click the options button and then click *OpenShift Console*.
