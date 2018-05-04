@@ -1,15 +1,20 @@
-[id="before_you_start"]
-= Before you start
+[id=learn_about_osio]
+= Learn about {osio}
 
 include::modules/introduction.adoc[leveloffset=+1]
 
 include::modules/getting-support.adoc[leveloffset=+1]
 
+[id="before_you_start"]
+= Before you start
+
 include::modules/prereqs.adoc[leveloffset=+1]
 
-= Start using {osio}
-
 include::modules/introduction_to_homescreen.adoc[leveloffset=+1]
+
+include::modules/before_you_begin.adoc[leveloffset=+1]
+
+= Start using {osio}
 
 include::hello_world_developers.adoc[leveloffset=+1]
 
