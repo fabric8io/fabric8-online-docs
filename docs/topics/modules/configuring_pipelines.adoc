@@ -1,20 +1,20 @@
 [id="configuring_pipelines"]
-= Configuring Pipelines
+= Configuring pipelines
 
 Advanced users can change the settings for their project pipeline builds in OpenShift Online. For most users, we do not recommend changing the default values {osio} sets up.
 
 .Prerequisites
 
-. Ensure that you have created a build pipeline for your project. See <<creating_new_project-user-guide_pipelines>> for instructions.
+. Ensure that you have created a build pipeline for your project. See <<creating_new_project-user-guide>> for instructions.
 
 .Procedure
 
 . Navigate to your space dashboard.
-. Click the *Pipelines* link to view the `Pipelines` page, which lists all the pipeline builds for your project.
+. Click the *Pipelines* link to view the *Pipelines* page, which lists all the pipeline builds for your project.
 +
 image::ug_pipeline_link.png[Link to pipelines]
 +
-. Click btn:[Edit Pipeline] for the target pipeline build.
+. Click *Edit Pipeline* for the target pipeline build.
 +
 image::ug_edit_pipeline.png[Edit pipeline]
 +

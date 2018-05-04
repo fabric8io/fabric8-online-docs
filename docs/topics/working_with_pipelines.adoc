@@ -1,11 +1,7 @@
-:secondary: _pipelines
-
 [id="working_with_pipelines"]
 = Working with Pipelines
 
 include::modules/about_pipelines.adoc[leveloffset=+1]
-
-include::modules/creating_new_project.adoc[leveloffset=+1]
 
 include::modules/selecting_a_pipeline_type.adoc[leveloffset=+1]
 
