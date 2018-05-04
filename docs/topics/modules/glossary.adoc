@@ -155,7 +155,7 @@ scenarios:: Work item type group that focuses on the planning oriented work item
 ////
 
 // term: eb05f2b6-8a3c-4054-b28c-3eb1a47c125f, en
-scenario-driven planning:: An agile development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.
+scenario-driven development:: An agile development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.
 // endterm
 
 // term: d6cb8344-ce3b-4aed-b517-78303d253bcf, en
