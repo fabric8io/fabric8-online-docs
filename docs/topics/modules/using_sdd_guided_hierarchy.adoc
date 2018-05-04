@@ -1,6 +1,7 @@
 [id="using_sdd_guided_hierarchy"]
 = Using the Scenario Driven Development guided hierarchy
 
+Scenario driven development is an agile development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.
 Use the scenario driven guided hierarchy to create work items as follows:
 
 .Prerequisites

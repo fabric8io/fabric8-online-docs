@@ -1,7 +1,7 @@
 [id="working_with_pipelines"]
 = Working with pipelines
 
-When you create a new Quickstart project, a new build executes. In a build pipeline, <<about_stage_run,*Stage* and *Run*>> are individual OpenShift projects. *Stage* is a production staging area to review and test changes before they are finalized and then staged on *Run*.
+When you create a new quickstart project, a new build executes. In a build pipeline, <<about_stage_run,_Stage_ and _Run_>> are individual OpenShift projects. _Stage_ is a production staging area to review and test changes before they are finalized and then staged on _Run_.
 
 //After you create a new Quickstart project, you can see the new project build pipelines running in the *Applications* panel on your space dashboard:
 // TODO this is in preview
@@ -11,7 +11,7 @@ After several minutes, the status of the pipeline build changes from *New* to *R
 
 image::vertx_pipeline_running.png[A Running Pipeline Build]
 
-To view your new Quickstart project pipeline:
+To view your new quickstart project pipeline:
 
 * After the pipeline status changes to *Running*, click *Pipelines* above the running pipeline status. This page displays all running pipelines for your space.
 +
@@ -21,7 +21,7 @@ Your new project build pipeline displays on this page at the *Approve* stage:
 
 image::pipeline_firstrun.png[Pipeline First Run]
 
-For your new Quickstart project, the new build pipeline pushes version 1.0.1 into *Stage* and then, after user approval, it pushes the changes to *Run*.
+For your new quickstart project, the new build pipeline pushes version 1.0.1 into _Stage_ and then, after user approval, it pushes the changes to _Run_.
 
 [NOTE]
 ====
