@@ -3,20 +3,12 @@
 
 You can set the state for each of your work items enabling you to track the status of your work item from creation to completion.
 
-NOTE: The *Development Process* you select while creating your space determines the guided work item type hierarchy, the available work item types, and the available states of the work item in planner.
-
-For this example, select the scenario driven *Development Process*.
 By default, a freshly created work item is assigned the *new* state.
 You can track and update the status of work items as you progress through your task list as follows:
 
 . Click the *new* drop-down list to see a list of states for the work item. You have the following options: *open*, *in progress*, *resolved* and *closed*.
 +
 image::wi_state.png[Work Item state]
-
-NOTE: The Scrum template provides you the following options: *New*, *In-Progress*, *Done*, *Removed*.
-
 . Select the appropriate state based on the completion level of your work item. The state for the work item gets updated.
 
 NOTE: By default, closed work items are not listed in the work item list. Select the *Show Completed* checkbox to see the closed work items.
-
-//TODO: Cases of state will be changed, capture them.

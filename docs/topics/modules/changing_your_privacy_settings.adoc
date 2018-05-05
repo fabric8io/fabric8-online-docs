@@ -3,7 +3,7 @@
 
 In the {osio} dashboard view, use the following steps to change your privacy settings:
 
-. Navigate to your *Profile* view:
+. Navigate to your `Profile` view:
 
 .. Click your name on the top right corner of the screen.
 
@@ -11,14 +11,15 @@ In the {osio} dashboard view, use the following steps to change your privacy set
 +
 image::profile_menu.png[Profile menu button]
 +
-. In the *Profile* screen, click btn:[Update Profile] to edit your profile.
+. In the `Profile` screen, click btn:[Update Profile] to edit your profile.
 +
 image::update_profile_button.png[Update profile button]
 +
-. In the *Edit Profile* screen, you can select *Private* or *Public* for your information. The default option is *Public* but setting this to *Private* hides your email address from other users in {osio}.
+. In the `Edit Profile` screen, you can select *Private* or *Public* for your information. The default option is *Public* but setting this to *Private* hides your email address from other users in {osio}.
 +
 image::private_public.png[Public and private]
 +
 . When ready, click btn:[Update] at the bottom of the page to save your changes.
 
 You have now change your profile privacy settings in {osio}.
+
