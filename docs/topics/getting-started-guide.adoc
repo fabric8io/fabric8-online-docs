@@ -9,7 +9,7 @@ include::before_you_start.adoc[leveloffset=+1]
 
 = Start using {osio}
 
-//include::modules/introduction_to_homescreen.adoc[leveloffset=+1]
+include::modules/introduction_to_homescreen.adoc[leveloffset=+1]
 
 include::hello_world_developers.adoc[leveloffset=+1]
 

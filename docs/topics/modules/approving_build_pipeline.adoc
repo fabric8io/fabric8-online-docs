@@ -7,7 +7,7 @@ The build pipeline includes steps for a _Stage_ build and a _Run_ build. _Stage_
 
 To stage your application and review it on _Stage_:
 
-. If you are not on the `Pipelines` view, click btn:[Create] from the options at the top of the screen and then click btn:[Pipelines].
+. If you are not on the *Pipelines* view, click btn:[Create] from the options at the top of the screen and then click btn:[Pipelines].
 . Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline. OpenShift Online provides this public URL to access the staged quickstart application.
 +
 image::rollout_stage.png[Rollout to stage]
