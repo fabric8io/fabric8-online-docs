@@ -10,20 +10,20 @@
 +
 image:new_org_fields.png[New organization fields]
 +
-.. Under *Choose your plan*, select *Free*.
+.. Under `Choose your plan`, select *Free*.
 .. Click btn:[Create organization].
-.. In the *Invite organization members* screen, add users or click btn:[Continue] to skip this step.
+.. In the `Invite organization members` screen, add users or click btn:[Continue] to skip this step.
 .. Either select details for your organization and click btn:[Submit] or click *skip this step*. The new organization details now display.
 
 . In the same browser tab, navigate to https://github.com/settings/organizations
 
 . Click *Openshift.io* from the list of applications.
 
-. In the details page for the application, your new organization is listed under *Organization access*. Click btn:[Grant] to give the new organization access.
+. In the details page for the application, your new organization is listed under `Organization access`. Click btn:[Grant] to give the new organization access.
 
 . Return to the {osio} tab in your browser.
 
-. Navigate to your *Settings* view:
+. Navigate to your `Settings` view:
 
 .. Click your name on the top right corner of the screen.
 
@@ -31,10 +31,10 @@ image:new_org_fields.png[New organization fields]
 +
 image::profile_settings.png[Profile menu button]
 +
-. Under *Connected Accounts*, click the refresh icon for your GitHub account.
+. Under `Connected Accounts`, click the refresh icon for your GitHub account.
 +
 image::refresh_github.png[Refresh github]
 +
-. After the reloaded {osio} screen loads, your new organization is added.
+. After the reloaded {osio} screen loads, your new organization is added. 
 
 To use the new organization, create a new project and in the *Organization* drop-down menu, your new organization is listed.
