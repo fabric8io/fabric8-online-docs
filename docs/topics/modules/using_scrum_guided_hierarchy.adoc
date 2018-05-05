@@ -1,7 +1,11 @@
 [id="using_scrum_guided_hierarchy"]
 = Using the Scrum guided hierarchy
 
-Scrum is an iterative and incremental agile software development framework for managing product development. Use the scrum guided hierarchy to create work items as follows:
+Scrum is an iterative and incremental agile software development framework for managing product development.
+
+NOTE: The *Development Process* you select while creating your space determines the guided work item type hierarchy, the available work item types, and the available states of the work item in planner.
+
+Use the scrum guided hierarchy to create work items as follows:
 
 .Prerequisites
 

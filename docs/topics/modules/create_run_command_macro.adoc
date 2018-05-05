@@ -1,7 +1,7 @@
 [id="create_run_command_macro"]
 = Create run command macro
 
-If your Che workspace does not already include a *run* command macro, clicking the Run icon displays a `Create run command` option:
+If your Che workspace does not already include a *run* command macro, clicking the Run icon displays a *Create run command* option:
 
 image::create_run_command.png[Create run command]
 
@@ -9,21 +9,21 @@ To create the run command:
 
 . Click *Create run command*.
 . Add the following information for the new command:
-.. In the `Name` field, type *run* to name the new command shortcut.
+.. In the *Name* field, type `run` to name the new command shortcut.
 .. In the command box, type the following command:
 +
 ----
 scl enable rh-maven33 'mvn compile vertx:run -f ${current.project.path}'
 ----
 +
-.. Toggle the `Applicable` option to *YES* to enable this macro for your project.
+.. Toggle the *Applicable* option to *YES* to enable this macro for your project.
 +
 image::add_details_run_command.png[Add details create run]
 . Click *RUN* on the right side of the screen to run your new macro.
 +
 image::run_macro.png[Run macros]
 +
-. In the `Terminal` view at the bottom of the workspace, the command runs. When successfully complete, the command displays the following message:
+. In the *Terminal* view at the bottom of the workspace, the command runs. When successfully complete, the command displays the following message:
 +
 ----
 [INFO] INFO: Succeeded in deploying verticle
