@@ -3,25 +3,29 @@
 
 To change your project code and preview the results:
 
-. In your Che workstation *Projects Explorer* view, navigate to the following file: `src` > `main` > `Java` > `io.openshift.booster` > `HttpApplication.java`.
+. In your Che workstation *Projects Explorer* view, navigate to the following file: `src` > `main` > `conf` > `application.yml`.
 +
 image::project_dir.png[Project Directory]
 +
-. Find the following line in the file, which is the template for API's returned message in the application:
+. Change the following line in the file, which is the template for API's returned message in the application:
 +
 [source,java]
 ----
-protected static final String template = "Hello, %s!";
+message: "Hello %s from the local configuration!"
 ----
 +
-. Change *Hello* to *Hello from Che* in the line.
+. Change the greeting message and then save your changes.
 +
 [source,java]
 ----
-protected static final String template = "Hello from Che, %s!";
+message: "Hello from Che, %s !"
 ----
 +
-The workspace automatically saves your changes.
+. Click the stop button at the top of the workspace to stop the application running.
++
+image::bar_stop.png[EXEC Bar]
++
+. Click the circular arrow (image:run_stopped.png[title="Run Stopped"]) to run the application again with your changes.
 
 . To test your changes, click the blue preview URL at the top of the *run* view to see your application.
 +
