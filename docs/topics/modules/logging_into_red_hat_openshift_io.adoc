@@ -1,6 +1,8 @@
 [id="logging_into_red_hat_openshift_io"]
 = Logging into {rhosio}
 
+NOTE: When you sign up to use OpenShift.io, you are given an OpenShift Online account with enough resources to run a basic stage and run environment, pipelines, and an Eclipse Che development workspace.
+
 .Prerequisites
 
 * Ensure that you have <<signing_up_for_the_red_hat_developers_program,registered for a {rhdp} account>>.

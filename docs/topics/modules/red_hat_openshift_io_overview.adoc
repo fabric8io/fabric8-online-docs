@@ -1,36 +1,37 @@
 [id="red_hat_openshift_io_overview"]
 = {rhosio} overview
 
-{rhosio} is a highly collaborative open-source, web-based _application life cycle management_ (ALM) solution. It is a next-generation product for developers to manage the development life cycle with one efficient tool.
+{rhosio} is a highly collaborative open-source, web-based _application life cycle management_ (ALM) solution. It is a next-generation product for developers to manage the development life cycle with one efficient tool. It enables you to plan, create, and deploy hybrid cloud services. It utilizes many open source projects like fabric8, Eclipse Che, and OpenShift Online
 
 == Features
 
-{osio} offers features to seamlessly manage end-to-end application development. Members of distributed teams can use it to perform the following tasks without leaving the browser window:
+{osio} offers features to seamlessly manage end-to-end application development. It provides an integrated approach to DevOps with all the tools necessary to plan, create, analyze, and deploy services. Members of distributed teams can use it to perform the following tasks without leaving the browser window:
 
 *Project management:*
 
 * Project planning and issue tracking using your choice of Agile methodology.
 * Automating project releases.
+* Minimize effort on building and maintaining a development tool chain.
 
 *Project development:*
 
-* Creating development environments and testing based on requirements.
-* Coding using an integrated development environment based on Eclipse Che, which provides a workspace for developing your application.
+* Creating containerized development, testing, and staging environments hosted on OpenShift Online.
+* Coding, editing and debugging using an integrated development environment based on Eclipse Che, which provides a workspace for developing and managing your application.
 * Development in this context-aware environment provides the appropriate context for the developer and project, such as which branch, repository, language, and files are referenced.
 * Interacting with integrated GitHub repositories.
 * Compiling and reviewing code in Pull Requests as required.
-* Use the QuickStart wizards to create basic applications with their own new repo on GitHub, a build pipeline integrated with Jenkins, and a related new OpenShift project.
+* Use the QuickStart wizards to create basic applications with their own new repo on GitHub, integrated Jenkins pipelines plugins, and a related new OpenShift project.
 * Using migration wizards to migrate legacy J2EE applications to the cloud.
 
 *Deployment and testing:*
 
-* Building, testing, deploying, and monitoring codebases using Continuous Integration pipelines that can be tailored to the requirements of a team or an individual.
+* Building, testing, deploying, and monitoring codebases using Continuous Integration pipelines that can be tailored to the requirements of a team - you can have simple automated build pipelines or add manual promotions.
 * Deploying applications packaged as a set of containers to OpenShift, which powers the underlying services such as the Eclipse Che workspaces and Pipelines.
-* Using integrated but customizable Jenkins build pipelines to facilitate rapid testing and environment promotion.
+* Using integrated but customizable Jenkins build pipelines to facilitate rapid testing and environment promotion, reducing your build and maintenance efforts.
 
 *Analysis and recommendations:*
 
-* Use the full-stack analysis feature on your project open source components to identify potential security issues and recommend safer alternative components or component versions to use instead.
+* Use the full-stack analysis feature on the software components in your application to identify potential security issues in your source code and get suggestions on safer alternative components to use instead.
 * Use the self-learning analytics engine to improve the code quality and make data-based choices. The engine scans community libraries, security vulnerabilities, and other GitHub metrics to provide useful real-time assistance for developers that learns and improves over time.
 
 //== Support
