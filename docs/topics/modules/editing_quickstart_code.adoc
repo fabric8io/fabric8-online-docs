@@ -11,7 +11,7 @@
 
 To edit your project's code and preview the results:
 
-. In your Che workstation folder view, double click folder and file names to navigate to the target file you want to edit.
+. In your Che workstation file explorer view, double click folder and file names to navigate to the target file you want to edit.
 +
 image::navigate_folders_che.png[Navigate folders in Che workspace]
 +
