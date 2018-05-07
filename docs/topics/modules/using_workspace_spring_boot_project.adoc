@@ -14,7 +14,7 @@ When the maven test succeeds, you get a `BUILD SUCCESS` message. You can commit 
 +
 image::maven_test_success.png[Maven Test Success]
 +
-. In the *Project Explorer* view, double-click the `src` > `main` > `java` > `io.openshift.booster` > `service` folders.
+. In the file explorer view, double-click the `src` > `main` > `java` > `io.openshift.booster` > `service` folders.
 +
 image::sb_tree_view.png[Spring Boot Folders]
 +

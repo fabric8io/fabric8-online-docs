@@ -1,7 +1,7 @@
 [id="running_your_project-{context}"]
 = Running your project in the Che workspace
 
-After your Che workspace loads, you can see your project code listed in the *Projects Explorer* panel, in the upper-left side of the screen. You must now ensure the following prerequisites are met before you start using the workspace to edit the codebase:
+After your Che workspace loads, you can see your project code listed in the file explorer panel, in the upper-left side of the screen. You must now ensure the following prerequisites are met before you start using the workspace to edit the codebase:
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]

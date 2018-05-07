@@ -4,7 +4,7 @@
 The Che workspace automatically analyzes dependencies for the code while you modify it. To see how this analyzer works:
 
 . Return to the Che workspace browser tab.
-. In the *Projects Explorer* panel, double-click the `pom.xml` file.
+. In the file explorer panel, double-click the `pom.xml` file.
 +
 image::pomxml.png[Pom.xml File]
 +

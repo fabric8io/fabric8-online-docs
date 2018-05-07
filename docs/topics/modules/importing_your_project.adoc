@@ -1,7 +1,7 @@
 [id="importing_your_project-{context}{secondary}"]
 = Importing your project
 
-After creating a space, the *Create an Application* wizard to create applications displays. If you closed the wizard earlier, click btn:[Add to space] in your space dashboard to see the wizard again.
+After creating a space, the *Create an Application* wizard to create applications displays. If you closed the wizard earlier, click btn:[Create an Application] in your space dashboard to see the wizard again.
 
 . In the *Create an Application* wizard, select *Import existing code* and then click btn:[Continue] to import an existing project codebase into {osio}.
 +

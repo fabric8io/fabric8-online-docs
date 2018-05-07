@@ -8,7 +8,7 @@ After creating your {osio} project, you can debug your application code in the C
 == Procedure
 
 . Return to your project Che workspace browser tab.
-. If the `HttpApplication.java` file is not already loaded, double-click it in your *Projects Explorer* (`src` > `main` > `Java` > `io.openshift.booster`) to view the contents.
+. If the `HttpApplication.java` file is not already loaded, double-click it in your file explorer view (`src` > `main` > `Java` > `io.openshift.booster`) to view the contents.
 +
 image::project_dir.png[Project Directory]
 +

@@ -8,7 +8,7 @@ The example project code includes a new route for *eventbus* and its supporting 
 
 You can change the code of your project and preview the results as follows:
 
-. In the *Project Explorer* view, double-click the following directories to expand them: `src` > `main` > `Java` > `io.openshift.booster`.
+. In the file directory view, double-click the following directories to expand them: `src` > `main` > `Java` > `io.openshift.booster`.
 +
 image::imp_folder.png[Folder View]
 +
