@@ -110,7 +110,7 @@ impediment:: An impediment is anything that affects team performance or progress
 issue:: An issue is an unmet user expectation, an observation that something doesn't work as one expects it to. It could represent bugs, feature requests, or enhancements and are linked to an appropriate work item in the backlog as part of the triage process. // endterm
 ////
 
-// term:  5c3ee317-3cdd-4ee6-a27f-85965f777ee3, en
+// term: 5c3ee317-3cdd-4ee6-a27f-85965f777ee3, en
 iteration:: A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.
 // endterm
 
