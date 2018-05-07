@@ -1,9 +1,11 @@
 [id="introduction"]
 = Introduction
 
-Thank you for your interest in {osio}! The purpose of this document is to guide you through your first experiences with {osio}. Following the instructions in this document, you can set up an application running in the cloud within minutes. Shortly thereafter you will have customized and then deployed a new version of that application.
+Thank you for your interest in {osio}! {rhosio} is a highly collaborative open-source, web-based _application life cycle management_ (ALM) solution. It provides an integrated approach to DevOps enables you to plan, create, and deploy hybrid cloud services.
 
-{osio} is constantly being updated and therefore improving as you use it, and we would love to hear from users to make it a better experience for you. See <<providing-product-feedback>> to send us information about bugs, feature requests, and your thoughts about what does or doesn't work well for you. Updates and changes to the system are delivered continuously, often multiple times in a day. As part of our continuous delivery model, everyone who pushes a change out to the live system assumes responsibility for the impact of that change, so severe bugs are addressed quickly. 
+The purpose of this document is to guide you through your first experiences with {osio}. Following the instructions in this document, you can set up an application running in the cloud within minutes. Shortly thereafter you will have customized and then deployed a new version of that application.
+
+{osio} is constantly being updated and therefore improving as you use it, and we would love to hear from users to make it a better experience for you. See <<providing-product-feedback>> to send us information about bugs, feature requests, and your thoughts about what does or doesn't work well for you. Updates and changes to the system are delivered continuously, often multiple times in a day. As part of our continuous delivery model, everyone who pushes a change out to the live system assumes responsibility for the impact of that change, so severe bugs are addressed quickly.
 
 If your {osio} environment gets into a state where you are finding it difficult or impossible to move forward, refer to the <<cleaning_oso_account>> section of this document for information on how to factory reset your {osio} (and OpenShift Online) environment. Welcome to the world of {osio}! We hope you enjoy your experience and look forward to hearing your feedback!
 
