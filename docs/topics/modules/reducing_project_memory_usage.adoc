@@ -16,7 +16,7 @@ To optimize memory for the Spring Boot HTTP quickstart:
 endif::[]
 
 . Return to your Workspace browser tab. If your closed the tab, click *Create* and then the btn:[Open] to run your workspace.
-. In the *Projects Explorer* panel, double-click your project and navigate to `src` > `main` > `fabric8`.
+. In the folder panel, double-click your project and navigate to `src` > `main` > `fabric8`.
 +
 image::{context}_folder.png[Fabric8 folder]
 +

@@ -11,7 +11,7 @@ View the details for the *Deployments* as follows:
 +
 image::create_deployments_menu.png[Create > Deployments]
 +
-.. If you have not activated Internal features in {osio}, the *Internal Features Opt-in* warning appears. Click btn:[Opt-in to Internal Features] to proceed.
+.. If you have not activated experimental features in {osio}, the *Experimental Features Opt-in* warning appears. Click btn:[Opt-in to Experimental Features] to proceed.
 +
 image::deployments_page.png[Deployments page warning]
 +
@@ -33,9 +33,11 @@ image::spaces_home.png[Spaces box]
 +
 image::hello-world_deployments.png[Deployments page]
 
+= View pipline progress
+
 Optionally, you can view the pipeline progress in the OpenShift Online console as follows:
 
-. For either the *Stage* or *Run* environments, click the options button and then click *OpenShift Console*.
+. For either the *Stage* or *Run* environments, click the options button and then click *View OpenShift Console*.
 +
 image::environment_options.png[Environment options]
 +

@@ -3,7 +3,7 @@
 
 To change your project code and preview the results:
 
-. In your Che workstation *Projects Explorer* view, navigate to the following file: `src` > `main` > `conf` > `application.yml`.
+. In your Che workstation view, navigate to the following file: `src` > `main` > `conf` > `application.yml`.
 +
 image::project_dir.png[Project Directory]
 +
