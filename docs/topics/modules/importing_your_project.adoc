@@ -1,9 +1,15 @@
 [id="importing_your_project-{context}{secondary}"]
 = Importing your project
 
-After creating a space, the *Create an Application* wizard to create applications displays. If you closed the wizard earlier, click btn:[Create an Application] in your space dashboard to see the wizard again.
+After creating a space, the *Create an Application* wizard to create applications displays. If you closed the wizard earlier, click btn:[Create an Application] in your space dashboard to see the *Create an Application* wizard again.
 
-. In the *Create an Application* wizard, select *Import existing code* and then click btn:[Continue] to import an existing project codebase into {osio}.
+. In the *Name your application* field, type a unique name for your new project. Ensure that the application name adheres to the listed *Naming Requirements*.
+
++
+image::app_name_requirements.png[Naming Requirements]
++
+
+. Select the *Import existing code* radio button and then click btn:[Continue] to import an existing project codebase into {osio}.
 +
 image::importing_project.png[Importing Project]
 +

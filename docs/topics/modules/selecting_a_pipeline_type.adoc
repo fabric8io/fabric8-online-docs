@@ -1,7 +1,7 @@
 [id="selecting_a_pipeline_type"]
 = Selecting a pipeline type
 
-When creating a new project using the quickstart wizard, three types of Maven-based pipelines are available for your new project:
+When creating a new project using the quickstart wizard, three types of Jenkins build pipelines are available for your new project:
 
 image::user-guide_select_pipeline.png[Select a pipeline]
 

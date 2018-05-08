@@ -10,7 +10,7 @@ You can create a new child area to group together related work items by type or 
 .Procedure
 
 . At the top of the page, click the *Equalizer* button (image:equalizer.png[title="Settings"]) to display a list of areas in your space.
-. In the top right corner of the *Areas* view, click btn:[Add Areas].
+. In the top right corner of the *Areas* view, click *Add Areas*.
 +
 image::add_areas_button.png[Add areas button]
 +
@@ -22,5 +22,3 @@ image::add_new_area_dialog.png[Add new are dialog]
 . To view your new area, click the expand icon for your space name. Your new area is listed as a child of the root area, which shares a name with the space.
 +
 image::see_new_area.png[See new area]
-
-

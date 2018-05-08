@@ -1,7 +1,7 @@
 [id="creating_a_new_iteration"]
 = Creating a new iteration
 
-Add iterations to your space to plan and organize your work items. Click btn:[Plan] to view and modify existing iterations and to add new iterations.
+Add iterations to your space to plan and organize your work items. Click *Plan* to view and modify existing iterations and to add new iterations.
 
 .Prerequisites
 
@@ -9,7 +9,7 @@ Add iterations to your space to plan and organize your work items. Click btn:[Pl
 
 .Procedure
 
-. Click btn:[Plan] to view the Planner.
+. Click *Plan* to view the Planner.
 
 . In the left pane, click *Add an Iteration* btn:[+] next to the *Iterations* field. The *Create Iteration* window is displayed.
 +

@@ -9,13 +9,13 @@ After <<adding_collaborators,adding collaborators>> to your space, you can assig
 
 .Procedure
 . Click the *Plan* tab to view a list of work items for your space.
-. Double-click a work item to view its details.
-. Click the *Assignee* text box for a drop-down search window. 
+. Click on a work item to view its details in the preview.
+. In the *Assignees* field, click *Add Assignee* to see the list of collaborators you can assign the work item to.
 +
 image::assign_collaborator.png[Assign collaborator]
 +
-. Select from the diplayed list or type the name of a collaborator in your space to assign them to this work item. The check mark indicates that a collaborator has been assigned. Click *X* to close the dialog window.
+. Select from the displayed list or type the name of a collaborator in your space to assign them to this work item. The check mark indicates that a collaborator has been assigned. Click *X* to close the dialog window.
 +
 image::assign_collaborator_check.png[Assign collaborator check mark]
 
-The selected collaborator is now assigned to the work item.
+The work item is now assigned to the selected collaborator.
