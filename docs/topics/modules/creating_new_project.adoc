@@ -57,7 +57,11 @@ endif::[]
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
-. In the *Name your application* field, type a unique name for your new project. Ensure that the application name adheres to the listed *Naming Requirements*. 
+. In the *Name your application* field, type a unique name for your new project. Ensure that the application name adheres to the listed *Naming Requirements*.
+
++
+image::app_name_requirements.png[Naming Requirements]
++
 
 . Select the *Create a new codebase* radio button and click btn:[Continue].
 
