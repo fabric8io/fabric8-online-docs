@@ -9,7 +9,7 @@ When you create a new quickstart project, a new build executes. In a build pipel
 
 . At the top of the page, click *Create*.
 
-. In the sub-menu options, click *Pipelines*. The build pipelines for your new application display on this page. Initially, the build status is `No stages have started`.
+. In the sub-menu options, click *Pipelines*. The build pipelines for your new application display on this page. Initially, the build status is *No stages have started*.
 +
 image::hello-world_build1_nostages.png[VertX Build 1 No Stage]
 +

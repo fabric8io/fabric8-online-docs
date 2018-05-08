@@ -95,7 +95,7 @@ image::{context}_app_information.png[Application information]
 +
 image::{context}_application_ready.png[Application ready]
 
-Your new project is now created in your space.
+Your new project is now created in your space and your space dashboard now displays your new codebase.
 endif::[]
 
 // for spring-boot

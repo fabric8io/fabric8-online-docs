@@ -29,11 +29,11 @@ image::profile_updated.png[Profile updated]
 +
 image::spaces_home.png[Spaces box]
 +
-. At the top of the page, click btn:[Create] and then click btn:[Deployments]. The *Deployments* page now loads and displays details about the Applications and Environments.
+. At the top of the page, click *Create* and then click *Deployments*. The *Deployments* page now loads and displays details about the Applications and Environments.
 +
 image::hello-world_deployments.png[Deployments page]
 
-= View pipline progress
+= View pipeline progress
 
 Optionally, you can view the pipeline progress in the OpenShift Online console as follows:
 
