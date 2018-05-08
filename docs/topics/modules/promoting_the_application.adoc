@@ -1,0 +1,17 @@
+[id="promoting_the_application"]
+= Promoting the application
+
+If the application runs as expected in the staging environment approve and promote the application and build it on _Run_:
+
+. Return to the {osio} browser tab which displays the *Pipeline* view.
+. Click btn:[Input Required] at the *Approve* stage of the pipeline.
++
+image::ug_pipeline_firstrun.png[Input Required]
++
+. Click btn:[Promote] to promote the build from the _Stage_ environment to the _Run_ environment. The rollout process from _Stage_ to _Run_ requires several minutes.
++
+image::ug_promote.png[Promote build]
++
+. When the *Pipeline* view indicates that the application is available in the _Run_ environment, click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Run* to view the project in a new tab and test the application in the run environment.
++
+image::ug_rollout_to_run.png[Rollout to Run]

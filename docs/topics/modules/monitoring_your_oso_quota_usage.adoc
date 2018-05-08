@@ -3,7 +3,7 @@
 
 After <<reducing_project_memory_usage-optimizing_memory_usage>> and committing and pushing your changes, view your memory quota details and compare with the earlier output.
 
-. Click btn:[Create] and then btn:[Pipelines] to view the new pipeline build. Committing and pushing your new YAML file triggers a new pipeline build for your {osio} project. Allow several minutes for the pipeline build to roll out to *Stage*:
+. Click *Create* and then *Pipelines* to view the new pipeline build. Committing and pushing your new YAML file triggers a new pipeline build for your {osio} project. Allow several minutes for the pipeline build to roll out to *Stage*:
 +
 image::rollout_to_stage.png[Rollout To Stage]
 +

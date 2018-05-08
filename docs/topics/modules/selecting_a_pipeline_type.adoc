@@ -33,16 +33,16 @@ image::user-guide_select_pipeline.png[Select a pipeline]
 
 Click *Deployments* on the dashboard to view the detailed *Deployments* screen. This view also displays different types of information depending on the type of pipeline selected for your project.
 
-For the *Release* pipeline, the *Stage* and *Run* details contain no information because this pipeline type does not use these environments.
+For the *Build Release, Integration Test* pipeline, the *Stage* and *Run* details contain no information because this pipeline type does not use these environments.
 
 image::release_only_deployments.png[Release deployments]
 
-For the *Release and Stage* option, the *Stage* details are available, including resource usage and the version of the project.
+For the *Build Release, Integration Test, Rollout to Stage* option, the *Stage* details are available, including resource usage and the version of the project.
 
 image::build_stage_deployment.png[Release and Stage]
 
-For the *Release, Stage, Approve and Promote* pipeline type, the details for both *Stage* and *Run* are listed, along with resource and pod usage.
+For the *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* pipeline type, the details for both *Stage* and *Run* are listed, along with resource and pod usage.
 
 image::build_stage_run_deployment.png[Build, stage, run deployment]
 
-Using the *Release, Stage, Approve and Promote* pipeline option is recommended because this gives you the most information and control over your project.
+Using the *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* pipeline option is recommended because this gives you the most information and control over your project.
