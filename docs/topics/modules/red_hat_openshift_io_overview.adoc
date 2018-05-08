@@ -5,7 +5,7 @@
 
 == Features
 
-{osio} offers features to seamlessly manage end-to-end application development. It provides an integrated approach to DevOps with all the tools necessary to plan, create, analyze, and deploy services. Members of distributed teams can use it to perform the following tasks without leaving the browser window:
+{osio} offers features to seamlessly manage end-to-end application development. It provides an integrated approach to DevOps with all the tools necessary to analyze, plan, create, and deploy services. Members of distributed teams can use it to perform the following tasks without leaving the browser window:
 
 *Project management:*
 

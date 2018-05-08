@@ -3,15 +3,11 @@
 
 In {osio}, the first step for any new project is to create a new space.
 
-// for hello-world
-ifeval::["{context}" == "hello-world"]
-You can then add users as collaborators for the space and all the work is tracked within the space using work items. Each space must have a unique name.
-endif::[]
+You can then add collaborators, track your work using work items and iterations, and create or import codebases within the space. Each space must have a unique name.
+
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
-A space allows you to plan your development work using <<about_work_items,work items>> and <<about_iterations,iterations>>, assign work items to <<about_collaborators,collaborators>> within your team, and create and manage software applications within it.
-
 .Prerequisites
 
 * Ensure that you have <<logging_into_red_hat_openshift_io,logged in to {osio-link}>>.
@@ -41,12 +37,17 @@ image::github_disconnected.png[GitHub Disconnected]
 +
 image::connect_github.png[Connect to GitHub]
 
-. When the accounts are connected, the {osio} dashboard view displays. Click btn:[Create a space] again.
+. When the accounts are connected, the {osio} home page view displays. Click btn:[Create a space] again.
 
++
+// for hello-world
+ifeval::["{context}" == "hello-world"]
 . Use the *Development Process* drop-down list to select a template for your new space. For this example, keep the default option for this field.
 . In the dialog box, type *myspace* as the unique name for your space and click btn:[Ok].
 +
 image::create_space.png[Create new space]
+endif::[]
+
 
 +
 // for user-guide

@@ -46,11 +46,11 @@ image::{context}_app_information.png[Application information]
 +
 image::{context}_application_ready.png[Application ready]
 +
-Your new Vert.X project is now created in your space.
-
-Your space dashboard now displays your new application:
-
+Your new Vert.X project is now created in your space and your space dashboard now displays your new application:
++
 image::space_dash_after_hello-world.png[Space dashboard view after creating Hello World]
++
+. You have now completed the task, *Launch a sample quickstart application*, in the *Test Iteration*. Ensure that you change the state of the work item to *Closed* using the *Plan* tab
 
 endif::[]
 
