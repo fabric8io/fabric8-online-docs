@@ -1,4 +1,4 @@
-[id="optin_in_to_features"]
+[id="opting_in_to_features"]
 = Opting in to features
 
 In the {osio} dashboard view, use the following steps to opt in or out of features:
@@ -11,15 +11,15 @@ In the {osio} dashboard view, use the following steps to opt in or out of featur
 +
 image::profile_settings.png[Profile menu button]
 +
-. In the *Settings* screen, click *Features Opt-in*.
+. In the *Settings* page, click *Features Opt-in*.
 +
 image::features_optin.png[Features Opt In]
 +
-. Select the appropriate option from the list. The *Production Features* option is recommended for users who only want the stable {osio} features.
+. Select the appropriate option from the list. The *Production Only Features* option is recommended for users who only want the stable {osio} features.
 +
 image::features_optin_options.png[Opt in features]
 +
-The change is automatically applied to your profile. The following message displays to confirm that you have opted in to the selected features:
+The change is applied to your profile. The following message displays to confirm that you have opted in to the selected features:
 +
 image::profile_updated.png[Profile updated]
 
