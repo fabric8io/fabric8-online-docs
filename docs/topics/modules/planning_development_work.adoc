@@ -7,7 +7,24 @@ NOTE: The development process you select while creating the space determines the
 
 This example walks you through the Scenario Driven Development planning process to plan an end to end development flow of launching and deploying a sample application.
 
-. In the dashboard of your space, select the *Plan* tab at the top of the page to view the planner. The default *Backlog* view displays the *Scenarios* work item type group for your space.
+== Opt-in to beta features
+{osio} planner is a beta feature so ensure that you first opt-in to beta features.
+
+. In the dashboard of your space, select the *Plan* tab at the top of the page to view the planner.
+. If you have not activated experimental features in {osio}, when you click the *Plan* tab the *Beta Features Opt-in* warning appears. Click btn:[Opt-in to Beta Features] to proceed.
++
+image::beta_feature_warning.png[Beta feature warning]
++
+. In the *Settings* page, select the *Beta Features* option. The change is applied to your profile.
++
+image::beta_feature_option.png[Beta feature option]
++
+. Navigate back to your space by clicking your username in the upper left corner of the screen. In the displayed options, click the name of your space.
++
+image::navigate_to_your_space.png[Navigate to your space]
+
+== Plan your development project
+. In the dashboard of your space, select the *Plan* tab at the top of the page to view the planner. The planner now displays the default *Backlog* view with the *Scenarios* work item type group for your space.
 . Select the *Show Tree* check box to see the work items in a tree view. The tree view allows you to quickly add work items according to the guided hierarchy using the quick-add and in-line add options.
 . Use the quick-add option to create a *Scenario* as follows:
 .. In the *Add Work Item* pane, select *Scenario* from the drop-down list.
@@ -77,7 +94,7 @@ image::create_iteration.png[Create Iteration]
 
 .. link:user-guide.html#associating_work_items_with_an_iteration[Associate the features and child tasks to the *Test Iteration*] to track them and close them within this iteration.
 +
-image::gs_iteration_wi_assocn.png[Assocaiting Work Item with an Iteration]
+image::gs_iteration_wi_assocn.png[Associating Work Item with an Iteration]
 +
 .. Click *Test Iteration* to see the associated work items.
 +
