@@ -12,10 +12,9 @@ image:new_org_fields.png[New organization fields]
 +
 .. Under *Choose your plan*, select *Free*.
 .. Click btn:[Create organization].
-.. In the *Invite organization members* screen, add users or click btn:[Continue] to skip this step.
-.. Either select details for your organization and click btn:[Submit] or click *skip this step*. The new organization details now display.
+.. In the *Invite organization members* screen, add users or click btn:[Finish] to skip this step and create the organization. The new organization details now display.
 
-. In the same browser tab, navigate to https://github.com/settings/organizations
+. Now navigate to https://github.com/settings/applications
 
 . Click *Openshift.io* from the list of applications.
 
