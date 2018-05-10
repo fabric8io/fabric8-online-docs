@@ -1,10 +1,10 @@
 :secondary: _stacks
 
-[id="working_with_stack_reports"]
-= Working with Stack Reports
+[id="working_with_analytics"]
+= Working with analytics
 
-include::modules/about_stack_reports.adoc[leveloffset=+1]
+include::modules/about_analytics.adoc[leveloffset=+1]
 
-include::modules/using_stack_report.adoc[leveloffset=+1]
+include::modules/using_analytics_in_the_development_stage.adoc[leveloffset=+1]
 
-include::modules/interpreting_stack_report.adoc[leveloffset=+1]
+include::modules/using_analytics_at_the_deployment_stage.adoc[leveloffset=+1]
