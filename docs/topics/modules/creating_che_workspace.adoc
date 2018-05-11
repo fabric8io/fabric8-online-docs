@@ -5,7 +5,7 @@
 ifeval::["{context}" == "user-guide"]
 To edit your project code, you must create a new <<about_workspaces_user-guide,Che workspace>> for your project.
 
-. Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*
+. Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*.
 endif::[]
 
 // for hello-world

@@ -1,0 +1,23 @@
+[id="about_analytics"]
+= About Analytics
+
+{osio} analyzes the health of your entire stack and its dependencies and provides insights that enable you to make informed decisions on the choice of open source dependencies for your stack. It helps you augment your development stack with appropriate and secure dependencies and thus reduce the risk to your organization.
+
+The self learning {osio} analytics engine provides you information about:
+
+* Security issues in your stack
+* License conflicts
+* Dependencies in your stack that are not commonly used in similar stacks
+
+Based on the analyses and comparison with similar stacks, it provides insights on:
+
+* Alternate dependencies to replace existing dependencies in case of usage and license outliers.
+* Additional dependencies that enhance your stack.
+
+Based on these insights, you can <<creating_a_new_work_item,create work items>> and follow through in the planner to update your stack as required.
+
+The {osio} analytics engine provides you these inputs at the following stages of your development project:
+
+//* Creating or importing a codebase in the form of dependency editor
+* Developing or modifying your codebase in the Che IDE
+* Deploying your build pipelines
