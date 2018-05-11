@@ -5,6 +5,8 @@
 
 include::modules/about_analytics.adoc[leveloffset=+1]
 
+//TO DO after this feature is in prod- include::modules/using_analytics_in_the_app_creation_stage.adoc[leveloffset=+1]
+
 include::modules/using_analytics_in_the_development_stage.adoc[leveloffset=+1]
 
 include::modules/using_analytics_at_the_deployment_stage.adoc[leveloffset=+1]
