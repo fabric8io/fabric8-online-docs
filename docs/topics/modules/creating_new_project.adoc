@@ -10,6 +10,8 @@ When you create a new space, the *Create an Application* wizard to create applic
 
 image::start_creating_apps.png[Start creating apps]
 
+NOTE: Each quickstart has different requirements to run. We recommend reading the project's README file for details about requirements.
+
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 . In the *Name your application* field, type `helloworldvertx`.
