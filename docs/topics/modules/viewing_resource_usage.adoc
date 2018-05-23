@@ -1,0 +1,24 @@
+[id=viewing_resource_usage]
+= Viewing resource usage
+
+An {osio} account with OpenShift Online provides two pods for your projects. To view how much of these resources are currently used in {osio}, navigate to the *Resources* page as follows:
+
+. Click your username in the upper right corner of the {osio} page and click *Settings*.
++
+image::profile_settings.png[Profile > Settings]
++
+. In the menu options, click *Resources*.
++
+image::settings_resources.png[Settings > Resources]
+
+In the displayed resources page, you can see how much of the available resources are used so far.
+
+If you have not added any projects to your {osio} account, the page shows all resources as available:
+
+image::resources_empty.png[Resources all available]
+
+If you have created one project, which is not pushed to *Run* yet, the page shows that some of the resources for *Stage* are in use.
+
+image::resources_half.png[Resources half]
+
+After you create two projects, the two pods allocated to an OpenShift Online account have been used. Use this page to check if you have resources remaining because additional builds will fail if the required resources are not available. See link:getting-started-guide.html#cleaning_oso_account[resetting your environment] to reclaim all these resources.
