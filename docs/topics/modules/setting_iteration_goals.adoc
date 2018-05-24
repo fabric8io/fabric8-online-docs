@@ -10,6 +10,6 @@ NOTE: Only execution work item types such as *Feature*, *Task* and *Bug* are dis
 +
 image::iteration_view.png[Iteration View]
 
-. Use the options (image:kabob.png[title="Options"]) menu to edit the iteration and make it active by setting the date range appropriately or by using the *Force Active* toggle. See <<creating_a_new_iteration>> for further information.
+. Use the options (image:kabob.png[title="Options"]) icon to edit the iteration and make it active by setting the date range appropriately or by using the *Force Active* toggle. See <<creating_a_new_iteration>> for further information.
 . Use the *Add Work Item* pane to <<creating_a_new_work_item,add new work items>> to the iteration.
-. Use the options (image:kabob.png[title="Options"]) menu to close the iteration after the completion of the development cycle.
+. Use the options (image:kabob.png[title="Options"]) icon to close the iteration after the completion of the development cycle.
