@@ -21,7 +21,16 @@ For example, you can see all the open bugs in your space by adding the *state: o
 image::wi_multiple_filters.png[Multiple Filters]
 . If you are not satisfied with the filters, click *x* next to the filter type to clear that filter, or use the *Clear all filters* to clear all the filters applied to the work item list.
 
-. After you are satisfied with the applied filters, click *Save* and give a name to the filter to save the filter for future use.
-In the above example, you can save the multiple filters you added as `Open Bugs` to track all your open bugs in the future. The filter *Open Bugs* is added to *My Filters*.
+. After you are satisfied with the applied filters, click *Save* and add a name to the filter to save the filter for future use.
+In the above example, save the multiple filters you added as `Open Bugs` to track all your open bugs in the future. The filter *Open Bugs* is added to *My Filters*.
 +
 image::wi_my_filter.png[My Filters]
++
+. You can modify an existing filter as follows:
+.. Select the filter on the left pane to see the filtered work item list.
+.. Add another filter or delete an existing filter as required and save the filter with a new name. In the above example, select the *Open bugs* filter and add the filter *Assignee: _your username_* to see open bugs assigned to you. Save this filter as `Open bugs assigned to me` for future use.
++
+image::wi_modify_filter.png[Modify Filter]
++
+// Edit option likely to be added and this section will need to be modified accordingly.
+. To delete an existing filter, in the left pane, use the options (image:kabob.png[title="Options"]) icon adjoining the filter to delete it.
