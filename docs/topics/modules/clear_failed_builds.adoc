@@ -1,0 +1,24 @@
+[id="clear_failed_builds"]
+= Clearing Failed Builds
+
+If you view all your spaces and delete them manually, often this does not clear the build information in the {osio} dashboard view. The failed builds appear as follows:
+
+image::ts_failed_builds.png[Clearing failed builds]
+
+This is a known issue because when a space is deleted, these builds must also be cleared from the dashboard.
+
+To clear the dashboard:
+
+. Click your name at the top right of the dashboard and then select the *Profile* option from the drop down menu.
++
+image::profile_menu.png[Profile menu]
++
+. In the `Profile` page, click *Update Profile*.
++
+image::update_profile_button.png[Update profile button]
++
+. In the `Edit Profile` page, click *Reset Environment*.
++
+image::reset_env.png[Reset environment]
+
+This resets your {osio} environment and clears the dashboard.
