@@ -1,8 +1,16 @@
 [id="using_an_iteration"]
 = Using an iteration
 
-In your space, click *Plan* to view the iterations for that space in the left pane.
+Use iterations to prioritize work items slated for execution in the development cycle.
 
-include::setting_iteration_goals.adoc[leveloffset=+1]
+. After you <<creating_a_new_iteration,create an iteration>> and <<associating_work_items_with_an_iteration,associate work items>> to the iteration, select the iteration to display the associated work items.
++
+NOTE: Only execution work item types such as *Feature*, *Task* and *Bug* are displayed in the iteration view. You can use the tree view to see the parent *Scenarios* or *Experiences* linked to the work items in the iteration.
++
+image::iteration_view.png[Iteration View]
 
-include::modifying_an_iteration.adoc[leveloffset=+1]
+. You can use the *Add Work Item* pane to further <<creating_a_new_work_item,add new work items>> to the iteration.
+. To modify the iteration click the options (image:kabob.png[title="Options"]) icon next to the iteration and use:
+* *Edit _iteration name_* to see the *Update Iteration* screen and change the iteration name, description, start or end dates, or to forcibly activate it.
+* *Close* to end your iteration. Note that this option is available only if the iteration is active.
+* *Create child* to create a child iteration for the target iteration.

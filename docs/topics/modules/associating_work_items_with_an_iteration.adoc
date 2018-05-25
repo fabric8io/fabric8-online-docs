@@ -1,4 +1,4 @@
-[id="associating_work_items_with_an_iteration"]
+[id="associating_work_items_with_an_iteration-{context}"]
 = Associating a work item with an iteration
 
 You can associate work items with relevant iterations based on your order of execution.
@@ -10,21 +10,4 @@ To associate a work item with a relevant iteration:
 . In the *Iteration* field, click the root iteration to see the iterations you can associate the work item with.
 +
 image::wi_associate_iteration.png[Work Item-Iteration Association]
-. Select an iteration and click *✓* to save the change.
-
-////
-This part has been removed from the planner, there would be no kebab menu, but am retaining this in case the iteration dialog box resurfaces  some other way.
-To associate a work item with an iteration:
-
-. Click btn:[Plan] to see the Planner for your space.
-
-. Click the icon (image:kabob_white.png[title="Options"]) adjoining the work item.
-
-. From the displayed options, select btn:[Associate with Iteration]. The *Associate with Iteration* dialog box appears and displays which iteration, if any, the work item is associated with.
-
-. From the drop-down list, select an iteration for your work item.
-
-. Click btn:[Reassociate].
-
-The work item is now associated with the selected iteration.
-////
+. Select the iteration in which the work item is to be completed and click *✓* to save the change.

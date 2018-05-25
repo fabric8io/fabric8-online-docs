@@ -1,8 +1,11 @@
 [id="working_with_iterations"]
 = Working with iterations
 
+
 include::modules/about_iterations.adoc[leveloffset=+1]
 
 include::modules/creating_a_new_iteration.adoc[leveloffset=+1]
+
+include::modules/associating_work_items_with_an_iteration.adoc[leveloffset=+1]
 
 include::modules/using_iterations.adoc[leveloffset=+1]

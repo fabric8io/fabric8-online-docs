@@ -3,4 +3,4 @@
 
 Iterations are development cycles in the context of incremental development processes. Use _iterations_ to prioritize <<about_work_items,work items>> and to implement them within a development cycle. When used with Scrum, iterations can be utilized to model sprints.
 
-You can use the planner to map your work items to iterations to plan your work based on your project requirements. It enables you to set time-specific goals by grouping priority work items into a single development cycle. It also helps you track your progress for each iteration and compare it with past iterations and associated work items.
+You can use the planner to map your work items to iterations and plan your work based on your project requirements. It enables you to set time-specific goals by grouping priority work items into a single development cycle. It also helps you track your progress for each iteration and compare it with past iterations and associated work items.

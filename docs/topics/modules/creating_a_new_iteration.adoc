@@ -28,5 +28,5 @@ NOTE: You can have multiple iterations active at the same time.
 . Click btn:[Create] to create the new iteration.
 
 Your new iteration appears under *Iterations* in the left pane. It is tagged as *Active* if the current date falls within the start and end date range or if you force-activated it.
-
-//image::iterations_left_pane.png[Iterations]  NO image exists
++
+image::test_iteration.png[Test Iteration]
