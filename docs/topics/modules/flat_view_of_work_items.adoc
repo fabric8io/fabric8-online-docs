@@ -2,7 +2,7 @@
 = Flat view of work items
 The flat list view is useful to track your work items based on their work item type groups. Depending on the selection of the work item type groups in the left pane of the planner, it displays the *Scenarios*, *Experiences*, or *Requirements* for your space.
 
-It does not display the hierarchical parent-child links for the work items and focuses only on the selected work item type group. This helps you plan your *Scenarios* and *Experiences* or assign your *Requirements* to appropriate <<associating_work_items_with_an_iteration,*Iterations*>>.
+It does not display the hierarchical parent-child links for the work items and focuses only on the selected work item type group. This helps you plan your *Scenarios* and *Experiences* or assign your *Requirements* to appropriate <<associating_work_items_with_an_iteration-user-guide_iterations,*Iterations*>>.
 
 You can track a particular work item type group using the flat list as follows:
 

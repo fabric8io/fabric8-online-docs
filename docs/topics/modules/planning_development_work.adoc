@@ -92,7 +92,7 @@ See link:user-guide.html#working_with_work_items[working with work items] to fur
 image::create_iteration.png[Create Iteration]
 +
 
-.. link:user-guide.html#associating_work_items_with_an_iteration[Associate the features and child tasks to the *Test Iteration*] to track them and close them within this iteration.
+.. link:user-guide.html#associating_work_items_with_an_iteration-user-guide_iterations[Associate the features and child tasks to the *Test Iteration*] to track them and close them within this iteration.
 +
 image::gs_iteration_wi_assocn.png[Associating Work Item with an Iteration]
 +
