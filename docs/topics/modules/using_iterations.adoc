@@ -3,7 +3,7 @@
 
 Use iterations to prioritize work items slated for execution in the development cycle.
 
-. After you <<creating_a_new_iteration,create an iteration>> and <<associating_work_items_with_an_iteration,associate work items>> to the iteration, select the iteration to display the associated work items.
+. After you <<creating_a_new_iteration,create an iteration>> and <<associating_work_items_with_an_iteration-user-guide_iterations,associate work items>> to the iteration, select the iteration to display the associated work items.
 +
 NOTE: Only execution work item types such as *Feature*, *Task* and *Bug* are displayed in the iteration view. You can use the tree view to see the parent *Scenarios* or *Experiences* linked to the work items in the iteration.
 +

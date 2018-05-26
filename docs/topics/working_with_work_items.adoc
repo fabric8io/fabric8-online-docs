@@ -1,6 +1,6 @@
 [id="working_with_work_items"]
 = Working with work items
-
+:secondary: _work-items
 
 include::modules/about_work_items.adoc[leveloffset=+1]
 

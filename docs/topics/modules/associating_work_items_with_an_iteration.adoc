@@ -1,4 +1,4 @@
-[id="associating_work_items_with_an_iteration-{context}"]
+[id="associating_work_items_with_an_iteration-{context}{secondary}"]
 = Associating a work item with an iteration
 
 You can associate work items with relevant iterations based on your order of execution.
