@@ -8,7 +8,7 @@ To edit the documentation:
 
 2. Read the writing and markup conventions summary in the [Conventions and style guidelines](#conventions-and-style-guidelines) section.
 
-3. Ensure that you log an issue with the details of the problem in the [Documentation Repository Issue Tracker](https://github.com/fabric8io/fabric8-online-docs/issues) for context and assign it to yourself.
+3. Ensure that you log an issue with the details of the problem in the [Documentation Repository Issue Tracker](https://github.com/fabric8io/fabric8-online-docs/issues) for context and assign it to yourself. 
 
 4. Clone the documentation repository and make the relevant changes in a branch named after the issue you are working on.
 
@@ -40,6 +40,18 @@ To get started quickly, we recommend reviewing the following conventions that ar
 ### Markup conventions 
 
 For a quick primer about the Asciidoc conventions, see the [Red Hat Asciidoc Markup conventions](https://redhat-documentation.github.io/asciidoc-markup-conventions/) document. 
+
+### GitHub issue branch naming conventions
+
+When naming branches, refer to the appropriate GitHub issues as follows:
+
+1. Use the prefix *i1234* to indicate the issue number.
+
+2. After a hyphen, indicate which repository the issue belongs to (either the fabric8 repository or the openshift.io repository) using *f8* or *io* respectively.
+
+3. After a hyphen, add a phrase (without spaces and in lowercase) that broadly summarizes the issue.
+
+As an example, the branch name for https://github.com/fabric8io/fabric8-online-docs/issues/249 would be *i249-f8-branchnaming*.
 
 ### Additional Convention References
 
