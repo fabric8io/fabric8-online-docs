@@ -7,5 +7,5 @@
 
 .Procedure
 
-. Click your name in the top right corner of the application. If the current page does not show the profile menu, navigate to the main page at link:{osio-url}[{rhosio}].
+. Click your name in the top right corner of the application. 
 . In the drop-down menu, click the *Log Out* option.

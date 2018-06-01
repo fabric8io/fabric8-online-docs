@@ -5,7 +5,7 @@ An {osio} account with OpenShift Online provides two pods for your projects. To 
 
 . Click your username in the upper right corner of the {osio} page and click *Settings*.
 +
-image::profile_settings.png[Profile > Settings]
+image::profile_menu.png[Profile menu button]
 +
 . In the menu options, click *Resources*.
 +

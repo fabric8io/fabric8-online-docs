@@ -28,7 +28,7 @@ image:new_org_fields.png[New organization fields]
 
 .. Click *Settings* from the displayed options.
 +
-image::profile_settings.png[Profile menu button]
+image::profile_menu.png[Profile menu button]
 +
 . Under *Connected Accounts*, click the refresh icon for your GitHub account.
 +

@@ -9,15 +9,15 @@ Get the {osio} authentication token as follows:
 . On your {osio} home page, click your name on the top right corner of the screen to see the drop-down list.
 . Select *Profile* from the list to see your profile page.
 +
-image::ig_user_profile.png[user profile]
+image::profile_menu.png[Profile menu button]
 +
-. Click btn:[Update Profile] to edit your profile.
+. Click btn:[Edit Profile] to edit your profile.
 +
-image::ig_update_profile.png[update profile]
+image::edit_profile_button.png[Edit profile button]
 +
-. In the *Edit Profile* page, scroll down to the *Advanced* section and copy your *Personal Access Token*.
+. In the edit profile page displayed, copy your *Personal Access Token*.
 +
-image::ig_access_token.png[access token]
+image::edit_profile.png[Edit profile]
 
 NOTE: Your personal access token is meant to be private and confidential. Do not share it with others.
 
