@@ -3,13 +3,13 @@
 
 In the {osio} dashboard view, use the following steps to opt in or out of features:
 
-. Navigate to your *Profile* view:
+. Navigate to your *Settings* view:
 
 .. Click your name on the top right corner of the screen.
 
 .. Click *Settings* from the displayed options.
 +
-image::profile_settings.png[Profile menu button]
+image::profile_menu.png[Profile menu button]
 +
 . In the *Settings* page, click *Features Opt-in*.
 +

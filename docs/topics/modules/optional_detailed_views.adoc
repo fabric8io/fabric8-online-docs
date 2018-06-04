@@ -15,7 +15,7 @@ image::create_deployments_menu.png[Create > Deployments]
 +
 image::deployments_page.png[Deployments page warning]
 +
-. On the profile options page, select the *Experimental Features* option.
+. In the *Features Opt-in* tab, select the *Experimental Features* option.
 +
 image::features_options.png[Features options]
 +
@@ -23,7 +23,7 @@ The change is automatically applied to your profile. The following message displ
 +
 image::profile_updated.png[Profile updated]
 +
-. On the profile page, click your username in the upper left corner of the screen. In the displayed options, click the name of your space.
+. Click your username in the upper left corner of the screen. In the displayed options, click the name of your space.
 +
 image::spaces_home.png[Spaces box]
 +

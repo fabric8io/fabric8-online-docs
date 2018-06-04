@@ -3,9 +3,11 @@
 
 After logging in to {osio}, you can change your user preferences in the `Profile` section.
 
-include::modules/changing_your_privacy_settings.adoc[leveloffset=+1]
+include::modules/editing_your_profile.adoc[leveloffset=+1]
 
 include::modules/changing_your_password.adoc[leveloffset=+1]
+
+include::modules/cleaning_oso_account.adoc[leveloffset=+1]
 
 include::modules/adding_github_org.adoc[leveloffset=+1]
 
