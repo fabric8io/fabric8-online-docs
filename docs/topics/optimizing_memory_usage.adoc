@@ -5,9 +5,7 @@ After creating your first quickstart project, you will now learn to optimize you
 
 :context: optimizing_memory_usage
 
-include::modules/reviewing_resource_information_gui.adoc[leveloffset=+1]
-
-//include::modules/reviewing_resource_information_cli.adoc[leveloffset=+1]
+include::modules/viewing_resource_usage.adoc[leveloffset=+1]
 
 include::modules/reducing_project_memory_usage.adoc[leveloffset=+1]
 

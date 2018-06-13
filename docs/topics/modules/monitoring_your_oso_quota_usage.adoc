@@ -1,18 +1,16 @@
 [id="monitoring_your_oso_quota_usage"]
-= Monitoring your OpenShift Online quota usage
+= View your detailed OpenShift Online quota usage
 
-After <<reducing_project_memory_usage-optimizing_memory_usage>> and committing and pushing your changes, view your memory quota details and compare with the earlier output.
+An additional way to view the resource details for your projects is available in OpenShift Online. Use the following instructions to see these details:
 
 . Click *Create* and then *Pipelines* to view the new pipeline build. Committing and pushing your new YAML file triggers a new pipeline build for your {osio} project. Allow several minutes for the pipeline build to roll out to *Stage*:
 +
 image::rollout_to_stage.png[Rollout To Stage]
 +
-. In the OpenShift Online console browser tab, refresh the <<reviewing_resource_information_gui,*Details*>> page to see the optimized memory usage for your Hello World project:
+. In the OpenShift Online console browser tab, review the optimized memory usage for your Hello World project:
 +
 image::optimize_memory.png[Optimizing HW Memory Usage]
 +
-Compare these results to your earlier resource information to see the optimization of various resources.
-
 . <<approving_build_pipeline,Promote the application>> to the *Run* environment.
 
 NOTE: If you have completed these instructions for optimizing your resources but still do not have enough OpenShift Online resources, see <<cleaning_oso_account>> to reset your OpenShift Online and {osio} accounts.
