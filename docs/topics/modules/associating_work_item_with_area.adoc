@@ -7,7 +7,7 @@ By default, the name of your space is set as the root area for a work item.
 
 To assign a new area for your work item:
 
-. In the *Area* field, click the root area to see the the areas you can associate the work item with. The list of available areas for a space is set by the administrator for the space.
+. In the *Area* field, click the root area to see the areas you can associate the work item with. The list of available areas for a space is set by the administrator for the space.
 +
 image::wi_associate_area.png[Work Item-Area Association]
 . Select the required area and click *✓* to save the change.
