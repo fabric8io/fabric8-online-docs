@@ -11,7 +11,7 @@ After adding collaborators, you can view their details or remove them from your 
 
 .Procedure
 
-. Click the *Equalizer* button (image:equalizer.png[title="Equalizer"]) at the top of the screen.
+. Click the *Equalizer* tab (image:equalizer.png[title="Equalizer"]) at the top of the screen.
 . Click btn:[Collaborators].
 +
 image::collaborators_button.png[Collaborators button]

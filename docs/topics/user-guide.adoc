@@ -18,13 +18,13 @@ include::changing_user_preferences.adoc[leveloffset=+1]
 
 include::working_with_spaces.adoc[leveloffset=+1]
 
+include::working_with_areas.adoc[leveloffset=+1]
+
 include::working_with_collaborators.adoc[leveloffset=+1]
 
 include::working_with_work_items.adoc[leveloffset=+1]
 
 include::working_with_iterations.adoc[leveloffset=+1]
-
-include::working_with_areas.adoc[leveloffset=+1]
 
 include::working_with_codebases.adoc[leveloffset=+1]
 

@@ -11,7 +11,7 @@ You can add other {osio} users as collaborators to your space and then assign wo
 .Procedure
 
 . From your {osio} dashboard, click the name of a space to view its dashboard.
-. Click the Equalizer icon (image:equalizer.png[title="Settings"]) at the top of the screen.
+. Click the Equalizer tab (image:equalizer.png[title="Settings"]) at the top of the screen.
 . Click *Collaborators*.
 +
 image::collaborators_button.png[Collaborators button]
