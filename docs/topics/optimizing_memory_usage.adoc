@@ -1,19 +1,25 @@
 [id="optimizing_memory_usage"]
 = Optimizing your memory usage
 
+:context: optimizing_memory_usage
+
 After creating your first quickstart project, you need to optimize the application's memory usage. You can either:
 
-* See an overview of the pods used in {osio}. See <<viewing_resource_usage>> for instructions.
-* See the detailed memory and other usage information using OpenShift Online
+* See a high level overview of the resources used in {osio}. See <<viewing_resource_usage>>.
 
-:context: optimizing_memory_usage
+* See the detailed memory and other usage information using OpenShift Online:
+  1. Review your current memory usage. See <<reviewing_detailed_resource_information>>.
+  2. Edit your project code to reduce your project's memory usages and commit the changes. See <<reducing_project_memory_usage-{context}>> and <<committing_pushing_changes_git-{context}>>
+  3. Compare the memory usage after the changed code builds. See <<monitoring_your_oso_quota_usage>>.
+
 
 include::modules/viewing_resource_usage.adoc[leveloffset=+1]
 
-include::modules/reviewing_resource_information_gui.adoc[leveloffset=+1]
+include::modules/reviewing_detailed_resource_information.adoc[leveloffset=+1]
 
 include::modules/reducing_project_memory_usage.adoc[leveloffset=+1]
 
 include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
 
 include::modules/monitoring_your_oso_quota_usage.adoc[leveloffset=+1]
+

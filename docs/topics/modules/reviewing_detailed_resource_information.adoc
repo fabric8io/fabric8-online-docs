@@ -1,4 +1,5 @@
-[id="reviewing_resource_information_gui"]
+[id="reviewing_detailed_resource_information"]
+
 = Reviewing detailed resource information in OpenShift Online
 
 An additional way to review the detailed resource information for your {osio} account is to review the details in OpenShift Online.
@@ -27,4 +28,4 @@ image::hw_pod.png[Hello World Project Pod]
 +
 image::resources.png[Resources]
 +
-Use this page to review the memory usage for your {osio} project. Save the details to compare after following the steps in <<reducing_project_memory_usage>>.
+Use this page to review the memory usage for your {osio} project. Save the details to compare after following the steps in <<reducing_project_memory_usage-{context}>>.
