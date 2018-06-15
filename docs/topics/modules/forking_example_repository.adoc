@@ -1,7 +1,7 @@
 [id="forking_example_repository"]
 = Forking an example repository
 
-In addition to creating projects based on quickstarts, you can also add projects by using the *Import existing code* feature.
+In addition to creating projects based on quickstarts, you can also add projects by using the *Import an existing codebase* feature.
 
 
 [discrete]

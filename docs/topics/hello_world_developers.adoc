@@ -7,6 +7,8 @@ include::modules/creating_new_space.adoc[leveloffset=+1]
 
 include::modules/planning_development_work.adoc[leveloffset=+1]
 
+include::modules/about_codebases.adoc[leveloffset=+1]
+
 include::modules/creating_new_project.adoc[leveloffset=+1]
 
 include::modules/about_stage_run.adoc[leveloffset=+1]
@@ -14,8 +16,6 @@ include::modules/about_stage_run.adoc[leveloffset=+1]
 include::modules/working_with_pipelines.adoc[leveloffset=+1]
 
 include::modules/viewing_build_pipeline_oso.adoc[leveloffset=+1]
-
-include::modules/about_codebases.adoc[leveloffset=+1]
 
 include::modules/approving_build_pipeline.adoc[leveloffset=+1]
 
