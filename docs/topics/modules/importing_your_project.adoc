@@ -9,7 +9,7 @@ After creating a space, the *Create an Application* wizard to create application
 image::app_name_requirements.png[Naming Requirements]
 +
 
-. Select the *Import existing code* radio button and then click btn:[Continue] to import an existing project codebase into {osio}.
+. Select the *Import an existing codebase* radio button and then click btn:[Continue] to import an existing project codebase into {osio}.
 +
 image::importing_project.png[Importing Project]
 +
