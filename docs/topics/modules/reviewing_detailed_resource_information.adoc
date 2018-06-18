@@ -1,20 +1,36 @@
-[id="reviewing_detailed_resource_information"]
+[id="reviewing_detailed_resource_information-{context}"]
 
 = Reviewing detailed resource information in OpenShift Online
 
-An additional way to review the detailed resource information for your {osio} account is to review the details in OpenShift Online.
-
+// for GSG
+ifeval::["{context}" == "optimizing_memory_usage"]
 The memory allowances for each OpenShift pod is 512{nbsp}MiB. As a result, each application consumes nearly 1{nbsp}GiB of memory for the *Stage* and *Run* environments.
 
-To check the memory limit in OpenShift Online user interface:
+To check the your resource information details in OpenShift:
+endif::[]
+
+// for user-guide
+ifeval::["{context}" == "user-guide"]
+After creating or adding a project to {osio}, you can see more detailed resource usage in OpenShift Online as follows:
+endif::[]
 
 . In a new browser tab, navigate to the OpenShift Online console at link:https://console.starter-us-east-2.openshift.com/[console.starter-us-east-2.openshift.com].
 
+// for GSG
+ifeval::["{context}" == "optimizing_memory_usage"]
 . From the list of projects at the right side of the page, click *_username_-run* to see the resources used for the *Run* environment or *_username_-stage* to see the resources for the *Stage* environment.
 +
 image::select_project_run.png[Select the Run Project]
 +
-See <<viewing_projects_oso>> for details about the listed projects.
+See <<viewing_projects_oso>> for details about the listed projects
+endif::[
+
+// for user-guide
+ifeval::["{context}" == "user-guide"]
+. From the list of projects at the right side of the page, click *_username_-run* to see the resources used for the *Run* environment or *_username_-stage* to see the resources for the *Stage* environment.
++
+image::select_project_run.png[Select the Run Project]
+endif::[]
 
 . Click btn:[Applications] and then select *Pods* in the displayed submenu.
 +
@@ -28,4 +44,9 @@ image::hw_pod.png[Hello World Project Pod]
 +
 image::resources.png[Resources]
 +
-Use this page to review the memory usage for your {osio} project. Save the details to compare after following the steps in <<reducing_project_memory_usage-{context}>>.
+Use this page to review the memory usage for your {osio} project. 
+
+// for GSG
+ifeval::["{context}" == "optimizing_memory_usage"]
+Save the details to compare after following the steps in <<reducing_project_memory_usage-{context}>>.
+endif::[]
