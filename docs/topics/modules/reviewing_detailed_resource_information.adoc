@@ -6,7 +6,7 @@
 ifeval::["{context}" == "optimizing_memory_usage"]
 The memory allowances for each OpenShift pod is 512{nbsp}MiB. As a result, each application consumes nearly 1{nbsp}GiB of memory for the *Stage* and *Run* environments.
 
-To check the your resource information details in OpenShift:
+To check your resource information details in OpenShift:
 endif::[]
 
 // for user-guide
@@ -23,7 +23,7 @@ ifeval::["{context}" == "optimizing_memory_usage"]
 image::select_project_run.png[Select the Run Project]
 +
 See <<viewing_projects_oso>> for details about the listed projects
-endif::[
+endif::[]
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
