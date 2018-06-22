@@ -1,7 +1,7 @@
 [id=viewing_resource_usage]
 = Viewing resource usage
 
-An {osio} account with OpenShift Online provides two pods for your projects. To view how much of these resources are currently used in {osio}, navigate to the *Resources* page as follows:
+An {osio} account with OpenShift Online provides two pods for your projects. To view how many of these resources are currently used in {osio}, navigate to the *Resources* page as follows:
 
 . Click your username in the upper right corner of the {osio} page and click *Settings*.
 +
