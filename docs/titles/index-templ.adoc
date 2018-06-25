@@ -17,6 +17,7 @@ include::../meta/attributes.adoc[]
 == Start using OpenShift.io
 
 * link:getting-support.html[Get support for OpenShift.io]
+//done till here
 * link:set-up-team-permissions.html[Set up team permissions]
 * link:new-space-quickstart-app.html[Create a new space and a new quickstart project]
 * link:plan-track-code-changes.html[Plan and track changes to your project code]
@@ -25,8 +26,6 @@ include::../meta/attributes.adoc[]
 * link:import-existing-project.html[Import an existing project into OpenShift.io]
 * link:optimize-osio-resources.html[Optimize OpenShift.io resources]
 * link:use-data-analytics.html[Use data analytics to develop your application]
-
-
 
 [discrete]
 == Documentation for End Users
