@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 GENERATOR_DOCKER_HUB_USERNAME=openshiftioadmin
-REGISTRY_URI="push.registry.devshift.net"
+REGISTRY_URI="quay.io"
 REGISTRY_NS="fabric8io"
 REGISTRY_IMAGE="fabric8-online-docs"
 BUILDER_IMAGE="docs-builder"
@@ -10,10 +10,10 @@ DEPLOY_IMAGE="docs-deploy"
 DEPLOY_CONT="docs-deploy-container"
 
 if [ "$TARGET" = "rhel" ]; then
-    REGISTRY_URL=${REGISTRY_URI}/osio-prod/${REGISTRY_NS}/${REGISTRY_IMAGE}
+    REGISTRY_URL=${REGISTRY_URI}/openshiftio/rhel-${REGISTRY_NS}-${REGISTRY_IMAGE}
     DOCKERFILE_DEPLOY="Dockerfile.deploy.rhel"
 else
-    REGISTRY_URL=${REGISTRY_URI}/${REGISTRY_NS}/${REGISTRY_IMAGE}
+    REGISTRY_URL=${REGISTRY_URI}/openshiftio/${REGISTRY_NS}-${REGISTRY_IMAGE}
     DOCKERFILE_DEPLOY="Dockerfile.deploy"
 fi
 
@@ -40,8 +40,11 @@ function tag_push() {
 set -ex
 
 if [ -z $CICO_LOCAL ]; then
-    [ -f jenkins-env ] && cat jenkins-env | grep -e PASS -e GIT -e DEVSHIFT > inherit-env
-    [ -f inherit-env ] && . inherit-env
+    eval "$(./env-toolkit load -f jenkins-env.json \
+            DEVSHIFT_TAG_LEN \
+            QUAY_USERNAME \
+            QUAY_PASSWORD \
+            GIT_COMMIT)"
 
     # We need to disable selinux for now, XXX
     /usr/sbin/setenforce 0 || :
@@ -69,7 +72,7 @@ docker run --rm --name=${BUILDER_CONT} -it --volume=$(pwd)/${TARGET_DIR}:/${TARG
 
 #LOGIN IS REQUIRED FOR BUILDING ON RHEL
 if [ -z "$CICO_LOCAL" ]; then
-  docker_login "${DEVSHIFT_USERNAME}" "${DEVSHIFT_PASSWORD}" "${REGISTRY_URI}"
+  docker_login "${QUAY_USERNAME}" "${QUAY_PASSWORD}" "${REGISTRY_URI}"
 fi
 
 #BUILD DEPLOY IMAGE
