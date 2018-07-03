@@ -115,6 +115,6 @@ objects:
       name: fabric8-online-docs-app
 parameters:
 - name: IMAGE
-  value: registry.devshift.net/fabric8io/fabric8-online-docs
+  value: quay.io/openshiftio/rhel-fabric8io-fabric8-online-docs
 - name: IMAGE_TAG
   value: latest
