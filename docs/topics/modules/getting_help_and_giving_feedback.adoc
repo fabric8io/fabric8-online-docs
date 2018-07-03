@@ -1,5 +1,5 @@
-[id="getting-support"]
-= Getting support
+[id="getting-help-and-giving-feedback"]
+= Getting help and giving feedback
 
 The {osio} team love to get feedback from our users. Tell us what you like, what you hate, what you wish you could do, what you wish the service would stop doing, and anything else that you think we should know as we work on improving {osio}.
 

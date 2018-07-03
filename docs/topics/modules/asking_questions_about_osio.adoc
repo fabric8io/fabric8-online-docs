@@ -1,7 +1,7 @@
 [id="asking-questions-about-osio"]
 = Asking questions about OpenShift.io
 
-The {osio} support chat channel is the best way to ask questions or get immediate support for {osio} at any time. We encourage users to ask us questions and get immediate answers and assistance rather than spend their time debugging or troubleshooting problems themselves.
+The {osio} MatterMost chat channel is the best way to ask questions or get immediate help for {osio} at any time. Rather than troubleshooting themselves, we encourage users to ask their question or discuss the problem they are facing there for a fast response and solution.
 
 If you don't already have a MatterMost account:
 
