@@ -20,33 +20,33 @@ include::../meta/attributes.adoc[]
 === Starting using OpenShift.io
 
 * link:getting_help_and_logging_issues.html[Getting help and logging issues for OpenShift.io]
-//done till here
-* link:set-up-team-permissions.html[Setting up team permissions]
+* link:setting_up_team_permissions.html[Setting up team permissions]
+// TODO WRITER THIS^
 
 //[discrete]
 //=== Planning a project
 
 [discrete]
-=== Start working on a new project
+=== Starting a new project
 
-* link:new-space-quickstart-app.html[Create a new space and a new quickstart project]
-* link:plan-track-code-changes.html[Plan and track changes to your project code]
-* link:edit-code-review-changes.html[Edit your project code and review changes]
+* link:creating_new_space_and_new_quickstart_project.html[Creating a new space and a new quickstart project]
+* link:plan-track-code-changes.html[Planning and tracking changes to your project code]
+* link:edit-code-review-changes.html[Editing your project code and reviewing changes]
 
 [discrete]
 === Importing an existing project into OpenShift.io
 
-* link:import-existing-project.html[Import an existing project into OpenShift.io]
+* link:import-existing-project.html[Importing an existing project into OpenShift.io]
 
 [discrete]
 === Optimizing your project code
 
-* link:optimize-osio-resources.html[Optimize OpenShift.io resources]
-* link:use-data-analytics.html[Use data analytics to develop your application]
+* link:optimize-osio-resources.html[Optimizing OpenShift.io resources]
+* link:use-data-analytics.html[Using data analytics to develop your application]
 
 == Debugging your code
 
-* link:debug-project-code.html[Debug your project code]
+* link:debug-project-code.html[Debugging your project code]
 
 
 [discrete]
