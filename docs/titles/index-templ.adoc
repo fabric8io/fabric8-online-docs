@@ -21,7 +21,7 @@ include::../meta/attributes.adoc[]
 
 * link:getting_help_and_logging_issues.html[Getting help and logging issues for OpenShift.io]
 * link:setting_up_team_permissions.html[Setting up team permissions]
-// TODO WRITER THIS^
+// TODO WRITE THIS^
 
 //[discrete]
 //=== Planning a project
@@ -29,14 +29,16 @@ include::../meta/attributes.adoc[]
 [discrete]
 === Starting a new project
 
-* link:creating_new_space_and_new_quickstart_project.html[Creating a new space and a new quickstart project]
-* link:plan-track-code-changes.html[Planning and tracking changes to your project code]
-* link:edit-code-review-changes.html[Editing your project code and reviewing changes]
+* link:creating_new_space_and_vertx_quickstart_project.html[Creating a new space and a new Vert.x quickstart project]
+* link:planning_development_work.html[Planning your development work]
+* link:editing_project_code_and_reviewing_changes.html[Editing your project code and reviewing changes]
 
 [discrete]
 === Importing an existing project into OpenShift.io
 
-* link:import-existing-project.html[Importing an existing project into OpenShift.io]
+* link:creating_new_space_and_importing_existing_project.html[Creating a new space and importing an existing project into OpenShift.io]
+* link:editing_existing_project_code_and_reviewing_changes.html[Editing your existing project's code and reviewing changes]
+//stopped here
 
 [discrete]
 === Optimizing your project code

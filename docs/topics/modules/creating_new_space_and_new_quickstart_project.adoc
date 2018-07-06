@@ -1,3 +1,0 @@
-[id="creating_new_space_and_new_quickstart_project"]
-= Creating a new space and a new quickstart project
-

@@ -1,0 +1,22 @@
+[id="creating_new_space_and_vertx_quickstart_project"]
+= Creating a new space and a new Vert.x quickstart project
+
+:context: hello-world
+
+After creating an account, you must create a Space to add or create a project.
+
+include::modules/creating_new_space.adoc[leveloffset=+1]
+
+include::modules/creating_new_project.adoc[leveloffset=+1]
+
+include::modules/working_with_pipelines.adoc[leveloffset=+1]
+
+include::modules/viewing_build_pipeline_oso.adoc[leveloffset=+1]
+
+include::modules/approving_build_pipeline.adoc[leveloffset=+1]
+
+include::modules/optional_detailed_views.adoc[leveloffset=+1]
+
+include::modules/viewing_project_github.adoc[leveloffset=+1]
+
+include::modules/viewing_projects_oso.adoc[leveloffset=+1]
