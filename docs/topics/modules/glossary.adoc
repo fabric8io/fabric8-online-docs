@@ -19,11 +19,12 @@ This file is consumed for the automatic generation of infotips used by OSIO web 
   // endterm
 
 * When adding a new term, either use the `uuidgen` command on the CLI or use  https://www.uuidgenerator.net/ to generate a new UUID.
+Note: Planner UX provides uuids for each of the terms requiring infotips, use them rather than generating new ones.
 * Never change existing UUIDs; even when correcting the name of the term.
 * Never remove terms, unless first agreed on with the respective OSIO team that uses its definition.
 * Alphabetize the terms for easy orientation.
-* Use $ ./scripts/export_infotips.sh to update json file.
-* Use $ cat json/infotips.json | jq to verify the updated json and then add, commit and push both glossary.adoc ans the json file.
+* After you update the glossary, use $ ./scripts/export_infotips.sh to update the json file.
+* Use $ cat json/infotips.json | jq to verify the updated json and then add, commit and push both glossary.adoc and the json file.
 
 ////
 
@@ -55,17 +56,38 @@ bug:: A defect that causes unexpected behavior in the software and that needs to
 // endterm
 ////
 
+// term: 676c75df-bc94-4cd1-a219-dd4283d35a16, en
+business value:: The value or benefit estimated to be derived by the organization or business on completion.
+// endterm
+
 // term: 1694e637-2f9b-40ec-8fa8-a22472850ff9, en
 companion dependency:: Based on the analysis of your stack, {osio} suggests additional dependencies that can add value to your stack.
 // endterm
 
-// term: f450d7d0-3d38-4887-83ca-38d27c109b59, en
-epic:: A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic.
+// term: 04049d50-a1b9-42ac-89b5-0382088cb7b6, en
+component:: A distinct subsystem within the system that performs common functions.
+// endterm
+
+
+// term: fce0921f-ea70-4513-bb91-31d3aa8017f1, en
+defect:: An unacceptable variation between the actual behavior and the expected behavior of the software.
+// endterm
+
+// term: 8e1cd761-c1c4-4fe3-af68-200ca799a0af, en
+effort:: Estimate of the amount of work required to complete the work item.
+// endterm
+
+// term: 2c169431-a55d-49eb-af74-cc19e895356f, en
+epic:: A large user story, with a focused goal, that may need to be split into multiple user stories spanning over multiple iterations to be realized. It could comprise a short statement or phrase, a coherent aggregation of user stories and requirements, or an idea.
 // endterm
 
 ////
 // term: d0d33acf-7629-4653-9551-97ed9156f127, en
 (wig) epic:: A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic.
+// endterm
+
+// term: f450d7d0-3d38-4887-83ca-38dcd27c109b59, en
+(scrum)epic:: A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic.
 // endterm
 ////
 
@@ -99,15 +121,14 @@ feature:: Features, often expressed as user stories, are required to actualize p
 fundamental:: A fundamental describes the basic essentials of a software product, such as quality and performance standards. It is a non-negotiable aspect of a product and its absence reduces the value provided to the user.
 // endterm
 
-////
-// term: fca1397f-cd58-4f12-ad22-0cce8451a764, en
-impediment:: An impediment is anything that affects team performance or progress. It may include high probability risks that are likely to occur fairly soon.
+// term: 03b9bb64-4f65-4fa7-b165-494cd4f01401, en
+impediment:: Any issue or blocker that slows down the velocity of a team and affects team performance or progress.
 // endterm
-////
 
 ////
 // term: d5bd6f64-cee4-46d7-9b12-b3cb5e70145e, en
-issue:: An issue is an unmet user expectation, an observation that something doesn't work as one expects it to. It could represent bugs, feature requests, or enhancements and are linked to an appropriate work item in the backlog as part of the triage process. // endterm
+issue:: An issue is an unmet user expectation, an observation that something doesn't work as one expects it to. It could represent bugs, feature requests, or enhancements and are linked to an appropriate work item in the backlog as part of the triage process.
+// endterm
 ////
 
 // term: 5c3ee317-3cdd-4ee6-a27f-85965f777ee3, en
@@ -117,6 +138,12 @@ iteration:: A development cycle used to organize, plan, and execute work items i
 ////
 // term: 4d187330-0efb-4077-8745-8a61384a6540, en
 (scrum) iteration:: A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.
+// endterm
+////
+
+////
+// term: 49d1a19f-02b4-4a10-a774-5723299f8944, en
+(agile) iteration:: A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.
 // endterm
 ////
 
@@ -150,12 +177,12 @@ scenario:: A scenario identifies a real-world user problem to resolve. Addressin
 
 ////
 // term: 679a563c-ac9b-4478-9f3e-4187f708dd30, en
-scenarios:: Work item type group that focuses on the planning oriented work item types such as scenario, fundamental and papercuts.
+scenarios:: Work item type group that focuses on the planning oriented work item types such as scenario, fundamental, and papercuts.
 // endterm
 ////
 
 // term: eb05f2b6-8a3c-4054-b28c-3eb1a47c125f, en
-scenario-driven development:: An agile development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.
+scenario-driven development:: An agile development methodology focused on real-world problems or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.
 // endterm
 
 // term: d6cb8344-ce3b-4aed-b517-78303d253bcf, en
@@ -170,6 +197,10 @@ security issue:: OpenShift.io analyzes the CVEs of all your dependencies and fla
 space:: A space is the equivalent of a project. Each iteration and work item must be attached to a space, and a team of people can be attached to a space in various roles. By default, a space contains at least one area and one iteration.
 // endterm
 
+// term: 6ff83406-caa7-47a9-9200-4ca796be11bb, en
+story:: Incremental work or requirements, identified collaboratively by the team and the product owner, to deliver a product feature. Typically, they consist of a description expressed from the user’s perspective in the format - As a _user_, I want to achieve _objective_, so that this _purpose_ is met. It has an estimated size and an acceptance criteria to validate the work.
+// endterm
+
 // term: bbf35418-04b6-426c-a60b-7f80beb0b624, en
 task:: Work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours.
 // endterm
@@ -179,6 +210,20 @@ task:: Work assigned to various team members to implement a feature. They are ge
 (scrum) task:: Work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours.
 // endterm
 ////
+
+////
+// term: 2853459d-60ef-4fbe-aaf4-eccb9f554b34, en
+(agile) task:: Work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours.
+// endterm
+////
+
+// term: 5182fc8c-b1d6-4c3d-83ca-6a3c781fa18a, en
+theme:: A group of user stories with a common underlying thread. They have a broad organizational level focus and are used to track related user stories.
+// endterm
+
+// term: 676c75df-bc94-4cd1-a219-dd4283d35a16, en
+time criticality:: It captures how business value of a work item decreases over time, higher values indicate greater time criticality. It indicates the criticality of meeting a deadline to derive maximum business value.
+// endterm
 
 // term: 0b52988d-9cea-47a6-9769-d677bff95ed3, en
 unknown license:: Licenses unknown to OpenShift.io.
@@ -192,7 +237,7 @@ usage outlier:: Dependencies in your stack that are not commonly used in similar
 value proposition:: A statement of the value provided to the user by addressing a scenario, fundamental, or papercut. Each of which can have multiple value propositions.
 // endterm
 
-// term: 83e7953e-9335-428c-b1af-7aa4b00cd662, en
+// term: 1c21af72-59ab-43d7-a84c-e76ee8ed3342, en
 work item:: Work items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each work item must be attached to a space and an area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
 // endterm
 

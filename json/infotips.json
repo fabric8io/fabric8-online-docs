@@ -23,16 +23,36 @@
       "term": "(scrum) bug",
       "en": "A defect that causes unexpected behavior in the software and that needs to be fixed."
    },
+   "676c75df-bc94-4cd1-a219-dd4283d35a16": {
+      "term": "business value",
+      "en": "The value or benefit estimated to be derived by the organization or business on completion."
+   },
    "1694e637-2f9b-40ec-8fa8-a22472850ff9": {
       "term": "companion dependency",
       "en": "Based on the analysis of your stack, {osio} suggests additional dependencies that can add value to your stack."
    },
-   "f450d7d0-3d38-4887-83ca-38d27c109b59": {
+   "04049d50-a1b9-42ac-89b5-0382088cb7b6": {
+      "term": "component",
+      "en": "A distinct subsystem within the system that performs common functions."
+   },
+   "fce0921f-ea70-4513-bb91-31d3aa8017f1": {
+      "term": "defect",
+      "en": "An unacceptable variation between the actual behavior and the expected behavior of the software."
+   },
+   "8e1cd761-c1c4-4fe3-af68-200ca799a0af": {
+      "term": "effort",
+      "en": "Estimate of the amount of work required to complete the work item."
+   },
+   "2c169431-a55d-49eb-af74-cc19e895356f": {
       "term": "epic",
-      "en": "A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic."
+      "en": "A large user story, with a focused goal, that may need to be split into multiple user stories spanning over multiple iterations to be realized. It could comprise a short statement or phrase, a coherent aggregation of user stories and requirements, or an idea."
    },
    "d0d33acf-7629-4653-9551-97ed9156f127": {
       "term": "(wig) epic",
+      "en": "A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic."
+   },
+   "f450d7d0-3d38-4887-83ca-38dcd27c109b59": {
+      "term": "(scrum)epic",
       "en": "A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic."
    },
    "b9a71831-c803-4f66-8774-4193fffd1311": {
@@ -59,13 +79,13 @@
       "term": "fundamental",
       "en": "A fundamental describes the basic essentials of a software product, such as quality and performance standards. It is a non-negotiable aspect of a product and its absence reduces the value provided to the user."
    },
-   "fca1397f-cd58-4f12-ad22-0cce8451a764": {
+   "03b9bb64-4f65-4fa7-b165-494cd4f01401": {
       "term": "impediment",
-      "en": "An impediment is anything that affects team performance or progress. It may include high probability risks that are likely to occur fairly soon."
+      "en": "Any issue or blocker that slows down the velocity of a team and affects team performance or progress."
    },
    "d5bd6f64-cee4-46d7-9b12-b3cb5e70145e": {
       "term": "issue",
-      "en": "An issue is an unmet user expectation, an observation that something doesn't work as one expects it to. It could represent bugs, feature requests, or enhancements and are linked to an appropriate work item in the backlog as part of the triage process. // endterm ////"
+      "en": "An issue is an unmet user expectation, an observation that something doesn't work as one expects it to. It could represent bugs, feature requests, or enhancements and are linked to an appropriate work item in the backlog as part of the triage process."
    },
    "5c3ee317-3cdd-4ee6-a27f-85965f777ee3": {
       "term": "iteration",
@@ -73,6 +93,10 @@
    },
    "4d187330-0efb-4077-8745-8a61384a6540": {
       "term": "(scrum) iteration",
+      "en": "A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration."
+   },
+   "49d1a19f-02b4-4a10-a774-5723299f8944": {
+      "term": "(agile) iteration",
       "en": "A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration."
    },
    "f05a151a-61fa-45b1-8d8b-b3fd7bc63ea9": {
@@ -105,11 +129,11 @@
    },
    "679a563c-ac9b-4478-9f3e-4187f708dd30": {
       "term": "scenarios",
-      "en": "Work item type group that focuses on the planning oriented work item types such as scenario, fundamental and papercuts."
+      "en": "Work item type group that focuses on the planning oriented work item types such as scenario, fundamental, and papercuts."
    },
    "eb05f2b6-8a3c-4054-b28c-3eb1a47c125f": {
       "term": "scenario-driven development",
-      "en": "An agile development methodology focused on real-world problems, or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences."
+      "en": "An agile development methodology focused on real-world problems or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences."
    },
    "d6cb8344-ce3b-4aed-b517-78303d253bcf": {
       "term": "scrum",
@@ -123,6 +147,10 @@
       "term": "space",
       "en": "A space is the equivalent of a project. Each iteration and work item must be attached to a space, and a team of people can be attached to a space in various roles. By default, a space contains at least one area and one iteration."
    },
+   "6ff83406-caa7-47a9-9200-4ca796be11bb": {
+      "term": "story",
+      "en": "Incremental work or requirements, identified collaboratively by the team and the product owner, to deliver a product feature. Typically, they consist of a description expressed from the user’s perspective in the format - As a _user_, I want to achieve _objective_, so that this _purpose_ is met. It has an estimated size and an acceptance criteria to validate the work."
+   },
    "bbf35418-04b6-426c-a60b-7f80beb0b624": {
       "term": "task",
       "en": "Work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours."
@@ -130,6 +158,14 @@
    "db906e00-a5fa-4a86-8ef7-772c89f703ac": {
       "term": "(scrum) task",
       "en": "Work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours."
+   },
+   "2853459d-60ef-4fbe-aaf4-eccb9f554b34": {
+      "term": "(agile) task",
+      "en": "Work assigned to various team members to implement a feature. They are generally measured in units of 0.5 days, for example, four hours, eight hours, sixteen hours."
+   },
+   "5182fc8c-b1d6-4c3d-83ca-6a3c781fa18a": {
+      "term": "theme",
+      "en": "A group of user stories with a common underlying thread. They have a broad organizational level focus and are used to track related user stories."
    },
    "0b52988d-9cea-47a6-9769-d677bff95ed3": {
       "term": "unknown license",
@@ -143,7 +179,7 @@
       "term": "value proposition",
       "en": "A statement of the value provided to the user by addressing a scenario, fundamental, or papercut. Each of which can have multiple value propositions."
    },
-   "83e7953e-9335-428c-b1af-7aa4b00cd662": {
+   "1c21af72-59ab-43d7-a84c-e76ee8ed3342": {
       "term": "work item",
       "en": "Work items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each work item must be attached to a space and an area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more."
    },
