@@ -52,7 +52,7 @@ endif::[]
 +
 // for user-guide
 ifeval::["{context}" == "user-guide"]
-. Use the *Development Process* drop-down list to select a template for your new space. You can select *Scenario Driven Development* or the *Scrum* template. For this example, keep the default option for this field.
+. Use the *Development Process* drop-down list to select a template for your new space. You can select *Scenario Driven Development* or the *Agile* template. For this example, keep the default option for this field.
 +
 NOTE: The *Development Process* you select while creating your space determines the guided work item type hierarchy in planner and the available work item types to plan your development work.
 

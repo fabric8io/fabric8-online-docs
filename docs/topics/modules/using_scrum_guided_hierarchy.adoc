@@ -22,11 +22,7 @@ image::create_epic.png[Create Epic]
 .. Press kbd:[Enter] to create the work item. Alternatively, to create the work item and see the detailed view for the work item, click btn:[Add and open].
 
 . Create a child *Feature* for the *Epic* using the in-line add option as follows:
-.. In the work item list, click the (+) icon adjacent to the *Epic* for which you want to add a child *Feature*.
-+
-image::inline_add.png[Inline Add]
-+
-The in-line *Add Child Work Item* pane is displayed below it.
+.. In the work item list, click the (+) icon adjacent to the *Epic* for which you want to add a child *Feature*. The in-line *Add Child Work Item* pane is displayed below it.
 +
 image::add_feature.png[Add Feature]
 
