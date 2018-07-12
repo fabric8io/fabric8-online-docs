@@ -38,17 +38,16 @@ include::../meta/attributes.adoc[]
 
 * link:creating_new_space_and_importing_existing_project.html[Creating a new space and importing an existing project into OpenShift.io]
 * link:editing_existing_project_code_and_reviewing_changes.html[Editing your existing project's code and reviewing changes]
-//stopped here
 
 [discrete]
 === Optimizing your project code
 
-* link:optimize-osio-resources.html[Optimizing OpenShift.io resources]
-* link:use-data-analytics.html[Using data analytics to develop your application]
+* link:optimizing_osio_resources.html[Optimizing OpenShift.io resources]
+//* link:using_data_analytics_to_develop_your_application.html[Using data analytics to develop your application]
 
 == Debugging your code
 
-* link:debug-project-code.html[Debugging your project code]
+* link:debugging_your_project_code.html[Debugging your project code]
 
 
 [discrete]
