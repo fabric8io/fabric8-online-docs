@@ -1,6 +1,8 @@
 [id="troubleshooting"]
 = Troubleshooting
 
+The following section lists the common issues you may face when using {osio} and the workarounds to resolve them. For further information also see the link:https://github.com/openshiftio/openshift.io/wiki/FAQ[Frequently asked questions]. 
+
 include::modules/login_issues.adoc[leveloffset=+1]
 
 include::modules/enable_popups.adoc[leveloffset=+1]
