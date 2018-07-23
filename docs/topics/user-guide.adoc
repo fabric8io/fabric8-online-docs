@@ -34,6 +34,8 @@ include::working_with_stack_reports.adoc[leveloffset=+1]
 
 include::working_with_che_workspaces.adoc[leveloffset=+1]
 
+include::working_with_osio_resources.adoc[leveloffset=+1]
+
 //troubleshooting
 include::troubleshooting.adoc[leveloffset=+1]
 

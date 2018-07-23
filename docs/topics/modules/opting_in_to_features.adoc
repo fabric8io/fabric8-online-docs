@@ -7,7 +7,7 @@ In the {osio} dashboard view, use the following steps to opt in or out of featur
 
 .. Click your name on the top right corner of the screen.
 
-.. Click *Settings* from the displayed options.
+.. Select *Settings* from the displayed options.
 +
 image::profile_menu.png[Profile menu button]
 +

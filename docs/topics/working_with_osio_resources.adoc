@@ -1,0 +1,8 @@
+[id="working_with_osio_resources"]
+= Working with {osio} resources
+
+include::modules/viewing_resource_usage.adoc[leveloffset=+1]
+
+include::modules/reviewing_detailed_resource_information.adoc[leveloffset=+1]
+
+include::modules/cleaning_oso_account.adoc[leveloffset=+1]
