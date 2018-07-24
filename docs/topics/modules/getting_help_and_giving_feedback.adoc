@@ -1,0 +1,13 @@
+[id="getting_help_and_giving_feedback"]
+= Getting help and giving feedback
+
+The {osio} team want feedback from our users. Tell us what you like, what you hate, what you wish you could do, what you wish the service would stop doing, and anything else that you think we should know as we work on improving {osio}.
+
+include::asking_questions_about_osio.adoc[leveloffset=+1]
+
+include::send_us_feedback_about_osio.adoc[leveloffset=+1]
+
+include::send_us_feedback_about_documentation.adoc[leveloffset=+1]
+
+
+

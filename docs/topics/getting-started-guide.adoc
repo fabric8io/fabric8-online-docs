@@ -1,9 +1,9 @@
-[id=learn_about_osio]
+[id="learn_about_osio"]
 = Learn about {osio}
 
 include::modules/introduction.adoc[leveloffset=+1]
 
-include::modules/getting-support.adoc[leveloffset=+1]
+include::modules/getting_help_and_giving_feedback.adoc[leveloffset=+1]
 
 include::before_you_start.adoc[leveloffset=+1]
 

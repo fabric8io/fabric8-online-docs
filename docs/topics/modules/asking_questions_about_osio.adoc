@@ -1,0 +1,33 @@
+[id="asking-questions-about-osio"]
+= Asking questions about OpenShift.io
+
+The {osio} MatterMost chat channel is the best way to ask questions or get immediate help for {osio} at any time. Rather than troubleshooting themselves, we encourage users to ask their question or discuss the problem they are facing there for a fast response and solution.
+
+If you don't already have a MatterMost account:
+
+. Navigate to link:https://chat.openshift.io[https://chat.openshift.io] and click *Create one now*.
++
+image::mm_create_account.png[Create an account]
++
+. Add your details and click btn:[Create Account] to register.
+. In your email inbox, click the btn:[Verify Email] link.
++
+image::mm_verify_email.png[Verify email]
++
+. Sign in when prompted. When asked, select *Developers*.
++
+image::mm_teams.png[Select team]
++
+. MatterMost offers an optional tutorial for new users, which you can skip. Click *Skip tutorial* to continue.
++
+image::mm_tutorial.png[Skip tutorial]
++
+. You are redirected to the *#openshiftio* channel.
++
+image::mm_main_view.png[Main view]
++
+. Ask a specific person your question or start with `@here` to tag everyone present in the channel.
+
+In the future, navigate to link:https://chat.openshift.io[https://chat.openshift.io] to view the {osio} MatterMost channel.
+
+If you prefer to use IRC, the {osio} team is also available in the *#openshiftio* channel on Freenode.

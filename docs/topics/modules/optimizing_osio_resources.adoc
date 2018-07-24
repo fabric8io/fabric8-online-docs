@@ -1,0 +1,19 @@
+[id="optimizing_osio_resources"]
+= Optimizing OpenShift.io resources
+
+:context: optimizing_memory_usage
+
+After creating your first quickstart project, you will now learn to optimize your memory usage in {osio} using the following steps:
+
+1. Review the resource usage details for your project.
+2. Reduce your quickstart project's memory usage and commit the changes.
+3. Compare the change in your OpenShift Online memory quota usage.
+
+include::modules/reviewing_detailed_resource_information.adoc[leveloffset=+1]
+
+include::modules/reducing_project_memory_usage.adoc[leveloffset=+1]
+
+include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
+
+include::modules/monitoring_your_oso_quota_usage.adoc[leveloffset=+1]
+
