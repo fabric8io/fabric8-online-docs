@@ -3,7 +3,7 @@
 
 :context: optimizing_memory_usage
 
-After creating your first quickstart project, you will now learn to optimize your memory usage in {osio} using the following steps:
+After creating your first quickstart project, you can edit the project code to optimize your memory usage as follows:
 
 1. Review the resource usage details for your project.
 2. Reduce your quickstart project's memory usage and commit the changes.

@@ -15,23 +15,22 @@ Your OpenShift Online account must now share resources with two quickstart proje
 To optimize memory for the Spring Boot HTTP quickstart:
 endif::[]
 
-. Return to your Workspace browser tab. If your closed the tab, click *Create* and then the btn:[Open] to run your workspace.
-. In the file explorer panel, double-click your project and navigate to `src` > `main` > `fabric8`.
+. Return to your {osio} workspace tab. If you need to reopen the workspace:
+.. In your {osio} browser tab, click btn:[Create] and then btn:[Codebases].
+.. Ensure that the workspace is selected in the drop-down list and click btn:[Open] to run your workspace.
++
+image::reopen_workspace.png[Reopen workspace]
++
+. In the workspace file explorer panel, double-click your project and navigate to `src` > `main` > `fabric8`.
 +
 image::{context}_folder.png[Fabric8 folder]
 +
 . Right-click the `fabric8` folder and select menu:New[File].
-+
-image::{context}_newfile.png[New File Menu]
-+
+
 . Name the new file `deployment.yml` and click btn:[OK]. The new file displays in the editor.
-// for optimizing_memory_usage
-ifeval::["{context}" == "optimizing_memory_usage"]
-+
-image::{context}_deployment.png[Deployment.Yaml Vertx]
-+
+
 . Copy the contents of the following file to your new YAML file: https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml].
 +
-IMPORTANT: Spaces are meaningful in YAML files. Ensure that the correct spacing is copied into your YAML file from the link.
+IMPORTANT: Spaces are meaningful in YAML files. Ensure that you copy the correct spacing into your YAML file from the link.
 +
 . Use kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) to save your changes.
