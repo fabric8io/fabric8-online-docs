@@ -3,7 +3,7 @@
 
 After making the required changes to your code, commit and push the modifications to your project GitHub repository.
 
-IMPORTANT: Before committing your changes, ensure that your project pipeline build has completed (that is, the build has been promoted and is at the *Rollout to Run* stage).
+IMPORTANT: Before committing your changes, ensure that your project pipeline build is complete (that is, the build is promoted and is at the *Rollout to Run* stage).
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]

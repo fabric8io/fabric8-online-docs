@@ -16,7 +16,7 @@ To optimize memory for the Spring Boot HTTP quickstart:
 endif::[]
 
 . Return to your {osio} workspace tab. If you need to reopen the workspace:
-.. In your {osio} browser tab, click btn:[Create] > btn:[Codebases].
+.. In your {osio} browser tab, click btn:[Create] and then btn:[Codebases].
 .. Ensure that the workspace is selected in the drop-down list and click btn:[Open] to run your workspace.
 +
 image::reopen_workspace.png[Reopen workspace]
@@ -26,15 +26,9 @@ image::reopen_workspace.png[Reopen workspace]
 image::{context}_folder.png[Fabric8 folder]
 +
 . Right-click the `fabric8` folder and select menu:New[File].
-+
-image::{context}_newfile.png[New File Menu]
-+
+
 . Name the new file `deployment.yml` and click btn:[OK]. The new file displays in the editor.
-// for optimizing_memory_usage
-ifeval::["{context}" == "optimizing_memory_usage"]
-+
-image::{context}_deployment.png[Deployment.Yaml Vertx]
-+
+
 . Copy the contents of the following file to your new YAML file: https://raw.githubusercontent.com/burrsutter/vertx-eventbus/master/src/main/fabric8/deployment.yml[deployment.yaml].
 +
 IMPORTANT: Spaces are meaningful in YAML files. Ensure that you copy the correct spacing into your YAML file from the link.
