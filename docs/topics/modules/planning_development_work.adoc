@@ -1,65 +1,31 @@
 [id="planning_development_work"]
 = Planning your development work
 
-After creating a space, use the {osio} planner to plan your development work and to ensure efficient execution of your project.
+When you create a space, the *Create an Application* wizard is displayed. Close the wizard, so that you can plan an end to end development workflow for launching and deploying a sample application before you launch the application.
 
-NOTE: The development process you select while creating the space determines the planner's guided work item type hierarchy.
+{osio} planner provides a set of predefined templates based on common development methodologies such as Agile and Scenario Driven Development. The development process you select while creating the space determines the planner's guided work item type hierarchy.
 
-This example walks you through the Scenario Driven Development planning process to plan an end to end development flow of launching and deploying a sample application.
+This example walks you through the Scenario Driven Development planning process to plan your work.
 
-== Opt-in to beta features
-{osio} planner is a beta feature so ensure that you first opt-in to beta features.
-
-. In the dashboard of your space, select the *Plan* tab at the top of the page to view the planner.
-. If you have not activated experimental features in {osio}, when you click the *Plan* tab the *Beta Features Opt-in* warning appears. Click btn:[Opt-in to Beta Features] to proceed.
-+
-image::beta_feature_warning.png[Beta feature warning]
-+
-. In the *Settings* page, select the *Beta Features* option. The change is applied to your profile.
-+
-image::beta_feature_option.png[Beta feature option]
-+
-. Navigate back to your space by clicking your username in the upper left corner of the screen. In the displayed options, click the name of your space.
-+
-image::navigate_to_your_space.png[Navigate to your space]
-
-== Plan your development project
-. In the dashboard of your space, select the *Plan* tab at the top of the page to view the planner. The planner now displays the default *Backlog* view with the *Scenarios* work item type group for your space.
-. Select the *Show Tree* check box to see the work items in a tree view. The tree view allows you to quickly add work items according to the guided hierarchy using the quick-add and in-line add options.
+. In the dashboard of your space, select the *Plan* tab at the top of the page to view the default *Backlog* view of the planner.
+. Select the *Show Tree* check box to see the work items and their children in a tree view. The tree view allows you to quickly add work items according to the guided hierarchy using the quick-add and in-line add options.
 . Use the quick-add option to create a *Scenario* as follows:
 .. In the *Add Work Item* pane, select *Scenario* from the drop-down list.
 +
-image::quickadd_wi_type.png[Quick Add work item type]
+image::quickadd_scenario.png[Quick add scenario]
 +
-.. In the *Work Item Title* field, add *Enable an end to end, quick, developer work-flow, within a continuous integration and deployment model* as the title.
+.. In the *Work Item Title* field, add *Enable an end to end, developer work-flow, using the continuous integration and deployment framework* as the title.
 .. Press kbd:[Enter] to create the scenario.
-+
-image::gs_scenario_eg.png[Example Scenario]
-+
 
-. Similarly, select *Fundamental* in the *Add Work Item* pane, to create a fundamental work item with the title *The application should be secure with appropriate licenses*.
-+
-image::gs_fundamental_eg.png[Example Fundamental]
-+
-
-. Create child *Experience* and *Value Proposition* for the *Scenario* using the in-line add option as follows:
+. Create a child *Experience* for the *Scenario* using the in-line add option as follows:
 .. In the work item list, click the (+) icon adjacent to the scenario to see the in-line *Add Child Work Item* pane below it.
 +
 image::gs_inline-add_eg.png[Inline Add]
 +
 
-.. Select *Experience* from the drop-down list, add the title *User should be able to launch any application through a simple work-flow*, and Press kbd:[Enter].
-.. Similarly, select *Value Proposition* and add the title *Easy end to end developer experience*.
-+
-image::gs_exp_vp_egs.png[Example Experiences and Value Propositions]
-+
-NOTE: A scenario can have multiple realizing experiences and supporting value propositions.
-+
+.. Select *Experience* from the drop-down list, add the title *User should be able to launch applications through a simple work-flow*, and Press kbd:[Enter].
 
 . Create an execution oriented child *Feature* for the *Experience* using the in-line add option with the title *User should be able to easily launch a sample Vert.x application using a smooth developer work-flow*.
-+
-image::gs_feature_eg.png[Example Feature]
-
 
 . Create the following child *Task* work items to implement the *Feature* using the in-line add option:
 
@@ -68,36 +34,21 @@ image::gs_feature_eg.png[Example Feature]
 * <<creating_che_workspace-hello-world,*Modify the quickstart codebase*>>
 * <<reviewing_publishing_changes-hello-world,*Review and publish changes to your codebase*>>
 +
-Click the above tasks to see instructions on executing these tasks.
-+
 image::gs_tasks_egs.png[Example Tasks]
 
-. Similarly, for the *Fundamental* - *The application should be secure with appropriate licenses*, create a child experience*, feature, and task . The task could be titled <<analytics_stack_report,*Use analytics to identify and resolve security and license issues in the application*>>.
+. Similarly, select *Fundamental* in the *Add Work Item* pane, to create a fundamental work item with the title *The application should be secure with appropriate licenses* and use the in-line add option to create a child experience, feature, and task for it. The task can be titled <<analytics_stack_report,*Use analytics to identify and resolve security and license issues in the application*>>.
 +
 image::gs_fundamental_task_eg.png[Example Fundamental Task]
 +
-For each of these tasks, click on the work item to preview it and link:user-guide.html#assigning_the_work_item[assign the tasks to the collaborators] in your team. For this example, add your name as the assignee.
-Assigning a work item sends that person an email notification. Depending on your mail server and account, this notification email may arrive after a delay of several minutes.
-+
-image::gs_add_assignee.png[Add Asignee]
-+
-Also, ensure that you link:user-guide.html#tracking_state_of_a_work_item[change the state of the work items] from *New* to *In Progress* when you start working on them and mark it *Closed* once work is completed.
-+
-image::gs_change_state.png[Change State]
-+
-See link:user-guide.html#working_with_work_items[working with work items] to further modify your workitems.
+. In the left panel, click the (+) icon adjacent to *Iterations* to link:user-guide.html#creating_a_new_iteration[create an iteration] called *Test Iteration* and force activate it.
+. Click on each of the feature and child task work items to preview it, and:
 
-. Click the (+) icon adjacent to *Iterations* to link:user-guide.html#creating_a_new_iteration[create an iteration] called *Test Iteration* and make it active.
+* link:user-guide.html#tracking_state_of_a_work_item[Change the state of the work items] to *In Progress* when you start working on them
+*  link:user-guide.html#assigning_the_work_item[Add yourself as the assignee]
+* link:user-guide.html#associating_work_items_with_an_iteration-user-guide_iterations[Associate the work items to the *Test Iteration*]
 +
-image::create_iteration.png[Create Iteration]
+See link:user-guide.html#working_with_work_items[working with work items] for detailed information about modifying and tracking work items by associating them to iterative development cycles.
 +
+image::gs_modify_wi.png[Modify work item]
 
-.. link:user-guide.html#associating_work_items_with_an_iteration-user-guide_iterations[Associate the features and child tasks to the *Test Iteration*] to track them and close them within this iteration.
-+
-image::gs_iteration_wi_assocn.png[Associating Work Item with an Iteration]
-+
-.. Click *Test Iteration* to see the associated work items.
-+
-image::gs_iteration_assocd_wis.png[Work Items associated to an Iteration]
-
-You have now learned how to use the Scenario Driven Development planning methodology to plan your work by creating work items and to track and execute them by associating them to iterative development cycles.
+You can now click *Test Iteration* to see the work items associated with it and use the planner to track your development work for the iteration.

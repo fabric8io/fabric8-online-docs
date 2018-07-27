@@ -1,9 +1,9 @@
 [id="creating_new_space-{context}"]
 = Creating a new space
 
-In {osio}, the first step for any new project is to create a new space.
+In {osio}, the first step for any new project is to create a new space with a unique name.
 
-You can then add collaborators, track your work using work items and iterations, and create or import codebases within the space. Each space must have a unique name.
+You can then add collaborators, plan your work using work items and iterations, and create or import codebases within the space.
 
 
 // for user-guide
@@ -17,7 +17,7 @@ endif::[]
 [discrete]
 == Procedure
 
-Create a new space as follows:
+Create a new space in {osio} as follows:
 
 . In the {osio} home page, click btn:[Create a space].
 +
@@ -33,11 +33,8 @@ image::second_space.png[Second space]
 +
 image::github_disconnected.png[GitHub Disconnected]
 +
-.. If your browser session is already logged in to a GitHub account, {osio} uses it for the GitHub connection step. If not, you are prompted to add your GitHub credentials to connect the account to {osio}.
-+
-image::connect_github.png[Connect to GitHub]
-
-. When the accounts are connected, the {osio} home page view displays. Click btn:[Create a space] again.
+.. If your browser session is already logged in to a GitHub account, {osio} uses it for the GitHub connection step. If not, you are prompted to add your GitHub credentials to connect the account to {osio}. When the accounts are connected, the {osio} home page view displays.
+.  Click btn:[Create a space] again.
 
 +
 // for hello-world
