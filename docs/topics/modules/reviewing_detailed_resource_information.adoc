@@ -2,6 +2,8 @@
 
 = Reviewing detailed resource information in OpenShift Online
 
+//contexts: optimizing_memory_usage, user-guide
+
 The memory allowances for each OpenShift pod is 512{nbsp}MiB. As a result, each application consumes nearly 1{nbsp}GiB of memory for the *Stage* and *Run* environments.
 
 // for GSG
@@ -34,7 +36,7 @@ image::hw_pod.png[Hello World Project Pod]
 +
 image::resources.png[Resources]
 +
-Use this page to review the memory usage for your {osio} project.
+Use this page to review the memory usage for your {osio} project. Note this information and leave this tab open to compare the resource information after optimizing your memory usage.
 
 // for GSG
 ifeval::["{context}" == "optimizing_memory_usage"]

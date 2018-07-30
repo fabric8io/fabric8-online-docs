@@ -1,9 +1,11 @@
 [id="committing_pushing_changes_git-{context}"]
 = Committing and pushing changes to GitHub
 
+// contexts: user-guide, hello-world
+
 After making the required changes to your code, commit and push the modifications to your project GitHub repository.
 
-IMPORTANT: Before committing your changes, ensure that your project pipeline build is complete (that is, the build is promoted and is at the *Rollout to Run* stage).
+IMPORTANT: Before committing your changes, ensure that your project pipeline build is promoted and at the *Rollout to Run* stage.
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
@@ -17,27 +19,22 @@ endif::[]
 [discrete]
 == Procedure
 
-. In the workspace browser tab, click *Git* from the menu options and select *Commit* from the displayed options.
-+
-image::commit_menu.png[Git Commit Menu]
-+
+. In the workspace browser tab, click *Git* from the menu bar options and select *Commit* from the displayed options.
+
 . In the *Commit to repository* dialog box:
 
-.. Select all the changed and new files to commit.
+.. Select all the changed and new files to add them to the commit.
 .. Add a commit message describing your changes.
 .. Select the *Push committed changes to:* check box.
 .. Click btn:[Commit].
-+
-image::{context}_commit_dialog.png[Commit changes]
-+
+
 When the commit succeeds, the following message displays:
 +
 image::pushed_to_origin.png[Pushed to origin]
-+
+
 You have now committed your code changes to GitHub.
 
-+
 //for hello world
 ifeval::["{context}" == "hello-world"]
-. You have now completed the task, *Modify the quickstart codebase*, in the *Test Iteration*. Ensure that you change the state of the work item to *Closed* using the *Plan* tab.
+You have now completed the task, *Modify the quickstart codebase*, in the *Test Iteration*. Change the state of the work item to *Closed* using the *Plan* tab.
 endif::[]
