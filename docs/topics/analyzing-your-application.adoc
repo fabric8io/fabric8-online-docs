@@ -1,0 +1,8 @@
+[id="analyzing-your-application"]
+= Analyzing your application
+
+:context: spring-boot
+
+include::modules/analyzing_stack_dependencies_in_your_che_workspace.adoc[leveloffset=+1]
+
+include::modules/analytics_stack_report.adoc[leveloffset=+1]
