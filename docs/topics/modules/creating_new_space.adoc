@@ -17,7 +17,7 @@ endif::[]
 [discrete]
 == Procedure
 
-Create a new space in {osio} as follows:
+Create a new space as follows:
 
 . In the {osio} home page, click btn:[Create a space].
 +

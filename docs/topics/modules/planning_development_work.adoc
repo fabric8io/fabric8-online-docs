@@ -1,9 +1,9 @@
 [id="planning_development_work"]
 = Planning your development work
 
-When you create a space, the *Create an Application* wizard is displayed. Close the wizard, so that you can plan an end to end development workflow for launching and deploying a sample application before you launch the application.
+When you create a space, the *Create an Application* wizard is displayed. Close the wizard, so that you can plan an end to end development workflow before you launch the application.
 
-{osio} planner provides a set of predefined templates based on common development methodologies such as Agile and Scenario Driven Development. The development process you select while creating the space determines the planner's guided work item type hierarchy.
+{osio} planner provides a set of predefined templates based on common development methodologies such as Agile and Scenario Driven Development. The development process you select while creating the space determines the guided work item type hierarchy in the planner.
 
 This example walks you through the Scenario Driven Development planning process to plan your work.
 
@@ -14,8 +14,7 @@ This example walks you through the Scenario Driven Development planning process 
 +
 image::quickadd_scenario.png[Quick add scenario]
 +
-.. In the *Work Item Title* field, add *Enable an end to end, developer work-flow, using the continuous integration and deployment framework* as the title.
-.. Press kbd:[Enter] to create the scenario.
+.. In the *Work Item Title* field, add *Enable a complete developer work-flow in a continuous integration and deployment framework* as the title and press kbd:[Enter] to create the scenario.
 
 . Create a child *Experience* for the *Scenario* using the in-line add option as follows:
 .. In the work item list, click the (+) icon adjacent to the scenario to see the in-line *Add Child Work Item* pane below it.
@@ -23,7 +22,7 @@ image::quickadd_scenario.png[Quick add scenario]
 image::gs_inline-add_eg.png[Inline Add]
 +
 
-.. Select *Experience* from the drop-down list, add the title *User should be able to launch applications through a simple work-flow*, and Press kbd:[Enter].
+.. Select *Experience* from the drop-down list, type the title *User should be able to launch applications through a simple work-flow*, and Press kbd:[Enter].
 
 . Create an execution oriented child *Feature* for the *Experience* using the in-line add option with the title *User should be able to easily launch a sample Vert.x application using a smooth developer work-flow*.
 
@@ -36,7 +35,7 @@ image::gs_inline-add_eg.png[Inline Add]
 +
 image::gs_tasks_egs.png[Example Tasks]
 
-. Similarly, select *Fundamental* in the *Add Work Item* pane, to create a fundamental work item with the title *The application should be secure with appropriate licenses* and use the in-line add option to create a child experience, feature, and task for it. The task can be titled <<analytics_stack_report,*Use analytics to identify and resolve security and license issues in the application*>>.
+. In the *Add Work Item* pane drop-down select *Fundamental* to create a fundamental work item with the title *The application should be secure with appropriate licenses* and use the in-line add option to create a child experience, feature, and task for it. Title the task <<analytics_stack_report,*Use analytics to identify and resolve security and license issues in the application*>>.
 +
 image::gs_fundamental_task_eg.png[Example Fundamental Task]
 +
@@ -51,4 +50,4 @@ See link:user-guide.html#working_with_work_items[working with work items] for de
 +
 image::gs_modify_wi.png[Modify work item]
 
-You can now click *Test Iteration* to see the work items associated with it and use the planner to track your development work for the iteration.
+Now click *Test Iteration* in the left panel to see the work items associated with it and use the planner to track your development work for the iteration.
