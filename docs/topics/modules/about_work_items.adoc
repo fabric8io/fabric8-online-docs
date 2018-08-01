@@ -5,7 +5,7 @@ Work items are measurable units of work within a <<about_spaces,space>> that can
 
 {osio} planner is a task or work item tracker to plan and execute your project work.
 
-The planner includes a set of predefined templates based on common development methodologies such as _Scrum_ and _Scenario Driven Development_. These templates determine the structure and features of the included work item types and states that are available for a space.
+The planner includes a set of predefined planning templates based on common development methodologies such as _Agile_ and _Scenario Driven Development_. These templates determine the structure and features of the included work item types and states that are available for a space.
 
 Work items can be grouped and categorized into various work item types depending on the template you select for a space. In addition, you can associate the work items to <<about_iterations,Iterations>> and sprints to track progress and plan work.
 

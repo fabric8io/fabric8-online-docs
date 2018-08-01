@@ -1,8 +1,12 @@
 [id="using_guided_hierarchy_to_create_work_item"]
 = Using the guided work item type hierarchy to create work items
 
-The *Development Process* you select while creating your space determines the guided work item type hierarchy and the available work item types in planner. The *Scrum* and *Scenario Driven Development* guided hierarchies help you to easily plan your development work according to established development processes and execute it efficiently.
+The planner provides two predefined templates, *Agile* and *Scenario Driven Development*, to help plan your development work according to established development processes. The templates prescribe a guided hierarchy of work items using relevant work item types.
+
+The *Development Process* you select while creating your space determines the template, the guided work item type hierarchy, and the available work item types in planner. 
 
 include::using_sdd_guided_hierarchy.adoc[leveloffset=+1]
 
-include::using_scrum_guided_hierarchy.adoc[leveloffset=+1]
+include::using_agile_guided_hierarchy.adoc[leveloffset=+1]
+
+//include::using_scrum_guided_hierarchy.adoc[leveloffset=+1]

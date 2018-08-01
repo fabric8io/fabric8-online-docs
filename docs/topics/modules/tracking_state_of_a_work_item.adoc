@@ -14,10 +14,8 @@ You can track and update the status of work items as you progress through your t
 +
 image::wi_state.png[Work Item state]
 +
-NOTE: The Scrum template provides you the following options: *New*, *In-Progress*, *Done*, *Removed*.
-+
 . Select the appropriate state based on the completion level of your work item. The state for the work item gets updated.
 
-NOTE: By default, closed work items are not listed in the work item list. Select the *Show Completed* checkbox to see the closed work items.
+NOTE: By default, closed work items are not listed in the work item list. Select the *Show Completed* check box to see the closed work items.
 
-//TODO: Cases of state will be changed, capture them.
+//TODO: Cases of state will be changed, change screenshot accordingly.
