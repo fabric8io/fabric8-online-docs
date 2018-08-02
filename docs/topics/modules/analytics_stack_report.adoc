@@ -3,7 +3,7 @@
 
 {osio} includes a stack report feature that analyzes and reports information about a project's application stack and component libraries. This information helps you make informed choices about the code and libraries used in your project.
 
-{osio} generates a stack report for your project during the *Build Release* stage of the build pipeline. To view the stack report for your quickstart application:
+{osio} generates a stack report for your project when the pipeline build starts the *Build Release* stage of the build pipeline. To view the stack report for your quickstart application:
 
 . Return to your space dashboard in the {osio} browser tab. The *Stack Report Recommendations* panel in the dashboard shows a summary of the stack report.
 +
