@@ -5,49 +5,25 @@ When you create a space, the *Create an Application* wizard is displayed. Close 
 
 {osio} planner provides a set of predefined templates based on common development methodologies such as Agile and Scenario Driven Development. The development process you select while creating the space determines the guided work item type hierarchy in the planner.
 
-This example walks you through the Scenario Driven Development planning process to plan your work.
+This example walks you through the Agile planning process to plan your work.
 
-. In the dashboard of your space, select the *Plan* tab at the top of the page to view the default *Backlog* view of the planner.
-. Select the *Show Tree* check box to see the work items and their children in a tree view. The tree view allows you to quickly add work items according to the guided hierarchy using the quick-add and in-line add options.
-. Use the quick-add option to create a *Scenario* as follows:
-.. In the *Add Work Item* pane, select *Scenario* from the drop-down list.
-+
-image::quickadd_scenario.png[Quick add scenario]
-+
-.. In the *Work Item Title* field, add *Enable a complete developer work-flow in a continuous integration and deployment framework* as the title and press kbd:[Enter] to create the scenario.
+. In the dashboard of your space, select the *Plan* tab at the top of the page. The default *Backlog* view displays the *Work Items* for your space.
+. Select the *Show Tree* check box to use the quick-add and in-line add options to quickly create workitems and their children.
+. In the *Add Work Item* pane, select *Theme* from the drop-down list, type *Enable a complete developer work-flow in a continuous integration and delivery framework* as the title, and press kbd:[Enter] to create the theme.
 
-. Create a child *Experience* for the *Scenario* using the in-line add option as follows:
-.. In the work item list, click the (+) icon adjacent to the scenario to see the in-line *Add Child Work Item* pane below it.
+. Create a child *Epic* for the *Theme* as follows:
+.. In the work item list, click the (+) icon adjacent to the theme to see the in-line *Add Child Work Item* pane below it.
 +
 image::gs_inline-add_eg.png[Inline Add]
 +
+.. Select *Epic* from the drop-down list, type the title *User should be able to launch applications through a simple work-flow*, and Press kbd:[Enter].
 
-.. Select *Experience* from the drop-down list, type the title *User should be able to launch applications through a simple work-flow*, and Press kbd:[Enter].
-
-. Create an execution oriented child *Feature* for the *Experience* using the in-line add option with the title *User should be able to easily launch a sample Vert.x application using a smooth developer work-flow*.
-
-. Create the following child *Task* work items to implement the *Feature* using the in-line add option:
-
-* <<creating_new_project-hello-world,*Launch a sample quickstart application*>>
-* <<approving_build_pipeline,*Test the application in Stage and approve to the Run environment*>>
-* <<creating_che_workspace-hello-world,*Modify the quickstart codebase*>>
-* <<reviewing_publishing_changes-hello-world,*Review and publish changes to your codebase*>>
+. Using the in-line add option create an execution oriented child *Story* for the *Epic* with the title *User should be able to easily launch a sample Vert.x application* and a child *Task* for the story titled *Review and publish changes to your codebase*.
 +
-image::gs_tasks_egs.png[Example Tasks]
+See link:user-guide.html#working_with_work_items[working with work items] for more information about modifying work items.
 
-. In the *Add Work Item* pane drop-down select *Fundamental* to create a fundamental work item with the title *The application should be secure with appropriate licenses* and use the in-line add option to create a child experience, feature, and task for it. Title the task <<analytics_stack_report,*Use analytics to identify and resolve security and license issues in the application*>>.
+. In the left panel, click the (+) icon adjacent to *Iterations* to link:user-guide.html#creating_a_new_iteration[create an iteration] called *Test Iteration*, force activate it, and  link:user-guide.html#associating_work_items_with_an_iteration-user-guide_iterations[associate the story and task to the *Test Iteration*].
 +
-image::gs_fundamental_task_eg.png[Example Fundamental Task]
-+
-. In the left panel, click the (+) icon adjacent to *Iterations* to link:user-guide.html#creating_a_new_iteration[create an iteration] called *Test Iteration* and force activate it.
-. Click on each of the feature and child task work items to preview it, and:
+image::gs_associate_wi_with_iteration.png[Associate work item with an iteration]
 
-* link:user-guide.html#tracking_state_of_a_work_item[Change the state of the work items] to *In Progress* when you start working on them
-*  link:user-guide.html#assigning_the_work_item[Add yourself as the assignee]
-* link:user-guide.html#associating_work_items_with_an_iteration-user-guide_iterations[Associate the work items to the *Test Iteration*]
-+
-See link:user-guide.html#working_with_work_items[working with work items] for detailed information about modifying and tracking work items by associating them to iterative development cycles.
-+
-image::gs_modify_wi.png[Modify work item]
-
-Now click *Test Iteration* in the left panel to see the work items associated with it and use the planner to track your development work for the iteration.
+You can now use the *Test Iteration* in the left panel to see the work items associated with it and track your work.

@@ -39,7 +39,7 @@ image::github_disconnected.png[GitHub Disconnected]
 +
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-. Use the *Development Process* drop-down list to select a template for your new space. For this example, keep the default option for this field.
+. Use the *Development Process* drop-down list to select a template for your new space. For this example, select *Agile*.
 . In the dialog box, type *myspace* as the unique name for your space and click btn:[Ok].
 +
 image::create_space.png[Create new space]
