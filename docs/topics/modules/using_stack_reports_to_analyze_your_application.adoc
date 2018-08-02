@@ -1,5 +1,5 @@
-[id="analytics_stack_report"]
-= Analytics stack report
+[id="using_stack_reports_to_analyze_your_application"]
+= Using stack reports to analyze your application
 
 {osio} includes a stack report feature that analyzes and reports information about a project's application stack and component libraries. This information helps you make informed choices about the code and libraries used in your project.
 
