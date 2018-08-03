@@ -65,16 +65,16 @@ companion dependency:: Based on the analysis of your stack, {osio} suggests addi
 // endterm
 
 // term: 04049d50-a1b9-42ac-89b5-0382088cb7b6, en
-component:: A distinct subsystem within the system that performs common functions.
+component:: A distinct subsystem within a system that performs specific functions.
 // endterm
 
 
 // term: fce0921f-ea70-4513-bb91-31d3aa8017f1, en
-defect:: An unacceptable variation between the actual behavior and the expected behavior of the software.
+defect:: A bug that causes unexpected behavior in the software.
 // endterm
 
 // term: 8e1cd761-c1c4-4fe3-af68-200ca799a0af, en
-effort:: Estimate of the amount of work required to complete the work item.
+effort:: Estimate of the amount of work required to complete a work item.
 // endterm
 
 // term: 2c169431-a55d-49eb-af74-cc19e895356f, en
@@ -87,7 +87,7 @@ epic:: A large user story, with a focused goal, that may need to be split into m
 // endterm
 
 // term: f450d7d0-3d38-4887-83ca-38dcd27c109b59, en
-(scrum)epic:: A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic.
+(scrum) epic:: A big chunk of work with a common objective that may take many iterations to deliver. It is split into multiple features and backlog items that try to satisfy the different aspects of the epic.
 // endterm
 ////
 
@@ -127,7 +127,7 @@ impediment:: Any issue or blocker that slows down the velocity of a team and aff
 
 ////
 // term: d5bd6f64-cee4-46d7-9b12-b3cb5e70145e, en
-issue:: An issue is an unmet user expectation, an observation that something doesn't work as one expects it to. It could represent bugs, feature requests, or enhancements and are linked to an appropriate work item in the backlog as part of the triage process.
+issue:: An issue is an unmet user expectation, an observation that something does not work as one expects it to. It could represent bugs, feature requests, or enhancements.
 // endterm
 ////
 
@@ -143,7 +143,7 @@ iteration:: A development cycle used to organize, plan, and execute work items i
 
 ////
 // term: 49d1a19f-02b4-4a10-a774-5723299f8944, en
-(agile) iteration:: A development cycle used to organize, plan, and execute work items in a certain order. It comprises a logical mix of work items slated to be executed within the time frame of the iteration.
+(agile) iteration:: A development cycle used to organize, plan, and complete work items in a certain order. It comprises a logical mix of work items slated to be done within the time frame of the iteration.
 // endterm
 ////
 
@@ -177,12 +177,12 @@ scenario:: A scenario identifies a real-world user problem to resolve. Addressin
 
 ////
 // term: 679a563c-ac9b-4478-9f3e-4187f708dd30, en
-scenarios:: Work item type group that focuses on the planning oriented work item types such as scenario, fundamental, and papercuts.
+scenarios:: Work item type group that focuses on the planning-oriented work item types, such as scenario, fundamental, and papercuts.
 // endterm
 ////
 
 // term: eb05f2b6-8a3c-4054-b28c-3eb1a47c125f, en
-scenario-driven development:: An agile development methodology focused on real-world problems or scenarios, described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.
+scenario-driven development:: An agile development methodology focused on real-world problems or scenarios that is described in the language and from the viewpoint of the user. Scenarios deliver particular value propositions and are realized through experiences.
 // endterm
 
 // term: d6cb8344-ce3b-4aed-b517-78303d253bcf, en
@@ -198,7 +198,7 @@ space:: A space is the equivalent of a project. Each iteration and work item mus
 // endterm
 
 // term: 6ff83406-caa7-47a9-9200-4ca796be11bb, en
-story:: Incremental work or requirements, identified collaboratively by the team and the product owner, to deliver a product feature. Typically, they consist of a description expressed from the user’s perspective in the format - As a _user_, I want to achieve _objective_, so that this _purpose_ is met. It has an estimated size and an acceptance criteria to validate the work.
+story:: Incremental work or requirements identified to deliver a product feature. Typically, it is expressed from the user’s perspective in the following format: As a _user_, I want to achieve an _objective_, so that this _purpose_ is met.
 // endterm
 
 // term: bbf35418-04b6-426c-a60b-7f80beb0b624, en
@@ -218,11 +218,11 @@ task:: Work assigned to various team members to implement a feature. They are ge
 ////
 
 // term: 5182fc8c-b1d6-4c3d-83ca-6a3c781fa18a, en
-theme:: A group of user stories with a common underlying thread. They have a broad organizational level focus and are used to track related user stories.
+theme:: A group of user stories with a common underlying thread. They have a broad organization-level focus and are used to track related user stories.
 // endterm
 
 // term: 676c75df-bc94-4cd1-a219-dd4283d35a16, en
-time criticality:: It captures how business value of a work item decreases over time, higher values indicate greater time criticality. It indicates the criticality of meeting a deadline to derive maximum business value.
+time criticality:: It captures how the business value of a work item decreases over time. Higher values indicate greater time criticality. It indicates the importance of meeting a deadline to derive maximum business value.
 // endterm
 
 // term: 0b52988d-9cea-47a6-9769-d677bff95ed3, en
