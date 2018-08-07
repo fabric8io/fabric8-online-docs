@@ -1,9 +1,9 @@
-[id="analytics_stack_report"]
-= Analytics stack report
+[id="using_stack_reports_to_analyze_your_application"]
+= Using stack reports to analyze your application
 
-The {osio} analytics stack report provides comprehensive information regarding your application stack and its component libraries that helps you make informed choices. It analyzes your stack and recommends alternate and additional components to improve your application.
+{osio} includes a stack report feature that analyzes and reports information about a project's application stack and component libraries. This information helps you make informed choices about the code and libraries used in your project.
 
-The stack report is triggered during the *Build Release* stage of the build pipeline. To view the stack report for your quickstart application:
+{osio} generates a stack report for your project when the pipeline build starts the *Build Release* stage of the build pipeline. To view the stack report for your quickstart application:
 
 . Return to your space dashboard in the {osio} browser tab. The *Stack Report Recommendations* panel in the dashboard shows a summary of the stack report.
 +
