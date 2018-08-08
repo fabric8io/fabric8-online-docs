@@ -1,0 +1,30 @@
+[id="analyzing_your_application_stack_dependencies"]
+= Analyzing your application stack dependencies
+
+As you edit your application code, your Che workspace is automatically analyzing dependencies for the changes. 
+
+. Return to your Che workspace browser tab.
+. In the file explorer panel, double-click the `pom.xml` file.
+. In the file editor, go to line 111 and add a line break.
+. Add the following XML code to the file after the line break:
++
+[source,xml]
+----
+<dependency>
+  <groupId>ch.qos.logback</groupId>
+  <artifactId>logback-core</artifactId>
+  <version>1.1.0</version>
+</dependency>
+----
++
+. An error icon (red cross) appears next to the added lines of code. Move the mouse pointer over the icon to view the error message and a recommendation for improving the dependency.
++
+image::red_x.png[Error Icon]
++
+The error indicates that the dependency analyzer has identified a high Common Vulnerabilities and Exposures (CVE) score associated with the current version, 1.1.0. It also recommends using an alternate, secure version, 1.1.2, instead to fix the issue.
+
+. In the code, update the version to `1.2.1` and the error icon disappears.
+
+. Commit these changes to add this dependency to your stack.
+
+You have now learned how {OSIO} analytics automatically analyze dependencies in your code, identify security vulnerabilities, and recommend fixes.

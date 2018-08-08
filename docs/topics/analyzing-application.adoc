@@ -1,8 +1,0 @@
-[id="analyzing-application"]
-= Analyzing the application
-
-:context: spring-boot
-
-include::modules/analyze_che_dependencies.adoc[leveloffset=+1]
-
-include::modules/analytics_stack_report.adoc[leveloffset=+1]

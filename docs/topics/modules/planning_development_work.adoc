@@ -72,7 +72,7 @@ Click the above tasks to see instructions on executing these tasks.
 +
 image::gs_tasks_egs.png[Example Tasks]
 
-. Similarly, for the *Fundamental* - *The application should be secure with appropriate licenses*, create a child experience*, feature, and task . The task could be titled <<analytics_stack_report,*Use analytics to identify and resolve security and license issues in the application*>>.
+. Similarly, for the *Fundamental* - *The application should be secure with appropriate licenses*, create a child experience*, feature, and task . The task could be titled <<using_stack_reports_to_analyze_your_application,*Use analytics to identify and resolve security and license issues in the application*>>.
 +
 image::gs_fundamental_task_eg.png[Example Fundamental Task]
 +

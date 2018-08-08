@@ -15,7 +15,7 @@ include::hello_world_developers.adoc[leveloffset=+1]
 
 include::optimizing_memory_usage.adoc[leveloffset=+1]
 
-include::analyzing-application.adoc[leveloffset=+1]
+include::analyzing-your-application.adoc[leveloffset=+1]
 
 include::using_advanced_che_features.adoc[leveloffset=+1]
 
