@@ -23,7 +23,7 @@ image::red_x.png[Error Icon]
 +
 The error indicates that the dependency analyzer has identified a high Common Vulnerabilities and Exposures (CVE) score associated with the current version, 1.1.0. It also recommends using an alternate, secure version, 1.1.2, instead to fix the issue.
 
-. In the code, update the version to `1.2.1` and the error icon disappears.
+. In the code, update the version to `1.2.1`. The error icon disappears after this change.
 
 . Commit these changes to add this dependency to your stack.
 
