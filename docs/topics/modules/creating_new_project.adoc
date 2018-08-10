@@ -1,9 +1,13 @@
 [id="creating_new_project-{context}{secondary}"]
-= Creating a new project
+= Creating a new application
+
+After creating a space, {osio} enables you to create a new application codebase or import an existing codebase from GitHub and set up pipelines to build the code. These codebases are a generic representation of a project's code.
+
+When you create an application using the quickstart wizard, {osio} creates a new code repository for your codebase and stores it in GitHub. It also maintains additional metadata for version control of your project code. In the future additional git hosts and non-git options for version control may be supported.
 
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-In this section, you learn how to create a quickstart project based on a Spring Boot application in your space. See the <<hello_world_developers,Hello World project>> for an example of a Vert.X application.
+This section describes the creation of a Spring Boot quickstart application using the {osio} provided codebases. See the <<hello_world_developers,Hello World project>> for an example of a Vert.X application.
 endif::[]
 
 When you create a new space, the *Create an Application* wizard to create applications displays. If you closed the wizard earlier, click btn:[Create an Application] in your space dashboard to see the wizard again. Use this wizard to create a new quickstart project as follows:
