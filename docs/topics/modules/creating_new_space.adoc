@@ -1,9 +1,9 @@
 [id="creating_new_space-{context}"]
 = Creating a new space
 
-In {osio}, the first step for any new project is to create a new space.
+In {osio}, the first step for any new project is to create a new space with a unique name.
 
-You can then add collaborators, track your work using work items and iterations, and create or import codebases within the space. Each space must have a unique name.
+You can then add collaborators, plan your work using work items and iterations, and create or import codebases within the space.
 
 
 // for user-guide
@@ -33,21 +33,18 @@ image::second_space.png[Second space]
 +
 image::github_disconnected.png[GitHub Disconnected]
 +
-.. If your browser session is already logged in to a GitHub account, {osio} uses it for the GitHub connection step. If not, you are prompted to add your GitHub credentials to connect the account to {osio}.
-+
-image::connect_github.png[Connect to GitHub]
+.. If your browser session is already logged in to a GitHub account, {osio} uses it for the GitHub connection step. If not, you are prompted to add your GitHub credentials to connect the account to {osio}. When the accounts are connected, the {osio} home page view displays.
 
-. When the accounts are connected, the {osio} home page view displays. Click btn:[Create a space] again.
+. Click btn:[Create a space] again.
 
 +
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-. Use the *Development Process* drop-down list to select a template for your new space. For this example, keep the default option for this field.
+. Use the *Development Process* drop-down list to select a template for your new space. For this example, select the *Agile* development process.
 . In the dialog box, type *myspace* as the unique name for your space and click btn:[Ok].
 +
 image::create_space.png[Create new space]
 endif::[]
-
 
 +
 // for user-guide
