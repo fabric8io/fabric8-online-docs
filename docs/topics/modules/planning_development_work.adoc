@@ -14,9 +14,7 @@ NOTE: The *Development Process* you select while creating your space determines 
 
 . In the *Add Work Item* pane, select *Task* from the work item type drop-down list, type the title `Optimize {osio} resource usage`, and click *Add and Open* to see the detailed view for the work item.
 +
-<modify screenshots>
-+
-image::quickadd_wi_type.png[Quick Add work item type]
+image::quickadd_task.png[Quick Add task]
 +
 . In the detailed view of the work item:
 .. Change its state from *New* to *Open*.
@@ -32,8 +30,6 @@ image::gs_add_assignee.png[Modify WI]
 image::create_iteration.png[Create Iteration]
 +
 
-. Click the task to see its details in the preview and link:user-guide.html#associating_work_items_with_an_iteration-user-guide_iterations[associate the task to the *Test Iteration*] to track and close it within this iteration.
-+
-image::gs_iteration_wi_assocn.png[Associating Work Item with an Iteration]
+. Use the detailed view to link:user-guide.html#associating_work_items_with_an_iteration-user-guide_iterations[associate the task to the *Test Iteration*] to track and close it within this iteration.
 
 You can now use the *Test Iteration* in the left panel to see the work items associated with it and track your work.
