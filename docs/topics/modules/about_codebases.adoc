@@ -3,4 +3,5 @@
 
 After creating a space, {osio} enables you to create a new application codebase or import an existing codebase from GitHub and set up pipelines to build the code. These codebases are a generic representation of a project's code.
 
-When you create a new application using the quickstart wizard, {osio} creates a new code repository for your codebase and stores it in GitHub. {osio} also maintains additional metadata for version control of your project code. In the future additional git hosts and non-git options for version control may be supported.
+When you create a new application using the quickstart wizard, {osio} creates a new code repository for your codebase and stores it in GitHub. {osio} also maintains additional metadata for version control of your project code.
+// In the future additional git hosts and non-git options for version control may be supported.
