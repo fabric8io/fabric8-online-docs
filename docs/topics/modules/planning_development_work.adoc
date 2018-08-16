@@ -4,8 +4,8 @@
 {osio} planner provides a set of predefined templates based on common development methodologies such as Agile and Scenario Driven Development. This enables you to plan your development work and to efficiently execute your project using iterative development cycles.
 
 .Prerequisite:
-. Ensure that you select the Agile development process when you <<creating_new_space-hello-world,create your space>>.
-
+* Ensure that you select the Agile development process when you <<creating_new_space-hello-world,create your space>>.
++
 NOTE: The *Development Process* you select while creating your space determines the guided work item type hierarchy in planner and the available work item types to plan your development work.
 
 .Procedure
@@ -17,19 +17,20 @@ NOTE: The *Development Process* you select while creating your space determines 
 image::quickadd_task.png[Quick Add task]
 +
 . In the detailed view of the work item:
-.. Change its state from *New* to *Open*.
+.. Change the state of the Work item from *New* to *Open*.
 .. Assign it to yourself.
 .. Close the detailed view to go back to the list view.
 +
-See link:user-guide.html#working_with_work_items[working with work items] to further modify your work item.
-+
 image::gs_add_assignee.png[Modify WI]
+
 +
-. In the left panel, click the (+) icon adjacent to *Iterations* to create an iteration called *Test Iteration* and force activate it.
+See link:user-guide.html#modifying_a_work_item[modifying work items] for detailed information.
+
+. In the left panel, click the (+) icon adjacent to *Iterations* to see the *Create iteration* window
+. In the *Name* field type `Test Iteration` and force activate it.
 +
 image::create_iteration.png[Create Iteration]
 +
+. Click the work item to see its preview and use it to link:user-guide.html#associating_work_items_with_an_iteration-user-guide_iterations[associate the task to the *Test Iteration*].
 
-. Use the detailed view to link:user-guide.html#associating_work_items_with_an_iteration-user-guide_iterations[associate the task to the *Test Iteration*] to track and close it within this iteration.
-
-You can now use the *Test Iteration* in the left panel to see the work items associated with it and track your work.
+You can now use the *Test Iteration* in the left panel to track the work items associated with it and ensure their completion within the iteration.
