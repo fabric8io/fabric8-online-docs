@@ -8,12 +8,8 @@
 image::existing_workspace.png[Existing Workspace]
 +
 .. Click btn:[Open] to view the existing workspace in a new tab. If the new tab does not load, ensure your browser is not blocking pop-up windows.
-. When the workspace loads, navigate to the following file: `src` > `main` > `Java` > `io.openshift.booster` > `HttpApplication.java`.
-+
-image::project_dir.png[Project Directory]
-+
-
-. In the `HttpApplication.java` file, add a line break at line 9 after the *import* section.
+. When the workspace loads, expand the following directory path in the top left panel: `src` > `main` > `Java` > `io.openshift.booster` > `HttpApplication.java`.
+. Double click `HttpApplication.java` to edit this file, then add a line break at line 9 after the *import* section.
 . Type the following in the new line:
 +
 [source,java]

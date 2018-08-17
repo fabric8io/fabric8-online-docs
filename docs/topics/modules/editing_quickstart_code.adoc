@@ -25,4 +25,4 @@ NOTE: If you already ran the application earlier as instructed in <<running_your
 
 You have now learned how the workspace automatically saves and applies your changes.
 
-See link:https://docs.openshift.io/getting-started-guide.html#advanced_che_features[Using advanced Che features] to learn more about effectively using your Che workspace. 
+See link:https://docs.openshift.io/getting-started-guide.html#using_advanced_che_features[Using advanced Che features] to learn more about effectively using your Che workspace.
