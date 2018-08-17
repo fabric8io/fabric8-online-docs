@@ -1,7 +1,7 @@
 [id="viewing_project_github"]
 = Viewing your project in GitHub
 
-After reviewing your pipeline build running in {osio} and OpenShift Online, view your project <<about_codebases,codebase>> in GitHub as follows:
+After reviewing your pipeline build running in {osio} and OpenShift Online, view your project <<about_application_codebases,codebase>> in GitHub as follows:
 
 . Return to your space dashboard.
 . In the *Codebases* panel, click the GitHub link to the project code.
