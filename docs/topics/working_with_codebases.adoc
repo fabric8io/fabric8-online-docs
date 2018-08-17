@@ -4,12 +4,12 @@
 After creating a space, {osio} enables you to create a new application codebase or import an existing codebase from GitHub and set up pipelines to build the code.
 
 
-include::modules/about_codebases.adoc[leveloffset=+1]
+include::modules/about_application_codebases.adoc[leveloffset=+1]
 
 .Prerequisites
 
 * Create a space. See <<creating_new_space-user-guide>> for instructions.
 
-include::modules/creating_new_project.adoc[leveloffset=+1]
+include::modules/creating_new_application.adoc[leveloffset=+1]
 
 include::modules/importing_your_project.adoc[leveloffset=+1]

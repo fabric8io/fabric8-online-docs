@@ -1,5 +1,5 @@
-[id="about_codebases"]
-= About codebases
+[id="about_application_codebases"]
+= About application codebases
 
 After creating a space, {osio} enables you to create a new application codebase or import an existing codebase from GitHub and set up pipelines to build the code. These codebases are a generic representation of a project's code.
 
