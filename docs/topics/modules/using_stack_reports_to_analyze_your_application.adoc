@@ -25,7 +25,3 @@ For further information about the stack report, see link:user-guide.html#interpr
 . In the *Companion Dependency Details* section, click *Create work item* to add an auto-populated work item to the planner.
 +
 You have now learned how the stack report provides detailed information about your stack and its dependencies, and how it suggests alternate and additional dependencies you can add to your stack to improve your application and make it more secure.
-
-. You have now completed the task, *Use analytics to identify and resolve security and license issues in the application*,  in the *Test Iteration*. Navigate to the *Plan* tab and ensure that you change the state of the work item and its parent feature to *Closed*.
-
-. Also, close the *Test Iteration* using the options (image:kabob.png[title="Options"]) icon next to the iteration as you have now completed all the work items associated with your active iteration.

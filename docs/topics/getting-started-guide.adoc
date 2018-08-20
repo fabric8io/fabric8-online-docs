@@ -13,6 +13,8 @@ include::modules/introduction_to_homescreen.adoc[leveloffset=+1]
 
 include::hello_world_developers.adoc[leveloffset=+1]
 
+include::modules/planning_your_work.adoc[leveloffset=+1]
+
 include::optimizing_memory_usage.adoc[leveloffset=+1]
 
 include::analyzing-your-application.adoc[leveloffset=+1]

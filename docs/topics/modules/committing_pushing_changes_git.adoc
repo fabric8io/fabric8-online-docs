@@ -33,8 +33,3 @@ When the commit succeeds, the following message displays:
 image::pushed_to_origin.png[Pushed to origin]
 
 You have now committed your code changes to GitHub.
-
-//for hello world
-ifeval::["{context}" == "hello-world"]
-You have now completed the task, *Modify the quickstart codebase*, in the *Test Iteration*. Change the state of the work item to *Closed* using the *Plan* tab.
-endif::[]
