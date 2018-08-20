@@ -14,3 +14,5 @@ image::optimize_memory.png[Optimizing Hello World Memory Usage]
 You can now compare these details to the details in <<reviewing_detailed_resource_information-{context}>> to see the resource usage improvements.
 
 NOTE: If you have completed these instructions for optimizing your resources but still do not have enough OpenShift Online resources, see <<cleaning_oso_account>> to reset your OpenShift Online and {osio} accounts.
+
+. You have now completed the task, *Optimize {osio} resource usage*,  in the *Test Iteration*. Navigate to the *Plan* tab and ensure that you change the state of the work item to *Closed*.
