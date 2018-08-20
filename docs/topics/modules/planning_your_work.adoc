@@ -1,7 +1,7 @@
-[id="planning_development_work"]
-= Planning your development work
+[id="planning_your_work"]
+= Planning your work
 
-{osio} planner provides a set of predefined templates based on common development methodologies such as Agile and Scenario Driven Development.
+{osio} planner provides a set of predefined templates based on common development methodologies such as Agile and Scenario Driven Development to track tasks as work items.
 
 Use the Agile development process to plan and execute your project using iterative cycles as follows:
 

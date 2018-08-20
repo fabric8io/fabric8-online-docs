@@ -5,8 +5,6 @@
 
 include::modules/creating_new_space.adoc[leveloffset=+1]
 
-include::modules/planning_development_work.adoc[leveloffset=+1]
-
 include::modules/about_application_codebases.adoc[leveloffset=+1]
 
 include::modules/creating_new_application.adoc[leveloffset=+1]
