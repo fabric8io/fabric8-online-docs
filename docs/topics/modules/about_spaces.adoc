@@ -1,7 +1,10 @@
 [id="about_spaces"]
 = About spaces
 
-A _space_ is the first thing a user creates in {osio}. All other elements are created within a space to organize them for each project. A space allows you to plan your development work using <<about_work_items,work items>> and <<about_iterations,iterations>>, assign work items to <<about_collaborators,collaborators>> within your team, and link:getting-started-guide.html#creating_new_project-hello-world[create software applications] within it.
+A _space_ is the first thing a user creates in {osio}. All other elements are created within a space to organize them for each project.
 
-Each <<about_codebases,codebase>>, iteration, work item, and collaborator is attached to a space.
+After you create a space, you can link:getting-started-guide.html#creating_new_project-hello-world[create applications] using {osio} quickstart <<about_application_codebases,codebases>>.
+You can also use the space to plan your development work using <<about_work_items,work items>> and <<about_iterations,iterations>>, and assign the work items to <<about_collaborators,collaborators>> within your team.
+
+Each codebase, iteration, work item, and collaborator is attached to a space.
 As an example, each space can contain multiple codebases, work items tracking work to be done in a project, collaborators working on their assigned work items, and iterations to track when the work items are to be done.

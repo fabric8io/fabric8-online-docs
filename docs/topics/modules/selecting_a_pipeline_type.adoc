@@ -3,7 +3,7 @@
 
 When creating a new project using the quickstart wizard, three types of Jenkins build pipelines are available for your new project:
 
-image::user-guide_select_pipeline.png[Select a pipeline]
+image::select_pipeline.png[Select a pipeline]
 
 . *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* is the recommended option for most projects. It provides an end to end pipeline that moves your application through all the stages of application development, that is, build your source code, test your changes, rollout to the _Stage_ environment, review, manually approve, and promote the changes to the _Run_ environment.
 

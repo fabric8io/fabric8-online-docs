@@ -20,7 +20,7 @@ ifeval::["{context}" == "user-guide"]
 .. In the *Repository* field, click *Select Repository* to select the repository from which you want to import the codebase.
 .. Click the blue arrow at the bottom of the screen to continue.
 +
-image::ug_authorize_git_provider.png[Personal organization]
+image::ip_authorize_git_provider.png[Personal organization]
 +
 endif::[]
 
@@ -47,8 +47,9 @@ image::select_pipeline.png[Select a pipeline]
 image::add_codebase_final.png[Final step adding codebase]
 
 ////
-image::authorize_git_provider.png[Personal organization]
-endif::[]
+
+image::ip_authorize_git_provider.png[Personal organization]
+
 . In the *Application Wizard*, select an *Organization* from the drop-down options. The default (and recommended for this tutorial) option is your personal GitHub account name.
 +
 image::organization_personal.png[Personal organization]
@@ -75,4 +76,5 @@ image::build_config.png[Build config screen]
 +
 image::eventbus_final.png[Build config screen]
 ////
+
 You have now imported the code from your existing repository to {osio}.

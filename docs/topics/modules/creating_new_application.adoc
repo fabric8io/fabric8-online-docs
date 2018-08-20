@@ -1,16 +1,16 @@
-[id="creating_new_project-{context}{secondary}"]
-= Creating a new project
+[id="creating_new_application-{context}{secondary}"]
+= Creating a new application
 
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-In this section, you learn how to create a quickstart project based on a Spring Boot application in your space. See the <<hello_world_developers,Hello World project>> for an example of a Vert.X application.
+In this section, you learn how to create a Spring Boot application using the {osio} quickstart codebases. See the <<hello_world_developers,Hello World project>> for an example of a Vert.X application.
 endif::[]
 
-When you create a new space, the *Create an Application* wizard to create applications displays. If you closed the wizard earlier, click btn:[Create an Application] in your space dashboard to see the wizard again. Use this wizard to create a new quickstart project as follows:
+When you create a new space, the *Create an Application* wizard to add or import codebases displays. If you closed the wizard earlier, click btn:[Add to space] in your space dashboard to see the wizard again. Use this wizard to create a new quickstart project as follows:
 
 image::start_creating_apps.png[Start creating apps]
 
-NOTE: Each quickstart has different requirements to run. We recommend reading the project's README file for details about requirements.
+//<move note, Does not make any sense here, needs to move to workspaces section.> NOTE: Each quickstart has different requirements to run. Read the project's README file for details about requirements.
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]
@@ -20,83 +20,68 @@ ifeval::["{context}" == "hello-world"]
 
 . Select the mission and runtime for your new project:
 
-.. In the *Choose a mission* section, select the *Externalized Configuration* option.
+.. In the *Choose a mission* section, select the *REST API Level 0* option.
 
 .. In the *Choose a runtime* section, select *Eclipse Vert.x*.
 
 .. Click the blue downward arrow button to continue.
 +
-image::{context}_choose_mission_runtime.png[Choose mission and runtime]
+image::choose_mission_runtime.png[Choose mission and runtime]
 +
 . In the *Select Pipeline* section, select the first option, then click the blue arrow to continue to the next step.
 +
 image::select_pipeline.png[Select a pipeline]
 +
-. In the *Authorize Git Provider* section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
-+
-image::authorize_github_screen.png[Authorize GitHub]
-+
-. The next screen displays a summary of your application options. Scroll down in your browser to view the *Application Information* section. For this example, do not edit these options. If desired, you can change the project name, version, Group ID, which space it is in, and the target environment for your new application at this step.
-+
-image::{context}_app_information.png[Application information]
-+
-. Click btn:[Set Up Application] to finalize your choices and create the new application.
-
-. The progress screen displays a confirmation message when your application is ready.
-.. Optionally, click the blue link to view your new codebase in your Git provider.
-.. When ready, click btn:[View New Application].
-+
-image::{context}_application_ready.png[Application ready]
-+
-Your new Vert.X project is now created in your space and your space dashboard now displays your new application:
-+
-image::space_dash_after_hello-world.png[Space dashboard view after creating Hello World]
-+
-. You have now completed the task, *Launch a sample quickstart application*, in the *Test Iteration*. Ensure that you change the state of the work item to *Closed* using the *Plan* tab
-
 endif::[]
-
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
 . In the *Name your application* field, type a unique name for your new project. Ensure that the application name adheres to the listed *Naming Requirements*.
-
-+
-image::app_name_requirements.png[Naming Requirements]
-+
 
 . Select the *Create a new codebase* radio button and click btn:[Continue].
 
 . Select the mission and runtime for your new project:
 
 .. In the *Choose a mission* section, select the the appropriate option.
-
-.. In the *Choose a runtime* section, select the appropriate runtime. When you select the options at each step, the gray arrow at the bottom of the screen turns blue.
-
+.. In the *Choose a runtime* section, select the appropriate runtime. The gray arrow at the bottom of the screen now turns blue.
 .. Click the blue downward arrow button to continue.
 +
-image::{context}_choose_mission_runtime.png[Choose mission and runtime]
+image::choose_mission_runtime.png[Choose mission and runtime]
 +
-. In the *Select Pipeline* section, select the appropriate option, then click the blue arrow to continue to the next step. We recommend using the first option for most use cases because it provides stages to test your changes for each pipeline build. For more information see <<working_with_pipelines>>.
+. In the *Select Pipeline* section, select the appropriate option, then click the blue arrow to continue to the next step. The first option is suggested for most use cases because it provides stages to test your changes for each pipeline build. For more information see <<working_with_pipelines>>.
 +
-image::user-guide_select_pipeline.png[Select a pipeline]
-+
+image::select_pipeline.png[Select a pipeline]
+
+endif::[]
+
+
 . In the *Authorize Git Provider* section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
 +
-image::authorize_github_screen.png[Authorize GitHub]
+image::authorize_git_provider.png[Authorize GitHub]
 +
-. The next screen displays a summary of your application options. Scroll down in your browser to view the *Application Information* section. For this example, do not edit these options. If desired, you can change the project name, version, Group ID, which space it is in, and the target environment for your new application at this step.
+. The next screen displays a summary of your application options. Scroll down in your browser to view the *Application Information* section. For this example, do not edit these options. If desired, you can change the *Application Name*, *Version*, and *Group ID* for your new application at this step.
 +
-image::{context}_app_information.png[Application information]
+image::app_information.png[Application information]
 +
-. Click btn:[Set Up Application] to finalize your choices and create the new application.
+. Click btn:[Set Up Application] to create the new application.
 
 . The progress screen displays a confirmation message when your application is ready.
+
 .. Optionally, click the blue link to view your new codebase in your Git provider.
 .. When ready, click btn:[View New Application].
 +
-image::{context}_application_ready.png[Application ready]
+image::application_ready.png[Application ready]
 
+// for hello-world
+ifeval::["{context}" == "hello-world"]
+Your new Vert.X application is now created in your space and your space dashboard displays your new application:
+
+image::space_dash_after_hello-world.png[Space dashboard view after creating Hello World]
+endif::[]
+
+
+// for user-guide
+ifeval::["{context}" == "user-guide"]
 Your new project is now created in your space and your space dashboard now displays your new codebase.
 endif::[]
 
