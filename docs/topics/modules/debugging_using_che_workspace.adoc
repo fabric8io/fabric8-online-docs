@@ -1,19 +1,16 @@
 [id="debugging_using_che_workspace"]
 = Debugging using your Che workspace
 
-After creating your {osio} project, you can debug your application code in the Che workspace. This exercise is optional but recommended as an introduction to debugging code in {osio}.
+After creating your {osio} project, you can debug your application code in the Che workspace. The following is a tutorial using the quickstart project you have already created.
 
-
-[discrete]
-== Procedure
+To debug your project code:
 
 . Return to your project Che workspace browser tab.
 . If the `HttpApplication.java` file is not already loaded, double-click it in your file explorer view (`src` > `main` > `Java` > `io.openshift.booster`) to view the contents.
-+
-image::project_dir.png[Project Directory]
-+
-. In your `HttpApplication.java` file, add a line break between lines 21 and 22, then type `router.` and press kbd:[Ctrl+Space] to see the context-aware assistance.
-. Scroll down in the displayed list and select the `get():Route` method. This is the Vert.x Router get method and maps to the HTTP verb GET.
+
+. In your `HttpApplication.java` file, add a line break after line 34, then type `router.` and press kbd:[Ctrl+Space] to see the context-aware assistance.
+
+. Scroll down in the displayed list and double-click the `get():Route` method. This is the Vert.x Router get method and maps to the HTTP verb GET. You now have the syntax for the get method.
 +
 image::debug_router.png[Project Directory]
 +
@@ -24,7 +21,9 @@ image::debug_router.png[Project Directory]
 router.get("/api/goodbye").handler(this::goodbye);
 ----
 +
-. Add a new line after line 53 and then add the following method for the `goodbye` endpoint:
+NOTE: The completed line shows a red x indicating an error because the referenced `goodbye` endpoint is not available in the code. This endpoint is added in the next step.
+
+. Add a new line after line 74 and then add the following method for the `goodbye` endpoint:
 +
 [source,java]
 ----
@@ -59,8 +58,8 @@ The following result appears if the changes were successful:
 +
 image::terminal_result.png[Terminal Test Result]
 +
-. In the *EXEC* bar on the top of the workspace page, click the stop button (a blue square icon) to stop the current run process.
+. To stop the application, click the stop button in the *EXEC* bar on the top of the workspace page.
 +
 image::bar_stop.png[EXEC Bar]
 +
-When stopped, the square icon becomes a circular arrow (image:run_stopped.png[title="Run Stopped"]).
+When the application stops, the square icon becomes a circular arrow (image:run_stopped.png[title="Run Stopped"]).

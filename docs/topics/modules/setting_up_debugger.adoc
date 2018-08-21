@@ -3,12 +3,11 @@
 
 To debug your project code, set up the Che workspace Debugger feature:
 
-. Click the *debug* option from the Debug drop-down.
+. In your workspace, click the *debug* option in the Debug drop-down icon.
 +
 image::debug_button.png[Debugger Button]
 +
-
-. In the new *debug* tab in the *Processes* pane at the bottom of the screen, look for the following lines when the debugging starts:
+. In the new *debug* tab in the *Processes* pane at the bottom of the screen, look for the following lines when the debugging starts and wait for the process to complete:
 +
 ----
 [INFO] The application will wait for a debugger to attach on debugPort 5005
@@ -18,39 +17,31 @@ image::debug_button.png[Debugger Button]
 [INFO] Listening for transport dt_socket at address: 5005
 ----
 +
-
-. When the debug process completes, click *Run* from the menu at the top of the page and select *Edit Debug Configurations*.
+. From the menu bar, click *Run* and select *Edit Debug Configurations*.
 +
 image::edit_debug_config.png[Edit Debug Configuration]
 +
-
 . In the *Debug Configurations* dialog box:
 .. In the left pane, click btn:[+] for the *JAVA* item in the dialog box to add a *Remote Java* port.
 .. In the right pane, change the *Port* value to `5005`.
-+
-image::debug_config.png[Debugger Configuration Dialog]
-+
 .. Click btn:[Save] and then btn:[Close].
 . To create a new breakpoint for your method:
-.. In the `HttpApplication.java` file, go to the following line of code at line 43:
+.. In the `HttpApplication.java` file, go to the following line of code at line 77:
 +
 [source,java]
 ----
     if (name == null) {
 ----
 +
+.. Click the line number (*77* in the margin) for this line of code:
 
-.. Click the line number for this line of code:
-+
-image::breakpoint.png[Create Breakpoint]
-+
+. Click the debug icon (image:debug_icon.png[title="Debug icon"]) at the bottom left corner of the workspace to verify that the breakpoint is added.
 
-. Click the debug icon at the bottom of the workspace to confirm the addition of the breakpoint:
-+
-image::debug_option.png[Debug Option]
-+
-The *Breakpoints* pane at the lower left of the *Debug* section displays the added breakpoint at the appropriate line:
-+
-image::debug_breakpoint.png[Breakpoint View]
+The *Breakpoints* pane at the bottom left corner of the screen lists all added breakpoints named after the file they are added in and then the line number. For example, your new breakpoint is listed as the following:
+
+[source,bash]
+----
+HttpApplication.java:77
+----
 
 The Debugger is now set up for your project.
