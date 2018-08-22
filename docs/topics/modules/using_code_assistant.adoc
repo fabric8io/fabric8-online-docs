@@ -8,12 +8,9 @@
 image::existing_workspace.png[Existing Workspace]
 +
 .. Click btn:[Open] to view the existing workspace in a new tab. If the new tab does not load, ensure your browser is not blocking pop-up windows.
-. When the workspace loads, navigate to the following file: `src` > `main` > `Java` > `io.openshift.booster` > `HttpApplication.java`.
-+
-image::project_dir.png[Project Directory]
-+
-
-. In the `HttpApplication.java` file, add a line break at line 9 after the *import* section.
+. When the workspace loads, expand the following directory path in the top left panel: `src` > `main` > `Java` > `io.openshift.booster`.
+. Double click `HttpApplication.java` to edit this file.
+. In the text editor, add a line break at line 9 after the *import* section.
 . Type the following in the new line:
 +
 [source,java]
@@ -21,20 +18,15 @@ image::project_dir.png[Project Directory]
 import io.
 ----
 +
-
-. Press kbd:[Ctrl+Space] to view the options for this line and select any one of the options.
+. Press kbd:[Ctrl+Space] to view the autocomplete options for this line. Select any one of the options.
 +
 image::code_options.png[Code Autocomplete Options]
 +
-
-. Move the mouse pointer over the error icon next to the line number to view the error, which warns you that import is not used.
-+
-image::code_error.png[Code Error]
-+
+. Move the mouse pointer over the red X error icon next to the line number to view the error, which warns you that import is not used.
 . Delete the added line to clear the error.
 
 You have now learned how the Che workspace uses Code Assistant to make recommendations and identify errors.
 
-Click *Assistant* at the top of the page to view additional IDE features.
+To view additional IDE features, click *Assistant* at the top of the page.
 
 image::assistant.png[Assistant Menu]
