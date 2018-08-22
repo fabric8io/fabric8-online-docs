@@ -1,17 +1,15 @@
 [id="using_terminal_tab"]
 = Using the terminal tab
 
-Your Che workspace displays a terminal tab at the bottom of the screen. This terminal is for your private Linux container (i.e. your workspace). You can use Unix commands in the terminal tab as follows: 
+Your Che workspace displays a terminal tab at the bottom of the screen. You can use this terminal to run commands in your private Linux container (i.e. your workspace) as follows:
 
 . In your Che workspace, if your application is not running, Click the *run* option (image:tri_run.png[title="Run button"]). The *Successfully deployed verticle* message appears in the terminal tab when the run process completes:
 +
 image::hello-world_deployed_verticle.png[Deployed verticle]
 +
-. At the bottom of your workspace, click *Terminal* to see the terminal tab:
-+
-image::terminal_start.png[Terminal Tab]
-+
-. Enter the following commands in the terminal tab:
+. Click *terminal* next to the *run* tab to view your workspace terminal.
+
+. Type the following in the terminal and press kbd:[Enter] to run the commands.
 +
 ----
 cat /etc/os-release
