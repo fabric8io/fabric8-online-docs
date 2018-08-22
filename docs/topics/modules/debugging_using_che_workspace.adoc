@@ -10,7 +10,7 @@ To debug your project code:
 
 . In your `HttpApplication.java` file, add a line break after line 34, then type `router.` and press kbd:[Ctrl+Space] to see the context-aware assistance.
 
-. Scroll down in the displayed list and double-click the `get():Route` method. This is the Vert.x Router get method and maps to the HTTP verb GET. You now have the syntax for the get method.
+. Scroll down in the displayed list and double-click the `get():Route` method. This is the Vert.x Router method that maps to the HTTP verb GET. You now have the syntax for the get method.
 +
 image::debug_router.png[Project Directory]
 +

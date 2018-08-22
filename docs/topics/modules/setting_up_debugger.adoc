@@ -3,7 +3,7 @@
 
 To debug your project code, set up the Che workspace Debugger feature:
 
-. In your workspace, click the *debug* option in the Debug drop-down icon.
+. In your workspace, click the *debug* option in the debug button.
 +
 image::debug_button.png[Debugger Button]
 +
