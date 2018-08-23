@@ -23,7 +23,7 @@ include::using_advanced_che_features.adoc[leveloffset=+1]
 
 //include::spring_boot_quickstart_tutorial.adoc[leveloffset=+1]
 
-include::modules/cleaning_oso_account.adoc[leveloffset=+1]
+include::modules/resetting_your_osio_account.adoc[leveloffset=+1]
 
 include::importing-existing-project.adoc[leveloffset=+1]
 

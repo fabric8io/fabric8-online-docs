@@ -21,4 +21,4 @@ image::resources_half.png[Resources half]
 
 See <<reviewing_detailed_resource_information-user-guide>> to view further details on resource usage.
 
-After you create two projects, the two pods allocated to an OpenShift Online account have been used. Use this page to check if you have resources remaining because future builds may fail if the required resources are not available. See <<cleaning_oso_account, resetting your environment>> to reclaim all these resources.
+After you create two projects, the two pods allocated to an OpenShift Online account have been used. Use this page to check if you have resources remaining because future builds may fail if the required resources are not available. See <<resetting_your_osio_account, resetting your environment>> to reclaim all these resources.
