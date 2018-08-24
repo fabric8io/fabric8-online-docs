@@ -28,7 +28,7 @@ ifeval::["{context}" == "hello-world"]
 +
 image::choose_mission_runtime.png[Choose mission and runtime]
 +
-. In the *Select Pipeline* section, select the first option, then click the blue arrow to continue to the next step.
+. In the *Select Pipeline* section, select the first option, then click the blue arrow to continue to the next step. The {osio} pipelines create repeatable, incrementally improving processes that test and deploy the code from creation to execution.
 +
 image::select_pipeline.png[Select a pipeline]
 +
@@ -48,7 +48,7 @@ ifeval::["{context}" == "user-guide"]
 +
 image::choose_mission_runtime.png[Choose mission and runtime]
 +
-. In the *Select Pipeline* section, select the appropriate option, then click the blue arrow to continue to the next step. The first option is suggested for most use cases because it provides stages to test your changes for each pipeline build. For more information see <<working_with_pipelines>>.
+. In the *Select Pipeline* section, select the appropriate option, then click the blue arrow to continue to the next step. The {osio} pipelines create repeatable, incrementally improving processes that test and deploy the code from creation to execution. The first option is suggested for most use cases. For more information see <<working_with_pipelines>>.
 +
 image::select_pipeline.png[Select a pipeline]
 
