@@ -7,7 +7,7 @@ The purpose of this document is to guide you through your first experiences with
 
 {osio} is constantly being updated and therefore improving as you use it. Hearing directly from users about their experiences lets us improve the product and experience for you. See <<send-us-feedback-about-osio>> to send us information about bugs, feature requests, and your thoughts about what does or doesn't work well for you. Updates and changes to the system are delivered continuously, often multiple times in a day. As part of our continuous delivery model, everyone who pushes a change out to the live system assumes responsibility for the impact of that change, so severe bugs are addressed quickly.
 
-If your {osio} environment gets into a state where you are finding it difficult or impossible to move forward, refer to the <<cleaning_oso_account>> section of this document for information on how to factory reset your {osio} (and OpenShift Online) environment. Welcome to the world of {osio}! We hope you enjoy your experience and look forward to hearing your feedback!
+If your {osio} environment gets into a state where you are finding it difficult or impossible to move forward, refer to the <<resetting_your_osio_account>> section of this document for information on how to factory reset your {osio} (and OpenShift Online) environment. Welcome to the world of {osio}! We hope you enjoy your experience and look forward to hearing your feedback!
 
 [id="about-this-document"]
 == About this document

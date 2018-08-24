@@ -5,4 +5,4 @@ Before you start using {osio}, keep the following information in mind:
 
 * We recommend using {osio} with an OpenShift Online Starter account, not an OpenShift Online Pro account.
 * When you sign up to use OpenShift.io, you are given an OpenShift Online account with enough resources to run a basic stage and run environment, pipelines, and an Eclipse Che development workspace.
-* Your OpenShift Online Starter account includes two pods and therefore can accomodate two workspaces in {osio}. To create additional projects, you must reset your {osio} environment using the instructions in <<cleaning_oso_account>>.
+* Your OpenShift Online Starter account includes two pods and therefore can accomodate two workspaces in {osio}. To create additional projects, you must reset your {osio} environment using the instructions in <<resetting_your_osio_account>>.
