@@ -1,7 +1,7 @@
 [id="using_terminal_tab"]
 = Using the terminal tab
 
-Your Che workspace displays a terminal tab at the bottom of the screen. You can use this terminal to run commands in your private Linux container (i.e. your workspace) as follows:
+Your Che workspace displays a terminal tab at the bottom of the screen. You can use this terminal to run commands in your private Linux container (your workspace) as follows:
 
 . In your Che workspace, if your application is not running, Click the *run* option (image:tri_run.png[title="Run button"]). The *Successfully deployed verticle* message appears in the terminal tab when the run process completes:
 +
