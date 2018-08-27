@@ -1,9 +1,9 @@
-[id="Reviewing_staged_application"]
+[id="reviewing_your_staged_application"]
 = Reviewing your staged application
 
 When you create a new codebase, the selected pipeline builds your application. It pushes version 1.0.1 of your new application into the _Stage_ environment, and then awaits your approval to deploy into the _Run_ environment.
 
-<<about_stage_run,_Stage_ and _Run_>> are individual OpenShift projects. _Stage_ is a production staging area to review and test changes before they are finalized and then staged on _Run_.
+<<about_pipelines_stage_run,_Stage_ and _Run_>> are individual OpenShift projects. _Stage_ is a production staging area to review and test changes before they are finalized and then staged on _Run_.
 
 To review your application on _Stage_:
 

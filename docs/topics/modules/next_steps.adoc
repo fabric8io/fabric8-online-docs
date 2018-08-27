@@ -8,7 +8,7 @@ If you followed the instructions in this document, you have now learned about {o
 * Create new projects using the quickstart wizards and test them. See <<hello_world_developers>> for a Vert.X project.
 //and <<spring_boot_quickstart_tutorial>> for a Spring Boot project.
 * Plan your work by creating work items and execute them using iterative development cycles. See <<planning_your_work>>.
-* Use the build pipelines to stage reviews in the *Stage* and *Run* environments. See <<working_with_pipelines>>.
+* Use the build pipelines to stage reviews in the *Stage* and *Run* environments. See <<reviewing_your_staged_application>> and <<approving_your_application>>.
 * Create Che workspaces to edit your project code and commit the changes to GitHub. See <<creating_che_workspace-hello-world>> and <<committing_pushing_changes_git-hello-world>>.
 * Optimize the memory usage for your projects to use your OpenShift Online resources more efficiently. See <<optimizing_memory_usage>>.
 // and <<reducing_project_memory_usage-spring-boot>>.

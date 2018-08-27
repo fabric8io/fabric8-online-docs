@@ -9,17 +9,17 @@ include::modules/about_application_codebases.adoc[leveloffset=+1]
 
 include::modules/creating_new_application.adoc[leveloffset=+1]
 
-include::modules/about_stage_run.adoc[leveloffset=+1]
+include::modules/about_pipelines_stage_and_run.adoc[leveloffset=+1]
 
-include::modules/working_with_pipelines.adoc[leveloffset=+1]
+include::modules/reviewing_your_staged_application.adoc[leveloffset=+1]
 
 include::modules/viewing_build_pipeline_oso.adoc[leveloffset=+1]
 
-include::modules/approving_build_pipeline.adoc[leveloffset=+1]
-
-include::modules/optional_detailed_views.adoc[leveloffset=+1]
+include::modules/approving_your_application.adoc[leveloffset=+1]
 
 include::modules/viewing_project_github.adoc[leveloffset=+1]
+
+include::modules/viewing_application_deployment_details.adoc[leveloffset=+1]
 
 include::modules/viewing_projects_oso.adoc[leveloffset=+1]
 
