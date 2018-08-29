@@ -7,11 +7,7 @@ When you create a new codebase, the selected pipeline builds your application. I
 
 To review your application on _Stage_:
 
-. At the top of the page, click *Create*, and then click *Pipelines* to see the build pipelines for your new application. <test and see if this screenshot with no stages started is required>
-+
-image::hello-world_build1_nostages.png[VertX Build 1 No Stage]
-+
-When the pipeline build pushes the application to stage, it displays at the *Approve* stage. This could take a few minutes.
+. At the top of the page, click *Create*, and then click *Pipelines* to see the build pipelines for your new application. The pipeline first sets your build server, starts the build, and releases the build. When the pipeline build pushes the application to stage, it displays at the *Approve* stage. This could take a few minutes.
 +
 image::pipeline_firstrun.png[Pipeline First Run]
 +

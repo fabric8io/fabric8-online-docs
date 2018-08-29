@@ -1,5 +1,5 @@
-[id="viewing_projects_oso"]
-= Viewing projects in OpenShift Online
+[id="viewing_oso_projects"]
+= Viewing your OpenShift Online projects
 
 To view all the OpenShift Online projects that support your application, navigate to link:https://console.starter-us-east-2.openshift.com/console/projects/[*My Projects*] in the OpenShift Online Console.
 

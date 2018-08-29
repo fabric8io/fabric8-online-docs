@@ -13,7 +13,7 @@ include::modules/staging_the_application.adoc[leveloffset=+1]
 
 include::modules/promoting_the_application.adoc[leveloffset=+1]
 
-include::modules/viewing_build_pipeline_oso.adoc[leveloffset=+1]
+include::modules/viewing_build_pipeline_logs.adoc[leveloffset=+1]
 
 include::modules/configuring_pipelines.adoc[leveloffset=+1]
 

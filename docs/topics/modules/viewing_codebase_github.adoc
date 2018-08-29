@@ -1,0 +1,11 @@
+[id="viewing_codebase_github"]
+= Viewing your codebase in GitHub
+
+After reviewing your pipeline build running in {osio} and OpenShift Online, view your application <<about_application_codebases,codebase>> in GitHub as follows:
+
+. Return to the *Pipeline* view in {osio}, the *Source Repository* provides the link to the codebase of your application. Right click the link and open it in a new tab to see your codebase in GitHub.
+. In the repository, click the *Jenkinsfile* to view details on staging and rolling out of the pipelines.
++
+image::proj_gh.png[Project Code in GitHub]
+
+Use the codebase link to review code commits and details in your GitHub repository.
