@@ -22,14 +22,12 @@ endif::[]
 
 // for importing-existing-project
 ifeval::["{context}" == "importing-existing-project"]
-Create a new <<about_workspaces,Che workspace>> for your project:
+To create a new <<about_workspaces,Che workspace>> for your project to edit your code:
 
 . Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*
 endif::[]
 // end of conditions
 . In the *WORKSPACES* column, click *Create workspace* for your project.
-+
-image::create_workspace.png[Create Workspace]
 +
 [NOTE]
 ====
@@ -38,9 +36,7 @@ If you see a message about the workspaces loading (see screen capture), it indic
 image::loading_workspaces.png[Loading Workspaces]
 ====
 
-. When your workspace is ready, it automatically loads in a new tab. Alternatively, click btn:[Open] to view your new Che workspace in a new browser tab. This workspace loads the codebase for the listed project.
-+
-image::new_ws.png[New Workspace]
+. When your workspace is ready, it automatically loads in a new tab. If the workspace does not automatically load in a new browser tab, click btn:[Open] to view your new Che workspace in a new browser tab. This workspace loads the codebase for the listed project.
 +
 NOTE: If a new tab does not appear, see <<enable_popups>> for troubleshooting information.
 +

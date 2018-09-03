@@ -1,7 +1,7 @@
-[id="running_your_project-{context}"]
+[id="running_your_project_in_the_che_workspace-{context}"]
 = Running your project in the Che workspace
 
-After your Che workspace loads, you can see your project code listed in the file explorer panel, in the upper-left side of the screen. You must now ensure the following prerequisites are met before you start using the workspace to edit the codebase:
+After your Che workspace loads, you can see your project code listed in the file explorer panel, in the upper-left side of the screen. 
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
@@ -10,7 +10,6 @@ ifeval::["{context}" == "user-guide"]
 * Add a new or existing codebase to {osio}.
 * Create a Che workspace for your target codebase.
 
-.Procedure
 endif::[]
 
 . Click the *run* option from the Run button (image:tri_run.png[title="Run button"]). Maven then downloads the required dependencies, compiles the application, and starts the _verticle_ (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options. The hot deploy option automatically updates the application when you make a change.
@@ -26,25 +25,16 @@ See <<create_run_command_macro>> for instructions on setting up a run command.
 +
 . A *run* terminal appears at the bottom pane of the Che workspace. When the `mvn{nbsp}build` command finishes executing, the *run* view displays the *Succeeded in Deploying verticle* message:
 +
-image::{context}_deployed_verticle.png[Successfully deployed verticle]
+----
+[INFO] INFO: Succeeded in deploying verticle
+----
 +
 . Click the blue preview URL at the top of the *run* view to see your application running in Che.
 +
 image::{context}_run_proj.png[Run project link]
 +
-// for hello-world
-ifeval::["{context}" == "hello-world"]
 . Enter a name in the *Name* field and click btn:[Invoke] to test the application.
 +
 image::{context}_john.png[Testing the application]
-endif::[]
-
-// for importing-existing-project
-ifeval::["{context}" == "importing-existing-project"]
-. Enter a name in the *Name* field and click btn:[Invoke] to test the application.
-+
-image::{context}_john.png[Testing the application]
-endif::[]
-
 
 This is the same version of the application that the pipeline deployed to *Stage* and you subsequently promoted to *Run*. The URL for this build of the application is different from the URLs used by OpenShift Online for *Stage* and *Run*. This is your private sandbox hosted within Che. You can still share this URL with others and interactively debug the application while they run it in their browser.
