@@ -1,80 +1,24 @@
 [id="importing_your_project-{context}{secondary}"]
 = Importing your project
 
-After creating a space, the *Create an Application* wizard to create applications displays. If you closed the wizard earlier, click btn:[Create an Application] in your space dashboard to see the *Create an Application* wizard again.
+After creating a space, use the *Create an Application* wizard to create or import and application. If you closed the wizard earlier, click btn:[Create an Application] in your space dashboard.
 
-. In the *Name your application* field, type a unique name for your new project. Ensure that the application name adheres to the listed *Naming Requirements*.
-
-+
-image::app_name_requirements.png[Naming Requirements]
-+
+. In the *Name your application* field, type a unique name for your new project. 
 
 . Select the *Import an existing codebase* radio button and then click btn:[Continue] to import an existing project codebase into {osio}.
-+
-image::importing_project.png[Importing Project]
-+
-// for user-guide
-ifeval::["{context}" == "user-guide"]
+
 . In the *Authorize Git Provider* step:
+
 .. Click the *Location* drop-down to select the location of your codebase. The default option is your personal GitHub account name.
-.. In the *Repository* field, click *Select Repository* to select the repository from which you want to import the codebase.
+
+.. In the *Repository* field, click *Select Repository* to select the repository to import the codebase.
+
 .. Click the blue arrow at the bottom of the screen to continue.
-+
-image::ip_authorize_git_provider.png[Personal organization]
-+
-endif::[]
 
-+
-//for importing existing
-ifeval::["{context}" == "importing-existing-project"]
-. In the *Authorize Git Provider* step:
-.. Click the *Location* drop-down to select the location of your codebase. The default (and recommended for this tutorial) option is your personal GitHub account name.
-.. In the *Repository* field, click *Select Repository* to select the repository from which you want to import the codebase. For this tutorial, select the forked *vertx-eventbus* repository option.
-.. Click the blue arrow at the bottom of the screen to continue.
-+
-image::ip_authorize_git_provider.png[Personal organization]
-+
-endif::[]
+. In the *Select pipeline* step, select an option for your pipeline build, then click the blue arrow to continue to the next step. We recommend using the first option for most use cases because it provides an end to end pipeline that is suitable for most projects.
 
-. In the *Select pipeline* step, select an option for your pipeline build, then click the blue arrow to continue to the next step. We recommend using the first option for most use cases because it provides an end to end pipeline that moves your application through all the stages of application development, that is, build your source code, test your changes, rollout to stage, review, approve, and promote it to run in production.
-+
-image::select_pipeline.png[Select a pipeline]
+. The *Confirm Application Summary & Import* step displays a summary for your imported code. Review the information and click btn:[Import Application] to confirm. The progress screen displays when the code is successfully imported.
 
-. The *Confirm Application Summary & Import* step displays a summary for your imported code. Review the information and click btn:[Import Application] to confirm.
-
-. The progress screen displays when your code is imported. Click btn:[View New Application] to continue when all the steps have a green check mark next to them.
-+
-image::add_codebase_final.png[Final step adding codebase]
-
-////
-
-image::ip_authorize_git_provider.png[Personal organization]
-
-. In the *Application Wizard*, select an *Organization* from the drop-down options. The default (and recommended for this tutorial) option is your personal GitHub account name.
-+
-image::organization_personal.png[Personal organization]
-+
-. Click btn:[Next] to continue.
-.  The *Repository name pattern* field automatically queries GitHub for all your repositories. Click the filter icon (image:funnel.png[title="Filter"]) and type `vertx-` to filter the results for your forked example repository.
-+
-image::add_example_repo.png[Add Forked Repository]
-+
-. From the results, select the forked *vertx-eventbus* repository and click btn:[Next] after the repository is validated.
-+
-image::select_vertx_eventbus.png[Select VertX Eventbus Repository]
-+
-
-. On the *Configure Pipeline* screen, use the default settings and click btn:[Next].
-+
-image::configure_pipeline.png[Configure pipeline]
-+
-. On the *Build Config* screen, use the default values, and click btn:[Finish].
-+
-image::build_config.png[Build config screen]
-+
-. The *Summary* screen displays the selected options for the project. Click btn:[Ok] to import the project.
-+
-image::eventbus_final.png[Build config screen]
-////
+. Click btn:[View New Application] to continue when all the steps have a green check mark next to them.
 
 You have now imported the code from your existing repository to {osio}.
