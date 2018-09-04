@@ -23,7 +23,7 @@ image::create_run_command.png[Create run command]
 See <<create_run_command_macro>> for instructions on setting up a run command.
 ====
 +
-. A *run* terminal appears at the bottom pane of the Che workspace. When the `mvn{nbsp}build` command finishes executing, the *run* view displays the *Succeeded in Deploying verticle* message:
+. A *run* terminal appears at the bottom pane of the Che workspace. When the `mvn{nbsp}build` command finishes executing, the *run* view displays the following message:
 +
 ----
 [INFO] INFO: Succeeded in deploying verticle

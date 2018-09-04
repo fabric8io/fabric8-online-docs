@@ -27,7 +27,7 @@ image::{context}_versions_applications.png[Versions of the Application]
 +
 ** Different versions of your application are now deployed to *Stage* and *Run*. Version *1.0.2* of the application, which includes your committed change to the code, is deployed to *Stage* because you have not yet promoted it to *Run*. The older version, *1.0.1*, is deployed to *Run* because you approved it the last time the pipeline build executed.
 ** The green check marks indicate that both builds are operational.
-** The *1 pod* indicates that each of the application builds scales to one pod in OpenShift Online. The number of pods indicates the number of running instances of the application.
+** The *1 pod* indicates that each of the application builds scale to one pod in OpenShift Online. The number of pods indicates the number of running instances of the application.
 ** The version numbers link to individual running applications. You can use these separate staging areas to share different versions of your application before *Promoting* a change. Click the version numbers to view the details for that deployment.
 +
 image::expand_version.png[Expand the application version]
@@ -36,7 +36,7 @@ image::expand_version.png[Expand the application version]
 . At the *Approve* stage, click btn:[Input Required].
 . Click btn:[Promote] to promote version 1.0.2 of the application to *Run*.
 +
-Your changes are now available on both *Stage* and *Run*. If you return to the *Deployments* tab, you can see the version for both *Stage* and *Run* are now version 1.0.2 of the application.
+Your changes are now available on both *Stage* and *Run*. If you return to the *Deployments* tab, you can see that version 1.0.2 is deployed to both *Stage* and *Run*.
 +
 image::updated_app.png[Updated applications]
 +

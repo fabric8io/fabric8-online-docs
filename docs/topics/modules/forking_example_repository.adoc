@@ -1,12 +1,12 @@
 [id="forking_example_repository"]
 = Forking an example repository
 
-In addition to creating projects using quickstarts, you can add an existing proeject to {osio} by importing the codebase.
+In addition to creating applications using quickstarts, you can import an existing project into {osio}.
 
 [discrete]
 == Prerequisites
 
-* Ensure that you have reset your {osio} environment by following the instructions in <<resetting_your_osio_account>>.
+* Reset your {osio} environment by following the instructions in <<resetting_your_osio_account>>.
 
 [discrete]
 == Example repositories
