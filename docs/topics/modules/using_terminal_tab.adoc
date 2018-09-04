@@ -3,9 +3,11 @@
 
 Your Che workspace displays a terminal tab at the bottom of the screen. You can use this terminal to run commands in your private Linux container (your workspace) as follows:
 
-. In your Che workspace, if your application is not running, Click the *run* option (image:tri_run.png[title="Run button"]). The *Successfully deployed verticle* message appears in the terminal tab when the run process completes:
+. In your Che workspace, if your application is not running, Click the *run* option (image:tri_run.png[title="Run button"]). The following message appears in the terminal tab when the run process completes:
 +
-image::hello-world_deployed_verticle.png[Deployed verticle]
+----
+[INFO] INFO: Succeeded in deploying verticle
+----
 +
 . Click *terminal* next to the *run* tab to view your workspace terminal.
 

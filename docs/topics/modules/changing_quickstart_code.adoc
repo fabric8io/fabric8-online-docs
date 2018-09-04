@@ -31,7 +31,7 @@ image::bar_stop.png[EXEC Bar]
 +
 image::blue_link.png[Preview Link]
 +
-NOTE: If you already ran the application earlier as instructed in <<running_your_project-hello-world>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip the rest of this step.
+NOTE: If you already ran the application earlier as instructed in <<running_your_project_in_the_che_workspace-hello-world>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip the rest of this step.
 +
 . Add a name in the *Name* field and click btn:[Invoke] to test the application. The displayed message shows the amended text template.
 +

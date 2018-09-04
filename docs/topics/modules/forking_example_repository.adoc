@@ -1,24 +1,22 @@
 [id="forking_example_repository"]
 = Forking an example repository
 
-In addition to creating projects based on quickstarts, you can also add projects by using the *Import an existing codebase* feature.
-
+In addition to creating applications using quickstarts, you can import an existing project into {osio}.
 
 [discrete]
 == Prerequisites
 
-Reset your {osio} environment by following instructions in <<resetting_your_osio_account>>.
-
+* Reset your {osio} environment by following the instructions in <<resetting_your_osio_account>>.
 
 [discrete]
-== Procedure
+== Example repositories
 
-As an example for this tutorial, use our sample repositories in GitHub. Fork one of the following (the examples in this tutorial are for the `vertx-eventbus` repository):
+You can fork one of the following sample repositories in GitHub. For this tutorial, fork and use the `vertx-eventbus` repository.
 
 * link:https://github.com/burrsutter/vertx-eventbus[https://github.com/burrsutter/vertx-eventbus]
 * link:https://github.com/burrsutter/vertx-paint[https://github.com/burrsutter/vertx-paint]
 * link:https://github.com/burrsutter/vertx-wiki2[https://github.com/burrsutter/vertx-wiki2]
 
-NOTE: The OpenShift Online Free Tier provides two pods, and each project requires one pod.
+NOTE: The OpenShift Online Free Tier provides two pods and each project requires one pod. 
 
-While you can import all three projects into {osio} simultaneously, it can result in a 12-15 minute delay. We recommend trying to import the projects one at a time.
+If desired, you can import multiple projects into {osio} simultaneously, but this can result in a 12-15 minute delay. Import one project at a time to avoid delays.
