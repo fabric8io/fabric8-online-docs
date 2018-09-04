@@ -1,0 +1,14 @@
+[id="approving_your_application"]
+= Approving your application
+
+If the quickstart application in the _Stage_ environment runs as expected, approve your application and promote it to the _Run_ environment:
+
+. Return to the {osio} tab which displays the *Pipeline* view and click btn:[Input Required] at the *Approve* stage of the pipeline.
+
+. Click btn:[Promote] to promote the application from the _Stage_ environment to the _Run_ environment. This process requires a few minutes.
++
+image::promote.png[Promote application]
+. Optionally, as your application is promoted to _Run_, click *helloworldvertx* or *Build #1* to view the detailed progress of the pipeline or build in your OpenShift Online console, respectively.
+. When the *Pipeline* view in {osio} indicates that the application is available in the _Run_ environment, click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Run* to view the application in a new tab.
++
+image::rollout_to_run.png[Rollout to Run]

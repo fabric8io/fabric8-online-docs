@@ -1,7 +1,7 @@
 [id="optional_detailed_views"]
 = (Optional) Detailed views
 
-Optionally, you can see an experimental detailed *Deployments* view for the *Test*, <<about_stage_run,*Stage*, and *Run*>> environments. This view displays the environment deployments, pods, events, and other information.
+Optionally, you can see an experimental detailed *Deployments* view for the *Test*, <<about_pipelines_stage_run,*Stage*, and *Run*>> environments. This view displays the environment deployments, pods, events, and other information.
 
 View the details for the *Deployments* as follows:
 
