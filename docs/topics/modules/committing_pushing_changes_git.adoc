@@ -14,10 +14,9 @@ ifeval::["{context}" == "user-guide"]
 * Add a new or existing codebase to {osio}.
 * Create a Che workspace for your target codebase.
 * Make the required changes to your code and then run and test the code by clicking the *run* option from the Run button (image:tri_run.png[title="Run button"]).
-endif::[]
 
-[discrete]
-== Procedure
+.Procedure
+endif::[]
 
 . In the workspace browser tab, click *Git* from the menu bar options and select *Commit* from the displayed options.
 
@@ -29,7 +28,7 @@ endif::[]
 .. Click btn:[Commit].
 
 When the commit succeeds, the following message displays:
-+
+
 image::pushed_to_origin.png[Pushed to origin]
 
 You have now committed your code changes to GitHub.

@@ -1,53 +1,31 @@
 [id="creating_che_workspace-{context}"]
 = Creating a Che workspace
 
-// for user-guide
-ifeval::["{context}" == "user-guide"]
-To edit your project code, you must create a new <<about_workspaces_user-guide,Che workspace>> for your project.
+To edit your application codebase, create a new <<about_workspaces,Che workspace>>:
 
 . Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*.
-endif::[]
 
-// for hello-world
-ifeval::["{context}" == "hello-world"]
-Create a new <<about_workspaces,Che workspace>> for your project:
-
-. Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*
-endif::[]
-
++
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
 Return to the *Codebases* view in your {osio} browser tab to create a new workspace.
 endif::[]
-
-// for importing-existing-project
-ifeval::["{context}" == "importing-existing-project"]
-Create a new <<about_workspaces,Che workspace>> for your project:
-
-. Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*
-endif::[]
-// end of conditions
-. In the *WORKSPACES* column, click *Create workspace* for your project.
 +
-image::create_workspace.png[Create Workspace]
+. In the *WORKSPACES* column, click *Create workspace* for your project.
 +
 [NOTE]
 ====
 If you see a message about the workspaces loading (see screen capture), it indicates that your Che instance is idle. Allow several minutes for the loading process to finish.
-
-image::loading_workspaces.png[Loading Workspaces]
 ====
-
-. When your workspace is ready, it automatically loads in a new tab. Alternatively, click btn:[Open] to view your new Che workspace in a new browser tab. This workspace loads the codebase for the listed project.
 +
-image::new_ws.png[New Workspace]
+. When your workspace is ready, it automatically loads in a new tab. If the workspace does not automatically load in a new browser tab, click btn:[Open]. The workspace loads the codebase for your application.
 +
 NOTE: If a new tab does not appear, see <<enable_popups>> for troubleshooting information.
 +
-. As the workspace loads, the *Workspace Status* window at the bottom of the Che workspace tab displays the progress:
+As the workspace loads, the *Workspace Status* window at the bottom of the Che workspace tab displays the progress:
 +
 image::workspace_loading.png[Workspace loading]
 +
 When loaded and ready to use, the new Che workspace tab displays the following confirmation message:
-
++
 image::{context}_workspace_running.png[Workspace Running success message]

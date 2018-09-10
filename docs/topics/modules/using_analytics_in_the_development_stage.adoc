@@ -8,7 +8,7 @@
 .Prerequisite
 
 . <<creating_che_workspace-user-guide,Create a Che workspace>> to develop your stack
-. <<running_your_project-user-guide,Run your application in the Che workspace>>
+. <<running_your_project_in_the_che_workspace-user-guide,Run your application in the Che workspace>>
 
 .Procedure
 
