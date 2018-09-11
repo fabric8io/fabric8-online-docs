@@ -18,14 +18,15 @@ ifeval::["{context}" == "user-guide"]
 .Procedure
 endif::[]
 
-. In the workspace browser tab, click *Git* from the menu bar options and select *Commit* from the displayed options.
+. In your Che workspace, click *Git* from the menu bar options and select *Commit* from the displayed options.
 
 . In the *Commit to repository* dialog box:
 
-.. Select all the changed and new files to add them to the commit.
+.. If they are not already, select all the changed and new files to add them to the commit.
 .. Add a commit message describing your changes.
-.. Select the *Push committed changes to:* check box.
+.. Select the *Push committed changes to* check box.
 .. Click btn:[Commit].
+
 
 When the commit succeeds, the following message displays:
 

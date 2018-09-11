@@ -3,37 +3,26 @@
 
 To change your project code and preview the results:
 
-. In your Che workstation view, navigate to the following file: `src` > `main` > `conf` > `application.yml`.
+. In your Che workstation view, navigate to: `src` > `main` > `Java` > `io.openshift.booster` > `HttpApplication.java`.
 +
 image::project_dir.png[Project Directory]
 +
-. Change the following line in the file, which is the template for API's returned message in the application:
+. Double click the `HttpApplication.java` file to open it and find the following line:
 +
 [source,java]
 ----
-message: "Hello %s from the local configuration!"
+  static final String template = "Hello, %s!";
 ----
 +
 . Change the greeting message and then save your changes.
 +
 [source,java]
 ----
-message: "Hello from Che, %s !"
+  static final String template = "Hello from Che, %s !"
 ----
 +
-. Click the stop button at the top of the workspace to stop the application running.
-+
-image::bar_stop.png[EXEC Bar]
-+
-. Click the circular arrow (image:run_stopped.png[title="Run Stopped"]) to run the application again with your changes.
-
-. To test your changes, click the blue preview URL at the top of the *run* view to see your application.
-+
-image::blue_link.png[Preview Link]
-+
-NOTE: If you already ran the application earlier as instructed in <<running_your_project_in_the_che_workspace-hello-world>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change. Return to the browser tab running the application and skip the rest of this step.
-+
-. Add a name in the *Name* field and click btn:[Invoke] to test the application. The displayed message shows the amended text template.
+If you already ran the application earlier as instructed in <<running_your_project_in_the_che_workspace-hello-world>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change.
+. Return to the browser tab running the application, add a name in the *Name* field, and click btn:[Invoke] to test the application. The displayed message shows the amended text template.
 +
 image::hello_from_che.png[Testing the Application]
 

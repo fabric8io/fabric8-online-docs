@@ -3,16 +3,6 @@
 
 After your Che workspace loads, you can see your project code listed in the file explorer panel, in the upper-left side of the screen.
 
-// for user-guide
-ifeval::["{context}" == "user-guide"]
-.Prerequisites
-
-* Add a new or existing codebase to {osio}.
-* Create a Che workspace for your target codebase.
-
-.Procedure
-endif::[]
-
 . Click the *run* option from the Run button (image:tri_run.png[title="Run button"]). Maven then downloads the required dependencies, compiles the application, and starts the _verticle_ (Vert.x uses this name for deployed code). For Vert.x projects, this also sets up the server and hot deploy options. The hot deploy option automatically updates the application when you make a change.
 +
 [NOTE]
