@@ -11,14 +11,14 @@ ifeval::["{context}" == "user-guide"]
 * Create a Che workspace for your target codebase.
 * Make the required changes to your code and then run and test the code by clicking the *run* option from the Run button (image:tri_run.png[title="Run button"]).
 * Commit your changes to your Git repository.
-endif::[]
 
 .Procedure
+endif::[]
 
-To view the build:
+To review the build and publish your changes:
 
 . Return to the {osio} browser tab.
-. Click *Create* and then *Pipelines* to view the build pipelines. The build pipeline stops at the *Approve* stage. Do not approve the build yet.
+. Click *Create* and then *Pipelines* to view the build pipelines. Wait for the build pipeline to progress to the *Approve* stage.
 . In the *Create* tab, click *Deployments* to see the following information:
 +
 image::{context}_versions_applications.png[Versions of the Application]
@@ -26,18 +26,14 @@ image::{context}_versions_applications.png[Versions of the Application]
 ** Different versions of your application are now deployed to *Stage* and *Run*. Version *1.0.2* of the application, which includes your committed change to the code, is deployed to *Stage* because you have not yet promoted it to *Run*. The older version, *1.0.1* , is deployed to *Run* because you approved it the last time the pipeline build executed.
 ** The green check marks indicate that both builds are operational.
 ** The *1 pod* indicates that each of the application builds scale to one pod in OpenShift Online. The number of pods indicates the number of running instances of the application.
-** The version numbers link to individual running applications. You can use these separate staging areas to share different versions of your application before *Promoting* a change. Click the version numbers to view the details for that deployment.
-+
-image::expand_version.png[Expand the application version]
-+
-. Click *Pipelines* to return to the pipelines view.
-. At the *Approve* stage, click btn:[Input Required].
+** The version numbers link to individual running applications. You can use these separate staging areas to share different versions of your application before promoting a change. Click the version numbers to view the details for that deployment.
+
+. Click *Pipelines* to return to the pipelines view and click btn:[Input Required] at the *Approve* stage of the pipeline.
+
 . Click btn:[Promote] to promote version 1.0.2 of the application to *Run*.
 +
 Your changes are now available on both *Stage* and *Run*. If you return to the *Deployments* tab, you can see that version 1.0.2 is deployed to both *Stage* and *Run*.
-+
-image::updated_app.png[Updated applications]
-+
+
 //for hello world
 ifeval::["{context}" == "hello-world"]
 You have now created your first quickstart project in {osio}, made changes to your project code, committed the changes to GitHub, and published the new version of your project.

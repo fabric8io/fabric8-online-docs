@@ -5,11 +5,11 @@ The example project code includes a new route for *eventbus* and its supporting 
 
 Change the code of your project and preview the results as follows:
 
-. In the file directory view, double-click the following directories to expand them: `src` > `main` > `Java` > `io.openshift.booster`.
+. In the file directory view, double-click the following directories to expand them: `src` > `main` > `Java`> `io.openshift.booster` > `HttpApplication.java`.
 +
 image::imp_folder.png[Folder View]
 +
-. In the `HttpApplication.java` file of your project, find the following line:
+. Double click the `HttpApplication.java` file to open it and find the following line:
 +
 [source,java]
 ----
@@ -24,17 +24,10 @@ image::imp_folder.png[Folder View]
 ----
 +
 . Save the changes (kbd:[Ctrl+s] or kbd:[Cmd+s] for macOS).
-. Click the *run* option from the Run button (image:tri_run.png[title="Run button"]). This runs the application and also provides the hot deploy feature. The following message appears when the run process completes:
+
+If you already ran the application earlier as instructed in <<running_your_project_in_the_che_workspace-importing-existing-project>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change.
 +
-----
-[INFO] INFO: Succeeded in deploying verticle
-----
-+
-. Click the blue preview URL at the top of the *run* view to view your project.
-+
-image::{context}_run_proj.png[Run project link]
-+
-. Type a name in the text box and click btn:[Invoke] to test the application.
+. Return to the browser tab running the application, type a name in the text box and click btn:[Invoke] to test the application.
 +
 image::imp_test_change.png[Test Application]
 

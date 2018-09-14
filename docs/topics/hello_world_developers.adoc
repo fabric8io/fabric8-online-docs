@@ -17,9 +17,9 @@ include::modules/approving_your_application.adoc[leveloffset=+1]
 
 include::modules/viewing_build_pipeline_logs.adoc[leveloffset=+1]
 
-include::modules/viewing_codebase_github.adoc[leveloffset=+1]
-
 include::modules/viewing_application_deployment_details.adoc[leveloffset=+1]
+
+include::modules/viewing_codebase_github.adoc[leveloffset=+1]
 
 include::modules/viewing_oso_projects.adoc[leveloffset=+1]
 
