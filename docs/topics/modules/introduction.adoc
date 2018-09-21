@@ -1,15 +1,8 @@
 [id="introduction"]
 = Introduction
 
-Thank you for your interest in {osio}! {rhosio} is a highly collaborative open-source, web-based _application life cycle management_ (ALM) solution. It provides an integrated approach to DevOps enables you to plan, create, and deploy hybrid cloud services.
+{rhosio} is a collaborative, open-source, web-based _application life cycle management_ (ALM) solution. It provides an integrated DevOps tool-chain to plan, create, and deploy hybrid cloud services.
 
-The purpose of this document is to guide you through your first experiences with {osio}. Following the instructions in this document, you can set up an application running in the cloud within minutes. Shortly thereafter you will have customized and then deployed a new version of that application.
+This guide walks you through the initial set up of {osio} and highlights some of its key features and components. Use this guide to set up an application in the cloud, customize it, and then deploy a new version of it in under an hour.
 
-{osio} is constantly being updated and therefore improving as you use it. Hearing directly from users about their experiences lets us improve the product and experience for you. See <<send-us-feedback-about-osio>> to send us information about bugs, feature requests, and your thoughts about what does or doesn't work well for you. Updates and changes to the system are delivered continuously, often multiple times in a day. As part of our continuous delivery model, everyone who pushes a change out to the live system assumes responsibility for the impact of that change, so severe bugs are addressed quickly.
-
-If your {osio} environment gets into a state where you are finding it difficult or impossible to move forward, refer to the <<resetting_your_osio_account>> section of this document for information on how to factory reset your {osio} (and OpenShift Online) environment. Welcome to the world of {osio}! We hope you enjoy your experience and look forward to hearing your feedback!
-
-[id="about-this-document"]
-== About this document
-
-The purpose of this getting started guide is to walk you through your initial set up of {osio} and quickly expose you to some key functionalities in {osio}. If this document is successful, following the instructions results in the majority of first time {osio} users having a simple, customized application running on the internet in under one hour.
+If your {osio} environment gets into a state where it is difficult or impossible to move forward, see the <<resetting_your_osio_account>> section of this document to factory reset your {osio} (and OpenShift Online) environment.

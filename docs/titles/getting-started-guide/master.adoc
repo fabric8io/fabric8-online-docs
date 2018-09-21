@@ -6,6 +6,6 @@ include::meta/attributes.adoc[]
 :email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
-The guide shows how to get up to speed using Red Hat OpenShift.io. The main focus is on documenting the demo user stories that are used to onboard new users to the platform.
+This document guides you through your first experiences with Red Hat OpenShift.io. It provides instructions on creating and importing codebases to launch cloud based applications, set up continuous integration and continuous deployment pipelines, analyze and customize the application in a hosted, web-based IDE, and deploy them on OpenShift Online.
 
 include::topics/getting-started-guide.adoc[]
