@@ -1,17 +1,32 @@
 [id="introduction_to_homescreen"]
 = Introduction to the home screen
 
-If this is your first time using {osio}, it can be confusing figuring out what the different elements on your home screen are and what you should do with them. This is what your {osio} home screen looks like when you first log in:
+After <<logging_into_osio_and_connecting_to_oso, logging in>>, this is what your {osio} *Account home* looks like:
 
 image::osio_home.png[{osio} home screen]
 
-(1) What's New::
+////
+Commenting out experimental features and retaining only the Beta features.
+ (0) What's New::
 This part of your home screen displays the latest updates to {osio} that you need to know about. Scroll across various updates and click btn:[Learn more] to view the details for any of the listed changes.
-(2) Recent Spaces::
-The `Recent Spaces` area of the home screen displays all previously created spaces. When you first use {osio} or reset the environment, this space is empty and you can click the *+* icon to quickly create a new space. Generally, a space is the first thing you will create when using {osio}. See link:user-guide.html#about_spaces[about spaces] to learn about spaces.
+////
+
+(1) Navigate between spaces::
+The upper-left corner of {osio} displays your username. Click the drop-down to view the spaces you are associated with and to navigate between them. Generally, a space is the first thing you will create when using {osio}. See link:user-guide.html#about_spaces[about spaces] to learn about spaces.
+
+(2) Profile and Settings::
+The upper-right corner of {osio} displays your name. Click the drop-down to view *Settings* and *Profile* options. Use these options to link:user-guide.html#changing_user_preferences[change your profile and setting preferences]. Use the *Chat with us* option to discuss any issues you face with {osio} on the MatterMost channel.
+
+(3) Recent Spaces::
+The *Recent Spaces* area of the home screen displays all the spaces you have created. When you first use {osio} or reset the environment, this space is empty and you can click btn:[Create a Space] to quickly create a new space.
+
+////
+Experimental as of now.
 (3) Recent Workspaces::
 The `Recent Workspaces` area displays all created workspaces. See <<about_workspaces>> to learn more about workspaces and what you can do with them.
+////
 (4) My Work Items::
- The `My Work Items` section displays work items used to track your planned and current tasks for each space. See link:user-guide.html#about_work_items[about work items] to learn more about work items and how to use them.
-(5) Profile and Settings::
-The top right corner of {osio} displays your name. Click here to view *Settings* and *Profile* options. See link:user-guide.html#changing_user_preferences[changing user preferences] to learn more about these options.
+ The *My Work Items* section displays work items used to track your planned and current tasks for each space. See link:user-guide.html#about_work_items[about work items] to learn more about work items and how to use them.
+
+(5) Recent Pipelines::
+The *Recent Pipelines* section displays the integration and deployment pipelines for your application after you create and build your codebase. See link:user-guide.html#working_with_pipelines[working with pipeines] to learn more about pipelines.

@@ -1,14 +1,12 @@
 [id="asking-questions-about-osio"]
 = Asking questions about OpenShift.io
 
-The link:https://chat.openshift.io[{osio} MatterMost chat channel] is the best way to ask questions or get immediate help for {osio} at any time. We encourage users to ask their question or discuss the problem they face in the channel for a fast resolution.
+The {osio} link:https://chat.openshift.io[ MatterMost chat channel] is the best way to ask questions or get immediate help for {osio} at any time. We encourage users to ask their question or discuss the problem they face in the channel for a fast resolution.
 
 If you don't already have a MatterMost account:
 
 . Navigate to link:https://chat.openshift.io[https://chat.openshift.io] and click *Create one now*.
-+
-image::mm_create_account.png[Create an account]
-+
+
 . Add your details and click btn:[Create Account] to register.
 . In your email inbox, click the btn:[Verify Email] link.
 
