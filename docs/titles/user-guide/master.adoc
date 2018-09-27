@@ -5,6 +5,6 @@ include::meta/attributes.adoc[]
 :email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
-The guide describes the fe of Red Hat OpenShift.io. It also contains  about potential  users may  while using the software. Where possible, workarounds are described for identified issues.
+The guide describes the fe of Red Hat OpenShift.io. It also contains  about   users may  while using the software. Where possible, workarounds are described for identified issues.
 
 include::topics/user-guide.adoc[]
