@@ -38,7 +38,7 @@ ifeval::["{context}" == "hello-world"]
 . Use the *Development Process* drop-down list to select a template for your new space. For this example, select the *Agile* development process.
 . In the dialog box, type *myspace* as the unique name for your space and click btn:[Ok].
 +
-image::create_space.png[Create new space]
+image::hw_create_space.png[Create new space]
 endif::[]
 
 +
@@ -50,7 +50,7 @@ NOTE: The *Development Process* you select while creating your space determines 
 
 . In the dialog box, type a unique name for your space and click btn:[Ok].
 +
-image::create_space.png[Create new space]
+image::ug_create_space.png[Create new space]
 endif::[]
 
 You have now created your first space.

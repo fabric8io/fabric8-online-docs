@@ -1,6 +1,8 @@
 [id="send-us-feedback-about-osio"]
 = Send us feedback about OpenShift.io
 
-To give the {osio} team feedback, navigate to link:https://github.com/openshiftio/openshift.io/issues[create an issue] and send us a description of the problem with the necessary details, including screenshots if necessary. You can also search for related issues at this link. When logged, the {osio} team triages and adds tags and other information to your issue.
+To give the {osio} team feedback, link:https://github.com/openshiftio/openshift.io/issues[create an issue] and send us a description of the problem with the necessary details and screenshots if necessary. You can also search for related issues at this link.
 
-If you prefer to send us feedback via email, send us the details at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+When the issue is logged, the {osio} team adds appropriate tags and labels to address it at the earliest.
+
+If you prefer to send us feedback through email, send us the details at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].

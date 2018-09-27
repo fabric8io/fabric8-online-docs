@@ -1,7 +1,7 @@
 [id="send-us-feedback-about-documentation"]
 = Send us feedback about the documentation
 
-The documentation team welcomes all feedback or requests for information that is helpful to you but isn't covered.
+The documentation team welcomes all feedback or requests for information that is helpful to you but is not covered.
 
 * Is there anything we can do to improve the documentation?
 * Was a part of the documentation not useful for you?

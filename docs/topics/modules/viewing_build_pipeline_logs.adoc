@@ -1,5 +1,5 @@
 [id="viewing_build_pipeline_logs"]
-= (Optional) Viewing the build pipeline logs
+= Viewing the build pipeline logs
 
 Optionally, while you wait for the pipeline build, you can view the build details in the Jenkins log. For experienced users, these logs are useful when troubleshooting problems with builds if required.
 

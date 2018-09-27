@@ -1,0 +1,22 @@
+[id="opting_in_to_beta_features"]
+= Opting in to beta features
+
+This guide covers the Production and Beta features of {osio}.
+
+In the {osio} home screen, use the following steps to opt in or out of features:
+
+. Navigate to your *Settings* view:
+
+.. Click your name on the top right corner of the screen.
+
+.. Select *Settings* from the displayed options.
++
+image::profile_menu.png[Profile menu button]
++
+. In the *User Settings* page, click the *Features Opt-in* option.
+
+. Select the *Beta Features* option from the list to see the {osio} features covered in this guide. The *Production-Only Features* option is recommended for users who only want the stable {osio} features.
++
+image::features_optin.png[Opt in features]
++
+The change is applied to your profile and you receive a confirmation message.

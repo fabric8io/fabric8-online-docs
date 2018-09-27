@@ -3,11 +3,9 @@
 
 *Browser Requirements:*
 
-Currently, only Google Chrome can be used with {osio}. Additional browsers will be listed here when they are tested and can be used with {osio}.
+Currently, you can use only Google Chrome for {osio}.
 
 *General Requirements:*
 
 . Ensure that you have a GitHub account.
 . Register to join the {osio} developer preview at link:https://openshift.io/[https://openshift.io/].
-
-
