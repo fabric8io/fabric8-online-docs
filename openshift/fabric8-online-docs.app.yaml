@@ -41,7 +41,7 @@ objects:
       group: io.fabric8.apps
     name: fabric8-online-docs-app
 - apiVersion: v1
-  kind: Deployment
+  kind: DeploymentConfig
   metadata:
     annotations:
       fabric8.io/git-commit: 111c5596bec7c63f6881555eb400a9eb4557e134
@@ -101,7 +101,7 @@ objects:
     triggers:
     - type: ConfigChange
 - apiVersion: v1
-  kind: Ingress
+  kind: Route
   metadata:
     labels:
       app: fabric8-online-docs-app
