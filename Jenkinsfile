@@ -1,5 +1,5 @@
 #!/usr/bin/groovy
-@Library('github.com/fabric8io/fabric8-pipeline-library@master')
+@Library('github.com/piyush1594/fabric8-pipeline-library@fix_docs')
 def flow = new io.fabric8.Fabric8Commands()
 def utils = new io.fabric8.Utils()
 def baseImageVerion = 'v27ab2ac'
