@@ -1,0 +1,10 @@
+[id="using_data_analytics_to_develop_your_application"]
+= Using data analytics to develop your application
+
+//Using Analytics before you add or import a codebase (Dependency editor piece) shelved by devs as of now
+
+This section contains instructions on using {osio} analytics engine to identify dependencies with CVEs and License issues, take corrective action, and augment your development stack based on the provided insights.
+
+include::modules/using_analytics_in_the_development_stage.adoc[leveloffset=+1]
+
+include::modules/using_analytics_in_the_deployment_stage.adoc[leveloffset=+1]

@@ -15,5 +15,6 @@ include::modules/reducing_project_memory_usage.adoc[leveloffset=+1]
 
 include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
 
-include::modules/viewing_your_detailed_oso_quota_usageadoc[leveloffset=+1]
+include::modules/viewing_your_detailed_oso_quota_usage.adoc[leveloffset=+1]
 
+include::resetting_your_osio_account.adoc[leveloffset=+1]
