@@ -20,13 +20,14 @@ The upper-right corner of {osio} displays your name. Click the drop-down to view
 (3) Recent Spaces::
 The *Recent Spaces* area of the home screen displays all the spaces you have created. When you first use {osio} or reset the environment, this space is empty and you can click btn:[Create a Space] to quickly create a new space.
 
-////
-Experimental as of now.
-(3) Recent Workspaces::
-The `Recent Workspaces` area displays all created workspaces. See <<about_workspaces>> to learn more about workspaces and what you can do with them.
-////
-(4) My Work Items::
+(4) Recent Workspaces::
+The *Recent Workspaces* area displays all created workspaces. See <<about_workspaces, about workspaces>> to learn more about workspaces and what you can do with them.
+
+(5) My Work Items::
  The *My Work Items* section displays work items used to track your planned and current tasks for each space. See link:user-guide.html#about_work_items[about work items] to learn more about work items and how to use them.
 
+////
+<Current Prod shows pipelines but it should be updated as per the prod-preview version soon which has been captured above.>
 (5) Recent Pipelines::
 The *Recent Pipelines* section displays the integration and deployment pipelines for your application after you create and build your codebase. See link:user-guide.html#working_with_pipelines[working with pipeines] to learn more about pipelines.
+////
