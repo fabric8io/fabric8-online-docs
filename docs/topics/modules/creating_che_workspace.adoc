@@ -1,7 +1,7 @@
 [id="creating_che_workspace-{context}"]
 = Creating a Che workspace
 
-To edit your application codebase, create a new <<about_workspaces,Che workspace>>:
+To edit your application codebase, create a new link:getting-started-guide.html#about_workspaces[Che workspace]:
 
 . Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*.
 
@@ -14,7 +14,7 @@ endif::[]
 . In the *WORKSPACES* column, click *Create workspace* for your project. The workspace gets created.
 . Click btn:[Open] next to the workspace to see your Che workspace in a new browser tab.
 +
-NOTE: If a new tab does not appear, see <<enable_popups>> for troubleshooting information.
+NOTE: If a new tab does not appear, see link:getting-started-guide.html#enable_popups[enable_popups] for troubleshooting information.
 +
 As the workspace loads the codebase for your application, the *Workspace Status* window at the bottom of the Che workspace tab displays the progress:
 +

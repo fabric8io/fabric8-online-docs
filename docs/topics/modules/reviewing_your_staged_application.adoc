@@ -3,7 +3,7 @@
 
 When you create a new codebase, the selected pipeline pushes version 1.0.1 of your new application into the _Stage_ environment, and then awaits your approval to deploy into the _Run_ environment.
 
-<<about_pipelines_stage_run,_Stage_ and _Run_>> are individual OpenShift projects. _Stage_ is a production staging area to review and test changes before they are finalized and then staged on _Run_.
+link:getting-started-guide.html#about_pipelines_stage_run[Stage and Run] are individual OpenShift projects. _Stage_ is a production staging area to review and test changes before they are finalized and then staged on _Run_.
 
 To review your application on _Stage_:
 
@@ -11,7 +11,7 @@ To review your application on _Stage_:
 +
 image::pipeline_firstrun.png[Pipeline First Run]
 +
-NOTE: If your pipeline build does not start for more than ten minutes, you can manually start a pipeline build using the instructions at <<pipeline_build_failure>>.
+NOTE: If your pipeline build does not start for more than ten minutes, you can manually start a pipeline build using the instructions at link:getting-started-guide.html#pipeline_build_failure[pipeline_build_failure].
 
 . Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline. OpenShift Online provides this public URL to access the staged quickstart application.
 +
@@ -19,7 +19,7 @@ A new browser tab displays the HTTP Booster application running on _Stage_. The 
 +
 image::vertx_stage.png[Staged Application]
 +
-NOTE: If the application does not load, see <<application_not_available>> for troubleshooting information.
+NOTE: If the application does not load, see link:getting-started-guide.html#application_not_available[application_not_available] for troubleshooting information.
 
 . To test the application, enter a name in the *Name* field and click btn:[Invoke]. The *Result* field displays the JSON result returning from the API.
 +

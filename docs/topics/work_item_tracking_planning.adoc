@@ -1,0 +1,9 @@
+[id="work_item_tracking_planning"]
+= Planning and tracking work items in your development project
+
+
+Now that you have created a project, you can edit the code and stage the changes.
+
+include::modules/about_work_items.adoc[leveloffset=+1]
+
+include::modules/planning_development_work.adoc[leveloffset=+1]

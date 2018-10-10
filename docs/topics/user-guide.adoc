@@ -6,7 +6,7 @@
 
 include::introduction_to_red_hat_openshift_io.adoc[leveloffset=+1]
 
-include::modules/getting_help_and_giving_feedback.adoc[leveloffset=+1]
+include::getting_help_and_giving_feedback.adoc[leveloffset=+1]
 
 include::accessing_red_hat_openshift_io.adoc[leveloffset=+1]
 

@@ -1,12 +1,12 @@
-[id="planning_your_work"]
-= Planning your work
+[id="planning_development_work"]
+= Planning development work
 
 {osio} planner provides a set of predefined templates based on common development methodologies such as Agile and Scenario Driven Development to track tasks as work items.
 
 Use the Agile development process to plan and execute your project using iterative cycles as follows:
 
 .Prerequisite:
-* Ensure that you select the Agile development process when you <<creating_new_space-hello-world,create your space>>.
+* Ensure that you select the Agile development process when you link:getting-started-guide.html#creating_new_space-hello-world[create your space].
 +
 NOTE: The *Development Process* you select while creating your space determines the guided work item type hierarchy in planner and the available work item types to plan your development work.
 

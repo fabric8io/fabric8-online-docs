@@ -9,7 +9,7 @@ After committing your changes, view the resource details for your project again 
 +
 image::optimize_memory.png[Optimizing Hello World Memory Usage]
 +
-. <<approving_your_application,Promote the application>> to the *Run* environment.
+. link:getting-started-guide.html#approving_your_application[Promote the application] to the *Run* environment.
 +
 You can now compare these details to the details in <<reviewing_detailed_resource_information-{context}>> to see the resource usage improvements.
 

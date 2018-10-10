@@ -1,0 +1,34 @@
+[id="creating_new_space_and_vertx_quickstart_application"]
+= Creating a new space and a new Vert.x quickstart application
+
+:context: hello-world
+
+After creating an account, you must create a Space to add or create a project.
+
+include::modules/creating_new_space.adoc[leveloffset=+1]
+
+include::modules/creating_new_application.adoc[leveloffset=+1]
+
+include::modules/reviewing_your_staged_application.adoc[leveloffset=+1]
+
+include::modules/approving_your_application.adoc[leveloffset=+1]
+
+include::modules/viewing_build_pipeline_logs.adoc[leveloffset=+1]
+
+include::modules/viewing_application_deployment_details.adoc[leveloffset=+1]
+
+include::modules/viewing_codebase_github.adoc[leveloffset=+1]
+
+include::modules/viewing_oso_projects.adoc[leveloffset=+1]
+
+Now that you have created a project, you can edit the code and stage the changes.
+
+include::modules/creating_che_workspace.adoc[leveloffset=+1]
+
+include::modules/running_your_project_in_the_che_workspace.adoc[leveloffset=+1]
+
+include::modules/changing_quickstart_code.adoc[leveloffset=+1]
+
+include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
+
+include::modules/reviewing_publishing_changes.adoc[leveloffset=+1]

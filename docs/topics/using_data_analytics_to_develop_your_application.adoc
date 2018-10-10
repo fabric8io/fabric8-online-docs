@@ -3,8 +3,8 @@
 
 //Using Analytics before you add or import a codebase (Dependency editor piece) shelved by devs as of now
 
-This section contains instructions on using {osio} analytics engine to identify dependencies with CVEs and License issues, take corrective action, and augment your development stack based on the provided insights.
+After you create or import a codebase in {osio} the Analytics engine analyzes your codebase and identifies dependencies with security vulnerabilities and license issues. It also provides insights on other dependencies that can add value to your stack.
 
 include::modules/using_analytics_in_the_development_stage.adoc[leveloffset=+1]
 
-include::modules/using_analytics_in_the_deployment_stage.adoc[leveloffset=+1]
+include::modules/using_analytics_at_the_deployment_stage.adoc[leveloffset=+1]

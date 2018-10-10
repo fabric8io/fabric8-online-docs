@@ -11,4 +11,4 @@ include::topics/modules/asking_questions_about_osio.adoc[leveloffset=+1]
 
 include::topics/modules/send_us_feedback_about_osio.adoc[leveloffset=+1]
 
-include::/topics/modules/send_us_feedback_about_documentation.adoc[leveloffset=+1]
+include::topics/modules/send_us_feedback_about_documentation.adoc[leveloffset=+1]

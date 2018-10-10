@@ -1,0 +1,10 @@
+include::meta/attributes.adoc[]
+
+= Using Eclipse Che IDE to develop your codebase
+:author: {rhd} Documentation Team
+:email: openshiftio@redhat.com
+:revdate: {docdate} {doctime}
+
+This guide describes the features of Eclipse Che IDE hosted on OpenShift.io, which provides you with a containerized development and testing environment. It describes the usage of Che workspaces to edit and develop your codebases.
+
+include::topics/using_che_to_develop_your_codebase.adoc[]
