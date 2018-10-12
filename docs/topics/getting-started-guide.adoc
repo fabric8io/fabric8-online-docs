@@ -3,7 +3,7 @@
 
 include::modules/introduction.adoc[leveloffset=+1]
 
-include::modules/getting_help_and_giving_feedback.adoc[leveloffset=+1]
+include::getting_help_and_giving_feedback.adoc[leveloffset=+1]
 
 include::before_you_start.adoc[leveloffset=+1]
 
@@ -15,7 +15,7 @@ include::hello_world_developers.adoc[leveloffset=+1]
 
 include::analyzing-your-application.adoc[leveloffset=+1]
 
-include::modules/planning_your_work.adoc[leveloffset=+1]
+include::modules/planning_development_work.adoc[leveloffset=+1]
 
 include::using_advanced_che_features.adoc[leveloffset=+1]
 

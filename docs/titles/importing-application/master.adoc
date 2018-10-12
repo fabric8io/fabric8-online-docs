@@ -1,0 +1,10 @@
+include::meta/attributes.adoc[]
+
+= Importing an existing codebase into OpenShift.io
+:author: {rhd} Documentation Team
+:email: openshiftio@redhat.com
+:revdate: {docdate} {doctime}
+
+This document provides instructions on importing your existing codebases to OpenShift.io. In this tutorial we  import one of the existing sample repository in GitHub.
+
+include::topics/creating_new_space_and_importing_existing_project.adoc[]

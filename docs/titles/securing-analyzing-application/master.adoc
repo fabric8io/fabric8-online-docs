@@ -1,0 +1,10 @@
+include::meta/attributes.adoc[]
+
+= Securing and analyzing your application dependencies
+:author: {rhd} Documentation Team
+:email: openshiftio@redhat.com
+:revdate: {docdate} {doctime}
+
+This guide contains instructions on using {osio} analytics engine to identify dependencies with CVEs and License issues, take corrective action, and augment your development stack based on the provided insights.
+
+include::topics/using_data_analytics_to_develop_your_application.adoc[]

@@ -1,8 +1,0 @@
-[id="using_data_analytics_to_develop_your_application"]
-= Using data analytics to develop your application
-
-Using Analytics before you add or import a codebase (Dependency editor piece)
-Using Analytics while coding or developing your application codebase
-Using Analytics post deployment
-
-TODO

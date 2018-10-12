@@ -1,0 +1,24 @@
+[id ="creating_new_space_and_importing_existing_project"]
+= Creating a new space and importing an existing project into OpenShift.io
+
+:context: importing-existing-project
+
+This section contains instructions for adding an existing project to {osio} instead of creating a new project using quickstarts.
+
+include::modules/creating_new_space.adoc[leveloffset=+1]
+
+include::modules/forking_example_repository.adoc[leveloffset=+1]
+
+include::modules/importing_your_project.adoc[leveloffset=+1]
+
+Now that you have imported the existing project into {osio}, you can change the code and stage changes.
+
+include::modules/creating_che_workspace.adoc[leveloffset=+1]
+
+include::modules/running_your_project_in_the_che_workspace.adoc[leveloffset=+1]
+
+include::modules/changing_project_code.adoc[leveloffset=+1]
+
+include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
+
+include::modules/reviewing_publishing_changes.adoc[leveloffset=+1]

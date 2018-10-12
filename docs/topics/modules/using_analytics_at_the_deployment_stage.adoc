@@ -5,7 +5,7 @@ When you create a new quickstart project, a new build is executed. {osio} analyt
 
 .Prerequisites
 
-Ensure that you deploy your project and <<creating_new_application-user-guide_pipelines,create a pipeline>> for your project.
+link:user-guide.html#creating_new_application-user-guide_pipelines[Create an application] or link:user-guide.html#importing_your_project-user-guide_iterations[import an existing codebase] to {osio}.
 
 .Procedure
 

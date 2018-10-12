@@ -6,7 +6,7 @@ In addition to creating applications using quickstarts, you can import an existi
 
 .Prerequisites
 
-Reset your {osio} environment by following instructions in <<resetting_your_osio_account>>.
+Reset your {osio} environment by following instructions in link:getting-started-guide.html#resetting_your_osio_account[resetting_your_osio_account].
 
 .Procedure
 

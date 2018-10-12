@@ -8,7 +8,7 @@ image::oso_projects.png[OpenShift Online Projects]
 This page displays the following projects and namespaces that are created in OpenShift Online:
 
 * The *_username_* project is where your pipelines run. Your OpenShift Online user name is the name of your project.
-* The *_username-che_* project represents your <<about_workspaces,Che Host and workspaces>>.
+* The *_username-che_* project represents your link:getting-started-guide.html#about_workspaces[Che Host and workspaces].
 * The *_username-jenkins_* project represents your Jenkins Master for your Jenkins Slaves. Click this project, and then click *Monitoring* in the left pane to access your Jenkins console.
 * The *_username-run_* project is identical to the *_username-stage_* project and is an environment for experimenting with your OpenShift pods and monitoring the memory usage for your application.
 * The *_username-stage_* project is for your personal use. Use this project to see the pods that are created when pipelines are triggered in {osio}. For maintenance, select this project and power down individual pods as required.

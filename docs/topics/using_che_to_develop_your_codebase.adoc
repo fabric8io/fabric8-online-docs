@@ -1,0 +1,33 @@
+[id="using_che_to_develop_your_codebase"]
+= Using Eclipse Che IDE to develop your codebase
+
+include::modules/about_workspaces.adoc[leveloffset=+1]
+
+= Editing your project code and reviewing changes
+
+:context: hello-world
+
+After you create a project, you can edit the code in Che and stage the changes.
+
+include::modules/creating_che_workspace.adoc[leveloffset=+1]
+
+include::modules/running_your_project_in_the_che_workspace.adoc[leveloffset=+1]
+
+include::modules/changing_quickstart_code.adoc[leveloffset=+1]
+
+include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
+
+include::modules/reviewing_publishing_changes.adoc[leveloffset=+1]
+
+= Using advanced Che features
+:context: adv_che
+
+include::modules/using_code_assistant.adoc[leveloffset=+1]
+
+include::modules/using_terminal_tab.adoc[leveloffset=+1]
+
+include::modules/debugging_using_che_workspace.adoc[leveloffset=+1]
+
+include::modules/setting_up_debugger.adoc[leveloffset=+1]
+
+include::modules/running_debug_command.adoc[leveloffset=+1]

@@ -1,7 +1,7 @@
 [id="viewing_application_deployment_details"]
 = Viewing your application deployment details
 
-You can see a detailed view of your application pods in the <<about_pipelines_stage_run,stage, and run>> environments, resources consumed in the two environments, and the overall resources used by the application in the *Deployments* view as follows:
+You can see a detailed view of your application pods in the link:getting-started-guide.html#about_pipelines_stage_run[stage and run] environments, resources consumed in the two environments, and the overall resources used by the application in the *Deployments* view as follows:
 
 . At the top of the page, click *Create* and then click *Deployments* to see the deployment details.
 . In *Applications*, expand *helloworldvertx* to see the application pods and the resources consumed in the *stage* and *run* environments respectively. The *Resource Usage* at the bottom of the screen displays the overall resources used by your applications in {osio}.
