@@ -4,6 +4,6 @@
 {rhosio} is a collaborative, open-source, web-based _application life cycle management_ (ALM) solution. It provides an integrated DevOps tool-chain to plan, create, and deploy hybrid cloud services.
 
 This guide walks you through the initial set up of {osio} and highlights some of its key features and components. Use this guide to set up an application in the cloud, customize it, and then deploy a new version of it in under an hour.
-<Beta view>
 
-If your {osio} environment gets into a state where it is difficult or impossible to move forward, see the <<resetting_your_osio_account>> section of this document to factory reset your {osio} (and OpenShift Online) environment.
+
+//If your {osio} environment gets into a state where it is difficult or impossible to move forward, see the <<resetting_your_osio_account>> section of this document to factory reset your {osio} (and OpenShift Online) environment.

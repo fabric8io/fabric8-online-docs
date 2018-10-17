@@ -18,9 +18,10 @@ To start using {rhosio}, create a new Red Hat Developers (RHD) account or use an
     ... Click the appropriate social account button.
     ... Add your login credentials for the selected service and authorize the creation of the account.
 
-== Related information
 
-The following links provide additional resources about accessing Red Hat's offering for developers:
+*Additional resources:*
+
+Use the following links provide  about accessing Red Hat's offering for developers:
 
 * link:https://developers.redhat.com/articles/red-hat-developer-program-benefits/[Red Hat Developer Program Benefits]
 * link:https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-suite[Red Hat Enterprise Linux Developer Suite]
