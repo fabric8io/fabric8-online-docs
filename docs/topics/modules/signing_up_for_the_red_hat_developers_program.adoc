@@ -21,7 +21,7 @@ To start using {rhosio}, create a new Red Hat Developers (RHD) account or use an
 
 *Additional resources:*
 
-Use the following links provide  about accessing Red Hat's offering for developers:
+Use the following links to access Red Hat's offering for developers:
 
 * link:https://developers.redhat.com/articles/red-hat-developer-program-benefits/[Red Hat Developer Program Benefits]
 * link:https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-suite[Red Hat Enterprise Linux Developer Suite]

@@ -18,8 +18,8 @@
 * Create containerized development, testing, and staging environments hosted on OpenShift Online.
 * Code, edit, and debug using an integrated development environment based on Eclipse Che, which provides a workspace for developing and managing your application. This context-aware environment provides the appropriate context, such as the referenced branch, repository, language, and files, for the developer and the project.
 * Interact with integrated GitHub repositories.
-* Compile and review code in Pull Requests as required.
-* Use the quick start wizards to create basic applications with repositories on GitHub, integrated Jenkins pipelines plugins, and a related new OpenShift project.
+* Compile and review code in pull requests as required.
+* Use the quick start wizards to create basic applications with repositories on GitHub, integrated Jenkins pipeline plugins, and a related new OpenShift project.
 * Use the importing codebase wizard to migrate legacy J2EE applications to the cloud.
 
 *Deployment and testing:*
