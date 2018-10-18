@@ -2,7 +2,7 @@
 = Adding a GitHub organization
 
 
-. In a new browser tab, navigate to https://github.com/settings/organizations
+. In a new browser tab, navigate to https://github.com/settings/organizations.
 
 . To create a new organization in GitHub:
 .. Click btn:[New organization] to create a new organization.
@@ -27,9 +27,7 @@ image:new_org_fields.png[New organization fields]
 .. Click your name on the top right corner of the screen.
 
 .. Click *Settings* from the displayed options.
-+
-image::profile_menu.png[Profile menu button]
-+
+
 . Under *Connected Accounts*, click the refresh icon for your GitHub account.
 +
 image::refresh_github.png[Refresh github]

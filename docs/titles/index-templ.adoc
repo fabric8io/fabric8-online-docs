@@ -20,12 +20,6 @@ include::../meta/attributes.adoc[]
 [discrete]
 === Modular guides
 
-// [discrete]
-// ==== Starting using OpenShift.io
-// * link:setting_up_team_permissions.html[Setting up team permissions]
-// TODO WRITE THIS^
-
-
 * link:creating_new_space_and_vertx_quickstart_project.html[Creating a new application using OpenShift.io codebases] (link:creating_new_space_and_vertx_quickstart_project.pdf[PDF])
 
 * link:creating_new_space_and_importing_existing_project.html[Importing an existing codebase into OpenShift.io] (link:creating_new_space_and_importing_existing_project.pdf[PDF])
@@ -34,13 +28,17 @@ include::../meta/attributes.adoc[]
 
 * link:using_data_analytics_to_develop_your_application.html[Securing and analyzing your application dependencies] (link:using_data_analytics_to_develop_your_application.pdf[PDF])
 
-* link:planning_development_work.html[Planning your development project] (link:planning_development_work.pdf[PDF])
-// The above is a module and not in the Topics folder(not sure this will render), we need to create an assembly for this and add in modules from User guide for Board view and Query builder once they are documented.
+* link:work_item_tracking_planning.html[Planning and tracking work items in your development project] (link:work_item_tracking_planning.pdf[PDF])
 
 * link:optimizing_osio_resources.html[Optimizing your OpenShift.io resource usage] (link:optimizing_osio_resources.pdf[PDF])
 
 * link:getting_help_and_giving_feedback.html[Getting help and giving feedback on OpenShift.io] (link:getting_help_and_giving_feedback.pdf[PDF])
 
+
+// [discrete]
+// ==== Starting using OpenShift.io
+// * link:setting_up_team_permissions.html[Setting up team permissions]
+// TODO WRITE THIS^
 
 [discrete]
 === Comprehensive guides

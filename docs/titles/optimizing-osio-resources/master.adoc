@@ -5,8 +5,6 @@ include::meta/attributes.adoc[]
 :email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
-When you sign up to use OpenShift.io, you get an OpenShift Online account with enough resources to run a basic application.
-
-Your OpenShift Online Starter account includes two pods and therefore can accommodate two workspaces in OpenShift.io. This document guides you on how you can optimize your resource usage within {osio}.
+When you sign up to use OpenShift.io, you get an OpenShift Online account with enough resources to run a basic application. Your OpenShift Online Starter account includes two pods and therefore can accommodate two workspaces in OpenShift.io. This document guides you on how you can optimize your resource usage within {osio}.
 
 include::topics/optimizing_osio_resources.adoc[]

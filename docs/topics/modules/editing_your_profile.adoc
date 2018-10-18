@@ -12,10 +12,7 @@ In the {osio} *Profile* view, use the following steps to change your personal se
 image::profile_menu.png[Profile menu button]
 +
 . In the *Profile* screen, click btn:[Edit Profile] to edit your profile.
-+
-image::edit_profile_button.png[Edit profile button]
-+
-. The dialogue lets you edit your *Name*, *Email*, *Company*, and *Password*, add your personal *URL* and *Bio*, and *Reset Environment*.
+. Use the displayed dialog box to edit your *Name*, *Email*, *Company*, and *Password*, add your personal *URL* and *Bio*, and *Reset Environment*.
 +
 NOTE: You can opt to keep your email address private from other users in {osio} by selecting the *Private* option. The default option is *Public*.
 +

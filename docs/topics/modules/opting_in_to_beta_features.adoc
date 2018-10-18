@@ -10,9 +10,7 @@ In the {osio} home screen, use the following steps to opt in or out of features:
 .. Click your name on the top right corner of the screen.
 
 .. Select *Settings* from the displayed options.
-+
-image::profile_menu.png[Profile menu button]
-+
+
 . In the *User Settings* page, click the *Features Opt-in* option.
 
 . Select the *Beta Features* option from the list to see the {osio} features covered in this guide. The *Production-Only Features* option is recommended for users who only want the stable {osio} features.
