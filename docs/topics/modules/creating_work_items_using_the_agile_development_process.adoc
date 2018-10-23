@@ -1,0 +1,44 @@
+[id="creating_work_items_using_the_agile_development_process"]
+= Creating work items using the Agile development process
+
+Agile is an iterative and incremental software development framework for managing product development.
+
+Use the agile guided hierarchy to create work items of the type, Theme, Epic, Story, Task, Impediment, and Defect, as follows:
+
+.Prerequisites
+
+* <<creating_new_space-user-guide,Create a space>> using *Agile* as your *Development Process*.
+
+.Procedure
+
+. Select the *Plan* tab at the top of the page to view the planner. The default *Backlog* view displays the *Work Items* for your space.
++
+NOTE: The tree view is the default view of the planner, that is, the *Show Tree* check box is selected by default.  The tree view allows you to quickly create work items with parent-child relationship using the quick-add and in-line add options. If you cleared it, ensure that the *Show Tree* check box is selected to see the tree view.
++
+
+. Use the quick-add option to create a high level, planning oriented *Theme*, as follows:
+.. In the *Add Work Item* pane, specify an appropriate title for the *Theme* in the *Work Item Title* field.
++
+image::create_theme.png[Create Theme]
+.. Press kbd:[Enter] to create the work item. Alternatively, click btn:[Add and open] to create the work item and see the detailed view for the work item.
+
+. You can use the in-line add option to create hierarchical child work items quickly. Create a child *Epic* for the *Theme* using the in-line add option as follows:
+.. In the work item list, click the *+* icon adjacent to the *Theme* for which you want to add a child *Epic*.
++
+image::inline_add.png[Inline Add]
++
+The in-line *Add Child Work Item* pane is displayed below it.
++
+image::add_epic.png[Add Epic]
+
+.. Add a title to the *Epic* and press kbd:[Enter] to create it.
+. Similarly, use the in-line add option to create an execution oriented child *Story* for the *Epic*, and further break down the *Story* into action oriented, more granular *Task* type of work items.
++
+image::create_story_task.png[Create Story and Tasks]
++
+NOTE: You can create child *Impediment* and *Defect* type of work items for the *Theme*, *Epic*, or *Story* type of work items as required.
+
+For more information see:
+
+* <<modifying_a_work_item>> to add details to your work item
+* <<working_with_iterations>> to execute the work items using iterations
