@@ -1,28 +1,17 @@
 [id="creating_a_new_work_item"]
 = Creating a new work item
 
-The space template you select determines the structure of the guided work item type hierarchy, the work item types available for a space, and their features.
 
-The fastest way to create work items in the planner is to use the quick-add option.
+The planner provides two predefined templates, *Agile* and *Scenario Driven Development*, to help plan your development work according to established development processes. The templates prescribe a guided hierarchy of work items using relevant work item types.
 
-.Prerequisites
+NOTE: The *Development Process* you select while creating your space determines the template, the guided work item type hierarchy, and the available work item types in planner.
 
-* <<creating_new_space-user-guide,Create a new space>> or select an existing space with the required template.
+You can create work items using the quick-add or the in-line add options. The in-line add option allows you to create work items with parent-child relations easily. To create independent work items use the quick-add option.
 
-.Procedure
+//the selection of template option will move from create space to use Planner, update when implemented.
 
-. Select the *Plan* tab at the top of the page to view the planner. The default *Backlog* view displays the top level work item type group for your space.
-+
-NOTE: The space template determines the available work item types in planner.
+include::creating_work_items_using_the_agile_development_process.adoc[leveloffset=+1]
 
-. In the *Add Work Item* pane, select the required work item type from the work item type drop-down list.
-+
-image::wi_create.png[Create Work Item]
+include::creating_work_items_using_the_scenario_driven_development_process.adoc[leveloffset=+1]
 
-. Specify an appropriate title for the work item in the *Work Item Title* field.
-. Click btn:[Add] or press kbd:[Enter] to create the work item. Alternatively, to add further details to the work item, click btn:[Add and open] to create the work item and see the detailed view for the work item.
-+
-image::wi_first.png[First Work Item]
-
-The planner provides guided work item type hierarchies based on established development methodologies such as *Agile* and *Scenario Driven Development*.
-See <<using_guided_hierarchy_to_create_work_item, using the work item type hierarchy>> for information about planning your development work by creating appropriate work items,and executing them according to these development methodologies.
+//include::using_scrum_guided_hierarchy.adoc[leveloffset=+1]
