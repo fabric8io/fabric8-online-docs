@@ -2,11 +2,11 @@
 = Creating a new work item
 
 
-The planner provides two predefined templates, *Agile* and *Scenario Driven Development*, to help plan your development work according to established development processes. The templates prescribe a guided hierarchy of work items using relevant work item types.
+The planner provides two predefined templates, *Agile* and *Scenario Driven Development*, to help plan your work according to established development processes. The templates prescribe a guided hierarchy of work items using relevant work item types.
 
 NOTE: The *Development Process* you select while creating your space determines the template, the guided work item type hierarchy, and the available work item types in planner.
 
-You can create work items using the quick-add or the in-line add options. The in-line add option allows you to create work items with parent-child relations easily. To create independent work items use the quick-add option.
+You can create work items using the quick-add or the in-line add options. The in-line add option allows you to create work items with parent-child relations easily. Use the quick-add option to create independent work items.
 
 //the selection of template option will move from create space to use Planner, update when implemented.
 
