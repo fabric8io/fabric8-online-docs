@@ -35,18 +35,19 @@ function tag_push() {
     docker push ${TARGET_IMAGE}
 }
 
-function show_docker_command() {
-    image_name=$1
-    # turn off showing command before executing
-    set +x
-    # Pretty print the command for snapshot
-    echo
-    echo -e "\e[92m========= Run snapshot by running following command ================\e[0m"
-    echo -e "\e[92m\e[1mdocker pull ${image_name} && docker run -d -p 8080:8080 ${image_name}\e[0m"
-    echo -e "\e[92m\e[1mDocs are now available for preview at http://127.0.0.1:8080/\e[0m"
-    echo -e "\e[92m====================================================================\e[0m"
+function addCommentToPullRequest() {
+    local snapshotImageName="fabric8/jenkins-openshift:SNAPSHOT-PR-${ghprbPullId}-${BUILD_ID}"
+    local message="@${ghprbPullAuthorLogin} snapshot docs image is available. Try \`docker pull ${snapshotImageName}\`,
+            run the image using \`docker run -it -p 4000:8080 ${snapshotImageName}\`. Docs are now available for
+            preview at \`http://127.0.0.1:4000/\` Thanks"
 
-    # Show command before executing
+    pr="${ghprbPullId}"
+    project="${ghprbGhRepository}"
+    url="https://api.github.com/repos/${project}/issues/${pr}/comments"
+
+    set +x
+    echo curl -X POST -s -L -H "Authorization: XXXX|base64 --decode)" ${url} -d "{\"body\": \"${message}\"}"
+    curl -X POST -s -L -H "Authorization: token $(echo ${FABRIC8_HUB_TOKEN}|base64 --decode)" ${url} -d "{\"body\": \"${message}\"}"
     set -x
 }
 
@@ -54,6 +55,7 @@ function show_docker_command() {
 set -ex
 
 eval "$(./env-toolkit load -f jenkins-env.json \
+        FABRIC8_HUB_TOKEN \
         QUAY_USERNAME \
         QUAY_PASSWORD \
         ghprbGhRepository \
@@ -93,4 +95,4 @@ docker_login "${QUAY_USERNAME}" "${QUAY_PASSWORD}" "${REGISTRY_URI}"
 #PUSH
 TAG="SNAPSHOT-PR-${ghprbPullId}-${BUILD_ID}"
 tag_push "${REGISTRY_URL}:${TAG}"
-show_docker_command "${REGISTRY_URL}:${TAG}"
+addCommentToPullRequest
