@@ -36,10 +36,8 @@ function tag_push() {
 }
 
 function addCommentToPullRequest() {
-    local snapshotImageName="fabric8/jenkins-openshift:SNAPSHOT-PR-${ghprbPullId}-${BUILD_ID}"
-    local message="@${ghprbPullAuthorLogin} snapshot docs image is available. Try \`docker pull ${snapshotImageName}\`,
-            run the image using \`docker run -it -p 4000:8080 ${snapshotImageName}\`. Docs are now available for
-            preview at \`http://127.0.0.1:4000/\` Thanks"
+    local snapshotImageName=$1
+    local message="@${ghprbPullAuthorLogin} snapshot docs image is available. Try \`docker pull ${snapshotImageName}\`, run the image using \`docker run -it -p 4000:8080 ${snapshotImageName}\`. Docs are now available for preview at \`http://127.0.0.1:4000\` Thanks"
 
     pr="${ghprbPullId}"
     project="${ghprbGhRepository}"
@@ -95,4 +93,4 @@ docker_login "${QUAY_USERNAME}" "${QUAY_PASSWORD}" "${REGISTRY_URI}"
 #PUSH
 TAG="SNAPSHOT-PR-${ghprbPullId}-${BUILD_ID}"
 tag_push "${REGISTRY_URL}:${TAG}"
-addCommentToPullRequest
+addCommentToPullRequest "${REGISTRY_URL}:${TAG}"
