@@ -3,9 +3,7 @@
 
 Work items are measurable units of work within a link:user-guide.html#about_spaces[space] that can be tracked. They are captured representations of work, assigned to a team member. Work items track data such as user stories, scenarios, tasks, and bugs.
 
-The {osio} planner is a task or work item tracker to plan and execute your project work.
-
-The planner includes a set of predefined planning templates based on common development methodologies such as _Agile_ and _Scenario Driven Development_. These templates determine the structure and features of the included work item types and states that are available for a space.
+The {osio} planner is a task or work item tracker to plan and execute your project work. It includes a set of predefined planning templates based on common development methodologies such as _Agile_ and _Scenario Driven Development_. These templates determine the structure and features of the work item types and states available for a space.
 
 Work items can be grouped and categorized into various work item types depending on the template you select for a space. These work items can then be scheduled to be completed within respective link:user-guide.html#about_iterations[Iterations] to track their progress.
 

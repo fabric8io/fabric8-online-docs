@@ -1,28 +1,30 @@
 [id="filtering_work_items"]
 = Filtering work items
 
-You can filter your work item list in the planner as follows:
+You can filter your work item list and save them for future reference as follows:
 
 . Click *Plan* and then *Backlog* to see a list of your work items for the space.
-. Click the *Select* drop-down list to select a filter type. You can filter work items by *Assignee*, *Creator*, *Area*, *Workitem type*, *State*, *Label* and *Title*.  The drop-down next to the *Select* drop-down auto-populates options based on the selected filter type.
+. Click the *Select* drop-down list to select a filter criteria. You can filter work items by *Assignee*, *Creator*, *Area*, *Workitem type*, *State*, *Label* and *Title*.  The drop-down next to the *Select* drop-down auto-populates options based on the selected filter criteria.
 +
 image::wi_select_filter.png[Select Filter]
 
-. Click the *Filter by _filter type_* drop-down to see a list of valid options for the selected filter type.
+. Click the *Filter by _filter criteria_* drop-down to see a list of valid options for the selected filter criteria.
 +
-For example, in the *Select* drop-down list, if you select *State* as your filter type, the *Filter by state* drop-down displays all the possible states by which you can filter the work item such as, *new*, *open*, *in progress*, *resolved*, and *closed*.
+For example, in the *Select* drop-down list, if you select *State* as your filter criteria, the *Filter by state* drop-down displays all the possible states by which you can filter the work item such as, *new*, *open*, *in progress*, *resolved*, and *closed*.
 +
-image::wi_filter_type_options.png[Filter Type Options]
+image::wi_filter_type_options.png[Filter criteria Options]
 . Select the appropriate option to filter the work items and see the filtered list.
 
 . Similarly, add multiple filters successively to further refine your work item list. The applied filters are displayed at the top of the filtered work item list.
 For example, you can see all the open bugs in your space by adding the *state: open* and the *workitemtype: Bug* filters successively.
 +
 image::wi_multiple_filters.png[Multiple Filters]
-. If you are not satisfied with the filters, click *x* next to the filter type to clear that filter, or use the *Clear all filters* to clear all the filters applied to the work item list.
++
 
-. After you are satisfied with the applied filters, click *Save* and add a name to the filter to save the filter for future use.
-In the above example, save the multiple filters you added as `Open Bugs` to track all your open bugs in the future. The filter *Open Bugs* is added to *My Filters*.
+. If you are not satisfied with the filters, click *x* next to the filter criteria to clear that filter, or use the *Clear all filters* to clear all the filters applied to the work item list.
+
+. After you are satisfied with the applied filters, for future use, click *Save* and add a name to the filter to save the filter under *My Filters* in the left pane.
+In the above example, save the multiple filters you added as `Open Bugs` to track all your open bugs in the future.
 +
 image::wi_my_filter.png[My Filters]
 +

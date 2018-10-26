@@ -1,21 +1,12 @@
 [id=viewing_work_items]
 = Viewing work items
 
-The planner provides an interface to plan and execute your development work by creating work items, grouping them into work item type groups for efficient planning, and associating them with iterations for effective execution.
+You can use the planner to create work items, group them into work item type groups for efficient planning, and associating them with iterations for effective execution.
 
-The _left pane_ of the planner displays:
-
-* The work item type groups determined by the space template
-* Your iterations outlining your development work
-* Your saved filters
-
-image::left_pane.png[Left Pane]
-
+The _left pane_ of the planner displays the work item type groups determined by the space template, the iterations you create, and the filters you save.
 This pane can be hidden or displayed using the *Hide Panel* or *Show Panel* icon as required.
 
 The _right pane_ displays the list of work items in your space that can be viewed either using the _tree view_ or the _flat view_.
-
-image::right_pane.png[Right Pane]
 
 [NOTE]
 ====
@@ -25,11 +16,35 @@ image::right_pane.png[Right Pane]
 image:wi_toggle_attributes.png[Display Work Item Attributes]
 ====
 
+Using the tree view::
+The tree view is the default view of the planner. Ensure that the *Show Tree* check box is selected to see the tree view.
++
+The tree view:
 
-include::tree_view_of_work_items.adoc[leveloffset=+1]
+* Displays the list of work items in a hierarchical structure, along with the linked parent and child work items.
+* Provides you the context of the work item in relation to the broader project goals.
+* Helps you create child work items quickly based on the development template you select.
 
-include::flat_view_of_work_items.adoc[leveloffset=+1]
+NOTE: The exact count of the work items that match your filter criteria or iteration are displayed above the *Add Work Item* pane. Since the tree view displays the number of work items matching your filter and their child and parent work items the number of work items displayed may seem to vary from that displayed in the list.
 
-include::ordering_work_items.adoc[leveloffset=+1]
+Using the flat view::
+Use the flat list view to track work items that belong to a particular iteration or work item type group as follows:
+. Clear the *Show Tree* check box to see the flat list view.
+. Select the required iteration or work item type group in the left pane of the planner to see the list of work items that belong to the iteration or work item type group respectively.
 
-include::filtering_work_items.adoc[leveloffset=+1]
+Reordering work items::
+You can reorder the work items in the list according to their priority or the order of execution by dragging the work items to the required position as follows:
+
+. Move the mouse pointer over the work item you want to reorder towards the vertical blue line to the left of the work item. The pointer changes to a move-cursor.
+. Use the move-cursor to drag the work item to the required position in the list.
++
+image::wi_drag_drop.png[Reorder Work Items]
+
+NOTE: In the tree view, only work items which are on the same level in the tree hierarchy can be moved.
+
+
+////
+The *Board* view displays a visual representation of your work item progress. Based on their status, the work items are sorted into the _new_, _open_, _in progress_, _resolved_, or _closed_ columns. Use this feature to track and update the status of work items as you progress through your task list.
+
+In the *Board* view, you can drag and drop the selected work item to the relevant column based on the progress of the work item.
+////

@@ -13,7 +13,7 @@ Use the agile guided hierarchy to create work items of the type, Theme, Epic, St
 
 . Select the *Plan* tab at the top of the page to view the planner. The default *Backlog* view displays the *Work Items* for your space.
 +
-NOTE: The tree view is the default view of the planner, that is, the *Show Tree* check box is selected by default.  The tree view allows you to quickly create work items with parent-child relationship using the quick-add and in-line add options. If you cleared it, ensure that the *Show Tree* check box is selected to see the tree view.
+NOTE: The tree view is the default view of the planner, that is, the *Show Tree* check box is selected by default. If you cleared it, ensure that the *Show Tree* check box is selected to see the tree view.
 +
 
 . Use the quick-add option to create a high level, planning oriented *Theme*, as follows:
