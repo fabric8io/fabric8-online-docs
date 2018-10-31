@@ -7,7 +7,7 @@ link:getting-started-guide.html#about_pipelines_stage_run[Stage and Run] are ind
 
 To review your application on _Stage_:
 
-. At the top of the page, click *Create*, and then click *Pipelines* to see the build pipelines for your new application. When you create a new codebase, the selected pipeline is triggered. In the *Build Release* stage of the pipeline, the build server is set, the build is started, and then released. Next, the pipeline build pushes the application to stage and it displays at the *Approve* stage. This process takes a few minutes.
+. If you are not already in the *Pipelines* page, at the top of the page, click *Create*, and then click *Pipelines* to see the build pipelines for your new application. When you create a new codebase, the selected pipeline is triggered. In the *Build Release* stage of the pipeline, the build server is set, the build is started, and then released. Next, the pipeline build pushes the application to stage and it displays at the *Approve* stage. This process takes a few minutes.
 +
 image::pipeline_firstrun.png[Pipeline First Run]
 +

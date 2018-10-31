@@ -10,7 +10,7 @@ When you create a new space, the *Create an Application* wizard to add or import
 
 image::start_creating_apps.png[Start creating apps]
 
-//<move note, Does not make any sense here, needs to move to workspaces section.> NOTE: Each quickstart has different requirements to run. Read the project's README file for details about requirements.
+//<move note, Does not make any sense here, needs to move to workspaces section.> NOTE: Each quickstart has different requirements to run. Read the project's README file for details about requirements. NOT YET UPDATED.
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]
@@ -66,23 +66,30 @@ image::app_information.png[Application information]
 . Click btn:[Set Up Application] to create the new application.
 
 . The progress screen displays a confirmation message when your application is ready.
++
+Once your application is ready, you can do one of the following:
 
-.. Optionally, click the blue link to view your new codebase in your Git provider.
-.. When ready, click btn:[View New Application].
+* Return to the _dashboard_ to see the details of the application deployed on stage, a detailed stack analysis report, and the codebase you added.
+* View your continuous integration _pipelines_
+* Edit your application codebase in _Che web IDE_.
++
+For this example, click btn:[View Pipeline].
 +
 image::application_ready.png[Application ready]
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-Your new Vert.X application is now created in your space and your space dashboard displays your new application:
+Your new Vert.X application is now created in your space.
 
-image::space_dash_after_hello-world.png[Space dashboard view after creating Hello World]
 endif::[]
 
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
-Your new project is now created in your space and your space dashboard now displays your new codebase.
+Your new project is now created in your space and your space dashboard now displays your new codebase:
+
+image::space_dash_after_app_creation.png[Space dashboard view after creating an application]
+
 endif::[]
 
 // for spring-boot
@@ -120,8 +127,8 @@ image::{context}_app_information.png[Application information]
 . Click btn:[Set Up Application] to finalize your choices and create the new application.
 
 . The progress screen displays a confirmation message when your application is ready.
-.. Optionally, click the blue link to view your new codebase in your Git provider.
-.. When ready, click btn:[View New Application].
+//When Springboot works, experiment with the flow of going to Che instead of pipelines in the next step.
+.. When ready, click btn:[View Pipeline].
 +
 image::{context}_application_ready.png[Application ready]
 
@@ -129,4 +136,4 @@ Your new Spring Boot project is now created in your space.
 endif::[]
 // end conditionals
 
-{osio} has now hosted the project source code in the linked account and specified organization on GitHub. It has also hosted the pipeline for the project in OpenShift Online.
+{osio} has now hosted the project source code in the specified organization of the linked GitHub account. It has also hosted the pipeline for the project in OpenShift Online.
