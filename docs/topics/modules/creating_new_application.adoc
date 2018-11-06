@@ -15,8 +15,8 @@ image::start_creating_apps.png[Start creating apps]
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 . In the *Name your application* field, type `helloworldvertx`.
-
 . Select the *Create a new codebase* radio button and click btn:[Continue].
+//. The *Create a new codebase* radio button is auto-selected since you clicked btn:[Create New Codebase] when you first created the space. Click btn:[Continue].
 
 . Select the mission and runtime for your new project:
 
@@ -39,6 +39,7 @@ ifeval::["{context}" == "user-guide"]
 . In the *Name your application* field, type a unique name for your new project. Ensure that the application name adheres to the listed *Naming Requirements*.
 
 . Select the *Create a new codebase* radio button and click btn:[Continue].
+//. The *Create a new codebase* radio button is auto-selected since you clicked btn:[Create New Codebase] when you first created the space. Click btn:[Continue].
 
 . Select the mission and runtime for your new project:
 
@@ -55,7 +56,7 @@ image::select_pipeline.png[Select a pipeline]
 endif::[]
 
 
-. In the *Authorize Git Provider* section, you must provide credentials for your Git provider. If you have already connected your GitHub account to {osio}, you can click the blue arrow to continue.
+. In the *Authorize Git Provider* section, your credentials are auto-populated if you have already connected your GitHub account to {osio}. If your GitHub account is not connected with {osio}, click *Login & Authorize Account*. If your browser session is already logged in to a GitHub account, {osio} uses it to connect your GitHub account with {osio}. If not, you are prompted to sign in to your GitHub account. After your GitHub account is connected, click the blue arrow to continue.
 +
 image::authorize_git_provider.png[Authorize GitHub]
 +
@@ -73,20 +74,19 @@ Once your application is ready, you can do one of the following:
 * View your continuous integration _pipelines_
 * Edit your application codebase in _Che web IDE_.
 +
-For this example, click btn:[View Pipeline].
-+
 image::application_ready.png[Application ready]
++
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-Your new Vert.X application is now created in your space.
+For this example, click btn:[View Pipeline] to see your application. Your new Vert.X application is now created in your space and deployed to the staging environment.
 
 endif::[]
 
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
-Your new project is now created in your space and your space dashboard now displays your new codebase:
+For this example, click btn:[Return to your dashboard] to see your application. Your new project is now created in your space and your space dashboard now displays your new codebase:
 
 image::space_dash_after_app_creation.png[Space dashboard view after creating an application]
 
@@ -94,7 +94,7 @@ endif::[]
 
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-. In the *Create an application* step:
+. In the *Create an application* screen:
 
 .. In the *Name your application* field, type *myspringboot*.
 
