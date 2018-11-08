@@ -1,10 +1,11 @@
 [id="importing_your_project-{context}{secondary}"]
 = Importing your project
 
-After creating a space, use the *Create an Application* wizard to create or import and application. If you closed the wizard earlier, click btn:[Add to space]  the upper-right corner of your space dashboard.
+After creating a space, use the *Create an Application* wizard to import an application. If you closed the wizard earlier, click btn:[Add to space] in the upper-right corner of your space dashboard.
 
 . In the *Name your application* field, type a unique name for your new project.
 . Select the *Import an existing codebase* radio button and then click btn:[Continue] to import an existing project codebase into {osio}.
+//. The *Import an existing codebase* radio button is auto-selected since you clicked btn:[Import Existing Codebase] when you first created the space. Click btn:[Continue] to import an existing project codebase into {osio}.
 . In the *Authorize Git Provider* step:
 
 .. Click the *Location* drop-down to select the location of your codebase. The default option is your personal GitHub account name.

@@ -15,33 +15,32 @@ endif::[]
 Create a new space as follows:
 
 . In the {osio} home page, click btn:[Create a space] in the *Recent Spaces* section. If your account has an existing space, click *+* to create an additional space.
-+
-image::second_space.png[Second space]
-+
-. If this is the first space you are creating with your {osio} account, a message about connecting to GitHub appears. To connect your GitHub account to {osio}:
-
-.. Click btn:[Connect to GitHub].
-.. If your browser session is already logged in to a GitHub account, {osio} uses it for the GitHub connection step. If not, you are prompted to add your GitHub credentials to connect the account to {osio}. When the accounts are connected, the {osio} home page view displays.
-
-. Click btn:[Create a space] again.
-
+//. In the {osio} home page, click btn:[Create New Codebase].
+//+
+//image::create_new_codebase.png[Create new codebase]
+//+
+//If your account has an existing space, in the *Recent Spaces* section of your home page, click *+* to create an additional space.
 +
 // for importing-existing-project
 ifeval::["{context}" == "importing-existing-project"]
-. In the dialog box, type *mynewspace* as the unique name for your space and click btn:[Ok].
+//. In the {osio} home page, click btn:[Import Existing Codebase].
+//+
+//image::create_new_codebase.png[Import existing codebase]
+//+
+. In the *Create a New Space* dialog box, type *mynewspace* as the unique name for your space and click btn:[Ok].
 endif::[]
 
 +
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-. In the dialog box, type *myspace* as the unique name for your space and click btn:[Ok].
+. In the *Create a New Space* dialog box, type *myspace* as the unique name for your space and click btn:[Ok].
 
 endif::[]
 
 +
 // for user-guide
 ifeval::["{context}" == "user-guide"]
-. In the dialog box, type a unique name for your space and click btn:[Ok].
+. In the *Create a New Space* dialog box, type a unique name for your space and click btn:[Ok].
 
 endif::[]
 +
