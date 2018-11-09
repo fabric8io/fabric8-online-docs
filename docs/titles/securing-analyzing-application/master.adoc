@@ -1,6 +1,6 @@
 include::meta/attributes.adoc[]
 
-= Securing and analyzing your application dependencies
+= Analyzing and securing your application dependencies
 :author: {rhd} Documentation Team
 :email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
