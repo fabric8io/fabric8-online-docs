@@ -241,6 +241,12 @@ value proposition:: A statement of the value provided to the user by addressing 
 work item:: Work items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each work item must be attached to a space and an area (assigned by default). This can be used to model bugs, tasks, features, ideas, and more.
 // endterm
 
+////
+// term: 281af0ae-ec80-49da-9c24-d49efdb60215, en
+(agile) work items:: Work items describe and keep track of work that needs to be completed. They can be assigned to collaborators within a space. Each work item must be attached to a space and an area (assigned by default). This can be used to model themes, epics, stories, tasks, defects and impediments.
+// endterm
+////
+
 // term: e4c8beb4-1ed1-4275-af20-9ee3cb6dafd1, en
 workspace:: Workspaces are fully configured web-based development environments suitable for your code and runtime needs. They are runtime environments where you can modify, test, debug, or run your code.
 // endterm
