@@ -6,6 +6,7 @@ If an {osio} space is no longer required, delete it as follows:
 WARNING: When deleted, the space and all its contents (work items, codebases, workspaces, etc.) are also permanently deleted.
 
 . On your {osio-link} home page, click your user name in the upper-left corner of the screen.
-. On the drop-down list, click  *View all spaces*.
-. Click the trash can icon (image:delete.png[title="Delete"]), the *Remove Space* dialog box displays asking for confirmation.
+. On the drop-down list, click  *Spaces*.
+. Click the additional options icon (image:kabob_white.png[title="Options"]) to the right of the space you want to delete.
+. Click *Remove Space* to see a dialog box asking for confirmation.
 . Click btn:[Remove] to confirm and delete your space.
