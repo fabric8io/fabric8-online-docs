@@ -2,6 +2,8 @@
 = Viewing and changing collaborators
 
 After adding collaborators, you can view their details or remove them from your space.
+NOTE: Only creators of a space can add collaborators to the space, view user details, or remove them from the space.
+// Once admin part is introduced, change note to say only creators and admin can do the above.
 
 .Prerequisites
 
@@ -16,7 +18,7 @@ After adding collaborators, you can view their details or remove them from your 
 +
 image::collaborators_button.png[Collaborators button]
 +
-. From the displayed list of collaborators on the *Collaborators* page, click the three dots next to the collaborator name.
+. From the displayed list of collaborators on the *Collaborators* page, click the options icon (image:kabob_white.png[title="Options"]) next to the collaborator name.
 +
 image::collaborators_edit.png[Edit collaborators]
 +

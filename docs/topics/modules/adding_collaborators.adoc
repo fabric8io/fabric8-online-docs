@@ -3,6 +3,9 @@
 
 You can add other {osio} users as collaborators to your space and then assign work items to each person.
 
+NOTE: Only creators of a space can add collaborators to the space, view user details, or remove them from the space.
+// Once admin part is introduced, change note to say only creators and admin can do the above.
+
 .Prerequisites
 
 * <<creating_new_space-user-guide,Create a new space>> or select an existing space.
@@ -10,7 +13,7 @@ You can add other {osio} users as collaborators to your space and then assign wo
 
 .Procedure
 
-. From your {osio} dashboard, click the name of a space to view its dashboard.
+. In your {osio} home page, click the name of a space from the list of your *Recent Spaces* to view the dashboard for the space.
 . Click the Equalizer tab (image:equalizer.png[title="Settings"]) at the top of the screen.
 . Click *Collaborators*.
 +
