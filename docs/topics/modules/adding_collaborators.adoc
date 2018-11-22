@@ -8,7 +8,9 @@ NOTE: Only creators of a space can add collaborators to the space, view user det
 
 .Prerequisites
 
-* <<creating_new_space-user-guide,Create a new space>> or select an existing space.
+* <<logging_into_red_hat_openshift_io,Log in>> to {osio-link} with a valid user account.
+* <<creating_new_space-user-guide,Create a new space>> or select an existing space you have created.
+// s/created/have admin rights to after admin role is introduced.
 * Ensure that the user you want to add as a collaborator has an {osio} account.
 
 .Procedure

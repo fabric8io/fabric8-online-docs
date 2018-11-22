@@ -1,5 +1,6 @@
 [id="modifying_a_work_item"]
 = Modifying a work item
+:secondary: planner
 
 After you <<creating_a_new_work_item,create a new work item>> the planner provides you the option to preview your work item or see a detailed view of the work item.
 
@@ -21,7 +22,7 @@ include::tracking_state_of_a_work_item.adoc[leveloffset=+1]
 
 include::editing_work_item_title.adoc[leveloffset=+1]
 
-include::assigning_the_work_item.adoc[leveloffset=+1]
+include::assigning_work_item_to_collaborator.adoc[leveloffset=+1]
 
 include::associating_work_item_with_area.adoc[leveloffset=+1]
 

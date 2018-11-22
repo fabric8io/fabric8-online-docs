@@ -1,27 +1,24 @@
 [id="viewing_and_changing_collaborators"]
 = Viewing and changing collaborators
 
-After adding collaborators, you can view their details or remove them from your space.
+After adding collaborators, you can view their details or remove them from your space if needed.
+
 NOTE: Only creators of a space can add collaborators to the space, view user details, or remove them from the space.
 // Once admin part is introduced, change note to say only creators and admin can do the above.
 
 .Prerequisites
 
-* Log in to {osio-link} with a valid user account. See <<logging_into_red_hat_openshift_io>>.
-* <<creating_new_space-user-guide,Create a new space>> or select an existing space.
+* <<logging_into_red_hat_openshift_io,Log in>> to {osio-link} with a valid user account.
+* <<creating_new_space-user-guide,Create a new space>> or select an existing space you have created.
 * Ensure you have <<adding_collaborators,added collaborators>> to your space.
 
 .Procedure
 
-. Click the *Equalizer* tab (image:equalizer.png[title="Equalizer"]) at the top of the screen.
-. Click btn:[Collaborators].
+. Click the *Equalizer* tab (image:equalizer.png[title="Equalizer"]) at the top of the screen, and then click *Collaborators* to see the list of collaborators in your space.
 +
-image::collaborators_button.png[Collaborators button]
+image::collaborators_list.png[List of space collaborators]
 +
-. From the displayed list of collaborators on the *Collaborators* page, click the options icon (image:kabob_white.png[title="Options"]) next to the collaborator name.
-+
-image::collaborators_edit.png[Edit collaborators]
-+
+. From the displayed list click the options icon (image:kabob_white.png[title="Options"]) next to the collaborator's email ID.
 . Either:
- * Select *View user* to view the collaborator details.
+ * Select *View user* to view the collaborator's details such as work items and spaces associated with the collaborator.
  * Select *Remove from space* to remove them from the space.
