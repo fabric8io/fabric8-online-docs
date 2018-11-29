@@ -51,4 +51,5 @@ include::../meta/attributes.adoc[]
 [discrete]
 == Documentation for Project Contributors
 
-* link:analytics-integration-api-guide.html[{osio} Analytics Integration API Guide] (link:analytics-integration-api-guide.pdf[PDF])
+* link:analytics-integration-api-guide.html[Analytics Integration API Guide] (link:analytics-integration-api-guide.pdf[PDF])
+* link:osio-analytics-integration-api-guide.html[{osio} Analytics Integration API Guide] (link:analytics-integration-api-guide.pdf[PDF])

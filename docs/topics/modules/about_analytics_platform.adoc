@@ -1,0 +1,10 @@
+[id="about_analytics_platform"]
+= About analytics platform
+
+Analytics is an open source platform aimed primarily at assisting developers in getting insights and recommendations on the stacks used for developing applications. This platform can be used to get an overview and recommendations for single application components as well.
+
+== Supported ecosystems
+
+The analytics _stack-analyses_ currently analyzes all application stacks in the Java (Maven) and Node (npm) ecosystems.
+
+Support for more ecosystems will be introduced in the near future.
