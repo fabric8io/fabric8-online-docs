@@ -5,11 +5,9 @@
 
 Fetches stack analysis response by using the request identifier returned by /stack-analyses POST.
 
-NOTE: You require an {osio} authentication token to invoke this method.
+== Resource URL and access key
 
-== Resource URL
-
-For information about the resource URL, reach out to us on the {osio} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+You require the 3scale gateway URL and access key to invoke all of the analytics API resources mentioned below. For information about the gateway URL and the gateway access key, reach out to us on the link:https://chat.openshift.io/developers/channels/fabric8-analytics[fabric8-analytics] support chat channel.
 
 == Resource information
 
@@ -25,7 +23,7 @@ None
 == Example request with cURL
 
 ----
-curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<recommender api url>/api/v1/stack-analyses/421249d9e1e5464cbf3e77dde4941463
+curl https://<3scale APICast Gateway URL>/api/v1/stack-analyses/421249d9e1e5464cbf3e77dde4941463?user_key=<user-key>
 ----
 
 == Example response
@@ -35,241 +33,421 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<
 [source,typescript]
 ----
 {
-    "finished_at": "2018-04-10T08:59:25.010455",
-    "release": "None:None:None",
-    "request_id": "add9caf0a1ff47969a8f27a4241a0230",
     "result": [
         {
-            "manifest_file_path": "/some",
-            "manifest_name": "pom.xml",
+            "manifest_file_path": "/home/JohnDoe",
             "recommendation": {
+                "missing_packages_pgm": [],
+                "usage_outliers": [],
                 "alternate": [],
-                "companion": [
-                    {
-                        "code_metrics": {
-                            "average_cyclomatic_complexity": -1,
-                            "code_lines": -1,
-                            "total_files": -1
-                        },
-                        "confidence_reason": 28.57142857142857,
-                        "cooccurrence_count": 4,
-                        "cooccurrence_probability": 28.57142857142857,
-                        "ecosystem": "maven",
-                        "github": {
-                            "contributors": -1,
-                            "dependent_projects": "0",
-                            "dependent_repos": "65",
-                            "first_release_date": "N/A",
-                            "forks_count": -1,
-                            "issues": {
-                                "month": {
-                                    "closed": -1,
-                                    "opened": -1
-                                },
-                                "year": {
-                                    "closed": -1,
-                                    "opened": -1
-                                }
-                            },
-                            "latest_release_duration": "2018-01-15 15:59:36",
-                            "pull_requests": {
-                                "month": {
-                                    "closed": -1,
-                                    "opened": -1
-                                },
-                                "year": {
-                                    "closed": -1,
-                                    "opened": -1
-                                }
-                            },
-                            "size": "N/A",
-                            "stargazers_count": -1,
-                            "total_releases": "37",
-                            "used_by": [
-                                {
-                                    "name": "Craftware/Kornell",
-                                    "stars": 12
-                                },
-                                {
-                                    "name": "fabric8-launcher/launcher-backend",
-                                    "stars": 4
-                                },
-                                {
-                                    "name": "fabric8io/fabric8-forge",
-                                    "stars": 7
-                                },
-                                {
-                                    "name": "kiegroup/guvnor",
-                                    "stars": 159
-                                },
-                                {
-                                    "name": "m-reza-rahman/pragmatic-microservices-lab",
-                                    "stars": 20
-                                },
-                                {
-                                    "name": "mbiarnes/guvnor",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "redhat-developer-demos/kubernetes-lab",
-                                    "stars": 7
-                                },
-                                {
-                                    "name": "redhat-helloworld-msa/hola",
-                                    "stars": 7
-                                },
-                                {
-                                    "name": "wildfly-swarm/tutorial",
-                                    "stars": 14
-                                },
-                                {
-                                    "name": "wildfly-swarm/wildfly-swarm",
-                                    "stars": 203
-                                }
-                            ],
-                            "watchers": -1
-                        },
-                        "latest_version": "2018.3.1",
-                        "licenses": [
-                            "AL2"
-                        ],
-                        "name": "org.wildfly.swarm:jaxrs-cdi",
-                        "osio_user_count": 0,
-                        "reason": "Package org.wildfly.swarm:jaxrs-cdi appears in 4 different stacksalong with the provided input stack. Do you want to consider adding this Package?",
-                        "security": [],
-                        "topic_list": [
-                            "http",
-                            "service",
-                            "rest"
-                        ],
-                        "version": "2018.3.1"
-                    },
-                    {
-                        "code_metrics": {
-                            "average_cyclomatic_complexity": -1,
-                            "code_lines": -1,
-                            "total_files": -1
-                        },
-                        "confidence_reason": 50,
-                        "cooccurrence_count": 7,
-                        "cooccurrence_probability": 50,
-                        "ecosystem": "maven",
-                        "github": {
-                            "contributors": -1,
-                            "dependent_projects": "0",
-                            "dependent_repos": "138",
-                            "first_release_date": "N/A",
-                            "forks_count": -1,
-                            "issues": {
-                                "month": {
-                                    "closed": -1,
-                                    "opened": -1
-                                },
-                                "year": {
-                                    "closed": -1,
-                                    "opened": -1
-                                }
-                            },
-                            "latest_release_duration": "2017-11-06 19:17:18",
-                            "pull_requests": {
-                                "month": {
-                                    "closed": -1,
-                                    "opened": -1
-                                },
-                                "year": {
-                                    "closed": -1,
-                                    "opened": -1
-                                }
-                            },
-                            "size": "N/A",
-                            "stargazers_count": -1,
-                            "total_releases": "33",
-                            "used_by": [
-                                {
-                                    "name": "ALRubinger/hc-swarm-alr-oso",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "bfh-study/sanctions-list-backend",
-                                    "stars": 1
-                                },
-                                {
-                                    "name": "fabric8-launcher/launcher-backend",
-                                    "stars": 3
-                                },
-                                {
-                                    "name": "gastaldi/hc",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "jclingan/swarm-crud-jc",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "mbiarnes/guvnor",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "redhat-helloworld-msa/hola",
-                                    "stars": 7
-                                },
-                                {
-                                    "name": "weweave/tubewarder",
-                                    "stars": 10
-                                },
-                                {
-                                    "name": "wildfly-extras/wildfly-microprofile-config",
-                                    "stars": 3
-                                },
-                                {
-                                    "name": "wildfly-swarm/wildfly-swarm",
-                                    "stars": 196
-                                }
-                            ],
-                            "watchers": -1
-                        },
-                        "latest_version": "2018.3.2",
-                        "licenses": [
-                            "AL2"
-                        ],
-                        "name": "org.wildfly.swarm:cdi",
-                        "osio_user_count": 0,
-                        "reason": "Package org.wildfly.swarm:cdi appears in 7 different stacksalong with the provided input stack. Do you want to consider adding this Package?",
-                        "security": [],
-                        "topic_list": [
-                            "integration"
-                        ],
-                        "version": "2018.3.2"
-                    }
-                ],
                 "input_stack_topics": {
-                    "org.wildfly.swarm:jaxrs": [
-                        "webservice",
-                        "rest"
+                    "io.vertx:vertx-docgen": [
+                        "java",
+                        "spring",
+                        "library"
                     ],
-                    "org.wildfly.swarm:monitor": [
-                        "monitor"
+                    "io.vertx:vertx-auth-common": [
+                        "java",
+                        "authentication",
+                        "authorization"
+                    ],
+                    "io.vertx:vertx-bridge-common": [
+                        "bridge",
+                        "vertx",
+                        "config",
+                        "commons"
+                    ],
+                    "io.vertx:vertx-auth-htdigest": [
+                        "authentication",
+                        "vertx"
+                    ],
+                    "io.vertx:vertx-auth-jwt": [
+                        "authentication",
+                        "jwt",
+                        "token",
+                        "authorization"
+                    ],
+                    "io.vertx:vertx-codegen": [
+                        "vertx",
+                        "io"
+                    ],
+                    "io.vertx:vertx-auth-oauth2": [
+                        "authentication",
+                        "oauth",
+                        "vertx",
+                        "provider"
+                    ],
+                    "io.vertx:vertx-core": [
+                        "http",
+                        "socket",
+                        "cluster",
+                        "reactive"
                     ]
                 },
-                "manifest_file_path": "/some",
-                "missing_packages_pgm": [],
-                "usage_outliers": []
+                "manifest_file_path": "/home/JohnDoe",
+                "companion": [
+                    {
+                        "topic_list": [
+                            "event-bus",
+                            "jwt",
+                            "webapp",
+                            "routing"
+                        ],
+                        "security": [],
+                        "confidence_reason": 100,
+                        "ecosystem": "maven",
+                        "osio_user_count": 0,
+                        "name": "io.vertx:vertx-web",
+                        "github": {
+                            "issues": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "forks_count": -1,
+                            "stargazers_count": -1,
+                            "watchers": -1,
+                            "dependent_repos": "5415",
+                            "latest_release_duration": "2018-05-28 11:46:58",
+                            "dependent_projects": "33",
+                            "total_releases": "21",
+                            "size": "N/A",
+                            "contributors": -1,
+                            "used_by": [
+                                {
+                                    "name": "BraintagsGmbH/NetRelay",
+                                    "stars": 5
+                                },
+                                {
+                                    "name": "gi0baro/FrameworkBenchmarks",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "pac4j/vertx-pac4j",
+                                    "stars": 74
+                                },
+                                {
+                                    "name": "prometheus/client_java",
+                                    "stars": 348
+                                },
+                                {
+                                    "name": "redhat-developer/reactive-microservices-in-java",
+                                    "stars": 39
+                                },
+                                {
+                                    "name": "vert-x3/vertx-hazelcast",
+                                    "stars": 35
+                                },
+                                {
+                                    "name": "vert-x3/vertx-ignite",
+                                    "stars": 19
+                                },
+                                {
+                                    "name": "vert-x3/vertx-service-discovery",
+                                    "stars": 53
+                                },
+                                {
+                                    "name": "vert-x3/vertx-zookeeper",
+                                    "stars": 45
+                                },
+                                {
+                                    "name": "voyages-sncf-technologies/tock",
+                                    "stars": 23
+                                }
+                            ],
+                            "first_release_date": "N/A",
+                            "pull_requests": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            }
+                        },
+                        "cooccurrence_probability": 100,
+                        "cooccurrence_count": 2,
+                        "code_metrics": {
+                            "code_lines": -1,
+                            "average_cyclomatic_complexity": -1,
+                            "total_files": -1
+                        },
+                        "licenses": [
+                            "Eclipse Public License - v 2.0",
+                            "The Apache Software License, Version 2.0"
+                        ],
+                        "reason": "Package io.vertx:vertx-web appears in 2 different stacks along with the provided input stack. Do you want to consider adding this Package?",
+                        "latest_version": "3.6.0.CR1",
+                        "version": "3.6.0.CR1"
+                    },
+                    {
+                        "topic_list": [
+                            "logging",
+                            "dependency-injection",
+                            "api"
+                        ],
+                        "security": [],
+                        "confidence_reason": 100,
+                        "ecosystem": "maven",
+                        "osio_user_count": 0,
+                        "name": "org.slf4j:slf4j-api",
+                        "github": {
+                            "issues": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "forks_count": -1,
+                            "stargazers_count": -1,
+                            "watchers": -1,
+                            "dependent_repos": "111974",
+                            "latest_release_duration": "2018-03-21 22:01:42",
+                            "dependent_projects": "10432",
+                            "total_releases": "66",
+                            "size": "N/A",
+                            "contributors": -1,
+                            "used_by": [
+                                {
+                                    "name": "apache/spark",
+                                    "stars": 15450
+                                },
+                                {
+                                    "name": "dropwizard/dropwizard",
+                                    "stars": 6200
+                                },
+                                {
+                                    "name": "dropwizard/metrics",
+                                    "stars": 5377
+                                },
+                                {
+                                    "name": "eclipse/jetty.project",
+                                    "stars": 1723
+                                },
+                                {
+                                    "name": "hibernate/hibernate-validator",
+                                    "stars": 421
+                                },
+                                {
+                                    "name": "netty/netty",
+                                    "stars": 12051
+                                },
+                                {
+                                    "name": "qos-ch/slf4j",
+                                    "stars": 885
+                                },
+                                {
+                                    "name": "resteasy/Resteasy",
+                                    "stars": 660
+                                },
+                                {
+                                    "name": "rzwitserloot/lombok",
+                                    "stars": 5395
+                                },
+                                {
+                                    "name": "spring-projects/spring-security",
+                                    "stars": 2042
+                                }
+                            ],
+                            "first_release_date": "N/A",
+                            "pull_requests": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            }
+                        },
+                        "cooccurrence_probability": 100,
+                        "cooccurrence_count": 2,
+                        "code_metrics": {
+                            "code_lines": -1,
+                            "average_cyclomatic_complexity": -1,
+                            "total_files": -1
+                        },
+                        "licenses": [
+                            "MIT License"
+                        ],
+                        "reason": "Package org.slf4j:slf4j-api appears in 2 different stacks along with the provided input stack. Do you want to consider adding this Package?",
+                        "latest_version": "1.8.0-beta2",
+                        "version": "1.8.0-beta2"
+                    },
+                    {
+                        "topic_list": [
+                            "vertx"
+                        ],
+                        "security": [],
+                        "confidence_reason": 100,
+                        "ecosystem": "maven",
+                        "osio_user_count": 0,
+                        "name": "io.vertx:vertx-codetrans",
+                        "github": {
+                            "issues": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "forks_count": -1,
+                            "stargazers_count": -1,
+                            "watchers": -1,
+                            "dependent_repos": "140",
+                            "latest_release_duration": "2018-05-28 11:43:27",
+                            "dependent_projects": "4",
+                            "total_releases": "26",
+                            "size": "N/A",
+                            "contributors": -1,
+                            "used_by": [
+                                {
+                                    "name": "vert-x3/vertx-dropwizard-metrics",
+                                    "stars": 18
+                                },
+                                {
+                                    "name": "vert-x3/vertx-hazelcast",
+                                    "stars": 35
+                                },
+                                {
+                                    "name": "vert-x3/vertx-ignite",
+                                    "stars": 19
+                                },
+                                {
+                                    "name": "vert-x3/vertx-jdbc-client",
+                                    "stars": 34
+                                },
+                                {
+                                    "name": "vert-x3/vertx-mysql-postgresql-client",
+                                    "stars": 35
+                                },
+                                {
+                                    "name": "vert-x3/vertx-redis-client",
+                                    "stars": 38
+                                },
+                                {
+                                    "name": "vert-x3/vertx-service-discovery",
+                                    "stars": 53
+                                },
+                                {
+                                    "name": "vert-x3/vertx-service-factory",
+                                    "stars": 16
+                                },
+                                {
+                                    "name": "vert-x3/vertx-unit",
+                                    "stars": 16
+                                },
+                                {
+                                    "name": "vert-x3/vertx-zookeeper",
+                                    "stars": 45
+                                }
+                            ],
+                            "first_release_date": "N/A",
+                            "pull_requests": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            }
+                        },
+                        "cooccurrence_probability": 100,
+                        "cooccurrence_count": 2,
+                        "code_metrics": {
+                            "code_lines": -1,
+                            "average_cyclomatic_complexity": -1,
+                            "total_files": -1
+                        },
+                        "licenses": [
+                            "Eclipse Public License - v 1.0",
+                            "The Apache Software License, Version 2.0"
+                        ],
+                        "reason": "Package io.vertx:vertx-codetrans appears in 2 different stacks along with the provided input stack. Do you want to consider adding this Package?",
+                        "latest_version": "3.6.0.CR1",
+                        "version": "3.6.0.CR1"
+                    }
+                ]
             },
             "user_stack_info": {
+                "license_analysis": {
+                    "unknown_licenses": {
+                        "really_unknown": [],
+                        "component_conflict": []
+                    },
+                    "conflict_packages": [],
+                    "status": "Successful",
+                    "f8a_stack_licenses": [
+                        "epl 1.0"
+                    ],
+                    "current_stack_license": {},
+                    "outlier_packages": []
+                },
+                "analyzed_dependencies_count": 1,
+                "recommendation_ready": true,
+                "unknown_dependencies": [
+                    {
+                        "name": "io.vertx:vertx-auth-oauth2",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "name": "io.vertx:vertx-bridge-common",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "name": "io.vertx:vertx-codegen",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "name": "io.vertx:vertx-auth-common",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "name": "io.vertx:vertx-auth-jwt",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "name": "io.vertx:vertx-core",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "name": "io.vertx:vertx-auth-htdigest",
+                        "version": "3.6.0-SNAPSHOT"
+                    }
+                ],
                 "analyzed_dependencies": [
                     {
-                        "code_metrics": {
-                            "average_cyclomatic_complexity": -1,
-                            "code_lines": -1,
-                            "total_files": -1
+                        "license_analysis": {
+                            "unknown_licenses": [],
+                            "outlier_licenses": [],
+                            "status": "Successful",
+                            "_message": "Representative license found",
+                            "synonyms": {
+                                "The Apache Software License, Version 2.0": "apache 2.0",
+                                "Eclipse Public License - v 1.0": "epl 1.0"
+                            },
+                            "conflict_licenses": [],
+                            "_representative_licenses": "epl 1.0"
                         },
-                        "ecosystem": "maven",
+                        "security": [],
                         "github": {
-                            "contributors": -1,
-                            "dependent_projects": "0",
-                            "dependent_repos": "39",
-                            "first_release_date": "Apr 16, 2010",
-                            "forks_count": -1,
                             "issues": {
                                 "month": {
                                     "closed": -1,
@@ -280,8 +458,58 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<
                                     "opened": -1
                                 }
                             },
-                            "latest_release_duration": "2017-09-05 19:59:04",
-                            "open_issues_count": -1,
+                            "forks_count": 12,
+                            "open_issues_count": 6,
+                            "stargazers_count": 16,
+                            "dependent_repos": "194",
+                            "latest_release_duration": "2017-08-07 14:53:35",
+                            "dependent_projects": "7",
+                            "total_releases": "21",
+                            "size": "N/A",
+                            "contributors": 5,
+                            "used_by": [
+                                {
+                                    "name": "eclipse/vert.x",
+                                    "stars": 7178
+                                },
+                                {
+                                    "name": "vert-x3/vertx-auth",
+                                    "stars": 44
+                                },
+                                {
+                                    "name": "vert-x3/vertx-jdbc-client",
+                                    "stars": 34
+                                },
+                                {
+                                    "name": "vert-x3/vertx-redis-client",
+                                    "stars": 36
+                                },
+                                {
+                                    "name": "vert-x3/vertx-rx",
+                                    "stars": 81
+                                },
+                                {
+                                    "name": "vert-x3/vertx-service-discovery",
+                                    "stars": 51
+                                },
+                                {
+                                    "name": "vert-x3/vertx-service-proxy",
+                                    "stars": 41
+                                },
+                                {
+                                    "name": "vert-x3/vertx-stack",
+                                    "stars": 78
+                                },
+                                {
+                                    "name": "vert-x3/vertx-sync",
+                                    "stars": 56
+                                },
+                                {
+                                    "name": "vert-x3/vertx-web",
+                                    "stars": 372
+                                }
+                            ],
+                            "first_release_date": "Apr 16, 2010",
                             "pull_requests": {
                                 "month": {
                                     "closed": -1,
@@ -291,221 +519,82 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<
                                     "closed": -1,
                                     "opened": -1
                                 }
-                            },
-                            "size": "N/A",
-                            "stargazers_count": -1,
-                            "total_releases": "33",
-                            "used_by": [
-                                {
-                                    "name": "ALRubinger/hc-swarm-alr-oso",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "davsclaus/minishift-hello",
-                                    "stars": 3
-                                },
-                                {
-                                    "name": "eclipse/microprofile-health",
-                                    "stars": 8
-                                },
-                                {
-                                    "name": "gastaldi/hc",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "inoxx03/wf-swarm-hc-nexus",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "inoxx03/wfs-hc",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "inoxx03/wfs-health-check-live",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "nickschuetz/nickswarm",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "wildfly-swarm-openshiftio-boosters/wfswarm-health-check-redhat",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "wildfly-swarm/wildfly-swarm",
-                                    "stars": 201
-                                }
-                            ]
+                            }
                         },
-                        "latest_version": "2017.10.0",
-                        "license_analysis": {
-                            "_message": "Representative license found",
-                            "_representative_licenses": "apache 2.0",
-                            "conflict_licenses": [],
-                            "outlier_licenses": [],
-                            "status": "Successful",
-                            "synonyms": {
-                                "AL2": "apache 2.0"
-                            },
-                            "unknown_licenses": []
-                        },
-                        "licenses": [
-                            "AL2"
-                        ],
-                        "name": "org.wildfly.swarm:monitor",
                         "osio_user_count": 0,
-                        "security": [],
-                        "topic_list": [
-                            "monitor"
-                        ],
-                        "version": "2017.10.0"
-                    },
-                    {
+                        "ecosystem": "maven",
                         "code_metrics": {
-                            "average_cyclomatic_complexity": -1,
                             "code_lines": -1,
+                            "average_cyclomatic_complexity": -1,
                             "total_files": -1
                         },
-                        "ecosystem": "maven",
-                        "github": {
-                            "contributors": -1,
-                            "dependent_projects": "0",
-                            "dependent_repos": "227",
-                            "first_release_date": "Apr 16, 2010",
-                            "forks_count": -1,
-                            "issues": {
-                                "month": {
-                                    "closed": -1,
-                                    "opened": -1
-                                },
-                                "year": {
-                                    "closed": -1,
-                                    "opened": -1
-                                }
-                            },
-                            "latest_release_duration": "2018-02-08 16:22:40",
-                            "open_issues_count": -1,
-                            "pull_requests": {
-                                "month": {
-                                    "closed": -1,
-                                    "opened": -1
-                                },
-                                "year": {
-                                    "closed": -1,
-                                    "opened": -1
-                                }
-                            },
-                            "size": "N/A",
-                            "stargazers_count": -1,
-                            "total_releases": "47",
-                            "used_by": [
-                                {
-                                    "name": "ALRubinger/hc-swarm-alr-oso",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "arun-gupta/docker-javaee",
-                                    "stars": 6
-                                },
-                                {
-                                    "name": "bfh-study/sanctions-list-backend",
-                                    "stars": 1
-                                },
-                                {
-                                    "name": "eclipse/microprofile-health",
-                                    "stars": 8
-                                },
-                                {
-                                    "name": "mbiarnes/guvnor",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "weweave/tubewarder",
-                                    "stars": 10
-                                },
-                                {
-                                    "name": "wildfly-extras/wildfly-microprofile-config",
-                                    "stars": 3
-                                },
-                                {
-                                    "name": "wildfly-swarm-archive/wildfly-swarm-drools",
-                                    "stars": 1
-                                },
-                                {
-                                    "name": "wildfly-swarm-openshiftio-boosters/wfswarm-health-check-redhat",
-                                    "stars": 0
-                                },
-                                {
-                                    "name": "wildfly-swarm/wildfly-swarm",
-                                    "stars": 203
-                                }
-                            ]
-                        },
-                        "latest_version": "2018.2.0",
-                        "license_analysis": {
-                            "_message": "Representative license found",
-                            "_representative_licenses": "apache 2.0",
-                            "conflict_licenses": [],
-                            "outlier_licenses": [],
-                            "status": "Successful",
-                            "synonyms": {
-                                "AL2": "apache 2.0"
-                            },
-                            "unknown_licenses": []
-                        },
-                        "licenses": [
-                            "AL2"
-                        ],
-                        "name": "org.wildfly.swarm:jaxrs",
-                        "osio_user_count": 0,
-                        "security": [],
+                        "name": "io.vertx:vertx-docgen",
                         "topic_list": [
-                            "webservice",
-                            "rest"
+                            "java",
+                            "spring",
+                            "library"
                         ],
-                        "version": "2017.10.0"
+                        "latest_version": "3.5.0.Beta1",
+                        "version": "0.9.1",
+                        "licenses": [
+                            "Eclipse Public License - v 1.0",
+                            "The Apache Software License, Version 2.0"
+                        ]
                     }
                 ],
-                "analyzed_dependencies_count": 2,
+                "total_licenses": 2,
+                "ecosystem": "maven",
+                "stack_license_conflict": false,
                 "dependencies": [
                     {
-                        "package": "org.wildfly.swarm:monitor",
-                        "version": "2017.10.0"
+                        "package": "io.vertx:vertx-codegen",
+                        "version": "3.6.0-SNAPSHOT"
                     },
                     {
-                        "package": "org.wildfly.swarm:jaxrs",
-                        "version": "2017.10.0"
+                        "package": "io.vertx:vertx-auth-common",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "package": "io.vertx:vertx-auth-htdigest",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "package": "io.vertx:vertx-auth-jwt",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "package": "io.vertx:vertx-core",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "package": "io.vertx:vertx-auth-oauth2",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "package": "io.vertx:vertx-bridge-common",
+                        "version": "3.6.0-SNAPSHOT"
+                    },
+                    {
+                        "package": "io.vertx:vertx-docgen",
+                        "version": "0.9.1"
                     }
                 ],
+                "unknown_dependencies_count": 7,
                 "distinct_licenses": [
-                    "AL2"
-                ],
-                "ecosystem": "maven",
-                "license_analysis": {
-                    "conflict_packages": [],
-                    "current_stack_license": {},
-                    "f8a_stack_licenses": [
-                        "apache 2.0"
-                    ],
-                    "outlier_packages": [],
-                    "status": "Successful",
-                    "unknown_licenses": {
-                        "component_conflict": [],
-                        "really_unknown": []
-                    }
-                },
-                "recommendation_ready": true,
-                "stack_license_conflict": false,
-                "total_licenses": 1,
-                "unknown_dependencies": [],
-                "unknown_dependencies_count": 0
-            }
+                    "Eclipse Public License - v 1.0",
+                    "The Apache Software License, Version 2.0"
+                ]
+            },
+            "manifest_name": "pom.xml"
         }
     ],
-    "started_at": "2018-04-10T08:59:24.939611",
-    "version": "v1"
+    "release": "None:None:None",
+    "request_id": "b5231ac707594a30916e625ead936e30",
+    "finished_at": "2018-11-26T13:20:20.884897",
+    "version": "v1",
+    "started_at": "2018-11-26T13:20:20.737545"
 }
+
 ----
 
 *In-Progress*
@@ -525,7 +614,10 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<
 ----
 401:
 {
-  "error": "Authentication failed - could not decode JWT token"
+  "message": "Authentication failed",
+  "some_description": "Authentication failed",
+  "status": 401
+
 }
 
 ----

@@ -7,7 +7,7 @@
 
 include::modules/about_analytics_platform.adoc[leveloffset=+1]
 
-include::modules/getting_3scale_gateway_URL_and_access_key.adoc[leveloffset=+1]
+include::modules/getting_osio_authentication_token.adoc[leveloffset=+1]
 
 
 [id="start_using_analytics_APIs"]
@@ -15,4 +15,4 @@ include::modules/getting_3scale_gateway_URL_and_access_key.adoc[leveloffset=+1]
 
 // include::api_usage_examples.adoc[leveloffset=+1]
 
-include::api_specifications.adoc[leveloffset=+1]
+include::osio_api_specifications.adoc[leveloffset=+1]

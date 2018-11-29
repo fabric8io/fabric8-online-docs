@@ -1,0 +1,533 @@
+[id="osio_api_get_stack_analyses_response"]
+= GET /stack-analyses/+{request ID}+
+
+== Purpose
+
+Fetches stack analysis response by using the request identifier returned by /stack-analyses POST.
+
+NOTE: You require an {osio} authentication token to invoke this method.
+
+== Resource URL
+
+For information about the resource URL, reach out to us on the {osio} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+
+== Resource information
+
+|===
+| Response Format         | JSON
+| Requires Authentication | Yes
+|===
+
+== Parameters
+
+None
+
+== Example request with cURL
+
+----
+curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<recommender api url>/api/v1/stack-analyses/421249d9e1e5464cbf3e77dde4941463
+----
+
+== Example response
+
+*Success*
+
+[source,typescript]
+----
+{
+    "finished_at": "2018-04-10T08:59:25.010455",
+    "release": "None:None:None",
+    "request_id": "add9caf0a1ff47969a8f27a4241a0230",
+    "result": [
+        {
+            "manifest_file_path": "/some",
+            "manifest_name": "pom.xml",
+            "recommendation": {
+                "alternate": [],
+                "companion": [
+                    {
+                        "code_metrics": {
+                            "average_cyclomatic_complexity": -1,
+                            "code_lines": -1,
+                            "total_files": -1
+                        },
+                        "confidence_reason": 28.57142857142857,
+                        "cooccurrence_count": 4,
+                        "cooccurrence_probability": 28.57142857142857,
+                        "ecosystem": "maven",
+                        "github": {
+                            "contributors": -1,
+                            "dependent_projects": "0",
+                            "dependent_repos": "65",
+                            "first_release_date": "N/A",
+                            "forks_count": -1,
+                            "issues": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "latest_release_duration": "2018-01-15 15:59:36",
+                            "pull_requests": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "size": "N/A",
+                            "stargazers_count": -1,
+                            "total_releases": "37",
+                            "used_by": [
+                                {
+                                    "name": "Craftware/Kornell",
+                                    "stars": 12
+                                },
+                                {
+                                    "name": "fabric8-launcher/launcher-backend",
+                                    "stars": 4
+                                },
+                                {
+                                    "name": "fabric8io/fabric8-forge",
+                                    "stars": 7
+                                },
+                                {
+                                    "name": "kiegroup/guvnor",
+                                    "stars": 159
+                                },
+                                {
+                                    "name": "m-reza-rahman/pragmatic-microservices-lab",
+                                    "stars": 20
+                                },
+                                {
+                                    "name": "mbiarnes/guvnor",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "redhat-developer-demos/kubernetes-lab",
+                                    "stars": 7
+                                },
+                                {
+                                    "name": "redhat-helloworld-msa/hola",
+                                    "stars": 7
+                                },
+                                {
+                                    "name": "wildfly-swarm/tutorial",
+                                    "stars": 14
+                                },
+                                {
+                                    "name": "wildfly-swarm/wildfly-swarm",
+                                    "stars": 203
+                                }
+                            ],
+                            "watchers": -1
+                        },
+                        "latest_version": "2018.3.1",
+                        "licenses": [
+                            "AL2"
+                        ],
+                        "name": "org.wildfly.swarm:jaxrs-cdi",
+                        "osio_user_count": 0,
+                        "reason": "Package org.wildfly.swarm:jaxrs-cdi appears in 4 different stacksalong with the provided input stack. Do you want to consider adding this Package?",
+                        "security": [],
+                        "topic_list": [
+                            "http",
+                            "service",
+                            "rest"
+                        ],
+                        "version": "2018.3.1"
+                    },
+                    {
+                        "code_metrics": {
+                            "average_cyclomatic_complexity": -1,
+                            "code_lines": -1,
+                            "total_files": -1
+                        },
+                        "confidence_reason": 50,
+                        "cooccurrence_count": 7,
+                        "cooccurrence_probability": 50,
+                        "ecosystem": "maven",
+                        "github": {
+                            "contributors": -1,
+                            "dependent_projects": "0",
+                            "dependent_repos": "138",
+                            "first_release_date": "N/A",
+                            "forks_count": -1,
+                            "issues": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "latest_release_duration": "2017-11-06 19:17:18",
+                            "pull_requests": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "size": "N/A",
+                            "stargazers_count": -1,
+                            "total_releases": "33",
+                            "used_by": [
+                                {
+                                    "name": "ALRubinger/hc-swarm-alr-oso",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "bfh-study/sanctions-list-backend",
+                                    "stars": 1
+                                },
+                                {
+                                    "name": "fabric8-launcher/launcher-backend",
+                                    "stars": 3
+                                },
+                                {
+                                    "name": "gastaldi/hc",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "jclingan/swarm-crud-jc",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "mbiarnes/guvnor",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "redhat-helloworld-msa/hola",
+                                    "stars": 7
+                                },
+                                {
+                                    "name": "weweave/tubewarder",
+                                    "stars": 10
+                                },
+                                {
+                                    "name": "wildfly-extras/wildfly-microprofile-config",
+                                    "stars": 3
+                                },
+                                {
+                                    "name": "wildfly-swarm/wildfly-swarm",
+                                    "stars": 196
+                                }
+                            ],
+                            "watchers": -1
+                        },
+                        "latest_version": "2018.3.2",
+                        "licenses": [
+                            "AL2"
+                        ],
+                        "name": "org.wildfly.swarm:cdi",
+                        "osio_user_count": 0,
+                        "reason": "Package org.wildfly.swarm:cdi appears in 7 different stacksalong with the provided input stack. Do you want to consider adding this Package?",
+                        "security": [],
+                        "topic_list": [
+                            "integration"
+                        ],
+                        "version": "2018.3.2"
+                    }
+                ],
+                "input_stack_topics": {
+                    "org.wildfly.swarm:jaxrs": [
+                        "webservice",
+                        "rest"
+                    ],
+                    "org.wildfly.swarm:monitor": [
+                        "monitor"
+                    ]
+                },
+                "manifest_file_path": "/some",
+                "missing_packages_pgm": [],
+                "usage_outliers": []
+            },
+            "user_stack_info": {
+                "analyzed_dependencies": [
+                    {
+                        "code_metrics": {
+                            "average_cyclomatic_complexity": -1,
+                            "code_lines": -1,
+                            "total_files": -1
+                        },
+                        "ecosystem": "maven",
+                        "github": {
+                            "contributors": -1,
+                            "dependent_projects": "0",
+                            "dependent_repos": "39",
+                            "first_release_date": "Apr 16, 2010",
+                            "forks_count": -1,
+                            "issues": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "latest_release_duration": "2017-09-05 19:59:04",
+                            "open_issues_count": -1,
+                            "pull_requests": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "size": "N/A",
+                            "stargazers_count": -1,
+                            "total_releases": "33",
+                            "used_by": [
+                                {
+                                    "name": "ALRubinger/hc-swarm-alr-oso",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "davsclaus/minishift-hello",
+                                    "stars": 3
+                                },
+                                {
+                                    "name": "eclipse/microprofile-health",
+                                    "stars": 8
+                                },
+                                {
+                                    "name": "gastaldi/hc",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "inoxx03/wf-swarm-hc-nexus",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "inoxx03/wfs-hc",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "inoxx03/wfs-health-check-live",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "nickschuetz/nickswarm",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "wildfly-swarm-openshiftio-boosters/wfswarm-health-check-redhat",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "wildfly-swarm/wildfly-swarm",
+                                    "stars": 201
+                                }
+                            ]
+                        },
+                        "latest_version": "2017.10.0",
+                        "license_analysis": {
+                            "_message": "Representative license found",
+                            "_representative_licenses": "apache 2.0",
+                            "conflict_licenses": [],
+                            "outlier_licenses": [],
+                            "status": "Successful",
+                            "synonyms": {
+                                "AL2": "apache 2.0"
+                            },
+                            "unknown_licenses": []
+                        },
+                        "licenses": [
+                            "AL2"
+                        ],
+                        "name": "org.wildfly.swarm:monitor",
+                        "osio_user_count": 0,
+                        "security": [],
+                        "topic_list": [
+                            "monitor"
+                        ],
+                        "version": "2017.10.0"
+                    },
+                    {
+                        "code_metrics": {
+                            "average_cyclomatic_complexity": -1,
+                            "code_lines": -1,
+                            "total_files": -1
+                        },
+                        "ecosystem": "maven",
+                        "github": {
+                            "contributors": -1,
+                            "dependent_projects": "0",
+                            "dependent_repos": "227",
+                            "first_release_date": "Apr 16, 2010",
+                            "forks_count": -1,
+                            "issues": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "latest_release_duration": "2018-02-08 16:22:40",
+                            "open_issues_count": -1,
+                            "pull_requests": {
+                                "month": {
+                                    "closed": -1,
+                                    "opened": -1
+                                },
+                                "year": {
+                                    "closed": -1,
+                                    "opened": -1
+                                }
+                            },
+                            "size": "N/A",
+                            "stargazers_count": -1,
+                            "total_releases": "47",
+                            "used_by": [
+                                {
+                                    "name": "ALRubinger/hc-swarm-alr-oso",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "arun-gupta/docker-javaee",
+                                    "stars": 6
+                                },
+                                {
+                                    "name": "bfh-study/sanctions-list-backend",
+                                    "stars": 1
+                                },
+                                {
+                                    "name": "eclipse/microprofile-health",
+                                    "stars": 8
+                                },
+                                {
+                                    "name": "mbiarnes/guvnor",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "weweave/tubewarder",
+                                    "stars": 10
+                                },
+                                {
+                                    "name": "wildfly-extras/wildfly-microprofile-config",
+                                    "stars": 3
+                                },
+                                {
+                                    "name": "wildfly-swarm-archive/wildfly-swarm-drools",
+                                    "stars": 1
+                                },
+                                {
+                                    "name": "wildfly-swarm-openshiftio-boosters/wfswarm-health-check-redhat",
+                                    "stars": 0
+                                },
+                                {
+                                    "name": "wildfly-swarm/wildfly-swarm",
+                                    "stars": 203
+                                }
+                            ]
+                        },
+                        "latest_version": "2018.2.0",
+                        "license_analysis": {
+                            "_message": "Representative license found",
+                            "_representative_licenses": "apache 2.0",
+                            "conflict_licenses": [],
+                            "outlier_licenses": [],
+                            "status": "Successful",
+                            "synonyms": {
+                                "AL2": "apache 2.0"
+                            },
+                            "unknown_licenses": []
+                        },
+                        "licenses": [
+                            "AL2"
+                        ],
+                        "name": "org.wildfly.swarm:jaxrs",
+                        "osio_user_count": 0,
+                        "security": [],
+                        "topic_list": [
+                            "webservice",
+                            "rest"
+                        ],
+                        "version": "2017.10.0"
+                    }
+                ],
+                "analyzed_dependencies_count": 2,
+                "dependencies": [
+                    {
+                        "package": "org.wildfly.swarm:monitor",
+                        "version": "2017.10.0"
+                    },
+                    {
+                        "package": "org.wildfly.swarm:jaxrs",
+                        "version": "2017.10.0"
+                    }
+                ],
+                "distinct_licenses": [
+                    "AL2"
+                ],
+                "ecosystem": "maven",
+                "license_analysis": {
+                    "conflict_packages": [],
+                    "current_stack_license": {},
+                    "f8a_stack_licenses": [
+                        "apache 2.0"
+                    ],
+                    "outlier_packages": [],
+                    "status": "Successful",
+                    "unknown_licenses": {
+                        "component_conflict": [],
+                        "really_unknown": []
+                    }
+                },
+                "recommendation_ready": true,
+                "stack_license_conflict": false,
+                "total_licenses": 1,
+                "unknown_dependencies": [],
+                "unknown_dependencies_count": 0
+            }
+        }
+    ],
+    "started_at": "2018-04-10T08:59:24.939611",
+    "version": "v1"
+}
+----
+
+For further information refer to the link:https://github.com/fabric8-analytics/fabric8-analytics-server/blob/master/swagger.yaml[Swagger specification].
+
+*In-Progress*
+
+[source,typescript]
+----
+200:
+{
+    "error": "Analysis for request ID 'add9caf0a1ff47969a8f27a4241a0230' is in progress"
+}
+
+----
+
+*Failure*
+
+[source,typescript]
+----
+401:
+{
+  "error": "Authentication failed - could not decode JWT token"
+}
+
+----

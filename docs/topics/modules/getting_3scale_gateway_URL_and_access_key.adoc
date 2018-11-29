@@ -1,0 +1,6 @@
+[id="getting_3scale_gateway_URL_and_access_key"]
+= Getting 3scale gateway URL and access key
+
+You require the 3scale gateway URL and access key to invoke all of the analytics API resources mentioned below. For information about the gateway URL and the gateway access key, reach out to us on the link:https://chat.openshift.io/developers/channels/fabric8-analytics[fabric8-analytics] support chat channel.
+
+NOTE: Your access key is meant to be private and confidential. Do not share it with others.

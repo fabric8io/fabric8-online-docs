@@ -1,4 +1,4 @@
-[id="api_post_stack_analyses_request"]
+[id="osio_api_post_stack_analyses_request"]
 = POST /stack-analyses
 
 
@@ -6,9 +6,11 @@
 
 Submits an application stack analysis request.
 
-== Resource URL and access key
+NOTE: You require an {osio} authentication token to invoke this method.
 
-You require the 3scale gateway URL and access key to invoke all of the analytics API resources mentioned below. For information about the gateway URL and the gateway access key, reach out to us on the link:https://chat.openshift.io/developers/channels/fabric8-analytics[fabric8-analytics] support chat channel..
+== Resource URL
+
+For information about the resource URL, reach out to us on the {osio} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
 
 == Resource information
 
@@ -29,7 +31,7 @@ You require the 3scale gateway URL and access key to invoke all of the analytics
 == Example request with cURL
 
 ----
-curl -X POST -F 'manifest[]=@./pom.xml' -F 'filePath[]=/home/John https://<3scale Gateway URL>/api/v1/stack-analyses/?user_key=<user-key>
+curl -k -H "Authorization: Bearer <openshift.io authentication token>" -F "manifest[]=@./pom.xml" -F "filePath[]=/home/JohnDoe"https://<recommender api url>/api/v1/stack-analyses
 ----
 
 == Example response:
@@ -53,9 +55,7 @@ curl -X POST -F 'manifest[]=@./pom.xml' -F 'filePath[]=/home/John https://<3scal
 ----
 401:
 {
-  "message": "Authentication failed",
-  "some_description": "Authentication failed",
-  "status": 401
+  "error": "Authentication failed - could not decode JWT token"
 }
 
 ----

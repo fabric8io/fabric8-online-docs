@@ -1,7 +1,7 @@
 [id="api_specifications"]
 = API specifications
 
-The following section lists the primary API endpoints you can use to integrate {osio}-analytics within your application.
+The following section lists the primary API endpoints you can use to integrate the analytics platform within your application.
 
 include::modules/api_post_stack_analyses_request.adoc[leveloffset=+1]
 
