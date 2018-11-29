@@ -8,7 +8,7 @@ Fetches various data points for a selected component.
 
 == Resource URL and access key
 
-You require the 3scale gateway URL and access key to invoke all of the analytics API resources mentioned below. For information about the gateway URL and the gateway access key, reach out to us on the fabric8-analytics support chat channel at link:https://chat.openshift.io[https://chat.openshift.io].
+You require the 3scale gateway URL and access key to invoke all of the analytics API resources mentioned below. For information about the gateway URL and the gateway access key, reach out to us on the link:https://chat.openshift.io/developers/channels/fabric8-analytics[fabric8-analytics] support chat channel.
 
 == Resource information
 

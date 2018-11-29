@@ -5,6 +5,6 @@ Analytics is an open source platform aimed primarily at assisting developers in 
 
 == Supported ecosystems
 
-The analytics _stack-analyses_ currently analyzes all application stacks in the Java (Maven) and Node (npm) ecosystems.
+The analytics _stack-analyses_ endpoint currently analyzes all application stacks in the Java (Maven) and Node (npm) ecosystems.
 
 Support for more ecosystems will be introduced in the near future.
