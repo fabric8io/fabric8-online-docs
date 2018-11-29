@@ -508,6 +508,8 @@ curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<
 }
 ----
 
+For further information refer to the link:https://github.com/fabric8-analytics/fabric8-analytics-server/blob/master/swagger.yaml[Swagger specification].
+
 *In-Progress*
 
 [source,typescript]
