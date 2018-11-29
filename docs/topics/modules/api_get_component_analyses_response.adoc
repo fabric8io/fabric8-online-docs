@@ -24,7 +24,7 @@ None
 == Example request with cURL
 
 ----
-curl https://<3scale APICast Gateway URL>/component-analyses/maven/io.vertx:vertx-core/3.4.1?user_key=<user-key>
+curl https://<3scale APICast Gateway URL>/api/v1/component-analyses/maven/io.vertx:vertx-core/3.4.1?user_key=<user-key>
 ----
 
 == Example response
@@ -35,7 +35,7 @@ curl https://<3scale APICast Gateway URL>/component-analyses/maven/io.vertx:vert
 ----
 {
     "schema": {
-        "url": "http://recommender.api.openshift.io/api/v1/schemas/api/analyses_graphdb/1-2-0/",
+        "url": "http://<recommender api url>/api/v1/schemas/api/analyses_graphdb/1-2-0/",
         "name": "analyses_graphdb",
         "version": "1-2-0"
     },
