@@ -3,7 +3,7 @@
 
 If the application runs as expected in the staging environment approve and promote the application and build it on _Run_:
 
-. Return to the {osio} browser tab which displays the *Pipeline* view.
+. Return to the {ct} browser tab which displays the *Pipeline* view.
 . Click btn:[Input Required] at the *Approve* stage of the pipeline.
 +
 image::ug_pipeline_firstrun.png[Input Required]

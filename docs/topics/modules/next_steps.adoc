@@ -1,7 +1,7 @@
 [id="next_steps"]
 = Next steps
 
-If you followed the instructions in this document, you have now learned about {osio} and its features. You are now able to:
+If you followed the instructions in this document, you have now learned about {ct} and its features. You are now able to:
 
 * Create spaces for your projects. See <<creating_new_space-hello-world>>.
 * Add code from an existing project to your space. See <<importing-existing-project>>.
@@ -14,6 +14,6 @@ If you followed the instructions in this document, you have now learned about {o
 // and <<reducing_project_memory_usage-spring-boot>>.
 * Use stack reports to make improvements to your code. See <<using_stack_reports_to_analyze_your_application>>.
 * Debug your code using the Che workspace. See <<debugging_using_che_workspace>>.
-* Clean up your {osio} account so you can start afresh. See <<resetting_your_osio_account>>.
+* Clean up your {ct} account so you can start afresh. See <<resetting_your_ct_account>>.
 
-You can now try using what you have learned about {osio} with your own projects. See the link:user-guide.html[{osio} User Guide] for comprehensive information about {osio} and its features. If you have any questions or suggestions for improvement with {osio} or this document, let us know using one of the methods listed in <<getting_help_and_giving_feedback>>.
+You can now try using what you have learned about {ct} with your own projects. See the link:user-guide.html[{ct} User Guide] for comprehensive information about {ct} and its features. If you have any questions or suggestions for improvement with {ct} or this document, let us know using one of the methods listed in <<getting_help_and_giving_feedback>>.

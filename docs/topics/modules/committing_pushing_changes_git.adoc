@@ -11,7 +11,7 @@ IMPORTANT: Before committing your changes, ensure that your project pipeline bui
 ifeval::["{context}" == "user-guide"]
 .Prerequisites
 
-* Add a new or existing codebase to {osio}.
+* Add a new or existing codebase to {ct}.
 * Create a Che workspace for your target codebase.
 * Make the required changes to your code and then run and test the code by clicking the *run* option from the Run button (image:tri_run.png[title="Run button"]).
 

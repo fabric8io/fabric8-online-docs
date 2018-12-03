@@ -1,13 +1,13 @@
 [id="reviewing_publishing_changes-{context}"]
 = Reviewing and publishing your changes
 
-When you commit and push a change to GitHub, a pipeline build is automatically triggered in {osio}.
+When you commit and push a change to GitHub, a pipeline build is automatically triggered in {ct}.
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
 .Prerequisites
 
-* Add a new or existing codebase to {osio}.
+* Add a new or existing codebase to {ct}.
 * Create a Che workspace for your target codebase.
 * Make the required changes to your code and then run and test the code by clicking the *run* option from the Run button (image:tri_run.png[title="Run button"]).
 * Commit your changes to your Git repository.
@@ -17,7 +17,7 @@ endif::[]
 
 To review the build and publish your changes:
 
-. Return to the {osio} browser tab.
+. Return to the {ct} browser tab.
 . Click *Create* and then *Pipelines* to view the build pipelines. Wait for the build pipeline to progress to the *Approve* stage.
 . In the *Create* tab, click *Deployments* to see the following information:
 +
@@ -36,13 +36,13 @@ Your changes are now available on both *Stage* and *Run*. If you return to the *
 
 //for hello world
 ifeval::["{context}" == "hello-world"]
-You have now created your first quickstart project in {osio}, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
+You have now created your first quickstart project in {ct}, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
 endif::[]
 
 
 //for importing existing
 ifeval::["{context}" == "importing-existing-project"]
-You have now imported an existing project into {osio}, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
+You have now imported an existing project into {ct}, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
 endif::[]
 
 

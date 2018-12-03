@@ -14,9 +14,9 @@ image::select_pipeline.png[Select a pipeline]
 
 //== Dashboard deployments view
 
-//Depending on which of the three options was selected for your project, the *Deployments* section of the {osio} dashboard displays the version of the project and which stage type each version currently includes.
+//Depending on which of the three options was selected for your project, the *Deployments* section of the {ct} dashboard displays the version of the project and which stage type each version currently includes.
 
-//For example, for the *Release* option, the *Deployments* section of the {osio} dashboard only shows the name of your project because there is no staging required.
+//For example, for the *Release* option, the *Deployments* section of the {ct} dashboard only shows the name of your project because there is no staging required.
 
 //image::release_only_deploy_dash.png[Build only]
 

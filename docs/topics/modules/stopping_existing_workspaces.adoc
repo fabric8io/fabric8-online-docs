@@ -28,4 +28,4 @@ image::workspace_eclipse.png[List of Workspaces]
 +
 image::stop_button_ws.png[Stop Button for Workspace]
 
-Your old workspace resources are now reclaimed in your OpenShift Online account. You can now return to the workspace view in {osio} and create a workspace for your SpringBoot project.
+Your old workspace resources are now reclaimed in your OpenShift Online account. You can now return to the workspace view in {ct} and create a workspace for your SpringBoot project.

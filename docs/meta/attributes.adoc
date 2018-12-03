@@ -36,11 +36,12 @@
 :msw: Microsoft Windows
 
 // SaaS naming, guides
-:prod: Red{nbsp}Hat OpenShift.io
-:prod-acr: OSIO
+:prod: Red{nbsp}Hat CodeReady Toolchain for OpenShift
+:prod-short: CodeReady Toolchain
+:prod-acr: CT
 :prod-ver: 1
-:rhosio: {prod}
-:osio: OpenShift.io
+:rhct: {prod}
+:ct: {prod-short}
 
 // Common RH terminology
 :rhcp: Red{nbsp}Hat Customer Portal
@@ -50,9 +51,9 @@
 :oso: OpenShift{nbsp}Online
 
 // URLs
-:osio-url: https://openshift.io/
+:ct-url: https://openshift.io/
 :rhd-url: https://developers.redhat.com/
 :rhdb-url: https://developers.redhat.com/blog
 
 // Shortcuts
-:osio-link: link:{osio-url}[{rhosio}]
+:ct-link: link:{ct-url}[{prod}]

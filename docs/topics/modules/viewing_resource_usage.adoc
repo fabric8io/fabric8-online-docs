@@ -1,9 +1,9 @@
 [id=viewing_resource_usage]
 = Viewing resource usage
 
-An {osio} account with OpenShift Online provides two pods for your projects. To view how many of these resources are currently used in {osio}, navigate to the *Resources* page as follows:
+An {ct} account with OpenShift Online provides two pods for your projects. To view how many of these resources are currently used in {ct}, navigate to the *Resources* page as follows:
 
-. Click your username in the upper right corner of the {osio} page and select *Settings*.
+. Click your username in the upper right corner of the {ct} page and select *Settings*.
 +
 image::profile_menu.png[Profile menu button]
 +
@@ -11,7 +11,7 @@ image::profile_menu.png[Profile menu button]
 +
 image::settings_resources.png[Settings > Resources]
 +
-If you have not added any projects to your {osio} account, the page shows all resources as available:
+If you have not added any projects to your {ct} account, the page shows all resources as available:
 +
 image::all_resources_available.png[Resources all available]
 +
@@ -21,4 +21,4 @@ image::resources_half.png[Resources half]
 
 See <<reviewing_detailed_resource_information-user-guide>> to view further details on resource usage.
 
-After you create two projects, the two pods allocated to an OpenShift Online account have been used. Use this page to check if you have resources remaining because future builds may fail if the required resources are not available. See <<resetting_your_osio_account, resetting your environment>> to reclaim all these resources.
+After you create two projects, the two pods allocated to an OpenShift Online account have been used. Use this page to check if you have resources remaining because future builds may fail if the required resources are not available. See <<resetting_your_ct_account, resetting your environment>> to reclaim all these resources.

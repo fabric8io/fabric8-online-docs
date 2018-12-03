@@ -1,7 +1,7 @@
 [id="working_with_codebases"]
 = Working with codebases
 
-After creating a space, {osio} enables you to create a new application codebase or import an existing codebase from GitHub and set up pipelines to build the code.
+After creating a space, {ct} enables you to create a new application codebase or import an existing codebase from GitHub and set up pipelines to build the code.
 
 
 include::modules/about_application_codebases.adoc[leveloffset=+1]

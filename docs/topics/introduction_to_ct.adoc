@@ -1,0 +1,15 @@
+[id="introduction_to_ct"]
+= Introduction to {prod}
+
+{rhdp} offers a _Software as a Service_ (SaaS) product for developers called *{rhct}* to meet your software development requirements.
+
+This section introduces {prod} and provides an overview of the main features of the product. Read it to understand the benefits of using link:{ct-url}[{ct}] and to learn about how organizations and developers can use it for their everyday tasks.
+
+include::modules/ct_overview.adoc[leveloffset=+1]
+
+== Related information
+
+See also the following related Red Hat resources related to the {rhdp}:
+
+* link:{rhd-url}[{rhd}]
+* link:{rhdb-url}[{rhdb}]

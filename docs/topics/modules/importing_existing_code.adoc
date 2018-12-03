@@ -1,7 +1,7 @@
 [id="importing_existing_code"]
 = Importing existing code
 
-Use the {osio} *Application wizard* to import an existing project codebase into {osio}.
+Use the {ct} *Application wizard* to import an existing project codebase into {ct}.
 
 . In the *Authorize Git Provider* step:
 .. Add the location of your code.

@@ -1,7 +1,7 @@
 [id="troubleshooting"]
 = Troubleshooting
 
-The following section lists the common issues you may face when using {osio} and the workarounds to resolve them. For further information also see the link:https://github.com/openshiftio/openshift.io/wiki/FAQ[Frequently asked questions]. 
+The following section lists the common issues you may face when using {ct} and the workarounds to resolve them. For further information also see the link:https://github.com/openshiftio/openshift.io/wiki/FAQ[Frequently asked questions].
 
 include::modules/login_issues.adoc[leveloffset=+1]
 
@@ -13,6 +13,6 @@ include::modules/pipeline_build_fail.adoc[leveloffset=+1]
 
 include::modules/create_run_command_macro.adoc[leveloffset=+1]
 
-include::modules/osio_frozen_chrome.adoc[leveloffset=+1]
+include::modules/ct_frozen_chrome.adoc[leveloffset=+1]
 
 include::modules/clear_failed_builds.adoc[leveloffset=+1]

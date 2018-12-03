@@ -3,7 +3,7 @@
 
 After creating a project in your space, you can make changes to the code. You can now create a work item and use it to track a task which includes changes to the project code.
 
-. On the top of the {osio} page, click *Plan*. The Planner's `Backlog` view appears as a default.
+. On the top of the {ct} page, click *Plan*. The Planner's `Backlog` view appears as a default.
 . In the *Backlog* view, the `Add Work Item` option is the quickest way to create a new work item.
 +
 image::backlog_quickadd.png[The Backlog's Quick Add work item option]

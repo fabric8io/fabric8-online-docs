@@ -3,7 +3,7 @@
 
 :context: importing-existing-project
 
-Now that you have imported the existing project into {osio}, you can change the code and stage changes.
+Now that you have imported the existing project into {ct}, you can change the code and stage changes.
 
 include::modules/creating_che_workspace.adoc[leveloffset=+1]
 

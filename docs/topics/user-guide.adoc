@@ -4,17 +4,17 @@
 [id="before_you_start"]
 = Before you start
 
-include::introduction_to_red_hat_openshift_io.adoc[leveloffset=+1]
+include::introduction_to_ct.adoc[leveloffset=+1]
 
 include::getting_help_and_giving_feedback.adoc[leveloffset=+1]
 
-include::accessing_red_hat_openshift_io.adoc[leveloffset=+1]
+include::accessing_ct.adoc[leveloffset=+1]
 
 include::changing_user_preferences.adoc[leveloffset=+1]
 
 
 [id="getting_started_with_openshift_io"]
-= Getting Started with OpenShift.io
+= Getting Started with {ct}
 
 include::working_with_spaces.adoc[leveloffset=+1]
 
@@ -34,7 +34,7 @@ include::working_with_work_items.adoc[leveloffset=+1]
 
 include::working_with_iterations.adoc[leveloffset=+1]
 
-include::working_with_osio_resources.adoc[leveloffset=+1]
+include::working_with_ct_resources.adoc[leveloffset=+1]
 
 //troubleshooting
 include::troubleshooting.adoc[leveloffset=+1]

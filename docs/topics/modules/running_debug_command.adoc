@@ -19,4 +19,4 @@ curl localhost:8080/api/goodbye
 
 . Click the debug icon (image:debug_icon.png[title="Debug icon"]) at the bottom left corner of the workspace. The *Variables* panel on the bottom right side of the screen lists your debugger variables. 
 
-You can explore the debugger features by using the *Resume*, *Step Into*, *Step Over*, and *Step Out* options during the debugging process. When finished, close the workspace tab and return to the {osio} tab.
+You can explore the debugger features by using the *Resume*, *Step Into*, *Step Over*, and *Step Out* options during the debugging process. When finished, close the workspace tab and return to the {ct} tab.

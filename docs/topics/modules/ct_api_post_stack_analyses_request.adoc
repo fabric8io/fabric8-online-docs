@@ -1,4 +1,4 @@
-[id="osio_api_post_stack_analyses_request"]
+[id="ct_api_post_stack_analyses_request"]
 = POST /stack-analyses
 
 
@@ -6,11 +6,11 @@
 
 Submits an application stack analysis request.
 
-NOTE: You require an {osio} authentication token to invoke this method.
+NOTE: You require an {ct} authentication token to invoke this method.
 
 == Resource URL
 
-For information about the resource URL, reach out to us on the {osio} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+For information about the resource URL, reach out to us on the {ct} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
 
 == Resource information
 

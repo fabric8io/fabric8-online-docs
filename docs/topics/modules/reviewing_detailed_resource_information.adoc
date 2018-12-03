@@ -13,7 +13,7 @@ endif::[]
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
-After creating or adding a project to {osio}, you can see detailed resource usage information in OpenShift Online as follows:
+After creating or adding a project to {ct}, you can see detailed resource usage information in OpenShift Online as follows:
 endif::[]
 
 . In a new browser tab, navigate to the OpenShift Online console at link:https://console.starter-us-east-2.openshift.com/[console.starter-us-east-2.openshift.com].
@@ -36,7 +36,7 @@ image::hw_pod.png[Hello World Project Pod]
 +
 image::resources.png[Resources]
 +
-Use this page to review the memory usage for your {osio} project. Note this information and leave this tab open to compare the resource information after optimizing your memory usage.
+Use this page to review the memory usage for your {ct} project. Note this information and leave this tab open to compare the resource information after optimizing your memory usage.
 
 // for GSG
 ifeval::["{context}" == "optimizing_memory_usage"]

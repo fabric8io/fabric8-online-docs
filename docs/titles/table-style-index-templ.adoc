@@ -1,4 +1,4 @@
-// Docs landing page template
+// Experimental table style docs landing page template
 
 include::../meta/attributes.adoc[]
 
@@ -6,8 +6,8 @@ include::../meta/attributes.adoc[]
 :toc!:
 
 
-[id="red-hat-openshift-io-documentation"]
-= Red Hat OpenShift.io Documentation
+[id="rhct-documentation"]
+= {prod} Documentation
 :author: {rhd} Documentation Team
 :email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
@@ -16,25 +16,25 @@ include::../meta/attributes.adoc[]
 [cols="1s,1",frame=none,grid=none]
 |===
 
-a|Starting using OpenShift.io::
+a|Starting using {ct}::
 
-* link:getting_help_and_logging_issues.html[Getting help and logging issues for OpenShift.io] a|Comprehensive guides::
+* link:getting_help_and_logging_issues.html[Getting help and logging issues for {ct}] a|Comprehensive guides::
 
-* link:getting-started-guide.html[OpenShift.io Getting Started Guide] (link:getting-started-guide.pdf[PDF])
-* link:user-guide.html[OpenShift.io User Guide] (link:user-guide.pdf[PDF])
+* link:getting-started-guide.html[{ct} Getting Started Guide] (link:getting-started-guide.pdf[PDF])
+* link:user-guide.html[{ct} User Guide] (link:user-guide.pdf[PDF])
 
-a|Creating a new application using OpenShift.io codebases::
+a|Creating a new application using {ct} codebases::
 
 * link:creating_new_space_and_vertx_quickstart_project.html[Creating a Vert.x quickstart application]
 
 * link:editing_project_code_and_reviewing_changes.html[Editing your codebase and reviewing changes]
 a|Documentation for Project Contributors::
 
-* link:analytics-integration-api-guide.html[OpenShift.io Analytics Integration API Guide] (link:analytics-integration-api-guide.pdf[PDF])
+* link:ct-analytics-integration-api-guide.html[{ct} Analytics Integration API Guide] (link:ct-analytics-integration-api-guide.pdf[PDF])
 
-a|Importing an existing codebase into OpenShift.io::
+a|Importing an existing codebase into {ct}::
 
-* link:creating_new_space_and_importing_existing_project.html[Importing an existing codebase into OpenShift.io]
+* link:creating_new_space_and_importing_existing_project.html[Importing an existing codebase into {ct}]
 * link:editing_existing_project_code_and_reviewing_changes.html[Editing your existing codebase and reviewing changes]
 |
 
@@ -52,7 +52,7 @@ a|Planning a development project::
 // The above is a module and not in the Topics folder(not sure this will render), we need to create an assembly for this and add in modules from User guide for Board view and Query builder once they are documented.
 |
 
-a|Optimizing your OpenShift.io resource usage::
+a|Optimizing your {ct} resource usage::
 
-* link:optimizing_osio_resources.html[Optimizing OpenShift.io resources]
+* link:optimizing_ct_resources.html[Optimizing {ct} resources]
 |

@@ -1,7 +1,7 @@
-[id="logging_into_red_hat_openshift_io"]
-= Logging into {rhosio}
+[id="logging_into_ct"]
+= Logging into {ct}
 
-NOTE: When you sign up to use OpenShift.io, you are given an OpenShift Online account with enough resources to run a basic stage and run environment, pipelines, and an Eclipse Che development workspace.
+NOTE: When you sign up to use {ct}, you are given an OpenShift Online account with enough resources to run a basic stage and run environment, pipelines, and an Eclipse Che development workspace.
 
 .Prerequisites
 
@@ -9,9 +9,9 @@ NOTE: When you sign up to use OpenShift.io, you are given an OpenShift Online ac
 
 .Procedure
 
-. Navigate to the link:{osio-url}[{rhosio}] website in a browser window.
+. Navigate to the link:{ct-url}[{rhct}] website in a browser window.
 
-. Click btn:[Log In] at the top of the {osio} main page.
+. Click btn:[Log In] at the top of the {ct} main page.
 
 . Log in either manually (with your Red Hat Developers account) or using a social account:
 

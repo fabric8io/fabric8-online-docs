@@ -3,7 +3,7 @@
 
 When you create a codebase, a pipeline build is initiated. Pipelines are automated, continuous integration and deployment processes, powered by Jenkins, which define how your application is deployed.
 
-The free OpenShift Online Starter subscription, included with your {osio} subscription, provides two environments named _Stage_ and _Run_ to deploy your applications.
+The free OpenShift Online Starter subscription, included with your {ct} subscription, provides two environments named _Stage_ and _Run_ to deploy your applications.
 
 Initially, the build pipeline deploys the application to _Stage_, which is accessible to stakeholders for review through a public URL provided by OpenShift Online. If approved and promoted, the pipeline deploys it to the _Run_ environment. This simulates the workflow of pushing an application to a staging environment and reviewing it, before promoting it to production.
 

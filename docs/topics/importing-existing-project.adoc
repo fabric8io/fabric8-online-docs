@@ -3,7 +3,7 @@
 
 :context: importing-existing-project
 
-This section contains instructions for adding an existing project to {osio} instead of creating a new project using quickstarts.
+This section contains instructions for adding an existing project to {ct}.
 
 include::modules/forking_example_repository.adoc[leveloffset=+1]
 

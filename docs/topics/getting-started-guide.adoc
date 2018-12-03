@@ -1,5 +1,7 @@
-[id="learn_about_osio"]
-= Learn about {osio}
+// Includes for all assemblies that form the top-level sections of the GSG
+
+[id="learn_about_ct"]
+= Learn about {ct}
 
 include::modules/introduction.adoc[leveloffset=+1]
 
@@ -7,7 +9,7 @@ include::getting_help_and_giving_feedback.adoc[leveloffset=+1]
 
 include::before_you_start.adoc[leveloffset=+1]
 
-= Start using {osio}
+= Start using {ct}
 
 include::modules/introduction_to_homescreen.adoc[leveloffset=+1]
 
@@ -23,7 +25,7 @@ include::using_advanced_che_features.adoc[leveloffset=+1]
 
 include::optimizing_memory_usage.adoc[leveloffset=+1]
 
-include::modules/resetting_your_osio_account.adoc[leveloffset=+1]
+include::modules/resetting_your_ct_account.adoc[leveloffset=+1]
 
 include::importing-existing-project.adoc[leveloffset=+1]
 

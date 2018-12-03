@@ -3,7 +3,7 @@
 
 :context: importing-existing-project
 
-This section contains instructions for adding an existing project to {osio} instead of creating a new project using quickstarts.
+This section contains instructions for adding an existing project to {ct} instead of creating a new project using quickstarts.
 
 include::modules/creating_new_space.adoc[leveloffset=+1]
 
@@ -11,7 +11,7 @@ include::modules/forking_example_repository.adoc[leveloffset=+1]
 
 include::modules/importing_your_project.adoc[leveloffset=+1]
 
-Now that you have imported the existing project into {osio}, you can change the code and stage changes.
+Now that you have imported the existing project into {ct}, you can change the code and stage changes.
 
 include::modules/creating_che_workspace.adoc[leveloffset=+1]
 

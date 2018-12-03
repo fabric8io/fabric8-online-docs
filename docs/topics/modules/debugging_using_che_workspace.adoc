@@ -1,7 +1,7 @@
 [id="debugging_using_che_workspace"]
 = Debugging using your Che workspace
 
-After creating your {osio} project, you can debug your application code in the Che workspace. The following is a tutorial using the quickstart project you have already created.
+After creating your {ct} project, you can debug your application code in the Che workspace. The following is a tutorial using the quickstart project you have already created.
 
 To debug your project code:
 

@@ -1,21 +1,21 @@
 [id="creating_new_space-{context}"]
 = Creating a new space
 
-In {osio}, the first step for any new project is to create a new space with a unique name. You can then create or import codebases within the space, add collaborators, and plan your work using work items and iterations.
+In {ct}, the first step for any new project is to create a new space with a unique name. You can then create or import codebases within the space, add collaborators, and plan your work using work items and iterations.
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
 .Prerequisites
 
-* Ensure that you have <<logging_into_red_hat_openshift_io,logged in to {osio-link}>>.
+* Ensure that you have <<logging_into_ct,logged in to {ct-link}>>.
 endif::[]
 
 .Procedure
 
 Create a new space as follows:
 
-. In the {osio} home page, click btn:[Create a space] in the *Recent Spaces* section. If your account has an existing space, click *+* to create an additional space.
-//. In the {osio} home page, click btn:[Create New Codebase].
+. In the {ct} home page, click btn:[Create a space] in the *Recent Spaces* section. If your account has an existing space, click *+* to create an additional space.
+//. In the {ct} home page, click btn:[Create New Codebase].
 //+
 //image::create_new_codebase.png[Create new codebase]
 //+
@@ -23,7 +23,7 @@ Create a new space as follows:
 +
 // for importing-existing-project
 ifeval::["{context}" == "importing-existing-project"]
-//. In the {osio} home page, click btn:[Import Existing Codebase].
+//. In the {ct} home page, click btn:[Import Existing Codebase].
 //+
 //image::create_new_codebase.png[Import existing codebase]
 //+

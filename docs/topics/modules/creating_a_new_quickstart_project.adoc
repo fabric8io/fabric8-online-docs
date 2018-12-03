@@ -1,7 +1,7 @@
 [id="creating_a_new_quickstart_project"]
 = Creating a new quickstart project
 
-Use the {osio} Quickstart project wizard to create a new project from the available templates.
+Use the {ct} Quickstart project wizard to create a new project from the available templates.
 
 . In the *Select Stack* section, use the drop-down menu or click one of the displayed technology stack icons to select a project type and click btn:[Next].
 . In the *Define Project* section:

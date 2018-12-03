@@ -1,15 +1,15 @@
-[id="osio_api_get_stack_analyses_response"]
+[id="ct_api_get_stack_analyses_response"]
 = GET /stack-analyses/+{request ID}+
 
 == Purpose
 
 Fetches stack analysis response by using the request identifier returned by /stack-analyses POST.
 
-NOTE: You require an {osio} authentication token to invoke this method.
+NOTE: You require an {ct} authentication token to invoke this method.
 
 == Resource URL
 
-For information about the resource URL, reach out to us on the {osio} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+For information about the resource URL, reach out to us on the {ct} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
 
 == Resource information
 

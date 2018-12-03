@@ -1,0 +1,21 @@
+[id="asking-questions-about-ct"]
+= Asking questions about {ct}
+
+The {ct} link:https://chat.openshift.io[ MatterMost chat channel] is the best way to ask questions or get immediate help for {ct} at any time. We encourage users to ask their question or discuss the problem they face in the channel for a fast resolution.
+
+If you don't already have a MatterMost account:
+
+. Navigate to link:https://chat.openshift.io[https://chat.openshift.io] and click *Create one now*.
+
+. Add your details and click btn:[Create Account] to register.
+. In your email inbox, click the btn:[Verify Email] link.
+
+. Sign in when prompted and when asked, select the *Developers* team. You are redirected to the *#openshiftio* channel.
++
+image::mm_main_view.png[Main view]
++
+. Ask a specific person your question or start with `@here` to tag everyone present in the channel.
+
+In the future, navigate to link:https://chat.openshift.io[https://chat.openshift.io] to view the {ct} MatterMost channel.
+
+If you prefer to use IRC, the {ct} team is also available in the *#openshiftio* channel on Freenode.

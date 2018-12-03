@@ -1,4 +1,0 @@
-[id="osio_frozen_chrome"]
-= {osio} Frozen on Chrome
-
-When using {osio} with Chrome, if the browser window freezes at any point, press kbd:[Shift+Ctrl+r] for a hard refresh. This reloads {osio} and resolves the problem.

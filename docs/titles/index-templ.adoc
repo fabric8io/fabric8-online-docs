@@ -7,7 +7,7 @@ include::../meta/attributes.adoc[]
 
 
 [id="red-hat-openshift-io-documentation"]
-= Red Hat {osio} Documentation
+= Documentation for {prod}
 :author: {rhd} Documentation Team
 :email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
@@ -20,9 +20,9 @@ include::../meta/attributes.adoc[]
 [discrete]
 === Action guides
 
-* link:creating-application.html[Creating a new application using {osio} codebases] (link:creating-application.pdf[PDF])
+* link:creating-application.html[Creating a new application using {ct} codebases] (link:creating-application.pdf[PDF])
 
-* link:importing-application.html[Importing an existing codebase into {osio}] (link:importing-application.pdf[PDF])
+* link:importing-application.html[Importing an existing codebase into {ct}] (link:importing-application.pdf[PDF])
 
 * link:develop-codebase-using-che.html[Using Eclipse Che IDE to develop your codebase] (link:develop-codebase-using-che.pdf[PDF])
 
@@ -30,13 +30,13 @@ include::../meta/attributes.adoc[]
 
 * link:planning-development-project.html[Planning and tracking work items in your development project] (link:planning-development-project.pdf[PDF])
 
-* link:optimizing-osio-resources.html[Optimizing your {osio} resource usage] (link:optimizing-osio-resources.pdf[PDF])
+* link:optimizing-ct-resources.html[Optimizing your {ct} resource usage] (link:optimizing-ct-resources.pdf[PDF])
 
-* link:help-and-feedback.html[Getting help and giving feedback on {osio}] (link:help-and-feedback.pdf[PDF])
+* link:help-and-feedback.html[Getting help and giving feedback on {ct}] (link:help-and-feedback.pdf[PDF])
 
 
 // [discrete]
-// ==== Starting using {osio}
+// ==== Starting using {ct}
 // * link:setting_up_team_permissions.html[Setting up team permissions]
 // TODO WRITE THIS^
 
@@ -44,11 +44,11 @@ include::../meta/attributes.adoc[]
 [discrete]
 === Comprehensive guides
 
-* link:getting-started-guide.html[{osio} Getting Started Guide] (link:getting-started-guide.pdf[PDF])
-* link:user-guide.html[{osio} User Guide] (link:user-guide.pdf[PDF])
+* link:getting-started-guide.html[{ct} Getting Started Guide] (link:getting-started-guide.pdf[PDF])
+* link:user-guide.html[{ct} User Guide] (link:user-guide.pdf[PDF])
 
 
 [discrete]
 == Documentation for Project Contributors
 
-* link:osio-analytics-integration-api-guide.html[{osio} Analytics Integration API Guide] (link:analytics-integration-api-guide.pdf[PDF])
+* link:ct-analytics-integration-api-guide.html[{ct} Analytics Integration API Guide] (link:ct-analytics-integration-api-guide.pdf[PDF])

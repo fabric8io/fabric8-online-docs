@@ -61,7 +61,7 @@ business value:: The value or benefit estimated to be derived by the organizatio
 // endterm
 
 // term: 1694e637-2f9b-40ec-8fa8-a22472850ff9, en
-companion dependency:: Based on the analysis of your stack, {osio} suggests additional dependencies that can add value to your stack.
+companion dependency:: Based on the analysis of your stack, {ct} suggests additional dependencies that can add value to your stack.
 // endterm
 
 // term: 04049d50-a1b9-42ac-89b5-0382088cb7b6, en

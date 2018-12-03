@@ -1,11 +1,11 @@
-[id="red_hat_openshift_io_overview"]
-= {rhosio} overview
+[id="ct_overview"]
+= {ct} overview
 
-{rhosio} is a highly collaborative open-source, web-based _application life cycle management_ (ALM) solution. It is a next-generation product for developers to manage the development life cycle with one efficient tool. It enables you to plan, create, and deploy hybrid cloud services. It utilizes many open source projects like fabric8, Eclipse Che, and OpenShift Online.
+{rhct} is a highly collaborative open-source, web-based _application life cycle management_ (ALM) solution. It is a next-generation product for developers to manage the development life cycle with one efficient tool. It enables you to plan, create, and deploy hybrid cloud services. It utilizes many open source projects like fabric8, Eclipse Che, and OpenShift Online.
 
 == Features
 
-{osio} offers features to seamlessly manage end-to-end application development. It provides an integrated approach to DevOps with all the tools necessary to analyze, plan, create, and deploy services. Members of distributed teams can use it to perform the following tasks without leaving the browser window:
+{ct} offers features to seamlessly manage end-to-end application development. It provides an integrated approach to DevOps with all the tools necessary to analyze, plan, create, and deploy services. Members of distributed teams can use it to perform the following tasks without leaving the browser window:
 
 *Project management:*
 
@@ -35,4 +35,4 @@
 
 //== Support
 //Update after checking with Brad/Gorkhem
-//Red Hat currently does not offer a support subscription for {osio}. The service is available as a free _Developer Preview_ for open-source projects and developers.
+//Red Hat currently does not offer a support subscription for {ct}. The service is available as a free _Developer Preview_ for open-source projects and developers.
