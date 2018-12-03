@@ -5,4 +5,4 @@ To give the {ct} team feedback, link:https://github.com/openshiftio/openshift.io
 
 When the issue is logged, the {ct} team adds appropriate tags and labels to address it at the earliest.
 
-If you prefer to send us feedback through email, send us the details at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+If you prefer email, send your feedback to the link:mailto:openshiftio@redhat.com[{ct} mailing list].

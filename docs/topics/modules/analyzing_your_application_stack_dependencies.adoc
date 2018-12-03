@@ -1,7 +1,7 @@
 [id="analyzing_your_application_stack_dependencies"]
 = Analyzing your application stack dependencies
 
-As you edit your application code, your Che workspace is automatically analyzing dependencies for the changes. 
+As you edit your application code, your Che workspace is automatically analyzing dependencies for the changes.
 
 . Return to your Che workspace browser tab.
 . In the file explorer panel, double-click the `pom.xml` file.
@@ -27,4 +27,4 @@ The error indicates that the dependency analyzer has identified a high Common Vu
 
 . Commit these changes to add this dependency to your stack.
 
-You have now learned how {OSIO} analytics automatically analyze dependencies in your code, identify security vulnerabilities, and recommend fixes.
+You have now learned how {ct} analytics automatically analyze dependencies in your code, identify security vulnerabilities, and recommend fixes.

@@ -2,7 +2,7 @@ include::meta/attributes.adoc[]
 
 = {prod} Analytics Integration API Guide
 :author: {rhd} Documentation Team
-:email: openshiftio@redhat.com
+//:email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
 The Analytics integration API guide is written for developers who are interested in integrating https://github.com/fabric8-analytics/[Fabric8-Analytics] _stack-analyses_ or _component-analyses_ services within their applications.

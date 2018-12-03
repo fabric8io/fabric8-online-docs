@@ -1,7 +1,9 @@
 [id="getting_help_and_giving_feedback"]
 = Getting help and giving feedback
 
+
 {ct} follows a continuous delivery model. Updates and changes to the system are delivered continuously, often multiple times in a day. Hearing directly from you about your experiences lets us improve the product and experience for you. Use the following options to get help, raise bugs, request for features, and provide feedback.
+
 
 include::modules/asking_questions_about_ct.adoc[leveloffset=+1]
 

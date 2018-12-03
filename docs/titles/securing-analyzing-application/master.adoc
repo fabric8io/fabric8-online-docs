@@ -2,7 +2,7 @@ include::meta/attributes.adoc[]
 
 = Analyzing and securing your application dependencies
 :author: {rhd} Documentation Team
-:email: openshiftio@redhat.com
+//:email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
 This guide contains instructions on using {ct} analytics engine to identify dependencies with CVEs and License issues, take corrective action, and augment your development stack based on the provided insights.

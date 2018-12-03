@@ -2,7 +2,7 @@ include::meta/attributes.adoc[]
 
 = Planning your development project
 :author: {rhd} Documentation Team
-:email: openshiftio@redhat.com
+//:email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
 This document provides instructions on using the {ct} planner to plan and track your development work using agile development methodologies. The {ct} planner is a task or work item tracker to plan and execute your project work. Work items can be grouped and categorized into various work item types depending on the planning template you select for a space. You can then associate these work items to iterations and sprints to track progress and plan work.

@@ -9,7 +9,7 @@ include::../meta/attributes.adoc[]
 [id="red-hat-openshift-io-documentation"]
 = Documentation for {prod}
 :author: {rhd} Documentation Team
-:email: openshiftio@redhat.com
+//:email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
 

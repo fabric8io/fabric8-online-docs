@@ -1,5 +1,5 @@
 [id ="creating_new_space_and_importing_existing_project"]
-= Creating a new space and importing an existing project into OpenShift.io
+= Creating a new space and importing an existing project into {ct}
 
 :context: importing-existing-project
 

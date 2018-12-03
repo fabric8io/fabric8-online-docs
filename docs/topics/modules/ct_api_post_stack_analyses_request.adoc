@@ -10,7 +10,7 @@ NOTE: You require an {ct} authentication token to invoke this method.
 
 == Resource URL
 
-For information about the resource URL, reach out to us on the {ct} support chat channel at link:https://chat.openshift.io[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+For information about the resource URL, reach out to us on the link:https://chat.openshift.io[{ct} support] chat channel or send an email to the link:mailto:openshiftio@redhat.com[{ct} mailing list].
 
 == Resource information
 

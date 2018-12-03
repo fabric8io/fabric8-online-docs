@@ -2,7 +2,7 @@ include::meta/attributes.adoc[]
 
 = {prod} User Guide
 :author: {rhd} Documentation Team
-:email: openshiftio@redhat.com
+//:email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
 The guide describes the features of {prod}. It also contains information about potential problems users may encounter while using the software. Where possible, workarounds are described for identified issues.

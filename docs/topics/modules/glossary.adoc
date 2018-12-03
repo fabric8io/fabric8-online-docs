@@ -2,7 +2,7 @@
 [id="glossary"]
 = Glossary
 
-This glossary provides concise definitions of terms and explanations of concepts used in Red Hat OpenShift.io and in related documentation.
+This glossary provides concise definitions of terms and explanations of concepts used in {prod} and in related documentation.
 
 ////
 
@@ -29,7 +29,7 @@ Note: Planner UX provides uuids for each of the terms requiring infotips, use th
 ////
 
 // term: 6cff4ab8-c380-4aa9-9980-17b6f223d181, en
-alternate dependency:: Dependencies recommended by OpenShift.io to replace restrictive licenses or usage outliers.
+alternate dependency:: Dependencies recommended by {ct} analytics to replace restrictive licenses or usage outliers.
 // endterm
 
 // term: a99bf72a-baf4-436e-8095-3955e39d5af0, en
@@ -190,7 +190,7 @@ scrum:: An iterative and incremental agile software development framework for ma
 // endterm
 
 // term: a5fad1f2-7d5c-4d62-b269-d3637495422a, en
-security issue:: OpenShift.io analyzes the CVEs of all your dependencies and flags the ones with security vulnerabilities.
+security issue:: {ct} analytics examines the CVEs of all your dependencies and flags the ones with security vulnerabilities.
 // endterm
 
 // term: 5c543e22-8ae9-4b66-9112-1513d47ab1b4, en
@@ -226,7 +226,7 @@ time criticality:: It captures how the business value of a work item decreases o
 // endterm
 
 // term: 0b52988d-9cea-47a6-9769-d677bff95ed3, en
-unknown license:: Licenses unknown to OpenShift.io.
+unknown license:: Licenses unknown to {ct} analytics.
 // endterm
 
 // term: 203160dd-cb50-4383-a2d6-84efcd472c98, en

@@ -8,4 +8,4 @@ Currently, you can use only Google Chrome for {ct}.
 *General Requirements:*
 
 . Ensure that you have a GitHub account.
-. Register to join the {ct} developer preview at link:https://openshift.io/[https://openshift.io/].
+. link:https://openshift.io/[Register] to join the {ct} developer preview.

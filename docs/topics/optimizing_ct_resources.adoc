@@ -1,5 +1,5 @@
 [id="optimizing_ct_resources"]
-= Optimizing OpenShift.io resource usage
+= Optimizing {ct} resource usage
 
 :context: optimizing_memory_usage
 

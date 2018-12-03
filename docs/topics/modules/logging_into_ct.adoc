@@ -9,7 +9,7 @@ NOTE: When you sign up to use {ct}, you are given an OpenShift Online account wi
 
 .Procedure
 
-. Navigate to the link:{ct-url}[{rhct}] website in a browser window.
+. Navigate to the link:{ct-url}[{ct}] website in a browser window.
 
 . Click btn:[Log In] at the top of the {ct} main page.
 

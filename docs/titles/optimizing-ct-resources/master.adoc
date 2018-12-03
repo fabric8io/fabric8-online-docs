@@ -2,7 +2,7 @@ include::meta/attributes.adoc[]
 
 = Optimizing your {ct} resource usage
 :author: {rhd} Documentation Team
-:email: openshiftio@redhat.com
+//:email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
 When you sign up to use {ct}, you get an OpenShift Online account with enough resources to run a basic application. Your OpenShift Online Starter account includes two pods and therefore can accommodate two workspaces in {ct}. This document guides you on how you can optimize your resource usage within {ct}.
