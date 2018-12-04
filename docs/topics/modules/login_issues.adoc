@@ -1,7 +1,7 @@
 [id="login_isses"]
 = Login issues
 
-When logging in to {osio}, an error about an account already existing with your email address can display. 
+When logging in to {ct}, an error about an account already existing with your email address can display. 
 
 image::login_error.png[Login error]
 

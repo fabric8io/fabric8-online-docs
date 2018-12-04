@@ -1,11 +1,10 @@
 include::meta/attributes.adoc[]
 
-
-= OpenShift.io Getting Started Guide
+= {prod} Getting Started Guide
 :author: {rhd} Documentation Team
-:email: openshiftio@redhat.com
+//:email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
-This document guides you through your first experiences with Red Hat OpenShift.io. It provides instructions on creating and importing codebases to launch cloud based applications, set up continuous integration and deployment pipelines, analyze and customize the application in a hosted, web-based IDE, and deploy them on OpenShift Online.
+This document guides you through your first experiences with {prod}. It provides instructions on creating and importing codebases to launch cloud based applications, set up continuous integration and deployment pipelines, analyze and customize the application in a hosted, web-based IDE, and deploy them on OpenShift Online.
 
 include::topics/getting-started-guide.adoc[]

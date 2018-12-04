@@ -1,0 +1,10 @@
+[id="ct_api_specifications"]
+= API specifications
+
+The following section lists the primary API endpoints you can use to integrate {ct}-analytics within your application.
+
+include::modules/ct_api_post_stack_analyses_request.adoc[leveloffset=+1]
+
+include::modules/ct_api_get_stack_analyses_response.adoc[leveloffset=+1]
+
+include::modules/ct_api_get_component_analyses_response.adoc[leveloffset=+1]

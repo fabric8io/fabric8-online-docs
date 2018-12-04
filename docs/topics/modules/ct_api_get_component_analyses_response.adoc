@@ -1,4 +1,4 @@
-[id="osio_api_get_component_analyses_response"]
+[id="ct_api_get_component_analyses_response"]
 = GET /component-analyses/+{ecosystem}/{component name}/{component version}+
 
 
@@ -6,11 +6,11 @@
 
 Fetches various data points for a selected component.
 
-NOTE: You require an {osio} authentication token to invoke this method.
+NOTE: You require an {ct} authentication token to invoke this method.
 
 == Resource URL
 
-For information about the resource URL, reach out to us on the {osio} support chat channel at link:https://chat.{osio}[https://chat.openshift.io] or email us at link:mailto:openshiftio@redhat.com[openshiftio@redhat.com].
+For information about the resource URL, reach out to us on the link:https://chat.openshift.io[{ct} support] chat channel or send an email to the link:mailto:openshiftio@redhat.com[{ct} mailing list].
 
 == Resource information
 
@@ -26,7 +26,7 @@ None
 == Example request with cURL
 
 ----
-curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<recommender api url>/api/v1/component-analyses/maven/io.vertx:vertx-core/3.4.1
+curl -k -H "Authorization: Bearer <CodeReady Toolchain authentication token>" https://<recommender api url>/api/v1/component-analyses/maven/io.vertx:vertx-core/3.4.1
 ----
 
 == Example response

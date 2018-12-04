@@ -1,20 +1,18 @@
 [id="planning_development_work"]
 = Planning development work
 
-{osio} planner provides a set of predefined templates based on common development methodologies such as Agile and Scenario Driven Development to track tasks as work items.
+{ct} planner uses the Agile development methodology to track tasks as work items assigned to collaborators.
 
 Use the Agile development process to plan and execute your project using iterative cycles as follows:
 
 .Prerequisite:
-* Ensure that you select the Agile development process when you link:getting-started-guide.html#creating_new_space-hello-world[create your space].
-+
-NOTE: The *Development Process* you select while creating your space determines the guided work item type hierarchy in planner and the available work item types to plan your development work.
+* link:getting-started-guide.html#creating_new_space-hello-world[Create a space].
 
 .Procedure
 
 . In the dashboard of your space, select the *Plan* tab at the top of the page. The default *Backlog* view displays the *Work Items* for your space.
 
-. In the *Add Work Item* pane, select *Task* from the work item type drop-down list, type the title `Optimize {osio} resource usage`, and click *Add and Open* to see the detailed view for the work item.
+. In the *Add Work Item* pane, select *Task* from the work item type drop-down list, type the title `Optimize {ct} resource usage`, and click *Add and Open* to see the detailed view for the work item.
 +
 image::quickadd_task.png[Quick Add task]
 +

@@ -5,10 +5,10 @@ include::meta/attributes.adoc[]
 :email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
-Facing a problem with something in {osio}? Here is information about getting help or reporting issues.
+Facing a problem with something in {ct}? Here is information about getting help or reporting issues.
 
-include::topics/modules/asking_questions_about_osio.adoc[leveloffset=+1]
+include::topics/modules/asking_questions_about_ct.adoc[leveloffset=+1]
 
-include::topics/modules/send_us_feedback_about_osio.adoc[leveloffset=+1]
+include::topics/modules/send_us_feedback_about_ct.adoc[leveloffset=+1]
 
 include::topics/modules/send_us_feedback_about_documentation.adoc[leveloffset=+1]

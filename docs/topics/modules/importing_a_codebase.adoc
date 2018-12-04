@@ -1,7 +1,7 @@
 [id="importing_a_codebase"]
 = Importing a codebase
 
-Use the *Import Codebase* option to manually add the details for your existing codebase into {osio}.
+Use the *Import Codebase* option to manually add the details for your existing codebase into {ct}.
 
 . Click btn:[Import Codebase].
 . If required, in the *Space Path* field, change the path to your space.

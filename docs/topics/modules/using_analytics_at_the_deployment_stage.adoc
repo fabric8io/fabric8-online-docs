@@ -1,11 +1,11 @@
 [id="using_analytics_at_the_deployment_stage"]
 = Using analytics at the deployment stage
 
-When you create a new quickstart project, a new build is executed. {osio} analytics is triggered during the *Build Release* stage of the build pipeline. It analyzes your stack and its dependencies and provides a detailed report on the security issues and license issues affecting your dependencies along with insights on alternate and additional dependencies suitable for your stack. Use the stack report to make informed decisions about the open source dependencies in your stack.
+When you create a new quickstart project, a new build is executed. {ct} analytics is triggered during the *Build Release* stage of the build pipeline. It analyzes your stack and its dependencies and provides a detailed report on the security issues and license issues affecting your dependencies along with insights on alternate and additional dependencies suitable for your stack. Use the stack report to make informed decisions about the open source dependencies in your stack.
 
 .Prerequisites
 
-link:user-guide.html#creating_new_application-user-guide_pipelines[Create an application] or link:user-guide.html#importing_your_project-user-guide_iterations[import an existing codebase] to {osio}.
+link:user-guide.html#creating_new_application-user-guide_pipelines[Create an application] or link:user-guide.html#importing_your_project-user-guide_iterations[import an existing codebase] to {ct}.
 
 .Procedure
 
@@ -41,7 +41,7 @@ Licenses:: This card suggests an appropriate stack level license and flags confl
 Click the *Licenses* card to see the following detailed information:
 
 * The *Conflicting license(s) details* tab is displayed by default. It lists dependencies that conflict with licenses of other dependency or with the stack level license. It highlights the licenses which are affected in the dependency, and suggests alternate dependencies that go well with your stack, and avoid such conflicts.
-* Click the *Unknown license(s) details* tab to see the list of dependencies with licenses unknown to {osio}. It highlights the affected or unknown license, and suggests alternate dependencies to replace such dependencies.
+* Click the *Unknown license(s) details* tab to see the list of dependencies with licenses unknown to {ct}. It highlights the affected or unknown license, and suggests alternate dependencies to replace such dependencies.
 
 Insights:: Based on the analysis of other similar stacks, this card identifies usage outliers (dependencies not commonly used in similar stacks and that rarely go well together) in your stack and also highlights the number of companion (additional) dependencies that could augment your stack.
 +
@@ -49,14 +49,14 @@ Click the *Insights* card to see the following insights:
 +
 image::detailed_insights.png[Detailed insights]
 +
-* The *Usage outliers details* tab is displayed by default. It identifies and lists dependencies in your stack that are not commonly used in similar stacks or that do not work well with other dependencies in the stack. It suggests alternate dependencies, suitable to your stack, to replace them. The *Confidence score* depicts the confidence of {osio} analytics on the suitability of the alternate dependency to your stack.
+* The *Usage outliers details* tab is displayed by default. It identifies and lists dependencies in your stack that are not commonly used in similar stacks or that do not work well with other dependencies in the stack. It suggests alternate dependencies, suitable to your stack, to replace them. The *Confidence score* depicts the confidence of {ct} analytics on the suitability of the alternate dependency to your stack.
 * Click the *Companion component details* tab to see a list of additional dependencies that you can add to your stack to enhance it. Based on the confidence score, you can decide on the suitability of the dependency to your stack and add it. You can also provide your feedback on the suggested dependencies.
-Dependency Details:: This card lists the number of dependencies analyzed by {osio} and those unknown to it.
+Dependency Details:: This card lists the number of dependencies analyzed by {ct} and those unknown to it.
 +
 Click the *Dependency Details* card to see details on:
 
-* The *Analyzed dependency details* tab is displayed by default. It lists details of all the dependencies analyzed by {osio} and the *Components check* section highlights security, usage, and license issues in them. It suggests alternate dependencies to replace dependencies with usage and license issues.
-* The *Unknown dependency details* tab lists dependencies unknown to {osio} analytics.
+* The *Analyzed dependency details* tab is displayed by default. It lists details of all the dependencies analyzed by {ct} and the *Components check* section highlights security, usage, and license issues in them. It suggests alternate dependencies to replace dependencies with usage and license issues.
+* The *Unknown dependency details* tab lists dependencies unknown to {ct} analytics.
 
 . Expand the arrow adjacent to the dependency to see the following detailed information about the existing or the  suggested companion dependency:
 
@@ -72,8 +72,8 @@ In the case of usage outliers, details of the suggested replacement dependency a
 These statistics help you compare the existing dependency with the alternate dependency and make a smart choice for your stack.
 
 . To act on the analytics and insights provided by the report:
-* In the *Security Issues* detailed view, click *Report an issue* to report the security vulnerability as an issue in the {osio} planner. This ensures all your team members are aware about the security issue and can take the necessary follow-up action.
-* In the *Insights* detailed view, click *Create work item* to create auto-populated issues in {osio} planner for adding the suggested alternate or companion dependency.
+* In the *Security Issues* detailed view, click *Report an issue* to report the security vulnerability as an issue in the {ct} planner. This ensures all your team members are aware about the security issue and can take the necessary follow-up action.
+* In the *Insights* detailed view, click *Create work item* to create auto-populated issues in {ct} planner for adding the suggested alternate or companion dependency.
 +
 image::stack_report_wi.png[Stack report wi]
 

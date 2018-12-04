@@ -1,7 +1,7 @@
 [id="changing_user_preferences"]
 = Changing user preferences
 
-After logging in to {osio}, you can change your user preferences in the *Profile* section.
+After logging in to {ct}, you can change your user preferences in the *Profile* section.
 
 include::modules/editing_your_profile.adoc[leveloffset=+1]
 

@@ -1,6 +1,6 @@
 [id="setting_up_team_permissions"]
 = Setting up team permissions
 
-Ensure that your team has the appropriate permissions to work in your {osio} Space.
+Ensure that your team has the appropriate permissions to work in your {ct} Space.
 
 // TODO write content

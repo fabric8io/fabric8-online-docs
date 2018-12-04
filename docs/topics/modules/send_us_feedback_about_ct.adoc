@@ -1,0 +1,8 @@
+[id="send-us-feedback-about-rhct"]
+= Send us feedback about {prod}
+
+To give the {ct} team feedback, link:https://github.com/openshiftio/openshift.io/issues[create an issue] and send us a description of the problem with the necessary details and screenshots if necessary. You can also search for related issues at this link.
+
+When the issue is logged, the {ct} team adds appropriate tags and labels to address it at the earliest.
+
+If you prefer email, send your feedback to the link:mailto:openshiftio@redhat.com[{ct} mailing list].

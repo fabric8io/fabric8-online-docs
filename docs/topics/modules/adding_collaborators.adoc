@@ -1,21 +1,21 @@
 [id="adding_collaborators"]
 = Adding collaborators
 
-You can add other {osio} users as collaborators to your space and then assign work items to each person.
+You can add other {ct} users as collaborators to your space and then assign work items to each person.
 
 NOTE: Only creators of a space can add collaborators to the space, view user details, or remove them from the space.
 // Once admin part is introduced, change note to say only creators and admin can do the above.
 
 .Prerequisites
 
-* <<logging_into_red_hat_openshift_io,Log in>> to {osio-link} with a valid user account.
+* <<logging_into_ct,Log in>> to {ct-link} with a valid user account.
 * <<creating_new_space-user-guide,Create a new space>> or select an existing space you have created.
 // s/created/have admin rights to after admin role is introduced.
-* Ensure that the user you want to add as a collaborator has an {osio} account.
+* Ensure that the user you want to add as a collaborator has an {ct} account.
 
 .Procedure
 
-. In your {osio} home page, click the name of a space from the list of your *Recent Spaces* to view the dashboard for the space.
+. In your {ct} home page, click the name of a space from the list of your *Recent Spaces* to view the dashboard for the space.
 . Click *Add Collaborator* in the upper-left corner to see the dialog box.
 . In the *Collaborators* field, enter names to search for team members you want to add as collaborators to the space.
 +

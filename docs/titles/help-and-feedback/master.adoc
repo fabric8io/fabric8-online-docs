@@ -2,9 +2,9 @@ include::meta/attributes.adoc[]
 
 = Getting help and giving feedback
 :author: {rhd} Documentation Team
-:email: openshiftio@redhat.com
+//:email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
-Facing a problem with something in {osio}? Here is information about getting help or reporting issues.
+Facing a problem with something in {ct}? Here is information about getting help or reporting issues.
 
 include::topics/getting_help_and_giving_feedback.adoc[]

@@ -1,0 +1,10 @@
+[id="logging_into_ct_and_connecting_to_oso"]
+= Logging into {ct} and connecting to OpenShift Online
+
+When you sign up for {ct}, you receive a welcome email. After you receive this email, use the following steps to set up {ct}:
+
+. In your browser, navigate to link:https://openshift.io/[{ct} login page].
+. Click btn:[LOG IN] at the top of the page.
+. Enter your Red Hat Developer (or other listed services) credentials. Your {ct} account is automatically connected to your {oso} account.
+
+You are now ready to use your {ct} account.

@@ -7,7 +7,7 @@ include::accessing_stack_reports.adoc[leveloffset=+1]
 
 The stack report provides you with data about your stack and its components and provides recommendations based on its analysis of your stack. It enables you to assess the credibility of your components and enhance your stack.
 
-The {osio} analytics report comprises three components:
+The {ct} analytics report comprises three components:
 
 === Stack summary
 The stack summary provides a synopsis of the analysis report.
@@ -16,7 +16,7 @@ It highlights the security issues, usage outliers, and unknown or conflicting li
 === Detailed analysis of your stack components
 The detailed component analysis provides recommendations for relevant alternate components in case of license outliers (licenses not commonly used in similar stacks) and usage outliers (components not commonly used in similar stacks). It also recommends the appropriate versions for your stack components.
 
-It helps you assess the credibility of your stack components by providing usage statistics for your components, such as the number of {osio} projects using these components, GitHub statistics, GitHub projects dependent on these components, and tags associated with the components of your stack.
+It helps you assess the credibility of your stack components by providing usage statistics for your components, such as the number of {ct} projects using these components, GitHub statistics, GitHub projects dependent on these components, and tags associated with the components of your stack.
 
 To act on the alternate component recommendations, if any:
 
@@ -24,13 +24,13 @@ To act on the alternate component recommendations, if any:
 +
 . Click *Create Work Item* adjacent to the recommended alternate component to add the component to your stack.
 
-=== Additional components recommended by {osio}
+=== Additional components recommended by {ct}
 
-{osio} recommends additional components suitable for your stack based on its analysis of similar open source stacks. These components are commonly used by similar stacks and augment your stack.
+{ct} recommends additional components suitable for your stack based on its analysis of similar open source stacks. These components are commonly used by similar stacks and augment your stack.
 
 The Additional components section has one recommendation to enhance the application.
 
-. Click *Additional components recommended by {osio}* to see the recommended component. It includes a link to create a new work item to track the addition of this component to your stack:
+. Click *Additional components recommended by {ct}* to see the recommended component. It includes a link to create a new work item to track the addition of this component to your stack:
 +
 image::action_item.png[Create work item]
 +

@@ -1,12 +1,12 @@
-[id="getting_osio_authentication"]
-= Getting OpenShift.io authentication token
+[id="getting_ct_authentication"]
+= Getting {ct} authentication token
 
-You require an {osio} authentication token to invoke all {osio}-analytics API resources. Note that the authentication should be kept private and secure.
+You require an {ct} authentication token to invoke all {ct}-analytics API resources. Note that the authentication should be kept private and secure.
 
-Get the {osio} authentication token as follows:
+Get the {ct} authentication token as follows:
 
-. Log into link:https://openshift.io[{osio}].
-. On your {osio} home page, click your name on the top right corner of the screen to see the drop-down list.
+. Log into link:https://openshift.io[{ct}].
+. On your {ct} home page, click your name on the top right corner of the screen to see the drop-down list.
 . Select *Profile* from the list to see your profile page.
 +
 image::profile_menu.png[Profile menu button]

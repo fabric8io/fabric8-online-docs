@@ -1,12 +1,12 @@
 [id="forking_example_repository"]
 = Forking an example repository
 
-In addition to creating applications using quickstarts, you can import an existing project into {osio}.
+In addition to creating applications using quickstarts, you can import an existing project into {ct}.
 
 
 .Prerequisites
 
-Reset your {osio} environment by following instructions in link:getting-started-guide.html#resetting_your_osio_account[resetting_your_osio_account].
+Reset your {ct} environment by following instructions in link:getting-started-guide.html#resetting_your_ct_account[resetting your {ct} account].
 
 .Procedure
 
@@ -18,6 +18,6 @@ Sample repositories available in Github:
 * link:https://github.com/burrsutter/vertx-paint[https://github.com/burrsutter/vertx-paint]
 * link:https://github.com/burrsutter/vertx-wiki2[https://github.com/burrsutter/vertx-wiki2]
 
-If needed, you can import multiple projects into {osio} simultaneously, but this can result in a 12-15 minute delay. Import one project at a time to avoid delays.
+If needed, you can import multiple projects into {ct} simultaneously, but this can result in a 12-15 minute delay. Import one project at a time to avoid delays.
 
 NOTE: The OpenShift Online Free Tier provides two pods, and each project requires one pod.

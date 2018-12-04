@@ -1,7 +1,7 @@
 [id="reducing_project_memory_usage-{context}"]
 = Reducing project memory usage
 
-Optimizing memory usage is important when using the Free Tier of OpenShift Online because this tier provides limited memory. Also, each additional project in {osio} requires an additional share of your OpenShift Online resources.
+Optimizing memory usage is important when using the Free Tier of OpenShift Online because this tier provides limited memory. Also, each additional project in {ct} requires an additional share of your OpenShift Online resources.
 
 // for optimizing_memory_usage
 ifeval::["{context}" == "optimizing_memory_usage"]
@@ -15,8 +15,8 @@ Your OpenShift Online account must now share resources with two quickstart proje
 To optimize memory for the Spring Boot HTTP quickstart:
 endif::[]
 
-. Return to your {osio} workspace tab. If you need to reopen the workspace:
-.. In your {osio} browser tab, click btn:[Create] and then btn:[Codebases].
+. Return to your {ct} workspace tab. If you need to reopen the workspace:
+.. In your {ct} browser tab, click btn:[Create] and then btn:[Codebases].
 .. Ensure that the workspace is selected in the drop-down list and click btn:[Open] to run your workspace.
 +
 image::reopen_workspace.png[Reopen workspace]

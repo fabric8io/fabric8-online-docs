@@ -3,7 +3,7 @@
 
 .Prerequisites
 
-* Add a new or existing codebase to {osio}.
+* Add a new or existing codebase to {ct}.
 * Create a Che workspace for your target codebase.
 * Click the *run* option from the Run button (image:tri_run.png[title="Run button"]) to start running your project code. This allows the hot deploy feature to automatically save and deploy your changes.
 

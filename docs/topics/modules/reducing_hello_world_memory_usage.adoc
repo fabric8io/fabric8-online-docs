@@ -1,7 +1,7 @@
 [id="reducing_hello_world_memory_usage"]
 = Reducing the Hello World project memory usage
 
-Optimizing memory usage is important when using the Free Tier of OpenShift Online because this tier provides limited memory. Also, each additional project in {osio} requires an additional share of your OpenShift Online resources.
+Optimizing memory usage is important when using the Free Tier of OpenShift Online because this tier provides limited memory. Also, each additional project in {ct} requires an additional share of your OpenShift Online resources.
 
 You can optimize your new quickstart to use less memory as follows:
 

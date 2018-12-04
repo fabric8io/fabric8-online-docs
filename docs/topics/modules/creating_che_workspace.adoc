@@ -3,12 +3,12 @@
 
 To edit your application codebase, create a new link:getting-started-guide.html#about_workspaces[Che workspace]:
 
-. Click *Create* from the top of the {osio} page. The default view for this tab is *Codebases*.
+. Click *Create* from the top of the {ct} page. The default view for this tab is *Codebases*.
 
 +
 // for spring-boot
 ifeval::["{context}" == "spring-boot"]
-Return to the *Codebases* view in your {osio} browser tab to create a new workspace.
+Return to the *Codebases* view in your {ct} browser tab to create a new workspace.
 endif::[]
 +
 . In the *WORKSPACES* column, click *Create workspace* for your project. The workspace gets created.

@@ -1,10 +1,10 @@
 include::meta/attributes.adoc[]
 
-= Creating a new application using OpenShift.io codebases
+= Creating a new application using {ct} codebases
 :author: {rhd} Documentation Team
-:email: openshiftio@redhat.com
+//:email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
-This document describes the creation of a Vert.x quickstart application using {osio} provided codebases. These codebases lay the foundation and provide the source code and specifications for you to create a new application.
+This document describes the creation of a Vert.x quickstart application using {ct} provided codebases. These codebases lay the foundation and provide the source code and specifications for you to create a new application.
 
 include::topics/creating_new_space_and_vertx_quickstart_application.adoc[]

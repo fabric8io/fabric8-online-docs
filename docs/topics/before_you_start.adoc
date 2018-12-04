@@ -5,6 +5,6 @@ include::modules/before_you_begin.adoc[leveloffset=+1]
 
 include::modules/prereqs.adoc[leveloffset=+1]
 
-include::modules/logging_into_osio_and_connecting_to_oso.adoc[leveloffset=+1]
+include::modules/logging_into_ct_and_connecting_to_oso.adoc[leveloffset=+1]
 
 include::modules/opting_in_to_beta_features.adoc[leveloffset=+1]

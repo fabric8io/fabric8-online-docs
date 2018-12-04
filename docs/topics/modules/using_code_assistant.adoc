@@ -3,7 +3,7 @@
 
 . Return to the Che workspace browser tab. If you closed your earlier workspace tab, use the following instructions:
 
-.. In {osio}, click the *Create* tab. The default *Codebases* view lists your project workspace:
+.. In {ct}, click the *Create* tab. The default *Codebases* view lists your project workspace:
 +
 image::existing_workspace.png[Existing Workspace]
 +

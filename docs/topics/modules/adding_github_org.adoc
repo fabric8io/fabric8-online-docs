@@ -20,7 +20,7 @@ image:new_org_fields.png[New organization fields]
 
 . In the details page for the application, your new organization is listed under *Organization access*. Click btn:[Grant] to give the new organization access.
 
-. Return to the {osio} tab in your browser.
+. Return to the {ct} tab in your browser.
 
 . Navigate to your *Settings* view:
 
@@ -32,6 +32,6 @@ image:new_org_fields.png[New organization fields]
 +
 image::refresh_github.png[Refresh github]
 +
-. After the reloaded {osio} screen loads, your new organization is added.
+. After the reloaded {ct} screen loads, your new organization is added.
 
 To use the new organization, create a new project and in the *Organization* drop-down menu, your new organization is listed.

@@ -1,14 +1,14 @@
 [id="signing_up_for_the_red_hat_developers_program"]
 = Signing up for the Red Hat Developers Program
 
-To start using {rhosio}, create a new Red Hat Developers (RHD) account or use an existing RHD or social media account.
+To start using {ct}, create a new Red Hat Developers (RHD) account or use an existing RHD or social media account.
 
-. Navigate to link:{osio-url}[{rhosio}].
+. Navigate to link:{ct-url}[{rhct}].
 
 . Click btn:[Sign Up]. You can register using an existing social or Red Hat account.
 
   * To register a new Red Hat account:
-    ... At the {rhosio} Developer page, click btn:[Register].
+    ... At the {ct} Developer page, click btn:[Register].
     ... Enter your name, email address, company, and password in the appropriate fields.
     ... Select the terms and conditions check boxes.
     ... Click btn:[Create my account].
