@@ -31,7 +31,7 @@ For information about the resource URL, reach out to us on the link:https://chat
 == Example request with cURL
 
 ----
-curl -k -H "Authorization: Bearer <openshift.io authentication token>" -F "manifest[]=@./pom.xml" -F "filePath[]=/home/JohnDoe"https://<recommender api url>/api/v1/stack-analyses
+curl -k -H "Authorization: Bearer <CodeReady Toolchain authentication token>" -F "manifest[]=@./pom.xml" -F "filePath[]=/home/JohnDoe"https://<recommender api url>/api/v1/stack-analyses
 ----
 
 == Example response:

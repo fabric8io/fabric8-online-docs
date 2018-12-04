@@ -25,7 +25,7 @@ None
 == Example request with cURL
 
 ----
-curl -k -H "Authorization: Bearer <openshift.io authentication token>" https://<recommender api url>/api/v1/stack-analyses/421249d9e1e5464cbf3e77dde4941463
+curl -k -H "Authorization: Bearer <CodeReady Toolchain authentication token>" https://<recommender api url>/api/v1/stack-analyses/421249d9e1e5464cbf3e77dde4941463
 ----
 
 == Example response
