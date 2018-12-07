@@ -1,7 +1,7 @@
 [id="creating_a_new_area"]
 = Creating a new area
 
-You can create a new child area to group together related work items by type or functionality. When you create a new space, {ct} automatically creates a root area with the same name. Each additional area within the space is created as a child of the root area or another existing area in the space. 
+You can create a new child area to group together related work items by type or functionality. When you create a new space, {ct} automatically creates a root area with the same name. Each additional area within the space is created as a child of the root area or another existing area in the space.
 
 .Prerequisites
 
@@ -10,7 +10,8 @@ You can create a new child area to group together related work items by type or 
 .Procedure
 
 . From your {ct} dashboard, click the name of a space to view its dashboard.
-. At the top of the page, click the *Equalizer* tab (image:equalizer.png[title="Settings"]) to display a list of areas in your space.
+. At the top of the page, click the settings
+ tab (image:equalizer.png[title="Settings"]) to display a list of areas in your space.
 . In the top right corner of the *Areas* view, click *Add Areas*.
 +
 image::add_areas_button.png[Add areas button]

@@ -1,7 +1,7 @@
 [id="deleting_existing_space"]
 = Deleting an existing space
 
-If an {ct} space is no longer required, delete it as follows:
+If a {ct} space is no longer required, delete it as follows:
 
 WARNING: When deleted, the space and all its contents (work items, codebases, workspaces, etc.) are also permanently deleted.
 
