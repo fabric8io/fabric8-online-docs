@@ -31,11 +31,15 @@ image::select_pipeline.png[Select a pipeline]
 
 == Deployment information
 
-Click *Deployments* on the dashboard to view the detailed *Deployments* screen. This view also displays different types of information depending on the type of pipeline selected for your project.
+You can see a detailed view of your application pods in the link:getting-started-guide.html#about_pipelines_stage_run[stage and run] environments, resources consumed in the two environments, and the overall resources used by the application in the *Deployments* view.
+
+This view also displays different types of information depending on the type of pipeline selected for your project as follows:
+
+. At the top of the page, click *Create* and then click *Deployments* to see the deployment details.
+
+The *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* pipeline option is recommended because this gives you the most information and control over your project.
 
 For the *Build Release, Integration Test* pipeline, the *Stage* and *Run* details contain no information because this pipeline type does not use these environments.
-
-image::release_only_deployments.png[Release deployments]
 
 For the *Build Release, Integration Test, Rollout to Stage* option, the *Stage* details are available, including resource usage and the version of the project.
 
@@ -44,5 +48,3 @@ image::build_stage_deployment.png[Release and Stage]
 For the *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* pipeline type, the details for both *Stage* and *Run* are listed, along with resource and pod usage.
 
 image::build_stage_run_deployment.png[Build, stage, run deployment]
-
-Using the *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* pipeline option is recommended because this gives you the most information and control over your project.

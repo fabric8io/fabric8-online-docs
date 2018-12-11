@@ -11,7 +11,7 @@ NOTE: Only creators of a space can add collaborators to the space, view user det
 * <<logging_into_ct,Log in>> to {ct-link} with a valid user account.
 * <<creating_new_space-user-guide,Create a new space>> or select an existing space you have created.
 // s/created/have admin rights to after admin role is introduced.
-* Ensure that the user you want to add as a collaborator has an {ct} account.
+* Ensure that the user you want to add as a collaborator has a {ct} account.
 
 .Procedure
 

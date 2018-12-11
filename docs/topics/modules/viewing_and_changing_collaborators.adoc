@@ -14,7 +14,7 @@ NOTE: Only creators of a space can add collaborators to the space, view user det
 
 .Procedure
 
-. Click the *Equalizer* tab (image:equalizer.png[title="Equalizer"]) at the top of the screen, and then click *Collaborators* to see the list of collaborators in your space.
+. Click the settings tab (image:equalizer.png[title="Settings"]) at the top of the screen, and then click *Collaborators* to see the list of collaborators in your space.
 +
 image::collaborators_list.png[List of space collaborators]
 +

@@ -22,9 +22,9 @@ See link:getting-started-guide.html#create_run_command_macro[create_run_command_
 +
 . Click the blue preview URL at the top of the *run* view to see your application running in Che.
 +
-image::{context}_run_proj.png[Run project link]
+image::run_proj.png[Run project link]
 +
-. Enter a name in the *Name* field and click btn:[Invoke] to test the application.
+. In the application, enter a name in the *Name* field and click btn:[Invoke] to test the application.
 +
 image::{context}_john.png[Testing the application]
 +
