@@ -1,17 +1,46 @@
 [id="creating_a_new_work_item"]
 = Creating a new work item
 
+The {ct} planner provides a planning template, based on the agile development process, for managing iterative and incremental software development.
 
-The planner provides two predefined templates, *Agile* and *Scenario Driven Development*, to help plan your work according to established development processes. The templates prescribe a guided hierarchy of work items using relevant work item types.
+You can create work items using the quick-add or the in-line add options. The in-line add option allows you to create work items with parent-child relations easily.
 
-NOTE: The *Development Process* you select while creating your space determines the template, the guided work item type hierarchy, and the available work item types in planner.
+Use the agile guided hierarchy to create work items of the type, Theme, Epic, Story, Task, Impediment, and Defect, as follows:
 
-You can create work items using the quick-add or the in-line add options. The in-line add option allows you to create work items with parent-child relations easily. Use the quick-add option to create independent work items.
+. Select the *Plan* tab at the top of the page to view the planner. The default *Backlog* view displays the *Work Items* for your space.
++
+NOTE: The tree view is the default view of the planner, that is, the *Show Tree* check box is selected by default. If you cleared it, ensure that the *Show Tree* check box is selected to see the tree view.
++
 
-//the selection of template option will move from create space to use Planner, update when implemented.
+. Use the quick-add option to create a high level, planning oriented *Theme*, as follows:
+.. In the *Add Work Item* pane, specify an appropriate title for the *Theme* in the *Work Item Title* field.
++
+image::create_theme.png[Create Theme]
+.. Press kbd:[Enter] to create the work item. Alternatively, click btn:[Add and open] to create the work item and see the detailed view for the work item.
 
-include::creating_work_items_using_the_agile_development_process.adoc[leveloffset=+1]
+. You can use the in-line add option to create hierarchical child work items quickly. Create a child *Epic* for the *Theme* using the in-line add option as follows:
+.. In the work item list, click the *+* icon adjacent to the *Theme* for which you want to add a child *Epic*.
++
+image::inline_add.png[Inline Add]
++
+The in-line *Add Child Work Item* pane is displayed below it.
++
+image::add_epic.png[Add Epic]
 
-include::creating_work_items_using_the_scenario_driven_development_process.adoc[leveloffset=+1]
+.. Add a title to the *Epic* and press kbd:[Enter] to create it.
+. Similarly, use the in-line add option to create an execution oriented child *Story* for the *Epic*, and further break down the *Story* into action oriented, more granular *Task* type of work items.
++
+image::create_story_task.png[Create Story and Tasks]
++
+You can also create child *Impediment* and *Defect* type of work items for the *Theme*, *Epic*, or *Story* type of work items as required.
+
+For more information see:
+
+* <<modifying_a_work_item>> to add details to your work item
+* <<working_with_iterations>> to execute the work items using iterations
+
+//include::creating_work_items_using_the_agile_development_process.adoc[leveloffset=+1]
+
+//include::creating_work_items_using_the_scenario_driven_development_process.adoc[leveloffset=+1]
 
 //include::using_scrum_guided_hierarchy.adoc[leveloffset=+1]

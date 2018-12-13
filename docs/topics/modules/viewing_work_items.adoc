@@ -10,8 +10,8 @@ The _right pane_ displays the list of work items in your space that can be viewe
 
 [NOTE]
 ====
-. By default, closed work items are not listed in the work item list. Select the *Show Completed* check box to see the closed work items.
-. Use the gear icon next to the *Add and Open* button to select the attributes you want to see for your list of work items.
+* By default, closed work items are not listed in the work item list. Select the *Show Completed* check box to see the closed work items.
+* Use the gear icon next to the *Add and Open* button to select the attributes you want to see for your list of work items.
 +
 image:wi_toggle_attributes.png[Display Work Item Attributes]
 ====
@@ -25,7 +25,7 @@ The tree view:
 * Provides you the context of the work item in relation to the broader project goals.
 * Helps you create child work items quickly based on the development template you select.
 
-NOTE: The exact count of the work items that match your filter criteria or iteration are displayed above the *Add Work Item* pane. Since the tree view displays the number of work items matching your filter and their child and parent work items the number of work items displayed may seem to vary from that displayed in the list.
+NOTE: The exact count of the work items that match your filter criteria or iteration are displayed above the *Add Work Item* pane. Since the tree view displays the work items matching your filter and their child and parent work items the number of work items displayed may seem to vary from that displayed in the list.
 
 Using the flat view::
 Use the flat list view to track work items that belong to a particular iteration or work item type group as follows:
