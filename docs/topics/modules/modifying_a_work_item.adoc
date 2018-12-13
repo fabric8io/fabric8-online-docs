@@ -18,9 +18,9 @@ You can make the following modifications to the work item, in the preview or the
 
 NOTE: Before closing the preview or detailed view ensure that all your changes are individually saved.
 
-include::tracking_state_of_a_work_item.adoc[leveloffset=+1]
-
 include::editing_work_item_title.adoc[leveloffset=+1]
+
+include::tracking_state_of_a_work_item.adoc[leveloffset=+1]
 
 include::assigning_work_item_to_collaborator.adoc[leveloffset=+1]
 
