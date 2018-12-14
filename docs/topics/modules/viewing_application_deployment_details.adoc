@@ -9,7 +9,8 @@ You can see a detailed view of your application pods in the link:getting-started
 +
 image::hello-world_deployments.png[Deployments page]
 ////
-. In the *Pipelines* page click the options (image:kabob.png[title="Options"]) icon on the top-right of the screen and click *Open in OpenShift Console*.
+
+. In the *Pipelines* page click the options (image:kabob_white.png[title="Options"]) icon on the top-right of the screen and click *Open in OpenShift Console*.
 
 . If prompted, click btn:[LOGIN WITH RED HAT] to log in to your OpenShift Online account. When logged in, the OpenShift Online console displays your build pipelines.
 . In the top-left part of the screen click the *_username_-preview* drop-down list and select the *_username_-stage* project to see an overview of the deployed application in the stage environment.
@@ -17,4 +18,4 @@ image::hello-world_deployments.png[Deployments page]
 image::oso_application_overview.png[OpenShift Online Application Overview]
 . In the left pane, click *Applications* > *Deployments* to view details about the application deployment.
 +
-image::openshift_online_deployments.png[OpenShift Online Deployments]
+image::oso_deployments.png[OpenShift Online Deployments]

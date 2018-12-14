@@ -3,6 +3,8 @@
 
 In {ct}, the first step for any new project is to create a new space with a unique name. You can then create or import codebases within the space, add collaborators, and plan your work using work items and iterations.
 
+//In {ct}, the first step is to create a new application using {ct} codebases or importing an existing one. To create an application you must first create a space with a unique name. You can then create or import codebases within the space, add collaborators, and plan your work using work items and iterations.
+
 // for user-guide
 ifeval::["{context}" == "user-guide"]
 .Prerequisites
@@ -19,7 +21,7 @@ Create a new space as follows:
 //+
 //image::create_new_codebase.png[Create new codebase]
 //+
-//If your account has an existing space, in the *Recent Spaces* section of your home page, click *+* to create an additional space.
+//If your account has an existing space, in the *Recent Spaces* section of your {ct} home page, click *+* to create an additional space.
 +
 // for importing-existing-project
 ifeval::["{context}" == "importing-existing-project"]

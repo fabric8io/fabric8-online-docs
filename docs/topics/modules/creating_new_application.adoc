@@ -6,7 +6,7 @@ ifeval::["{context}" == "spring-boot"]
 In this section, you learn how to create a Spring Boot application using the {ct} quickstart codebases. See the <<hello_world_developers,Hello World project>> for an example of a Vert.X application.
 endif::[]
 
-When you create a new space, the *Create an Application* wizard to add or import codebases displays. If you closed the wizard earlier, click btn:[Add to space] in your space dashboard to see the wizard again. Use this wizard to create a new quickstart project as follows:
+When you create a new space, the *Create an Application* wizard to add or import codebases displays. If you closed the wizard earlier, click btn:[Add to space] in your space dashboard to see the wizard again. Use this wizard to create a new quickstart application as follows:
 
 image::start_creating_apps.png[Start creating apps]
 
