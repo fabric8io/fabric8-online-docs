@@ -8,7 +8,15 @@ If the quickstart application in the _Stage_ environment runs as expected, appro
 . Click btn:[Promote] to promote the application from the _Stage_ environment to the _Run_ environment. This process requires a few minutes.
 +
 image::promote.png[Promote application]
-. Optionally, as your application is promoted to _Run_, click *helloworldvertx* or *Build #1* to view the detailed progress of the pipeline or build in your OpenShift Online console, respectively.
+. Optionally, as your application is promoted to _Run_, click *helloworldvertx* to see the detailed progress of the pipeline and click *Build #1* to see the  progress of the build in your OpenShift Online console.
 . When the *Pipeline* view in {ct} indicates that the application is available in the _Run_ environment, click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Run* to view the application in a new tab.
 +
 image::rollout_to_run.png[Rollout to Run]
+
+Alternatively, you can click *Analyze* to use the *Application* widget on your space dashboard to:
+
+* Click the options icon (image:kabob_white.png[title="Options icon"]) to view your application in the stage and run environments and test it.
+* Click *Promote* to approve your staged application and push it to the run environment.
+* View a summary of the applications deployed on your space.
+
+image::dashboard_applications.png[Dashboard-Application widget]

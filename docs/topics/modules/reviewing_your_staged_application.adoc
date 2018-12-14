@@ -13,7 +13,7 @@ image::pipeline_firstrun.png[Pipeline First Run]
 +
 NOTE: If your pipeline build does not start for more than ten minutes, you can manually start a pipeline build using the instructions at link:getting-started-guide.html#pipeline_build_failure[pipeline_build_failure].
 
-. Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline. OpenShift Online provides this public URL to access the staged quickstart application.
+. Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline. OpenShift Online provides a public URL to access the staged quickstart application.
 +
 A new browser tab displays the HTTP Booster application running on _Stage_. The Vert.x HTTP booster quickstart produces a simple API behind a REST endpoint over HTTP with a minimalist user interface.
 +
