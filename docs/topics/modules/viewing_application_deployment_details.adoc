@@ -5,7 +5,7 @@ You can see a detailed view of your application pods in the link:getting-started
 
 ////
 . At the top of the page, click *Create* and then click *Deployments* to see the deployment details.
-//. In *Applications*, expand *helloworldvertx* to see the application pods and the resources consumed in the *stage* and *run* environments respectively. The *Resource Usage* at the bottom of the screen displays the overall resources used by your applications in {ct}.
+. In *Applications*, expand *helloworldvertx* to see the application pods and the resources consumed in the *stage* and *run* environments respectively. The *Resource Usage* at the bottom of the screen displays the overall resources used by your applications in {ct}.
 +
 image::hello-world_deployments.png[Deployments page]
 ////
@@ -19,3 +19,5 @@ image::oso_application_overview.png[OpenShift Online Application Overview]
 . In the left pane, click *Applications* > *Deployments* to view details about the application deployment.
 +
 image::oso_deployments.png[OpenShift Online Deployments]
+
+Similarly, select *_username_-run* project to see details of the deployed application in the run environment.

@@ -24,7 +24,7 @@ ifeval::["{context}" == "hello-world"]
 
 .. In the *Choose a runtime* section, select *Eclipse Vert.x*.
 
-.. Click the blue downward arrow button to continue.
+.. Click the blue down-arrow button to continue.
 +
 image::choose_mission_runtime.png[Choose mission and runtime]
 +
@@ -45,7 +45,7 @@ ifeval::["{context}" == "user-guide"]
 
 .. In the *Choose a mission* section, select the the appropriate option.
 .. In the *Choose a runtime* section, select the appropriate runtime. The gray arrow at the bottom of the screen now turns blue.
-.. Click the blue downward arrow button to continue.
+.. Click the blue down-arrow button to continue.
 +
 image::choose_mission_runtime.png[Choose mission and runtime]
 +
