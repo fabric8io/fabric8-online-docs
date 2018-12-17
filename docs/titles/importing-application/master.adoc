@@ -7,4 +7,4 @@ include::meta/attributes.adoc[]
 
 This document provides instructions on importing your existing codebases to {ct}. In this tutorial we import one of the existing sample repositories in GitHub.
 
-include::topics/creating_new_space_and_importing_existing_project.adoc[]
+include::topics/creating_new_space_and_importing_existing_codebase.adoc[]

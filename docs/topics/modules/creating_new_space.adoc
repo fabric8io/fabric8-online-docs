@@ -23,8 +23,8 @@ Create a new space as follows:
 //+
 //If your account has an existing space or you are a collaborator in a space, in the *Recent Spaces* section of your {ct} home page, click *+* to create an additional space.
 +
-// for importing-existing-project
-ifeval::["{context}" == "importing-existing-project"]
+// for importing-existing-codebase
+ifeval::["{context}" == "importing-existing-codebase"]
 //. In the {ct} home page, click btn:[Import Existing Codebase].
 //+
 //image::create_new_codebase.png[Import existing codebase]

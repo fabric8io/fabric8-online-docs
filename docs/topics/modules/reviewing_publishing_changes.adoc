@@ -40,8 +40,8 @@ You have now created your first quickstart project in {ct}, made changes to your
 endif::[]
 
 
-//for importing existing
-ifeval::["{context}" == "importing-existing-project"]
+//for importing existing codebase
+ifeval::["{context}" == "importing-existing-codebase"]
 You have now imported an existing project into {ct}, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
 endif::[]
 

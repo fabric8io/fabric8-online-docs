@@ -25,7 +25,7 @@ image::imp_folder.png[Folder View]
 +
 . Save the changes (kbd:[Ctrl+s] or kbd:[Cmd+s] for macOS).
 +
-If you already ran the application earlier as instructed in <<running_your_project_in_the_che_workspace-importing-existing-project>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change.
+If you already ran the application earlier as instructed in <<running_your_project_in_the_che_workspace-importing-existing-codebase>>, your changes are instantly implemented. Maven uses the Vert.X hot deploy feature to automatically update the application when you make a change.
 +
 . Return to the browser tab running the application, type a name in the text box and click btn:[Invoke] to test the application.
 +

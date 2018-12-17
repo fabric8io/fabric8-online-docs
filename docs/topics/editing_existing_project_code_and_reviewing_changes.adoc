@@ -1,7 +1,7 @@
 [id="editing_existing_project_code_and_reviewing_changes"]
 = Editing your existing project's code and reviewing changes
 
-:context: importing-existing-project
+:context: importing-existing-codebase
 
 Now that you have imported the existing project into {ct}, you can change the code and stage changes.
 
