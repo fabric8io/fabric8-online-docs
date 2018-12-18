@@ -3,7 +3,7 @@
 
 A _space_ is the first thing a user creates in {ct}. All other elements are created within a space to organize them for each project.
 
-After you create a space, you can link:getting-started-guide.html#creating_new_project-hello-world[create applications] using {ct} quickstart <<about_application_codebases,codebases>> or link:getting-started-guide.html#importing-existing-project[import existing codebases].
+After you create a space, you can link:getting-started-guide.html#creating_new_project-hello-world[create applications] using {ct} quickstart <<about_application_codebases,codebases>> or link:getting-started-guide.html#importing-existing-codebase[import existing codebases].
 You can also use the space to plan your development work using <<about_work_items,work items>> and <<about_iterations,iterations>>, and assign the work items to <<about_collaborators,collaborators>> within your team.
 
 Each codebase, iteration, work item, and collaborator is attached to a space.

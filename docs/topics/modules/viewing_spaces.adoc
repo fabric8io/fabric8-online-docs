@@ -15,4 +15,5 @@ Use the spaces page for the following:
 * Click btn:[Shared Spaces] to see spaces you share with other collaborators.
 * Use the alphabetically ascending or descending icon (image:sort_icon.png[title="Sort Icon"]) to sort your spaces.
 * Use the *Name* filter to search your spaces by name.
-//* Click btn:[Find a Space to join] to search for spaces you can join as a collaborator. Click on the required space in the search result to join it.
+//* Click btn:[Find a Space to join] and search for spaces you can join as a collaborator in the *Find Spaces to Join* dialog box. Click on the required space in the search result to join it.
+//* Click the additional options icon (image:kabob_white.png[title="Options"]) to the right of the space and then click *Add Pin* to pin spaces that are important to you.

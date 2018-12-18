@@ -1,7 +1,7 @@
-[id="importing-existing-project"]
-= Importing an existing project from GitHub
+[id="importing-existing-codebase"]
+= Importing an existing codebase from GitHub
 
-:context: importing-existing-project
+:context: importing-existing-codebase
 
 This section contains instructions for adding an existing project to {ct}.
 
@@ -9,7 +9,7 @@ include::modules/forking_example_repository.adoc[leveloffset=+1]
 
 include::modules/creating_new_space.adoc[leveloffset=+1]
 
-include::modules/importing_your_project.adoc[leveloffset=+1]
+include::modules/importing_your_codebase.adoc[leveloffset=+1]
 
 include::modules/creating_che_workspace.adoc[leveloffset=+1]
 
