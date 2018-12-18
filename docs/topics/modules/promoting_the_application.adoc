@@ -3,6 +3,12 @@
 
 If the application runs as expected in the staging environment approve and promote the application and build it on _Run_:
 
+.Prerequisites
+
+link:user-guide.html#creating_new_application-user-guide_spaces[Create an application] or link:user-guide.html#importing_your_codebase-user-guide_spaces[import an existing codebase] to {ct}.
+
+.Procedure
+
 . Return to the {ct} browser tab which displays the *Pipeline* view.
 . Click btn:[Input Required] at the *Approve* stage of the pipeline.
 +

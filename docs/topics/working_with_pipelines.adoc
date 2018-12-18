@@ -5,11 +5,9 @@
 
 include::modules/about_pipelines.adoc[leveloffset=+1]
 
-include::modules/creating_new_application.adoc[leveloffset=+1]
-
 include::modules/selecting_a_pipeline_type.adoc[leveloffset=+1]
 
-include::modules/staging_the_application.adoc[leveloffset=+1]
+include::modules/reviewing_the_staged_application.adoc[leveloffset=+1]
 
 include::modules/promoting_the_application.adoc[leveloffset=+1]
 
