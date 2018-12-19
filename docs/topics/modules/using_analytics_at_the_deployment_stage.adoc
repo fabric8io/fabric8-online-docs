@@ -5,7 +5,7 @@ When you create a new quickstart project, a new build is executed. {ct} analytic
 
 .Prerequisites
 
-link:user-guide.html#creating_new_application-user-guide_pipelines[Create an application] or link:user-guide.html#importing_your_project-user-guide_iterations[import an existing codebase] to {ct}.
+link:user-guide.html#creating_new_application-user-guide_spaces[Create an application] or link:user-guide.html#importing_your_codebase-user-guide_spaces[import an existing codebase] to {ct}.
 
 .Procedure
 

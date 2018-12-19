@@ -1,0 +1,28 @@
+[id="reviewing_the_staged_application"]
+= Reviewing the staged application
+
+When you create a new application using {ct} codebases or importing existing ones, a new build executes. The new build pipeline pushes version 1.0.1 of your new application into _Stage_ and then, after user approval, to _Run_. In a build pipeline, _Stage_ and _Run_ are individual OpenShift projects. _Stage_ is a production staging area to review and test your application before you approve and promote it to the _Run_ environment. The _Run_ environment is similar to a production environment.
+
+.Prerequisites
+
+link:user-guide.html#creating_new_application-user-guide_spaces[Create an application] or link:user-guide.html#importing_your_codebase-user-guide_spaces[import an existing codebase] to {ct}.
+
+.Procedure
+
+. Click *Create* and then click *Pipeline* to see the build pipelines for your new application. Initially, the build status is *No stages have started*.
+When the pipeline build is ready, it displays your application in the stage environment and waits at the *Approve* stage for your input.
++
+image::ug_pipeline_firstrun.png[Pipeline First Run]
++
+[NOTE]
+====
+If your pipeline build does not start for more than ten minutes, you can manually start a pipeline build using the instructions at <<pipeline_build_failure>>.
+====
++
+. Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline to review and test your staged application. OpenShift Online provides a public URL to access the staged quickstart application in a new browser tab.
++
+NOTE: If the application does not load, see <<application_not_available>> for troubleshooting information.
+
+Optionally, click *Build #1* for the build pipeline in progress to view the build pipeline details in OpenShift Online.
+
+image::ug_oso_pipeline.png[A Running Pipeline Build in OpenShift Online]
