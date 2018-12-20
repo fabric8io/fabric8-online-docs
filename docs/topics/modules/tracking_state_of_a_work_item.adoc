@@ -3,10 +3,6 @@
 
 You can set the state for each of your work items enabling you to track the status of your work item from creation to completion.
 
-NOTE: The *Development Process* you select while creating your space determines the guided work item type hierarchy, the available work item types, and the available states of the work item in planner.
-
-For this example, select the scenario driven *Development Process*.
-
 By default, a freshly created work item is assigned the *new* state.
 You can track and update the status of work items as you progress through your task list as follows:
 
