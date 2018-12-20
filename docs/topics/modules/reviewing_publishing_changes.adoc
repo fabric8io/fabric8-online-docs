@@ -19,9 +19,6 @@ To review the build and publish your changes:
 
 . Return to the {ct} browser tab.
 . Click *Create* and then *Pipelines* to view the build pipelines. Wait for the build pipeline to progress to the *Approve* stage.
-. Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline to view your staged application.
-+
-////
 . In the *Create* tab, click *Deployments* to see the following information:
 +
 image::{context}_versions_applications.png[Versions of the Application]
@@ -31,13 +28,11 @@ image::{context}_versions_applications.png[Versions of the Application]
 ** The *1 pod* indicates that each of the application builds scale to one pod in OpenShift Online. The number of pods indicates the number of running instances of the application.
 ** The version numbers link to individual running applications. You can use these separate staging areas to share different versions of your application before promoting a change. Click the version numbers to view the details for that deployment.
 
-. Click *Pipelines* to return to the pipelines view and
-////
+. Click *Pipelines* to return to the pipelines view and click btn:[Input Required] at the *Approve* stage of the pipeline.
 
-. After you are satisfied with your changes, click btn:[Input Required] at the *Approve* stage of the pipeline, and then click btn:[Promote] to promote the next version of the application to *Run*.
+. Click btn:[Promote] to promote version 1.0.2 of the application to *Run*.
 +
-Your changes are now available on both *Stage* and *Run*.
-//If you return to the *Deployments* tab, you can see that version 1.0.2 is deployed to both *Stage* and *Run*.
+Your changes are now available on both *Stage* and *Run*. If you return to the *Deployments* tab, you can see that version 1.0.2 is deployed to both *Stage* and *Run*.
 
 //for hello world
 ifeval::["{context}" == "hello-world"]
