@@ -11,23 +11,24 @@ image::select_pipeline.png[Select a pipeline]
 
 * *Build Release, Integration Test, Rollout to Stage* stages the new version of your application in the *Stage* environment after running integration tests.
 
+////
 
-//== Dashboard deployments view
+== Dashboard deployments view
 
-//Depending on which of the three options was selected for your project, the *Deployments* section of the {ct} dashboard displays the version of the project and which stage type each version currently includes.
+Depending on which of the three options was selected for your project, the *Deployments* section of the {ct} dashboard displays the version of the project and which stage type each version currently includes.
 
-//For example, for the *Release* option, the *Deployments* section of the {ct} dashboard only shows the name of your project because there is no staging required.
+For example, for the *Release* option, the *Deployments* section of the {ct} dashboard only shows the name of your project because there is no staging required.
 
-//image::release_only_deploy_dash.png[Build only]
+image::release_only_deploy_dash.png[Build only]
 
-//For the *Release and Stage* option, the dashboard displays the version and the *Stage* label because the application is staged.
+For the *Release and Stage* option, the dashboard displays the version and the *Stage* label because the application is staged.
 
-//image::build_stage_deploy_dash.png[Build and Stage]
+image::build_stage_deploy_dash.png[Build and Stage]
 
-//For the *Release, Stage, Approve and Promote* option, once you promote a version of the project, the dashboard displays both the *Stage* and *Run* environment versions.
+For the *Release, Stage, Approve and Promote* option, once you promote a version of the project, the dashboard displays both the *Stage* and *Run* environment versions.
 
-//image::build_stage_run_dash.png[Build, stage, run]
-// TODO when ready to review in prod-preview
+image::build_stage_run_dash.png[Build, stage, run]
+TODO when ready to review in prod-preview
 
 == Deployment information
 
@@ -48,3 +49,5 @@ image::build_stage_deployment.png[Release and Stage]
 For the *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* pipeline type, the details for both *Stage* and *Run* are listed, along with resource and pod usage.
 
 image::build_stage_run_deployment.png[Build, stage, run deployment]
+
+////

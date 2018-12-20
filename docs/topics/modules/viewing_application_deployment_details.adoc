@@ -1,16 +1,22 @@
 [id="viewing_application_deployment_details"]
 = Viewing your application deployment details
 
-You can see a detailed view of your application pods in the link:getting-started-guide.html#about_pipelines_stage_run[stage and run] environments, resources consumed in the two environments, and the overall resources used by the application in the *Deployments* view as follows:
+You can see a detailed view of your application pods in the link:getting-started-guide.html#about_pipelines_stage_run[stage and run] environments, resources consumed in the two environments, and the overall resources used by the application in your OpenShift Online console as follows:
 
+////
 . At the top of the page, click *Create* and then click *Deployments* to see the deployment details.
 . In *Applications*, expand *helloworldvertx* to see the application pods and the resources consumed in the *stage* and *run* environments respectively. The *Resource Usage* at the bottom of the screen displays the overall resources used by your applications in {ct}.
 +
 image::hello-world_deployments.png[Deployments page]
-. To see further deployment details in your OpenShift Online console, in either the *Stage* or *Run* environments, click the options (image:kabob.png[title="Options"]) icon and then click *View OpenShift Console*.
+////
 
-. If prompted, click btn:[LOGIN WITH RED HAT] to log in to your OpenShift Online account. When logged in, the OpenShift Online console displays an overview of your application.
-. In the left pane, click *Applications* > *Deployments* to view details about the application deployment in the appropriate environment.
+. In the *Pipelines* page click the options (image:kabob_white.png[title="Options"]) icon on the top-right of the screen and click *Open in OpenShift Console*.
+
+. If prompted, click btn:[LOGIN WITH RED HAT] to log in to your OpenShift Online account. When logged in, the OpenShift Online console displays your build pipelines.
+. In the top-left part of the screen click the *_username_-preview* drop-down list and select the *_username_-stage* project to see an overview of the deployed application in the stage environment.
++
+image::oso_application_overview.png[OpenShift Online Application Overview]
+. In the left pane, click *Applications* > *Deployments* to view details about the application deployment.
 +
 image::oso_deployments.png[OpenShift Online Deployments]
 
