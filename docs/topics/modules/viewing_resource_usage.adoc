@@ -13,4 +13,4 @@ See <<reviewing_detailed_resource_information-user-guide>> to view further detai
 
 After you create two projects, the two pods allocated to your {oso} account are used up.
 
-NOTE: Future builds may fail if the required resources are not available. See <<resetting_your_ct_account, resetting your environment>> to reclaim all these resources.
+NOTE: Future builds may fail if the required resources are not available. 
