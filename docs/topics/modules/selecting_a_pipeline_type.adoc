@@ -31,20 +31,17 @@ image::select_pipeline.png[Select a pipeline]
 
 == Deployment information
 
-You can see a detailed view of your application pods in the link:getting-started-guide.html#about_pipelines_stage_run[stage and run] environments, resources consumed in the two environments, and the overall resources used by the application in the *Deployments* view.
+You can use the *Deployments* view to see a detailed view of your application pods in the link:getting-started-guide.html#about_pipelines_stage_run[stage and run] environments, resources consumed in the two environments, and the overall resources used by the application.
+
+At the top of the page, click *Create* and then click *Deployments* to see the deployment details.
 
 This view also displays different types of information depending on the type of pipeline selected for your project as follows:
 
-. At the top of the page, click *Create* and then click *Deployments* to see the deployment details.
+* For the *Build Release, Integration Test* pipeline, the *Stage* and *Run* details contain no information because this pipeline type does not use these environments.
 
-The *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* pipeline option is recommended because this gives you the most information and control over your project.
-
-For the *Build Release, Integration Test* pipeline, the *Stage* and *Run* details contain no information because this pipeline type does not use these environments.
-
-For the *Build Release, Integration Test, Rollout to Stage* option, the *Stage* details are available, including resource usage and the version of the project.
-
+* For the *Build Release, Integration Test, Rollout to Stage* option, the *Stage* details are available, including resource usage and the version of the project.
++
 image::build_stage_deployment.png[Release and Stage]
-
-For the *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* pipeline type, the details for both *Stage* and *Run* are listed, along with resource and pod usage.
-
+* For the *Build Release, Integration Test, Rollout to Stage, Approve, Rollout to Run* pipeline type, the details for both *Stage* and *Run* are listed, along with resource and pod usage. This option is recommended because this gives you the most information and control over your project.
++
 image::build_stage_run_deployment.png[Build, stage, run deployment]
