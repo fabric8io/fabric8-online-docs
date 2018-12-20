@@ -25,8 +25,6 @@ include::using_advanced_che_features.adoc[leveloffset=+1]
 
 include::optimizing_memory_usage.adoc[leveloffset=+1]
 
-include::modules/resetting_your_ct_account.adoc[leveloffset=+1]
-
 include::importing-existing-codebase.adoc[leveloffset=+1]
 
 include::modules/next_steps.adoc[leveloffset=+1]

@@ -12,13 +12,13 @@ This part of your home screen displays the latest updates to {ct} that you need 
 ////
 
 (1) Navigate between spaces::
-The upper-left corner of {ct} displays your username. Click the drop-down to view the spaces you are associated with and to navigate between them. Generally, a space is the first thing you will create when using {ct}. See link:user-guide.html#about_spaces[about spaces] to learn about spaces.
+The upper-left corner of {ct} displays your username. Click the drop-down to view the spaces you are associated with and to navigate between them. A space is the first thing you create when using {ct}. See link:user-guide.html#about_spaces[about spaces] to learn about spaces.
 
 (2) Profile and Settings::
 The upper-right corner of {ct} displays your name. Click the drop-down to view *Settings* and *Profile* options. Use these options to link:user-guide.html#changing_user_preferences[change your profile and setting preferences]. Use the *Chat with us* option to discuss any issues you face with {ct} on the MatterMost channel.
 
 (3) Recent Spaces::
-The *Recent Spaces* area of the home screen displays all the spaces you have created. When you first use {ct} or reset the environment, this space is empty and you can click btn:[Create a Space] to quickly create a new space.
+The *Recent Spaces* area of the home screen displays all the spaces you have created. When you first use {ct} this space is empty and you can click btn:[Create a Space] to quickly create a new space.
 
 (4) Recent Workspaces::
 The *Recent Workspaces* area displays all created workspaces. See <<about_workspaces, about workspaces>> to learn more about workspaces and what you can do with them.

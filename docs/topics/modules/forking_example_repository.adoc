@@ -1,14 +1,7 @@
 [id="forking_example_repository"]
 = Forking an example repository
 
-In addition to creating applications using quickstarts, you can import an existing project into {ct}.
-
-
-.Prerequisites
-
-Reset your {ct} environment by following instructions in link:getting-started-guide.html#resetting_your_ct_account[resetting your {ct} account].
-
-.Procedure
+In addition to creating applications using quickstarts, you can import an existing project into {ct} as follows:
 
 * You can fork any one of the sample repositories in GitHub. For this tutorial, fork and use the `vertx-eventbus` repository.
 

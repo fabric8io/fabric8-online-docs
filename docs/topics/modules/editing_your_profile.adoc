@@ -12,7 +12,7 @@ In the {ct} *Profile* view, use the following steps to change your personal sett
 image::profile_menu.png[Profile menu button]
 +
 . In the *Profile* screen, click btn:[Edit Profile] to edit your profile.
-. Use the displayed dialog box to edit your *Name*, *Email*, *Company*, and *Password*, add your personal *URL* and *Bio*, and *Reset Environment*.
+. Use the displayed dialog box to edit your *Name*, *Email*, *Company*, and *Password* and add your personal *URL* and *Bio*.
 +
 NOTE: You can opt to keep your email address private from other users in {ct} by selecting the *Private* option. The default option is *Public*.
 +

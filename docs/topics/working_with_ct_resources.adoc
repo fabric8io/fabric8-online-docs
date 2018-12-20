@@ -4,5 +4,3 @@
 include::modules/viewing_resource_usage.adoc[leveloffset=+1]
 
 include::modules/reviewing_detailed_resource_information.adoc[leveloffset=+1]
-
-include::modules/resetting_your_ct_account.adoc[leveloffset=+1]
