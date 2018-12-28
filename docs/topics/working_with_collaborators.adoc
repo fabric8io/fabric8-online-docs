@@ -4,6 +4,8 @@
 
 include::modules/about_collaborators.adoc[leveloffset=+1]
 
+include::modules/about_roles_and_permissions.adoc[leveloffset=+1]
+
 include::modules/adding_collaborators.adoc[leveloffset=+1]
 
 include::modules/viewing_your_collaborators_and_managing_roles.adoc[leveloffset=+1]
