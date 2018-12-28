@@ -6,3 +6,5 @@ _Areas_ can organize related <<about_work_items,work items>> into groups to dist
 A space can include multiple areas. As an example, your space represents your software project, and each area tracks components attached to the space.
 
 Each area can have child areas which represent the sub-components for your software project.
+
+As a creator of a space you automatically become an admin for the space. Only a space owner can add areas to the space. Other Admins can view the areas, but cannot add new ones.
