@@ -1,13 +1,27 @@
-[id="associating_work_item_with_area"]
+[id="associating_work_item_with_area{context}{secondary}"]
 = Associating a work item with an area
 
-You can allocate a work item to a particular area to group it by functionality or type.
+You can group work items by type or functionality by assigning relevant areas to the work items.
 
 By default, the name of your space is set as the root area for a work item.
 
 To assign a new area for your work item:
 
-. In the *Area* field, click the root area to see the areas you can associate the work item with. The list of available areas for a space is set by the administrator for the space.
+.Prerequisites
+// for area
+ifeval::["{secondary}" == "_areas"]
+* <<creating_a_new_work_item, Create a work item>> or select an existing one.
+endif::[]
+* <<creating_a_new_area,Create appropriate child areas>> under the default root area of the space.
+
+.Procedure
+// for area
+ifeval::["{secondary}" == "_areas"]
+. In the *Plan* tab, click on a work item to view its details in the preview.
+endif::[]
+
+. In the *Area* field, click the root area to see the areas you can associate the work item with. The list of available areas for a space is set by the creator of the space.
 +
-image::wi_associate_area.png[Work Item-Area Association]
-. Select the required area and click *✓* to save the change.
+image::assign_area.png[Assign area]
++
+. Select the required area to associate the work item with that area.

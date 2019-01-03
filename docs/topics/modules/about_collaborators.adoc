@@ -1,4 +1,11 @@
 [id="about_collaborators"]
 = About collaborators
 
-_Collaborators_ are members added to a <<about_spaces,space>> to work together as a team on a project. They can be assigned tasks related to the project which are tracked using <<about_work_items,work items>>. 
+_Collaborators_ are members added to a <<about_spaces,space>> to work together as a team on a project. They can be assigned tasks related to the project which are tracked using <<about_work_items,work items>>.
+
+As the creator of a space you automatically become an admin for the space. Only the creator and admins in the space can:
+
+* Add collaborators to the space
+* View user details
+* Remove them from the space
+* Assign admin roles to collaborators
