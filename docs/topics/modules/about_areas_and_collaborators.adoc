@@ -1,0 +1,11 @@
+[id="about_areas_and_collaborators-{context}{secondary}"]
+= About areas and collaborators
+
+In {ct} the first thing a user creates is a space. As a creator of a space you automatically become an admin for the space. After you create a space you can plan your project work by:
+
+* Adding areas that focus on work related to specific functionalities or particular types
+* Add collaborators to your space and assign admin roles
+* Create work items
+* Assign work items to respective areas and collaborators
+
+NOTE: Only the creator of the space and admins in the space can view the settings tab (image:equalizer.png[title="Settings"]) to see the areas and collaborators in the space.
