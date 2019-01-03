@@ -16,8 +16,8 @@ You can view the details of collaborators in your space, assign them as admins, 
 
 .Prerequisites
 
-* <<logging_into_ct,Log in>> to {ct-link} with a valid user account.
-* <<creating_new_space-user-guide,Create a new space>> or select an existing one you have created.
+* link:user-guide.html#logging_into_ct[Log in] to {ct-link} with a valid user account.
+* link:user-guide.html#creating_new_space-user-guide[Create a new space] or select an existing one you have created.
 * Ensure you have <<adding_collaborators,added collaborators>> to your space.
 
 .Procedure
@@ -28,6 +28,6 @@ You can view the details of collaborators in your space, assign them as admins, 
 image::view_collaborators.png[View collaborators]
 +
 . You have the following options:
- * Select *View user* to view the collaborator's details such as work items and spaces associated with the collaborator.
- * Select *Make admin* to make the collaborator an admin and give the collaborator admin rights to the space.
- * Select *Remove user* to remove them from the space.
+* Select *View user* to view the collaborator's details such as work items and spaces associated with the collaborator.
+* Select *Make admin* to make the collaborator an admin and give the collaborator admin rights to the space.
+* Select *Remove user* to remove them from the space.

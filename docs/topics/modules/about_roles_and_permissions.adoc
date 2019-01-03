@@ -1,4 +1,4 @@
-[id="about_roles_and_permissions-{context}{secondary}"]
+[id="about_roles_and_permissions"]
 = About roles and permissions
 
 Admins and collaborators have the following roles and permissions in {ct}:

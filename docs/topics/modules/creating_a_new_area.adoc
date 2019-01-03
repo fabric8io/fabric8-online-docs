@@ -7,7 +7,7 @@ NOTE: As a creator of a space you automatically become an admin for the space. O
 
 .Prerequisites
 
-* <<creating_new_space-user-guide,Create a new space>> or select an existing one that you created.
+* link:user-guide.html#creating_new_space-user-guide[Create a new space] or select an existing one that you created.
 
 .Procedure
 

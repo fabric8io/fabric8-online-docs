@@ -1,7 +1,7 @@
 [id="about_areas"]
 = About areas
 
-_Areas_ can organize related <<about_work_items,work items>> into groups to distinguish between different types or functionalities that are worked on within a <<about_spaces,space>>.
+_Areas_ can organize related link:user-guide.html#about_work_items[work items] into groups to distinguish between different types or functionalities that are worked on within a link:user-guide.html#about_spaces[space].
 
 A space can include multiple child areas. As an example, your space represents your project or root area, and each child area represents the sub-components of your project or space.
 

@@ -8,13 +8,13 @@ endif::[]
 
 // for collaborator
 ifeval::["{secondary}" == "_collaborators"]
-After <<adding_collaborators,adding collaborators>> to your space, you can assign <<about_work_items,work items>> to them using the *Plan* tab:
+After <<adding_collaborators,adding collaborators>> to your space, you can assign link:user-guide.html#about_work_items[work items] to them using the *Plan* tab:
 endif::[]
 
 .Prerequisites
 // for collaborator
 ifeval::["{secondary}" == "_collaborators"]
-* <<creating_a_new_work_item, Create a work item>> or select an existing one.
+* link:user-guide.html#creating_a_new_work_item[Create a work item] or select an existing one.
 endif::[]
 * Ensure that the user is <<adding_collaborators,added as a collaborator>> to your space.
 

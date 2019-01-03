@@ -28,6 +28,8 @@ include::../meta/attributes.adoc[]
 
 * link:securing-analyzing-application.html[Analyzing and securing your application dependencies] (link:securing-analyzing-application.pdf[PDF])
 
+* link:team-collaborators-areas.html[Creating teams and areas for your project work] (link:team-collaborators-areas.pdf[PDF])
+
 * link:planning-development-project.html[Planning and tracking work items in your development project] (link:planning-development-project.pdf[PDF])
 
 * link:optimizing-ct-resources.html[Optimizing your {ct} resource usage] (link:optimizing-ct-resources.pdf[PDF])

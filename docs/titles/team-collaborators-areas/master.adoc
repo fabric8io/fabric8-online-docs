@@ -1,0 +1,10 @@
+include::meta/attributes.adoc[]
+
+= Creating teams and areas for your project work
+:author: {rhd} Documentation Team
+//:email: openshiftio@redhat.com
+:revdate: {docdate} {doctime}
+
+The guide describes working with cross functional teams in {ct} by creating areas and adding collaborators to your space. It describes the roles and permissions you can assign to the collaborators in your team.
+
+include::topics/creating_areas_and_adding_collaborators.adoc[]
