@@ -1,0 +1,37 @@
+[id="creating_areas_and_adding_collaborators"]
+= Creating areas and adding collaborators to your space
+
+include::modules/about_areas_and_collaborators.adoc[leveloffset=+1]
+
+= Creating areas in your space
+
+:context: user-guide
+
+After you create a space you can add areas to it based on functionality or type.
+
+:secondary: _areas
+
+include::modules/about_areas.adoc[leveloffset=+1]
+
+include::modules/creating_a_new_area.adoc[leveloffset=+1]
+
+include::modules/associating_work_item_with_area.adoc[leveloffset=+1]
+
+
+= Creating a team
+
+:context: user-guide
+
+You can create a team in your space by adding collaborators and assigning admins to the space.
+
+:secondary: _collaborators
+
+include::modules/about_collaborators.adoc[leveloffset=+1]
+
+include::modules/about_roles_and_permissions.adoc[leveloffset=+1]
+
+include::modules/adding_collaborators.adoc[leveloffset=+1]
+
+include::modules/viewing_your_collaborators_and_managing_roles.adoc[leveloffset=+1]
+
+include::modules/assigning_work_item_to_collaborator.adoc[leveloffset=+1]

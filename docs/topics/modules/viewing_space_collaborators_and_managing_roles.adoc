@@ -1,0 +1,33 @@
+[id="viewing_space_collaborators_and_managing_roles"]
+= Viewing collaborators in the space and managing their roles
+
+After adding collaborators, you can view their details, assign them as admins, or remove them from your space if needed.
+
+[NOTE]
+====
+Only the creator of a space, and admins in the space can:
+
+* View collaborator details
+* Remove them from the space
+* Assign admin roles to collaborators
+====
+
+You can view the details of collaborators in your space, assign them as admins, or remove them from the space as follows:
+
+.Prerequisites
+
+* <<logging_into_ct,Log in>> to {ct-link} with a valid user account.
+* <<creating_new_space-user-guide,Create a new space>> or select an existing one you have created.
+* Ensure you have <<adding_collaborators,added collaborators>> to your space.
+
+.Procedure
+
+. Click the settings tab (image:equalizer.png[title="Settings"]) at the top of the screen, and then click *Collaborators* to see the list of collaborators in your space.
+. From the displayed list click the options icon (image:kabob_white.png[title="Options"]) next to the collaborator's email ID.
++
+image::view_collaborators.png[View collaborators]
++
+. You have the following options:
+ * Select *View user* to view the collaborator's details such as work items and spaces associated with the collaborator.
+ * Select *Make admin* to make the collaborator an admin and give the collaborator admin rights to the space.
+ * Select *Remove user* to remove them from the space.

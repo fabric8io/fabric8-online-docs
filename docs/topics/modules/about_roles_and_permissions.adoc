@@ -1,0 +1,27 @@
+[id="about_roles_and_permissions-{context}{secondary}"]
+= About roles and permissions
+
+Admins and collaborators have the following roles and permissions in {ct}:
+
+[cols="3,3,3,3"]
+|===
+^| {ct} components|Space Creator (Default Admin)|Admin|Collaborators
+
+^a|*Areas*
+a|Can view and create new child areas
+a|Can only view areas, cannot create them
+a|Cannot view Settings screen
+
+^a|*Collaborators*
+a|Can add and remove collaborators and assign admin role to collaborators
+a|Can add and remove collaborators and assign admin role to collaborators
+a|Cannot view Settings screen
+
+////
+To Do when implemented.
+// a|*Work items*
+a|
+a|
+a|
+////
+|===

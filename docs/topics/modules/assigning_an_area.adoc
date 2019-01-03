@@ -4,12 +4,12 @@
 You can group work items by type or functionality by assigning relevant areas to the work items as follows:
 
 .Prerequisites
-* Ensure that you have <<creating_a_new_work_item, created a work item>> for the space.
+* <<creating_a_new_work_item, Create a work item>> or select an existing one.
+* <<creating_a_new_area,Create appropriate child areas>> under the default root area of the space.
 
 .Procedure
-. Click the *Plan* tab to view a list of work items for your space.
-. Click on a work item to view its details in the preview.
-. Click the *Area* field to view a list of areas to assign to the space. By default, your root area is assigned to a new work item.
+. In the *Plan* tab, click on a work item to view its details in the preview.
+. Click the  drop-down next to the *Area* field to view a list of areas to assign to the space. By default, your root area is assigned to a new work item.
 +
 image::assign_area.png[Assign area]
 +

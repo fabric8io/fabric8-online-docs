@@ -1,8 +1,9 @@
 [id="working_with_areas"]
 = Working with areas
+:secondary: _areas
 
 include::modules/about_areas.adoc[leveloffset=+1]
 
 include::modules/creating_a_new_area.adoc[leveloffset=+1]
 
-include::modules/assigning_an_area.adoc[leveloffset=+1]
+include::modules/associating_work_item_with_area.adoc[leveloffset=+1]
