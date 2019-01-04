@@ -5,6 +5,6 @@ include::meta/attributes.adoc[]
 //:email: openshiftio@redhat.com
 :revdate: {docdate} {doctime}
 
-The guide describes working with cross functional teams in {ct} by creating areas and adding collaborators to your space. It describes the roles and permissions you can assign to the collaborators in your team.
+The guide describes working with cross functional teams in {ct} by creating areas, adding collaborators to your space, and assigning them work items to execute your project work. It also describes the roles and permissions you can assign to the collaborators in your team.
 
-include::topics/creating_areas_and_adding_collaborators.adoc[]
+include::topics/project_planning_using_areas_collaborators_and_work_items.adoc[]

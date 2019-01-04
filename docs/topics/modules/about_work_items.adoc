@@ -5,7 +5,8 @@ Work items are measurable units of work within a link:user-guide.html#about_spac
 
 The {ct} planner is a task or work item tracker to plan and execute your project work. It provides an _Agile_ development process based planning template to create different types of work items to track your work.
 
-You can use the planner to change the attributes of a work item, associate them with iterations, update their progress, and filter them according to your requirements.
+You can use the planner to change the attributes of a work item, associate them with iterations and areas.
+You can assign them to collaborators in your space, track their progress, and filter them according to your requirements.
 
 The planner displays all work items in a flat or hierarchical list. These work items are grouped based on the agile work item types. It lists the link:user-guide.html#about_iterations[Iterations] and the work items associated to these iterations enabling effective execution of the project plan.
 
