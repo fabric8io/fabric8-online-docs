@@ -1,0 +1,39 @@
+[id="project_planning_using_areas_collaborators_and_work_items"]
+= Project planning using areas, collaborators, and work items
+:context: area-collab
+
+In {ct} the first thing a user creates is a space. As a creator of a space you automatically become an admin for the space. After you create a space you can plan your project work by:
+
+* Adding areas that focus on work related to specific functionalities or particular types
+* Adding collaborators to your space and assigning some of them admin roles
+* Creating work items
+* Assigning work items to respective areas and collaborators
+
+NOTE: Only the creator of the space and admins in the space can view the settings tab (image:equalizer.png[title="Settings"]) to see the areas and collaborators in the space.
+
+
+include::modules/about_areas.adoc[leveloffset=+1]
+include::modules/about_collaborators.adoc[leveloffset=+1]
+include::modules/about_work_items.adoc[leveloffset=+1]
+include::modules/about_roles_and_permissions.adoc[leveloffset=+1]
+
+
+= Creating areas in your space
+:secondary: _areas
+
+After you create a space you can add areas to it based on functionality or type.
+
+include::modules/creating_a_new_area.adoc[leveloffset=+1]
+
+include::modules/associating_work_item_with_area.adoc[leveloffset=+1]
+
+= Creating a team
+:secondary: _collaborators
+
+You can create a team in your space by adding collaborators and assigning admins to the space.
+
+include::modules/adding_collaborators.adoc[leveloffset=+1]
+
+include::modules/viewing_space_collaborators_and_managing_roles.adoc[leveloffset=+1]
+
+include::modules/assigning_work_item_to_collaborator.adoc[leveloffset=+1]
