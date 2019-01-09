@@ -2,9 +2,7 @@
 = Modifying a work item
 :secondary: _modifywi
 
-After you <<creating_a_new_work_item,create a new work item>> the planner provides you the option to preview your work item or see a detailed view of the work item.
-
-You can use preview or the detailed view of your work item to modify your work item as required.
+After you <<creating_a_new_work_item,create a new work item>> the planner provides you the following options to view the work item and further modify it as required:
 
 * *Preview*: Click the title of a work item to preview the work item on the right of your screen.
 +

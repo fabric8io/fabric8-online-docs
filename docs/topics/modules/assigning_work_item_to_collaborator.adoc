@@ -1,8 +1,8 @@
 [id="assigning_work_item_to_collaborator{context}{secondary}"]
 = Assigning a work item to a collaborator
 
-// for planner
-ifeval::["{secondary}" == "_modify"]
+// for planner user story
+ifeval::["{secondary}" == "_modifywi"]
 You can assign a work item to any of the collaborators in your space.
 endif::[]
 

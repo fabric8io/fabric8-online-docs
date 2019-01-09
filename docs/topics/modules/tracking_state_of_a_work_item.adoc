@@ -6,12 +6,8 @@ You can set the state for each of your work items enabling you to track the stat
 By default, a freshly created work item is assigned the *new* state.
 You can track and update the status of work items as you progress through your task list as follows:
 
-. Click the *new* drop-down list to see a list of states for the work item. You have the following options: *open*, *in progress*, *resolved* and *closed*.
+. Click the *new* drop-down list to see a list of states for the work item. You have the following options: *Open*, *In Progress*, *Deferred*, *No Plan to Implement*, *Resolved* and *Closed*..
 +
 image::wi_state.png[Work Item state]
 +
 . Select the appropriate state based on the completion level of your work item. The state for the work item gets updated.
-
-NOTE: By default, closed work items are not listed in the work item list. Select the *Show Completed* check box to see the closed work items.
-
-//TODO: Cases of state will be changed, change screenshot accordingly.
