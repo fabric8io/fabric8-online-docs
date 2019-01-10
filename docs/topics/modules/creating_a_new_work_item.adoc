@@ -1,7 +1,7 @@
 [id="creating_a_new_work_item"]
 = Creating a new work item
 
-The {ct} planner provides a planning template, based on the agile development process, for managing iterative and incremental software development. As per the agile guided hierarchy you can create work items of the type, Theme, Epic, Story, Task, Impediment, and Defect.
+The {ct} planner provides a planning template based on the agile development process for managing iterative and incremental software development.
 
 You can create work items using the quick-add or the in-line add options:
 
@@ -19,7 +19,7 @@ NOTE: The tree view is the default view of the planner. Clear the *Show Tree* ch
 image::create_theme.png[Create Theme]
 .. Press kbd:[Enter] to create the work item. Alternatively, click btn:[Add and open] to create the work item and see the detailed view for the work item.
 
-* Use the in-line add option in addition to the quick-add option to create agile-based, hierarchical, work items with parent-child relations as follows:
+* Use the in-line add option in addition to the quick-add option to create agile-based, hierarchical work items with parent-child relations as follows:
 
 . In the *Plan* tab, use the quick-add option to create a high level, planning oriented *Theme*, as follows:
 .. In the *Add Work Item* pane, specify an appropriate title for the *Theme* in the *Work Item Title* field.
@@ -45,5 +45,5 @@ You can also create child *Impediment* and *Defect* type of work items for the *
 
 For more information see:
 
-* <<modifying_a_work_item>> to add details to your work item
+* <<updating_a_work_item>> to add details to your work item
 * <<working_with_iterations>> to execute the work items using iterations

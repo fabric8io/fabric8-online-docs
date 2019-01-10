@@ -25,9 +25,6 @@ image::wi_multiple_filters.png[Multiple Filters]
 
 . After you are satisfied with the applied filters, for future use, click *Save* and add a name to the filter to save the filter under *My Filters* in the left pane.
 In the above example, save the multiple filters you added as `Open Tasks` to track all your open tasks in the future.
-+
-image::wi_my_filter.png[My Filters]
-+
 . You can modify an existing filter as follows:
 .. Select the filter on the left pane to see the filtered work item list.
 .. Add another filter or delete an existing filter as required and save the filter with a new name. In the above example, select the *Open Tasks* filter and add the filter *Assignee: _your username_* to see open tasks assigned to you. Save this filter as `My Open Tasks` for future use.

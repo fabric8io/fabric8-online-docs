@@ -1,20 +1,11 @@
 [id=viewing_work_items]
 = Viewing work items
 
-You can use the planner to create work items, group them into work item type groups for efficient planning, and associating them with iterations for effective execution.
+You can use the planner to create work items, group them into work item type groups for efficient planning, and associate them with iterations for effective execution.
 
-The _left pane_ of the planner displays the work item type groups determined by the space template, the iterations you create, and the filters you save.
-This pane can be hidden or displayed using the *Hide Panel* or *Show Panel* icon as required.
+The _left pane_ of the planner displays the iterations you create and the filters you save. Use the *Hide Panel* or *Show Panel* icon to hide or display the panel as required.
 
 The _right pane_ displays the list of work items in your space that can be viewed either using the _tree view_ or the _flat view_.
-
-[NOTE]
-====
-* By default, closed work items are not listed in the work item list. Select the *Show Completed* check box to see the closed work items.
-* Use the gear icon next to the *Add and Open* button to select the attributes you want to see for your list of work items.
-+
-image:wi_toggle_attributes.png[Display Work Item Attributes]
-====
 
 Using the tree view::
 The tree view is the default view of the planner. Ensure that the *Show Tree* check box is selected to see the tree view.
@@ -25,20 +16,23 @@ The tree view:
 * Provides you the context of the work item in relation to the broader project goals.
 * Helps you create child work items quickly based on the development template you select.
 
-NOTE: The exact count of the work items that match your filter criteria or iteration are displayed above the *Add Work Item* pane. Since the tree view displays the work items matching your filter and their child and parent work items the number of work items displayed may seem to vary from that displayed in the list.
+NOTE: The exact count of the work items that match your filter criteria or iteration are displayed above the *Add Work Item* pane. Since the tree view displays the work items matching your filter and their parent and child work items, the number of work items displayed may seem to vary from that displayed in the list.
 
 Using the flat view::
-Use the flat list view to track work items that belong to a particular iteration or work item type group as follows:
+Use the flat list view to track work items that belong to a particular iteration as follows:
 . Clear the *Show Tree* check box to see the flat list view.
-. Select the required iteration or work item type group in the left pane of the planner to see the list of work items that belong to the iteration or work item type group respectively.
+. Select the required iteration in the left pane of the planner to see the list of work items associated to the iteration.
+
+[NOTE]
+====
+* By default, closed work items are not listed in the work item list. Select the *Show Completed* check box on the upper-right of the screen to see the closed work items.
+* Use the gear icon next to the *Add and Open* button to select the attributes you want to see for your list of work items.
++
+image:wi_toggle_attributes.png[Display Work Item Attributes]
+====
 
 Reordering work items::
-You can reorder the work items in the list according to their priority or the order of execution by dragging the work items to the required position as follows:
-
-. Move the mouse pointer over the work item you want to reorder towards the vertical blue line to the left of the work item. The pointer changes to a move-cursor.
-. Use the move-cursor to drag the work item to the required position in the list.
-+
-image::wi_drag_drop.png[Reorder Work Items]
+You can reorder the work items in the list according to their priority or the order of execution by dragging the work items to the required position.
 
 NOTE: In the tree view, only work items which are on the same level in the tree hierarchy can be moved.
 
