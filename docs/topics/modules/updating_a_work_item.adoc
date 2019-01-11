@@ -1,7 +1,5 @@
 [id="updating_a_work_item"]
 = Updating a work item
-:secondary: _modifywi
-//TODO <update above for smaller assembly and UG>
 
 After you <<creating_a_new_work_item,create a new work item>> click the detailed view icon (image:wi_detailed_view_icon.png[Detailed View Icon]) next to the work item to further modify it's attributes as follows:
 
@@ -32,3 +30,5 @@ NOTE: Before closing the detailed view ensure that all your changes to the work 
 NOTE: In addition to the standard link:https://access.redhat.com/help/markdown[markdown syntax], refer to link:https://github.com/russross/blackfriday#extensions[these extensions] for more information about the syntax used in the *Description* and *Comments* fields.
 
 // . To delete a work item, use the delete icon (image:wi_delete_icon.png[Delete Work Item Icon]) on the top-left of the screen.
+
+See link:planning-development-project.html#modifying_a_work_item[modifying a work item] for detailed information about modifying a work item

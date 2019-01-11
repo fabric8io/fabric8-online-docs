@@ -42,8 +42,3 @@ image::add_epic.png[Add Epic]
 image::create_story_task.png[Create Story and Tasks]
 +
 You can also create child *Impediment* and *Defect* type of work items for the *Theme*, *Epic*, or *Story* type of work items as required.
-
-For more information see:
-
-* <<updating_a_work_item>> to add details to your work item
-* <<working_with_iterations>> to execute the work items using iterations

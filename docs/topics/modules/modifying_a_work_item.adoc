@@ -1,6 +1,5 @@
 [id="modifying_a_work_item"]
 = Modifying a work item
-:secondary: _modifywi
 
 After you <<creating_a_new_work_item,create a new work item>> the planner provides you the following options to view the work item and further modify it as required:
 

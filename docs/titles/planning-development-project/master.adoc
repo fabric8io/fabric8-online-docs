@@ -9,4 +9,4 @@ This document provides instructions on using the {ct} planner to plan and track 
 
 //later include modules on query builder and board view. Probably name this assembly as workitem: planning and tracking
 
-include::topics/work_item_tracking_planning.adoc[]
+include::topics/planning_and_tracking_work_items.adoc[]
