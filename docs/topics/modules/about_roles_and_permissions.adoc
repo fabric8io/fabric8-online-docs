@@ -17,11 +17,10 @@ a|Can add and remove collaborators and assign admin role to collaborators
 a|Can add and remove collaborators and assign admin role to collaborators
 a|Cannot view Settings screen
 
-////
-To Do when implemented.
-// a|*Work items*
-a|
-a|
-a|
-////
+//To Do when implemented.
+//a|*Work items*
+//a|
+//a|
+//a|
+
 |===

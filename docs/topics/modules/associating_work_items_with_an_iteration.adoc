@@ -7,6 +7,10 @@ By default, the name of your space is set as the root iteration for a work item.
 
 To associate a work item with a relevant iteration:
 
+.Prerequisites
+Create appropriate child iterations for your space.
+
+.Procedure
 . In the *Iteration* field, click the root iteration to see the iterations you can associate the work item with.
 +
 image::associate_iteration.png[Work Item-Iteration Association]

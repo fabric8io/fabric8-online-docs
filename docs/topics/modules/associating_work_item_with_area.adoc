@@ -12,7 +12,7 @@ To assign a new area for your work item:
 ifeval::["{secondary}" == "_areas"]
 * link:user-guide.html#creating_a_new_work_item[Create a work item] or select an existing one.
 endif::[]
-* <<creating_a_new_area,Create appropriate child areas>> under the default root area of the space.
+* link:user-guide.html#creating_a_new_area[Create appropriate child areas] under the default root area of the space.
 
 .Procedure
 // for area

@@ -6,8 +6,8 @@ include::modules/about_work_items.adoc[leveloffset=+1]
 
 include::modules/creating_a_new_work_item.adoc[leveloffset=+1]
 
+include::modules/updating_a_work_item.adoc[leveloffset=+1]
+
 include::modules/viewing_work_items.adoc[leveloffset=+1]
 
 include::modules/filtering_work_items.adoc[leveloffset=+1]
-
-include::modules/modifying_a_work_item.adoc[leveloffset=+1]

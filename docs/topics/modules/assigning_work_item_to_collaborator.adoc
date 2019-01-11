@@ -1,14 +1,11 @@
 [id="assigning_work_item_to_collaborator{context}{secondary}"]
 = Assigning a work item to a collaborator
 
-// for planner
-ifeval::["{secondary}" == "_modify"]
 You can assign a work item to any of the collaborators in your space.
-endif::[]
 
 // for collaborator
 ifeval::["{secondary}" == "_collaborators"]
-After <<adding_collaborators,adding collaborators>> to your space, you can assign link:user-guide.html#about_work_items[work items] to them using the *Plan* tab:
+After link:user-guide.html#adding_collaborators[adding collaborators] to your space, you can assign link:user-guide.html#about_work_items[work items] to them using the *Plan* tab:
 endif::[]
 
 .Prerequisites
@@ -16,7 +13,7 @@ endif::[]
 ifeval::["{secondary}" == "_collaborators"]
 * link:user-guide.html#creating_a_new_work_item[Create a work item] or select an existing one.
 endif::[]
-* Ensure that the user is <<adding_collaborators,added as a collaborator>> to your space.
+* Ensure that the user is link:user-guide.html#adding_collaborators[added as a collaborator] to your space.
 
 .Procedure
 // for collaborator

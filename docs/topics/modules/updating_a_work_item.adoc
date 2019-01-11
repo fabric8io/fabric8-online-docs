@@ -1,0 +1,34 @@
+[id="updating_a_work_item"]
+= Updating a work item
+
+After you <<creating_a_new_work_item,create a new work item>> click the detailed view icon (image:wi_detailed_view_icon.png[Detailed View Icon]) next to the work item to further modify it's attributes as follows:
+
+image::wi_detailed_view.png[Work Item Detailed View]
+
+NOTE: Before closing the detailed view ensure that all your changes to the work item are individually saved.
+
+. To modify the title of the work item, click the title of the work item, make your changes, and press kbd:[Enter] to save the change.
+. To change the work item type, in the *Type* field, click the work item type and select the appropriate type to update the work item.
+. To track the state of completion of your work item, in the *State* field, click the *new* drop-down list and select the appropriate state. By default, a freshly created work item is assigned the *new* state.
+
+. To assign the work item to collaborators in the space, in the *Assignees* field, click *Add Assignee* to select the collaborators from the drop-down list and exit the dialog box to save the selection. The list of available collaborators for a space is set by the creator or admins for a space.
+
+. To associate the work item with an appropriate area, in the *Area* field, click the root area to select the required child area from the drop-down list. The list of available areas for a space is set by the creator of the space.
+
+. To assign the iteration in which the work item is to be completed, in the *Iteration* field, click the root iteration to select the appropriate child iteration from the drop-down list.
+
+. To assign appropriate labels to the work item, in the *Labels* field, click *Assign label(s)* to see the available labels in your space, select the suitable labels, and close the dialog box to save the selection. You can click *Create new label* to add new labels to the space and click on the color to assign a new color to the label.
+. Use the *Description* field to add more information about the work item. Preview the rendered markdown of your description in the *Preview* tab and click *✓* to save the description. You can use the pencil icon to edit your saved description.
+. Expand the *Links* section to see *Existing links* or create links to other work items as follows:
+
+.. In the *Create Link* section click *blocks* to select the appropriate relationship you want to establish between the work items.
+.. Click *None* and type the title or the ID to search and select the work item you want to link this work item to.
+.. Click *Create Link* to save the relationship. The linked work item is now listed under *Existing links*.
+
+. Use the *Comments* field, to add comments to the work item. Preview the rendered markdown of your description in the *Preview* tab and click *✓* to submit your comment. You can use the pencil icon to edit your saved comment.
+
+NOTE: In addition to the standard link:https://access.redhat.com/help/markdown[markdown syntax], refer to link:https://github.com/russross/blackfriday#extensions[these extensions] for more information about the syntax used in the *Description* and *Comments* fields.
+
+// . To delete a work item, use the delete icon (image:wi_delete_icon.png[Delete Work Item Icon]) on the top-left of the screen.
+
+See link:planning-development-project.html#modifying_a_work_item[modifying a work item] for detailed information about modifying a work item
