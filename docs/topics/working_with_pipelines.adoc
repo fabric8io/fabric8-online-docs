@@ -15,4 +15,4 @@ include::modules/viewing_build_pipeline_logs.adoc[leveloffset=+1]
 
 include::modules/configuring_pipelines.adoc[leveloffset=+1]
 
-include::modules/viewing_pipeline_projects_in_oso.adoc[leveloffset=+1]
+include::modules/viewing_oso_projects.adoc[leveloffset=+1]
