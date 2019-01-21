@@ -23,6 +23,8 @@ Create a new space as follows:
 //+
 //If your account has an existing space or you are a collaborator in a space, in the *Recent Spaces* section of your {ct} home page, click *+* to create an additional space.
 +
+image::create_space.png[Create new space]
++
 // for importing-existing-codebase
 ifeval::["{context}" == "importing-existing-codebase"]
 //. In the {ct} home page, click btn:[Import Existing Codebase].
@@ -45,8 +47,12 @@ endif::[]
 ifeval::["{context}" == "user-guide"]
 . In the *Create a New Space* dialog box, type a unique name for your space and click btn:[Ok].
 endif::[]
-
 +
-image::create_space.png[Create new space]
+// for create-sb-user-story
+ifeval::["{context}" == "create-sb-app"]
+. In the *Create a New Space* dialog box, type a unique name for your space and click btn:[Ok].
+endif::[]
++
+
 
 You have now created your first space.

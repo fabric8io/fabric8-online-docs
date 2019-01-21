@@ -7,4 +7,4 @@ include::meta/attributes.adoc[]
 
 This document describes the creation of a Vert.x quickstart application using {ct} provided codebases. These codebases lay the foundation and provide the source code and specifications for you to create a new application.
 
-include::topics/creating_new_space_and_vertx_quickstart_application.adoc[]
+include::topics/creating_a_space_and_springboot_quickstart_application.adoc[]
