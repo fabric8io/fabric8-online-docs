@@ -12,9 +12,11 @@ image::start_creating_apps.png[Start creating apps]
 
 // for hello-world
 ifeval::["{context}" == "hello-world"]
-. In the *Name your application* field, type `helloworldvertx`.
+. In the *Create an application* screen:
 
-. Select the *Create a new codebase* radio button and click btn:[Continue].
+.. In the *Name your application* field, type `helloworldvertx`.
+
+.. Select the *Create a new codebase* radio button and click btn:[Continue].
 //. The *Create a new codebase* radio button is auto-selected since you clicked btn:[Create New Codebase] when you first created the space. Click btn:[Continue].
 
 . Select the mission and runtime for your new project:
@@ -29,9 +31,11 @@ endif::[]
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
-. In the *Name your application* field, type a unique name for your new project. Ensure that the application name adheres to the listed *Naming Requirements*. For this example type *nodejs-app* to create a Node.js application.
+. In the *Create an application* screen:
 
-. Select the *Create a new codebase* radio button and click btn:[Continue].
+.. In the *Name your application* field, type a unique name for your new project. Ensure that the application name adheres to the listed *Naming Requirements*. For this example type *nodejs-app* to create a Node.js application.
+
+.. Select the *Create a new codebase* radio button and click btn:[Continue].
 //. The *Create a new codebase* radio button is auto-selected since you clicked btn:[Create New Codebase] when you first created the space. Click btn:[Continue].
 
 . Select the mission and runtime for your new project:
@@ -64,6 +68,7 @@ ifeval::["{context}" == "create-sb-app"]
 image::sb_mission_runtime.png[Choose mission and runtime]
 endif::[]
 
+[start=3]
 . In the *Select Pipeline* section, select the first option, then click the blue arrow to continue to the next step. The first option is suggested for most use cases. For more information see link:user-guide.html#working_with_pipelines[working_with_pipelines].
 +
 image::select_pipeline.png[Select a pipeline]
@@ -74,35 +79,36 @@ image::select_pipeline.png[Select a pipeline]
 ifeval::["{context}" == "hello-world"]
 image::hw_authorize_git_provider.png[Authorize GitHub]
 endif::[]
-
++
 // for user-guide
 ifeval::["{context}" == "user-guide"]
 image::ug_authorize_git_provider.png[Authorize GitHub]
 endif::[]
-
-
++
 // for create-sbapp-user-story
 ifeval::["{context}" == "create-sb-app"]
 image::sb_authorize_git_provider.png[Authorize GitHub]
 endif::[]
 
+[start=5]
 . The next screen displays a summary of your application options. Scroll down in your browser to view the *Application Information* section. If desired, you can change the *Application Name*, *Version*, and *Group ID* for your new application at this step. For this example, do not edit these options.
 +
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 image::hw_app_information.png[Application information]
 endif::[]
-
++
 // for user-guide
 ifeval::["{context}" == "user-guide"]
 image::ug_app_information.png[Application information]
 endif::[]
-
++
 // for create-sbapp-user-story
 ifeval::["{context}" == "create-sb-app"]
 image::sb_app_information.png[Application information]
 endif::[]
 
+[start=6]
 . Click btn:[Set Up Application] to create the new application. The progress screen displays a confirmation message when your application is ready.
 . Once your application is ready, you can do one of the following:
 
@@ -113,21 +119,20 @@ endif::[]
 // for hello-world
 ifeval::["{context}" == "hello-world"]
 image::hw_application_ready.png[Application ready]
-
++
 For this example, click btn:[View Pipeline] to see the pipelines for your application. Your new Vert.X application is now created in your space and deployed to the staging environment.
 endif::[]
-
++
 // for user-guide
 ifeval::["{context}" == "user-guide"]
 
 image::ug_application_ready.png[Application ready]
-
-For this example, click btn:[Return to your dashboard] to see your space dashboard. Your new project is now created in your space and your space dashboard now displays your new codebase:
-
 +
+For this example, click btn:[Return to your dashboard] to see your space dashboard. Your new project is now created in your space and your space dashboard now displays your new codebase.
+
 image::space_dash_after_app_creation.png[Space dashboard view after creating an application]
 endif::[]
-
++
 // for create-sbapp-user-story
 ifeval::["{context}" == "create-sb-app"]
 image::sb_application_ready.png[Application ready]
