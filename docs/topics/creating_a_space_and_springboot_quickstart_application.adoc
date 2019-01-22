@@ -1,7 +1,7 @@
-[id="creating_new_space_and_vertx_quickstart_application"]
-= Creating a new space and a new Vert.x quickstart application
+[id="creating_a_space_and_springboot_quickstart_application"]
+= Creating a space and a new Spring Boot quickstart application
 
-:context: hello-world
+:context: create-sb-app
 
 After creating an account, you must create a Space to add or create a project.
 
@@ -24,6 +24,8 @@ include::modules/viewing_oso_projects.adoc[leveloffset=+1]
 Now that you have created a project, you can edit the code and stage the changes.
 
 include::modules/creating_che_workspace.adoc[leveloffset=+1]
+
+:context: hello-world
 
 include::modules/running_your_project_in_the_che_workspace.adoc[leveloffset=+1]
 

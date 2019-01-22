@@ -25,7 +25,5 @@ See link:getting-started-guide.html#create_run_command_macro[create_run_command_
 image::run_proj.png[Run project link]
 +
 . In the application, enter a name in the *Name* field and click btn:[Invoke] to test the application.
-+
-image::{context}_john.png[Testing the application]
-+
+
 This is the same version of the application that the pipeline deployed to *Stage* and you subsequently promoted to *Run*. The URL for this build of the application is different from the URLs used by OpenShift Online for *Stage* and *Run*. This is your private sandbox hosted within Che. You can still share this URL with others and interactively debug the application while they run it in their browser.
