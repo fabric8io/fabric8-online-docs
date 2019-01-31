@@ -1,16 +1,13 @@
 [id="stopping_existing_workspaces"]
 = Stopping existing workspaces
 
-At this point in the tutorial, we are going to create a workspace for the new SpringBoot project. However, the OpenShift Online Free Tier supports one running workspace at a time and the workspace we created for the Hello World project can still be running. Use the following instructions to ensure that the old workspace is stopped before creating a new workspace for your SpringBoot project:
+The OpenShift Online Free Tier supports one running workspace at a time and a workspace created earlier can still be running and result in errors while creating the new workspace. Use the following instructions to ensure that the old workspace is stopped before creating a new workspace for your application:
 
 [discrete]
 == Procedure
 
 . In the dashboard of your space, click *Create*.
 . In the *Codebases* view, click btn:[Open] next to the workspace of your earlier project. Allow several minutes for the project to load.
-+
-image::codebase_list.png[List of Codebases]
-+
 . Stop the current workspace in one of two ways:
 .. Click *Workspace* from the top of the page and click *Stop*.
 +
@@ -21,11 +18,7 @@ image::stop_workspace_button.png[Stop Workspace Menu]
 +
 image::che_dash.png[Che Dashboard Link From Within a Workspace]
 +
-A green dot next to the name of the workspace indicates it is running.
-+
-image::workspace_eclipse.png[List of Workspaces]
+A green circle next to the name of the workspace indicates it is running.
 ... Click the stop icon under *ACTIONS* to stop the running workspace.
-+
-image::stop_button_ws.png[Stop Button for Workspace]
 
-Your old workspace resources are now reclaimed in your OpenShift Online account. You can now return to the workspace view in {ct} and create a workspace for your SpringBoot project.
+Your old workspace resources are now reclaimed in your OpenShift Online account. You can now return to the workspace view in {ct} and create a workspace for your new application.
