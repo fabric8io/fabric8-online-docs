@@ -6,7 +6,7 @@ When your Che workspace loads, edit your project code as follows:
 . In your new workspace, click the *Terminal* tab and run the following commands:
 +
 ----
-cd springboot-app
+cd spring-boot-app
 mvn test
 ----
 +
