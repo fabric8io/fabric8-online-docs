@@ -40,5 +40,5 @@ Use this page to review the memory usage for your {ct} project. Note this inform
 
 // for GSG
 ifeval::["{context}" == "optimizing_memory_usage"]
-Save the details to compare after following the steps in <<reducing_project_memory_usage-{context}>>.
+Save the details to compare after following the steps in <<reducing_application_memory_usage-{context}>>.
 endif::[]

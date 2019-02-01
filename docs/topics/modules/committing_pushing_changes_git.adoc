@@ -5,7 +5,7 @@
 
 After making the required changes to your code, commit and push the modifications to your project GitHub repository.
 
-IMPORTANT: Before committing your changes, ensure that your project pipeline build is promoted and at the *Rollout to Run* stage.
+IMPORTANT: Before committing your changes, ensure that your project pipeline build is link:getting-started-guide.html#approving_your_application[promoted and at the *Rollout to Run* stage] .
 
 // for user-guide
 ifeval::["{context}" == "user-guide"]
