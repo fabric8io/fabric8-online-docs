@@ -9,9 +9,17 @@ include::modules/creating_new_space.adoc[leveloffset=+1]
 
 include::modules/creating_new_application.adoc[leveloffset=+1]
 
-include::modules/reviewing_your_staged_application.adoc[leveloffset=+1]
+Now that you have created a Spring Boot application, you can edit the code and stage the changes.
 
-include::modules/approving_your_application.adoc[leveloffset=+1]
+include::modules/creating_che_workspace.adoc[leveloffset=+1]
+
+include::modules/stopping_existing_workspaces.adoc[leveloffset=+1]
+
+include::modules/editing_your_spring_boot_codebase.adoc[leveloffset=+1]
+
+include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
+
+include::modules/reviewing_publishing_changes.adoc[leveloffset=+1]
 
 include::modules/viewing_build_pipeline_logs.adoc[leveloffset=+1]
 
@@ -20,17 +28,3 @@ include::modules/viewing_application_deployment_details.adoc[leveloffset=+1]
 include::modules/viewing_codebase_github.adoc[leveloffset=+1]
 
 include::modules/viewing_oso_projects.adoc[leveloffset=+1]
-
-Now that you have created a project, you can edit the code and stage the changes.
-
-include::modules/creating_che_workspace.adoc[leveloffset=+1]
-
-:context: hello-world
-
-include::modules/running_your_project_in_the_che_workspace.adoc[leveloffset=+1]
-
-include::modules/changing_quickstart_code.adoc[leveloffset=+1]
-
-include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
-
-include::modules/reviewing_publishing_changes.adoc[leveloffset=+1]

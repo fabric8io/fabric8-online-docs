@@ -1,16 +1,14 @@
 [id="creating_che_workspace-{context}"]
 = Creating a Che workspace
+// for spring-boot
+ifeval::["{context}" == "create-sb-app"]
+If you are not already in the Che workspace in a new browser tab, create a new Che workspace.
+endif::[]
 
-To edit your application codebase, create a new link:getting-started-guide.html#about_workspaces[Che workspace]:
+Create a new link:getting-started-guide.html#about_workspaces[Che workspace] to edit your application codebase as follows:
 
 . Click *Create* from the top of the {ct} page. The default view for this tab is *Codebases*.
 
-+
-// for spring-boot
-ifeval::["{context}" == "spring-boot"]
-Return to the *Codebases* view in your {ct} browser tab to create a new workspace.
-endif::[]
-+
 . In the *WORKSPACES* column, click *Create workspace* for your project. The workspace gets created.
 . Click btn:[Open] next to the workspace to see your Che workspace in a new browser tab.
 +

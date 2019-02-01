@@ -1,12 +1,12 @@
-[id="using_workspace_spring_boot_project"]
-= Using a workspace for the Spring Boot project
+[id="editing_your_spring_boot_codebase"]
+= Editing your Spring Boot codebase
 
 When your Che workspace loads, edit your project code as follows:
 
 . In your new workspace, click the *Terminal* tab and run the following commands:
 +
 ----
-cd myspringboot
+cd spring-boot-app
 mvn test
 ----
 +
@@ -19,7 +19,7 @@ image::maven_test_success.png[Maven Test Success]
 image::sb_tree_view.png[Spring Boot Folders]
 +
 . Double-click the `GreetingController.java` file to view it in the editor.
-. Add a line break after line 37, then type `@` and then use kbd:[Ctrl+Space] to view a list of context-sensitive options.
+. Add a line break after line 43, then type `@` and then use kbd:[Ctrl+Space] to view a list of context-sensitive options.
 +
 image::sb_context_options.png[Context Sensitive Help]
 +
@@ -36,7 +36,7 @@ image::sb_context_options.png[Context Sensitive Help]
 +
 The added code appears as follows:
 +
-image::bs_code_add.png[Code Added to Spring Boot Project]
+image::sb_code_add.png[Code Added to Spring Boot Project]
 +
 . Save your changes using kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS).
 
@@ -55,11 +55,7 @@ image::sb_app_test.png[SpringBoot App Test]
 ----
 /api/goodbye?name=Samwell%20Gamgee
 ----
-+
-The URL is now as follows:
-+
-image::append_url.png[Appended URL]
-+
+
 . If successful, the amended preview URL displays the following:
 +
 image::samwise_result.png[Preview URL Result]
