@@ -18,8 +18,14 @@ endif::[]
 To review the build and publish your changes:
 
 . Return to the {ct} browser tab.
-. Click *Create* and then *Pipelines* to view the build pipelines. Wait for the build pipeline to progress to the *Approve* stage.
-. Click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Stage* in the displayed pipeline to view your staged application.
+. Click *Analyze* to see your space dashboard. The *Applications* widget displays the details of your deployed applications in the *Stage* and *Run* environments.
+. In the *Stage* section of the *Applications* widget, click the options icon (image:kabob_white.png[title="Options icon"]) next to the deployed application to view your application in the stage environment and test it.
++
+// for spring-boot
+//ifeval::["{context}" == "create-sb-app"]
+//The image below shows the first build, we need an image when build is triggered be cause of commit via che, I did not see a new build starting nor the commit going through, once this is resolved we need to add this image.
+//image::sb-app-dashboard.png[Staged Spring Boot Application on Dashboard]
+//endif::[]
 +
 ////
 . In the *Create* tab, click *Deployments* to see the following information:
@@ -34,14 +40,19 @@ image::{context}_versions_applications.png[Versions of the Application]
 . Click *Pipelines* to return to the pipelines view and
 ////
 
-. After you are satisfied with your changes, click btn:[Input Required] at the *Approve* stage of the pipeline, and then click btn:[Promote] to promote the next version of the application to *Run*.
+. After you are satisfied with your changes, click btn:[Promote] to promote the next version of the application to *Run*.
 +
 Your changes are now available on both *Stage* and *Run*.
 //If you return to the *Deployments* tab, you can see that version 1.0.2 is deployed to both *Stage* and *Run*.
 
 //for hello world
 ifeval::["{context}" == "hello-world"]
-You have now created your first quickstart project in {ct}, made changes to your project code, committed the changes to GitHub, and published the new version of your project.
+You have now created a Vert.x quickstart application in {ct}, made changes to your application code, committed the changes to GitHub, and published the new version of your application.
+endif::[]
+
+// for spring-boot
+ifeval::["{context}" == "create-sb-app"]
+You have now created a Spring Boot quickstart application in {ct}, made changes to your application code, committed the changes to GitHub, and published the new version of your application.
 endif::[]
 
 
@@ -53,5 +64,5 @@ endif::[]
 
 //for user guide
 ifeval::["{context}" == "user-guide"]
-You have now used Che workspaces to edit the code for your project, committed the changes to GitHub, and published the new version of your project.
+You have now used Che workspaces to edit the code for your application, committed the changes to GitHub, and published the new version of your application.
 endif::[]

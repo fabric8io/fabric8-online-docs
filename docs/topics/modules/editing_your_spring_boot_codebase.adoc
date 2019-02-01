@@ -38,9 +38,7 @@ The added code appears as follows:
 +
 image::sb_code_add.png[Code Added to Spring Boot Project]
 +
-. Save your changes using kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS).
-
-. Click the *run* option from the Run drop-down(image:tri_run.png[title="Run button"]). This sets up the Spring Boot server. Unlike in the Vert.x Quickstart project, the hot deploy option is not available for Spring Boot projects. As a result, changes are not automatically deployed.
+. Save your changes using kbd:[Ctrl+s] (or kbd:[Cmd+s] for macOS) and click the *run* option from the Run drop-down(image:tri_run.png[title="Run button"]). This sets up the Spring Boot server. Unlike in the Vert.x Quickstart project, the hot deploy option is not available for Spring Boot applications. As a result, changes are not automatically deployed.
 
 . You can see the application run in the *run* tab. When the application run completes, click the blue preview URL at the top of the *run* tab to see your project.
 +
@@ -55,7 +53,7 @@ image::sb_app_test.png[SpringBoot App Test]
 ----
 /api/goodbye?name=Samwell%20Gamgee
 ----
-
-. If successful, the amended preview URL displays the following:
++
+If successful, the amended preview URL displays the following:
 +
 image::samwise_result.png[Preview URL Result]

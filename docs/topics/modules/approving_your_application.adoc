@@ -12,11 +12,3 @@ image::promote.png[Promote application]
 . When the *Pipeline* view in {ct} indicates that the application is available in the _Run_ environment, click the icon (image:rollout_icon.png[title="Rollout"]) next to *Rollout to Run* to view the application in a new tab.
 +
 image::rollout_to_run.png[Rollout to Run]
-
-Alternatively, click *Analyze* and use the *Application* widget on your space dashboard to view, test, promote, or see a summary of the applications deployed in your space:
-
-* Click the options icon (image:kabob_white.png[title="Options icon"]) to view your application in the stage and run environments and test it.
-* Click *Promote* to approve your staged application and push it to the run environment.
-* View a summary of the applications deployed on your space.
-
-image::dashboard_applications.png[Dashboard-Application widget]

@@ -11,7 +11,7 @@ After creating your first quickstart project, you will now learn to optimize you
 
 include::modules/reviewing_detailed_resource_information.adoc[leveloffset=+1]
 
-include::modules/reducing_project_memory_usage.adoc[leveloffset=+1]
+include::modules/reducing_application_memory_usage.adoc[leveloffset=+1]
 
 include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
 

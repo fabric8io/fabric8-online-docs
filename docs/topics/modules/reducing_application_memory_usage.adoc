@@ -1,5 +1,5 @@
-[id="reducing_project_memory_usage-{context}"]
-= Reducing project memory usage
+[id="reducing_application_memory_usage-{context}"]
+= Reducing application memory usage
 
 Optimizing memory usage is important when using the Free Tier of OpenShift Online because this tier provides limited memory. Also, each additional project in {ct} requires an additional share of your OpenShift Online resources.
 
