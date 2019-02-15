@@ -12,7 +12,7 @@ Advanced users can change the settings for their project pipeline builds in Open
 . At the top of the page, click *Create* and then click *Pipelines* to view the pipeline builds for your project.
 . Click *Edit Pipeline* for the target pipeline build.
 +
-image::ug_edit_pipeline.png[Edit pipeline]
+image::ug_pipeline_firstrun.png[Edit pipeline]
 +
 . Enter your OpenShift Online credentials when prompted. When successful, you are redirected to your OpenShift Online account Console.
 +
