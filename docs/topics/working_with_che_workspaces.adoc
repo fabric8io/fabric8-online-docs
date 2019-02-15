@@ -5,9 +5,7 @@ include::modules/about_workspaces.adoc[leveloffset=+1]
 
 include::modules/creating_che_workspace.adoc[leveloffset=+1]
 
-include::modules/running_your_project_in_the_che_workspace.adoc[leveloffset=+1]
-
-include::modules/editing_quickstart_code.adoc[leveloffset=+1]
+include::modules/editing_your_nodejs_codebase.adoc[leveloffset=+1]
 //done
 include::modules/committing_pushing_changes_git.adoc[leveloffset=+1]
 

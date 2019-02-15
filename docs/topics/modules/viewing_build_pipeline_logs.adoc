@@ -1,13 +1,26 @@
-[id="viewing_build_pipeline_logs"]
+[id="viewing_build_pipeline_logs-{context}"]
 = Viewing the build pipeline logs
 
 Optionally, while you wait for the pipeline build, you can view the build details in the Jenkins log. For experienced users, these logs are useful when troubleshooting problems with builds if required.
 
 . In the *Pipeline* page, click *View Log* for the build pipeline in progress.
 . When prompted, log into Jenkins with your OpenShift Online account. If the page does not display, wait for a few minutes for the Jenkins instance to initialize and try again.
-Once you are logged in, the page displays the logs for your pipeline build.
+After you are logged in, the page displays the logs for your pipeline build.
 +
-image::pipeline_jenkins.png[Pipeline Build Logs in Jenkins]
+// for hello-world
+ifeval::["{context}" == "hello-world"]
+image::hw_jenkins_logs.png[Pipeline Build Logs in Jenkins]
+endif::[]
++
+// for user-guide
+ifeval::["{context}" == "user-guide"]
+image::ug_jenkins_logs.png[Pipeline Build Logs in Jenkins]
+endif::[]
++
+// for create-sbapp-user-story
+ifeval::["{context}" == "create-sb-app"]
+image::sb_jenkins_logs.png[Pipeline Build Logs in Jenkins]
+endif::[]
 +
 WARNING: Do not click the *Proceed* or *Abort* options at the end of the logs.
 

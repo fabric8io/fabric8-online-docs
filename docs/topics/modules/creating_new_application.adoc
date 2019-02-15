@@ -139,8 +139,6 @@ endif::[]
 // for user-guide
 ifeval::["{context}" == "user-guide"]
 For this example, click btn:[Return to your dashboard] to see your space dashboard. Your new project is now created in your space and your space dashboard now displays your new codebase.
-+
-image::space_dash_after_app_creation.png[Space dashboard view after creating an application]
 endif::[]
 +
 // for create-sbapp-user-story
